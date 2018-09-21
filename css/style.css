@@ -7,7 +7,12 @@
  @-ms-viewport {
     width: device-width;
   }
-  
+/*
+  @font-face {
+    font-family: montserrat;
+    src: url(fonts/montserrat-hairline.otf);
+    }
+  */
   html {
     box-sizing: border-box;
     -ms-overflow-style: scrollbar;
@@ -19,12 +24,12 @@
 :root {
   /* colors */
   --color-1: #e80c7a;
-  --color-2: #e82c0c;
+  --color-2: #FE4D4C;
   --dark: #272e33;
   --gray: #6d838f;
-  --danger: #b20000;
-  --info: #1485cc;
-  --success: #00b233;
+  --danger: #BF3939;
+  --info: #0ABFA4;
+  --success: #0AC977;
   --body-bg: #000;
   --body-color: #111;
 }
@@ -35,6 +40,10 @@ body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji",
     "Segoe UI Symbol", "Noto Color Emoji";
+
+  /* font-family: montserrat, Helvetica, Arial, sans-serif;*/
+
+
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
@@ -44,22 +53,56 @@ body {
 }
 
 
-.bg-primary{
-  background-color: val(var(--color-1));
+.color-1{
+  color: var(--color-1,black);
 }
 
+.color-2{
+  color: var(--color-2,black);
+}
+.success{
+  color: var(--success,green);
+}
+ .info{
+  color: var(--info,blue);
+}
+
+.danger{
+ color: var(--danger,red);
+}
+
+.bg-color-1{
+  background-color: var(--color-1,black);
+  color:white;
+}
+
+.bg-color-2{
+  background-color: var(--color-2,black);
+  color:white;
+}
 .bg-success{
-  background-color: val(var(--success));
+  background-color: var(--success,green);
+  color:white;
 }
  .bg-info{
-  background-color: val(var(--info));
+  background-color: var(--info,blue);
+  color:white;
 }
 
 .bg-danger{
-  background-color: val(var(--dabger));
+  background-color: var(--danger,red);
+  color:white;
 }
 
+.bg-dark{
+  background-color: var(--dark,darkgray);
+  color:white;
+}
 
+.bg-grey{
+  background-color: var(--grey,grey);
+  color:white;
+}
 
 ol,
 ul,
@@ -880,3 +923,21 @@ p {
                         -ms-flex-item-align: stretch !important;
                         align-self: stretch !important;
                       }
+
+                      .text-uppercase {
+                        text-transform: uppercase;
+                    }
+                    .text-capitalize {
+                      text-transform: capitalize;
+                  }
+
+                  .text-lowercase {
+                    text-transform: lowercase;
+                  }
+
+                  pre code {
+                    background-color: #eee;
+                    border: 1px solid #999;
+                    display: block;
+                    padding: 20px;
+                  }
