@@ -885,25 +885,51 @@ p {
 .icon-m { width: 64px; height: 64px }
 .icon-lg { width: 128px; height: 128px }
 
-                  .icon-color-1-bg{
-                   background-color: var(--color-1,red);
-                   fill:white;
-                   
-                  }
+.icon-color-1-bg{
+background-color: var(--color-1,red);
+fill:white;
 
-                  .icon-color-1-fill{
-                    fill: var(--color-1,red);
-                   
-                   }
+}
 
-                   .icon-color-2-bg{
-                    background-color: var(--color-2,red);
-                    fill:white;
-                    
-                   }
- 
-                   .icon-color-2-fill{
-                     fill: var(--color-2,red);
-                    
-                    }
+.icon-color-1-fill{
+fill: var(--color-1,red);
 
+}
+
+.icon-color-2-bg{
+background-color: var(--color-2,red);
+fill:white;
+
+}
+
+.icon-color-2-fill{
+  fill: var(--color-2,red);
+
+}
+
+
+
+/*dividers */
+hr {
+  margin:3% 0 5% 0;
+}
+
+hr.width-50 {
+  width: 50%;
+
+}
+
+blockquote {
+  padding: 10px 20px;
+  margin: 0 0 20px;
+  font-size: 17px;
+  border-left: 10px solid var(--color-1, black);
+}
+
+.blockquote-footer {
+  display: block;
+  font-size: 80%;
+  color: var(--color-1, black);
+  
+
+}
