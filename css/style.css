@@ -919,17 +919,53 @@ hr.width-50 {
 
 }
 
+/*Quotes */
 blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17px;
-  border-left: 10px solid var(--color-1, black);
+  border-left: 7px solid var(--color-1, black);
 }
 
 .blockquote-footer {
   display: block;
   font-size: 80%;
   color: var(--color-1, black);
-  
-
 }
+
+.pagination {
+  display: -ms-flexbox;
+  display: flex;
+  padding-left: 0;
+  list-style: none;
+  border-radius: .25rem;
+}
+
+.btn-link, .page-link, .page-link:focus, .page-link:hover {
+  color: var(--color-1,black);
+}
+
+.page-link {
+  position: relative;
+  display: block;
+  padding: .5rem .75rem;
+  margin-left: -1px;
+  line-height: 1.25;
+  color: var(--color-1,black);
+  background-color: #fff;
+  border: 1px solid #dee2e6;
+}
+
+.page-item.active .page-link, .page-link:focus, .page-link:hover {
+  color: #fff!important;
+  background-color: var(--color-1,black);
+  border-color: var(--color-1,black);
+}
+
+.page-item.active .page-link {
+  z-index: 1;
+  color: #fff;
+  background-color: var(--color-1,black);
+  border-color: var(--color-1,black);
+}
+
