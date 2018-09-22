@@ -128,6 +128,23 @@ body {
   color: var(--color-grey,black);
   border: 1px solid var(--color-grey,black);
 }
+
+.outline-color-info{
+  background-color: white;
+  color: var(--info,black);
+  border: 1px solid var(--info,black);
+}
+.outline-color-success{
+  background-color: white;
+  color: var(--success,black);
+  border: 1px solid var(--success,black);
+}
+
+.outline-color-danger{
+  background-color: white;
+  color: var(--danger,black);
+  border: 1px solid var(--danger,black);
+}
 ol,
 ul,
 dl {
@@ -1006,6 +1023,7 @@ button {
   display: inline-block;
   font-size: 16px;
   border-radius: 3px;
+  margin:5px;
 }
 
 
@@ -1030,9 +1048,45 @@ button:hover {
   background-color: var(--color-1,black);
   color:white;
   box-shadow: 3px 3px lightgrey;
+}
+
+.button-w-25 {width: 250px;}
+.button-w-50 {width: 50%;}
+.button-w-100 {width: 100%;}
 
 
+/*badge*/
+
+
+
+.badge {
+    display: inline-block;
+    padding: .25em .4em;
+    font-size: 75%;
+    font-weight: 400;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: .25rem;
+    
+}
+
+/* Alerts & Mesages*/
+.msg {
+  display: block;
+  border-left: 1px solid rgba(255,255,255,.5);
+  font-size: 14px;
+ 
+  border-radius: 7px;
+  position: relative;
+  padding: .75rem 1.25rem;
+  margin-bottom: 1rem;
+  border: 1px solid transparent;
+  border-radius: .25rem;
 }
 
 
-
+.float-right{
+  float:right;
+}
