@@ -877,3 +877,33 @@ p {
                     display: block;
                     padding: 20px;
                   }
+
+
+/* Icons */
+.icon-xs { width: 16px; height: 16px }
+.icon-sm { width: 32px; height: 32px }
+.icon-m { width: 64px; height: 64px }
+.icon-lg { width: 128px; height: 128px }
+
+                  .icon-color-1-bg{
+                   background-color: var(--color-1,red);
+                   fill:white;
+                   
+                  }
+
+                  .icon-color-1-fill{
+                    fill: var(--color-1,red);
+                   
+                   }
+
+                   .icon-color-2-bg{
+                    background-color: var(--color-2,red);
+                    fill:white;
+                    
+                   }
+ 
+                   .icon-color-2-fill{
+                     fill: var(--color-2,red);
+                    
+                    }
+
