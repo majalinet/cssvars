@@ -104,6 +104,30 @@ body {
   color:white;
 }
 
+/* outlined */
+.outline-color-1{
+  background-color: white;
+  color: var(--color-1,black);
+  border: 1px solid var(--color-1,black);
+}
+
+.outline-color-2{
+  background-color: white;
+  color: var(--color-2,black);
+  border: 1px solid var(--color-2,black);
+}
+
+.outline-color-dark{
+  background-color: white;
+  color: var(--color-dark,black);
+  border: 1px solid var(--color-dark,black);
+}
+
+.outline-color-grey{
+  background-color: white;
+  color: var(--color-grey,black);
+  border: 1px solid var(--color-grey,black);
+}
 ol,
 ul,
 dl {
@@ -933,6 +957,7 @@ blockquote {
   color: var(--color-1, black);
 }
 
+/*Pagination */
 .pagination {
   display: -ms-flexbox;
   display: flex;
@@ -968,4 +993,46 @@ blockquote {
   background-color: var(--color-1,black);
   border-color: var(--color-1,black);
 }
+
+/* Buttons */
+
+button {
+  background-color: var(--color-1);
+  border: none;
+  color: white;
+  padding: .5rem .95rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+}
+
+
+.button-s {
+  font-size: 12px;
+}
+
+.button-m {
+  font-size: 18px;
+}
+.button-lg {
+  font-size: 26px;
+}
+
+.botton:hover{
+  color: #fff!important;
+  background-color: var(--color-1,black);
+  border-color: var(--color-1,black);
+}
+
+button:hover {
+  background-color: var(--color-1,black);
+  color:white;
+  box-shadow: 3px 3px lightgrey;
+
+
+}
+
+
 
