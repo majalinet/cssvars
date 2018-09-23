@@ -218,8 +218,8 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 0;
-  margin-bottom: 0.5rem;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
 }
 
 h1,
@@ -922,7 +922,7 @@ p {
 
 /* Icons */
 .icon-xs { width: 16px; height: 16px }
-.icon-sm { width: 32px; height: 32px }
+.icon-s { width: 32px; height: 32px }
 .icon-m { width: 64px; height: 64px }
 .icon-lg { width: 128px; height: 128px }
 
@@ -946,6 +946,11 @@ fill:white;
 .icon-color-2-fill{
   fill: var(--color-2,red);
 
+}
+
+.icon-box{
+  display: inline-block;
+padding: .5rem;
 }
 
 
@@ -1089,4 +1094,8 @@ button:hover {
 
 .float-right{
   float:right;
+}
+
+.rounded{
+  border-radius: 7px;
 }
