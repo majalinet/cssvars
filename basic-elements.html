@@ -246,7 +246,9 @@
 
                 <h4>Styling icons</h4>
                 <p>eg1: use i "icon-box outline-color-1 rounded"
-                    <br> use i eg2:icon-box bg-color-1 rounded</p>
+                    <br> eg2: use i "icon-box bg-color-1 rounded"<br>
+                    eg3: use i "icon-box outline-color-1 circle"</p>
+                
                 <i class="icon-box outline-color-1 rounded">
                     <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0z" fill="none" />
@@ -260,7 +262,19 @@
                         <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
                     </svg>
                 </i>
-
+                <i class="icon-box outline-color-1 circle">
+                    <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+                    </svg>
+                </i>
+                <i class="icon-box ">
+                    <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M18 2H6c-1.1 0-2 .9-2 2v16c0 1.1.9 2 2 2h12c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 4h5v8l-2.5-1.5L6 12V4z" />
+                    </svg>
+                </i>    
+                
                 <h4>Icons sizes</h4>
                 <p>Add the classes icon-s icon-m icon-lg</p>
                 <i class="icon-box outline-color-1 rounded">
@@ -379,12 +393,12 @@
         <br>
         <br>
 
-        <span class="badge outline-color-1">bg-color-1</span>
-        <span class="badge outline-color-2">bg-color-1</span>
-        <span class="badge outline-color-dark">bg-color-1</span>
-        <span class="badge outline-color-success">bg-color-1</span>
-        <span class="badge outline-color-info">bg-color-1</span>
-        <span class="badge outline-color-danger">bg-color-1</span>
+        <span class="badge outline-color-1">outline-color-1</span>
+        <span class="badge outline-color-2">outline-color-2</span>
+        <span class="badge outline-color-dark">outline-color-dark</span>
+        <span class="badge outline-color-success">outline-color-success</span>
+        <span class="badge outline-color-info">outline-color-info</span>
+        <span class="badge outline-color-danger">outline-color-danger</span>
 
         <br>
         <br>
@@ -412,11 +426,149 @@
 
 
 
+        <hr>
+
+        <h2>Tables</h2>
+
+        <table class="table">
+            <thead>
+              <tr>
+                <th>Firstname</th>
+                <th>Lastname</th>
+                <th>Email</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>John</td>
+                <td>Doe</td>
+                <td>john@example.com</td>
+              </tr>
+              <tr>
+                <td>Kim</td>
+                <td>Doe</td>
+                <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                <td>Dan</td>
+                <td>Doe</td>
+                <td>dan@example.com</td>
+              </tr>
+            </tbody>
+          </table>
+
+<h4>Striped Table</h4>
+<table class="table table-striped">
+    <thead>
+      <tr>
+        <th>Firstname</th>
+        <th>Lastname</th>
+        <th>Email</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>John</td>
+        <td>Doe</td>
+        <td>john@example.com</td>
+      </tr>
+      <tr>
+        <td>Kim</td>
+        <td>Doe</td>
+        <td>Kim@example.com</td>
+      </tr>
+      <tr>
+        <td>Dan</td>
+        <td>Doe</td>
+        <td>dan@example.com</td>
+      </tr>
+    </tbody>
+  </table>
+
+  <h4>Hover Table</h4>
+  <table class="table table-hover">
+      <thead>
+        <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+        </tr>
+        <tr>
+          <td>Kim</td>
+          <td>Doe</td>
+          <td>Kim@example.com</td>
+        </tr>
+        <tr>
+          <td>Dan</td>
+          <td>Doe</td>
+          <td>dan@example.com</td>
+        </tr>
+      </tbody>
+    </table>
 
 
+    <h4>Bordered Table</h4>
+    <table class="table table-bordered">
+        <thead>
+          <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+          </tr>
+          <tr>
+            <td>Kim</td>
+            <td>Doe</td>
+            <td>Kim@example.com</td>
+          </tr>
+          <tr>
+            <td>Dan</td>
+            <td>Doe</td>
+            <td>dan@example.com</td>
+          </tr>
+        </tbody>
+      </table>
 
-
-
+      <h4>Bordered Table Primary</h4>
+      <table class="table table-bordered-color-1">
+          <thead>
+            <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+            </tr>
+            <tr>
+              <td>Kim</td>
+              <td>Doe</td>
+              <td>Kim@example.com</td>
+            </tr>
+            <tr>
+              <td>Dan</td>
+              <td>Doe</td>
+              <td>dan@example.com</td>
+            </tr>
+          </tbody>
+        </table>
 
         </div>
 </body>
