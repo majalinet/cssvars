@@ -116,7 +116,7 @@ hr {
   overflow: visible;
 }
 
-/* fonts */
+/* headings */
 h1,
 h2,
 h3,
@@ -133,7 +133,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-bottom: 0.5rem;
+  margin: 2.5rem 0 0.5rem 0;
   font-family: inherit;
   font-weight: 300;
   line-height: 1.2;
@@ -204,6 +204,60 @@ p {
   margin-bottom: 1rem;
 }
 
+
+/* fancy title */
+.fancy-title.title-dotted-border {
+  background: url(../img/fabric-dark.png) center repeat-x;
+
+}
+
+.title-center {
+  text-align: center;
+}
+.fancy-title {
+  position: relative;
+  margin-bottom: 30px;
+}
+
+.topmargin {
+  margin-top: 50px!important;
+}
+
+.fancy-title h1, .fancy-title h2, .fancy-title h3, .fancy-title h4, .fancy-title h5, .fancy-title h6 {
+  position: relative;
+  display: inline-block;
+  background-color: #fff;
+  padding: 0 15px;
+  margin:20px 0;
+}
+
+
+
+.short-line {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+.short-line:after {
+  display: inline-block;
+  margin: 0 0 8px 20px;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #bbb;
+  width: 10%;
+}
+.short-line:before {
+  display: inline-block;
+  margin: 0 20px 8px 0;
+  height: 3px;
+  content: " ";
+  text-shadow: none;
+  background-color: #bbb;
+  width: 10%;
+}
+
 .bordered {
   border: 2px solid #dee2e6;
   border-radius: 15px;
@@ -226,6 +280,14 @@ p {
   padding: 0.4rem;
 }
 
+h1 .bordered::after{
+  color:red !important;
+  display:block;
+}
+
+.heading-box{
+  margin: 2.5rem 0;
+}
 *,
 *::before,
 *::after {
@@ -1287,3 +1349,4 @@ tr {
 .embed-responsive-1by1::before {
   padding-top: 100%;
 }
+
