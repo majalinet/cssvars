@@ -1350,3 +1350,172 @@ tr {
   padding-top: 100%;
 }
 
+
+
+/*Carousel*/
+.carousel {
+  background: #ffffff;
+  text-align: center;
+  padding: 1em 0;
+  height: auto;
+  width: 100%;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+
+.carousel .slides {
+  width: 400%;
+  left: 0;
+  padding-left: 0;
+  padding-top: 0.2em;
+  overflow: hidden;
+  list-style: none;
+  position: relative;
+
+  -webkit-transition: transform .5s;
+  -moz-transition: transform .5s;
+  -o-transition: transform .5s;
+  transition: transform .5s;
+}
+.carousel .slides li {
+  width: 25%;
+  position: relative;
+  float: left;
+}
+
+
+.carousel-small-img li img {
+  width:3em;
+  border-radius: 50%;
+  margin-left: -1.5em;
+  margin-right: 0.5em;
+  vertical-align: middle;
+}
+.carousel li span.author {
+  margin-top:0.5em;
+  font-size: 1.2em;
+  color: #777777;
+  display: block;
+}
+.carousel .slidesNavigation {
+  display: block;
+  list-style: none;
+  text-align: center;
+  bottom: 1em;
+    position: absolute; 
+    width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
+    left: 50%;
+    margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+}
+.carousel input {
+  display: none;
+}
+.carousel .slidesNavigation label {
+  float: left;
+  margin: 6px;
+  display: block;
+  height: 10px;
+  width: 10px;
+  -webkit-border-radius: 50%;
+  border-radius: 50%;
+  border: solid 1px #2980b9;
+  font-size: 0;
+}
+/* You have to repeat this with each slide, 100/slides-num
+*/
+#radio-1:checked ~ .slides {
+  transform: translateX(0%);
+}
+#radio-2:checked ~ .slides {
+  transform: translateX(-25%);
+}
+#radio-3:checked ~ .slides {
+  transform: translateX(-50%);
+}
+#radio-4:checked ~ .slides {
+  transform: translateX(-75%);
+}
+
+
+.crrousel .slidesNavigation label:hover {
+   cursor: pointer;
+}
+/* You have to repeat this with each slide/dot */
+.carousel #radio-1:checked ~ .slidesNavigation label#dotForRadio-1,
+.carousel #radio-2:checked ~ .slidesNavigation label#dotForRadio-2,
+.carousel #radio-3:checked ~ .slidesNavigation label#dotForRadio-3,
+.carousel #radio-4:checked ~ .slidesNavigation label#dotForRadio-4 {
+  background: var(--color-1,black);
+}
+
+
+
+
+
+/* Gallary Box*/
+.gallary-box {
+	line-height:24px;
+
+  margin:0;
+  padding:15px;
+  }
+  
+  .gallary-box img{
+    max-width: 100%;
+    height: auto;
+	}
+
+
+  .key-features ul, .features ul, .testimonials ul, .team ul, .portfolio ul, .gallary-box ul{
+    list-style:none;
+    padding: 0;
+    }
+
+
+    .gallery-box-photo-container .gallery-box-thumbnail-image > img {
+      width: 79px;
+    }
+    
+    .gallery-box-photo-container img {
+      max-width: 100%;
+      margin:3px;
+    }
+    
+    .gallery-box-main-image {
+      position: absolute;
+      visibility: hidden;
+      top: 18px;
+      left: 18px;
+      margin-right: 8px;
+    }
+    
+    .gallery-box-photo-container {
+      border: 1px solid #cccccc;
+      padding: 10px;
+      border-radius:5px;
+      margin-bottom:20px;
+    }
+    
+    
+
+
+    .gallery-box-thumbnail-image {
+      display: inline-block;
+      margin:5px;
+      box-shadow: 2px 2px 1px #cccccc;
+
+    }
+
+
+
+
+
+
+.shadow-box{
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+
+}
+.shadow-box-2{
+  box-shadow: 3px 3px 2px #aaaaaa;
+}
