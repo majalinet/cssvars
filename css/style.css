@@ -1693,7 +1693,7 @@ tr {
   grid-row: auto / span 5;
 }
 
-.masonry-container img {
+.masonry-gallery-img img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
