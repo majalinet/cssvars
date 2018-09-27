@@ -1860,6 +1860,75 @@ input::placeholder, textarea::placeholder {
   font-size: 1rem;
 }
 
+
+[type="date"] {
+  background:#fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png)  98% 50% no-repeat ;
+  display: block;
+  width: 100%;
+  padding: .375rem .75rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #ced4da;
+  border-radius: .25rem;
+
+}
+[type="date"]::-webkit-inner-spin-button {
+  display: none;
+}
+[type="date"]::-webkit-calendar-picker-indicator {
+  opacity: 0;
+}
+
+
+/* Rating */
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+}
+
+.rating > input{ display:none;}
+
+.rating > label {
+  position: relative;
+  width: 1.1em;
+  font-size: 2rem;
+  color: #FFD700;
+  cursor: pointer;
+}
+
+.raiting-c-1 label {
+
+  color: var(--color-1,grey)
+}
+.rating > label::before{ 
+  content: "\2605";
+  position: absolute;
+  opacity: 0;
+}
+.rating > label:hover:before,
+.rating > label:hover ~ label:before {
+  opacity: 1 !important;
+}
+
+.rating > input:checked ~ label:before{
+  opacity:1;
+}
+
+.rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+
+/* Theme 2 
+body{ background: #222225; color: white;}
+h1, p{ text-align: center;}
+p{ font-size: 1.2rem;}
+
+*/
+
+
 /*
 ::-webkit-file-upload-button {
   background-color: var(--color-1);
