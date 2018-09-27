@@ -1383,7 +1383,6 @@ tr {
 
 /*Carousel*/
 .carousel {
-  background: #ffffff;
   text-align: center;
   padding: 1em 0;
   height: auto;
@@ -1921,12 +1920,13 @@ input::placeholder, textarea::placeholder {
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
 
 
-/* Theme 2 
+/*Theme 2 */
+/*
 body{ background: #222225; color: white;}
 h1, p{ text-align: center;}
 p{ font-size: 1.2rem;}
-
 */
+
 
 
 /*
