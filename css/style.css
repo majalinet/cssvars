@@ -1976,7 +1976,71 @@ body, html {
 }
 
 
+/* Tans */
 
+
+ .tabs {
+	display: flex;
+	flex-wrap: wrap; 
+}
+.tabs label {
+	order: 1; 
+	display: block;
+  background-color: var(--color-1);
+  border: none;
+  color: white;
+  padding: 0.5rem 0.95rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 3px;
+  margin: 5px;
+
+}
+.tabs .tab {
+  order: 99; 
+  flex-grow: 1;
+	width: 100%;
+	display: none;
+  padding: 1rem;
+}
+.tabs input[type="radio"] {
+	display: none;
+}
+.tabs input[type="radio"]:checked + label {
+  background: #fff;
+  color: var(--color-1);
+
+}
+.tabs input[type="radio"]:checked + label + .tab {
+	display: block;
+}
+
+@media (max-width: 45em) {
+  .tabs .tab,
+  .tabs label {
+    order: initial;
+  }
+  .tabs label {
+    width: 100%;
+	margin-right: 0.2rem;
+    margin-top: 0.2rem;
+    
+  }
+}
+
+/**
+ * Generic Styling
+*/
+.tabscontainer {
+  min-height: 100vh;
+	box-sizing: border-box;
+	padding-top: 10vh;
+
+
+  margin: 0 auto;
+}
 
 
 
