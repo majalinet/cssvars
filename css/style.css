@@ -121,7 +121,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin-top: 1.5rem;
+  margin-top: 0;
   margin-bottom: 1rem;
 }
 
@@ -131,7 +131,7 @@ h3,
 h4,
 h5,
 h6 {
-  margin: 2.5rem 0 0.5rem 0;
+  margin: 0 0 0.5rem 0;
   font-family: inherit;
   font-weight: 300;
   line-height: 1.2;
@@ -1253,6 +1253,13 @@ tr {
   color: var(--danger, red);
 }
 
+.white{
+  color:white;
+}
+
+.black{
+  color:black;
+}
 .bg-color-1 {
   background-color: var(--color-1, black);
   color: white;
@@ -1261,6 +1268,13 @@ tr {
 .bg-color-2 {
   background-color: var(--color-2, black);
   color: white;
+}
+
+.bg-color-gradient {
+  color: white;
+  background-color: #fc636b;
+  background: linear-gradient(to right,#fc636b 0,#ff6d92 60%,#fd9a00 100%);
+  background: linear-gradient(to right,var(--color-1, black) 0, var(--color-2, black) 100%);
 }
 .bg-success {
   background-color: var(--success, green);
@@ -1918,6 +1932,65 @@ input::placeholder, textarea::placeholder {
 }
 
 .rating:hover > input:checked ~ label:before{ opacity: 0.4; }
+
+
+
+
+
+.parallax-img {
+  background-image: url('../img/img_parallax.jpg');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.h-100{
+  height: 100%;
+}
+
+.h-50{
+  height: 50%;
+}
+body, html {
+  height: 100%;
+}
+
+.center{
+	text-align:center;
+}
+
+.left{
+	text-align:left;
+}
+
+.right{
+	text-align:right;
+}
+
+
+.content-in-middle{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 /*Theme 2 */
