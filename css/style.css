@@ -1078,7 +1078,7 @@ blockquote {
 /* Buttons */
 
 button,
-.button {
+.button, .accordion .accordionBlock label, .tabs label {
   background-color: var(--color-1);
   border: none;
   color: white;
@@ -1264,6 +1264,7 @@ tr {
 .bg-color-1 {
   background-color: var(--color-1, black);
   color: white;
+  
 }
 
 .bg-color-2 {
@@ -1952,16 +1953,6 @@ html {
 .tabs label {
   order: 1;
   display: block;
-  background-color: var(--color-1);
-  border: none;
-  color: white;
-  padding: 0.5rem 0.95rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 3px;
-  margin: 5px;
 }
 .tabs .tab {
   order: 99;
@@ -2030,16 +2021,7 @@ html {
   width: 100%;
   margin-bottom: 0;
   float: left;
-  background-color: var(--color-1);
-  border: none;
-  color: white;
-  padding: 0.5rem 0.95rem;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  border-radius: 3px;
-  margin: 5px;
+
 }
 .accordion input[type="radio"]:checked ~ label {
   background-color: white;
@@ -2068,7 +2050,7 @@ html {
 
 
 
-/* Button */
+/* Modal */
 .modal {
   opacity: 0;
   visibility: hidden;
