@@ -24,7 +24,7 @@ html {
   /* colors */
   --color-1: #e80c7a;
   --color-2: #fe4d4c;
-  --dark: #272e33;
+  --dark: #222225;
   --gray: #6d838f;
   --danger: #bf3939;
   --info: #0abfa4;
@@ -194,9 +194,14 @@ h6,
 .display-4 {
   font-size: 2.5rem;
   font-weight: 300;
-  line-height: 1.2;
+  line-height: 1.3;
 }
 
+.display-5 {
+  font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -2155,9 +2160,13 @@ p img {
 
 .promo-box{
 margin: 3rem 0;
-  padding: 3rem;
+  padding: 4rem 3rem ;
 }
 
+.promo-box-s{
+  margin: 1.5rem 0;
+    padding: 2rem 1.5rem ;
+  }
 
 
 
