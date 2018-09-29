@@ -8,11 +8,9 @@ Most templates are built using Bootstrap, Jquery, Font awesome, and many other r
 * Kim Majali
 * Europe IT Outsourcing
 * https://www.europeitoutsourcing.com
-
 ## Technologies
 * HTML
 * CSS
-* JavaScript
 ## Tools
 * Github https://github.com/
 * Visual Studio Code https://code.visualstudio.com/
