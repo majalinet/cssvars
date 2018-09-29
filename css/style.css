@@ -174,25 +174,25 @@ h6,
 }
 
 .display-1 {
-  font-size: 6rem;
+  font-size: 5rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-2 {
-  font-size: 5.5rem;
+  font-size: 4rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-3 {
-  font-size: 4.5rem;
+  font-size: 3rem;
   font-weight: 300;
   line-height: 1.2;
 }
 
 .display-4 {
-  font-size: 3.5rem;
+  font-size: 2.5rem;
   font-weight: 300;
   line-height: 1.2;
 }
@@ -2013,7 +2013,6 @@ html {
   width: 100%;
   float: left;
   padding: 10px;
-  font-family: "Raleway", sans-serif;
   font-weight: 400;
 }
 
@@ -2144,18 +2143,22 @@ html {
 }
 
 
-/* Other
- * =============================== */
-
-
-
-
 p img {
   max-width: 200px;
   height: auto;
   float: left;
   margin: 0 1em 1em 0;
 }
+
+
+/* Promo Boxes */
+
+.promo-box{
+margin: 3rem 0;
+  padding: 3rem;
+}
+
+
 
 
 
