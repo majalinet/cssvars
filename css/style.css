@@ -1264,8 +1264,25 @@ tr {
 }
 
 .black {
-  color: black;
+  color: black !important;
 }
+
+.color-gradient {
+  text-transform: uppercase;
+
+  color: white;
+  background-color: #fc636b;
+  background: linear-gradient(to right, #fc636b 0, #ff6d92 60%, #fd9a00 100%);
+  background: linear-gradient(
+    to top,
+    var(--color-1, black) 0,
+    var(--color-2, black) 100%
+  );
+
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
 .bg-color-1 {
   background-color: var(--color-1, black);
   color: white;
