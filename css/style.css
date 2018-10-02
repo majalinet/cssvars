@@ -16,7 +16,9 @@
 html {
   box-sizing: border-box;
   -ms-overflow-style: scrollbar;
+  font-size: 12px;
 }
+
 
 /* Varibles*/
 
@@ -160,12 +162,12 @@ h4,
 
 h5,
 .h5 {
-  font-size: 1.75rem;
+  font-size: 1.5rem;
 }
 
 h6,
 .h6 {
-  font-size: 1.5rem;
+  font-size: 1.25rem;
 }
 
 .lead {
@@ -199,6 +201,11 @@ h6,
 
 .display-5 {
   font-size: 2rem;
+  font-weight: 300;
+  line-height: 1.3;
+}
+.display-6 {
+  font-size: 1.5rem;
   font-weight: 300;
   line-height: 1.3;
 }
@@ -347,6 +354,7 @@ h1 .bordered::after {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+    font-size: 16px;
   }
 }
 
@@ -1259,6 +1267,9 @@ tr {
   color: var(--danger, red);
 }
 
+.dark{
+  color:var(--color-dark,black)
+}
 .white {
   color: white;
 }
@@ -1278,7 +1289,7 @@ tr {
     var(--color-1, black) 0,
     var(--color-2, black) 100%
   );
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
@@ -2167,7 +2178,7 @@ html {
 }
 
 
-p img {
+.modal__inner p img {
   max-width: 200px;
   height: auto;
   float: left;
@@ -2306,12 +2317,34 @@ margin: 3rem 0;
   content: ">";
 }
 
+/* Padding and Margin */
+
+.m1{
+  margin: 1rem;
+}
+.m2{
+  margin: 2rem;
+}
+
+.p1{
+  padding: 1rem;
+}
+
+.p2{
+  padding: 2rem;
+}
 
 
+/* Card */
+.card-desc {
+  padding: 15px 5px 10px;
+}
 
-
-
-
+.old-info{
+  text-decoration: line-through;
+  font-size:1.2rem;
+  color:var(--dark,black)
+}
 
 
 /*Theme 2 */
