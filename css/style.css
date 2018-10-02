@@ -1278,7 +1278,7 @@ tr {
     var(--color-1, black) 0,
     var(--color-2, black) 100%
   );
-
+  background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
