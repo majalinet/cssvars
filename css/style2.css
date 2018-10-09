@@ -1,0 +1,75 @@
+
+.article p {
+    text-align: justify;
+}
+
+.logo {
+    height: auto;
+    width: 40rem;
+    margin-top: 20px;
+}
+
+.register h3 {
+    font-weight: bold;
+}
+
+.register {
+    margin: 20px 0 20px 0;
+}
+
+.social-share__list {
+    list-style: none;
+    display: flex;
+   
+   
+}
+
+.social-share__item {
+    margin: 0 7px 10px 7px;
+}
+
+.social-share__facebook {
+    width: 64px;
+    height: 32px;
+}
+
+.social-share__facebook svg {
+    fill: rgb(18, 18, 124);
+}
+
+.social-share__twitter {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__twitter svg {
+    fill: rgb(0, 162, 255);
+}
+
+.social-share__whatsapp {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__whatsapp svg {
+    fill: rgb(2, 202, 69);
+}
+
+.social-share__email {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__email svg {
+    fill: rgba(6, 90, 83, 0.404);
+}
+
+hr {
+    width: 30rem;
+    
+}
+
+.end {
+    text-align: center;
+    margin: 120px 0 10px 0;
+}
