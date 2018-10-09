@@ -33,6 +33,7 @@ html {
   --success: #0ac977;
   --body-bg: #000;
   --body-color: #111;
+  --lite-grey:#eee;
 }
 
 body {
@@ -1355,6 +1356,10 @@ tr {
   color: white;
 }
 
+.bg-lite-grey {
+  background-color: var(--lite-grey, grey);
+  color: white;
+}
 
 /* outlined */
 .outline-color-1 {
