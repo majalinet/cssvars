@@ -2,11 +2,24 @@
     .white, .breadcrumb {
         margin-left: 46rem;
     }
+    .header-white {
+        font-size: 65px;
+    }
+    .header-paragraph {
+        font-size: 45px;
+    }
 }
 
 @media screen and (max-width: 1800px) {
     .white, .breadcrumb {
         margin-left: 20rem;
+    }
+
+    .header-white {
+        font-size: 40px;
+    }
+    .header-paragraph {
+        font-size: 17px;
     }
 }
 
@@ -14,11 +27,24 @@
     .white, .breadcrumb {
         margin-left: 15rem;
     }
+    .header-white {
+        font-size: 40px;
+    }
+    .header-paragraph {
+        font-size: 20px;
+    }
 }
 
 @media screen and (max-width: 992px) {
     .white, .breadcrumb {
         margin-left: 5rem;
+    }
+
+    .header-white {
+        font-size: 40px;
+    }
+    .header-paragraph {
+        font-size: 20px;
     }
 }
 
@@ -26,11 +52,25 @@
     .white, .breadcrumb {
         margin-left: 5rem;
     }
+
+    .header-white {
+        font-size: 30px;
+    }
+    .header-paragraph {
+        font-size: 17px;
+    }
 }
 
 @media screen and (max-width: 468px) {
     .white, .breadcrumb {
         margin-left: 1rem;
+    }
+
+    .header-white {
+        font-size: 35px;
+    }
+    .header-paragraph {
+        font-size: 12px;
     }
 }
 
@@ -41,7 +81,7 @@
 .logo {
     height: auto;
     max-width: 100%;
-    margin-top: 20px;
+    margin: 15px 0 20px 0;
 }
 
 .register h3 {
@@ -104,4 +144,29 @@ hr {
 .end {
     text-align: center;
     margin: 4rem 0 4rem 0;
+}
+
+.parallax-img {
+    background-image: url(../img/6.-SP01-Furniture_Jeanette_green_elieen_circular_green.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.header-white {
+    color: #FFF;
+    padding: 10px;
+}
+
+.header-paragraph {
+    padding: 0 10rem 0 10rem;
+}
+
+.home-p2 {
+    padding-bottom: 0;
+}
+
+.footer-padding {
+    padding-top: 3rem;
 }
