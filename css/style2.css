@@ -1,0 +1,107 @@
+@media screen and (max-width: 2600px) {
+    .white, .breadcrumb {
+        margin-left: 46rem;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .white, .breadcrumb {
+        margin-left: 20rem;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .white, .breadcrumb {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .white, .breadcrumb {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .white, .breadcrumb {
+        margin-left: 5rem;
+    }
+}
+
+@media screen and (max-width: 468px) {
+    .white, .breadcrumb {
+        margin-left: 1rem;
+    }
+}
+
+.article p {
+    text-align: justify;
+}
+
+.logo {
+    height: auto;
+    max-width: 100%;
+    margin-top: 20px;
+}
+
+.register h3 {
+    font-weight: bold;
+}
+
+.register {
+    margin: 20px 0 20px 0;
+}
+
+.social-share__list {
+    list-style: none;
+    display: flex;
+}
+
+.social-share__item {
+    margin: 0 7px 10px 7px;
+}
+
+.social-share__facebook {
+    width: 64px;
+    height: 32px;
+}
+
+.social-share__facebook svg {
+    fill: rgb(18, 18, 124);
+}
+
+.social-share__twitter {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__twitter svg {
+    fill: rgb(0, 162, 255);
+}
+
+.social-share__whatsapp {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__whatsapp svg {
+    fill: rgb(2, 202, 69);
+}
+
+.social-share__email {
+    width: 32px;
+    height: 32px;
+}
+
+.social-share__email svg {
+    fill: rgba(6, 90, 83, 0.404);
+}
+
+hr {
+    max-width: 100%;
+}
+
+.end {
+    text-align: center;
+    margin: 4rem 0 4rem 0;
+}
