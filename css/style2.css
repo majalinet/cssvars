@@ -7,6 +7,25 @@
     }
     .header-paragraph {
         font-size: 45px;
+        padding: 0 10rem 0 10rem;
+    }
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 15px 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 50px;
+        margin: 6rem 0 6rem 0;
+    }
+
+    .about-row {
+        margin: 5rem;
+    }
+
+    .photos-group {
+        margin: -5rem 30rem 5rem 30rem;
     }
 }
 
@@ -14,12 +33,31 @@
     .white, .breadcrumb {
         margin-left: 20rem;
     }
-
     .header-white {
         font-size: 40px;
     }
     .header-paragraph {
         font-size: 17px;
+        padding: 0 10rem 0 10rem;
+    }
+
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 15px 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 42px;
+        margin: 10rem 0 10rem 0;
+    }
+
+    .about-row {
+        margin: 5rem;
+    }
+
+    .photos-group {
+        margin: -5rem 30rem 5rem 30rem;
     }
 }
 
@@ -32,6 +70,27 @@
     }
     .header-paragraph {
         font-size: 20px;
+        padding: 0 10rem 0 10rem;
+
+    }
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 15px 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 42px;
+        margin: 10rem 0 10rem 0;
+
+    }
+
+    .about-row {
+        margin: 5rem;
+    }
+
+    .photos-group {
+        margin: -5rem 30rem 5rem 30rem;
     }
 }
 
@@ -39,12 +98,31 @@
     .white, .breadcrumb {
         margin-left: 5rem;
     }
-
     .header-white {
         font-size: 40px;
     }
     .header-paragraph {
         font-size: 20px;
+        padding: 0 8rem 0 8rem;
+    }
+
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 15px 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 35px;
+        margin: 15rem 0 15rem 0;
+    }
+
+    .about-row {
+        margin: 5rem;
+    }
+
+    .photos-group {
+        margin: -5rem 30rem 5rem 30rem;
     }
 }
 
@@ -52,12 +130,31 @@
     .white, .breadcrumb {
         margin-left: 5rem;
     }
-
     .header-white {
         font-size: 30px;
     }
     .header-paragraph {
         font-size: 17px;
+        padding: 0 5rem 0 5rem;
+
+    }
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 15px 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 30px;
+        margin: 3rem 0 3rem 0;
+    }
+
+    .about-row {
+        margin: 1rem;
+    }
+
+    .photos-group {
+        margin: 2.5rem 11rem;
     }
 }
 
@@ -65,23 +162,32 @@
     .white, .breadcrumb {
         margin-left: 1rem;
     }
-
     .header-white {
         font-size: 35px;
     }
     .header-paragraph {
         font-size: 12px;
+        padding: 0 3rem 0 3rem;
+
+    }
+    .logo {
+        height: auto;
+        max-width: 100%;
+        margin: 0 0 20px 0;
+    }
+
+    .about-header {
+        font-size: 25px;
+        margin: 1.5rem 0 1.5rem 0;
+    }
+
+    .photos-group {
+        margin: 2.5rem 5rem;
     }
 }
 
 .article p {
     text-align: justify;
-}
-
-.logo {
-    height: auto;
-    max-width: 100%;
-    margin: 15px 0 20px 0;
 }
 
 .register h3 {
@@ -159,10 +265,6 @@ hr {
     padding: 10px;
 }
 
-.header-paragraph {
-    padding: 0 10rem 0 10rem;
-}
-
 .home-p2 {
     padding-bottom: 0;
 }
@@ -170,3 +272,18 @@ hr {
 .footer-padding {
     padding-top: 3rem;
 }
+
+.ours {
+    font-weight: bold;
+    display: inline-block;
+
+}
+
+
+
+.our-inf {
+    line-height: 2rem;
+}
+
+
+
