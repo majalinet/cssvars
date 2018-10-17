@@ -1147,6 +1147,7 @@ button,
 }
 .button-lg {
   font-size: 26px;
+  font-weight: 200;
 }
 
 .botton:hover {
@@ -1374,7 +1375,6 @@ tr {
 
 .bg-light-grey, .bg-lite-grey {
   background-color: var(--light-grey, grey);
-  color: white;
 }
 
 /* outlined */
@@ -1584,7 +1584,8 @@ tr {
 .testimonials ul,
 .team ul,
 .portfolio ul,
-.gallary-box ul {
+.gallary-box ul,
+.list-style-none {
   list-style: none;
   padding: 0;
 }
@@ -2359,7 +2360,7 @@ margin:0;
   margin: 2rem;
 }
 
-.m-v-1{
+.m-v-1, .m-v-1 li{
 margin-top: 1rem;
 margin-bottom: 1rem;
 }
@@ -2385,6 +2386,10 @@ margin-bottom: 1rem;
   padding-bottom: 1rem;
 }
 
+.p-v-2{
+  padding-top:2rem;
+  padding-bottom: 2rem;
+}
 
 /* Card */
 .card-desc {
