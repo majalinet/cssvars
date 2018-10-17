@@ -92,6 +92,10 @@
     .photos-group {
         margin: -5rem 30rem 5rem 30rem;
     }
+
+    .jessica-size {
+        font-size: 1.9rem;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -123,6 +127,14 @@
 
     .photos-group {
         margin: -5rem 30rem 5rem 30rem;
+    }
+
+    .h4-size {
+        font-size: 1.1rem;
+    }
+
+    .profession-size {
+        font-size: 0.96rem;
     }
 }
 
@@ -156,6 +168,20 @@
     .photos-group {
         margin: 2.5rem 11rem;
     }
+
+    .h4-size {
+        font-size: 1.3rem;
+    }
+    
+    .profession-size {
+        font-size: 0.94rem;
+    }
+
+    .jessica-size {
+        font-size: 1.2rem;
+
+    }
+  
 }
 
 @media screen and (max-width: 468px) {
@@ -183,6 +209,10 @@
 
     .photos-group {
         margin: 2.5rem 5rem;
+    }
+
+    .h4-size {
+        font-size: 1rem;
     }
 }
 
@@ -253,7 +283,7 @@ hr {
 }
 
 .parallax-img {
-    background-image: url(../img/6.-SP01-Furniture_Jeanette_green_elieen_circular_green.jpg);
+    background-image: url(../img/vika/pink-furniture.jpg);
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
@@ -280,10 +310,19 @@ hr {
 }
 
 
-
 .our-inf {
     line-height: 2rem;
 }
 
+.color-white {
+    color: white;
+}
 
+.color-white:hover {
+    text-decoration: none;
+    color: lightgray;
+}
 
+.photo-group {
+padding: 0 5rem 5rem 5rem;
+}
