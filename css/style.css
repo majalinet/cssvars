@@ -33,7 +33,7 @@ html {
   --success: #0ac977;
   --body-bg: #000;
   --body-color: #111;
-  --lite-grey:#eee;
+  --light-grey:#f6f6f6;
 }
 
 body {
@@ -129,10 +129,15 @@ h6 {
 }
 
 h1,
+.h1,
 h2,
+.h2,
 h3,
+.h3,
 h4,
+.h4,
 h5,
+.h5,
 h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
@@ -213,6 +218,10 @@ h6,
 p {
   margin-top: 0;
   margin-bottom: 1rem;
+}
+.font-weight-200
+{
+  font-weight:200;
 }
 
 /* fancy title */
@@ -334,19 +343,19 @@ h1 .bordered::after {
 }
 
 .h-25 {
-  height: 25% !important;
+  min-height: 25% !important;
 }
 
 .h-50 {
-  height: 50% !important;
+  min-height: 50% !important;
 }
 
 .h-75 {
-  height: 75% !important;
+  min-height: 75% !important;
 }
 
 .h-100 {
-  height: 100% !important;
+  min-height: 100% !important;
 }
 
 .container {
@@ -1044,10 +1053,17 @@ pre code {
 /*dividers */
 hr {
   margin: 3% 0 5% 0;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 hr.width-50 {
   width: 50%;
+}
+
+hr.width-short {
+  width: 40px;
+  
 }
 
 /*Quotes */
@@ -1356,8 +1372,8 @@ tr {
   color: white;
 }
 
-.bg-lite-grey {
-  background-color: var(--lite-grey, grey);
+.bg-light-grey, .bg-lite-grey {
+  background-color: var(--light-grey, grey);
   color: white;
 }
 
@@ -2333,6 +2349,9 @@ margin: 3rem 0;
 
 /* Padding and Margin */
 
+.m0{
+margin:0;
+}
 .m1{
   margin: 1rem;
 }
@@ -2340,12 +2359,30 @@ margin: 3rem 0;
   margin: 2rem;
 }
 
+.m-v-1{
+margin-top: 1rem;
+margin-bottom: 1rem;
+}
+
+.m-v-2{
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  }
+
+.p0{
+  padding: 0;
+}
 .p1{
   padding: 1rem;
 }
 
 .p2{
   padding: 2rem;
+}
+
+.p-v-1{
+  padding-top:1rem;
+  padding-bottom: 1rem;
 }
 
 
