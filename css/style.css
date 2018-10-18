@@ -117,6 +117,9 @@ hr {
   overflow: visible;
 }
 
+.auto-overflow-x{
+  overflow-x:auto;
+}
 /* headings */
 h1,
 h2,
