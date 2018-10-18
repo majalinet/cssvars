@@ -14,18 +14,19 @@
         max-width: 100%;
         margin: 15px 0 20px 0;
     }
-
     .about-header {
         font-size: 50px;
         margin: 6rem 0 6rem 0;
     }
-
     .about-row {
         margin: 5rem;
     }
-
-    .photos-group {
-        margin: -5rem 30rem 5rem 30rem;
+    .photo-group {
+        margin: 3rem 5rem;
+    }
+    .service-icon-m {
+        margin-left: 68rem;
+        margin-top: -2rem;
     }
 }
 
@@ -40,28 +41,28 @@
         font-size: 17px;
         padding: 0 10rem 0 10rem;
     }
-
     .logo {
         height: auto;
         max-width: 100%;
         margin: 15px 0 20px 0;
     }
-
     .about-header {
         font-size: 42px;
         margin: 10rem 0 10rem 0;
     }
-
     .about-row {
         margin: 5rem;
     }
-
-    .photos-group {
-        margin: -5rem 30rem 5rem 30rem;
+    .photo-group {
+        margin: 1rem 3rem;
+    }
+    .service-icon-m {
+        margin-left: 69rem;
+        margin-top: -2rem;
     }
 }
 
-@media screen and (max-width: 1200px) {
+@media screen and (max-width: 1199px) {
     .white, .breadcrumb {
         margin-left: 15rem;
     }
@@ -71,30 +72,28 @@
     .header-paragraph {
         font-size: 20px;
         padding: 0 10rem 0 10rem;
-
     }
     .logo {
         height: auto;
         max-width: 100%;
         margin: 15px 0 20px 0;
     }
-
     .about-header {
         font-size: 42px;
         margin: 10rem 0 10rem 0;
-
     }
-
     .about-row {
         margin: 5rem;
     }
-
-    .photos-group {
-        margin: -5rem 30rem 5rem 30rem;
+    .photo-group {
+        margin: 1rem 2rem;
     }
-
     .jessica-size {
         font-size: 1.9rem;
+    }
+    .service-icon-m {
+        margin-left: 54rem;
+        margin-top: -2rem;
     }
 }
 
@@ -109,32 +108,30 @@
         font-size: 20px;
         padding: 0 8rem 0 8rem;
     }
-
     .logo {
         height: auto;
         max-width: 100%;
         margin: 15px 0 20px 0;
     }
-
     .about-header {
         font-size: 35px;
         margin: 15rem 0 15rem 0;
     }
-
     .about-row {
         margin: 5rem;
     }
-
-    .photos-group {
-        margin: -5rem 30rem 5rem 30rem;
+    .photo-group {
+        margin: 1rem 2rem;
     }
-
     .h4-size {
         font-size: 1.1rem;
     }
-
     .profession-size {
         font-size: 0.96rem;
+    }
+    .service-icon-m {
+        margin-left: 34rem;
+        margin-top: -2rem;
     }
 }
 
@@ -148,40 +145,42 @@
     .header-paragraph {
         font-size: 17px;
         padding: 0 5rem 0 5rem;
-
     }
     .logo {
         height: auto;
         max-width: 100%;
         margin: 15px 0 20px 0;
     }
-
     .about-header {
         font-size: 30px;
         margin: 3rem 0 3rem 0;
     }
-
     .about-row {
         margin: 1rem;
     }
-
-    .photos-group {
-        margin: 2.5rem 11rem;
+    .photo-group {
+        margin: 1rem 1.5rem;
     }
-
     .h4-size {
         font-size: 1.3rem;
     }
-    
     .profession-size {
         font-size: 0.94rem;
     }
-
     .jessica-size {
         font-size: 1.2rem;
-
     }
-  
+    .service-icon-m {
+        margin-left: 19rem;
+        margin-top: -2rem;
+    }
+}
+
+@media screen and (max-width: 534px) {
+    .service-icon-m {
+        margin-left: 13rem;
+        margin-top: -2rem;
+    }
 }
 
 @media screen and (max-width: 468px) {
@@ -194,25 +193,30 @@
     .header-paragraph {
         font-size: 12px;
         padding: 0 3rem 0 3rem;
-
     }
     .logo {
         height: auto;
         max-width: 100%;
         margin: 0 0 20px 0;
     }
-
     .about-header {
         font-size: 25px;
         margin: 1.5rem 0 1.5rem 0;
     }
-
-    .photos-group {
-        margin: 2.5rem 5rem;
+    .photo-group {
+        margin: 0.5rem 1rem;
     }
-
     .h4-size {
         font-size: 1rem;
+    }
+    .service-icon-m {
+        margin: 1rem 0 1rem 1.5rem;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .service-icon-m {
+        margin: 1rem 0 1rem 0;
     }
 }
 
@@ -226,51 +230,6 @@
 
 .register {
     margin: 20px 0 20px 0;
-}
-
-.social-share__list {
-    list-style: none;
-    display: flex;
-}
-
-.social-share__item {
-    margin: 0 7px 10px 7px;
-}
-
-.social-share__facebook {
-    width: 64px;
-    height: 32px;
-}
-
-.social-share__facebook svg {
-    fill: rgb(18, 18, 124);
-}
-
-.social-share__twitter {
-    width: 32px;
-    height: 32px;
-}
-
-.social-share__twitter svg {
-    fill: rgb(0, 162, 255);
-}
-
-.social-share__whatsapp {
-    width: 32px;
-    height: 32px;
-}
-
-.social-share__whatsapp svg {
-    fill: rgb(2, 202, 69);
-}
-
-.social-share__email {
-    width: 32px;
-    height: 32px;
-}
-
-.social-share__email svg {
-    fill: rgba(6, 90, 83, 0.404);
 }
 
 hr {
@@ -290,39 +249,278 @@ hr {
     background-size: cover;
 }
 
-.header-white {
-    color: #FFF;
-    padding: 10px;
+.parallax-img-cont {
+    background-image: url(../img/vika/picture-services.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
-.home-p2 {
-    padding-bottom: 0;
+.h-40 {
+    height: 40%;
 }
 
-.footer-padding {
-    padding-top: 3rem;
+.service-icon {
+    width: 43px;
+    height: 39px;
 }
 
-.ours {
-    font-weight: bold;
-    display: inline-block;
+.services-ul {
+    padding-top: 0.5rem;
+    padding-bottom: 1rem;
+}
 
+.ul-size {
+    color: black;
+}
+
+.flex-row li {
+    display: inline;
+    list-style-type: disc;
+}
+
+@media screen and (max-width: 2600px) {
+    .margin-top {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
+}
+
+@media screen and (max-width: 1800px) {
+    .margin-top {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
 }
 
 
-.our-inf {
-    line-height: 2rem;
+@media screen and (max-width: 1200px) {
+    .margin-top {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
 }
 
-.color-white {
-    color: white;
+
+
+@media screen and (max-width: 992px) {
+    .margin-top {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
 }
 
-.color-white:hover {
-    text-decoration: none;
-    color: lightgray;
+@media screen and (max-width: 768px) {
+    .margin-top {
+        margin-top: 8rem;
+        margin-bottom: 3rem;
+    }
 }
 
-.photo-group {
-padding: 0 5rem 5rem 5rem;
+    @media screen and (max-width: 468px) {
+        .margin-top {
+            margin-top: 5rem;
+            margin-bottom: 5rem;
+        }
+    }
+
+    .m-top {
+        margin-top: 5rem;
+    }
+
+    @media screen and (min-width: 768px) {
+.m-top { 
+    margin-top: 1rem;
 }
+    }
+
+    
+    
+    .m-bottom {
+        margin-bottom: 4rem;
+    }
+
+    .quote-services {
+        font-weight: bold;
+    }
+    .p-left {
+        padding-left: 0;
+    }
+    .banner {
+        background-image: url(../img/vika/bedroom-1.jpg);
+        background-color: rgba (0, 0, 0, 0.5);
+        width: 100%;
+        height: 50%;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    @media screen and (max-width: 992px) {
+        .banner {
+            height: 50%;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .banner {
+            height: 50%;
+        }
+    }
+    @media screen and (max-width: 765px) {
+        .banner {
+            height: 70%;
+        }
+    }
+
+
+    @media screen and (max-width: 468px) {
+        .banner {
+            height: 65%;
+        }
+    }
+
+    @media screen and (max-width: 410px) {
+        .banner {
+            height: 70%;
+        }
+    }
+
+    .white-1 {
+        color: white;
+    }
+    @media screen and (max-width: 2600px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 36rem;
+            padding-left: 36rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .ul-size {
+            font-size: 18px;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 1800px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 14rem;
+            padding-left: 16rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .ul-size {
+            font-size: 16px;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 1400px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 4rem;
+            padding-left: 7rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .ul-size {
+            font-size: 16px;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 1200px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 3rem;
+            padding-left: 6rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    @media screen and (max-width: 992px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 3rem;
+            padding-left: 6rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .ul-size {
+            font-size: 12px;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 768px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 3rem;
+            padding-left: 5rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+        .ul-size {
+            font-size: 12px;
+            color: black;
+            margin-top: 0;
+            margin-bottom: 1rem;
+        }
+    }
+    @media screen and (max-width: 468px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 2rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    @media screen and (max-width: 300px) {
+        .container-row3 {
+            width: 100%;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            margin-right: auto;
+            margin-left: auto;
+        }
+    }
+    .padding-bottom {
+        padding-bottom: 2rem;
+    }
+    .header-white {
+        color: #FFF;
+        padding: 10px;
+    }
+    .home-p2 {
+        padding-bottom: 0;
+    }
+    .row5 {
+        width: 100%;
+        height: 50%;
+    }
+    .footer-padding {
+        padding-top: 3rem;
+    }
+    .ours {
+        font-weight: bold;
+        display: inline-block;
+    }
+    .our-inf {
+        line-height: 2rem;
+    }
+    .color-white {
+        color: white;
+    }
+    .color-white:hover {
+        text-decoration: none;
+        color: lightgray;
+    }
+    .margin-remove {
+        margin: 0.3rem 0;
+    }
