@@ -1138,7 +1138,7 @@ button,
   display: inline-block;
   font-size: 16px;
   border-radius: 3px;
-  margin: 5px;
+  margin: 5px 0;
 }
 
 .button-s {
@@ -1153,16 +1153,13 @@ button,
   font-weight: 200;
 }
 
-.botton:hover {
-  color: #fff !important;
-  background-color: var(--color-1, black);
-  border-color: var(--color-1, black);
-}
+
 
 button:hover {
   background-color: var(--color-1, black);
   color: white;
-  box-shadow: 3px 3px lightgrey;
+  box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23);
+  
 }
 
 .button-w-25 {
