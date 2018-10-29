@@ -438,6 +438,11 @@ hr {
     padding-left: 0;
 }
 
+.padding-left {
+    padding-left: 1rem;
+
+}
+
 .banner {
     background-image: url(../img/vika/bedroom-1.jpg);
     background-color: rgba (0, 0, 0, 0.5);
@@ -562,4 +567,39 @@ hr {
 .float {
     display: inline
     float: left;
+}
+
+.line-height {
+    line-height: 1.5;
+}
+
+.dark-grey {
+    color: #5b5b5b;
+}
+
+.small-size {
+    font-size: 77%;
+}
+
+.xs-size {
+    font-size: 75%;
+}
+
+.margin {
+    margin-top: -1.2rem;
+}
+
+.float {
+    float: left;
+}
+
+.description, 
+.facebook,
+.twitter {
+    float: left;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+.email {
+    width: 70%;
 }
