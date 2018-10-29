@@ -331,6 +331,10 @@ h1 .bordered::after {
 }
 
 /* Grid */
+.margin-lr-auto{
+  margin-left: auto;
+  margin-right: auto;
+}
 .w-25 {
   width: 25% ;
 }
