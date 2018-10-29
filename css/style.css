@@ -2379,6 +2379,21 @@ margin-bottom: 1rem;
   margin-bottom: 2rem;
   }
 
+  .m-v-3{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    }
+
+    .m-v-4{
+      margin-top: 4rem;
+      margin-bottom: 4rem;
+      }
+
+      .m-v-10{
+        margin-top: 10rem;
+        margin-bottom: 10rem;
+        }
+
 .p0{
   padding: 0;
 }
@@ -2400,6 +2415,21 @@ margin-bottom: 1rem;
   padding-bottom: 2rem;
 }
 
+
+.p-v-3{
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  }
+
+  .p-v-4{
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+    }
+
+    .p-v-10{
+      padding-top: 10rem;
+      padding-bottom: 10rem;
+      }
 /* Card */
 .card-desc {
   padding: 15px 5px 10px;
