@@ -2381,6 +2381,9 @@ margin:0;
   margin: 2rem;
 }
 
+.m2px{
+  margin:2px;
+}
 .m-v-1, .m-v-1 li{
 margin-top: 1rem;
 margin-bottom: 1rem;
