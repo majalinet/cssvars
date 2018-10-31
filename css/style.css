@@ -50,9 +50,8 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
 
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: lighter;
   line-height: 1.5;
-  color: #212529;
   text-align: justify;
   background-color: #fff;
 }
@@ -1802,6 +1801,19 @@ tr {
   grid-gap: 1px;
 }
 
+.masonry-container-2col {
+
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-auto-rows: auto;
+
+}
+
+.masonry-container-1col {
+
+  grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+  grid-auto-rows: auto;
+
+}
 .masonry-large,
 .masonry-medium,
 .masonry-small {
