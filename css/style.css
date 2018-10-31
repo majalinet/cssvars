@@ -50,7 +50,7 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
 
   font-size: 1rem;
-  font-weight: lighter;
+  font-weight: 300;
   line-height: 1.5;
   text-align: justify;
   background-color: #fff;
@@ -230,6 +230,11 @@ p {
 .font-weight-200
 {
   font-weight:200;
+}
+
+.font-weight-400
+{
+  font-weight:400;
 }
 
 /* fancy title */
@@ -1083,6 +1088,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17px;
+  font-weight: 400;
   border-left: 7px solid var(--color-1, black);
 }
 
