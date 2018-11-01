@@ -272,9 +272,7 @@
     .banner {
         height: 50%;
     }
-    .contact-align {
-        text-align: center;
-    }
+   
     .list-item {
         padding-top: 0;
         padding-bottom: 0;
@@ -426,7 +424,7 @@ hr {
     display: inline;
 }
 
-а .m-bottom {
+.m-bottom {
     margin-bottom: 4rem;
 }
 
@@ -565,7 +563,7 @@ hr {
 }
 
 .float {
-    display: inline
+    display: inline;
     float: left;
 }
 
@@ -602,4 +600,47 @@ hr {
 
 .email {
     width: 70%;
+}
+
+.office {
+    background-image: url(../img/vika/office.jpg);
+    background-color: rgba (0, 0, 0, 0.5);
+    width: 100%;
+    height: 50%;  
+    background-position: top;
+    background-repeat: no-repeat;
+    background-size: cover;  
+} 
+
+.m-left {
+    margin-left: 0;
+}
+
+.margin {
+    margin: 2rem 0 3rem 0;
+}
+
+.bordered-bottom {
+    border-bottom: 3px solid #dee2e6;
+    border-color: var(--color-1, black);
+    display: inline;
+    padding: 0.4rem;
+}
+
+.background {
+    background-color: #ccc;
+    color: black;
+}
+
+.m-top {
+    margin-top: 1rem;
+}
+
+.margin-x {
+    margin-left: 0.5rem;
+    margin-right: 1rem;
+}
+
+.icon-s {
+    display: block;
 }
