@@ -1433,6 +1433,11 @@ tr {
   border: 1px solid var(--danger, black);
 }
 
+.outline-light-grey {
+  background-color: white;
+  color: var(--color-grey, black);
+  border: 1px solid var(--light-grey, black);
+}
 /* Images */
 .img-responsive {
   max-width: 100%;
