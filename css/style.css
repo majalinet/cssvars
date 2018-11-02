@@ -40,6 +40,7 @@ html {
   --body-bg: #000;
   --body-color: #111;
   --light-grey:#f6f6f6;
+  --fontweight:300;
 }
 
 body {
@@ -50,9 +51,8 @@ body {
     "Segoe UI Symbol", "Noto Color Emoji";
 
   font-size: 1rem;
-  font-weight: 400;
+  font-weight: var(--fontweight,400);
   line-height: 1.5;
-  color: #212529;
   text-align: justify;
   background-color: #fff;
 }
@@ -233,6 +233,11 @@ p {
   font-weight:200;
 }
 
+.font-weight-400
+{
+  font-weight:400;
+}
+
 /* fancy title */
 .fancy-title.title-dotted-border {
   background: url(../img/fabric-dark.png) center repeat-x;
@@ -337,7 +342,7 @@ h1 .bordered::after {
 }
 
 /* Grid */
-.margin-lr-auto{
+.margin-left-right-auto{
   margin-left: auto;
   margin-right: auto;
 }
@@ -1084,6 +1089,7 @@ blockquote {
   padding: 10px 20px;
   margin: 0 0 20px;
   font-size: 17px;
+  font-weight: 400;
   border-left: 7px solid var(--color-1, black);
 }
 
@@ -1148,7 +1154,7 @@ button,
   display: inline-block;
   font-size: 16px;
   border-radius: 3px;
-  margin: 5px 0;
+  margin: 0.5rem 0.1rem
 }
 
 .button-s {
@@ -1428,6 +1434,11 @@ tr {
   border: 1px solid var(--danger, black);
 }
 
+.outline-light-grey {
+  background-color: white;
+  color: var(--color-grey, black);
+  border: 1px solid var(--light-grey, black);
+}
 /* Images */
 .img-responsive {
   max-width: 100%;
@@ -1802,6 +1813,19 @@ tr {
   grid-gap: 1px;
 }
 
+.masonry-container-2col {
+
+  grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+  grid-auto-rows: auto;
+
+}
+
+.masonry-container-1col {
+
+  grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
+  grid-auto-rows: auto;
+
+}
 .masonry-large,
 .masonry-medium,
 .masonry-small {
@@ -2369,6 +2393,9 @@ margin:0;
   margin: 2rem;
 }
 
+.m2px{
+  margin:2px;
+}
 .m-v-1, .m-v-1 li{
 margin-top: 1rem;
 margin-bottom: 1rem;
