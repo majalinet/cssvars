@@ -341,7 +341,7 @@ h1 .bordered::after {
 }
 
 /* Grid */
-.margin-lr-auto{
+.margin-left-right-auto{
   margin-left: auto;
   margin-right: auto;
 }
