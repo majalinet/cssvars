@@ -1,4 +1,4 @@
-# Agile CSS Frameworks
+# Agile CSS Framework
 
 ## About
 This project has one main purpose to use as fewer resources as possible
