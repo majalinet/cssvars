@@ -1,4 +1,4 @@
-# HTML-Template-Clean---No-Frameworks-
+# Agile CSS Frameworks
 
 ## About
 This project has one main purpose to use as fewer resources as possible
