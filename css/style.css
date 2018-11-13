@@ -2278,12 +2278,11 @@ margin: 3rem 0;
     
   }
   
-  .main-menu{width:100%; max-width:1200px; margin:0px auto; display:table; position:relative;}
+  .main-menu{width:100%; margin:0px auto; display:table; position:relative;}
   
   
-  .main-nav{width:100%; display:table; margin-bottom:50px;}
+  .main-nav{width:100%; display:table;}
   .logo {
-  width:200px;
     height:auto;
         position: absolute;  
       top: 0;  
