@@ -1,4 +1,4 @@
-# HTML-Template-Clean---No-Frameworks-
+# Agile CSS Framework
 
 ## About
 This project has one main purpose to use as fewer resources as possible
@@ -21,7 +21,6 @@ Most templates are built using Bootstrap, Jquery, Font awesome, and many other r
 * CSS validation https://jigsaw.w3.org/css-validator/
 * Cross-browsing https://www.browserling.com/
 * Mobile friendly https://search.google.com/test/mobile-friendly
-* Code formatting (Shift + Alt + F)
 ## Specifications
 * The grid system is using Flexbox - no float https://getbootstrap.com/docs/4.1/layout/grid/
 * CSS Variables are used for colors, size, rounded, padding, shadow on hover, bordered, top|half|bottom bordered
