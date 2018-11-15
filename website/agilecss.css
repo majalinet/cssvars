@@ -1398,21 +1398,6 @@ tr {
   background-color: var(--light-grey, grey);
 }
 
-.brightness-150{
-  -webkit-filter: brightness(150%); /* Safari 6.0 - 9.0 */
-  filter: brightness(150%);
-}
-
-.brightness-33 {
-  -webkit-filter: brightness(33%); /* Safari 6.0 - 9.0 */
-  filter: brightness(33%);
-}
-
-.brightness-66 {
-  -webkit-filter: brightness(66%); /* Safari 6.0 - 9.0 */
-  filter: brightness(66%);
-}
-
 /* outlined */
 .outline-color-1 {
   background-color: white;
