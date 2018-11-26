@@ -2687,6 +2687,9 @@ p{ font-size: 1.2rem;}
 }
 */
 
+.position-static {
+  position:static;
+}
 .position-fixed {
   position: fixed;
 }
