@@ -232,7 +232,7 @@ p {
   font-weight: 400;
 }
 
-.bold{
+.bold {
   font-weight: bold;
 }
 
@@ -1331,11 +1331,11 @@ tr {
 }
 
 .dark {
-  color: var(--color-dark, black);
+  color: var(--color-dark, rgba(41, 40, 40, 0.507));
 }
 
 .light-grey {
-  color: var(--light-grey, grey);
+  color: var(--light-grey, rgba(128, 128, 128, 0.808));
 }
 .white {
   color: white;
