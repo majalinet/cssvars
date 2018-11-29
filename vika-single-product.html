@@ -70,22 +70,32 @@
     <div class="row container m-v-2">
         <div class="row p0">
             <div class="col-md-5">
-                <img src="img/vika/single-product.jpg" class="img-responsive">
-            </div>
+                    <div id="gallery-box-photo-container" class="gallery-box-photo-container">
+                            <img id="main-image" src="img/vika/single-product.jpg"><br>
+                            <div class="gallery-box-thumbnail-image">
+                              <img src="img/vika/single-product.jpg" onclick="document.getElementById('main-image').src='img/vika/single-product.jpg'">
+                            </div>
+                            <div class="gallery-box-thumbnail-image">
+                              <img src="img/vika/single-product1.jpg" onclick="document.getElementById('main-image').src='img/vika/single-product1.jpg'">
+                            </div>
+                            <div class="gallery-box-thumbnail-image">
+                              <img src="img/vika/single-product2.jpg" onclick="document.getElementById('main-image').src='img/vika/single-product2.jpg'">
+                            </div>
+                        </div>            </div>
 
             <div class="col-md-5">
                 <div class="row">
-                    <div class="col-md-12">
+                    <div class="col-md-12 p-v-1">
                         <ul class="main-menu ">
                             <li class="d-inline-block">
-                                <h5 class="font-weight-400 old-info dark p0 m0">£55.00</h5>
+                                <h5 class="font-weight-400 old-info dark">£55.00</h5>
                             </li>
                             <li class="d-inline-block">
                                 <h4 class="font-weight-400 left">£42.00</h4>
                             </li>
 
-                            <li class="d-inline-block p2">
-                                <div>
+                            <li class="d-inline-block float-right">
+                                <div class="float-right">
                                     <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" class="icon-xs"
                                         role="img" viewBox="0 0 576 512">
                                         <path fill="#e80c7a" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z" />
@@ -235,7 +245,100 @@
     <div class="row container">
         <div class="row">
             <div class="col-md-12">
-                
+                <div class="container">
+                    <div class="tabscontainer">
+                        <div class="tabs">
+                            <input type="radio" name="tabs" id="tabone" checked="checked">
+                            <label for="tabone" class-="white">Description</label>
+                            <div class="tab">
+                                <p>Red printed dress, woven, round neck with a keyhole and buttoned closure at the
+                                    back, sleeveless, concealed zip up at left side seam, belt loops along waist with
+                                    slight gathers beneath, brand appliqu?? above left front hem, has an attached
+                                    lining.</p>
+                                <p>Comes with a white, slim synthetic belt that has a tang clasp.
+                                </p>
+                            </div>
+
+                            <input type="radio" name="tabs" id="tabtwo">
+                            <label for="tabtwo">Additional Information</label>
+                            <div class="tab">
+                                <table class="table table-striped">
+                                    <tbody>
+                                        <tr>
+                                            <td>Size</td>
+                                            <td>Small, Medium & Large</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Color</td>
+                                            <td>Red & White</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Waist</td>
+                                            <td>26 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Length </td>
+                                            <td>55 cm</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Chest</td>
+                                            <td>33 inches</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Fabric</td>
+                                            <td>Cotton, Silk & Synthetic</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Warranty</td>
+                                            <td>3 Months</td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+
+                            <input type="radio" name="tabs" id="tabthree">
+                            <label for="tabthree">Reviews (2)</label>
+                            <div class="tab">
+                                <div class="outline-light-grey rounded p1 m-v-1">
+                                    <p><img src="img/portfolio/portfolio-3.jpg" class="circle icon-m"><span class="h5">
+                                            John Doe</span> wrote <span class="badge"> on
+                                            5/2/2019</span>:
+                                    </p>
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum,
+                                        vero ipsum molestiae
+                                        minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae
+                                        nisi tempore
+                                        necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at
+                                        quaerat aliquid.
+                                    </p>
+                                    <p></p>
+                                </div>
+                                <div class="outline-light-grey rounded p1 m-v-1">
+                                    <p><img src="img/portfolio/portfolio-1.jpg" class="circle icon-m"><span class="h5">
+                                            Mary Jane</span> wrote <span class="badge"> on
+                                            5/2/2019</span>:
+                                            
+                                    </p>
+                                    
+                                    <p>
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum,
+                                        vero ipsum molestiae
+                                        minima odio quo voluptate illum excepturi quam cum voluptates doloribus quae
+                                        nisi tempore
+                                        necessitatibus dolores ducimus enim libero eaque explicabo suscipit animi at
+                                        quaerat aliquid.
+                                    </p>
+                                    <p></p>
+                                </div>
+                                <button class="m1 float-right">Add a Review</button>
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
                 <h5>Related Products</h5>
             </div>
         </div>
