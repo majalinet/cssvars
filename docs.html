@@ -68,9 +68,9 @@
         <nav>
           <ul>
             <li><a href="docs.html">Documentaion</a></li>
-            <li><a href="elements.html">UI Elements</a></li>
-            <li><a href="themes.html">Themes</a></li>
-            <li><a href="https://github.com/majalinet/Agile-CSS">GitHub</a></li>
+            <li><a href="elements/elements.html">UI Elements</a></li>
+            <li><a href="sections/sections.html">Sections</a></li>
+            <li><a href="themes/themes.html">Themes</a></li>
             <li>
               <a
                 href="https://github.com/majalinet/Agile-CSS"
@@ -102,8 +102,12 @@
           <ul class="colored-ul">
             <li><a href="#quick-start">Quick Start</a></li>
             <li><a href="#theming">Theming</a></li>
+            <li><a href="#grid">Grid</a></li>
             <li><a href="#layouts">Layouts</a></li>
             <li><a href="#typography">Typography</a></li>
+            
+            <li><a href="#positions">Positions and Displays</a></li>
+
           </ul>
         </div>
       </div>
@@ -136,7 +140,7 @@
         </div>
         <div class="m-v-4">
           <h3 id="theming">Theming</h3>
-          <p>Agile CSS Cramework comes a basic set of CSS variables:</p>
+          <p>Agile CSS Framework comes a basic set of CSS variables:</p>
           <script src="https://gist.github.com/majalinet/3bdbfb7596c9138e2959adb42a72b806.js"></script>
           <h5>Colors</h5>
           <p>
@@ -306,6 +310,95 @@
               <b>color-gradient</b> This text is important.
             </p>
           </div>
+        </div>
+        <div class="m-v-4">
+          <h3 id="grid">Grid</h3>
+          <p>
+            Agile CSS Framework has mobile-first flexbox grid, twelve column
+            system.
+          </p>
+          <ul class="colored-ul">
+            <li class="text-lowercase">
+              Create a div and add the class <b>row</b>.
+            </li>
+            <li>
+              Inside this div, create divisions and add the class <b>col</b>
+            </li>
+          </ul>
+
+          <div class="row m-v-1">
+            <div class="col outline-color-1">1 of 2 <b>.col</b></div>
+            <div class="col outline-color-1">2 of 2 <b>.col</b></div>
+          </div>
+          <script src="https://gist.github.com/majalinet/fc7935b863c6771c139f46c804a81003.js"></script>
+
+          <h5>Setting columns width</h5>
+          <p>add <b>col-</b> with a number from 1 to 12 to set the size</p>
+          <div class="row m-v-1">
+            <div class="col-8 outline-color-1">1 of 2 <b>.col-8</b></div>
+            <div class="col-4 outline-color-1">2 of 2 <b>.col-4</b></div>
+          </div>
+          <script src="https://gist.github.com/majalinet/05aff8ac35f77665fb0306cb3c727367.js"></script>
+
+          <h5>Setting columns different width for different devices</h5>
+          <p>
+            Use <b>col-sm- col-md- col-lg- col-xl-</b> with any number from 1 to
+          </p>
+
+          The sum in each row must be 12,
+          <ul class="colored-ul">
+            <li><b>-12</b> will make a single column</li>
+            <li><b> -6 -6</b> a rwo of two equal columns</li>
+            <li><b>-3 -6 -3</b> a row of three columns not equal in size</li>
+          </ul>
+
+          <p>
+            <b>Example:</b><br />
+            <b>col-sm-12</b> shows a full width column on small devices,
+            <b>col-md-6</b> shows 2 columns on tablets, <b>col-lg-3</b> shows 4
+            columns on desktop<br />
+            Please, resize the window to see the chanages on all devices.
+          </p>
+          <div class="row m-v-1">
+            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+              1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+              2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+              3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+            </div>
+            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+              4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+            </div>
+          </div>
+          <script src="https://gist.github.com/majalinet/74601b3161989c79bfc186f160468a41.js"></script>
+
+          <h5>Reorder columns on different devices</h5>
+          <p>
+            In smoe cases we need to show a column first on large devices but
+            last on small devices or visa versa
+          </p>
+
+          <ul class="colored-ul">
+            <li>
+              <b>lg-order-first</b> will show a column first on large devices
+            </li>
+            <li>
+              <b>lg-order-last</b> will show a column last on large devices
+            </li>
+          </ul>
+
+          <div class="row m-v-1">
+            <div class="col-sm-12 col-lg-8 outline-color-1">
+              1 of 2 <b>col-sm-12 col-lg-8</b>
+            </div>
+            <div class="col-sm-12 col-lg-4 outline-color-1 lg-order-first">
+              1 of 2 <b>first on large devices 2nd on small devices</b>
+            </div>
+          </div>
+          <script src="https://gist.github.com/majalinet/547aa2cac7d87581baed06f9642cc1b3.js"></script>
         </div>
         <div class="m-v-2">
           <h3 id="layouts">Layouts</h3>
@@ -514,32 +607,103 @@
           </div>
 
           <div class="m-v-4">
-          <h5>Code Block</h5>
-          <pre>
+            <h5>Code Block</h5>
+            <pre>
 <code>
 p { color: red; }
 body { background-color: #eee; }
 </code>
 </pre>
 
-<script src="https://gist.github.com/majalinet/08563d89a9a649db8f2e7343a6d5db36.js"></script>
+            <script src="https://gist.github.com/majalinet/08563d89a9a649db8f2e7343a6d5db36.js"></script>
+          </div>
+          <div class="m-v-4">
+            <h5>Quote</h5>
 
-</div>
-<div class="m-v-4">
-          <h5>Quote</h5>
+            <blockquote>
+              <p>
+                Great things in business are never done by one person. They're
+                done by a team of people.
+              </p>
+              <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
+            </blockquote>
 
-          <blockquote>
-            <p>
-              Great things in business are never done by one person. They're done by a team of people.
-            </p>
-            <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
-          </blockquote>
-
-          <script src="https://gist.github.com/majalinet/6df83dc3e8a62511597963bd4e83c7e8.js"></script>
+            <script src="https://gist.github.com/majalinet/6df83dc3e8a62511597963bd4e83c7e8.js"></script>
+          </div>
         </div>
-      </div>
-      </div>
-    </main>
+
+        <div class="m-v-4">
+          <h3 id="positions">Positions and Displays</h3>
+          <h5>Positions CSS Classes</h5>
+          <p>
+            Add these classes to change div position
+            <b>position-static, position-fixed, position-absolute,
+              position-relative, position-sticky</b><br>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">What are CSS Positions?</a>
+          </p>
+          <ul class="colored-ul">
+            <li>
+              To make fixed elements to the top of page add the classes
+              <b>position-fixed top-0</b>
+            </li>
+            <li>
+              To make fixed elements to the bottom of page add the classes
+              <b>position-fixed bottom-0</b>
+            </li>
+            <li>
+              To make fixed elements to the right or left of page add the
+              classes <b>left-0 right-0</b>
+            </li>
+            <li>
+              To make fixed elements (sticky) inside a dev
+              <b>position-sticky</b>
+            </li>
+          </ul>
+<div class="m-v-1">
+          <h5>Display CSS Classes</h5>
+          <p>
+            Add these classes to change div Display
+            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex, d-inline-flex</b><br>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display types?</a>
+          </p>
+            </div>
+            </div>
+
+
+            <div class="m-v-1">
+                <h5>Flex CSS Classes</h5>
+                <p>
+                  Add these classes to change flex div behaviour
+                  <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex, d-inline-flex</b><br>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display types?</a>
+                </p>
+                <ul class="colored-ul">
+                  <li>
+                   <b>Container Behaviour</b> add these classes <b>flex-row, flex-column, flex-row-reverse, flex-column-revers, flex-wrap, flex-nowrap, 
+                     flex-wrap-reverse, flex-fill</b>
+                  </li>
+                  <li>                  
+                  <b>Justify contents horizantaly</b> add these classes <b>justify-content-start, justify-content-end, justify-content-center, justify-content-between, 
+                      justify-content-around</b>
+                   </li>           
+                   <li>                  
+                      <b>Align items verticaly (horizantaly if flex-colomn)</b> add these classes <b>align-items-start, align-items-end, align-items-center, 
+                          align-items-baseline, align-items-stretch, align-items-stretch</b>
+                       </li>        
+                       <li>                  
+                          <b>Align content verticaly (of item)</b> add these classes <b>align-content-start, align-content-end, align-content-center, 
+                              align-content-between, align-content-around, align-content-stretch</b>
+                              <li>                  
+                                  <b>Align self verticaly (of item)</b> add these classes <b>align-self-auto, align-self-start, align-self-end, 
+                                      align-self-center, align-self-baseline, align-self-stretch</b>
+                                   </li>                               
+                           </li>                                                 
+                  </ul>
+                  </div>
+                  </div>
+
+
+      </main>
 
     <div class="center p2 color-1 bg-light-grey">
       <p class="color-1 small">

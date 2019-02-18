@@ -1056,9 +1056,17 @@ pre code {
   width: 64px;
   height: 64px;
 }
+.icon-ml {
+  width: 96px;
+  height: 96px;
+}
 .icon-lg {
   width: 128px;
   height: 128px;
+}
+.icon-xl {
+  width: 192px;
+  height: 192px;
 }
 
 .icon-color-1-bg {
@@ -2687,6 +2695,9 @@ p{ font-size: 1.2rem;}
 }
 */
 
+.position-static {
+  position:static;
+}
 .position-fixed {
   position: fixed;
 }
