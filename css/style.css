@@ -1642,10 +1642,7 @@ tr {
 }
 
 .carousel-small-img li img {
-  width: 3em;
   border-radius: 50%;
-  margin-left: -1.5em;
-  margin-right: 0.5em;
   vertical-align: middle;
 }
 .carousel li span.author {
@@ -1663,6 +1660,10 @@ tr {
   width: 104px; /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
   left: 50%;
   margin-left: -52px; /*adjusting the centering by applying a negative margin of half of the width*/
+}
+.carousel .slidesNavigation-2{
+  /* width: 50px; */
+  left:53%;
 }
 .carousel input {
   display: none;
