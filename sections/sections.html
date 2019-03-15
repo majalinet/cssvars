@@ -43,7 +43,8 @@
     />
     <meta name="theme-color" content="#FF530D" />
 
-    <link rel="stylesheet" href="http://agilecss.com/css/style.css" />
+    <!-- <link rel="stylesheet" href="http://agilecss.com/css/style.css" /> -->
+    <link rel="stylesheet" href="../css/style.css" />
   </head>
 
   <body>
@@ -140,10 +141,76 @@
       </div>
       <div class="col-lg-10 p-d-2">
 
+<h4>Styling Main Menu</h4>
+<p>Add classes <b>container</b>, <b>container-fluid</b> or nothing to change the menu's width</p>
+<p>Add classes background classses like<b>bg-grey</b> to change the menu's background color</p>
+<p>Add the class <b>menu-borderd</b> if you want the menu items to be bordered </p>
+<p>Add the class <b>rounded</b> to li items if you want it to be rpunded</p>
+<p>Change on hover action by adding the classes <b>nav-bg-hover</b>, <b>nav-top-border-hover</b>, and <b>nav-bottom-border-hover</b> </p>
+
+
+<div class="main-nav bordered-top">
+  <div class="main-menu">
+      <a href="#" id="logo1" target="_blank"><img src="../img/logo.png"
+              class="logo"></a>
+
+      <label for="toggle-1" class="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+
+
+      </label>
+      <input type="checkbox" id="toggle-1">
+
+      <nav>
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+
+</div>
+
+<script src="https://gist.github.com/majalinet/441ac087113b6046ba845d80f9e3664a.js"></script>
+
+
+<div class="main-nav bordered-top bg-light-grey">
+  <div class="main-menu">
+      <a href="#" id="logo1" target="_blank"><img src="../img/logo.png"
+              class="logo"></a>
+
+      <label for="toggle-1" class="toggle-menu">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+              <path d="M0 0h24v24H0z" fill="none" />
+              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+
+
+      </label>
+      <input type="checkbox" id="toggle-1">
+
+      <nav>
+          <ul>
+              <li><a href="#about">About</a></li>
+              <li><a href="#portfolio">Portfolio</a></li>
+              <li><a href="#services">Services</a></li>
+              <li><a href="#gallery">Gallery</a></li>
+              <li><a href="#contact">Contact</a></li>
+          </ul>
+      </nav>
+  </div>
+
+</div>
+
+<script src="https://gist.github.com/majalinet/f246f1035095814b10f5f51092ea553f.js"></script>
 
 
 
-            <div class="main-nav bordered-top">
+            <div class="main-nav bordered-top nav-bg-hover">
                     <div class="main-menu">
                         <a href="#" id="logo1" target="_blank"><img src="../img/logo.png"
                                 class="logo"></a>
@@ -172,7 +239,7 @@
             
                 <script src="https://gist.github.com/majalinet/c70f84ed6041b60a0347427274e484f2.js"></script>
             
-                <div class="main-nav bordered-bottom container-fluid">
+                <div class="main-nav nav-bg-hover bordered-bottom container-fluid">
                     <div class="main-menu menu-borderd">
                         <a href="#" target="_blank"><img src="../img/logo.png"
                                 class="logo"></a>
@@ -201,7 +268,7 @@
             
                 <script src="https://gist.github.com/majalinet/733f3820ff315d3dd60b37843daa4081.js"></script>
             
-                <div class="main-nav container">
+                <div class="main-nav nav-bg-hover container ">
                     <div class="main-menu menu-borderd">
                         <a href="#" target="_blank"><img src="../img/logo.png"
                                 class="logo"></a>
@@ -229,6 +296,67 @@
                 </div>
  
                 <script src="https://gist.github.com/majalinet/1e34c0f05bd6b7a2892e3673b03cd59e.js"></script>
+
+
+
+
+                <div class="main-nav bordered-top nav-bottom-border-hover">
+                  <div class="main-menu">
+                      <a href="#" id="logo1" target="_blank"><img src="../img/logo.png"
+                              class="logo"></a>
+                
+                      <label for="toggle-1" class="toggle-menu">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+                              <path d="M0 0h24v24H0z" fill="none" />
+                              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+                
+                
+                      </label>
+                      <input type="checkbox" id="toggle-1">
+                
+                      <nav>
+                          <ul>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#portfolio">Portfolio</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#gallery">Gallery</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                
+                </div>
+
+                <script src="https://gist.github.com/majalinet/2988f49fcff3a01a6f096b669f4234b0.js"></script>
+
+                <div class="main-nav bordered-bottom nav-top-border-hover">
+                  <div class="main-menu">
+                      <a href="#" id="logo1" target="_blank"><img src="../img/logo.png"
+                              class="logo"></a>
+                
+                      <label for="toggle-1" class="toggle-menu">
+                          <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+                              <path d="M0 0h24v24H0z" fill="none" />
+                              <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
+                
+                
+                      </label>
+                      <input type="checkbox" id="toggle-1">
+                
+                      <nav>
+                          <ul>
+                              <li><a href="#about">About</a></li>
+                              <li><a href="#portfolio">Portfolio</a></li>
+                              <li><a href="#services">Services</a></li>
+                              <li><a href="#gallery">Gallery</a></li>
+                              <li><a href="#contact">Contact</a></li>
+                          </ul>
+                      </nav>
+                  </div>
+                
+                </div>
+                
+                <script src="https://gist.github.com/majalinet/d51fcafd116c0daf3631b86a7df572ba.js"></script>
 
 
  </div>

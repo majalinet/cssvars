@@ -96,7 +96,7 @@ a {
 }
 
 a:hover {
-  color: #0056b3;
+  color: var(--grey, grey);
   text-decoration: underline;
 }
 
@@ -2413,15 +2413,30 @@ nav ul li:last-child {
 }
 nav ul li a {
   color: var(--color-1, black);
-  font-size: 18px;
-  padding: 20px;
+  font-size: 1.1rem;
+  padding: 1rem;
   display: inline-block;
-  transition: all 0.5s ease 0s;
+  /* transition: all 0.5s ease 0s; */
 }
 nav ul li a:hover {
-  background-color: var(--color-1, black);
-  color: white;
+  /* background-color: var(--color-1, black); */
+  /* color: white; */
+  color: var(--dark, grey);
+  /* font-size: 120%; */
+  /* font-weight: 400; */
 }
+.nav-bg-hover ul li a:hover {
+  background-color: var(--color-1, black); 
+  color: white;
+
+}
+.nav-top-border-hover ul li a:hover {
+ border-top:  2px solid var(--color-1, black); 
+}
+.nav-bottom-border-hover ul li a:hover {
+ border-bottom:  2px solid var(--color-1, black); 
+}
+
 nav ul li:hover {
   border-color: white;
 }
