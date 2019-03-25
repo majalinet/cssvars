@@ -1557,6 +1557,9 @@ tr {
   color: var(--color-grey, black);
   border: 1px solid var(--light-grey, black);
 }
+.invalid{
+  border: 1px solid var(--danger, black);
+}
 /* Images */
 .img-responsive {
   max-width: 100%;
