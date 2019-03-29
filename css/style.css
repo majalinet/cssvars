@@ -2898,3 +2898,19 @@ p{ font-size: 1.2rem;}
 -moz-column-rule: 1px solid var(--grey,black);
 column-rule: 1px solid var(--grey,black);
 }
+
+.opacity1{
+  opacity : 1;
+}
+.opacity09{
+  opacity : 0.9;
+}
+.opacity08{
+  opacity : 0.8;
+}
+.opacity05{
+  opacity : 0.5;
+}
+.opacity03{
+  opacity : 0.3;
+}
