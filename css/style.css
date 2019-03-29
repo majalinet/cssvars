@@ -1557,6 +1557,9 @@ tr {
   color: var(--color-grey, black);
   border: 1px solid var(--light-grey, black);
 }
+.invalid{
+  border: 1px solid var(--danger, black);
+}
 /* Images */
 .img-responsive {
   max-width: 100%;
@@ -2894,4 +2897,20 @@ p{ font-size: 1.2rem;}
 -webkit-column-rule: 1px solid var(--grey,black);
 -moz-column-rule: 1px solid var(--grey,black);
 column-rule: 1px solid var(--grey,black);
+}
+
+.opacity1{
+  opacity : 1;
+}
+.opacity09{
+  opacity : 0.9;
+}
+.opacity08{
+  opacity : 0.8;
+}
+.opacity05{
+  opacity : 0.5;
+}
+.opacity03{
+  opacity : 0.3;
 }
