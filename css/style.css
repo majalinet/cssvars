@@ -1129,10 +1129,66 @@ pre code {
 .icon-color-2-fill {
   fill: var(--color-2, red);
 }
+.icon-danger-bg {
+  background-color: var(--danger, red);
+  fill: white;
+}
+
+.icon-danger-fill {
+  fill: var(--danger, red);
+}
+.icon-light-gret-bg {
+  background-color: var(--light-grey, lightgray);
+  fill: white;
+}
+
+.icon-light-grey-fill {
+  fill: var(--light-grey, lightgray);
+}
+
+
+.icon-dark-fill {
+  fill: var(--dark, grey);
+}
+.icon-dark-bg {
+  background-color: var(--dark, grey);
+  fill: white;
+}
+
+.icon-info-fill {
+  fill: var(--info, blue);
+}
+
+.icon-info-bg {
+  background-color: var(--info, blue);
+  fill: white;
+}
+.icon-success-fill {
+  fill: var(--success, green);
+}
+
+.icon-success-bg {
+  background-color: var(--success, green);
+  fill: white;
+}
 
 .icon-box {
   display: inline-block;
   padding: 0.5rem;
+}
+
+/* z-index */
+.z-index-1{
+  z-index: 1;
+}
+.z-index-2{
+  z-index: 2;
+}
+.z-index--1{
+  z-index: -1;
+}
+.z-index--2{
+  z-index: -2;
 }
 
 /*dividers */
