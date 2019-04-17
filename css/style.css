@@ -1460,6 +1460,11 @@ tr {
   color: white;
 }
 
+.bg-white {
+  background-color: var(--dark, white);
+  color: black;
+}
+
 .bg-light-grey,
 .bg-lite-grey {
   background-color: var(--light-grey, grey);
