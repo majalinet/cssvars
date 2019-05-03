@@ -1028,7 +1028,7 @@ pre code {
   position: relative;
   top: 0;
   left: 0;
-  pointer-events:none;
+  pointer-events: none;
 }
 
 .cont {
@@ -1346,6 +1346,10 @@ tr {
 
 .dark {
   color: var(--color-dark, rgba(41, 40, 40, 0.507));
+}
+
+.grey {
+  color: var(--grey, rgba(204, 204, 204, 1));
 }
 
 .light-grey {
