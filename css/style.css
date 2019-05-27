@@ -84,6 +84,10 @@ blockquote {
   font-size: 80%;
 }
 
+.extra-small {
+  font-size: 70%;
+}
+
 a {
   color: var(--color-1, black);
   text-decoration: none;
@@ -2590,6 +2594,10 @@ nav ul li:hover {
   margin: 0;
 }
 
+.m05 {
+  margin: 0.5rem;
+}
+
 .m1 {
   margin: 1rem;
 }
@@ -2604,6 +2612,11 @@ nav ul li:hover {
 
 .m2px {
   margin: 2px;
+}
+
+.m-v-05 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
 
 .m-v-1, .m-v-1 li {
@@ -2629,6 +2642,11 @@ nav ul li:hover {
 .m-v-10 {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+.m-h-05 {
+  margin-right: 0.5rem;
+  margin-left: 0.5rem;
 }
 
 .m-h-1 {
