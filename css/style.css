@@ -23,6 +23,7 @@
   --color-2: #fe4d4c;
   --dark: #222225;
   --grey: #ccc;
+  --white: #fff;
   --danger: #bf3939;
   --info: #0abfa4;
   --success: #0ac977;
@@ -1097,6 +1098,10 @@ pre code {
   fill: var(--color-2, red);
 }
 
+.icon-grey-fill {
+  fill: var(--grey, red);
+}
+
 .icon-box {
   display: inline-block;
   padding: 0.5rem;
@@ -1528,6 +1533,12 @@ tr {
   background-color: white;
   color: var(--color-grey, black);
   border: 1px solid var(--light-grey, black);
+}
+
+.outline-white {
+  background-color: #344257;
+  color: var(--color-white, white);
+  border: 1px solid var(--white, black);
 }
 
 .invalid {
@@ -2758,6 +2769,20 @@ nav ul li:hover {
 
 .hover-shadow:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.hover-info:hover {
+  background-color: var(--info, black);
+}
+
+.noHover-white {
+  color: #fff !important;
+  text-decoration: none !important;
+}
+
+.noHover-dark {
+  color: #222225 !important;
+  text-decoration: none !important;
 }
 
 .line-height-17 {
