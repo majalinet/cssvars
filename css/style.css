@@ -2617,6 +2617,10 @@ nav ul li:hover {
   margin: 2rem;
 }
 
+.m3 {
+  margin: 3rem;
+}
+
 .m4 {
   margin: 4rem;
 }
@@ -2628,6 +2632,11 @@ nav ul li:hover {
 .m-v-05 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.m-v-07 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .m-v-1, .m-v-1 li {
