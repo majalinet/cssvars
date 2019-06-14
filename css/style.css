@@ -81,6 +81,10 @@ blockquote {
   margin: 0 0 1rem;
 }
 
+.smaller {
+  font-size: 95%;
+}
+
 .small {
   font-size: 80%;
 }
@@ -1480,7 +1484,7 @@ tr {
   filter: brightness(33%);
 }
 
-.brightness-66 {
+.brightness-66-hover:hover {
   -webkit-filter: brightness(66%);
   filter: brightness(66%);
 }
@@ -2691,6 +2695,10 @@ nav ul li:hover {
 
 .p0 {
   padding: 0;
+}
+
+.p05 {
+  padding: 0.5rem;
 }
 
 .p1 {
