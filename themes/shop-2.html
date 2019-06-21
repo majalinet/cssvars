@@ -33,17 +33,33 @@
 
 <body>
     <div class="row container">
-        <div class="col-md-5 p0">
-            <div class="p-v-1 text-uppercase small">
-                <a href="#" class="dark bold">usd</a>
-                <a href="#" class="dark m-h-1 bold">english</a>
-                <a href="#" class="dark bold">
-                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
-                        <path fill="#222225"
-                            d="M20,16V4H8V16H20M22,16A2,2 0 0,1 20,18H8C6.89,18 6,17.1 6,16V4C6,2.89 6.89,2 8,2H20A2,2 0 0,1 22,4V16M16,20V22H4A2,2 0 0,1 2,20V7H4V20H16Z" />
-                    </svg>
-                    compare (0)</a>
-            </div>
+        <div class="col-md-5 p0 justify-content-left">
+            <nav class="float-left">
+                <ul class="p-v-1 text-uppercase small row" style="list-style-type:none;">
+                    <li class="small m-h-05">
+                        <select class="form-control d-inline bold small" id="exampleFormControlSelect1">
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>RUB</option>
+                            <option>GBR</option>
+                        </select>
+                    </li>
+                    <li> <select class="form-control text-uppercase font-weight-400 d-inline bold"
+                            id="exampleFormControlSelect1">
+                            <option>English</option>
+                            <option>russian</option>
+                            <option>french</option>
+                        </select> </li>
+                    <li> <a href="#" class="dark bold d-inline smaller">
+                            <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                <path fill="#222225"
+                                    d="M20,16V4H8V16H20M22,16A2,2 0 0,1 20,18H8C6.89,18 6,17.1 6,16V4C6,2.89 6.89,2 8,2H20A2,2 0 0,1 22,4V16M16,20V22H4A2,2 0 0,1 2,20V7H4V20H16Z" />
+                            </svg>
+                            compare (0)
+                        </a>
+                    </li>
+                </ul>
+            </nav>
         </div>
         <div class="col-md-7 right p0">
             <div class="row justify-content-end">

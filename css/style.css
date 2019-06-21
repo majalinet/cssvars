@@ -2701,6 +2701,10 @@ nav ul li:hover {
   padding: 0.5rem;
 }
 
+.p07 {
+  padding: 0.7rem;
+}
+
 .p1 {
   padding: 1rem;
 }
@@ -2711,6 +2715,16 @@ nav ul li:hover {
 
 .p4 {
   padding: 4rem;
+}
+
+.p-v-05 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.p-v-07 {
+  padding-top: 0.7rem;
+  padding-bottom: 0.7rem;
 }
 
 .p-v-1 {
