@@ -23,7 +23,6 @@
   --color-2: #fe4d4c;
   --dark: #222225;
   --grey: #ccc;
-  --white: #fff;
   --danger: #bf3939;
   --info: #0abfa4;
   --success: #0ac977;
@@ -79,10 +78,6 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
-}
-
-.smaller {
-  font-size: 95%;
 }
 
 .small {
@@ -152,11 +147,11 @@ h1, .h1 {
 }
 
 h2, .h2 {
-  font-size: 3rem;
+  font-size: 2.6rem;
 }
 
 h3, .h3 {
-  font-size: 2.5rem;
+  font-size: 2.3rem;
 }
 
 h4, .h4 {
@@ -364,10 +359,6 @@ h1 .bordered::after {
 
 .h-100 {
   min-height: 100%;
-}
-
-.h-150 {
-  min-height: 150%;
 }
 
 .container {
@@ -1068,6 +1059,10 @@ pre code {
   height: 32px;
 }
 
+.icon-sm {
+  width: 48px;
+  height: 48px;
+}
 .icon-m {
   width: 64px;
   height: 64px;
@@ -1104,10 +1099,6 @@ pre code {
 
 .icon-color-2-fill {
   fill: var(--color-2, red);
-}
-
-.icon-grey-fill {
-  fill: var(--grey, red);
 }
 
 .icon-box {
@@ -1488,7 +1479,7 @@ tr {
   filter: brightness(33%);
 }
 
-.brightness-66-hover:hover {
+.brightness-66 {
   -webkit-filter: brightness(66%);
   filter: brightness(66%);
 }
@@ -1541,12 +1532,6 @@ tr {
   background-color: white;
   color: var(--color-grey, black);
   border: 1px solid var(--light-grey, black);
-}
-
-.outline-white {
-  background-color: #344257;
-  color: var(--color-white, white);
-  border: 1px solid var(--white, black);
 }
 
 .invalid {
@@ -2625,10 +2610,6 @@ nav ul li:hover {
   margin: 2rem;
 }
 
-.m3 {
-  margin: 3rem;
-}
-
 .m4 {
   margin: 4rem;
 }
@@ -2640,11 +2621,6 @@ nav ul li:hover {
 .m-v-05 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
-}
-
-.m-v-07 {
-  margin-top: 0.7rem;
-  margin-bottom: 0.7rem;
 }
 
 .m-v-1, .m-v-1 li {
@@ -2701,14 +2677,6 @@ nav ul li:hover {
   padding: 0;
 }
 
-.p05 {
-  padding: 0.5rem;
-}
-
-.p07 {
-  padding: 0.7rem;
-}
-
 .p1 {
   padding: 1rem;
 }
@@ -2724,11 +2692,6 @@ nav ul li:hover {
 .p-v-05 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
-}
-
-.p-v-07 {
-  padding-top: 0.7rem;
-  padding-bottom: 0.7rem;
 }
 
 .p-v-1 {
@@ -2804,20 +2767,6 @@ nav ul li:hover {
 
 .hover-shadow:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
-}
-
-.hover-info:hover {
-  background-color: var(--info, black);
-}
-
-.noHover-white {
-  color: #fff !important;
-  text-decoration: none !important;
-}
-
-.noHover-dark {
-  color: #222225 !important;
-  text-decoration: none !important;
 }
 
 .line-height-17 {
