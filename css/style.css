@@ -361,8 +361,9 @@ h1 .bordered::after {
   min-height: 100%;
 }
 
-
-
+.h-150 {
+  min-height: 150%;
+}
 
 .container {
   width: 100%;
