@@ -2690,6 +2690,11 @@ nav ul li:hover {
   margin-left: 4rem;
 }
 
+.m-h-7 {
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
 .p0 {
   padding: 0;
 }
@@ -2710,8 +2715,16 @@ nav ul li:hover {
   padding: 2rem;
 }
 
+.p3 {
+  padding: 3rem;
+}
+
 .p4 {
   padding: 4rem;
+}
+
+.p5 {
+  padding: 5rem;
 }
 
 .p-v-05 {
@@ -2737,6 +2750,21 @@ nav ul li:hover {
 .p-v-4 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.p-v-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.p-v-7 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.p-h-05 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .p-h-1 {
