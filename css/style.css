@@ -24,7 +24,7 @@
   --dark: #222225;
   --grey: #ccc;
   --danger: #bf3939;
-  --info: #0abfa4;
+  --info: #0a7dbf;
   --success: #0ac977;
   --body-bg: #000;
   --body-color: #111;
@@ -78,6 +78,10 @@ dd {
 
 blockquote {
   margin: 0 0 1rem;
+}
+
+.smaller {
+  font-size: 95%;
 }
 
 .small {
@@ -359,6 +363,10 @@ h1 .bordered::after {
 
 .h-100 {
   min-height: 100%;
+}
+
+.h-150 {
+  min-height: 150%;
 }
 
 .container {
@@ -2602,6 +2610,10 @@ nav ul li:hover {
   margin: 0.5rem;
 }
 
+.m07 {
+  margin: 0.7rem;
+}
+
 .m1 {
   margin: 1rem;
 }
@@ -2621,6 +2633,11 @@ nav ul li:hover {
 .m-v-05 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
+}
+
+.m-v-07 {
+  margin-top: 0.7rem;
+  margin-bottom: 0.7rem;
 }
 
 .m-v-1, .m-v-1 li {
@@ -2673,8 +2690,21 @@ nav ul li:hover {
   margin-left: 4rem;
 }
 
+.m-h-7 {
+  margin-right: 7rem;
+  margin-left: 7rem;
+}
+
 .p0 {
   padding: 0;
+}
+
+.p05 {
+  padding: 0.5rem;
+}
+
+.p07 {
+  padding: 0.7rem;
 }
 
 .p1 {
@@ -2685,8 +2715,16 @@ nav ul li:hover {
   padding: 2rem;
 }
 
+.p3 {
+  padding: 3rem;
+}
+
 .p4 {
   padding: 4rem;
+}
+
+.p5 {
+  padding: 5rem;
 }
 
 .p-v-05 {
@@ -2712,6 +2750,21 @@ nav ul li:hover {
 .p-v-4 {
   padding-top: 4rem;
   padding-bottom: 4rem;
+}
+
+.p-v-5 {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.p-v-7 {
+  padding-top: 7rem;
+  padding-bottom: 7rem;
+}
+
+.p-h-05 {
+  padding-right: 0.5rem;
+  padding-left: 0.5rem;
 }
 
 .p-h-1 {
