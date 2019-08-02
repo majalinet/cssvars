@@ -1071,6 +1071,7 @@ pre code {
   width: 48px;
   height: 48px;
 }
+
 .icon-m {
   width: 64px;
   height: 64px;
@@ -1540,6 +1541,12 @@ tr {
   background-color: white;
   color: var(--color-grey, black);
   border: 1px solid var(--light-grey, black);
+}
+
+.outline-color-white {
+  background-color: var(--color-2);
+  color: var(--color-grey, white);
+  border: 1px solid var(--white, white);
 }
 
 .invalid {
@@ -2606,6 +2613,10 @@ nav ul li:hover {
   margin: 0;
 }
 
+.m03 {
+  margin: 0.3rem;
+}
+
 .m05 {
   margin: 0.5rem;
 }
@@ -2658,6 +2669,11 @@ nav ul li:hover {
 .m-v-4 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.m-v-7 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .m-v-10 {
@@ -2727,6 +2743,10 @@ nav ul li:hover {
   padding: 5rem;
 }
 
+.p7 {
+  padding: 7rem;
+}
+
 .p-v-05 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2760,6 +2780,11 @@ nav ul li:hover {
 .p-v-7 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.p-h-03 {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
 }
 
 .p-h-05 {
