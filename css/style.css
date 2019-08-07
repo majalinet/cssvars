@@ -1429,6 +1429,11 @@ tr {
   color: white;
 }
 
+.bg-black {
+  background-color: var(--black, #000);
+  color: white;
+}
+
 .bg-grey {
   background-color: var(--grey, grey);
   color: white;
