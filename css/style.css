@@ -1071,6 +1071,7 @@ pre code {
   width: 48px;
   height: 48px;
 }
+
 .icon-m {
   width: 64px;
   height: 64px;
@@ -1428,6 +1429,11 @@ tr {
   color: white;
 }
 
+.bg-black {
+  background-color: var(--black, #000);
+  color: white;
+}
+
 .bg-grey {
   background-color: var(--grey, grey);
   color: white;
@@ -1542,6 +1548,12 @@ tr {
   border: 1px solid var(--light-grey, black);
 }
 
+.outline-color-white {
+  background-color: var(--color-2);
+  color: var(--color-grey, white);
+  border: 1px solid var(--white, white);
+}
+
 .invalid {
   border: 1px solid var(--danger, black);
 }
@@ -1651,7 +1663,7 @@ tr {
   display: block;
   list-style: none;
   text-align: center;
-  bottom: 1em;
+  bottom: 1rem;
   position: absolute;
   width: 104px;
   /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px marginleft + 6 px marginright) and there are 4 dots so 4x26=104 */
@@ -2606,6 +2618,10 @@ nav ul li:hover {
   margin: 0;
 }
 
+.m03 {
+  margin: 0.3rem;
+}
+
 .m05 {
   margin: 0.5rem;
 }
@@ -2658,6 +2674,11 @@ nav ul li:hover {
 .m-v-4 {
   margin-top: 4rem;
   margin-bottom: 4rem;
+}
+
+.m-v-7 {
+  margin-top: 7rem;
+  margin-bottom: 7rem;
 }
 
 .m-v-10 {
@@ -2727,6 +2748,10 @@ nav ul li:hover {
   padding: 5rem;
 }
 
+.p7 {
+  padding: 7rem;
+}
+
 .p-v-05 {
   padding-top: 0.5rem;
   padding-bottom: 0.5rem;
@@ -2760,6 +2785,11 @@ nav ul li:hover {
 .p-v-7 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.p-h-03 {
+  padding-right: 0.3rem;
+  padding-left: 0.3rem;
 }
 
 .p-h-05 {
@@ -2820,6 +2850,10 @@ nav ul li:hover {
 
 .hover-shadow:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.line-height-1 {
+  line-height: 1;
 }
 
 .line-height-17 {
