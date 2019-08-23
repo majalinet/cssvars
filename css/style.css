@@ -23,6 +23,7 @@
   --color-2: #fe4d4c;
   --dark: #222225;
   --grey: #ccc;
+  --white: #fff;
   --danger: #bf3939;
   --info: #0a7dbf;
   --success: #0ac977;
@@ -1108,6 +1109,10 @@ pre code {
 
 .icon-color-2-fill {
   fill: var(--color-2, red);
+}
+
+.icon-color-white-fill {
+  fill: var(--white, red);
 }
 
 .icon-box {
@@ -2842,6 +2847,10 @@ nav ul li:hover {
 
 .underline {
   text-decoration: underline;
+}
+
+.hover-white:hover {
+  background-color: var(--white, black);
 }
 
 .hover-grey:hover {
