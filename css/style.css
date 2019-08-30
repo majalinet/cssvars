@@ -242,9 +242,7 @@ p {
   margin-bottom: 30px;
 }
 
-.topmargin {
-  margin-top: 50px;
-}
+
 
 .fancy-title h1, .fancy-title h2, .fancy-title h3, .fancy-title h4, .fancy-title h5, .fancy-title h6 {
   position: relative;
@@ -1057,6 +1055,11 @@ pre code {
 }
 
 /* Icons */
+.icon-xxs {
+  width: 12px;
+  height: 12px;
+}
+
 
 .icon-xs {
   width: 16px;
@@ -2651,6 +2654,10 @@ nav ul li:hover {
   margin: 2px;
 }
 
+.topmargin {
+  margin-top: 50px;
+}
+
 .m-v-05 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -2689,6 +2696,11 @@ nav ul li:hover {
 .m-v-10 {
   margin-top: 10rem;
   margin-bottom: 10rem;
+}
+
+.m-h-03 {
+  margin-right: 0.3rem;
+  margin-left: 0.3rem;
 }
 
 .m-h-05 {
@@ -2860,6 +2872,7 @@ nav ul li:hover {
 .hover-shadow:hover {
   box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
 }
+
 
 .line-height-1 {
   line-height: 1;
