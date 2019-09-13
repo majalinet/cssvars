@@ -1481,6 +1481,11 @@ tr {
   filter: brightness(66%);
 }
 
+.brightness-66-hover:hover {
+  -webkit-filter: brightness(66%);
+  filter: brightness(66%);
+}
+
 .brightness-150-hover:hover {
   -webkit-filter: brightness(150%);
   filter: brightness(150%);
@@ -2802,6 +2807,16 @@ nav ul li:hover {
 .p-v-7 {
   padding-top: 7rem;
   padding-bottom: 7rem;
+}
+
+.p-v-10 {
+  padding-top: 10rem;
+  padding-bottom: 10rem;
+}
+
+.p-v-12 {
+  padding-top: 12rem;
+  padding-bottom: 12rem;
 }
 
 .p-h-03 {
