@@ -22,7 +22,7 @@ Most templates are built using Bootstrap, Jquery, Font awesome, and many other r
 * Cross-browsing https://www.browserling.com/
 * Mobile friendly https://search.google.com/test/mobile-friendly
 ## Specifications
-* The grid system is using Flexbox - no float https://getbootstrap.com/docs/4.1/layout/grid/
+* The grid system is using Flexbox - no float
 * CSS Variables are used for colors, size, rounded, padding, shadow on hover, bordered, top|half|bottom bordered
 
 ## Contents
