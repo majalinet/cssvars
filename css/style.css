@@ -391,7 +391,6 @@ h1 .bordered::after {
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
-    font-size: 16px;
   }
 }
 
