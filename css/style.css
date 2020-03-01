@@ -1,8 +1,8 @@
 /*!
- * EITO HTML Template v2.1 (https://www.europeitoutsourcing.com/)
- * Copyright 2011-2018 Kim Majali and The EITO HTML Template Authors
- * Copyright 2011-2018 Europe IT Outsourcing company.
- * Licensed under MIT (https://github.com/majalinet/HTML-Template-Clean---No-Frameworks-/blob/master/LICENSE)
+ * Agile CSS Framework (https://www.europeitoutsourcing.com/)
+ * Copyright 2018-2020 Kim Majali and Contributers
+ * Copyright 2018-2020 Europe IT Outsourcing company.
+ * Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
  */
 
 @-ms-viewport {
@@ -82,7 +82,7 @@ blockquote {
 }
 
 .smaller {
-  font-size: 95%;
+  font-size: 90%;
 }
 
 .small {
@@ -239,7 +239,7 @@ p {
 
 .fancy-title {
   position: relative;
-  margin-bottom: 30px;
+  margin-bottom: 1.8rem;
 }
 
 
@@ -249,7 +249,7 @@ p {
   display: inline-block;
   background-color: #fff;
   padding: 0 15px;
-  margin: 20px 0;
+  margin: 1.5rem 0;
 }
 
 .short-line {
@@ -323,8 +323,6 @@ h1 .bordered::after {
   text-align: center;
   background-color: var(--light-grey);
 }
-
-/* Grid */
 
 .margin-left-right-auto {
   margin-left: auto;
@@ -1732,9 +1730,9 @@ tr {
 /* Gallary Box*/
 
 .gallary-box {
-  line-height: 24px;
+  line-height: 1.5rem;
   margin: 0;
-  padding: 15px;
+  padding: 1rem;
 }
 
 .gallary-box img {
@@ -1748,7 +1746,7 @@ tr {
 }
 
 .gallery-box-photo-container .gallery-box-thumbnail-image>img {
-  width: 79px;
+  width: 5rem;
 }
 
 .gallery-box-photo-container img {
@@ -1759,8 +1757,8 @@ tr {
 .gallery-box-main-image {
   position: absolute;
   visibility: hidden;
-  top: 18px;
-  left: 18px;
+  top: 1rem;
+  left: 1rem;
   margin-right: 8px;
 }
 
@@ -1768,7 +1766,7 @@ tr {
   border: 1px solid #cccccc;
   padding: 10px;
   border-radius: 5px;
-  margin-bottom: 20px;
+  margin-bottom: 1rem;
 }
 
 .gallery-box-thumbnail-image {
@@ -2280,8 +2278,8 @@ body, html {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 1rem;
+  line-height: 1rem;
 }
 
 @keyframes fadeInAccordion {
