@@ -1,0 +1,372 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Lewhdk Guest Profile</title>
+    <link rel="stylesheet" href="css/agile.css">
+</head>
+
+<body>
+    <header>
+        <div class="main-nav nav-bottom-border-hover bordered-bottom">
+            <div class="main-menu">
+                <a href="index.html"><img src="img/lewhdk-logo-new.png" class="logo"></a>
+                <label for="toggle-1" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none" />
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+                    </svg>
+                </label>
+                <input type="checkbox" id="toggle-1" />
+                <nav>
+                    <ul>
+                        <li><a href="#">العربية</a></li>
+                        <li><a href="activities.html">Browse activities</a></li>
+                        <li><a href="add-activity.html">Host an activity</a></li>
+                        <li><a href="guest-profile.html">My account</a></li>
+                        <li><a href="messages.html" title="Messages">
+                            <svg viewBox="0 0 24 24" class="icon-xs img-responsive no-mobile">
+                            <path fill="#000000" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                        </svg>
+                        <span class="p-l-2 only-mobile">
+                            <svg viewBox="0 0 24 24" class="icon-xs img-responsive">
+                                <path fill="#fff" d="M20,8L12,13L4,8V6L12,11L20,6M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z" />
+                            </svg>
+                            Messages</span></a></li>                        
+                        <li><a href="index.html">Log out</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+    </header>
+
+    <!-- Messages -->
+    <script>
+        function openDialouge(dialougeIdToOpen){
+        for(i=1;i<4;i++){
+            Dialouge= "dialouge"+i;
+            document.getElementById(Dialouge).style.display = 'none';
+            console.log(i + " is hidden");
+
+            dialougeOpener = "dialougeOpener" + i;
+            dialougeOpenerElement = document.getElementById(dialougeOpener);
+            dialougeOpenerElement.classList.remove("brightness-95");
+        }
+
+        dialougeOpenerToHighlight = "dialougeOpener" + dialougeIdToOpen;
+        dialougeOpenerElement = document.getElementById(dialougeOpenerToHighlight);
+        dialougeOpenerElement.classList.add("brightness-95");
+        
+        OpenDialougeId= "dialouge"+dialougeIdToOpen;
+        document.getElementById(OpenDialougeId).style.display = 'block';
+
+        console.log(dialougeIdToOpen + " is shown");
+        }
+    </script>
+    <div class="row container topmargin bg-light-grey p-v-1 rounded">
+        <div class="col-3 p0 bg-white" style="overflow-y: scroll; height:500px;">
+            <div class="p05 outline-light-grey  brightness-95" onclick="openDialouge(1);" id="dialougeOpener1">
+                <div class="row">
+                    <div class="col-12 p0">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-lg-3">
+                                <img src="img/vika/u10.jpg" class="circle icon-sm">
+                            </div>
+                            <div class="col left">
+                                <p class="m0 p0 black font-weight-400">Admin</p>
+                                <p class="font-weight-400 dark italic small m0">May 23, 2020 at 11:44 am
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p05 outline-light-grey" onclick="openDialouge(2);" id="dialougeOpener2">
+                <div class="row">
+                    <div class="col-12 p0">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-lg-3">
+                                <img src="img/event-2-small.jpg" class="circle icon-sm">
+                            </div>
+                            <div class="col left">
+                                <p class="m0 p0 black font-weight-400">Riyadh Festival</p>
+                                <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="p05 outline-light-grey" onclick="openDialouge(3);" id="dialougeOpener3">
+                <div class="row">
+                    <div class="col-12 p0">
+                        <div class="row">
+                            <div class="col-4 col-md-4 col-lg-3">
+                                <img src="img/vika/u5.jpg" class="circle icon-sm">
+                            </div>
+                            <div class="col left">
+                                <p class="m0 p0 black font-weight-400">John Doe</p>
+                                <p class="font-weight-400 dark italic small m0">May 23, 2020 at 11:44 am
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-9">
+
+
+
+            <div class="tab p1 bg-light-grey" style="overflow-y: scroll; height:500px;">
+
+                <div id="dialouge1">
+                    <div class="p1 outline-light-grey rounded w-100 m-v-1">
+                        <div class="row">
+                            <div class="col-8 p0">
+                                <div class="row">
+                                    <div class="col-4 col-md-2 col-lg-1 p0">
+                                        <img src="img/vika/u10.jpg" class="circle icon-sm">
+                                    </div>
+                                    <div class="col left">
+                                        <p class="m0 p0 black font-weight-400">Admin</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-3 col-md-4">
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24" class="icon-s img-responsive hover-shadow">
+                                        <path fill="#ccc"
+                                            d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-v-1">
+                            <p class="font-weight-400 m0">Donec sed odio dui. Nulla vitae elit libero, a
+                                pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                                posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div>
+                    <div style="margin-left: 3rem; ">
+                        <div class="p1  rounded w-100 m-v-1 outline-light-grey">
+                            <div class="row">
+                                <div class=" p0 row justify-content-start">
+                                    <div class="row">
+                                        <div class="col-3 col-md-2 col-lg-1 p0">
+                                            <img src="img/vika/u3.jpg" class="circle icon-sm"></div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="m0 p0 black font-weight-400">Ahmed Doe</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2019 at 12:04 am
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="m-v-1">
+                                <p class="font-weight-400 m0">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dialouge2" style="display: none;">
+                    <div class="p1 outline-light-grey rounded w-100 ">
+                        <div class="row">
+                            <div class="col-8 p0">
+                                <div class="row">
+                                    <div class="col-4 col-md-2 col-lg-1 p0">
+                                        <img src="img/vika/u5.jpg" class="circle icon-sm">
+                                    </div>
+                                    <div class="col left">
+                                        <p class="m0 p0 black font-weight-400">John Doe</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-3 col-md-4">
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24" class="icon-s img-responsive hover-shadow">
+                                        <path fill="#ccc"
+                                            d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-v-1">
+                            <p class="font-weight-400 m0">Donec sed odio dui. Nulla vitae elit libero, a
+                                pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                                posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div>
+                    <div style="margin-left: 3rem; ">
+                        <div class="p1  rounded w-100 m-v-1 outline-light-grey">
+                            <div class="row">
+                                <div class=" p0 row justify-content-start">
+                                    <div class="row">
+                                        <div class="col-3 col-md-2 col-lg-1 p0">
+                                            <img src="img/vika/u3.jpg" class="circle icon-sm"></div>
+                                    </div>
+                                    <div class="col">
+                                        <p class="m0 p0 black font-weight-400">Ahmed Doe</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2019 at 12:04 am
+                                        </p>
+                                    </div>
+
+                                </div>
+
+                            </div>
+                            <div class="m-v-1">
+                                <p class="font-weight-400 m0">Nullam id dolor id nibh ultricies vehicula ut id elit.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="p1 outline-light-grey rounded w-100 ">
+                        <div class="row">
+                            <div class="col-8 p0">
+                                <div class="row">
+                                    <div class="col-4 col-md-2 col-lg-1 p0">
+                                        <img src="img/vika/u1.jpg" class="circle icon-sm">
+                                    </div>
+                                    <div class="col left">
+                                        <p class="m0 p0 black font-weight-400">Kim Doe</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-3 col-md-4">
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24" class="icon-s img-responsive hover-shadow">
+                                        <path fill="#ccc"
+                                            d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-v-1">
+                            <p class="font-weight-400 m0">Donec sed odio dui. Nulla vitae elit libero, a
+                                pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                                posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="dialouge3" style="display: none;">
+                    <div class="p1 outline-light-grey rounded w-100 m-v-1">
+                        <div class="row">
+                            <div class="col-8 p0">
+                                <div class="row">
+                                    <div class="col-4 col-md-2 col-lg-1 p0">
+                                        <img src="img/vika/u5.jpg" class="circle icon-sm">
+                                    </div>
+                                    <div class="col left">
+                                        <p class="m0 p0 black font-weight-400">John Doe</p>
+                                        <p class="font-weight-400 dark italic small m0">May 24, 2020 at 10:46 am
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right col-3 col-md-4">
+                                <a href="#">
+                                    <svg viewBox="0 0 24 24" class="icon-s img-responsive hover-shadow">
+                                        <path fill="#ccc"
+                                            d="M10,9V5L3,12L10,19V14.9C15,14.9 18.5,16.5 21,20C20,15 17,10 10,9Z" />
+                                    </svg>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="m-v-1">
+                            <p class="font-weight-400 m0">Donec sed odio dui. Nulla vitae elit libero, a
+                                pharetra augue. Nullam id dolor id nibh ultricies vehicula ut id elit. Integer
+                                posuere erat a ante venenatis dapibus posuere velit aliquet.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="row topmargin">
+                <div class="position-absolute bottom-0 bg-light-grey w-100  ">
+                    <form id="send-message">
+                        <div class="form-group row p-h-1">
+                            <textarea class="form-control col-9 m0" rows="1" id="comment"
+                                placeholder="Type a message"></textarea>
+                            
+                                <button type="submit" class="btn btn-primary col-3 m0">Send</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+
+
+
+        </div>
+
+    </div>
+    <!-- Messages End -->
+
+    <footer class=" p-t-2 line-height-17  bordered-top-2px">
+
+        <div class="row container">
+            <div class="col-md-6 col-lg-3">
+                <h5 class="h6">Company</h5>
+                <ul style="list-style-type:none">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="news.html">News</a></li>
+                    <li><a href="career.html">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="h6">Activities</h5>
+                <ul style="list-style-type:none">
+                    <li><a href="search.html">Search activities</a></li>
+                    <li><a href="activities.html">Browse activities</a></li>
+                    <li><a href="how-to-book.html">How to book</a></li>
+                    <li><a href="book-activity.html">Book an activity</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="h6">Host</h5>
+                <ul style="list-style-type:none">
+                    <li><a href="why-host.html">Why host</a></li>
+                    <li><a href="Responsibility.html">Responsibility</a></li>
+                    <li><a href="how-to-host.html">How to host</a></li>
+                    <li><a href="host-activity.html">Host an Activity</a></li>
+                </ul>
+            </div>
+            <div class="col-md-6 col-lg-3">
+                <h5 class="h6">Support</h5>
+                <ul style="list-style-type:none">
+                    <li><a href="faq.html">F.A.Q</a></li>
+                    <li><a href="contact-us.html">Contact us</a></li>
+                </ul>
+            </div>
+
+
+            <div class=" p-v-1 small row bordered-top-2px">
+                <p class="color-1"> <a href="#" id="logo" target="_blank"><img src="img/lewhdk-logo-new.png"
+                            style="height:40px"></a> © Copyright 2020. All rights reserved for Lewhdk inc. <a
+                        href="terms.html">Terms</a>. <a href="privacy.html">Privacy</a></p>
+                <p>
+                    <i><a href="#" target="_blank" rel="noopener"><img src="img/icons/facebook.svg"
+                                class="hover-shadow icon-ssm icon-box" alt=""></a></i>
+                    <i><a href="#" target="_blank" rel="noopener"><img src="img/icons/twitter.svg"
+                                class="hover-shadow icon-ssm icon-box" alt=""></a></i>
+                    <i><a href="#" target="_blank" rel="noopener"><img src="img/icons/instagram.svg"
+                                class="hover-shadow icon-ssm icon-box" alt=""></a></i>
+                </p>
+    </footer>
+
+</body>
+
+</html>

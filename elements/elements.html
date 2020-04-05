@@ -269,19 +269,20 @@
                   <strong></strong> <b>msg bg-color-1</b> Note! A meesgae with your brand color.</div>
               <div class="msg bg-color-2">
                   <b>msg bg-color-2</b> Note! A meesgae with your second brand color.</div>
-              <div class="msg bg-grey">
-                  <strong>msg bg-grey</strong> You successfully read this important alert message.</div>
               <div class="msg bg-info">
                   <strong>msg bg-info</strong> You can change the setting to meet your needs.</div>
-              <div class="msg bg-success">
+
+              <div class="msg bg-success" id="msg-1">
                   <strong>msg bg-success</strong> You successfully read this important alert message.
-                  <span class="float-right">x</span>
+                  <span class="float-right hover-underline" onclick="(function(){var x = document.getElementById('msg-1'); x.style.display = 'none'; return false;})();return false;"> x </span>
               </div>
-              <div class="msg bg-danger">
+
+              <div class="msg bg-danger" id="msg-2">
                   <strong>msg bg-danger</strong> Please be carefull.
-                  <span class="float-right">x</span>
+                  <span class="float-right hover-underline"  onclick="(function(){var x = document.getElementById('msg-2'); x.style.display = 'none'; return false;})();return false;">Close</span>
               </div>
-      </div>
+              <script src="https://gist.github.com/majalinet/58a2f920867237d82c3813078f6c51a4.js"></script>
+            </div>  
       
 <div class="m--v-4">
               <h3 id="icons">Icons</h3>

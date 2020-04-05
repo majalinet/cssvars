@@ -1196,12 +1196,17 @@ button, .button, .accordion .accordionBlock label, .tabs label {
   background-color: var(--color-1);
   border: none;
   color: white;
+  font-weight: 400;
   padding: 0.5rem 0.95rem;
   text-decoration: none;
   display: inline-block;
   font-size: 16px;
   border-radius: 3px;
   margin: 0.5rem 0.1rem;
+}
+
+.button{
+  padding: 0.37rem 0.95rem;
 }
 
 .button-s {
@@ -2173,6 +2178,9 @@ body, html {
 .right {
   text-align: right;
 }
+.justified {
+  text-align: justify;
+}
 
 .content-in-middle {
   position: relative;
@@ -2278,10 +2286,11 @@ body, html {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-size: 1rem;
-  line-height: 1rem;
+  font-weight: var(--fontweight, 200);
 }
-
+.accordionContent ul{
+  padding-left: 0;
+}
 @keyframes fadeInAccordion {
   0% {
     opacity: 0;
@@ -2473,10 +2482,13 @@ nav ul li a:hover {
 
 .nav-top-border-hover ul li a:hover {
   border-top: 2px solid var(--color-1, black);
+  margin-top:-2px;
 }
+
 
 .nav-bottom-border-hover ul li a:hover {
   border-bottom: 2px solid var(--color-1, black);
+  margin-bottom:-2px;
 }
 
 nav ul li:hover {
@@ -2858,6 +2870,10 @@ nav ul li:hover {
   text-decoration: underline;
 }
 
+.hover-underline:hover {
+  text-decoration: underline;
+}
+
 .hover-white:hover {
   background-color: var(--white, black);
 }
@@ -3078,4 +3094,17 @@ p{ font-size: 1.2rem;}
 
 .opacity03 {
   opacity: 0.3;
+}
+
+
+input[type="file"] {
+  display: none;
+}
+.custom-file-upload {
+  border: 1px solid var(--grey, #ccc) !important;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: var(--color-1, black) !important;
+  background-color: transparent !important;
 }
