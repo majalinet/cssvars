@@ -34,6 +34,16 @@
   --fontweight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+
+  --color-1-rgb:232, 12, 122;
+  --color-2-rgb:254, 77, 76;
+  --dark-rgb: 34, 34, 37;
+  --grey-rgb: 204, 204, 204;
+  --white-rgb: 255, 255, 255;
+  --danger-rgb: 191, 57, 57;
+  --info-rgb: 10, 125, 191;
+  --success-rgb: 10, 201, 119;
+
 }
 
 html {
@@ -1412,6 +1422,34 @@ tr {
   color: white;
 }
 
+.bga-color-1 {
+  background-color: rgba(var(--color-1-rgb), 0.1);
+  color: var(--color-1, black);
+}
+.bga-color-2 {
+  background-color: rgba(var(--color-2-rgb), 0.1);
+  color: var(--color-2, black);
+}
+.bga-info {
+  background-color: rgba(var(--info-rgb), 0.1);
+  color: var(--info, blue);
+}.bga-dark {
+  background-color: rgba(var(--dark-rgb), 0.1);
+  color: var(--dark, darkgray);
+}.bga-grey {
+  background-color: rgba(var(--grey-rgb), 0.1);
+  color: var(--grey, grey);
+}.bga-danger {
+  background-color: rgba(var(--danger-rgb), 0.1);
+  color: var(--danger, red);
+}
+.bga-success {
+  background-color: rgba(var(--success-rgb), 0.1);
+  color: var(--success, green);
+}
+
+
+
 .bg-color-gradient {
   color: white;
   background-color: #fc636b;
@@ -1423,6 +1461,7 @@ tr {
   background-color: var(--success, green);
   color: white;
 }
+
 
 .bg-info {
   background-color: var(--info, blue);
