@@ -3,6 +3,7 @@
 ## About
 This project has one main purpose to use as fewer resources as possible
 Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed.
+Please, visit https://agilecss.com
 
 ## Author
 * Kim Majali
