@@ -26,6 +26,25 @@ Most templates are built using Bootstrap, Jquery, Font awesome, and many other r
 * CSS Variables are used for colors, size, rounded, padding, shadow on hover, bordered, top|half|bottom bordered
 
 ## Contents
+Introduction
+
+    Quick Start
+    Theming
+    Grid
+    Layouts
+    Positions and Displays
+    Margin and Padding
+
+Typography
+
+    Headings & Displays
+    Contextual Text & Backgrounds
+    Text Formatting
+    Ordered & Unordered Lists
+    Code Block
+    Quote Block
+    Drop Caps & Columns
+    
 ### Base:
 * Head code
 * Variables, colors, size, rounded, padding, shadow on hover, bordered, top|half|bottom bordered
