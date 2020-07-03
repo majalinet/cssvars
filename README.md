@@ -20,16 +20,21 @@ Most templates are built using Bootstrap, Jquery, Font awesome, and many other r
 * Cross-browsing https://www.browserling.com/
 * Mobile friendly https://search.google.com/test/mobile-friendly
 ## Specifications
-### Pure HTML CSS
+#### Pure HTML CSS
 Everything you need without JS. It's built for SEO purposes so it's the lightest and most powerful
-### Fast Loading
+
+#### Fast Loading
 A small CSS file makes wonders. Just 9kb (minified + gzipped), other frameworks require 100's
-### Extendable with Variables
+
+#### Extendable with Variables
 Easy to set your colors and fonts. Set your brand colors & fonts, sizes, style with variables and ready classes
-### Responsive & Mobile first
+
+#### Responsive & Mobile first
 Much more than just a grid. Responsive images, videos, galleries, tables, menus, maps, frames, embeds
-### 100's of Free UI Elements
+
+#### 100's of Free UI Elements
 All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
+
 #### Free & Open Source
 Built with love to be used. Free framework, UI elements, & themes. Download, use, enjoy & share
 
