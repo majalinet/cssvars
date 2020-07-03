@@ -30,11 +30,9 @@ Easy to set your colors and fonts. Set your brand colors & fonts, sizes, style w
 Much more than just a grid. Responsive images, videos, galleries, tables, menus, maps, frames, embeds
 ### 100's of Free UI Elements
 All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
-### Free & Open Source
+#### Free & Open Source
 Built with love to be used. Free framework, UI elements, & themes. Download, use, enjoy & share
 
-* The grid system is using Flexbox - no float
-* CSS Variables are used for colors, size, rounded, padding, shadow on hover, bordered, top|half|bottom bordered
 
 ## Contents
     
