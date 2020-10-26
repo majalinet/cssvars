@@ -1,783 +1,1023 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, shrink-to-fit=no"
-    />
-    <meta name="description" content="page descrpition" />
-    <meta name="author" content="Kim Majali" />
-    <meta
-      name="copyright"
-      content="MIT license, Europe IT Outsourcing, https://www.europeitoutsourcing.com/"
-    />
 
-    <title>
-      Documentation | Agile CSS Framework and UI Kit Free & Open Source
-    </title>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="page descrpition" />
+  <meta name="author" content="Kim Majali" />
+  <meta name="copyright" content="MIT license, Europe IT Outsourcing, https://www.europeitoutsourcing.com/" />
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="img/favicons/manifest.json" />
-    <link rel="icon" href="favicon.ico" />
-    <meta
-      name="msapplication-config"
-      content="img/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#FF530D" />
+  <title>
+    Documentation | Agile CSS Framework and UI Kit Free & Open Source
+  </title>
 
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
+  <!-- Favicons -->
+  <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180" />
+  <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png" />
+  <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png" />
+  <link rel="manifest" href="img/favicons/manifest.json" />
+  <link rel="icon" href="favicon.ico" />
+  <meta name="msapplication-config" content="img/favicons/browserconfig.xml" />
+  <meta name="theme-color" content="#FF530D" />
 
-  <body>
-    <div class="main-nav  bordered-bottom container-fluid">
-      <div class="main-menu">
-        <a href="index.html" id="logo" alt="Agile CSS Framework and UI Kit"
-          ><img src="img/logo.png" class="logo"
-        /></a>
+  <!-- <link rel="stylesheet" href="css/style.css" /> -->
+  <link rel="stylesheet" href="css/agile.css" />
+</head>
 
-        <label for="toggle-1" class="toggle-menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon-color-1-fill icon-s"
-            viewbox="0 0 24 24"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </label>
-        <input type="checkbox" id="toggle-1" />
+<body>
+  <div class="main-nav  bordered-bottom container-fluid">
+    <div class="main-menu">
+      <a href="index.html" id="logo" alt="Agile CSS Framework and UI Kit"><img src="img/logo.png" class="logo" /></a>
 
-        <nav>
-          <ul>
-            <li><a href="docs.html">Documentaion</a></li>
-            <li><a href="elements/elements.html">UI Elements</a></li>
-            <li><a href="sections/sections.html">Sections</a></li>
-            <li><a href="themes/themes.html">Themes</a></li>
-            <li>
-              <a
-                href="https://github.com/majalinet/Agile-CSS"
-                class="outline-color-1"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </nav>
+      <label for="toggle-1" class="toggle-menu">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+          <path d="M0 0h24v24H0z" fill="none" />
+          <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+        </svg>
+      </label>
+      <input type="checkbox" id="toggle-1" />
+
+      <nav>
+        <ul>
+          <li><a href="docs.html">Documentaion</a></li>
+          <li><a href="elements/elements.html">UI Elements</a></li>
+          <li><a href="sections/sections.html">Sections</a></li>
+          <li><a href="themes/themes.html">Themes</a></li>
+          <li>
+            <a href="https://github.com/majalinet/Agile-CSS" class="outline-color-1">Download</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <header class="promo-box-s bg-light-grey">
+    <div class="container">
+      <h1 class>Documentaion</h1>
+
+      <ol class="breadcrumb">
+        <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+        <li class="breadcrumb-item active" aria-current="page">
+          Documentaion
+        </li>
+      </ol>
+    </div>
+  </header>
+
+  <main class="container-fluid row">
+    <div class="col-lg-2 outline-light-grey p-d-2">
+      <div class="position-sticky top-0">
+        <ul class="colored-ul">
+          <li><a href="#quick-start">Quick Start</a></li>
+          <li><a href="#theming">Theming</a></li>
+          <li><a href="#grid">Grid</a></li>
+          <li><a href="#layouts">Layouts</a></li>
+          <li><a href="#typography">Typography</a></li>
+
+          <li><a href="#positions">Positions and Displays</a></li>
+
+        </ul>
       </div>
     </div>
-
-    <header class="promo-box-s bg-light-grey">
-      <div class="container">
-        <h1 class>Documentaion</h1>
-
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
-          <li class="breadcrumb-item active" aria-current="page">
-            Documentaion
-          </li>
-        </ol>
-      </div>
-    </header>
-
-    <main class="container-fluid row">
-      <div class="col-lg-2 outline-light-grey p-d-2">
-        <div class="position-sticky top-0">
-          <ul class="colored-ul">
-            <li><a href="#quick-start">Quick Start</a></li>
-            <li><a href="#theming">Theming</a></li>
-            <li><a href="#grid">Grid</a></li>
-            <li><a href="#layouts">Layouts</a></li>
-            <li><a href="#typography">Typography</a></li>
-            
-            <li><a href="#positions">Positions and Displays</a></li>
-
-          </ul>
-        </div>
-      </div>
-      <div class="col-lg-10 p-d-2">
+    <div class="col-lg-10 p-d-2">
+      <p>
+        Agile CSS Framework, the small CSS file that makes wonders. 100's of
+        UI elements to build light-weight HTML pages fast and for free
+      </p>
+      <div>
+        <h3 id="quick-start">Quick Start</h3>
         <p>
-          Agile CSS Framework, the small CSS file that makes wonders. 100's of
-          UI elements to build light-weight HTML pages fast and for free
+          The best way to add Agile CSS Framework to your project is to
+          download the css file and link to it in your HTML page header
         </p>
+        <h5>Downlaod</h5>
+        Please click the link to
+        <a href="https://github.com/majalinet/Agile-CSS">download the CSS file</a>
+        <h5>CDN</h5>
+        <p>
+          Or use or CDN link, copy-paste the stylesheet into your head before
+          all other stylesheets to load our CSS.
+        </p>
+
+
+        <script src="https://gist.github.com/majalinet/3df6442c68c98da21694ee415372bf3c.js"></script>
+
+        <h5>Start Page</h5>
+        <p>Use this code to start a page from scarch</p>
+        <script src="https://gist.github.com/majalinet/5420cdb44f72b2faa6ac87cfddb82c44.js"></script>
+      </div>
+      <div class="m-v-4">
+        <h3 id="theming">Theming</h3>
+        <p>Agile CSS Framework comes a basic set of CSS variables:</p>
+        <script src="https://gist.github.com/majalinet/3bdbfb7596c9138e2959adb42a72b806.js"></script>
+        <h5>Colors</h5>
+        <p>
+          Change the colors variables to match your brand color, color-1 is
+          the primary color. You might need to add the class <b>white</b> to make the text in white color
+        </p>
+        <div class="row">
+          <div class="col bg-color-1 white m1 p2">bg-color-1</div>
+          <div class="col bg-color-2 white m1 p2">bg-color-2</div>
+          <div class="col bg-color-gradient white m1 p2">bg-color-gradient</div>
+
+          <div class="col bg-danger white m1 p2">bg-danger</div>
+        </div>
+        <div class="row">
+          <div class="col bg-success white m1 p2">bg-success</div>
+          <div class="col bg-info white m1 p2">bg-info</div>
+          <div class="col bg-grey m1 p2">bg-grey</div>
+          <div class="col bg-dark white m1 p2">bg-dark</div>
+        </div>
+
         <div>
-          <h3 id="quick-start">Quick Start</h3>
-          <p>
-            The best way to add Agile CSS Framework to your project is to
-            download the css file and link to it in your HTML page header
-          </p>
-          <h5>Downlaod</h5>
-          Please click the link to
-          <a href="https://github.com/majalinet/Agile-CSS"
-            >download the CSS file</a
-          >
-          <h5>CDN</h5>
-          <p>
-            Or use or CDN link, copy-paste the stylesheet into your head before
-            all other stylesheets to load our CSS.
-          </p>
-          <script src="https://gist.github.com/majalinet/3df6442c68c98da21694ee415372bf3c.js"></script>
 
-          <h5>Start Page</h5>
-          <p>Use this code to start a page from scarch</p>
-          <script src="https://gist.github.com/majalinet/5420cdb44f72b2faa6ac87cfddb82c44.js"></script>
-        </div>
-        <div class="m-v-4">
-          <h3 id="theming">Theming</h3>
-          <p>Agile CSS Framework comes a basic set of CSS variables:</p>
-          <script src="https://gist.github.com/majalinet/3bdbfb7596c9138e2959adb42a72b806.js"></script>
-          <h5>Colors</h5>
-          <p>
-            Change the colors variables to match your brand color, color-1 is
-            the primary color.
-          </p>
           <div class="row">
-            <div class="col bg-color-1 m1 p2">bg-color-1</div>
-            <div class="col bg-color-2 m1 p2">bg-color-2</div>
-            <div class="col bg-color-gradient m1 p2">bg-color-gradient</div>
-
-            <div class="col bg-danger m1 p2">bg-danger</div>
+            <div class="col bga-color-1 m1 p2">bga-color-1</div>
+            <div class="col bga-color-2 m1 p2">bga-color-2</div>
+            <div class="col bg-light-grey m1 p2">bg-light-grey</div>
+            <div class="col bga-danger m1 p2">bga-danger</div>
           </div>
+
           <div class="row">
-            <div class="col bg-success m1 p2">bg-success</div>
-            <div class="col bg-info m1 p2">bg-info</div>
-            <div class="col bg-grey m1 p2">bg-grey</div>
-            <div class="col bg-dark m1 p2">bg-dark</div>
+            <div class="col bga-success m1 p2 ">bga-success</div>
+            <div class="col bga-info m1 p2">bga-info</div>
+            <div class="col bga-grey m1 p2">bga-grey</div>
+            <div class="col bga-dark m1 p2">bga-dark</div>
           </div>
 
-          <div>
-            <div vlass="m-v-2">
-              <h5>Sizes</h5>
-              <ul class="colored-ul">
-                <li>
-                  Changing the values of <b>--font-size-mobile</b> and
-                  <b>--font-size-desktop</b> will change the font sizes of all
-                  text elements.
-                </li>
-                <li>That also will change margin and padding values.</li>
-                <li>
-                  Changing the values of <b>--fontweight</b> will set font
-                  weight of most of text elements.
-                </li>
-                <li>
-                  Changing the values of <b>--fontweight-heading</b> will set
-                  deafult font weight of h1-h6 elements and classes.
-                </li>
-              </ul>
-            </div>
-            <div class="m-v-2">
-              <h5>Margin and Padding</h5>
-              <p>
-                Add margin and padding classes to set the required space between
-                elements, please note that numbers are refering to rem which is
-                the default font size.
-              </p>
-              <ul class="colored-ul">
-                <li>
-                  Add the classes <b>m0, m03, m05, m07, m1, m2 , m4, m2px</b> to any element to
-                  increase or remove margin
-                </li>
-                <li>
-                  Add the classes <b>m-v-05, m-v-07, m-v-1, m-v-2, m-v-3, m-v-4, m-v-10</b> to
-                  any element to increase top and bottom margin
-                </li>
-                <li>
-                  Add the classes <b>m-h-03, m-h-05, m-h-1, m-h-2, m-h-3, m-h-4, m-h-7</b> to any
-                  element to increase left and right margin
-                </li>
-                <li>
-                  Add the classes <b>m-d-1, m-d-2</b> to any element to increase
-                  margin on desctop devices only
-                </li>
-                <li>
-                  Add the classes <b>p0, p05, p07, p1, p2 , p3, p4, p5, p6, p7</b> to any element to
-                  increase or remove padding
-                </li>
-                <li>
-                  Add the classes <b>p-v-05, p-v-1, p-v-2, p-v-3, p-v-4, p-v-10</b> to
-                  any element to increase top and bottom padding
-                </li>
-                <li>
-                  Add the classes <b>p-h-1, p-h-2, p-h-3, p-h-4</b> to any
-                  element to increase left and right padding
-                </li>
-                <li>
-                  Add the classes <b>p-d-1, p-d-2</b> to any element to increase
-                  padding on desctop devices only
-                </li>
-              </ul>
-            </div>
-          </div>
-          <div class="m-v-2">
-            <h5>Styles</h5>
-            <p>
-              Change the website style by applying the most popular styles using
-              ready CSS clases.
-            </p>
+          <h5 class="m-t-2">Background Colors on Hover</h5>
+          Background Color:</span> <b>bg-color-1-hover bg-color-2-hover bg-black-hover bg-white-hover bg-dark-hover
+            bg-danger-hover bg-success-hover bg-info-hover</b><br>
+          Color & Background Color:</span> <b>bga-color-1-hover bga-color-2-hover bga-black-hover bga-white-hover
+            bga-dark-hover bga-danger-hover bga-success-hover bga-info-hover</b>
 
-            <div class="row">
-              <div class="col">
-                <p>rounded</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive rounded"
-                  alt="alt text"
-                />
-              </div>
-              <div class="col">
-                <p>circle</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive circle"
-                  alt="alt text"
-                />
-              </div>
-              <div class="col">
-                <p>img-thumnail</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive img-thumbnail"
-                  alt="alt text"
-                />
-              </div>
-
-              <div class="col">
-                <p>rounded bordered</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive rounded bordered"
-                  alt="alt text"
-                />
-              </div>
-
-              <div class="col">
-                <p>circle bordered</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive circle bordered"
-                  alt="alt text"
-                />
-              </div>
-              <div class="col">
-                <p>img-thumnail bordered</p>
-                <img
-                  src="img/image.png"
-                  class="img-responsive img-thumnail bordered"
-                  alt="alt text"
-                />
-              </div>
-            </div>
-
-            <div class="row p-v-1">
-              <div class="col outline-color-1 p2 m1">outline-color-1</div>
-              <div class="col outline-color-2 p2 m1">outline-color-2</div>
-              <div class="col outline-color-info p2 m1">outline-color-info</div>
-              <div class="col outline-color-success p2 m1">
-                outline-color-success
-              </div>
-              <div class="col outline-color-dark p2 m1">outline-color-dark</div>
-              <div class="col outline-light-grey p2 m1">outline-light-grey</div>
-            </div>
-
-            <p>
-              Use the contextual text classes to provide "meaning through
-              colors":
-            </p>
-            <p class="color-1"><b>color-1</b> This text is important.</p>
-            <p class="color-2"><b>color-2</b> This text is important.</p>
-            <p class="success"><b>success</b> This text indicates success.</p>
-            <p class="info">
-              <b>info</b> This text represents some information.
-            </p>
-            <p class="danger"><b>danger</b> This text represents danger.</p>
-            <p class="color-gradient">
-              <b>color-gradient</b> This text is important.
-            </p>
-          </div>
-        </div>
-        <div class="m-v-4">
-          <h3 id="grid">Grid</h3>
-          <p>
-            Agile CSS Framework has mobile-first flexbox grid, twelve column
-            system.
-          </p>
-          <ul class="colored-ul">
-            <li class="text-lowercase">
-              Create a div and add the class <b>row</b>.
-            </li>
-            <li>
-              Inside this div, create divisions and add the class <b>col</b>
-            </li>
-          </ul>
-
-          <div class="row m-v-1">
-            <div class="col outline-color-1">1 of 2 <b>.col</b></div>
-            <div class="col outline-color-1">2 of 2 <b>.col</b></div>
-          </div>
-          <script src="https://gist.github.com/majalinet/fc7935b863c6771c139f46c804a81003.js"></script>
-
-          <h5>Setting columns width</h5>
-          <p>add <b>col-</b> with a number from 1 to 12 to set the size</p>
-          <div class="row m-v-1">
-            <div class="col-8 outline-color-1">1 of 2 <b>.col-8</b></div>
-            <div class="col-4 outline-color-1">2 of 2 <b>.col-4</b></div>
-          </div>
-          <script src="https://gist.github.com/majalinet/05aff8ac35f77665fb0306cb3c727367.js"></script>
-
-          <h5>Setting columns different width for different devices</h5>
-          <p>
-            Use <b>col-sm- col-md- col-lg- col-xl-</b> with any number from 1 to
-          </p>
-
-          The sum in each row must be 12,
-          <ul class="colored-ul">
-            <li><b>-12</b> will make a single column</li>
-            <li><b> -6 -6</b> a rwo of two equal columns</li>
-            <li><b>-3 -6 -3</b> a row of three columns not equal in size</li>
-          </ul>
+          <h5 class="m-t-2">Contextual Text</h5>
 
           <p>
-            <b>Example:</b><br />
-            <b>col-sm-12</b> shows a full width column on small devices,
-            <b>col-md-6</b> shows 2 columns on tablets, <b>col-lg-3</b> shows 4
-            columns on desktop<br />
-            Please, resize the window to see the chanages on all devices.
+            Use the contextual text classes to provide "meaning through
+            colors":
           </p>
-          <div class="row m-v-1">
-            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-              1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-              2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-              3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-            </div>
-            <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-              4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-            </div>
-          </div>
-          <script src="https://gist.github.com/majalinet/74601b3161989c79bfc186f160468a41.js"></script>
 
-          <h5>Reorder columns on different devices</h5>
+
+
           <p>
-            In smoe cases we need to show a column first on large devices but
-            last on small devices or visa versa
+            You can color texts using the ready classes
+            <b>color-1, color-2, info, success, danger, dark, black, white</b>
           </p>
-
-          <ul class="colored-ul">
-            <li>
-              <b>lg-order-first</b> will show a column first on large devices
-            </li>
-            <li>
-              <b>lg-order-last</b> will show a column last on large devices
-            </li>
-          </ul>
-
-          <div class="row m-v-1">
-            <div class="col-sm-12 col-lg-8 outline-color-1">
-              1 of 2 <b>col-sm-12 col-lg-8</b>
-            </div>
-            <div class="col-sm-12 col-lg-4 outline-color-1 lg-order-first">
-              1 of 2 <b>first on large devices 2nd on small devices</b>
-            </div>
-          </div>
-          <script src="https://gist.github.com/majalinet/547aa2cac7d87581baed06f9642cc1b3.js"></script>
-        </div>
-        <div class="m-v-2">
-          <h3 id="layouts">Layouts</h3>
-          <ul class="colored-ul">
-            <li>Add the class <b>container</b> to get boxed division</li>
-            <li>Add the class <b>container-fluid</b> to get wide division</li>
-            <li>Add <b>no classes</b> to get full width division</li>
-          </ul>
-          <p>Use the code below to get a page layout suits your needs</p>
-          <script src="https://gist.github.com/majalinet/93e3bcd8ccb818d286a45f8e71fa24cd.js"></script>
-        </div>
-        <div class="m-v-4">
-          <h3 id="typography">Typography</h3>
-          <ul class="colored-ul">
-            <li>
-              Changing the variables <b>color-1</b> will change the colors of
-              all Heading elements
-            </li>
-            <li>
-              You can color texts using the ready classes
-              <b>color-1, color-2, info, success, danger, dark, black, white</b>
-            </li>
-            <li>
-              You can highlight text using the ready classes
-              <b
-                >color-1, color-2, bg-color-gradient, bg-success, bg-info,
-                bg-danger, bg-dark, bg-light-grey</b
-              >
-            </li>
-            <li>
-              You can outine text using the ready classes
-              <b
-                >outline-color-1, outline-color-2, outline-color-dark,
-                outline-color-grey, outline-color-info, outline-color-success,
-                outline-color-danger, outline-light-grey</b
-              >
-            </li>
-            <li>
-              Add the classes <b>font-weight-200, font-weight-400, bold</b> to
-              change font weight
-            </li>
-            <li>
-              Add the classes to make test smaller <b><span class="smaller">smaller</span> <span class="small">small</span> <span class="extra-small">extra-small</span></b>
-            </li>
-          </ul>
-
-          <div class="m-v-4">
-            <h5>Headings</h5>
-            <p>
-              You use the elemnts h1-h6 or uses there classes any apply on any
-              other text element<b>h1, h2, h3, h4, h5, h6</b>
-            </p>
-            <h1>This is heading 1</h1>
-            <h2>This is heading 2</h2>
-            <h3>This is heading 3</h3>
-            <h4>This is heading 4</h4>
-            <h5>This is heading 5</h5>
-            <h6>This is heading 6</h6>
-
-            <div class="heading-box">
-              <h3 class="bordered">Bordered Title</h3>
-            </div>
-
-            <div class="heading-box">
-              <h3 class="bordered-top">Top Bordered Title</h3>
-            </div>
-
-            <div class="heading-box">
-              <h3 class="bordered-bottom">Bottom Bordered Title</h3>
-            </div>
-
-            <div class="fancy-title title-center title-dotted-border topmargin">
-              <h3>Fancy Title</h3>
-            </div>
-
-            <h1 class="short-line">Short line</h1>
-          </div>
-
-          <div class="m-v-4">
-            <h5>Display</h5>
-            <p>
-              You display classes for bigger text without giving semantic
-              meaning
-              <b
-                >display-1, display-2, display-3, display-4, display-5,
-                display-6</b
-              >
-            </p>
-            <p class="display-1">Display 1</p>
-            <p class="display-2">Display 2</p>
-            <p class="display-3">Display 3</p>
-            <p class="display-4">Display 4</p>
-            <p class="display-5">Display 5</p>
-            <p class="display-6">Display 6</p>
-            <p class="display-4 color-gradient">gradient effect</p>
-          </div>
-
-          <div class="m-v-4">
-            <h5>Contextual Backgrounds</h5>
-            <p>
-              You can color texts using the ready classes
-              <b>color-1, color-2, info, success, danger, dark, black, white</b
-              >. You can add the class <b>d-inline-block</b> to make text
-              display inline block
-            </p>
-            <p class="bg-color-1">bg-color-1 This text is important.</p>
-            <p class="bg-color-2">bg-color-2 This text is important.</p>
-            <p class="bg-color-gradient">
-              bg-color-gradient This text is important.
-            </p>
-            <p class="bg-success">bg-success This text indicates success.</p>
-            <p class="bg-info">
-              bg-info This text represents some information.
-            </p>
-            <p class="bg-danger with d-inline-block">
-              bg-danger This text represents danger with d-inline-block.
-            </p>
-            <p class="bg-grey black d-inline-block">
-              bg-grey black on grey with d-inline-block.
-            </p>
-            <p class="bg-dark d-inline-block">
-              bg-dark white on dark with d-inline-block.
-            </p>
-          </div>
-
-          <div class="m-v-4">
-            <h5>Contextual text</h5>
-            <p>
-              You can color texts using the ready classes
-              <b>color-1, color-2, info, success, danger, dark, black, white</b>
-            </p>
-            <p class="color-1">color-1 This text is important.</p>
-            <p class="color-2">color-2 This text is important.</p>
-            <p class="success">success This text indicates success.</p>
-            <p class="info">info This text represents some information.</p>
-            <p class="danger">danger This text represents danger.</p>
-            <p class="color-gradient">color-2 This text is important.</p>
-            <p class="dark">dark This text represents normal text.</p>
-          </div>
-
-          <div class="m-v-4">
-            <h5>Outlined text</h5>
-            <p>
-              You can outine text using the ready classes
-              <b
-                >outline-color-1, outline-color-2, outline-color-dark,
-                outline-color-grey, outline-color-info, outline-color-success,
-                outline-color-danger, outline-light-grey</b
-              >. You can add the class <b>d-inline-block</b> to make text
-              display inline block.
-            </p>
-            <p class="outline-color-1">outline-color-1</p>
-            <p class="outline-color-1 d-inline-block">
-              outline-color-1 with class d-inline-block
-            </p>
-            <p class="outline-color-2 d-inline-block">
-              outline-color-2 with class d-inline-block
-            </p>
-            <p class="outline-color-success d-inline-block">
-              outline-color-success with class d-inline-block
-            </p>
-            <p class="outline-color-info d-inline-block">
-              outline-color-info with class d-inline-block
-            </p>
-            <p class="outline-color-danger d-inline-block">
-              outline-color-danger with class d-inline-block
-            </p>
-            <p class="outline-color-dark d-inline-block">
-              outline-color-dark with class d-inline-block
-            </p>
-          </div>
-
-          <div class="m-v-4">
-            <h5>Text Formatting and Transformation</h5>
-            <p>Add the following classes on any text element</p>
+          <p class="color-1">color-1 This text is important.</p>
+          <p class="color-2">color-2 This text is important.</p>
+          <p class="success">success This text indicates success.</p>
+          <p class="info">info This text represents some information.</p>
+          <p class="danger">danger This text represents danger.</p>
+          <p class="color-gradient">color-2 This text is important.</p>
+          <p class="dark">dark This text represents normal text.</p><br>
+          <h5>Contextual text classes on hover</h5>
+          <p>You can add color-hover classes to change the color on hover, try hovering on the classes below<br>
+            <b class="color-1-hover">color-1-hover</b>
+            <b class="color-2-hover">color-2-hover</b>
+            <b class="success-hover">success-hover</b>
+            <b class="info-hover">info-hover</b>
+            <b class="danger-hover">danger-hover</b>
+            <b class="dark-hover">dark-hover</b>
+            <b class="white-hover">white-hover</b>
+            <b class="color-gradient-hover">color-gradient-hover</b></p>
+          <div vlass="m-v-2">
+            <h5 class="m-t-2">Sizes</h5>
             <ul class="colored-ul">
-              <li class="text-lowercase">
-                <b>text-lowercase</b> Lowercased text.
+              <li>
+                Changing the values of <b>--font-size-mobile</b> and
+                <b>--font-size-desktop</b> will change the font sizes of all
+                text elements.
+              </li>
+              <li>That also will change margin and padding values.</li>
+              <li>
+                Changing the values of <b>--fontweight</b> will set font
+                weight of most of text elements.
               </li>
               <li>
-                <b>text-uppercase</b>
-                <span class="text-uppercase">Uppercased text.</span>
+                Changing the values of <b>--fontweight-heading</b> will set
+                deafult font weight of h1-h6 elements and classes.
               </li>
-              <li>
-                <b>text-capitalize</b>
-                <span class="text-capitalize">Capitalized text.</span>
-              </li>
-              <li class="old-info">
-                <b>old-info</b> to get line through text.
-              </li>
-              <li class="overline"><b>overline</b> to get line over text.</li>
-              <li class="underline">
-                <b>underline</b> to get line under text.
-              </li>
-              <li class="italic"><b>italic</b> to get the text italic.</li>
-              <li>
-                Add the classes <b>font-weight-200, font-weight-400, bold</b> to
-                change font weight
-              </li>
-              <li class="letter-spacing-1">
-                Add classes
-                <b>letter-spacing-0, letter-spacing-1, letter-spacing-2</b> to
-                add and remove letter spacing.
-              </li>
-              <li class="left"><b>left</b> left aligned text.</li>
-              <li class="center"><b>center</b> centered text.</li>
-              <li class="right"><b>right</b> right aligned text.</li>
             </ul>
           </div>
-
-          <div class="m-v-4">
-            <h5>Code Block</h5>
-            <pre>
-<code>
-p { color: red; }
-body { background-color: #eee; }
-</code>
-</pre>
-
-            <script src="https://gist.github.com/majalinet/08563d89a9a649db8f2e7343a6d5db36.js"></script>
+          <div class="m-t-4">
+            <h5>Margin and Padding</h5>
+            <p>
+              Add margin and padding classes to set the required space between
+              elements, please note that numbers are refering to rem which is
+              the default font size.
+            </p>
+            <ul class="colored-ul">
+              <li>
+                Add the classes <b>m0, m03, m05, m07, m1, m2 , m4, m2px</b> to any element to
+                increase or remove margin
+              </li>
+              <li>
+                Add the classes <b>m-v-05, m-v-07, m-v-1, m-v-2, m-v-3, m-v-4, m-v-10</b> to
+                any element to increase top and bottom margin
+              </li>
+              <li>
+                Add the classes <b>m-h-03, m-h-05, m-h-1, m-h-2, m-h-3, m-h-4, m-h-7</b> to any
+                element to increase left and right margin
+              </li>
+              <li>
+                Add the classes <b>m-t-05, m-t-1, m-t-2, m-t-3, m-t-4, m-t-6, m-t-8</b> to any
+                element to increase top margin only
+              </li>
+              <li>
+                Add the classes <b>m-b-05, m-b-1, m-b-2, m-b-3, m-b-4, m-b-6, m-b-8</b> to any
+                element to increase bottom margin only
+              </li>
+              <li>
+                Add the classes <b>m-d-1, m-d-2</b> to any element to increase
+                margin on desctop devices only
+              </li>
+              <li>
+                Add the classes <b>p0, p05, p07, p1, p2 , p3, p4, p5, p6, p7</b> to any element to
+                increase or remove padding
+              </li>
+              <li>
+                Add the classes <b>p-v-05, p-v-1, p-v-2, p-v-3, p-v-4, p-v-10</b> to
+                any element to increase top and bottom padding
+              </li>
+              <li>
+                Add the classes <b>p-h-1, p-h-2, p-h-3, p-h-4</b> to any
+                element to increase left and right padding
+              </li>
+              <li>
+                Add the classes <b>p-t-05, p-t-1, p-t-2, p-t-3, p-t-4, p-t-6, p-t-8</b> to any
+                element to increase top padding only
+              </li>
+              <li>
+                Add the classes <b>p-b-05, p-b-1, p-b-2, p-b-3, p-b-4, p-b-6, p-b-8</b> to any
+                element to increase bottom padding only
+              </li>
+              <li>
+                Add the classes <b>p-d-1, p-d-2</b> to any element to increase
+                padding on desctop devices only
+              </li>
+            </ul>
           </div>
-          <div class="m-v-4">
-            <h5>Quote</h5>
+        </div>
+        <div class="m-t-4">
+          <h5>Styles</h5>
+          <p>
+            Change the website style by applying the most popular styles using
+            ready CSS clases.
+          </p>
 
-            <blockquote>
+          <div class="row">
+            <div class="col">
+              <p>rounded</p>
+              <img src="img/sunglasses.jpg" class="img-responsive rounded" alt="alt text" />
+            </div>
+            <div class="col">
+              <p>img-thumnail</p>
+              <img src="img/sunglasses.jpg" class="img-responsive img-thumbnail" alt="alt text" />
+            </div>
+            <div class="col">
+              <p>circle</p>
+              <img src="img/sunglasses.jpg" class="img-responsive circle" alt="alt text" />
+            </div>
+
+            <div class="col">
+              <p>top-circle</p>
+              <img src="img/sunglasses.jpg" class="img-responsive top-circle" alt="alt text" />
+            </div>
+
+            <div class="col">
+              <p>circle bordered</p>
+              <img src="img/sunglasses.jpg" class="img-responsive circle bordered" alt="alt text" />
+            </div>
+            <div class="col">
+              <p>img-thumnail bordered</p>
+              <img src="img/sunglasses.jpg" class="img-responsive img-thumnail bordered" alt="alt text" />
+            </div>
+          </div>
+
+          <div class="row p-v-1">
+            <div class="col outline-color-1 p2 m1">outline-color-1</div>
+            <div class="col outline-color-2 p2 m1">outline-color-2</div>
+            <div class="col outline-color-info p2 m1">outline-color-info</div>
+            <div class="col outline-color-success p2 m1">
+              outline-color-success
+            </div>
+            <div class="col outline-color-dark p2 m1">outline-color-dark</div>
+            <div class="col outline-light-grey p2 m1">outline-light-grey</div>
+          </div>
+
+
+
+        </div>
+      </div>
+      <div class="m-v-4">
+        <h3 id="grid">Grid</h3>
+        <p>
+          Agile CSS Framework has mobile-first flexbox grid, twelve column
+          system.
+        </p>
+        <ul class="colored-ul">
+          <li class="text-lowercase">
+            Create a div and add the class <b>row</b>.
+          </li>
+          <li>
+            Inside this div, create divisions and add the class <b>col</b>
+          </li>
+        </ul>
+
+        <div class="row m-v-1">
+          <div class="col outline-color-1">1 of 2 <b>.col</b></div>
+          <div class="col outline-color-1">2 of 2 <b>.col</b></div>
+        </div>
+        <script src="https://gist.github.com/majalinet/fc7935b863c6771c139f46c804a81003.js"></script>
+
+        <h5>Setting columns width</h5>
+        <p>add <b>col-</b> with a number from 1 to 12 to set the size</p>
+        <div class="row m-v-1">
+          <div class="col-8 outline-color-1">1 of 2 <b>.col-8</b></div>
+          <div class="col-4 outline-color-1">2 of 2 <b>.col-4</b></div>
+        </div>
+        <script src="https://gist.github.com/majalinet/05aff8ac35f77665fb0306cb3c727367.js"></script>
+
+        <h5>Setting columns different width for different devices</h5>
+        <p>
+          Use <b>col-sm- col-md- col-lg- col-xl-</b> with any number from 1 to
+        </p>
+
+        The sum in each row must be 12,
+        <ul class="colored-ul">
+          <li><b>-12</b> will make a single column</li>
+          <li><b> -6 -6</b> a rwo of two equal columns</li>
+          <li><b>-3 -6 -3</b> a row of three columns not equal in size</li>
+        </ul>
+
+        <p>
+          <b>Example:</b><br />
+          <b>col-sm-12</b> shows a full width column on small devices,
+          <b>col-md-6</b> shows 2 columns on tablets, <b>col-lg-3</b> shows 4
+          columns on desktop<br />
+          Please, resize the window to see the chanages on all devices.
+        </p>
+        <div class="row m-v-1">
+          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+            1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+            2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+            3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+          </div>
+          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
+            4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
+          </div>
+        </div>
+        <script src="https://gist.github.com/majalinet/74601b3161989c79bfc186f160468a41.js"></script>
+
+        <h5>Reorder columns on different devices</h5>
+        <p>
+          In smoe cases we need to show a column first on large devices but
+          last on small devices or visa versa
+        </p>
+
+        <ul class="colored-ul">
+          <li>
+            <b>lg-order-first</b> will show a column first on large devices
+          </li>
+          <li>
+            <b>lg-order-last</b> will show a column last on large devices
+          </li>
+        </ul>
+
+        <div class="row m-v-1">
+          <div class="col-sm-12 col-lg-8 outline-color-1">
+            1 of 2 <b>col-sm-12 col-lg-8</b>
+          </div>
+          <div class="col-sm-12 col-lg-4 outline-color-1 lg-order-first">
+            1 of 2 <b>first on large devices 2nd on small devices</b>
+          </div>
+        </div>
+        <script src="https://gist.github.com/majalinet/547aa2cac7d87581baed06f9642cc1b3.js"></script>
+      </div>
+      <div class="m-v-2">
+        <h3>Relative Width and Height</h3>
+        <ul class="colored-ul">
+          <li>Add the class <b>w-25 w-50 w-75 w-100 </b> to set the width of any div based on the user view</li>
+          <li>Add the class <b>h-25 h-50 h-75 h-100 h-150</b> to set the height of any div based on the user view</li>
+        </ul>
+        <div class="msg bga-color-1"><b>Note</b> these classes could be applied to any element</div>
+
+      </div>
+      <div class="m-t-4">
+        <h3 id="layouts">Layouts</h3>
+        <ul class="colored-ul">
+          <li>Add the class <b>container</b> to get boxed division</li>
+          <li>Add the class <b>container-fluid</b> to get a wide division</li>
+          <li>Add the class <b>container-half-fluid</b> to get a wide division but on screens bigger than 1200px
+            max-width will be 85%</li>
+          <li>Add <b>no classes</b> to get full width division</li>
+        </ul>
+        <p>Use the code below to get a page layout suits your needs</p>
+        <script src="https://gist.github.com/majalinet/93e3bcd8ccb818d286a45f8e71fa24cd.js"></script>
+      </div>
+      <div class="m-v-4">
+        <h3 id="typography">Typography</h3>
+        <ul class="colored-ul">
+          <li>
+            Changing the variables <b>color-1</b> will change the colors of
+            all Heading elements
+          </li>
+          <li>
+            You can color texts using the ready classes
+            <b>color-1, color-2, info, success, danger, dark, black, white</b>
+          </li>
+          <li>
+            You can highlight text using the ready classes
+            <b>color-1, color-2, bg-color-gradient, bg-success, bg-info,
+              bg-danger, bg-dark, bg-light-grey</b>
+          </li>
+          <li>
+            You can outine text using the ready classes
+            <b>outline-color-1, outline-color-2, outline-color-dark,
+              outline-color-grey, outline-color-info, outline-color-success,
+              outline-color-danger, outline-light-grey</b>
+          </li>
+          <li>
+            Add the classes <b>font-weight-200, font-weight-400, font-weight-600, bold</b> to
+            change font weight
+          </li>
+          <li>
+            Add the classes to make test smaller <b><span class="smaller">smaller</span> <span
+                class="small">small</span> <span class="extra-small">extra-small</span></b>
+          </li>
+        </ul>
+
+        <div class="m-v-4">
+          <h5>Headings</h5>
+          <p>
+            You use the elemnts h1-h6 or uses there classes any apply on any
+            other text element<b>h1, h2, h3, h4, h5, h6</b>
+          </p>
+          <h1>This is heading 1</h1>
+          <h2>This is heading 2</h2>
+          <h3>This is heading 3</h3>
+          <h4>This is heading 4</h4>
+          <h5>This is heading 5</h5>
+          <h6>This is heading 6</h6>
+
+          <div class="heading-box">
+            <h3 class="bordered">Bordered Title</h3>
+          </div>
+
+          <div class="heading-box">
+            <h3 class="bordered-top">Top Bordered Title</h3>
+          </div>
+
+          <div class="heading-box">
+            <h3 class="bordered-bottom">Bottom Bordered Title</h3>
+          </div>
+
+          <div class="fancy-title title-center title-dotted-border topmargin">
+            <h3>Fancy Title</h3>
+          </div>
+
+          <h1 class="short-line">Short line</h1>
+        </div>
+
+        <div class="m-v-4">
+          <h5>Display</h5>
+          <p>
+            You display classes for bigger text without giving semantic
+            meaning
+            <b>display-1, display-2, display-3, display-4, display-5,
+              display-6</b>
+          </p>
+          <p class="display-1">Display 1</p>
+          <p class="display-2">Display 2</p>
+          <p class="display-3">Display 3</p>
+          <p class="display-4">Display 4</p>
+          <p class="display-5">Display 5</p>
+          <p class="display-6">Display 6</p>
+          <p class="display-4 color-gradient">gradient effect</p>
+        </div>
+
+        <div class="m-v-4">
+          <h5>Contextual Backgrounds</h5>
+          <p>
+            You can color texts using the ready classes
+            <b>color-1, color-2, info, success, danger, dark, black, white</b>. You can add the class
+            <b>d-inline-block</b> to make text
+            display inline block
+          </p>
+          <p class="bg-color-1  white">bg-color-1 This text is important.</p>
+          <p class="bg-color-2  white">bg-color-2 This text is important.</p>
+          <p class="bg-color-gradient white">
+            bg-color-gradient This text is important.
+          </p>
+          <p class="bg-success white">bg-success This text indicates success.</p>
+          <p class="bg-info white">
+            bg-info This text represents some information.
+          </p>
+          <p class="bg-danger with d-inline-block white">
+            bg-danger This text represents danger with d-inline-block.
+          </p>
+          <p class="bg-grey black d-inline-block white">
+            bg-grey black on grey with d-inline-block.
+          </p>
+          <p class="bg-dark d-inline-block white">
+            bg-dark white on dark with d-inline-block.
+          </p>
+          <p class="bga-color-1">
+            bga-color-1
+          </p>
+          <p class="bga-color-2">
+            bga-color-2
+          </p>
+          <p class="bga-danger">
+            bga-danger
+          </p>
+          <p class="bga-success">
+            bga-color-success
+          </p>
+          <p class="bga-info">
+            bga-color-info
+          </p>
+          <p class="bg-light-grey">
+            bg-light-grey
+          </p>
+          <p class="bga-grey">
+            bga-grey
+          </p>
+          <p class="bga-dark">
+            bga-dark
+          </p>
+        </div>
+
+        <div class="m-v-4">
+          <h5>Contextual text</h5>
+          <p>
+            You can color texts using the ready classes
+            <b>color-1, color-2, info, success, danger, dark, black, white</b>
+          </p>
+          <p class="color-1">color-1 This text is important.</p>
+          <p class="color-2">color-2 This text is important.</p>
+          <p class="success">success This text indicates success.</p>
+          <p class="info">info This text represents some information.</p>
+          <p class="danger">danger This text represents danger.</p>
+          <p class="color-gradient">color-2 This text is important.</p>
+          <p class="dark">dark This text represents normal text.</p>
+
+          <h5>Contextual text classes on hover</h5>
+          <p>You can add color-hover classes to change the color on hover try hovering on the classes below</p>
+          <b class="color-1-hover">color-1-hover</b>
+          <b class="color-2-hover">color-2-hover</b>
+          <b class="success-hover">success-hover</b>
+          <b class="info-hover">info-hover</b>
+          <b class="danger-hover">danger-hover</b>
+          <b class="dark-hover">dark-hover</b>
+          <b class="white-hover">white-hover</b>
+          <b class="color-gradient-hover">color-gradient-hover</b>
+        </div>
+
+        <div class="m-v-4">
+          <h5>Outlined text</h5>
+          <p>
+            You can outine text using the ready classes
+            <b>outline-color-1, outline-color-2, outline-color-dark,
+              outline-color-grey, outline-color-info, outline-color-success,
+              outline-color-danger, outline-light-grey</b>. You can add the class <b>d-inline-block</b> to make text
+            display inline block.
+          </p>
+          <p class="outline-color-1">outline-color-1</p>
+          <p class="outline-color-1 color-1 d-inline-block">
+            outline-color-1 with class d-inline-block
+          </p>
+          <p class="outline-color-2 color-2 d-inline-block">
+            outline-color-2 with class d-inline-block
+          </p>
+          <p class="outline-color-success success d-inline-block">
+            outline-color-success with class d-inline-block
+          </p>
+          <p class="outline-color-info info d-inline-block">
+            outline-color-info with class d-inline-block
+          </p>
+          <p class="outline-color-danger danger d-inline-block">
+            outline-color-danger with class d-inline-block
+          </p>
+          <p class="outline-color-dark dark d-inline-block">
+            outline-color-dark with class d-inline-block
+          </p>
+        </div>
+
+        <div class="m-v-4">
+          <h5>Text Formatting and Transformation</h5>
+          <p>Add the following classes on any text element</p>
+          <ul class="colored-ul">
+            <li class="text-lowercase">
+              <b>text-lowercase</b> Lowercased text.
+            </li>
+            <li>
+              <b>text-uppercase</b>
+              <span class="text-uppercase">Uppercased text.</span>
+            </li>
+            <li>
+              <b>text-capitalize</b>
+              <span class="text-capitalize">Capitalized text.</span>
+            </li>
+            <li class="old-info">
+              <b>old-info</b> to get line through text.
+            </li>
+            <li class="overline"><b>overline</b> to get line over text.</li>
+            <li class="underline">
+              <b>underline</b> to get line under text.
+            </li>
+            <li class="italic"><b>italic</b> to get the text italic.</li>
+            <li>
+              Add the classes <b>font-weight-200, font-weight-400, font-weight-600, bold</b> to
+              change font weight
+            </li>
+            <li class="letter-spacing-1">
+              Add classes
+              <b>letter-spacing-0, letter-spacing-1, letter-spacing-2</b> to
+              add and remove letter spacing.
+            </li>
+            <li class="left"><b>left</b> left aligned text.</li>
+            <li class="center"><b>center</b> centered text.</li>
+            <li class="right"><b>right</b> right aligned text.</li>
+          </ul>
+        </div>
+
+
+        <div class="m-v-4">
+          <h5>Ordered/Unordered Lists</h5>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              Add the class <b>colored-ul</b> to the ul element
+              <ul class="colored-ul">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+              Add the class <b>indent-ul</b> to the ul element
+              <ul class="indent-ul">
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+              Add the class <b>half-indent-ul</b> to the ul element
+              <ul class="half-indent-ul">
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+            </div>
+            <div class="col-12 col-lg-4">
+              Add the class <b>no-indent-ul</b> to the ul element
+              <ul class="no-indent-ul">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ul>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-12 col-lg-4">
+              Add the class <b>colored-ol</b> to the ol element
+              <ol class="colored-ol">
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+                <li>List Item</li>
+              </ol>
+            </div>
+            <div class="col-12 col-lg-4">
+              Add the class <b>bolded-ol</b> to the ol element
+              <ol class="bolded-ol">
+                <li>List Item, try to add more text to see it better and see how the text is wrapped</li>
+                <li>List Item, try to add more text to see it better</li>
+                <li>List Item</li>
+              </ol>
+            </div>
+            <div class="col-12 col-lg-4">
+              Add the class <b>steps-ol</b> to the ol element
+              <ol class="steps-ol">
+                <li>List Item, try to add more text to see it better and see how the text is wrapped</li>
+                <li>List Item, try to add more text to see it better</li>
+                <li>List Item</li>
+              </ol>
+            </div>
+          </div>
+        </div>
+
+
+
+
+        <div class="m-v-4">
+          <h5>Code Block</h5>
+          <pre>
+  <code class="bg-light-grey">
+    p { color: red; }
+    body { background-color: #eee; }
+  </code>
+  </pre>
+
+          <pre>
+  <code class="shadow success">
+    p { color: red; }
+    body { background-color: #eee; }
+  </code>
+  </pre>
+
+          <pre>
+  <code class="shadow-3 success rounded">
+    p { color: red; }
+    body { background-color: #eee; }
+  </code>
+  </pre>
+
+          <pre>
+  <code class="shadow bg-dark success">
+    p { color: red; }
+    body { background-color: #eee; }
+  </code>
+  </pre>
+        </div>
+        <div class="m-v-4">
+          <h5>Quote</h5>
+
+          <blockquote>
+            <p>
+              Great things in business are never done by one person. They're
+              done by a team of people.
+            </p>
+            <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
+          </blockquote>
+
+
+
+          <div class="row m-v-4">
+            <div class="icon-ml"><img src="img/vika/steve.jpg" class="img-responsive"></div>
+            <div class="col">
+              <blockquote>
+                <p>
+                  Great things in business are never done by one person. They're done by a team of people. Choose the
+                  write box size of image to make the image match the size of the text
+                </p>
+                <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
+              </blockquote>
+            </div>
+          </div>
+
+
+          <blockquote class="shadow-4 m-v-4">
+            <p>
+              Great things in business are never done by one person. They're
+              done by a team of people.
+            </p>
+            <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
+          </blockquote>
+          <div class="p05 shadow-3">
+            <blockquote class="">
               <p>
                 Great things in business are never done by one person. They're
                 done by a team of people.
               </p>
               <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
             </blockquote>
+          </div>
+          <div class="row m-v-4 shadow-3 p05">
+            <div class="icon-ml"><img src="img/vika/steve.jpg" class="img-responsive"></div>
+            <div class="col">
+              <blockquote>
+                <p>
+                  Great things in business are never done by one person. They're done by a team of people. Choose the
+                  write box size of image to make the image match the size of the text
+                </p>
+                <footer class="blockquote-footer">Steve Jobs, Apple Inc.</footer>
+              </blockquote>
+            </div>
+          </div>
+        </div>
 
-            <script src="https://gist.github.com/majalinet/6df83dc3e8a62511597963bd4e83c7e8.js"></script>
+
+
+        <div class="row justify-content-center m-v-4">
+          <div class="col-4 col-lg-2 vertical-rl">
+            <div class=" black   p1 ">
+
+              <h3 class="center">Why Us</h3>
+              <p class="center">Add the class <b>vertical-rl</b> </p>
+
+            </div>
+            <hr>
+          </div>
+
+
+          <div class="col-8 col-lg-10">
+            <div class=" black   p1">
+
+              <h3 class="center">Our Mission</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea
+                fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum
+                perspiciatis. consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi
+                voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis.</p>
+            </div>
           </div>
 
 
 
-          <div class="row justify-content-center m-v-4">
-            <div class="col-4 col-lg-2 vertical-rl">
-                <div class=" black   p1 ">
-        
-                    <h3 class="center">Why Us</h3>
-                    <p class="center">Add the class <b>vertical-rl</b> </p>
-                    
-                </div>
-                <hr>
-            </div>
-        
-        
-            <div class="col-8 col-lg-10">
-                <div class=" black   p1">
-        
-                    <h3 class="center">Our Mission</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis. consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis.</p>
-                </div>
-            </div>
-        
-        
-        
-                <div class=" black   p1">
-        
-                    <p><span class="drop-caps color-1 font-weight-400">L</span>add the class <b>drop-caps</b> then add you color and font weight eg: <b>color-1 font-weight-400</b> ipsum dolor sit amet, consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores explicabo labore enim repellat earum perspiciatis. consectetur adipisicing elit. Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptat earum perspiciatis.</p>
-                </div>
-        
-        <h5 class="m-v-2">Paragraphs 3 columns & Rules</h5>
-                <div class="par-cols-gap-3 par-cols-rule par-3-cols">
-                    <span class="drop-caps color-1">P</span>aragraphs with columns: add classes to any p element to set the number of comuns <b>par-2-cols</b> or <b>par-3-cols</b> or <b>par-4-cols</b> set the size of gap between the colomns add no classes or <b>par-cols-gap-2</b> or <b>par-cols-gap-3</b> and if you want to set rules add this class <b>par-cols-rule</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-                    </div>
-        
-        
-        
-        <h5 class="m-v-2">Paragraphs 4 columns No Rules</h5>
-                <div class="par-2-cols par-cols-gap-2">
-                    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.
-                    </div>
+          <div class=" black   p1">
+
+            <p><span class="drop-caps color-1 font-weight-400">L</span>add the class <b>drop-caps</b> then add you color
+              and font weight eg: <b>color-1 font-weight-400</b> ipsum dolor sit amet, consectetur adipisicing elit.
+              Quasi quidem minus id omnis, nam expedita, ea fuga commodi voluptas iusto, hic autem deleniti dolores
+              explicabo labore enim repellat earum perspiciatis. consectetur adipisicing elit. Quasi quidem minus id
+              omnis, nam expedita, ea fuga commodi voluptat earum perspiciatis.</p>
+          </div>
+
+          <h5 class="m-v-2">Paragraphs 3 columns & Rules</h5>
+          <div class="par-cols-gap-3 par-cols-rule par-3-cols">
+            <span class="drop-caps color-1">P</span>aragraphs with columns: add classes to any p element to set the
+            number of comuns <b>par-2-cols</b> or <b>par-3-cols</b> or <b>par-4-cols</b> set the size of gap between the
+            colomns add no classes or <b>par-cols-gap-2</b> or <b>par-cols-gap-3</b> and if you want to set rules add
+            this class <b>par-cols-rule</b> consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+            laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+            ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in
+            hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero
+            eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te
+            feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id
+            quod mazim placerat facer possim assum.
+          </div>
 
 
 
-        </div></div>
+          <h5 class="m-v-2">Paragraphs 2 columns No Rules</h5>
+          <div class="par-2-cols par-cols-gap-2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+          </div>
 
-        <div class="m-v-4">
-          <h3 id="positions">Positions and Displays</h3>
-          <h5>Positions CSS Classes</h5>
-          <p>
-            Add these classes to change div position
-            <b>position-static, position-fixed, position-absolute,
-              position-relative, position-sticky</b><br>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">What are CSS Positions?</a>
-          </p>
-          <ul class="colored-ul">
-            <li>
-              To make fixed elements to the top of page add the classes
-              <b>position-fixed top-0</b>
-            </li>
-            <li>
-              To make fixed elements to the bottom of page add the classes
-              <b>position-fixed bottom-0</b>
-            </li>
-            <li>
-              To make fixed elements to the right or left of page add the
-              classes <b>left-0 right-0</b>
-            </li>
-            <li>
-              To make fixed elements (sticky) inside a dev
-              <b>position-sticky</b>
-            </li>
-          </ul>
-<div class="m-v-1">
+
+
+        </div>
+      </div>
+
+      <div class="m-v-4">
+        <h3 id="positions">Positions and Displays</h3>
+        <h5>Positions CSS Classes</h5>
+        <p>
+          Add these classes to change div position
+          <b>position-static, position-fixed, position-absolute,
+            position-relative, position-sticky</b><br>
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">What are CSS
+            Positions?</a>
+        </p>
+        <ul class="colored-ul">
+          <li>
+            To make fixed elements to the top of page add the classes
+            <b>position-fixed top-0</b>
+          </li>
+          <li>
+            To make fixed elements to the bottom of page add the classes
+            <b>position-fixed bottom-0</b>
+          </li>
+          <li>
+            To make fixed elements to the right or left of page add the
+            classes <b>left-0 right-0</b>
+          </li>
+          <li>
+            To make fixed elements (sticky) inside a dev
+            <b>position-sticky</b>
+          </li>
+        </ul>
+        <div class="m-t-4">
           <h5>Display CSS Classes</h5>
           <p>
             Add these classes to change div Display
-            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex, d-inline-flex</b><br>
-              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display types?</a>
+            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex,
+              d-inline-flex</b><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display
+              types?</a>
           </p>
-            </div>
-            </div>
+        </div>
 
 
-            <div class="m-v-1">
-                <h5>Flex CSS Classes</h5>
-                <p>
-                  Add these classes to change flex div behaviour
-                  <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex, d-inline-flex</b><br>
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display types?</a>
-                </p>
-                <ul class="colored-ul">
-                  <li>
-                   <b>Container Behaviour</b> add these classes <b>flex-row, flex-column, flex-row-reverse, flex-column-revers, flex-wrap, flex-nowrap, 
-                     flex-wrap-reverse, flex-fill</b>
-                  </li>
-                  <li>                  
-                  <b>Justify contents horizantaly</b> add these classes <b>justify-content-start, justify-content-end, justify-content-center, justify-content-between, 
-                      justify-content-around</b>
-                   </li>           
-                   <li>                  
-                      <b>Align items verticaly (horizantaly if flex-colomn)</b> add these classes <b>align-items-start, align-items-end, align-items-center, 
-                          align-items-baseline, align-items-stretch, align-items-stretch</b>
-                       </li>        
-                       <li>                  
-                          <b>Align content verticaly (of item)</b> add these classes <b>align-content-start, align-content-end, align-content-center, 
-                              align-content-between, align-content-around, align-content-stretch</b>
-                              <li>                  
-                                  <b>Align self verticaly (of item)</b> add these classes <b>align-self-auto, align-self-start, align-self-end, 
-                                      align-self-center, align-self-baseline, align-self-stretch</b>
-                                   </li>                               
-                           </li>                                                 
-                  </ul>
-                  </div>
-                  </div>
+        <div class="m-t-4">
+          <h5>Mobile or Desktop Only Classes</h5>
+          <p>Sometimes we want to show an element only on mobile devices or on desktop devices but not on both, add the
+            classes
+            <b>mobile-only</b> or <b>desktop-only</b></p>
+        </div>
 
 
-      </main>
+        <div class="m-t-4">
+          <h5>Float and Clear Classes</h5>
+          <ul class="colored-ul">
+            <li>To apply or remove float add the classes <b>float-right float-left float-none</b></li>
+            <li>You can also clear float using the classes <b>clear-both clear-right clear-left</b></li>
+            <li>You can fix float using the class <b>clear-fix</b> If the floated element is taller than the element
+              containing it</li>
+          </ul>
+        </div>
 
-    <div class="center p2 color-1 bg-light-grey">
-      <p class="color-1 small">
-        Designed and built with love by Kim Majali, maintained by
-        <a href="https://www.europeitoutsourcing.com/"
-          >Europe IT Outsourcing Company Developers</a
-        >.
 
-        <a href="https://github.com/majalinet/Agile-CSS" target="_blank">
-          <i class="icon-box">
-            <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
-              <path
-                d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
-              ></path>
-            </svg>
-          </i>
-        </a>
-        <a href="https://www.facebook.com/europeoutsourcing/" target="_blank">
-          <i class="icon-box  hover-shadow">
-            <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
-              <path
-                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"
-              />
-            </svg>
-          </i>
-        </a>
-      </p>
-    </div>
-  </body>
+        <div class="m-v-4">
+          <h5>Flex CSS Classes</h5>
+          <p>
+            Add these classes to change flex div behaviour
+            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex,
+              d-inline-flex</b><br>
+            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display
+              types?</a>
+          </p>
+          <ul class="colored-ul">
+            <li>
+              <b>Container Behaviour</b> add these classes <b>flex-row, flex-column, flex-row-reverse,
+                flex-column-revers,
+                flex-wrap, flex-nowrap,
+                flex-wrap-reverse, flex-fill</b>
+            </li>
+            <li>
+              <b>Justify contents horizantaly</b> add these classes <b>justify-content-start, justify-content-end,
+                justify-content-center, justify-content-between,
+                justify-content-around</b>
+            </li>
+            <li>
+              <b>Align items verticaly (horizantaly if flex-colomn)</b> add these classes <b>align-items-start,
+                align-items-end, align-items-center,
+                align-items-baseline, align-items-stretch, align-items-stretch</b>
+            </li>
+            <li>
+              <b>Align content verticaly (of item)</b> add these classes <b>align-content-start, align-content-end,
+                align-content-center,
+                align-content-between, align-content-around, align-content-stretch</b>
+            <li>
+              <b>Align self verticaly (of item)</b> add these classes <b>align-self-auto, align-self-start,
+                align-self-end,
+                align-self-center, align-self-baseline, align-self-stretch</b>
+            </li>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+
+
+
+
+        <pre>  <code class="shadow-3 success rounded">
+          class QuestionAdmin(admin.ModelAdmin):
+          fieldsets = [(None, {'fields': ['question_text']}),
+          ('Data Information', {'fields': ['pub_date'], 'classes': ['collapse']}),]
+          p { color: red; }
+          body { background-color: #eee; }
+        </code>
+        </pre>
+
+
+
+<textarea class="w-100 shadow-3 success rounded p1 bg-white" rows="4" spellcheck="false" disabled>
+        <link rel="stylesheet" href="https://agilecss.com/css/agile.css" >
+            p { color: red; }
+            body { background-color: #eee; }
+</textarea>
+
+  </main>
+
+  <div class="center p2 color-1 bg-light-grey">
+    <p class="color-1 small">
+      Designed and built with love by Kim Majali, maintained by
+      <a href="https://www.europeitoutsourcing.com/">Europe IT Outsourcing Company Developers</a>.
+
+      <a href="https://github.com/majalinet/Agile-CSS" target="_blank">
+        <i class="icon-box">
+          <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
+            <path
+              d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+            </path>
+          </svg>
+        </i>
+      </a>
+      <a href="https://www.facebook.com/europeoutsourcing/" target="_blank">
+        <i class="icon-box  hover-shadow">
+          <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
+            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z" />
+          </svg>
+        </i>
+      </a>
+    </p>
+  </div>
+</body>
+
 </html>
