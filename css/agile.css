@@ -3662,13 +3662,14 @@ user-select: none;
 }
 
 
+
 .tooltip {
   position: relative;
   display: inline-block;
   border-bottom: 1px dotted black;
 }
 
-.tooltip .tooltip-text {
+.tooltip .tooltip-body {
   visibility: hidden;
   width: 120px;
   text-align: center;
@@ -3677,10 +3678,19 @@ user-select: none;
   z-index: 1;
 }
 
-.tooltip:hover .tooltip-text {
-  visibility: visible;
+.tooltip2x {
+  width: 240px !important;
+}
+.tooltip3x {
+  width: 360px !important;
+}
+.tooltip4x {
+  width: 480px !important;
 }
 
+.tooltip:hover .tooltip-body {
+  visibility: visible;
+}
 
 .tooltip-top {
   bottom: 100%;
