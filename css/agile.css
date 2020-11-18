@@ -3660,3 +3660,45 @@ user-select: none;
   margin-top:auto;
   margin-bottom:auto;
 }
+
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+}
+
+.tooltip .tooltip-text {
+  visibility: hidden;
+  width: 120px;
+  text-align: center;
+  padding: 5px 0;
+   position: absolute;
+  z-index: 1;
+}
+
+.tooltip:hover .tooltip-text {
+  visibility: visible;
+}
+
+
+.tooltip-top {
+  bottom: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+.tooltip-bottom {
+  top: 100%;
+  left: 50%;
+  margin-left: -60px;
+}
+
+.tooltip-left {
+  top: -5px;
+  right: 105%;
+}
+
+.tooltip-right {
+  top: -5px;
+  left: 105%;
+}
