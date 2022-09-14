@@ -3645,3 +3645,7 @@ right: 105%;
 top: -5px;
 left: 105%;
 }
+
+.disabled {
+  pointer-events: none;
+}
