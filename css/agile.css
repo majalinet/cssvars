@@ -1178,7 +1178,6 @@ height: 38px;
   fill: var(--white, red);
 }
 
-
 .icon-info-bg {
   background-color: var(--info, green);
   fill: white;
@@ -1230,6 +1229,24 @@ height: 38px;
 
 .icon-white-fill {
   fill: white;
+}
+.icon-light-grey-bg {
+  background-color: var(--light-grey, #aaa);
+  fill: white;
+}
+
+.icon-light-grey-fill {
+  fill: var(--light-grey, #aaa);
+}
+
+
+.icon-grey-bg {
+  background-color: var(--grey, #aaa);
+  fill: white;
+}
+
+.icon-grey-fill {
+  fill: var(--grey, #aaa);
 }
 .icon-box {
   display: inline-block;
@@ -3584,7 +3601,6 @@ user-select: none;
     line-height: 15px;
 }
 
-
 .mx-auto{
 margin-right:auto;
 margin-left:auto;
@@ -3593,8 +3609,6 @@ margin-left:auto;
 margin-top:auto;
 margin-bottom:auto;
 }
-
-
 
 .tooltip {
 position: relative;
