@@ -1155,7 +1155,31 @@ height: 38px;
   width: 192px;
   height: 192px;
 }
+.icon-white-bg {
+  background-color: white;
+  fill: black;
+}
 
+.icon-white-fill {
+  fill: white;
+}
+.icon-light-grey-bg {
+  background-color: var(--light-grey, #aaa);
+  fill: white;
+}
+
+.icon-light-grey-fill {
+  fill: var(--light-grey, #aaa);
+}
+
+.icon-grey-bg {
+  background-color: var(--grey, #aaa);
+  fill: white;
+}
+
+.icon-grey-fill {
+  fill: var(--grey, #aaa);
+}
 .icon-color-1-bg {
   background-color: var(--color-1, red);
   fill: white;
@@ -1221,32 +1245,6 @@ height: 38px;
 
 .icon-dark-fill {
   fill: var(--dark, red);
-}
-.icon-white-bg {
-  background-color: white;
-  fill: black;
-}
-
-.icon-white-fill {
-  fill: white;
-}
-.icon-light-grey-bg {
-  background-color: var(--light-grey, #aaa);
-  fill: white;
-}
-
-.icon-light-grey-fill {
-  fill: var(--light-grey, #aaa);
-}
-
-
-.icon-grey-bg {
-  background-color: var(--grey, #aaa);
-  fill: white;
-}
-
-.icon-grey-fill {
-  fill: var(--grey, #aaa);
 }
 .icon-box {
   display: inline-block;
