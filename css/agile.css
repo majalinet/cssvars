@@ -1527,6 +1527,11 @@ tr {
   border-bottom: 2px solid var(--color-1, lightgray);
 }
 
+td button {
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
 /* colors */
 
 .color-1, .color-1-hover:hover {
