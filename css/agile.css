@@ -426,6 +426,24 @@ h1 .bordered::after {
   min-height: 150%;
 }
 
+.h-1rem {height: 1rem;}
+.h-2rem {height: 2rem;}
+.h-3rem {height: 3rem;}
+.h-4rem {height: 4rem;}
+.h-5rem {height: 5rem;}
+.h-6rem {height: 6rem;}
+.h-8rem {height: 8rem;}
+.h-10rem {height: 10rem;}
+
+.w-1rem {width: 1rem;}
+.w-2rem {width: 2rem;}
+.w-3rem {width: 3rem;}
+.w-4rem {width: 4rem;}
+.w-5rem {width: 5rem;}
+.w-6rem {width: 6rem;}
+.w-8rem {width: 8rem;}
+.w-10rem {width: 10rem;}
+
 
 .container, .container-fluid, .container-half-fluid {
   width: 100%;
@@ -2892,6 +2910,16 @@ nav ul li:hover {
   margin-top: 50px;
 }
 
+.m-v-02 {
+  margin-top: 0.2rem;
+  margin-bottom: 0.2rem;
+}
+
+.m-v-03 {
+  margin-top: 0.3rem;
+  margin-bottom: 0.3rem;
+}
+
 .m-v-05 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
@@ -3001,6 +3029,14 @@ nav ul li:hover {
 
 .p7 {
   padding: 7rem;
+}
+
+.p-v-02 {
+  padding: 0 0.2rem;
+}
+
+.p-v-03 {
+  padding: 0 0.3rem;
 }
 
 .p-v-05 {
