@@ -3200,6 +3200,30 @@ nav ul li:hover {
   margin-bottom: 6rem;
 }
 
+.p-r-03 {padding-right: 0.3rem;}
+.p-r-05 {padding-right: 0.5rem;}
+.p-r-1 {padding-right: 1rem;}
+.p-r-2 {padding-right: 2rem;}
+.p-r-3 {padding-right: 3rem;}
+
+.p-l-03 {padding-left: 0.3rem;}
+.p-l-05 {padding-left: 0.5rem;}
+.p-l-1 {padding-left: 1rem;}
+.p-l-2 {padding-left: 2rem;}
+.p-l-3 {padding-left: 3rem;}
+
+.m-r-03 {margin-right: 0.3rem;}
+.m-r-05 {margin-right: 0.5rem;}
+.m-r-1 {margin-right: 1rem;}
+.m-r-2 {margin-right: 2rem;}
+.m-r-3 {margin-right: 3rem;}
+
+.m-l-03 {margin-left: 0.3rem;}
+.m-l-05 {margin-left: 0.5rem;}
+.m-l-1 {margin-left: 1rem;}
+.m-l-2 {margin-left: 2rem;}
+.m-l-3 {margin-left: 3rem;}
+
 @media (min-width: 992px) {
   .p-d-1 {
     padding: 1rem;
