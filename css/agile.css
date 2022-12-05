@@ -3670,3 +3670,22 @@ left: 105%;
 .disabled {
   pointer-events: none;
 }
+
+progress {
+  accent-color: var(--color-1);
+  -webkit-appearance: none;
+  appearance: none;
+  border: none;
+}
+
+::-webkit-progress-bar {
+  background-color: var(--grey);
+}
+
+::-webkit-progress-value {
+  background-color: var(--color-1);
+}
+
+::-moz-progress-bar {
+  background-color: var(--color-1);
+}
