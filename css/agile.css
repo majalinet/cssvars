@@ -444,6 +444,16 @@ h1 .bordered::after {
 .w-8rem {width: 8rem;}
 .w-10rem {width: 10rem;}
 
+.w--1rem {width: calc(100% - 1rem)}
+.w--2rem {width: calc(100% - 2rem)}
+.w--3rem {width: calc(100% - 3rem)}
+.w--4rem {width: calc(100% - 4rem)}
+
+.h--1rem {height: calc(100% - 1rem)}
+.h--2rem {height: calc(100% - 2rem)}
+.h--3rem {height: calc(100% - 3rem)}
+.h--4rem {height: calc(100% - 4rem)}
+
 
 .container, .container-fluid, .container-half-fluid {
   width: 100%;
@@ -1443,6 +1453,19 @@ button:hover {
 .clear-fix, .overflow-auto {
   overflow: auto;
 }
+
+.overflow-y-auto {overflow-y: auto;}
+.overflow-y-scroll {overflow-y: scroll;}
+.overflow-x-scroll {overflow-x: scroll;}
+.overflow-hidden {overflow: hidden;}
+.overflow-visible {overflow: visible;}
+
+.z-index-1 {z-index: 1;}
+.z-index-2 {z-index: 2;}
+.z-index-3 {z-index: 2;}
+.z-index-10 {z-index: 10;}
+.z-index-100 {z-index: 100;}
+
 
 .rounded {
   border-radius: 7px;
