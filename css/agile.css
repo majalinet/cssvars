@@ -2707,25 +2707,25 @@ body, html {
   margin: auto;
 }
 
-nav {
+.nav {
   width: auto;
   float: right;
 }
 
-nav ul {
+.nav ul {
   display: table;
   float: right;
 }
 
-nav ul li {
+.nav ul li {
   float: left;
 }
 
-nav ul li:last-child {
+.nav ul li:last-child {
   padding-right: 0;
 }
 
-nav ul li a {
+.nav ul li a {
   color: var(--color-1, black);
   font-size: 1.1rem;
   padding: 1rem;
@@ -2733,7 +2733,7 @@ nav ul li a {
   /* transition: all 0.5s ease 0s; */
 }
 
-nav ul li a:hover {
+.nav ul li a:hover {
   /* background-color: var(--color-1, black); */
   /* color: white; */
   color: var(--dark, grey);
@@ -2757,7 +2757,7 @@ nav ul li a:hover {
   margin-bottom:-2px;
 }
 
-nav ul li:hover {
+.nav ul li:hover {
   border-color: white;
 }
 
