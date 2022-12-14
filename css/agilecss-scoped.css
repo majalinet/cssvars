@@ -2684,25 +2684,25 @@ bottom: 0;
 margin: auto;
 }
 
-.agilecss .nav {
+.agilecss .nav, .agilecss .nav-stable {
 width: auto;
 float: right;
 }
 
-.agilecss .nav ul {
+.agilecss .nav ul, .agilecss .nav-stable ul {
 display: table;
 float: right;
 }
 
-.agilecss .nav ul li {
+.agilecss .nav ul li, .agilecss .nav-stable ul li {
 float: left;
 }
 
-.agilecss .nav ul li:last-child {
+.agilecss .nav ul li:last-child, .agilecss .nav-stable ul li:last-child {
 padding-right: 0;
 }
 
-.agilecss .nav ul li a {
+.agilecss .nav ul li a, .agilecss .nav-stable ul li a {
 color: var(--color-1, black);
 font-size: 1.1rem;
 padding: 1rem;
@@ -2710,12 +2710,16 @@ display: inline-block;
 /* transition: all 0.5s ease 0s; */
 }
 
-.agilecss .nav ul li a:hover {
+.agilecss .nav ul li a:hover, .agilecss .nav-stable ul li a:hover {
 /* background-color: var(--color-1, black); */
 /* color: white; */
 color: var(--dark, grey);
 /* font-size: 120%; */
 /* font-weight: 400; */
+}
+
+.agilecss .nav ul li:hover, .agilecss .nav-stable ul li:hover {
+  border-color: white;
 }
 
 .agilecss .nav-bg-hover ul li a:hover {
@@ -2732,10 +2736,6 @@ margin-top:-2px;
 .agilecss .nav-bottom-border-hover ul li a:hover {
 border-bottom: 2px solid var(--color-1, black);
 margin-bottom:-2px;
-}
-
-.agilecss .nav ul li:hover {
-border-color: white;
 }
 
 .agilecss .toggle-menu ul {
