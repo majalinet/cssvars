@@ -2707,25 +2707,25 @@ body, html {
   margin: auto;
 }
 
-.nav {
+.nav, .nav-stable {
   width: auto;
   float: right;
 }
 
-.nav ul {
+.nav ul, .nav-stable ul {
   display: table;
   float: right;
 }
 
-.nav ul li {
+.nav ul li, .nav-stable ul li {
   float: left;
 }
 
-.nav ul li:last-child {
+.nav ul li:last-child, .nav-stable ul li:last-child {
   padding-right: 0;
 }
 
-.nav ul li a {
+.nav ul li a, .nav-stable ul li a {
   color: var(--color-1, black);
   font-size: 1.1rem;
   padding: 1rem;
@@ -2733,12 +2733,16 @@ body, html {
   /* transition: all 0.5s ease 0s; */
 }
 
-.nav ul li a:hover {
+.nav ul li a:hover, .nav-stable ul li a:hover {
   /* background-color: var(--color-1, black); */
   /* color: white; */
   color: var(--dark, grey);
   /* font-size: 120%; */
   /* font-weight: 400; */
+}
+
+.nav ul li:hover, .nav-stable ul li:hover{
+  border-color: white;
 }
 
 .nav-bg-hover ul li a:hover {
@@ -2755,10 +2759,6 @@ body, html {
 .nav-bottom-border-hover ul li a:hover {
   border-bottom: 2px solid var(--color-1, black);
   margin-bottom:-2px;
-}
-
-.nav ul li:hover {
-  border-color: white;
 }
 
 .toggle-menu ul {
@@ -2806,7 +2806,7 @@ body, html {
   .main-menu input[type="checkbox"]:checked~nav {
     display: block;
   }
-  nav {
+  .nav {
     display: none;
     position: absolute;
     right: 0;
@@ -2815,16 +2815,16 @@ body, html {
     padding: 0;
     z-index: 99;
   }
-  nav ul {
+  .nav ul {
     width: auto;
   }
-  nav ul li {
+  .nav ul li {
     float: none;
     padding: 0;
     width: 100%;
     display: table;
   }
-  nav ul li a {
+  .nav ul li a {
     color: #fff;
     font-size: 15px;
     padding: 10px 20px;
@@ -2840,7 +2840,7 @@ body, html {
   .logo {
     font-size: 20px;
   }
-  nav {
+  .nav {
     top: 47px;
   }
 }
