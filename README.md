@@ -5,21 +5,10 @@ This project has one main purpose to use as fewer resources as possible
 Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed.
 Please, visit https://agilecss.com
 
-## Author
-* Kim Majali
-* Europe IT Outsourcing
-* https://www.europeitoutsourcing.com
 ## Technologies
 * HTML
 * CSS
-## Tools
-* Github https://github.com/
-* Visual Studio Code https://code.visualstudio.com/
-## Standards
-* HTML Validation https://validator.w3.org/
-* CSS validation https://jigsaw.w3.org/css-validator/
-* Cross-browsing https://www.browserling.com/
-* Mobile friendly https://search.google.com/test/mobile-friendly
+
 ## Specifications
 #### Pure HTML CSS
 Everything you need without JS. It's built for SEO purposes so it's the lightest and most powerful
@@ -35,6 +24,15 @@ Much more than just a grid. Responsive images, videos, galleries, tables, menus,
 
 #### 100's of Free UI Elements
 All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
+
+#### 100's of Free UI Elements
+All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
+
+#### Scoped CSS
+AgileCSS styles could be applied to a single element without breaking your existing code
+
+#### Icons Included
+Easy to use and style any SVG icon, no need for extra resources and icons frameworks
 
 #### Free & Open Source
 Built with love to be used. Free framework, UI elements, & themes. Download, use, enjoy & share
