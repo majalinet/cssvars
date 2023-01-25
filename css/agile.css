@@ -40,13 +40,14 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
   --success: #0abfa4;
   --warning: #bda06a;
   --luxury:#4b2f5a;
-  --body-bg: #000;
-  --body-color: #111;
   --light-grey: #f6f6f6;
+  --body-bg: #fff;
+  --body-color: #111;
   --fontweight: 300;
   --fontweight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
   --color-2-rgb:74, 78, 105;
   --dark-rgb: 34, 34, 37;
@@ -74,12 +75,13 @@ html {
 body {
   margin: 0;
   width: 100%;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  font-family: var(--font-family);
   font-size: 1rem;
   font-weight: var(--fontweight, 400);
   line-height: 1.5;
   text-align: justify;
-  background-color: #fff;
+  background-color: var(--body-bg, white);
+  color: var(--body-color, black);
 }
 
 ol, ul, dl {
