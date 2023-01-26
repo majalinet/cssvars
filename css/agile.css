@@ -1683,6 +1683,10 @@ td button {
   background-color: var(--white, white);
 }
 
+.bg-body-bg, .bg-body-bg-hover:hover {
+  background-color: var(--body-bg, white);
+}
+
 .bg-light-grey, .bg-lite-grey, .bg-light-grey-hover:hover {
   background-color: var(--light-grey, grey);
 }
