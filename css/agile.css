@@ -1614,7 +1614,7 @@ td button {
 }
 
 .dark, .dark-hover:hover {
-  color: var(--color-dark, rgba(41, 40, 40, 0.707));
+  color: var(--dark, rgba(41, 40, 40, 0.707));
 }
 
 .grey, .grey-hover:hover {
@@ -1790,11 +1790,11 @@ td button {
 }
 
 .outline-color-dark, .outline-dark {
-  border: 1px solid var(--color-dark, black);
+  border: 1px solid var(--dark, black);
 }
 
 .outline-color-grey, .outline-grey {
-  border: 1px solid var(--color-grey, black);
+  border: 1px solid var(--grey, black);
 }
 
 .outline-color-info, .outline-info {
