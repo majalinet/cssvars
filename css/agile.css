@@ -32,7 +32,7 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 :root {
   --color-1: #083c5c;
   --color-2:#4a4e69;
-  --dark: #222225;
+  --dark: #495057;
   --grey: #ccc;
   --white: #fff;
   --danger: #cc3a3a;
@@ -1350,7 +1350,6 @@ blockquote {
   margin-left: -1px;
   line-height: 1.25;
   color: var(--color-1, black);
-  background-color: #fff;
   border: 1px solid #dee2e6;
 }
 
@@ -1372,7 +1371,7 @@ blockquote {
 button, .button, .accordion .accordionBlock > label, .tabs > label {
   background-color: var(--color-1);
   border: none;
-  color: white;
+  color: var(--body-bg, white);
   font-weight: 400;
   padding: 0.5rem 0.95rem;
   text-decoration: none;
@@ -2345,7 +2344,7 @@ box-shadow: 0 5px 15px rgba(var(--color-1-rgb, black));
   padding: 0.275rem 0.35rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
+  color: var(--dark, rgba(41, 40, 40, 0.707));
   background-color: var(--body-bg, white);
   background-clip: padding-box;
   border: 1px solid #ced4da;
