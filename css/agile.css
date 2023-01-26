@@ -11,8 +11,8 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 */
 /*!
  * Agile CSS Framework (https://www.europeitoutsourcing.com/)
- * Copyright 2018-2020 Kim Majali and Contributers
- * Copyright 2018-2020 Europe IT Outsourcing company.
+ * Copyright 2018-2023 Kim Majali and Contributers
+ * Copyright 2018-2023 Europe IT Outsourcing company.
  * Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
  */
 
@@ -1257,6 +1257,22 @@ height: 38px;
 
 .icon-danger-fill {
   fill: var(--danger, red);
+}
+.icon-warning-bg {
+  background-color: var(--warning, yellow);
+  fill: white;
+}
+
+.icon-warning-fill {
+  fill: var(--warning, yellow);
+}
+.icon-luxury-bg {
+  background-color: var(--luxury, purple);
+  fill: white;
+}
+
+.icon-luxury-fill {
+  fill: var(--luxury, purple);
 }
 
 
