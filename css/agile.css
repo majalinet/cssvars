@@ -1347,7 +1347,6 @@ blockquote {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
-  margin-left: -1px;
   line-height: 1.25;
   color: var(--color-1, black);
   border: 1px solid #dee2e6;
@@ -2042,11 +2041,11 @@ td button {
 }
 
 .shadow-2, .shadow-2-hover:hover {
-  border: solid 1px #f5f5f5;
+  border: solid 1px var(--light-grey, #f5f5f5);
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 .shadow-3, .shadow-3-hover:hover {
- border: solid 1px #f5f5f5;
+ border: solid 1px var(--light-grey, #f5f5f5);
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -2384,8 +2383,8 @@ input::placeholder, textarea::placeholder {
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
   line-height: 1.5;
-  color: #495057;
-  background-color: #fff;
+  color: var(--dark, rgba(41, 40, 40, 0.707));
+  background-color: var(--body-bg, white);
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
