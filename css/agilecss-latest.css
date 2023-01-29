@@ -7,7 +7,6 @@ Description: This project has one main purpose to use as fewer resources as poss
 Version: 1.2
 Text Domain: agilecss
 Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
 */
 /*!
  * Agile CSS Framework (https://www.europeitoutsourcing.com/)
@@ -47,7 +46,6 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
   --fontweight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
-  --line-height: 1.4;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
   --color-2-rgb:74, 78, 105;
@@ -79,7 +77,7 @@ body {
   font-family: var(--font-family);
   font-size: 1rem;
   font-weight: var(--fontweight, 400);
-  line-height: var(--line-height, 1.5);
+  line-height: 1.5;
   text-align: justify;
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
@@ -96,7 +94,7 @@ ol ol, ul ul, ol ul, ul ol {
 }
 
 dt {
-  font-weight: var(--fontweight-heading, 400);
+  font-weight: 700;
 }
 
 dd {
@@ -166,7 +164,7 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
   font-weight: var(--fontweight-heading, 300);
-  line-height: var(--line-height, 1.2);
+  line-height: 1.2;
   color: var(--color-1, black);
 }
 
@@ -201,26 +199,32 @@ h6, .h6 {
 
 .display-1 {
   font-size: 5rem;
+  line-height: 1.2;
 }
 
 .display-2 {
   font-size: 4rem;
+  line-height: 1.2;
 }
 
 .display-3 {
   font-size: 3rem;
+  line-height: 1.2;
 }
 
 .display-4 {
   font-size: 2.5rem;
+  line-height: 1.3;
 }
 
 .display-5 {
   font-size: 2rem;
+  line-height: 1.3;
 }
 
 .display-6 {
   font-size: 1.5rem;
+  line-height: 1.3;
 }
 
 p {
@@ -268,7 +272,7 @@ p {
   position: relative;
   display: inline-block;
   background-color: #fff;
-  padding: 0 1rem;
+  padding: 0 15px;
   margin: 1.5rem 0;
 }
 
@@ -281,8 +285,8 @@ p {
 
 .short-line:after {
   display: inline-block;
-  margin: 0 0 0.6rem 1.2rem;
-  height: 0.2rem;
+  margin: 0 0 8px 20px;
+  height: 3px;
   content: " ";
   text-shadow: none;
   background-color: #bbb;
@@ -291,8 +295,8 @@ p {
 
 .short-line:before {
   display: inline-block;
-  margin: 0 1.2rem 0.6rem 0;
-  height: 0.2rem;
+  margin: 0 20px 8px 0;
+  height: 3px;
   content: " ";
   text-shadow: none;
   background-color: #bbb;
@@ -300,14 +304,14 @@ p {
 }
 
 .bordered {
-  border: 0.125rem solid #dee2e6;
+  border: 2px solid #dee2e6;
   border-color: var(--color-1, black);
   display: inline;
   padding: 0.4rem;
 }
 
 .bordered-bottom {
-  border-bottom: 0.125rem solid #dee2e6;
+  border-bottom: 1px solid #dee2e6;
   border-color: var(--color-1, black);
   display: inline;
   padding: 0.4rem;
@@ -323,7 +327,7 @@ p {
 
   
 .bordered-top {
-  border-top: 0.125rem solid #dee2e6;
+  border-top: 1px solid #dee2e6;
   border-color: var(--color-1, black);
   display: inline;
   padding: 0.4rem;
@@ -331,7 +335,7 @@ p {
 }
 
 .bordered-top-light-grey {
-  border-top: 0.125rem solid #dee2e6;
+  border-top: 1px solid #dee2e6;
   border-color: var(--light-grey, black);
   display: inline;
   padding: 0.4rem;
@@ -339,28 +343,28 @@ p {
 }
 
 .bordered-left{
-  border-left: 0.375rem solid var(--color-1, black);
+  border-left: 6px solid var(--color-1, black);
 }
 .bordered-left-color-2{
-  border-left: 0.375rem solid var(--color-2, black);
+  border-left: 6px solid var(--color-2, black);
 }
 
 .bordered-left-info{
-  border-left: 0.375rem solid var(--info, black);
+  border-left: 6px solid var(--info, black);
 }
 .bordered-left-success{
-  border-left: 0.375rem solid var(--success, black);
+  border-left: 6px solid var(--success, black);
 }
 
 .bordered-left-danger{
-  border-left: 0.375rem solid var(--danger, black);
+  border-left: 6px solid var(--danger, black);
 }
 .bordered-left-grey{
-  border-left: 0.375rem solid var(--grey, black);
+  border-left: 6px solid var(--grey, black);
 }
 
 h1 .bordered::after {
-  color: var(--color-1, black);
+  color: red;
   display: block;
 }
 
@@ -373,9 +377,9 @@ h1 .bordered::after {
 }
 
 .test-box div, .test-box header, .test-box main, .test-box section, .test-box footer, .test-box side {
-  min-height: 3.57rem;
+  min-height: 50px;
   border-style: solid;
-  border-width: 0.075rem;
+  border-width: 1px;
   vertical-align: middle;
   text-align: center;
   background-color: var(--light-grey);
@@ -454,8 +458,8 @@ h1 .bordered::after {
 
 .container, .container-fluid, .container-half-fluid {
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 15px;
+  padding-left: 15px;
   margin-right: auto;
   margin-left: auto;
 }
@@ -509,8 +513,8 @@ h1 .bordered::after {
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12, .col-sm, .col-sm-auto, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-8, .col-md-9, .col-md-10, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding-right: 15px;
+  padding-left: 15px;
 }
 
 .col {
@@ -1089,16 +1093,16 @@ h1 .bordered::after {
 }
 
 .letter-spacing-1 {
-  letter-spacing: 0.075rem;
+  letter-spacing: 1px;
 }
 
 .letter-spacing-2 {
-  letter-spacing: 0.15rem;
+  letter-spacing: 2px;
 }
 
 pre code {
   display: block;
-  padding: 1rem;
+  padding: 20px;
 }
 
 
@@ -1126,7 +1130,7 @@ pre code {
   position: absolute;
   top: 0;
   left: 0;
-  color: var(--white, white);
+  color: #fff;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -1134,58 +1138,63 @@ pre code {
 
 /* Icons */
 .icon-xxs {
-  width: 1rem;
-  height: 1rem;
+  width: 12px;
+  height: 12px;
+}
+
+.icon-xs14 {
+  width: 14px;
+  height: 14px;
 }
 
 .icon-xs {
-  width: 1.5rem;
-  height: 1.5rem;
+  width: 16px;
+  height: 16px;
 }
 
 .icon-s {
-  width: 2rem;
-  height: 2rem;
+  width: 32px;
+  height: 32px;
 }
 .icon-ssm {
-width: 2.5rem;
-height: 2.5rem;
+width: 38px;
+height: 38px;
 }
 .icon-sm {
-  width: 3rem;
-  height: 3rem;
+  width: 48px;
+  height: 48px;
 }
 
 .icon-m {
-  width: 4rem;
-  height: 4rem;
+  width: 64px;
+  height: 64px;
 }
 
 .icon-ml {
-  width: 6rem;
-  height: 6rem;
+  width: 96px;
+  height: 96px;
 }
 
 .icon-lg {
-  width: 8rem;
-  height: 8rem;
+  width: 128px;
+  height: 128px;
 }
 
 .icon-xl {
-  width: 12rem;
-  height: 12rem;
+  width: 192px;
+  height: 192px;
 }
 .icon-white-bg {
-  background-color: var(--white, white);
+  background-color: white;
   fill: black;
 }
 
 .icon-white-fill {
-  fill: var(--white, white);
+  fill: white;
 }
 .icon-light-grey-bg {
   background-color: var(--light-grey, #aaa);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-light-grey-fill {
@@ -1194,7 +1203,7 @@ height: 2.5rem;
 
 .icon-grey-bg {
   background-color: var(--grey, #aaa);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-grey-fill {
@@ -1202,7 +1211,7 @@ height: 2.5rem;
 }
 .icon-color-1-bg {
   background-color: var(--color-1, red);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-color-1-fill {
@@ -1211,7 +1220,7 @@ height: 2.5rem;
 
 .icon-color-2-bg {
   background-color: var(--color-2, red);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-color-2-fill {
@@ -1219,12 +1228,12 @@ height: 2.5rem;
 }
 
 .icon-color-white-fill {
-  fill: var(--white, white);
+  fill: var(--white, red);
 }
 
 .icon-info-bg {
   background-color: var(--info, green);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-info-fill {
@@ -1233,7 +1242,7 @@ height: 2.5rem;
 
 .icon-success-bg {
   background-color: var(--success, blue);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-success-fill {
@@ -1242,7 +1251,7 @@ height: 2.5rem;
 
 .icon-danger-bg {
   background-color: var(--danger, red);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-danger-fill {
@@ -1250,7 +1259,7 @@ height: 2.5rem;
 }
 .icon-warning-bg {
   background-color: var(--warning, yellow);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-warning-fill {
@@ -1258,7 +1267,7 @@ height: 2.5rem;
 }
 .icon-luxury-bg {
   background-color: var(--luxury, purple);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-luxury-fill {
@@ -1268,7 +1277,6 @@ height: 2.5rem;
 
 .icon-black-bg {
   background-color:black;
-  fill: var(--body-bg, white);
 }
 
 .icon-black-fill {
@@ -1277,7 +1285,7 @@ height: 2.5rem;
 
 .icon-dark-bg {
   background-color: var(--dark, red);
-  fill: var(--body-bg, white);
+  fill: white;
 }
 
 .icon-dark-fill {
@@ -1338,7 +1346,8 @@ blockquote {
   position: relative;
   display: block;
   padding: 0.5rem 0.75rem;
-  line-height: var(--line-height, 1.2);
+  margin-left: -1px;
+  line-height: 1.25;
   color: var(--color-1, black);
   border: 1px solid #dee2e6;
 }
@@ -1409,11 +1418,11 @@ button:hover {
 /*badge*/
 
 .badge {
-  line-height: 1;
   display: inline-block;
   padding: 0.25em 0.4em;
   font-size: 75%;
   font-weight: 400;
+  line-height: 1;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
@@ -1530,6 +1539,7 @@ tr {
 
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
   padding: 8px;
+  line-height: 1.42857143;
   vertical-align: top;
   border-top: 1px solid #ddd;
 }
@@ -2031,11 +2041,11 @@ td button {
 }
 
 .shadow-2, .shadow-2-hover:hover {
-  border: solid 1px var(--light-grey, #f5f5f5);
+  border: solid 1px #f5f5f5;
   box-shadow: 3px 3px 2px #aaaaaa;
 }
 .shadow-3, .shadow-3-hover:hover {
- border: solid 1px var(--light-grey, #f5f5f5);
+ border: solid 1px #f5f5f5;
 box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
 }
 
@@ -2332,7 +2342,7 @@ box-shadow: 0 5px 15px rgba(var(--color-1-rgb, black));
   width: 100%;
   padding: 0.275rem 0.35rem;
   font-size: 1rem;
-  line-height: var(--line-height, 1.5);
+  line-height: 1.5;
   color: var(--dark, rgba(41, 40, 40, 0.707));
   background-color: var(--body-bg, white);
   background-clip: padding-box;
@@ -2372,9 +2382,9 @@ input::placeholder, textarea::placeholder {
   width: 100%;
   padding: 0.375rem 0.75rem;
   font-size: 1rem;
-  line-height: var(--line-height, 1.5);
-  color: var(--dark, rgba(41, 40, 40, 0.707));
-  background-color: var(--body-bg, white);
+  line-height: 1.5;
+  color: #495057;
+  background-color: #fff;
   background-clip: padding-box;
   border: 1px solid #ced4da;
   border-radius: 0.25rem;
@@ -3311,7 +3321,28 @@ body, html {
   line-height: 2;
 }
 
+/*Theme 2 */
 
+/*
+body{ background: #222225; color: white;}
+h1, p{ text-align: center;}
+p{ font-size: 1.2rem;}
+*/
+
+/*
+::-webkit-file-upload-button {
+  background-color: var(--color-1);
+  border: none;
+  color: white;
+  padding: 0.5rem 0.95rem;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  border-radius: 3px;
+  margin: 0;
+}
+*/
 
 .position-static {
   position: static;
@@ -3573,7 +3604,7 @@ body, html {
   overflow: hidden;
   background-color: #fff;
   display: inline;
-  line-height: var(--line-height, 1.2);
+  line-height: 1.2;
 }
 
 .select-link-style select {
@@ -3677,7 +3708,7 @@ user-select: none;
 .styled-checkbox:checked {
   background-color: var(--color-1,skyblue);
     text-align: center;
-    line-height: var(--line-height, 15px);
+    line-height: 15px;
 }
 
 .mx-auto{
