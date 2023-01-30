@@ -1,31 +1,16 @@
 /*
-Theme Name: Agile CSS
-Theme URI: https://github.com/majalinet/Agile-CSS
 Author: the EITO team
 Author URI: https://www.europeitoutsourcing.com/
 Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed, built by Europe IT Outsourcing company https://www.europeitoutsourcing.com http://agilecss.com
-Version: 1.2
-Text Domain: agilecss
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
-*/
-/*!
- * Agile CSS Framework (https://www.europeitoutsourcing.com/)
+Version: 1.0
  * Copyright 2018-2023 Kim Majali and Contributers
  * Copyright 2018-2023 Europe IT Outsourcing company.
- * Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
+ * Licensed under MIT (https://github.com/majalinet/cssvars/blob/master/LICENSE)
  */
 
  @-ms-viewport {
   width: device-width;
 }
-
-/*
-  @font-face {
-    font-family: montserrat;
-    src: url(fonts/montserrat-hairline.otf);
-    }
-  */
 
 /* Varibles*/
 
@@ -262,8 +247,6 @@ p {
   margin-bottom: 1.8rem;
 }
 
-
-
 .fancy-title h1, .fancy-title h2, .fancy-title h3, .fancy-title h4, .fancy-title h5, .fancy-title h6 {
   position: relative;
   display: inline-block;
@@ -492,8 +475,6 @@ h1 .bordered::after {
   display: flex;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  /*  margin-right: -15px;
-    margin-left: -15px; */
 }
 
 .no-gutters {
