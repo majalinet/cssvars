@@ -3339,7 +3339,7 @@ body, html {
 
 
 .colored-ul li::before {
-  content: "â€¢ ";
+  content: "● ";
   color: var(--color-1, black);
 }
 
@@ -3712,4 +3712,14 @@ progress {
 
 ::-moz-progress-bar {
   background-color: var(--color-1);
+}
+
+.notification-panel{
+  z-index: 100;
+  position: fixed;
+  top:70px;
+  right: 15px;
+  display: none;
+  width: 350px;
+  background-color: white;
 }
