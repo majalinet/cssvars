@@ -1,5 +1,5 @@
 const themes = [
-    ['Agilecss',
+    ['CSS Vars',
         `
     :root {
         --color-1: #083c5c;
@@ -33,11 +33,11 @@ const themes = [
         --luxury-rgb:75, 47, 90;
     }
         `],
-    ['Agilecss (dark)',
+    ['CSS Vars (dark)',
     `
     :root {
-        --color-1: #818181;
-        --color-2:#4a4e69;
+        --color-1: #969494;
+        --color-2:#7077a3;
         --dark: #4a4e6d;
         --grey: #ccc;
         --white: #fff;
@@ -45,7 +45,7 @@ const themes = [
         --info: #1191b8;
         --success: #0abfa4;
         --warning: #bda06a;
-        --luxury:rgb(106, 67, 128);
+        --luxury:#6a4380;
         --light-grey: #222536;
         --body-bg: #1b1d27;
         --body-color: #c0bebe;
@@ -55,8 +55,8 @@ const themes = [
         --font-size-desktop: 16px;
         --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
         "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-        --color-1-rgb:245, 245, 245;
-        --color-2-rgb:74, 78, 105;
+        --color-1-rgb:150, 148, 148;
+        --color-2-rgb:112, 119, 163;
         --dark-rgb: 74, 78, 109;
         --grey-rgb: 204, 204, 204;
         --white-rgb: 255, 255, 255;
@@ -65,7 +65,7 @@ const themes = [
         --success-rgb: 10, 191, 164;
         --warning-rgb:189, 160, 106;
         --luxury-rgb:106, 67, 128;
-    }
+      }
     `  
     ],
     ['Rosettes',
