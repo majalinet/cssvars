@@ -3755,14 +3755,21 @@ left: 105%;
   border: none;
 }
 
-::-webkit-progress-bar {
+.cssvars ::-webkit-progress-bar {
   background-color: var(--grey);
 }
 
-::-webkit-progress-value {
+.cssvars ::-webkit-progress-value {
   background-color: var(--color-1);
 }
 
-::-moz-progress-bar {
+.cssvars ::-moz-progress-bar {
   background-color: var(--color-1);
+}
+
+.cssvars .table-layout-fixed {
+  table-layout: fixed;
+}
+.cssvars .word-wrap-break {
+  word-wrap:break-word;
 }

@@ -3757,3 +3757,10 @@ progress {
   width: 350px;
   background-color: white;
 }
+
+.table-layout-fixed {
+  table-layout: fixed;
+}
+.word-wrap-break {
+  word-wrap:break-word;
+}
