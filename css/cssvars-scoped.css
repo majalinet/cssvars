@@ -61,6 +61,7 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
   --luxury-rgb:75, 47, 90;
 }
 
+/* Uncomment if you want auto-detect dark theme */
 @media (prefers-color-scheme:dark){
   .cssvars {
     --color-1: #969494;

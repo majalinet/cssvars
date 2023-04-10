@@ -46,7 +46,7 @@ Version: 1.0
   --luxury-rgb:75, 47, 90;
 }
 
-/* Uncomment if you want auto-detect dark theme
+/* Uncomment if you want auto-detect dark theme */
 /* @media (prefers-color-scheme:dark){
   :root {
     --color-1: #969494;
