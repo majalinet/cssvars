@@ -46,7 +46,8 @@ Version: 1.0
   --luxury-rgb:75, 47, 90;
 }
 
-@media (prefers-color-scheme:dark){
+/* Uncomment if you want auto-detect dark theme
+/* @media (prefers-color-scheme:dark){
   :root {
     --color-1: #969494;
     --color-2:#7077a3;
@@ -78,7 +79,7 @@ Version: 1.0
     --warning-rgb:189, 160, 106;
     --luxury-rgb:106, 67, 128;
   }
-}
+} */
 
 html {
   box-sizing: border-box;
