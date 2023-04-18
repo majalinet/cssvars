@@ -6,37 +6,33 @@
         <link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
     </head>
     <body>
-        <div class="main-nav">
-            <div class="main-menu container">
-                <div class="row">
-                    <div class="col-md-9">
-                        <div class="main-nav">
-                            <div class="main-menu m0">
-                                <a href="#" target="_blank">
-
-                                <label for="toggle-1" class="toggle-menu">
-                                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-grey-fill icon-s" viewBox="0 0 24 24">
-                                        <path d="M0 0h24v24H0z" fill="none"></path>
-                                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>  
-                                </label>
-                                <input type="checkbox" id="toggle-1">
-    
-                                <nav class="nav m-v-2 p-h-2">
-                                    <ul class="font-weight-600">
-                                        <li><a href="#about" style="color: #ccc;" class="m-r-2" >About</a></li>
-                                        <li><a href="#portfolio" style="color: #ccc;" class="m-r-1">Portfolio</a></li>
-                                        <li><a href="#gallery" style="color: #ccc;" class="m-r-1">Gallery</a></li>
-                                        <li><a href="#contact" style="color: #ccc;" class="m-l-2">Contact</a></li>
-                                        <li><a href="#services" style="color: #ccc;" class="m-l-2">Services</a></li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-3"></div>
-                </div>
+        <div class="main-nav nav-bottom-border-hover">
+            <div class="main-menu">
+                <a href="index.html"><img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="logo"></a>
+                <label for="toggle-1" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                </label>
+                <input type="checkbox" id="toggle-1">
+                <nav class="nav">
+                    <ul>
+                        <li><a href="guest-profile.html">My account</a></li>
+                        <li><a title="Notifications" onclick="toggleDisplay('notifications')">
+                                <svg viewBox="0 0 24 24" class="icon-xs img-responsive no-mobile icon-color-1-fill">
+                                    <path d="M21,19V20H3V19L5,17V11C5,7.9 7.03,5.17 10,4.29C10,4.19 10,4.1 10,4A2,2 0 0,1 12,2A2,2 0 0,1 14,4C14,4.1 14,4.19 14,4.29C16.97,5.17 19,7.9 19,11V17L21,19M14,21A2,2 0 0,1 12,23A2,2 0 0,1 10,21">
+                                    </path>
+          
+                                </svg><span class="p-l-2 mobile-only"> Notifications</span></a></li>
+          
+          
+          
+                        <li><a href="index.html">Log out</a></li>
+                    </ul>
+                </nav>
             </div>
-        </div>
+          </div>
         <div class="m-t-6">
             <div class="row m-h-7">
                 <div class="col-md-6">
@@ -50,11 +46,11 @@
            </div>
         </div>
             </div>
-            <div class="h-75 d-flex  flex-column m-t-6" style="background-color: #44916a61; border-radius: 200px 200px 0px 0px;  background-size: cover;">
+            <div class="h-75 d-flex  flex-column m-t-6 bga-info" style="border-radius: 200px 200px 0px 0px;  background-size: cover;">
                 <div class="row m-h-7 m-t-6">
                     <div class="col-md-6">
-                        <h1 class="white m-t-6 bold left display-4 p-h-3">A day as a Quicksmart team member</h1>
-                        <h5 class="white m-t-1 left p-h-3">Ut enim ad minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut aliquip<br> ex ea commodo consequat.</h5>
+                        <h1 class="black m-t-6 bold left display-4 p-h-3">A day as a Quicksmart team member</h1>
+                        <h5 class="dark m-t-1 left p-h-3">Ut enim ad minim veniam, quis nostrud<br> exercitation ullamco laboris nisi ut aliquip<br> ex ea commodo consequat.</h5>
                      
             
                </div>
@@ -120,9 +116,9 @@
                 </div>
             </div>
             </div>
-            <div class="h-75 d-flex  flex-column m-t-4" style="background-color: #041e39; border-radius: 0px 0px 220px 220px;  background-size: cover;">
+            <div class="h-75 d-flex bg-color-1 flex-column m-t-4" style="border-radius: 0px 0px 220px 220px;  background-size: cover;">
                 <h1 class="white bold center m-t-6">Open Positions</h1>
-                <p class="h6 m-t-1 font-weight-400 center">Volutpat est velit egestas dui id ornare arcu odio.<br> Dignissim enim sit amet venenatis urna cursus eget. </p>
+                <p class="h6 m-t-1 white font-weight-400 center">Volutpat est velit egestas dui id ornare arcu odio.<br> Dignissim enim sit amet venenatis urna cursus eget. </p>
                 <div class="container">
                     <div class="bg-white p-h-2 outline-color-grey m-v-1  p-v-1 m-h-4">
                         <strong class="">Front-End Developer</strong> 
@@ -144,7 +140,7 @@
                                         <strong class="">Front-End Developer</strong> 
                                         <span class="float-right hover-underline">Contract, Canada</span>
                                         </div>
-                                        <p class="center h6 m-t-2">Didn’t see your dream job? <span class="info">Get in touch</span></p>
+                                        <p class="center white h6 m-t-2">Didn’t see your dream job? <span class="info">Get in touch</span></p>
                       </div>
         </div>
         <footer class="p2 m-t-6 bg-white line-height-17">
