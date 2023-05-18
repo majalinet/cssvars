@@ -21,394 +21,216 @@
     <meta name="theme-color" content="#FF530D">
 
     <link rel="stylesheet" href="../css/cssvars.css">
-
     <style>
-        :root {
-            --color-1: #222225;
-            --color-2: #1bbc9c;
+        .main-nav{
+            background-color: rgba(var(--grey-rgb), 0.1);
         }
+          .nav ul li a{
+    text-transform: uppercase;
+    font-weight: 600;
+    color:white;
+  }
     </style>
-
 </head>
 
 <body>
-    <div class="main-nav">
-        <div class="container">
-            <div class="main-menu p-v-1">
-                <a href="#">
-                    <svg alt="Agile Logo" class="icon-color-1-fill  icon-m" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 30.17 37.71">
-                        <defs>
-                            <style>
-                                .cls-2 {
-                                    font-size: 34px;
-                                    fill: #fff;
-                                    font-family: Montserrat-Thin, Montserrat;
-                                    letter-spacing: 0.01em;
-                                }
-                            </style>
-                        </defs>
-                        <title>Agile logo</title>
-                        <g>
-                            <g>
-                                <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12">
-                                </rect>
-                                <text class="cls-2" transform="translate(3.33 28.9)">A</text>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
 
-                <label for="toggle-1" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                    </svg>
+    <div class="h-75 d-flex flex-column bg-light-grey" style="background-image: url('../img/education-1.jpg'); background-size: cover;" id="home">
 
-
-                </label>
-                <input type="checkbox" id="toggle-1">
-
-                <nav class="nav">
-                    <ul class="font-weight-400 text-uppercase">
-                        <li><a href="#home" class="smaller">home</a></li>
-                        <li><a href="#features" class="smaller">features</a></li>
-                        <li><a href="#pricing" class="smaller">pricing</a></li>
-                        <li><a href="#testimonials" class="smaller">testimonials</a></li>
-                        <li><a href="#specifications" class="smaller">specifications</a></li>
-                        <li><a href="#buy" class="smaller">buy now</a></li>
-                    </ul>
-                </nav>
-            </div>
+        <div class="main-nav container-fluid p-v-05">
+          <div class="main-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-white-fill icon-m" viewBox="0 0 24 24">
+                <path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z"></path>
+            </svg>
+              <label for="toggle-1" class="toggle-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+        
+        
+              </label>
+              <input type="checkbox" id="toggle-1">
+        
+              <nav class="nav">
+                  <ul>
+                      <li><a href="#home">Home</a></li>
+                      <li><a href="#meetings">Meetings</a></li>
+                      <li><a href="#apply">Apply Now</a></li>
+                      <li><a href="#courses">Courses</a></li>
+                      <li><a href="#contact">Contact us</a></li>
+                  </ul>
+              </nav>
+          </div>
         </div>
-    </div>
-
-    <div class="carousel container">
-        <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
-        <input type="radio" name="slides" id="radio-2" class="radio-2">
-        <input type="radio" name="slides" id="radio-3" class="radio-3">
-        <input type="radio" name="slides" id="radio-4" class="radio-4">
-        <ul class="slides m-v-1">
-            <li class="slide">
-                <img src="../img/vika/design-company/achievement-1.jpg" class="img-responsive">
-            </li>
-            <li class="slide">
-                <img src="../img/vika/design-company/laptop.jpg" class="img-responsive">
-            </li>
-            <li class="slide">
-                <img src="../img/vika/design-company/hands-laptop.jpg" class="img-responsive">
-            </li>
-            <li class="slide">
-                <img src="../img/vika/design-company/like.jpg" class="img-responsive">
-            </li>
-        </ul>
-        <div class="slidesNavigation m-v-2">
-            <label for="radio-1" id="dotForRadio-1"></label>
-            <label for="radio-2" id="dotForRadio-2"></label>
-            <label for="radio-3" id="dotForRadio-3"></label>
-            <label for="radio-4" id="dotForRadio-4"></label>
+        <h4 class="left white font-weight-600 m-l-3 m-t-6 text-uppercase">Hello students</h4>
+        <h1 class="left m-l-3 bold display-2 white">Welcome to Education</h1>
+        <p class="left m-l-3 white m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua.</p>
+        <div class="col-2 m-l-2">
+        <button class="button bg-danger p-h-1  p-v-05 m-t-2 left white rounded text-uppercase">Join us now!</button>
         </div>
-    </div>
-
-
-    <section class="container bg-light-grey topmargin">
-        <div class="p-v-2">
-            <div class="row">
-                <div class="col-md-9">
-                    <p class="h5 black font-weight-400">Call us today at <span class="color-2">+91.22.57412541</span> or Email us
-                        at <span class="color-2">support@canvas.com</span></p>
-                    <p class="m0">We strive to provide Our Customers with Top Notch Support to make their Theme
-                        Experience
-                        Wonderful</p>
-                </div>
-                <div class="col-md-3">
-                    <a href="#" class="button button-m d-inline m-v-1 text-uppercase font-weight-200 bg-color-2"
-                        target="_blank">browse
-                        now</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="row justify-content-center container m-v-4 p0">
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg class="icon-s m07" viewBox="0 0 24 24">
-                            <path fill="#fff"
-                                d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z">
-                            </path>
+        <div class="row  m-t-6 justify-content-center">
+       
+            <div class="col-md-4">
+                <div class="">
+                    
+    
+                    <div class="p-v-2 bg-danger center">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" class="icon-warning-fill icon-m" viewBox="0 0 24 24" width="24px" fill="#000000"><rect fill="none" height="24" width="24"/><g><path d="M12,12.75c1.63,0,3.07,0.39,4.24,0.9c1.08,0.48,1.76,1.56,1.76,2.73L18,18H6l0-1.61c0-1.18,0.68-2.26,1.76-2.73 C8.93,13.14,10.37,12.75,12,12.75z M4,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C2,12.1,2.9,13,4,13z M5.13,14.1 C4.76,14.04,4.39,14,4,14c-0.99,0-1.93,0.21-2.78,0.58C0.48,14.9,0,15.62,0,16.43V18l4.5,0v-1.61C4.5,15.56,4.73,14.78,5.13,14.1z M20,13c1.1,0,2-0.9,2-2c0-1.1-0.9-2-2-2s-2,0.9-2,2C18,12.1,18.9,13,20,13z M24,16.43c0-0.81-0.48-1.53-1.22-1.85 C21.93,14.21,20.99,14,20,14c-0.39,0-0.76,0.04-1.13,0.1c0.4,0.68,0.63,1.46,0.63,2.29V18l4.5,0V16.43z M12,6c1.66,0,3,1.34,3,3 c0,1.66-1.34,3-3,3s-3-1.34-3-3C9,7.34,10.34,6,12,6z"/></g>
                         </svg>
-                    </i>
+                        <p class="white center h6 font-weight-600 p-h-1">Best students</p>
+<p class="center white">Nisl purus in mollis nunc sed id<br> semper risus. Vel orci porta non<br> pulvinar neque laoreet suspendisse.</p>
+                    </div>
                 </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">Pure HTML CSS</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
+            </div>
+            <div class="col-md-4">
+                <div class="">
+                    
+    
+                    <div class="p-v-2 bg-danger center">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="icon-warning-fill icon-m" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M14 6v15H3v-2h2V3h9v1h5v15h2v2h-4V6h-3zm-4 5v2h2v-2h-2z"/></svg>
+                        <p class="white center h6 font-weight-600 p-h-1">Online Meeting</p>
+<p class="center white">Nisl purus in mollis nunc sed id<br> semper risus. Vel orci porta non<br> pulvinar neque laoreet suspendisse.</p>
+                    </div>
                 </div>
-
+            </div>
+            <div class="col-md-4">
+                <div class="">
+                    
+    
+                    <div class="p-v-2 bg-danger center">
+                        <svg xmlns="http://www.w3.org/2000/svg" enable-background="new 0 0 24 24" height="24px" class="icon-warning-fill icon-m" viewBox="0 0 24 24" width="24px" fill="#000000"><g><rect fill="none" height="24" width="24"/></g><g><g><path d="M6.32,13.01c0.96,0.02,1.85,0.5,2.45,1.34C9.5,15.38,10.71,16,12,16c1.29,0,2.5-0.62,3.23-1.66 c0.6-0.84,1.49-1.32,2.45-1.34C16.96,11.78,14.08,11,12,11C9.93,11,7.04,11.78,6.32,13.01z"/><path d="M4,13L4,13c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3s-3,1.34-3,3C1,11.66,2.34,13,4,13z"/><path d="M20,13L20,13c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3s-3,1.34-3,3C17,11.66,18.34,13,20,13z"/><path d="M12,10c1.66,0,3-1.34,3-3c0-1.66-1.34-3-3-3S9,5.34,9,7C9,8.66,10.34,10,12,10z"/><path d="M21,14h-3.27c-0.77,0-1.35,0.45-1.68,0.92C16.01,14.98,14.69,17,12,17c-1.43,0-3.03-0.64-4.05-2.08 C7.56,14.37,6.95,14,6.27,14H3c-1.1,0-2,0.9-2,2v4h7v-2.26c1.15,0.8,2.54,1.26,4,1.26s2.85-0.46,4-1.26V20h7v-4 C23,14.9,22.1,14,21,14z"/></g></g></svg>
+                        <p class="white center h6 font-weight-600 p-h-1">Best networking</p>
+<p class="center white">Nisl purus in mollis nunc sed id<br> semper risus. Vel orci porta non<br> pulvinar neque laoreet suspendisse.</p>
+                    </div>
+                </div>
             </div>
         </div>
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg class="icon-s m07" viewBox="0 0 24 24">
-                            <path fill="#fff"
-                                d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z">
-                            </path>
-                        </svg>
-                    </i>
+      </div>  
+      <div class="container m-t-6">
+        <h4 class="center black font-weight-600 text-uppercase">Upcoming meetings</h4>
+        <hr>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="shadow-color-3 m05 p1 rounded">
+                    <div class="p-v-1">
+                        <h5 class="center black bold">Meetings categories</h5>
+                        <hr class="m-v-1">
+                        <p class="dark font-weight-600 m-l-2">Iaculis nunc sed augue lacus</p>
+                        <div class="m-t-05"></div>
+                       
+                        <p class="dark font-weight-600 m-l-2">Interdum velit euismod</p>
+                        <div class="m-t-05"></div>
+                        
+                        <p class="dark font-weight-600 m-l-2">Volutpat odio facilisis mauris</p>
+                        <div class="m-t-05"></div>
+                        
+                        <p class="dark font-weight-600 m-l-2">Lectus vestibulum mattis</p>
+                        <hr>
+                        <div class="m-t-2"></div>
+                        <button class="button-m  bg-danger center m-l-2 white">All Upcoming Meetings</button>
+                    </div>
                 </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">FAST LOADING</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="shadow-color-3 m05 rounded">
+                   
+                        <img src="../img/vika/landing-pages/technology-2.jpg" class="img-responsive">
+                       <div class="row">
+                        <div class="col-md-2">
+                            <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">05</span></p>
+                           
+                        </div>
+                        <div class="col-md-10 m-t-05">
+                            <h6 class="left font-weight-600">New Lecturers Meetings</h6>
+                            <p class="dark left">Sit amet consectetur adipiscing elit.</p>
 
+                        </div>
+                       </div>
+              
+                </div> 
+                <div class="shadow-color-3 m05 m-t-2 rounded">
+                   
+                    <img src="../img/vika/landing-pages/proposals.jpg" class="img-responsive">
+                   <div class="row">
+                    <div class="col-md-2">
+                        <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">05</span></p>
+                       
+                    </div>
+                    <div class="col-md-10 m-t-05">
+                        <h6 class="left font-weight-600">Education Conference</h6>
+                        <p class="dark left">Dictumst vestibulum rhoncus est pellentesque.</p>
+
+                    </div>
+                   </div>
+          
+            </div> 
+            </div>
+            <div class="col-md-4">
+                <div class="shadow-color-3 m05  rounded">
+                    <img src="../img/vika/landing-pages/work-at-home.jpg" class="img-responsive">
+                    
+                        <div class="row">
+                            <div class="col-md-2">
+                                <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">26</span></p>
+                               
+                            </div>
+                            <div class="col-md-10 m-t-05">
+                                <h6 class="left font-weight-600">Online Teaching</h6>
+                                <p class="dark left">Sed augue lacus viverra vitae congue eu consequat ac. </p>
+    
+                            </div>
+                           </div>
+                 
+                </div> 
+                <div class="shadow-color-3 m05 m-t-2 rounded">
+                   
+                    <img src="../img/vika/landing-pages/template-2.jpg" class="img-responsive">
+                   <div class="row">
+                    <div class="col-md-2">
+                        <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">30</span></p>
+                       
+                    </div>
+                    <div class="col-md-10 m-t-05">
+                        <h6 class="left font-weight-600">Student Training Meetup</h6>
+                        <p class="dark left">Sed vulputate odio ut enim blandit volutpat.</p>
+
+                    </div>
+                   </div>
+          
+            </div> 
             </div>
         </div>
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg class="icon-s m07" viewBox="0 0 24 24">
-                            <path fill="#fff"
-                                d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z">
-                            </path>
-                            <path d="M0 0h24v24H0z" fill="none"></path>
-                        </svg>
-                    </i>
-                </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">VARIABLES BASED</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                </div>
-
+      </div>  
+      <div class="parallax-img m-t-4" style="background-image: url('../img/vika/design-company/parallax.jpg'); height: 700px;">
+        <div class="row m-h-7">
+            <div class="col-md-6">
+            <div class="p-v-1 container m-t-6 bga-grey">
+            <h5 class="white font-weight-600 text-uppercase left m-l-2">Apply for bachelor degree</h5>
+            <p class="grey left m-v-1 m-l-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Sit amet volutpat consequat mauris nunc congue nisi<br> vitae suscipit.</p>
+            <button class="button bg-danger p-h-1  p-v-05  left white rounded text-uppercase m-l-2">Join us now!</button>
+                    </div>     
+                    <div class="p-v-1 container m-t-2 bga-grey">
+                        <h5 class="white font-weight-600 text-uppercase left m-l-2">Apply for bachelor degree</h5>
+                        <p class="grey left m-v-1 m-l-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Sit amet volutpat consequat mauris nunc congue nisi<br> vitae suscipit.</p>
+                        <button class="button bg-warning p-h-1  p-v-05  left white rounded text-uppercase m-l-2">Join us now!</button>
+                                </div>     
+             
             </div>
-        </div>
-    </div>
-    <div class="row justify-content-center container m-v-2 p0">
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg class="icon-s m07" viewBox="0 0 24 24">
-                            <path fill="#fff"
-                                d="M17.25,18H6.75V4H17.25M14,21H10V20H14M16,1H8A3,3 0 0,0 5,4V20A3,3 0 0,0 8,23H16A3,3 0 0,0 19,20V4A3,3 0 0,0 16,1Z">
-                            </path>
-                        </svg>
-                    </i>
-                </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">RESPONSIVE LAYOUT</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                </div>
-
+            <div class="col-md-6">
+            <div class="shadow-color-3 bg-white m-t-6 m05">
+             <h5 class="warning m-v-2 bold center">About Edu Meeting HTML Template</h5>
+             <p class="dark p-h-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. In est ante in nibh mauris.</p>
+              <hr class="col-9"> 
+              <h5 class="black center font-weight-600">HTML CSS Bootstrap Layout</h5>
+              <p class="dark p-h-4 m-t-05">Natoque penatibus et magnis dis. Habitant morbi tristique senectus et netus et malesuada fames ac. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. </p>
+            <hr class="col-9">
+            <h5 class="black center font-weight-600">Please tell your friends</h5>
+            <p class="dark p-h-4 m-t-05">Gravida quis blandit turpis cursus in hac habitasse platea. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. </p>
             </div>
+      </div>
+        </div> 
         </div>
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg viewBox="0 0 24 24" class="icon-s m07">
-                            <path fill="#fff"
-                                d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z">
-                            </path>
-                        </svg>
-                    </i>
-                </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">RETINA READY GRAPHICS</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="col-md-4 p05">
-            <div class="row">
-                <div class="col-3">
-                    <i class="icon-box circle d-inline icon-color-2-bg hover-grey">
-                        <svg viewBox="0 0 24 24" class="icon-s m07">
-                            <path fill="#fff"
-                                d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                            </path>
-                        </svg>
-                    </i>
-                </div>
-                <div class="col-9 left p-h-1">
-                    <p class="text-uppercase font-weight-400 h6 black m0">POWERFUL PERFORMANCE</p>
-                    <p class="m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing
-                        elit.</p>
-                </div>
-
-            </div>
-        </div>
-        <div class="container">
-            <hr style="margin-bottom: 0;">
-        </div>
-    </div>
-
-    <div class="row container m-v-4">
-        <div class="col-md-2 center">
-            <img src="../img/vika/creatives.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-
-        <div class="col-md-2 center">
-            <img src="../img/vika/creatives-design.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-
-        <div class="col-md-2 center">
-            <img src="../img/vika/hipster-premium-quality.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-
-        <div class="col-md-2 center">
-            <img src="../img/vika/retro-logo.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-
-        <div class="col-md-2 center">
-            <img src="../img/vika/vintage.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-
-        <div class="col-md-2 center">
-            <img src="../img/vika/vintage-hipster-style.png" alt="portfolio" class="img-responsive d-inline m0 p0">
-        </div>
-    </div>
-
-    <footer class="bg-dark p2 line-height-17">
-        <div class="container-fluid row white">
-            <div class="col-md-6 col-lg-3">
-                <a href="#">
-                    <svg alt="Agile Logo" class="icon-color-2-fill  icon-ml" xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 30.17 37.71">
-                        <defs>
-                            <style>
-                                .cls-2 {
-                                    font-size: 34px;
-                                    fill: #fff;
-                                    font-family: Montserrat-Thin, Montserrat;
-                                    letter-spacing: 0.01em;
-                                }
-                            </style>
-                        </defs>
-                        <title>Agile logo</title>
-                        <g>
-                            <g>
-                                <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12" />
-                                <text class="cls-2" transform="translate(3.33 28.9)">A</text></g>
-                        </g>
-                    </svg>
-                </a>
-                <p class="footer-about">Europe IT Outsourcing is your team of expert and certified professionals,
-                    accompanied with many well-trained professionals, and 10's of essential tools to grow your
-                    business
-                    by applying the most effective development, design, and marketing techniques.</p>
-            </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="h4 white">Company</p>
-                <hr>
-                <ul style="list-style-type:none">
-                    <li><a href="https://www.europeitoutsourcing.com/company/about/" class="white">Who We Are</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/services/" class="white">Services</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/careers/" class="white">Careers</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/blog/" class="white">Blog</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/contact-us/" class="white"> Contact
-                            us</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/partnership/" class="white">Partnership</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/privacy-policy/" class="white">Privacy
-                            Policy</a></li>
-                    <li><a href="#get-quote" class="white">Get A Free Consultation</a></li>
-                </ul>
-            </div>
-
-            <div class="col-md-6 col-lg-3 white">
-                <p class="h4 white">Services</p>
-                <hr>
-                <ul style="list-style-type:none">
-                    <li><a href="https://www.europeitoutsourcing.com/company/about/" class="white">Who We Are</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/services/" class="white">Services</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/careers/" class="white">Careers</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/blog/" class="white">Blog</a></li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/contact-us/" class="white"> Contact
-                            us</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/partnership/" class="white">Partnership</a>
-                    </li>
-                    <li><a href="https://www.europeitoutsourcing.com/company/privacy-policy/" class="white">Privacy
-                            Policy</a></li>
-                    <li><a href="#get-quote" class="qoute white">Get A Free Consultation</a></li>
-                </ul>
-            </div>
-
-
-
-            <div class="col-md-6 col-lg-3 white">
-                <p class="h4 white">Connect</p>
-                <hr>
-                <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                    <i class="icon-box  hover-shadow">
-                        <svg viewBox="0 0 512 512" class="icon-color-2-fill  icon-s">
-                            <path d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
-                                                                c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
-                                                                c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
-                                                                c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
-                                                                C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
-                                                                c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
-                                                                c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
-                                                                c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
-                                                                c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
-                                                                C414.973,206.142,393.023,203.486,381.384,198.639z">
-                            </path>
-                        </svg>
-                    </i>
-                </a>
-                <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                    <i class="icon-box  hover-shadow">
-                        <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                            <path
-                                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
-                            </path>
-                        </svg>
-                    </i>
-                </a>
-                <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                    <i class="icon-box  hover-shadow">
-                        <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                            <path
-                                d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
-                            </path>
-                        </svg>
-                    </i>
-                </a>
-                <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                    <i class="icon-box  hover-shadow">
-                        <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                            <path
-                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
-                            </path>
-                        </svg>
-                    </i>
-                </a>
-
-                <p> Europe: +380 96 926 5003<br>
-                    U. S. A.: +1 708 515 4601<br>
-                    Canada: +1 514 819 8198<br>
-
-                </p>
-            </div>
-        </div>
-        <div class="center p2 white">
-            <small> © Copyright 2019. All Rights Reserved Europe IT Outsourcing Company.</small>
-        </div>
-    </footer>
+    </div>      
 </body>
 
 </html>
