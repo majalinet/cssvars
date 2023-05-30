@@ -22,361 +22,380 @@
 
     <link rel="stylesheet" href="../css/cssvars.css">
     <style>
-        :root {
-            --color-1: #222225;
-            --color-2: #1bbc9c;
-        }
+  *, *:after, *:before { 
+	box-sizing: border-box; 
+}
+.clearfix:before, .clearfix:after { 
+	content: ''; 
+	display: table; 
+}
+.clearfix:after { 
+	clear: both; 
+}
+.hover-text-one {
+	overflow: hidden;
+	margin: 0;
+	width: 100%;
+	list-style: none;
+	text-align: center;
+}
+.hover-text-one figure {
+	position: relative;
+	z-index: 1;
+	display: inline-block;
+	overflow: hidden;
+	text-align: center;
+	cursor: pointer;
+}
+.hover-text-one figure img {
+	position: relative;
+	display: block;
+	min-height: 100%;
+	opacity: 0.8;
+}
+.hover-text-one figure figcaption {
+	padding: 2em;
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 1.25em;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+.hover-text-one figure figcaption::before,
+.hover-text-one figure figcaption::after {
+	pointer-events: none;
+}
+.hover-text-one figure figcaption{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+}
+
+.hover-text-one figure p {
+	margin: 0;
+}
+.hover-text-one figure p {
+	letter-spacing: 1px;
+	font-size: 68.5%;
+}
+
+figure.effect-text-two figcaption::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: -webkit-linear-gradient(top, rgba(72,76,97,0) 0%, rgba(72,76,97,0.8) 75%);
+	background: linear-gradient(to bottom, rgba(72,76,97,0) 0%, var(--luxury, black) 75%);
+	content: '';
+	opacity: 0;
+	-webkit-transform: translate3d(0,50%,0);
+	transform: translate3d(0,50%,0);
+}
+
+figure.effect-text-two figcaption::before,
+figure.effect-text-two p {
+	-webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+	transition: opacity 0.35s, transform 0.35s;
+}
+figure.effect-text-two p {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: 2em;
+	width: 100%;
+	opacity: 0;
+	-webkit-transform: translate3d(0,10px,0);
+	transform: translate3d(0,10px,0);
+}
+figure.effect-text-two:hover figcaption::before ,
+figure.effect-text-two:hover p {
+	opacity: 1;
+	-webkit-transform: translate3d(0,0,0);
+	transform: translate3d(0,0,0);
+}
+     
     </style>
 
 </head>
 
 <body>
-    <header>
-        <div class="main-nav bordered-top">
-            <div class="main-menu container">
-                <a href="#" target="_blank">
-                    <svg alt="Agile Logo" class="icon-color-1-fill  icon-ml" xmlns="http://www.w3.org/2000/svg"
-                        viewbox="0 0 30.17 37.71">
-                        <defs>
-                            <style>
-                                .cls-2 {
-                                    font-size: 34px;
-                                    fill: #fff;
-                                    font-family: Montserrat-Thin, Montserrat;
-                                    letter-spacing: 0.01em;
-                                }
-                            </style>
-                        </defs>
-                        <title>Agile logo</title>
-                        <g>
-                            <g>
-                                <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12" /><text
-                                    class="cls-2" transform="translate(3.33 28.9)">A</text></g>
-                        </g>
-                    </svg>
-                </a>
-
-                <label for="toggle-1" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
-
-
-                </label>
-                <input type="checkbox" id="toggle-1">
-
-                        <nav class="nav">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
-            </div>
-
-        </div>
-    </header>
-    <div class="promo-box-s bg-light-grey">
-        <div class="container">
-            <h1>About Me</h1>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item">About Me</li>
-            </ol>
-        </div>
-    </div>
-    <div class="promo-box-s">
-        <div class="container">
-            <div class="row m-v-2">
-                <div class="col-md-7">
-                    <h4 class="bold">Ann Doe</h4>
-                    <p class="text-uppercase font-weight-400 color-2">CEO & Founder</p>
-                    <p class="h6 dark m-v-1 left">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
-                        <span class="color-2">vehicula</span> sit amet enim ac sagittis. Curabitur eget leo varius,
-                        elementum mauris eget, egestas
-                        quam. Donec ante risus, dapibus sed lectus non, lacinia vestibulum nisi. Morbi vitae augue quam.
-                        Nullam ac laoreet libero.
-                    </p>
-                    <p class="font-weight-400 dark">
-                        Consectetur adipiscing elit. Aliquam iaculis sit amet enim ac sagittis. Curabitur eget leo
-                        varius, elementum mauris eget, egestas quam.
-                    </p>
-                    <hr>
-                    <div class="row">
-                        <div class="col-md-6">
-                            <button class="small text-uppercase p1 font-weight-200">get in touch</button>
-                            <button class="bg-color-2 small text-uppercase p1 font-weight-200">hire me</button>
-                        </div>
-                        <div class="col-md-6 p-v-1">
-                            <span class="text-uppercase small font-weight-400 m-h-1">
-                                follow me
-                            </span>
-                            <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px;">
-                                <svg viewBox="0 0 24 24" class="icon-xs">
-                                    <path fill="#222225"
-                                        d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
-                                    </path>
-                                </svg>
-                            </i>
-                            <div class="m-h-1 d-inline">
-                                <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px;">
-                                    <svg viewBox="0 0 24 24" class="icon-xs">
-                                        <path fill="#222225"
-                                            d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
-                                        </path>
-                                    </svg>
-                                </i>
-
-                            </div>
-                            <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px;">
-                                <svg viewBox="0 0 512 512" class="icon-xs">
-                                    <path fill="#222225" id="Twitter__x28_alt_x29_"
-                                        d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
-                                                                        c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
-                                                                        c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
-                                                                        c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
-                                                                        C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
-                                                                        c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
-                                                                        c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
-                                                                        c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
-                                                                        c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
-                                                                        C414.973,206.142,393.023,203.486,381.384,198.639z">
-                                    </path>
-                                </svg>
-                            </i>
-                        </div>
-
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <img src="../img/vika/business-woman.jpg" class="img-responsive m-h-05">
-                </div>
-            </div>
-        </div>
-    </div>
-    <section class="p-v-1 bg-light-grey">
-        <div class="row container">
-            <div class="col-md-3 p1 justify-content-start">
-                <svg class="icon-sm icon-color-2-fill m-v-1" viewBox="0 0 24 24">
-                    <path
-                        d="M17.25,18H6.75V4H17.25M14,21H10V20H14M16,1H8A3,3 0 0,0 5,4V20A3,3 0 0,0 8,23H16A3,3 0 0,0 19,20V4A3,3 0 0,0 16,1Z">
+    <div class="main-nav container-fluid m-t-05 nav-top-border-hover">
+        <div class="main-menu">
+            <a href="#" id="logo1" target="_blank" rel="noopener noreferrer"><img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="logo"></a>
+      
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      
+      
+            </label>
+            <input type="checkbox" id="toggle-1">
+      
+<nav class="nav">
+                <ul>
+                    <li><a hfref="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-xs">
+                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+                    </svg></a></li>
+                    <li><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs">
+                        <path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path>
+                    </svg></a></li>
+                    <li><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs">
+                        <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
                     </path>
-                </svg>
-                <p class="font-weight-400 h6">Mobile Apps</p>
-                <p class="font-weight-400 dark">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
-            </div>
-
-            <div class="col-md-3 p1 justify-content-start">
-                <svg viewBox="0 0 24 24" class="icon-sm icon-color-2-fill m-v-1">
-                    <path
-                        d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z">
-                    </path>
-                </svg>
-                <p class="font-weight-400 h6">Creative Websites</p>
-                <p class="font-weight-400 dark">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
-            </div>
-
-            <div class="col-md-3 p1 justify-content-start">
-                <svg viewBox="0 0 24 24" class="icon-sm icon-color-2-fill m-v-1">
-                    <path
-                        d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z">
-                    </path>
-                </svg>
-                <p class="font-weight-400 h6">SEO Optimization</p>
-                <p class="font-weight-400 dark">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
-            </div>
-
-            <div class="col-md-3 p1 justify-content-start">
-                <svg viewBox="0 0 24 24" class="icon-sm icon-color-2-fill m-v-1">
-                    <path
-                        d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z">
-                    </path>
-                </svg>
-                <p class="font-weight-400 h6">Brand Solutions</p>
-                <p class="font-weight-400 dark">Lorem ipsum dolor sit amet, coctetur adipiscing elit.</p>
-            </div>
+                </svg></a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+               
+                </ul>
+            </nav>
         </div>
-    </section>
-
-    <section class="m-v-3 container">
-        <h5 class="bold">Projects</h5>
-        <p class="dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit massa enim. Nullam id
-            varius nunc.
-        </p>
-        <div class="carousel p-v-3">
-            <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
-            <input type="radio" name="slides" id="radio-2" class="radio-2">
-
-            <ul class="slides">
-                <li class="slide">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-10.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-7.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-8.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-4.jpg" alt="alttext" class="img-responsive">
-                        </div>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="row">
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-11.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/work-1.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/brand-1.jpg" alt="alttext" class="img-responsive">
-                        </div>
-
-                        <div class="col-md-3">
-                            <img src="../img/vika/design-company/mobile-app-1.jpg" alt="alttext" class="img-responsive">
-                        </div>
-                    </div>
-                </li>
+      </div>
+      <div class="row m-t-6">
+        <div class="col-md-6">
+<img src="../img/vika/office1.jpg" class="img-responsive"> 
+        </div>
+        <div class="col-md-6">
+<h1 class="black font-weight-600 display-2">Hello, I'm Jack.</h1>
+<p class="luxury font-weight-400 h5 m-l-05">Web-designer</p>
+<p class="dark m-l-05">Nunc consequat interdum varius sit amet mattis vulputate.<br> Iaculis nunc sed augue lacus viverra vitae congue eu.<br> Viverra vitae congue eu consequat ac felis donec.</p>
+<div class="m-t-2">
+<svg viewBox="0 0 24 24" class="icon-luxury-fill icon-xs m-l-05">
+    <path d="M17,19H7V5H17M17,1H7C5.89,1 5,1.89 5,3V21A2,2 0 0,0 7,23H17A2,2 0 0,0 19,21V3C19,1.89 18.1,1 17,1Z"></path>
+</svg><p class="d-inline">Phone:<span class="luxury font-weight-600 m-l-1">+123 456 789 </span></p>    
+</div>
+<div class="m-t-05">
+<svg xmlns="http://www.w3.org/2000/svg" class="icon-luxury-fill icon-xs m-l-05" height="24px" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
+<p class="d-inline">Email:<span class="luxury font-weight-600 m-l-1">@info@youremail.com </span></p>
+</div>
+<div class="m-t-05">
+    <svg xmlns="http://www.w3.org/2000/svg" height="24px" class="icon-luxury-fill icon-xs m-l-05" viewBox="0 0 24 24" width="24px" fill="#000000"><path d="M0 0h24v24H0z" fill="none"/><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/></svg>
+    <p class="d-inline">Address:<span class="luxury font-weight-600 m-l-1">121 Rock Sreet, 21 Avenue,New York</span></p>
+</div>
+<div class="m-t-05">
+    <svg viewBox="0 0 24 24" class="icon-luxury-fill icon-xs m-l-05">
+        <path d="M19,19H5V8H19M16,1V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3H18V1M17,12H12V17H17V12Z"></path>
+    </svg>
+    <p class="d-inline">Date of Birth: <span class="luxury font-weight-600 m-l-1"> Aug 28th 1987</span></p>
+</div>
+<div class="m-l-1 m-t-2">
+<button class="button-m bg-luxury text-uppercase p-h-2">Download CV</button>
+</div>
+</div>
+      </div>
+      <div class="container m-t-6">
+        <h1 class="black center font-weight-400 display-3">Design and Concept Development</h1>
+        <p class="dark center h6 font-weight-400">Lorem ipsum dolor sit, consectetur some adipiscing elit<br> eiusmod tempor incididu</p>
+      <div class="row m-t-4 m-h-7">
+        <div class="col-md-4 left">
+<h4 class="luxury bold">Design</h4>
+<ul class="no-indent-ul">
+    <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+    </svg>Product Mockup</li>
+    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+    </svg>Branding</li>
+    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+    </svg>Illustrations</li>
+    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+    </svg>UI/UX</li>
+    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+    </svg>Websites</li>
+</ul>
+        </div>
+        <div class="col-md-4 left">
+            <h4 class="luxury bold"> Web Design</h4>
+            <ul class="no-indent-ul">
+                <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Propotype</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>UI/UX</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Content Writing</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Website Hosting</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Website Analysis</li>
             </ul>
-            <div class="slidesNavigation">
-                <label for="radio-1" id="dotForRadio-1"></label>
-                <label for="radio-2" id="dotForRadio-2"></label>
-
-            </div>
         </div>
-    </section>
+        <div class="col-md-4 left">
+            <h4 class="luxury bold">Development</h4>
+            <ul class="no-indent-ul">
+                <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>WordPress</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Application Devloment</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Front-end</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>PHP</li>
+                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                </svg>Javascript</li>
+            </ul>
+        </div>
+        </div>
+        <div class="row m-t-4 m-h-7">
+            <div class="col-md-4 left">
+                <h4 class="luxury bold">Branding</h4>
+                <ul class="no-indent-ul">
+                    <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                    </svg>Brand equity audit</li>
+                    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                    </svg>Audience analysis</li>
+                    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                    </svg>Competitive review</li>
+                    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                    </svg>Strategic direction</li>
+                    <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                        <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                    </svg>Visual positioning</li>
+                </ul>
+                        </div>
+                        <div class="col-md-4 left">
+                            <h4 class="luxury bold">Marketing</h4>
+                            <ul class="no-indent-ul">
+                                <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                </svg>SEO Marketing</li>
+                                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                </svg>SE Optimization</li>
+                                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                </svg>Affiliate Marketing</li>
+                                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                </svg>Keyword</li>
+                                <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                    <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                </svg>Article Writing</li>
+                            </ul>
+                                    </div>
+                                    <div class="col-md-4 left">
+                                        <h4 class="luxury bold">Video Editing</h4>
+                                        <ul class="no-indent-ul">
+                                            <li class="h6 dark m-t-2"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                                <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                            </svg>Animation</li>
+                                            <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                                <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                            </svg>MotionGraphics</li>
+                                            <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                                <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                            </svg>After Effetcs</li>
+                                            <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                                <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                            </svg>Cinema 4D</li>
+                                            <li class="h6 dark m-t-05"><svg viewBox="0 0 24 24" class="icon-luxury-fill icon-s">
+                                                <path fill="color-1" d="M19,13H13V19H11V13H5V11H11V5H13V11H19V13Z"></path>
+                                            </svg>After Effects</li>
+                                        </ul>
+                                                </div>  
+        </div>
+      </div>
+    </div>
+    <div class="section bg-dark m-t-6">
+        <h1 class="center display-2 bold white p-t-2">My Works</h1>
+        <p class="m-t-05 grey center font-weight-400 h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+<div class="row m-t-2">
+    <div class="col-md-4 p0">
+                <div class="hover-text-one">
+                    <figure class="effect-text-two">
+                        <img src="../img/vika/design-company/work-1.jpg" class="img-responsive">
+                        <figcaption>
+                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </figcaption>			
+                    </figure>
+                  </div>
+    </div>
+    <div class="col-md-4 p0">
+        <div class="hover-text-one">
+            <figure class="effect-text-two">
+                <img src="../img/vika/design-company/work-5.jpg" class="img-responsive">
+                <figcaption>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>			
+            </figure>
+          </div>
+    </div>
+    <div class="col-md-4 p0">
+        <div class="hover-text-one">
+            <figure class="effect-text-two">
+                <img src="../img/vika/design-company/work-4.jpg" class="img-responsive">
+                <figcaption>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </figcaption>			
+            </figure>
+          </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4 p0">
+                    <div class="hover-text-one">
+                        <figure class="effect-text-two">
+                            <img src="../img/vika/design-company/picture-1.jpg" class="img-responsive">
+                            <figcaption>
+                          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            </figcaption>			
+                        </figure>
+                      </div>
+        </div>
+        <div class="col-md-4 p0">
+            <div class="hover-text-one">
+                <figure class="effect-text-two">
+                    <img src="../img/vika/design-company/picture-2.jpg" class="img-responsive">
+                    <figcaption>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </figcaption>			
+                </figure>
+              </div>
+        </div>
+        <div class="col-md-4 p0">
+            <div class="hover-text-one">
+                <figure class="effect-text-two">
+                    <img src="../img/vika/design-company/picture-3.jpg" class="img-responsive">
+                    <figcaption>
+                  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </figcaption>			
+                </figure>
+              </div>
+        </div>
+</div>   
+<div class="row m-t-6 m-h-7">
+    <div class="col-md-4">
+<h6 class="white text-uppercase left">My skills<br> <span class="display-3">Expertise</span></h6>
+<p class="grey left h6 m-t-1">Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Malesuada proin libero nunc. Mattis aliquam faucibus purus in massa tempor nec. </p>
+<button class="button-m m-t-1 bg-luxury">RESUME</button>
+</div>
+    <div class="col-md-4">
 
-    <footer class="bg-dark p2 line-height-17">
-            <div class="container-fluid row white">
-                <div class="col-md-6 col-lg-3">
-                    <a href="#">
-                        <svg alt="Agile Logo" class="icon-color-2-fill  icon-ml" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 37.71">
-                            <defs>
-                                <style>
-                                    .cls-2 {
-                                        font-size: 34px;
-                                        fill: #fff;
-                                        font-family: Montserrat-Thin, Montserrat;
-                                        letter-spacing: 0.01em;
-                                    }
-                                </style>
-                            </defs>
-                            <title>Agile logo</title>
-                            <g>
-                                <g>
-                                    <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12"></rect><text class="cls-2" transform="translate(3.33 28.9)">A</text></g>
-                            </g>
-                        </svg>
-                    </a>
-                    <p class="footer-about">Europe IT Outsourcing is your team of expert and certified professionals,
-                        accompanied with many well-trained professionals, and 10's of essential tools to grow your business
-                        by applying the most effective development, design, and marketing techniques.</p>
-                </div>
-                <div class="col-md-6 col-lg-3">
-                    <p class="h4 white">Company</p>
-                    <hr>
-                    <ul style="list-style-type:none">
-                        <li><a href="https://www.europeitoutsourcing.com/company/about/" class="white">Who We Are</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/services/" class="white">Services</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/careers/" class="white">Careers</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/blog/" class="white">Blog</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/contact-us/" class="white"> Contact us</a>
-                        </li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/partnership/" class="white">Partnership</a>
-                        </li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/privacy-policy/" class="white">Privacy
-                                Policy</a></li>
-                        <li><a href="#get-quote" class="white">Get A Free Consultation</a></li>
-                    </ul>
-                </div>
-    
-                <div class="col-md-6 col-lg-3 white">
-                    <p class="h4 white">Services</p>
-                    <hr>
-                    <ul style="list-style-type:none">
-                        <li><a href="https://www.europeitoutsourcing.com/company/about/" class="white">Who We Are</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/services/" class="white">Services</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/careers/" class="white">Careers</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/blog/" class="white">Blog</a></li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/contact-us/" class="white"> Contact us</a>
-                        </li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/partnership/" class="white">Partnership</a>
-                        </li>
-                        <li><a href="https://www.europeitoutsourcing.com/company/privacy-policy/" class="white">Privacy
-                                Policy</a></li>
-                        <li><a href="#get-quote" class="qoute white">Get A Free Consultation</a></li>
-                    </ul>
-                </div>
-    
-    
-    
-                <div class="col-md-6 col-lg-3 white">
-                    <p class="h4 white">Connect</p>
-                    <hr>
-                    <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                        <i class="icon-box  hover-shadow">
-                            <svg viewBox="0 0 512 512" class="icon-color-2-fill  icon-s">
-                                <path d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
-                                                                    c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
-                                                                    c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
-                                                                    c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
-                                                                    C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
-                                                                    c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
-                                                                    c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
-                                                                    c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
-                                                                    c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
-                                                                    C414.973,206.142,393.023,203.486,381.384,198.639z">
-                                </path>
-                            </svg>
-                        </i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                        <i class="icon-box  hover-shadow">
-                            <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
-                                </path>
-                            </svg>
-                        </i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                        <i class="icon-box  hover-shadow">
-                            <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
-                                </path>
-                            </svg>
-                        </i>
-                    </a>
-                    <a href="https://www.linkedin.com/company/europe-it-outsourcing/" target="_blank">
-                        <i class="icon-box  hover-shadow">
-                            <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-s">
-                                <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
-                                </path>
-                            </svg>
-                        </i>
-                    </a>
-    
-                    <p> Europe: +380 96 926 5003<br>
-                        U. S. A.: +1 708 515 4601<br>
-                        Canada: +1 514 819 8198<br>
-    
-                    </p>
-                </div>
-            </div>
-            <div class="center p2 white">
-                <small> © Copyright 2019. All Rights Reserved Europe IT Outsourcing Company.</small>
-            </div>
-        </footer>
+    </div>
+    <div class="col-md-4">
+
+    </div>
+</div>   
+    </div>
 </body>
 
 </html>
