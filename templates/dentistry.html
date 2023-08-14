@@ -24,513 +24,417 @@
 
 
     <style>
-        :root {
-            --color-1: #749413;
-            --color-2: #17a9d8;
-        }
+    .nav ul li a{
+        color:#495057;
+        font-weight: 600;
+    }
+   
+        .vl {
+    border-left: 3px solid  #ccc;;
+    height: 510px;
+    position: absolute;
+    left: 50%;
+    margin-left: -3px;
+    top: 0;
+}
+
     </style>
 
 </head>
 
 <body>
-    <div class="bg-color-2 p-v-1">
-        <div class="row container">
-            <div class="col-md-4 white p0">
-            </div>
-            <div class="col-md-8 right p0">
-                <div class="row">
-                    <div class="col-md-8 p0">
-                        <div class="row d-inline justify-content-right">
-                            <a href="#"
-                                class="button button-s d-inline bold white small outline-color-white p0 p-h-03 hover-shadow">
-                                <div class="p05">
-                                    <svg viewBox="0 0 24 24" class="icon-xs img-responsive">
-                                        <path fill="#fff"
-                                            d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z">
-                                        </path>
-                                    </svg>
-                                    Contact Us
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="col-md-4 p0">
-                        <div class="row d-inline justify-content-left">
-                            <a href="#"
-                                class="button button-s d-inline left bold white small bg-color-1 p0 p-h-03 hover-shadow">
-                                <div class="p05">
-                                    <svg viewBox="0 0 24 24" class="icon-xs img-responsive">
-                                        <path fill="#fff"
-                                            d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z">
-                                        </path>
-                                    </svg>
-                                    (123) 456-78-90
-                                </div>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
+    <div class="main-nav container-fluid  p-t-1 bg-light-grey">
+        <div class="main-menu">
+            <a href="#" target="_blank" rel="noopener noreferrer"><h3 class="info logo bold">Medic Care</h3>
+            </a>
+      
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      
+      
+            </label>
+            <input type="checkbox" id="toggle-1">
+      
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#timeline">Timeline</a></li>
+                    <li><a href="#testimonials">Testimonials</a></li>
+                    <li><a href="#booking">Booking</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>
-
-    <div class="main-nav">
-        <div class="container">
-            <div class="main-menu m-v-1">
-                <a href="#">
-                    <svg alt="Agile Logo" class="bg-color-2 icon-ml" xmlns="http://www.w3.org/2000/svg" fill="#17a9d8"
-                        viewbox="0 0 30.17 37.71">
-                        <defs>
-                            <style>
-                                .cls-2 {
-                                    font-size: 34px;
-                                    fill: #fff;
-                                    font-family: Montserrat-Thin, Montserrat;
-                                    letter-spacing: 0.01em;
-                                }
-                            </style>
-                        </defs>
-                        <title>Agile logo</title>
-                        <g>
-                            <g>
-                                <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12" /><text
-                                    class="cls-2" transform="translate(3.33 28.9)">A</text></g>
-                        </g>
-                    </svg>
-                </a>
-
-                <label for="toggle-1" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-2-fill icon-s" viewbox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none" />
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
-
-
-                </label>
-                <input type="checkbox" id="toggle-1">
-
-                        <nav class="nav">
-                    <ul>
-                        <li><a href="#" class="black font-weight-400">Consultation</a></li>
-                        <li><a href="#" class="black font-weight-400">Treatments</a></li>
-                        <li><a href="#" class="black font-weight-400">References</a></li>
-                        <li><a href="#" class="black font-weight-400">About Us</a></li>
-                        <li><a href="#" class="black font-weight-400">Guarantee</a></li>
-                        <li><a href="#" class="black font-weight-400">Prices</a></li>
-                        <li><a href="#" class="black font-weight-400">Help</a></li>
-
-
-                    </ul>
-                </nav>
-            </div>
-        </div>
-    </div>
-
-    <div class="parallax-img p0 h-100" style="background-image: url('../img/vika/dentistry/teeth.jpg'); height: 500px;">
-        <div class="container">
-            <div class="row p-v-4">
-                <div class="col-md-3 p0">
-                    <div class="shadow-box p1 m-v-2 white p1 outline-color-2">
-                        <div class="center p1">
-                            <p class="display-3 dark font-weight-400 m0 left">Save up to 70%
-                                on UA dental prices</p>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-9"></div>
-            </div>
-        </div>
-    </div>
-
-
-
-    <div class="row container m-v-3">
-        <div class="col-md-6 ">
-            <img src="../img/vika/dentistry/doctors.jpg" class="img-responsive">
-            <div class="m-v-1">
-                <p class="font-weight-400 m0 right h6">Registered with the </p>
-                <p class="h5 color-2 font-weight-400 right">General Dental Council</p>
-            </div>
-        </div>
-        <div class="col-md-6 left p2">
-            <h4 class="font-weight-400 dark">About Us</h4>
-            <p class="m-v-2 left font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illo
-                error adipisci,
-                placeat aliquam asperiores aut ut, quia labore fuga hic quas molestias molestiae eveniet sed.
-                Aliquam, nihil, culpa, placeat numquam aperiam quod, ipsa animi possimus officiis tenetur soluta.
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam illo error adipisci,
-                placeat aliquam asperiores aut ut, quia labore fuga hic quas molestias molestiae eveniet sed.
-                Aliquam, nihil, culpa, placeat numquam aperiam quod, ipsa animi possimus officiis tenetur soluta.
-            </p>
-            <button class="bg-color-1 white text-uppercase m-v-1 small">book a free consultation</button>
-        </div>
-    </div>
-
-    <section class="p-v-1 bg-color-2">
-        <div class="row justify-content-center container-fluid center m-v-7">
-            <div class="col-md-6 p1">
-                <div class="row">
-                    <div class="col-3 p0">
-                        <i class="icon-box circle d-inline bg-white">
-                            <svg class="icon-m m07 img-responsive" viewBox="0 0 24 24">
-                                <path fill="#17a9d8"
-                                    d="M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z" />
-                            </svg>
-                        </i>
-                    </div>
-                    <div class="col-9 left p-h-1">
-                        <p class="font-weight-400 h4 white">Meeting National Standards</p>
-                        <p class="m0 p0 white font-weight-400">One of the most trusted and succesful dentists in Europe
-                            elit.</p>
-                    </div>
-                </div>
-            </div>
-
-
-            <div class="col-md-6 p1">
-                <div class="row">
-                    <div class="col-3 p0">
-                        <i class="icon-box circle d-inline bg-white">
-                            <svg class="icon-m m07 img-responsive" viewBox="0 0 24 24">
-                                <path fill="#17a9d8"
-                                    d="M20.39,19.37L16.38,18L15,22L11.92,16L9,22L7.62,18L3.61,19.37L6.53,13.37C5.57,12.17 5,10.65 5,9A7,7 0 0,1 12,2A7,7 0 0,1 19,9C19,10.65 18.43,12.17 17.47,13.37L20.39,19.37M7,9L9.69,10.34L9.5,13.34L12,11.68L14.5,13.33L14.33,10.34L17,9L14.32,7.65L14.5,4.67L12,6.31L9.5,4.65L9.67,7.66L7,9Z" />
-                            </svg>
-                        </i>
-                    </div>
-                    <div class="col-9 left p-h-1">
-                        <p class="font-weight-400 h4 white">All treatments are gauranteed</p>
-                        <p class="m0 p0 white font-weight-400">We won't be beaten on quality and price</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <div class="container h-75">
-        <div class="carousel carousel-small-img p-v-4 ">
+      
+      </div>  
+      <div class="row" id="carousel">
+        <div class="carousel carousel-small-img p0">
             <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
             <input type="radio" name="slides" id="radio-2" class="radio-2">
-            <input type="radio" name="slides" id="radio-3" class="radio-3">
-            <input type="radio" name="slides" id="radio-4" class="radio-4">
+            <ul class="slides m0 " style="padding: 0; ">
+                <li class="slide">
+                    <div class="h-100 d-flex flex-column justify-content-end p-v-3" style="background-image: url('../img/vika/dentistry/doctors.jpg'); background-size: cover;">
+                        <div class="container left topmargin row">
+                            <div class="col-md-6"></div>
+                            <div class="col-md-6 m-t-6">
+                                <div class="section bg-white m-v-4 p-v-1">
+                                <p class="h1 font-weight-600 left black m-l-3">Better <span class="info">days</span></p>
+                                <p class="m0 dark m-l-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu facilisis sed. Consectetur adipiscing elit duis tristique sollicitudin nibh.
+                                </p>
+                                <div class="">
+                                    <a href="#" class="button button-m d-inline m-t-1 font-weight-200 outline-color-info info bg-white m-l-3">Learn More</a>
+                                    <p class="dark d-inline font-weight-600 m-l-2"> +123 456 789 10</p>
+                                    
+                                </div>
 
-            <ul class="slides">
-                <li class="slide">
-                    <div class="promo-box outline-light-grey rounded w-100 p2">
-                        <div class="m-v-05">
-                            <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing
-                                elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
-                                magna.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                        </div>
-                        <div class="row topmargin">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <div class="row justify-content-right ">
-                                    <div class="p0">
-                                        <img src="../img/vika/u5.jpg" class="icon-ml circle img-responsive">
-                                    </div>
-                                    <div class="left p1 d-inline">
-                                        <p class="m0 p0 black font-weight-400">Ivan Petrov</p>
-                                        <p class="font-weight-400 dark small m0">Kyiv, Ukraine</p>
-                                    </div>
-                                </div>
                             </div>
+                        </div>
                         </div>
                     </div>
+
+
                 </li>
                 <li class="slide">
-                    <div class="promo-box outline-light-grey rounded w-100 p2">
-                        <div class="m-v-05">
-                            <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing
-                                elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
-                                magna.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                        </div>
-                        <div class="row topmargin">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <div class="row justify-content-right ">
-                                    <div class="p0">
-                                        <img src="../img/vika/u2.jpg" class="icon-ml circle img-responsive">
+                    <div class="h-100 d-flex flex-column justify-content-end p-v-3" style="background-image: url('../img/vika/dentistry/teeth.jpg'); background-size: cover;">
+                        <div class="container left topmargin row">
+                            <div class="col-md-6 m-t-6">
+                                <div class="section bg-white m-v-4 p-v-1">
+                                    <p class="h1 font-weight-600 left black m-l-3">Better <span class="info">lives</span></p>
+                                    <p class="m0 dark m-l-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Posuere morbi leo urna molestie at elementum eu facilisis sed. Consectetur adipiscing elit duis tristique sollicitudin nibh.
+                                    </p>
+                                    <div class="">
+                                        <a href="#" class="button button-m d-inline m-t-1 font-weight-200 outline-color-info info bg-white m-l-3">Learn More</a>
+                                        <p class="dark d-inline font-weight-600 m-l-2"> +123 456 789 10</p>
+                                        
                                     </div>
-                                    <div class="left p1 d-inline">
-                                        <p class="m0 p0 black font-weight-400">Hanna Doe</p>
-                                        <p class="font-weight-400 dark small m0">Paris, France</p>
-                                    </div>
+    
                                 </div>
                             </div>
+                            <div class="col-md-6">
+                               
                         </div>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="promo-box outline-light-grey rounded w-100 p2">
-                        <div class="m-v-05">
-                            <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing
-                                elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
-                                magna.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                        </div>
-                        <div class="row topmargin">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <div class="row justify-content-right ">
-                                    <div class="p0">
-                                        <img src="../img/vika/u1.jpg" class="icon-ml circle img-responsive">
-                                    </div>
-                                    <div class="left p1 d-inline">
-                                        <p class="m0 p0 black font-weight-400">Kim Doe</p>
-                                        <p class="font-weight-400 dark small m0">Warsaw, Poland</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-                <li class="slide">
-                    <div class="promo-box outline-light-grey rounded w-100 p2">
-                        <div class="m-v-05">
-                            <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
-                                consectetur
-                                adipiscing
-                                elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
-                                elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
-                                magna.
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit...
-                            </p>
-                        </div>
-                        <div class="row topmargin">
-                            <div class="col-md-8"></div>
-                            <div class="col-md-4">
-                                <div class="row justify-content-right ">
-                                    <div class="p0">
-                                        <img src="../img/vika/u3.jpg" class="icon-ml circle img-responsive">
-                                    </div>
-                                    <div class="left p1 d-inline">
-                                        <p class="m0 p0 black font-weight-400">Ann Doe</p>
-                                        <p class="font-weight-400 dark small m0">Kyiv, Ukraine</p>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                     </div>
                 </li>
             </ul>
-            <div class="slidesNavigation m-v-4">
+            <div class="slidesNavigation p-v-2">
                 <label for="radio-1" id="dotForRadio-1"></label>
                 <label for="radio-2" id="dotForRadio-2"></label>
-                <label for="radio-3" id="dotForRadio-3"></label>
-                <label for="radio-4" id="dotForRadio-4"></label>
+               
             </div>
         </div>
     </div>
-
-    <div class="bg-light-grey">
-        <div class="row container p-v-2">
-            <div class="col-md-4">
-                <img src="../img/vika/dentistry/teeth-1.jpg" alt="alttext" class="img-responsive p4">
-                <section>
-                    <div class="center">
-                        <p class="font-weight-400 black p0 h6">Leading EU oral surgeons </p>
-                        <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Eligendi rem, facilis nobis voluptatum.
-                        </p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <img src="../img/vika/dentistry/chair.jpg" alt="alttext" class="img-responsive p4">
-                <section>
-                    <div class="center">
-                        <p class="font-weight-400 black p0 h6">Expert guarantee</p>
-                        <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Eligendi rem, facilis nobis voluptatum.
-                        </p>
-                    </div>
-                </section>
-            </div>
-            <div class="col-md-4">
-                <img src="../img/vika/dentistry/smile.jpg" alt="alttext" class="img-responsive p4">
-                <section>
-                    <div class="center">
-                        <p class="font-weight-400 black p0 h6">Rest assured</p>
-                        <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
-                            adipisicing elit. Eligendi rem, facilis nobis.
-                        </p>
-                    </div>
-                </section>
-            </div>
+    <div class="container row m-t-6">
+<div class="col-md-6">
+<h2 class="black font-weight-600">Meet Dr. Carson</h2>
+<p class="dark h6 left m-t-05">Condimentum lacinia quis vel eros donec ac odio. Orci dapibus ultrices in iaculis nunc sed augue lacus. Nullam ac tortor vitae purus faucibus ornare suspendisse sed. Massa sed elementum tempus egestas sed sed. Fermentum et sollicitudin ac orci phasellus egestas tellus rutrum tellus. Et ligula ullamcorper malesuada proin. </p>
+<p class="dark left h6 m-t-1">Ut tortor pretium viverra suspendisse potenti. Enim nec dui nunc mattis enim ut tellus. Venenatis tellus in metus vulputate eu scelerisque felis imperdiet. Dignissim convallis aenean et tortor at. </p>
+</div>
+<div class="col-md-6 m-t-2">
+    <div class="shadow-color-3 m05 p1 circle">
+        <div class="p-v-1">
+            <h1 class="info display-1 center font-weight-600 p-v-3">12<span class="dark font-weight-600 m-l-1  h5">Years of Experiences</span></h1>
+          
         </div>
     </div>
-    <div class="container">
-        <div class="row m-v-2">
-            <div class="col-md-6 position-relative">
-                <img src="../img/vika/dentistry/dental.jpg" class="img-responsive p2">
-                <img src="../img/vika/dentistry/dental-cabinet.jpg" class="img-responsive p7 position-absolute"
-                    style="top: 20%; right: 20%;">
-
-            </div>
-            <div class="col-md-6 p-v-4">
-                <h3 class="dark font-weight-400 left">
-                    A new beginning starts with us meeting you</h3>
-                <p class="font-weight-400 dark m-v-1 left">Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                    Aliquam
-                    sit amet enim ac sagittis. Curabitur eget leo varius,
-                    elementum mauris eget, egestas
-                    quam. Donec ante risus, dapibus sed lectus non, lacinia vestibulum nisi. Morbi vitae augue quam.
-                    Nullam ac laoreet libero.
-                </p>
-                <p class="h6 font-weight-400 color-2">FREE Kyiv consultation</p>
-                <p class="font-weight-400 dark left">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus omnis porro id obcaecati illum
-                    delectus magnam mollitia sint minus, at ipsam dolorem, aspernatur quasi exercitationem fugit commodi
-                    eveniet! Fuga, iste! Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia perspiciatis quam
-                    perferendis.</p>
-                <p class="font-weight-400 dark left">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique
-                    laudantium repudiandae deleniti
-                    aspernatur nulla temporibus architecto accusamus quo mollitia blanditiis placeat adipisci officiis
-                    cumque aperiam.</p>
-                <div class="row m-v-2">
-                    <button class="small text-uppercase p1 font-weight-200 m-h-1">call us</button>
-                    <button class="small text-uppercase p1 font-weight-200 m-h-1">book a free consultation</button>
-                </div>
-            </div>
-
-        </div>
+</div>
     </div>
-
-    <section class="p-v-1 bg-color-2">
-        <div class="row justify-content-center container center m-v-4">
-            <div class="row">
-                <div class="col-md-3"></div>
-                <div class="col-md-6 p0">
-                    <div class="m-v-2">
-                        <h3 class="white font-weight-400 center ">What are dental implants?</h3>
-                        <p class="font-weight-400 white center m-v-2">Lorem, ipsum dolor sit amet consectetur
-                            adipisicing
-                            elit.
-                            Necessitatibus
-                            veritatis fugit architecto recusandae quia! Nam eum tenetur, doloribus modi eius neque
-                            inventore
-                            quibusdam earum excepturi voluptates vitae, minima, distinctio sit!
-                        </p>
-                    </div>
-                    <div class="m-v-2">
-                        <h3 class="white font-weight-400 center">
-                            Why replace a missing tooth with a dental implant?
-                        </h3>
-                        <ul class="white font-weight-400 center m-v-2 p0" style="list-style-type:none">
-                            <li>• Good alternative to conventional bridges and dentures.
-                            </li>
-                            <li>• While dentures move around a lot, implants anchor the denture in place.
-                            </li>
-                            <li>• When teeth are lost, the jawbone may shrink. Implants can help slow this process.
-                            </li>
-                            <li>• Best way to support a bridge rather than cut into healthy teeth.
-                            </li>
-
-                        </ul>
-                    </div>
-                    <div class="m-v-2">
-                        <button class="small text-uppercase p1 font-weight-200 m-h-1">book a free consultation</button>
-                    </div>
-                </div>
-                <div class="col-md-3"></div>
-            </div>
-
-
-
+    <div class="container row m-t-6">
+        <div class="col-md-6">
+            <img src="../img/dentistry-1.jpg" class="img-responsive">
         </div>
-    </section>
-
-    <footer class="bg-color-2 p2 line-height-17 m-v-05">
-        <div class="container row white">
-            <div class="col-md-6 col-lg-3">
-                <a href="#">
-                    <svg alt="Agile Logo" fill="white" class="bg-white  icon-ml" xmlns="http://www.w3.org/2000/svg"
-                        viewBox="0 0 30.17 37.71">
-                        <defs>
-                            <style>
-                                .cls-2 {
-                                    font-size: 34px;
-                                    fill: #17a9d8;
-                                    font-family: Montserrat-Thin, Montserrat;
-                                    letter-spacing: 0.01em;
-                                }
-                            </style>
-                        </defs>
-                        <title>Agile logo</title>
-                        <g>
-                            <g>
-                                <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12"></rect>
-                                <text class="cls-2" transform="translate(3.33 28.9)">A</text>
-                            </g>
-                        </g>
-                    </svg>
-                </a>
-                <div class="m-v-2">
-                    <p class="font-weight-200 white m0 left">Svobody Square, 8, Kharkiv, Ukraine</p>
-                    <p class="font-weight-200 white m0">+380 96 926 5003 </p>
-                    <p class="font-weight-200 white m0">info@europeitoutsourcing.com</p>
+        <div class="col-md-6">
+        <img src="../img/dentistry-2.jpg"   class="img-responsive">
                 </div>
             </div>
-            <div class="col-md-6 col-lg-3">
-                <p class="h5 white font-weight-400 m-v-1 text-uppercase">Links</p>
-                <ul class="p0 font-weight-200">
-                    <li><a href="#" class="white">Prices</a></li>
-                    <li><a href="#" class="white">Consultation</a></li>
-                    <li><a href="#" class="white">We are experts</a></li>
-                    <li><a href="#" class="white">Our guarantee</a></li>
-                    <li><a href="#" class="white"> References</a>
-                    </li>
-                    <li><a href="#" class="white">Treatments</a>
-                    </li>
-                    <li><a href="#" class="white">Dental implants</a></li>
-                </ul>
+        </div>
             </div>
-
-            <div class="col-md-6 col-lg-3 white">
-                <ul class="p0 m-v-4  font-weight-200">
-                    <li><a href="#" class="white">Contact Us</a></li>
-                    <li><a href="#" class="white">Kyiv clinic</a></li>
-                    <li><a href="#" class="white">Warsaw clinic</a></li>
-                    <li><a href="#" class="white">Accommodation</a></li>
-                    <li><a href="#" class="white"> Write a review</a>
-                    </li>
-                    <li><a href="#" class="white">Help</a>
-                    </li>
-                    <li><a href="#" class="white"> Tourist attractions</a></li>
-                </ul>
+            <div class="container m-t-6">
+                <h1 class="center black font-weight-600">Our Timeline</h1>
+                <div class="row m-t-4">
+                    <div class="col-md-5">
+                        <div class="shadow-color-3">
+                            <div class="bg-black">
+                            <h3 class="white font-weight-600 center">Get the vaccine</h3>
+                              <div class="section bg-white p-t-05 left">
+                                <p class="dark m-h-1 p-v-1">Tortor id aliquet lectus proin nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. </p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        
+<div class="vl"></div>
+                    </div>
+                    <div class="col-md-3">
+<p class="black h6 left font-weight-400 m-t-2">2023-07-31 Saturday </p>
+                    </div>
+                </div>
+                 
+               
             </div>
+            <div class="container m-t-6">
+                <div class="row m-t-4">
+                    <div class="col-md-5">
+                        <p class="black h6 right font-weight-400 m-t-2">2023-08-01 Thursday</p>
+                        
+                    </div>
+                  <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="shadow-color-3">
+                            <div class="bg-black">
+                            <h3 class="white font-weight-600 center">Consulting your health</h3>
+                              <div class="section bg-white p-t-05 left">
+                                <p class="dark m-h-1 p-v-1">Tortor id aliquet lectus proin nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. </p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+               
+            </div>
+            <div class="container m-t-6">
+         
+                <div class="row m-t-4">
+                    <div class="col-md-5">
+                        <div class="shadow-color-3">
+                            <div class="bg-black">
+                            <h3 class="white font-weight-600 center">Certified Nurses</h3>
+                              <div class="section bg-white p-t-05 left">
+                                <p class="dark m-h-1 p-v-1">Tortor id aliquet lectus proin nibh. Nulla pharetra diam sit amet nisl suscipit adipiscing bibendum est. </p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        
+<div class="vl"></div>
+                    </div>
+                    <div class="col-md-3">
+<p class="black h6 left font-weight-400 m-t-2">2023-08-12 Monday </p>
+                    </div>
+                </div>
+                 
+               
+            </div>        
+            <div class="container m-t-6">
+                <div class="row m-t-4">
+                    <div class="col-md-5">
+                        <p class="black h6 right font-weight-400 m-t-2">2023-08-20 Sunday</p>
+                        
+                    </div>
+                  <div class="col-md-2"></div>
+                    <div class="col-md-5">
+                        <div class="shadow-color-3">
+                            <div class="bg-black">
+                            <h3 class="white font-weight-600 center">Covid-19 Hospitals</h3>
+                              <div class="section bg-white p-t-05 left">
+                                <p class="dark m-h-1 p-v-1">Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Rhoncus mattis rhoncus urna neque viverra justo. Hendrerit dolor magna eget est. Aliquam sem fringilla ut morbi. Risus at ultrices mi tempus imperdiet nulla malesuada pellentesque elit.</p>
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                 
+               
+            </div> 
+            
+            <div class="container h-75 m-t-6">
+                <h1 class="black font-weight-600 center">Our Patients</h1>
+                <div class="carousel carousel-small-img p-v-4 ">
+                    <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
+                    <input type="radio" name="slides" id="radio-2" class="radio-2">
+                    <input type="radio" name="slides" id="radio-3" class="radio-3">
+                    <input type="radio" name="slides" id="radio-4" class="radio-4">
+        
+                    <ul class="slides">
+                        <li class="slide">
+                            <div class="promo-box outline-black rounded w-100 p2">
+                                <div class="m-v-05">
+                                    <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing
+                                        elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+                                        magna.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                    </p>
+                                </div>
+                                <div class="row topmargin">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-4">
+                                        <div class="row justify-content-right ">
+                                            <div class="p0">
+                                                <img src="../img/vika/u5.jpg" class="icon-ml circle img-responsive">
+                                            </div>
+                                            <div class="left p1 d-inline">
+                                                <p class="m0 p0 black font-weight-400">Ivan Petrov</p>
+                                                <p class="font-weight-400 dark small m0">Kyiv, Ukraine</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="promo-box outline-black rounded w-100 p2">
+                                <div class="m-v-05">
+                                    <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing
+                                        elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+                                        magna.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                    </p>
+                                </div>
+                                <div class="row topmargin">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-4">
+                                        <div class="row justify-content-right ">
+                                            <div class="p0">
+                                                <img src="../img/vika/u2.jpg" class="icon-ml circle img-responsive">
+                                            </div>
+                                            <div class="left p1 d-inline">
+                                                <p class="m0 p0 black font-weight-400">Hanna Doe</p>
+                                                <p class="font-weight-400 dark small m0">Paris, France</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="promo-box outline-black rounded w-100 p2">
+                                <div class="m-v-05">
+                                    <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing
+                                        elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+                                        magna.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                    </p>
+                                </div>
+                                <div class="row topmargin">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-4">
+                                        <div class="row justify-content-right ">
+                                            <div class="p0">
+                                                <img src="../img/vika/u1.jpg" class="icon-ml circle img-responsive">
+                                            </div>
+                                            <div class="left p1 d-inline">
+                                                <p class="m0 p0 black font-weight-400">Kim Doe</p>
+                                                <p class="font-weight-400 dark small m0">Warsaw, Poland</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="slide">
+                            <div class="promo-box outline-black rounded w-100 p2">
+                                <div class="m-v-05">
+                                    <p class="italic m2 h6">The best place in town! Lorem ipsum dolor sit amet,
+                                        consectetur
+                                        adipiscing
+                                        elit. Donec eu pulvinar magna. Lorem ipsum dolor sit amet, consectetur adipiscing
+                                        elit... Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+                                        magna.
+                                        Lorem ipsum dolor sit amet, consectetur adipiscing elit...
+                                    </p>
+                                </div>
+                                <div class="row topmargin">
+                                    <div class="col-md-8"></div>
+                                    <div class="col-md-4">
+                                        <div class="row justify-content-right ">
+                                            <div class="p0">
+                                                <img src="../img/vika/u3.jpg" class="icon-ml circle img-responsive">
+                                            </div>
+                                            <div class="left p1 d-inline">
+                                                <p class="m0 p0 black font-weight-400">Ann Doe</p>
+                                                <p class="font-weight-400 dark small m0">Kyiv, Ukraine</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <div class="slidesNavigation m-v-4">
+                        <label for="radio-1" id="dotForRadio-1"></label>
+                        <label for="radio-2" id="dotForRadio-2"></label>
+                        <label for="radio-3" id="dotForRadio-3"></label>
+                        <label for="radio-4" id="dotForRadio-4"></label>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                        <h4 class="black center bold text-uppercase">Book an  appointment</h4>
+                        <hr>
+                        <form>
+                            <div class="form-row">
+                              <div class="form-group col-md-6">
+                                <input type="text" class="form-control" id="inputName" placeholder="Enter Your Name">
+                              </div>
+                              <div class="form-group col-md-6">
+                                <input type="email" class="form-control" id="inputEmail" placeholder="Your Email">
+                              </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                  <input type="phone" class="form-control" id="inputPhone" placeholder="Phone: 123-456-789">
+                                </div>
+                                <div class="form-group col-md-6">
+                                  <input type="city" class="form-control" id="inputCity" placeholder="City">
+                                </div>
+                              </div>
+                            <div class="form-group">
+                              <textarea class="form-control" rows="5" id="comment" placeholder="Additional Message"></textarea>
+                            </div>
+                            <div class="center">
+                            <button type="submit" class="btn btn-primary button-m bg-black">Book Now</button> 
+                            </div>
+                          </form>
+                          </div>
+                </div>
+            </div>
+            <footer class="bg-light-grey p-v-2 m-t-6  d-block">
 
-
-
-            <div class="col-md-6 col-lg-3 white">
-                <p class="h5 white font-weight-400 m-v-1">SHOW YOU CARE</p>
-                <p class="p0  font-weight-200">Share your experience to other patients</p>
-                <div class="p-v-1">
-                    <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px; border-color: #fff;">
-                        <svg viewBox="0 0 24 24" class="icon-xs m03">
-                            <path fill="#fff"
-                                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
-                            </path>
-                        </svg>
-                    </i>
-                    <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px; border-color: #fff;">
-                        <svg viewBox="0 0 512 512" class="icon-xs m03">
-                            <path fill="#fff" id="Twitter__x28_alt_x29_"
-                                d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
+                <div class="row container m-v-1">
+                    <div class="col-md-4">
+                        <h4 class=" m-v-05 font-weight-600 black">Opening Hours</h4>
+                       <p class="dark m-t-2">Sunday:<span class="bold m-l-1">Closed</span></p>
+                       <hr>
+                       <p class="dark left">Monday,Tuesday-Firday<span class="d-inline right m-l-1 bold">8:00AM-3:30PM</span></p>
+                       <hr>
+                       <p class="dark">Saturday <span class="m-l-1 bold">10:30 AM - 5:30 PM</span></p>
+                    </div>
+                    <div class="col-md-2">
+                        
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" m-v-05 font-weight-600 black">Our Clinic</h4>
+                       <p class="dark m-t-2 h6">name@domain.com</p>
+                       <p class="dark">123 Digital Art <br>Street, San Diego<br></p>
+                    </div>
+                    <div class="col-md-6 col-lg-3">
+                        <h4 class=" m-v-05 font-weight-600 black">Socials</h4>
+                        <p>
+                            <i><a href="#" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+                                    <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
+                                    </path>
+                                </svg>
+                                </a></i>
+                            <i><a href="#" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 512 512" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+        
+                                    <path d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
                                                                         c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
                                                                         c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
                                                                         c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
@@ -540,37 +444,22 @@
                                                                         c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
                                                                         c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
                                                                         C414.973,206.142,393.023,203.486,381.384,198.639z">
-                            </path>
-                        </svg>
-                    </i>
-
-                    <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px; border-color: #fff;">
-
-                        <svg viewBox="0 0 24 24" class="icon-xs m03">
-                            <path fill="#fff"
-                                d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
-                            </path>
-                        </svg>
-                    </i>
-                    <div class="d-inline">
-                        <i class="icon-box circle m0 bordered hover-grey" style="padding-top: 3px; border-color: #fff;">
-                            <svg viewBox="0 0 24 24" class="icon-xs m03">
-                                <path fill="#fff"
-                                    d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z">
-                                </path>
-                            </svg>
-                        </i>
-
+                                    </path>
+                                </svg>
+                                </a></i>
+                            <i><a href="#" target="_blank" rel="noopener noreferrer">
+                                <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+                                        <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z">
+                                        </path>
+                                </svg>
+                                </a></i>
+                        </p>
                     </div>
-
-                </div>
-            </div>
-        </div>    
-    </footer>
-    <div class="center bg-light-grey">
-        <small class="text-uppercase"> © Copyright 2019. All Rights Reserved Europe IT Outsourcing Company.</small>
-    </div>
-
+            
+            
+                     
+          </div></footer>
+                
 </body>
 
 </html>
