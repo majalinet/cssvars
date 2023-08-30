@@ -1590,6 +1590,11 @@ height: 2.5rem;
   border-collapse: collapse;
 }
 
+.cssvars .table td {
+  min-width: 10rem;
+  overflow: hidden;
+}
+
 .cssvars tr {
   display: table-row;
   vertical-align: inherit;
@@ -3692,15 +3697,13 @@ user-select: none;
 
 
 .cssvars .styled-checkbox {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   -webkit-appearance: none;
      -moz-appearance:    none;
      appearance:         none;
   margin-right: 10px;
-  background-color: var(--grey,lightgray);
-  outline: 0;
-  border: 0;
+  border: 0.3rem solid var(--grey,lightgray);
   display: inline-block;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -3708,13 +3711,13 @@ user-select: none;
 }
 .cssvars .styled-checkbox:focus {
     outline: none;
-    border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
+
 }
 .cssvars .styled-checkbox:checked {
-  background-color: var(--color-1,skyblue);
+  border: 0.4rem solid var(--color-1,lightgray);
     text-align: center;
     line-height: var(--line-height, 15px);
 }

@@ -1579,6 +1579,11 @@ tr {
   border-color: inherit;
 }
 
+.table td {
+  min-width: 10rem;
+  overflow: hidden;
+}
+
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
   padding: 8px;
   vertical-align: top;
@@ -3675,15 +3680,13 @@ user-select: none;
 
 
 .styled-checkbox {
-  width: 2rem;
-  height: 2rem;
+  width: 1.5rem;
+  height: 1.5rem;
   -webkit-appearance: none;
      -moz-appearance:    none;
      appearance:         none;
   margin-right: 10px;
-  background-color: var(--grey,lightgray);
-  outline: 0;
-  border: 0;
+  border: 0.3rem solid var(--grey,lightgray);
   display: inline-block;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -3691,13 +3694,13 @@ user-select: none;
 }
 .styled-checkbox:focus {
     outline: none;
-    border: none !important;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
+
 }
 .styled-checkbox:checked {
-  background-color: var(--color-1,skyblue);
+  border: 0.4rem solid var(--color-1,lightgray);
     text-align: center;
     line-height: var(--line-height, 15px);
 }
