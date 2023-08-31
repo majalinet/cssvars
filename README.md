@@ -22,11 +22,14 @@ Much more than just a grid. Responsive images, videos, galleries, tables, menus,
 #### 100's of Free UI Elements
 All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
 
-#### 100's of Free UI Elements
-All needed elements are ready. Typography, buttons, cards, icons, tabs, carousel, masonry, Flex gallery ...
-
 #### Scoped CSS
-AgileCSS styles could be applied to a single element without breaking your existing code
+CSSvars styles could be applied to a single element without breaking your existing code
+
+#### Themes
+14 themes, to change theme change the variables in the CSS file, you can choose one of the pre-built themes, or change the varables to match your needs
+
+#### Dark & Light Themes
+Pre-built dark & light themes and you can enable auto detect theme switcher based on the user's browser settings
 
 #### Icons Included
 Easy to use and style any SVG icon, no need for extra resources and icons frameworks
