@@ -1592,7 +1592,6 @@ height: 2.5rem;
 
 .cssvars .table td {
   min-width: 10rem;
-  overflow: hidden;
 }
 
 .cssvars tr {
