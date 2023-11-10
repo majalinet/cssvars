@@ -1,20 +1,12 @@
 /*
-Theme Name: CSS Vars
-Theme URI: https://github.com/majalinet/CSS-Vars
-Author: the EITO team
-Author URI: https://www.europeitoutsourcing.com/
-Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed, built by Europe IT Outsourcing company https://www.europeitoutsourcing.com http://agilecss.com
-Version: 1.2
-Text Domain: cssvars
-Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-menu, custom-logo, editor-style, featured-images, footer-widgets, rtl-language-support, sticky-post, threaded-comments, translation-ready
-
+* CSS Vars Framework
+* Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed.
+* Base URI: https://github.com/majalinet/CSS-Vars
+* Version: 1.2
+* Copyright 2018-2023 Kim Majali and Contributers
+* Copyright 2018-2023 Europe IT Outsourcing company (https://www.europeitoutsourcing.com/)
+* Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
 */
-/*!
- * CSS Vars Framework (https://www.europeitoutsourcing.com/)
- * Copyright 2018-2023 Kim Majali and Contributers
- * Copyright 2018-2023 Europe IT Outsourcing company.
- * Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
- */
 
  @-ms-viewport {
   width: device-width;
