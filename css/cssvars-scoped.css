@@ -499,6 +499,14 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 .cssvars .h-6rem {height: 6rem;}
 .cssvars .h-8rem {height: 8rem;}
 .cssvars .h-10rem {height: 10rem;}
+.cssvars .mh-1rem {max-height: 1rem;}
+.cssvars .mh-2rem {max-height: 2rem;}
+.cssvars .mh-3rem {max-height: 3rem;}
+.cssvars .mh-4rem {max-height: 4rem;}
+.cssvars .mh-5rem {max-height: 5rem;}
+.cssvars .mh-6rem {max-height: 6rem;}
+.cssvars .mh-8rem {max-height: 8rem;}
+.cssvars .mh-10rem {max-height: 10rem;}
 
 .cssvars .w-1rem {width: 1rem;}
 .cssvars .w-2rem {width: 2rem;}
@@ -508,6 +516,14 @@ Tags: one-column, flexible-header, accessibility-ready, custom-colors, custom-me
 .cssvars .w-6rem {width: 6rem;}
 .cssvars .w-8rem {width: 8rem;}
 .cssvars .w-10rem {width: 10rem;}
+.cssvars .mw-1rem {max-width: 1rem;}
+.cssvars .mw-2rem {max-width: 2rem;}
+.cssvars .mw-3rem {max-width: 3rem;}
+.cssvars .mw-4rem {max-width: 4rem;}
+.cssvars .mw-5rem {max-width: 5rem;}
+.cssvars .mw-6rem {max-width: 6rem;}
+.cssvars .mw-8rem {max-width: 8rem;}
+.cssvars .mw-10rem {max-width: 10rem;}
 
 .cssvars .w--1rem {width: calc(100% - 1rem)}
 .cssvars .w--2rem {width: calc(100% - 2rem)}
@@ -1582,7 +1598,7 @@ height: 2.5rem;
 .cssvars .table {
   width: 100%;
   max-width: 100%;
-  margin-bottom: 20px;
+  margin-bottom: 1.2rem;
 }
 
 .cssvars table {
@@ -1603,7 +1619,7 @@ height: 2.5rem;
 .cssvars .table>tbody>tr>td, .cssvars .table>tbody>tr>th, .cssvars .table>tfoot>tr>td, .cssvars .table>tfoot>tr>th, .cssvars .table>thead>tr>td, .cssvars .table>thead>tr>th {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--grey, #eee);
 }
 
 .cssvars .table>thead>tr>th {
@@ -2428,8 +2444,9 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars input::placeholder, .cssvars textarea::placeholder {
-  color: grey;
+  color: var(--dark, grey);
   font-size: 1rem;
+  opacity: 0.6;
 }
 
 [type="date"] {
@@ -3808,4 +3825,15 @@ left: 105%;
 }
 .cssvars .word-wrap-break {
   word-wrap:break-word;
+}
+
+.cssvars .audio-responsive {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+.cssvars input:focus, .cssvars select:focus, .cssvars textarea:focus {
+  border-color: var(--color-1, black);
+  outline: none;
 }

@@ -484,6 +484,14 @@ h1 .bordered::after {
 .h-6rem {height: 6rem;}
 .h-8rem {height: 8rem;}
 .h-10rem {height: 10rem;}
+.mh-1rem {max-height: 1rem;}
+.mh-2rem {max-height: 2rem;}
+.mh-3rem {max-height: 3rem;}
+.mh-4rem {max-height: 4rem;}
+.mh-5rem {max-height: 5rem;}
+.mh-6rem {max-height: 6rem;}
+.mh-8rem {max-height: 8rem;}
+.mh-10rem {max-height: 10rem;}
 
 .w-1rem {width: 1rem;}
 .w-2rem {width: 2rem;}
@@ -493,6 +501,14 @@ h1 .bordered::after {
 .w-6rem {width: 6rem;}
 .w-8rem {width: 8rem;}
 .w-10rem {width: 10rem;}
+.mw-1rem {max-width: 1rem;}
+.mw-2rem {max-width: 2rem;}
+.mw-3rem {max-width: 3rem;}
+.mw-4rem {max-width: 4rem;}
+.mw-5rem {max-width: 5rem;}
+.mw-6rem {max-width: 6rem;}
+.mw-8rem {max-width: 8rem;}
+.mw-10rem {max-width: 10rem;}
 
 .w--1rem {width: calc(100% - 1rem)}
 .w--2rem {width: calc(100% - 2rem)}
@@ -1586,7 +1602,7 @@ tr {
 .table>tbody>tr>td, .table>tbody>tr>th, .table>tfoot>tr>td, .table>tfoot>tr>th, .table>thead>tr>td, .table>thead>tr>th {
   padding: 8px;
   vertical-align: top;
-  border-top: 1px solid #ddd;
+  border-top: 1px solid var(--grey, #eee);
 }
 
 .table>thead>tr>th {
@@ -2411,8 +2427,9 @@ select.form-control  {
 }
 
 input::placeholder, textarea::placeholder {
-  color: grey;
+  color: var(--dark, grey);
   font-size: 1rem;
+  opacity: 0.6;
 }
 
 [type="date"] {
@@ -3801,4 +3818,15 @@ progress {
 }
 .word-wrap-break {
   word-wrap:break-word;
+}
+
+.audio-responsive {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
+
+input:focus, select:focus, textarea:focus {
+  border-color: var(--color-1, black);
+  outline: none;
 }
