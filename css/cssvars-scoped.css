@@ -1588,18 +1588,14 @@ height: 2.5rem;
 /*tables*/
 
 .cssvars .table {
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 1.2rem;
+  min-width: 100%;
+  margin-bottom: 1rem;
+  table-layout: fixed;
 }
 
 .cssvars table {
   border-spacing: 0;
   border-collapse: collapse;
-}
-
-.cssvars .table td {
-  min-width: 10rem;
 }
 
 .cssvars tr {
@@ -1608,10 +1604,36 @@ height: 2.5rem;
   border-color: inherit;
 }
 
-.cssvars .table>tbody>tr>td, .cssvars .table>tbody>tr>th, .cssvars .table>tfoot>tr>td, .cssvars .table>tfoot>tr>th, .cssvars .table>thead>tr>td, .cssvars .table>thead>tr>th {
-  padding: 8px;
+.cssvars .table-td-minw-15rem td {
+  min-width: 15rem;
+}
+.cssvars .table-td-minw-10rem td {
+  min-width: 10rem;
+}
+.cssvars .table-td-minw-5rem td {
+  min-width: 5rem;
+}
+.cssvars .table-td-w-15rem td {
+  width: 15rem;
+}
+.cssvars .table-td-w-10rem td {
+  width: 10rem;
+}
+.cssvars .table-td-w-5rem td {
+  width: 5rem;
+}
+
+.cssvars .table td, .cssvars .table th {
+  padding: .5rem;
   vertical-align: top;
   border-top: 1px solid var(--grey, #eee);
+}
+
+.cssvars .table-compact td, .cssvars .table-compact th {
+  padding: 0.2rem;
+}
+.cssvars .table-large td, .cssvars .table-large th {
+  padding: 1rem;
 }
 
 .cssvars .table>thead>tr>th {
@@ -1623,7 +1645,69 @@ height: 2.5rem;
 }
 
 .cssvars .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(0, 0, 0, 0.01);
+  background-color: rgba(var(--grey-rgb), 0.15);
+}
+.cssvars .table-striped-color-1 tbody tr:nth-of-type(odd) {
+  background-color: rgba(var(--color-1-rgb), 0.1);
+}
+.cssvars .table-cell-border-none td, .cssvars .table-cell-border-none th {
+  border: none !important;
+}
+
+.cssvars .table-cell-separate, .cssvars .table-cell-separate-color-1 {
+  background:transparent;
+  border-collapse: separate;
+  border-spacing: .5rem;
+}
+.cssvars .table-cell-separate td, .cssvars .table-cell-separate th  {
+   background-color: rgba(var(--grey-rgb), 0.15);
+   border: none;
+   
+}
+.cssvars .table-cell-separate-color-1 td, .cssvars .table-cell-separate-color-1 th  {
+   background-color: rgba(var(--color-1-rgb), 0.1);
+   border: none;
+}
+
+.cssvars .table-dark-header th {
+  background-color: var(--dark);
+  color: var(--body-bg) !important;
+}
+.cssvars .table-color-1-header th {
+  background-color: var(--color-1);
+  color: var(--body-bg) !important;
+}
+.cssvars .table-dark-footer tfoot td {
+  background-color: var(--dark);
+  color: var(--body-bg);
+}
+.cssvars .table-color-1-footer tfoot td {
+  background-color: var(--color-1);
+  color: var(--body-bg);
+}
+
+.cssvars .table-dark-1st-col td:nth-child(1), .cssvars .table-dark-1st-col th:nth-child(1) {  
+  background-color: var(--dark);
+  color: var(--body-bg);
+}
+.cssvars .table-color-1-1st-col td:nth-child(1), .cssvars .table-color-1-1st-col th:nth-child(1) {  
+  background-color: var(--color-1);
+  color: var(--body-bg);
+}
+.cssvars .table-dark-last-col td:last-child, .cssvars .table-dark-last-col th:last-child {  
+  background-color: var(--dark);
+  color: var(--body-bg);
+}
+.cssvars .table-color-1-last-col td:last-child, .cssvars .table-color-1-last-col th:last-child{  
+  background-color: var(--color-1);
+  color: var(--body-bg);
+}
+
+.cssvars .table-hover tbody tr:hover {
+  background-color: rgba(var(--grey-rgb), 0.1);
+}
+.cssvars .table-hover-color-1 tbody tr:hover {
+  background-color: rgba(var(--color-1-rgb), 0.1);
 }
 
 .cssvars .table-hover tbody tr:hover {
@@ -3357,6 +3441,10 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 
 .cssvars .underline {
   text-decoration: underline;
+}
+
+.cssvars .decoration-none {
+  text-decoration: none;
 }
 
 .cssvars .hover-underline:hover {

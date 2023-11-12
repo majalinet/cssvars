@@ -43,11 +43,11 @@
     />
     <meta name="theme-color" content="#FF530D" />
 
-    <link rel="stylesheet" href="../css/agile.css" />
+    <link rel="stylesheet" href="../css/cssvars.css" />
   </head>
 
   <body>
-    <div class="main-nav  bordered-bottom container-fluid">
+    <div class="main-nav bordered-bottom container-fluid">
       <div class="main-menu">
         <a href="http://agilecss.com/" id="logo" alt="CSS Vars Framework and UI Kit"
           ><img src="../img/logo.png" class="logo"
@@ -145,8 +145,10 @@
       </div>
       <div class="col-lg-10 p-d-2">
         <div>
-          <div class="m-v-4">
+          <div>
 
+            <h2>Default Table</h2>
+          <p>Add to the table element the class <b>table</b> to get the default style table</p>
 
       <table id="tables" class="table">
           <thead>
@@ -177,8 +179,9 @@
 
 
 
-      <h5 class="m-t-4">Striped Table</h5>
-      <p>Add the class <b>table-striped</b></p>
+
+      <h2 class="m-t-8">Striped Table</h2>
+      <p>Add the classes <b>table table-striped</b></p>
       <table class="table table-striped">
           <thead>
               <tr>
@@ -205,9 +208,42 @@
               </tr>
           </tbody>
       </table>
-<div class="m-v-2">
-      <h5 class="m-t-4">Hover Table</h5>
-      <p>Add the class <b>table-hover</b></p>
+
+      <h5 class="m-t-4">Striped Table Color-1</h5>
+      <p>Add the classes <b>table table-striped-color-1</b></p>
+      <table class="table table-striped-color-1">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+      <h2 class="m-t-8">Hover Table</h2>
+      <p>Add the classes <b>table table-hover</b></p>
       <table class="table table-hover">
           <thead>
               <tr>
@@ -234,10 +270,43 @@
               </tr>
           </tbody>
       </table>
-</div>
-<div class="m-v-2">
-      <h5 class="m-t-4">Bordered Table</h5>
-      <p>Add the class <b>table-bordered</b></p>
+
+      <h5 class="m-t-4">Hover Table Color-1</h5>
+      <p>Add the classes <b>table table-hover-color-1</b></p>
+      <table class="table table-hover-color-1">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+      
+
+
+
+      <h2 class="m-t-8">Bordered Table</h2>
+      <p>Add the classes <b>table table-bordered</b></p>
+
       <table class="table table-bordered">
           <thead>
               <tr>
@@ -264,11 +333,9 @@
               </tr>
           </tbody>
       </table>
-</div>
-<div class="m-v-2">
 
-      <h5 class="m-t-4">Bordered Table Primary Color</h5>
-      <p>Add the class <b>table-bordered-color-1</b></p>
+      <h5 class="m-t-4">Bordered Table Color 1</h5>
+      <p>Add the classes <b>table table-bordered-color-1</b></p>
 
       <table class="table table-bordered-color-1">
           <thead>
@@ -297,43 +364,584 @@
           </tbody>
       </table>
 
-      <h5 class="m-t-4">Make wide Table Responsive</h5>
-      <p>Add the class <b>auto-overflow-x</b> to a div and put the table inside it</p>
 
-<div class="auto-overflow-x">
-      <table class="table">
+
+
+
+      <h2 class="m-t-8">Striped Table no cell borders</h2>
+      <p>Add the classes <b>table table-striped table-cell-border-none</b></p>
+      <table class="table table-striped table-cell-border-none">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h5 class="m-t-4">Striped Table Color-1 no cell borders</h5>
+      <p>Add the class <b>table table-striped-color-1 table-cell-border-none</b></p>
+      <table class="table table-striped-color-1 table-cell-border-none">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+      <h2 class="m-t-8">Cell Separate Table</h2>
+      <h5 >Striped Table Color-1 cell separate</h5>
+      <p>Add the class <b>table table-cell-separate</b></p>
+      <table class="table table-cell-separate">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
+      <p>Add the class <b>table table-cell-separate table-cell-border-none</b></p>
+      <table class="table table-cell-separate table-cell-border-none ">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h5 class="m-t-4">Striped Table Color-1 cell separate</h5>
+      <p>Add the class <b>table table-cell-separate</b></p>
+      <table class="table table-cell-separate-color-1">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
+      <p>Add the class <b>table table-cell-separate table-cell-border-none</b></p>
+      <table class="table table-cell-separate-color-1 table-cell-border-none">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+      <h2 class="m-t-8">Dark Header</h2>
+      <h5>Striped Table Color-1 cell separate border none, dark head</h5>
+      <p>Add the class <b>table-dark-header</b> to the table</p>
+      <table class="table table-cell-separate table-cell-border-none table-dark-header">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
+      <p>Add the class <b>table-color-1-header</b> to the table</p>
+      <table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+
+
+
+
+      <h2 class="m-t-8">Dark Footer</h2>
+      <h5">Footer Dark Table</h5>
+      <p>Create a tfoot element and add the class <b>table-dark-footer</b> to the table</p>
+      <table class="table table-cell-separate table-cell-border-none table-dark-header table-dark-footer">
+          <thead>
+              <tr>
+                  <th>Month</th>
+                  <th>Leads</th>
+                  <th>Sales</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>January</td>
+                  <td>100</td>
+                  <td>50</td>
+              </tr>
+              <tr>
+                  <td>February</td>
+                  <td>200</td>
+                  <td>100</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <tr>
+                  <td>Sum</td>
+                  <td>300</td>
+                  <td>150</td>
+              </tr>
+            </tfoot>
+      </table>
+
+
+      <h5 class="m-t-4">Footer Color 1 Table</h5>
+      <p>Create a tfoot element and add the class <b>table-color-1-footer</b> to the table</p>
+      <table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header table-color-1-footer">
         <thead>
-            <tr>
-                <th>Firstname</th>
-                <th>Lastname</th>
-                <th>Email</th>
-                <th>City</th>
-                <th>Country</th>
-                <th>Age</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td>John</td>
-                <td>Doe</td>
-                <td>john@example.com</td>
-                <td>Montreal</td>
-                <td>Canada</td>
-                <td>30</td>
-            </tr>
-            <tr>
-                <td>Kim</td>
-                <td>Doe</td>
-                <td>Kim@example.com</td>
-                <td>Kharkov</td>
-                <td>Ukraine</td>
-                <td>25</td>
-            </tr>
+          <tr>
+              <th>Month</th>
+              <th>Leads</th>
+              <th>Sales</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>January</td>
+              <td>100</td>
+              <td>50</td>
+          </tr>
+          <tr>
+              <td>February</td>
+              <td>200</td>
+              <td>100</td>
+          </tr>
         </tbody>
-    </table>
+        <tfoot>
+          <tr>
+              <td>Sum</td>
+              <td>300</td>
+              <td>150</td>
+          </tr>
+        </tfoot>
+  </table>
 
+
+
+
+  <h2 class="m-t-8">Dark 1st Column</h2>
+  <h5">1st Column Dark Table</h5>
+  <p>Add the class <b>table-dark-1st-col</b> to the table</p>
+  <table class="table table-cell-separate table-cell-border-none table-dark-1st-col">
+      <tbody>
+        <tr>
+            <td>Month</td>
+            <td>January</td>
+            <td>February</td>
+            <td>March</td>
+          </tr>
+          <tr>
+            <td>Leads</td>
+            <td>200</td>
+            <td>100</td>
+            <td>100</td>
+          </tr>
+        </tbody>
+        <tfoot>
+          <tr>
+            <td>Sales</td>
+              <td>100</td>
+              <td>50</td>
+              <td>50</td>
+          </tr>
+        </tfoot>
+  </table>
+
+
+  <h5 class="m-t-4">1st Column Color 1 Table</h5>
+  <p>Add the class <b>table-color-1-1st-col</b> to the table</p>
+  <table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-1st-col">
+    <tbody>
+      <tr>
+          <td>Month</td>
+          <td>January</td>
+          <td>February</td>
+          <td>March</td>
+        </tr>
+        <tr>
+          <td>Leads</td>
+          <td>200</td>
+          <td>100</td>
+          <td>100</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td>Sales</td>
+            <td>100</td>
+            <td>50</td>
+            <td>50</td>
+        </tr>
+      </tfoot>
+</table>
+
+
+
+
+<h2 class="m-t-8">Dark Last Column</h2>
+<h5">Last Column Dark Table</h5>
+<p>Add the class <b>table-dark-last-col</b> to the table</p>
+<table class="table table-cell-separate table-cell-border-none table-dark-1st-col table-dark-last-col">
+    <tbody>
+      <tr>
+        <td>Month</td>
+        <td>January</td>
+        <td>February</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td>Leads</td>
+        <td>200</td>
+        <td>100</td>
+        <td>300</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sales</td>
+          <td>100</td>
+          <td>50</td>
+          <td>150</td>
+      </tr>
+    </tfoot>
+</table>
+
+
+<h5 class="m-t-4">Last Column Color 1 Table</h5>
+<p>Add the class <b>table-color-1-last-col</b> to the table</p>
+<table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-1st-col table-color-1-last-col">
+  <tbody>
+    <tr>
+        <td>Month</td>
+        <td>January</td>
+        <td>February</td>
+        <td>Total</td>
+      </tr>
+      <tr>
+        <td>Leads</td>
+        <td>200</td>
+        <td>100</td>
+        <td>300</td>
+      </tr>
+    </tbody>
+    <tfoot>
+      <tr>
+        <td>Sales</td>
+          <td>100</td>
+          <td>50</td>
+          <td>150</td>
+      </tr>
+    </tfoot>
+</table>
+
+
+
+<h2 class="m-t-8">Table Height</h2>
+<p>Add the class <b>table-compact</b> to the table</p>
+<h5>Table compact</h5>
+<table class="table table-compact table-striped">
+  <thead>
+      <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>Montreal</td>
+          <td>Canada</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Kim</td>
+          <td>Doe</td>
+          <td>Kim@example.com</td>
+          <td>Kharkov</td>
+          <td>Ukraine</td>
+          <td>25</td>
+      </tr>
+  </tbody>
+</table>
+
+
+
+<h5 class="m-t-4">Table Large</h5>
+<p>Add the class <b>table-compact</b> to the table</p>
+<table class="table table-large table-striped">
+  <thead>
+      <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>John</td>
+          <td>Doe</td>
+          <td>john@example.com</td>
+          <td>Montreal</td>
+          <td>Canada</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Kim</td>
+          <td>Doe</td>
+          <td>Kim@example.com</td>
+          <td>Kharkov</td>
+          <td>Ukraine</td>
+          <td>25</td>
+      </tr>
+  </tbody>
+</table>
+
+
+  <h2 class="m-t-8">Responsive Table</h2>
+  <p>Add the class <b>auto-overflow-x</b> to a div and put the table inside it</p>
+  <div class="auto-overflow-x div-wide-table">
+    <table class="table table-layout-fixed">
+      <thead>
+          <tr>
+              <th>Firstname</th>
+              <th>Lastname</th>
+              <th>Email</th>
+              <th>City</th>
+              <th>Country</th>
+              <th>Age</th>
+          </tr>
+      </thead>
+      <tbody>
+          <tr>
+              <td>John</td>
+              <td>Doe</td>
+              <td>john@example.com</td>
+              <td>Montreal</td>
+              <td>Canada</td>
+              <td>30</td>
+          </tr>
+          <tr>
+              <td>Kim</td>
+              <td>Doe</td>
+              <td>Kim@example.com</td>
+              <td>Kharkov</td>
+              <td>Ukraine</td>
+              <td>25</td>
+          </tr>
+      </tbody>
+  </table>
 </div>
 
+
+<h2 class="m-t-8">Fixed Layout Table</h2>
+<p>Add the class <b>table-layout-fixed</b> and one of these clases <b>table-td-w-5rem table-td-w-10rem table-td-w-15rem</b></p>
+<div class="auto-overflow-x div-wide-table">
+  <table class="table table-layout-fixed table-td-w-15rem">
+    <thead>
+        <tr>
+            <th>Firstname</th>
+            <th>Lastname</th>
+            <th>Email</th>
+            <th>City</th>
+            <th>Country</th>
+            <th>Age</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>John</td>
+            <td>Doe</td>
+            <td>john@example.com</td>
+            <td>Montreal</td>
+            <td>Canada</td>
+            <td>30</td>
+        </tr>
+        <tr>
+            <td>Kim</td>
+            <td>Doe</td>
+            <td>Kim@example.com</td>
+            <td>Kharkov</td>
+            <td>Ukraine</td>
+            <td>25</td>
+        </tr>
+    </tbody>
+</table>
+</div>
 
   </div>
   
