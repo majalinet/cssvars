@@ -23,244 +23,1096 @@
     <link rel="stylesheet" href="../css/cssvars.css">
 
     <style>
-        body{
-            font-family: "Segoe UI";
+        :root {
+            --color-1: #3e3f43;
+            --color-2: #a6adb1;
         }
-        .scale {
-                     display: inline-block;
-                     overflow: hidden; 
-                    }
-                    .scale img {
-                     transition: 1s;
-                     display: block; 
-                    }
-                    .scale img:hover {
-                     transform: scale(1.2); 
-                    }
-
-                    #navbar {
-  overflow: hidden;
- background-color: transparent;
-}
     </style>
 
 </head>
 
 <body>
-  
-        <div class="main-nav m-t-2  container-fluid">
-            <div class="main-menu m-h-4">
-                <a href="#" id="logo1" target="_blank" rel="noopener noreferrer"><h1 class="logo black font-weight-400">Fresh Plants</h1></a>
-    
-                <label for="toggle-1" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-black-fill icon-s" viewBox="0 0 24 24">
-                        <path d="M0 0h24v24H0z" fill="none"></path>
-                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-    
-    
-                </label>
-                <input type="checkbox" id="toggle-1">
-    
-<nav class="nav m-h-4">
-                    <ul class="font-weight-400">
-                        <li><a href="#home" style="color:black; letter-spacing: 0.1rem; text-transform: uppercase;">Home</a></li>
-                        <li><a href="#catalogue" style="color:black; letter-spacing: 0.1rem; text-transform: uppercase;">Catalogue</a></li>
-                        <li><a href="#contact" style="color:black; letter-spacing: 0.1rem; text-transform: uppercase;">Contact</a></li>
-                        <li class="d-inline">
-                            <a href="#search">
-                                <svg viewBox="0 0 24 24" class="img-responsive icon-s">
-                                    <path fill="#000" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        <li class="d-inline">
-                            <a href="#">
-                                <svg viewBox="0 0 24 24" class="img-responsive icon-s">
-                                    <path fill="#000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"></path>
-                                </svg>
-                            </a>
-                        </li>
-                        
-                    </ul>
-                </nav>
-            </div>
-       <div class="container-fluid  row m-v-4">
-<div class="col-md-6 m-t-4">
-<h1 class="black m-t-6 m-h-1 display-3">Find perfect plants<br> for your home</h1>
-<h6 class="black m-t-05 m-h-1">Beautiful plants that encourage<br> you to get creative.</h6>
-<button class="button-m button-w-25 m-t-05 bg-black white m-h-1">Shop Now</button>
-</div>
-<div class="col-md-6 m-t-4">
-<img src="../img/plants.jpg"  class="img-responsive">
-</div>
-       </div>  
-       
-       
-     
-        <h1 class="center black font-weight-400 m-t-6">Categories</h1>
-        <div class="container-fluid row m-t-4">
-            <div class="col-md-3">
-                <div class="scale">
-            <img src="../img/plants-1.jpg" class="img-responsive">
-            <h4 class="black">Bedroom Plants</h4>
-            </div>
-            </div>
-            <div class="col-md-3">
-                <div class="scale">
-                <img src="../img/plants-2.jpg" class="img-responsive"> 
-                <h4 class="black">Vertical Garden</h4>
-            </div>
-            </div>
-            <div class="col-md-3">
-                <div class="scale">
-                <img src="../img/plants-3.jpg" class="img-responsive"> 
-                <h4 class="black">Jungle Plants</h4>
-            </div>
-            </div>
-            <div class="col-md-3">
-                <div class="scale">
-                <img src="../img/plants-4.jpg" class="img-responsive">  
-                <h4 class="black">Indoor Plants</h4>
-            </div>
-            </div>
-        </div>
-       </div>
-       <div class="m-t-4"></div>
-       <h2 class="m-t-6 center black">Love and work are to people what water and<br> sunshine are to plants</h2>
-       <div class="container-fluid row m-t-6">
-        <div class="col-md-3">
-            <h2 class="black">Featured</h2>
-            <p class="dark m-t-1 h6">Our plants are 100% organic,<br> we don't use pesticides or<br> harmful chemicals.</p>
-            <p class="dark m-t-2 h6">But please don't eat them</p>
-            <button class="outline-color-dark bg-white black">Shop all Favourites</button>
-        </div>
-        <div class="col-md-3">
-            <div class="scale">
-            <img src="../img/plants-5.jpg" class="img-responsive"> 
-            <p class="dark small m-t-05">Plant 1</p>
-            <h4 class="black">50$</h4>
-        </div>
-        </div>
-        <div class="col-md-3">
-            <div class="scale">
-            <img src="../img/plants-6.jpg" class="img-responsive"> 
-            <p class="dark small m-t-05">Plant 1</p>
-            <h4 class="black">35$</h4>
-        </div>
-        </div>
-        <div class="col-md-3">
-            <div class="scale">
-            <img src="../img/plants-7.jpg" class="img-responsive"> 
-            <p class="dark small m-t-05">Plant 1</p> 
-            <h4 class="black">45$</h4>
-        </div>
-        </div>
-    </div>
-   </div>
-   <div class="container-fluid row m-t-6">
-    <div class="col-md-6 m-v-1">
-        <div class="position-relative">
-            <a href="#">
-                <img src="../img/plants-8.jpg" alt="alttext" class="img-responsive">
+    <div class="main-nav bordered-top nav-top-border-hover">
+        <div class="main-menu container">
+            <a href="#" id="logo1" target="_blank">
+                <svg alt="Agile Logo" class="icon-color-2-fill icon-ml" xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 30.17 37.71">
+                    <defs>
+                        <style>
+                            .cls-2 {
+                                font-size: 34px;
+                                fill: #fff;
+                                font-family: Montserrat-Thin, Montserrat;
+                                letter-spacing: 0.01em;
+                            }
+                        </style>
+                    </defs>
+                    <title>Agile logo</title>
+                    <g>
+                        <g>
+                            <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12">
+                            </rect>
+                            <text class="cls-2" transform="translate(3.33 28.9)">A</text>
+                        </g>
+                    </g>
+                </svg>
             </a>
-            <span class="p-h-1  position-absolute bg-white m-t-6" style="top: 0; left: 0;">
-              <p class="grey m0">Written by</p>
-              <p class="black h6">Jessica Doe</p>
-            </span>
-             <p class="font-weight-400 dark m-t-05">Edition 285</p>
-             <h5 class="black left">How to water your freaking plants so they don't die after one week</h5>
-                        <button class="outline-color-dark bg-white black">Read Now</button>
-                    </div>
-                </div>
 
- 
-    <div class="col-md-6 m-v-1">
-        <div class="position-relative">
-            <a href="#">
-                <img src="../img/plants-9.jpg" alt="alttext" class="img-responsive">
-            </a>
-            <span class="p-h-1  position-absolute bg-white m-t-6" style="top: 0; left: 0;">
-                <p class="grey m0">Written by</p>
-                <p class="black h6">Mellissa King</p>
-              </span>
-            <p class="font-weight-400 dark m-t-05">Edition 285</p>
-            
-                       <h5 class="black left">How to repot a Monstera without killing it and foster its growth</h5>
-                   
-                  
-                        <button class="outline-color-dark bg-white black">Read Now</button>
-                    </div>
-                </div>
-           
-        </div>
-    </div>     
-</div>
-<div class="container m-t-6">
-    <h2 class="center black">Get 20% off your next order,<br> Subscribe to our newsletter</h2>
-    <div class="shadow-box p1 m-v-2 white p1 outline-color-2">
-        <div class="center p1">
-            <svg viewBox="0 0 24 24" class="icon-s">
-                <path fill="#6c757d" d="M12,15.36L4,10.36V18H20V10.36L12,15.36M4,8L12,13L20,8V8L12,3L4,8V8M22,8V18A2,2 0 0,1 20,20H4A2,2 0 0,1 2,18V8C2,7.27 2.39,6.64 2.97,6.29L12,0.64L21.03,6.29C21.61,6.64 22,7.27 22,8Z"></path>
-            </svg>
-
-            <p class="h6 black font-weight-400 m0">Newsletter</p>
-            <p class="color-1">Subscribe and be the first to know about our best offers</p>
-            <div class="topmargin">
-                <input type="text" class="form-control" id="exampleFormControlInput1" placeholder="Your Name*">
-                <input type="email" class="form-control m-t-05" id="exampleFormControlInput1" placeholder="Your Email Address*">
-
-                <div class="m-v-1 center">
-                    <a href="#" class="p button button-m d-inline bg-black w-100">SUBSCRIBE</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</div>
-<footer class="p2 line-height-17 m-t-6">
-    <div class="container-fluid row color-1">
-        <div class="col-md-3">
-<h1 class="black">Fresh Plants</h1>
-
-           </div>
-           <div class="col-md-3 m-t-1">
-            <ul class="no-indent-ul">
-                <li><a href="instagram" style="color:black; font-weight: 400; font-size: larger;">Instagram</a></li>
-                <li><a href="facebook" style="color:black; font-weight: 400; font-size: larger;">Facebook</a></li>
-                <li><a href="twitter" style="color: black; font-weight: 400; font-size: larger;">Twitter</a></li>
-                <li><a href="pinterest" style="color:black; font-weight: 400; font-size: larger;">Pinterest</a></li>
-             </ul>
-        </div>
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none" />
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
 
 
-        <div class="col-md-3 m-t-1">
-                <ul class="no-indent-ul">
-                   <li><a href="return-policy" style="color:black; font-weight: 400; font-size: larger;">Return Policy</a></li>
-                   <li><a href="track-an-order" style="color:black; font-weight: 400; font-size: larger;">Track an Order</a></li>
-                   <li><a href="faqs" style="color:black; font-weight: 400; font-size: larger;">FAQs</a></li>
-                   <li><a href="privacy-policy" style="color:black; font-weight: 400; font-size: larger;">Privacy Policy</a></li>
-                  
+            </label>
+            <input type="checkbox" id="toggle-1">
+
+            <nav class="nav">
+                <ul class="text-uppercase font-weight-400 bold">
+                    <li><a href="#" class="smaller dark">home</a></li>
+                    <li><a href="#" class="smaller dark">collections</a></li>
+                    <li><a href="#" class="smaller dark">products</a></li>
+                    <li><a href="#" class="smaller dark">pages</a></li>
+                    <li><a href="#" class="smaller dark">features</a></li>
+                    <li class="m-v-07 m-h-05"><select class="form-control" id="exampleFormControlSelect1">
+                            <option>USD</option>
+                            <option>EUR</option>
+                            <option>RUB</option>
+                            <option>GBR</option>
+                        </select>
+                    </li>
+                    <li class="m-v-07 m-h-05">
+                        <select class="form-control text-uppercase dark " id="exampleFormControlSelect1">
+                            <option class="smaller dark">English</option>
+                            <option class="smaller dark">russian</option>
+                            <option class="smaller dark">french</option>
+                        </select>
+                    </li>
+                    <li class="m-v-07">
+                        <a href="#" class="dark bold d-inline smaller">
+                            <svg viewBox="0 0 24 24" class="img-responsive icon-s">
+                                <path fill="#222225"
+                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
+                            </svg>
+                            item (s)
+                        </a>
+                    </li>
                 </ul>
-             </div>
+            </nav>
+        </div>
 
-             <div class="col-md-3">
-                  
-                   
-                    <ul class="no-indent-ul m-t-05">
-                       <li><a href="our-story" style="color: black; font-weight: 400; font-size: larger;">Our Story</a></li>
-                       <li><a href="careers" style="color:black; font-weight: 400; font-size: larger;">Careers</a></li>
-                       <li><a href="press" style="color:black; font-weight: 400; font-size: larger;">Press</a></li>            
-                        </ul>
-                 </div>
+    </div>
+    <div class="carousel m0 p0">
+        <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
+        <input type="radio" name="slides" id="radio-2" class="radio-2">
 
-<div class="col-md-3">
+        <ul class="slides p0 m0">
+            <li class="h-100 d-flex flex-column justify-content-center bg-light-grey left"
+                style="background-image: url('../img/vika/shop/fashion.jpg'); background-size: cover; padding-bottom: 1.5px;">
+                <div class="container p-v-4 m-v-2">
+                    <div class="row m-v-4 p-v-2">
+                        <div class="col-md-8 left">
+                            <div class="left">
+                                <p class="text-uppercase h6 dark left m0 h4 font-weight-400">
+                                    up to
+                                </p>
+                                <div class="row m0">
+                                    <div class="d-inline">
+                                        <span class="bold display-2 left dark">50</span>
+                                    </div>
+                                    <div class="d-inline p-v-1">
+                                        <p class="bold h5 m0 dark">%</p>
+                                        <p class="font-weight-400 h5 text-uppercase m0 dark">off</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <h1 class="topmargin  bold dark m0 text-uppercase display-1">summer sale</h1>
+                            <p class="text-uppercase h6 dark left m0 h4 font-weight-400">
+                                now starting at <span class="bold">$99.00 </span> </p>
+                            <div class="m-v-2">
+                                <a href="#"
+                                    class="white m0 button button-m d-inline font-weight-400 bg-dark text-uppercase p-h-1 p-v-05">shop
+                                    now</a>
+                            </div>
+                        </div>
+                        <div class="col-md-4"></div>
+                    </div>
 
-</div>
+                </div>
+            </li>
+            <li class="h-100 d-flex flex-column justify-content-center bg-light-grey"
+                style="background-image: url('../img/vika/shop/sneakers-carousel-1.jpg'); background-size: cover;">
+                <div class="container p-v-4">
+                    <div class="row m-v-4 p-v-4">
+                        <div class="col-md-6"></div>
+                        <div class="col-md-6 left p-v-1">
+                            <p class="topmargin h1 bold white m0 text-uppercase display-1">cool shoes</p>
+                            <p class="topmargin h1 bold white m0 text-uppercase">$199</p>
+                            <p class="topmargin h6 font-weight-400 white text-uppercase">*blue of orange while it last
+                            </p>
+                            <div class="m-v-05">
+                                <a href="#"
+                                    class="button button-m m0 d-inline black font-weight-400 bg-dark text-uppercase p-h-2 noHover-dark">shop
+                                    now</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+        <div class="slidesNavigation m-v-3">
+            <label for="radio-1" id="dotForRadio-1"></label>
+            <label for="radio-2" id="dotForRadio-2"></label>
+        </div>
+    </div>
+    <div class="bg-light-grey">
+        <div class="row">
+            <div class="col-md-3 p0">
+                <a href="#" style="text-decoration: none;">
+                    <div class="center d-flex flex-column justify-content-center bg-light-grey p-v-3"
+                        style="background-image: url('../img/vika/shop/sunglasses-4.jpg'); background-size: cover">
+                        <div class="text-uppercase p-h-2 left font-weight-400">
+                            <p class="m0">amazing</p>
+                            <p class="text-uppercase h6 black left h4 m0 bold">
+                                collection </p>
+                            <div class="left topmargin">
+                                <a href="#" style="text-decoration: none;"
+                                    class="m-v-1 button button-s font-weight-400 white text-uppercase small">shop now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 p0">
+                <a href="#" style="text-decoration: none;">
+                    <div class="right d-flex flex-column bg-light-grey justify-content-right"
+                        style="background-image: url('../img/vika/shop/man-2.jpg'); background-size: cover; padding-bottom: 3px;">
+                        <div class="text-uppercase p-h-2 font-weight-400">
+                            <div class="row">
+                                <div class="col-7"></div>
+                                <div class="col-5 center">
+                                    <span class="row topmargin justify-content-right p0 right">
+                                        <span class="d-inine m0 p05 bold h3 black">30</span>
+                                        <span class="d-inline m0 p0">
+                                            <p class="bold m0 black p0 left">%</p>
+                                            <p class="p0 font-weight-400 text-uppercase m0 black">off</p>
+                                        </span>
+                                    </span>
+                                </div>
+                            </div>
 
-               
+                            <p class="m0 right">new mens</p>
+                            <p class="text-uppercase h6 black right h4 m0 bold">
+                                collections </p>
+                            <div class="right m-v-1">
+                                <a href="#" style="text-decoration: none;"
+                                    class="m-v-1 button button-s font-weight-400 white text-uppercase small">shop now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 p0">
+                <a href="#" style="text-decoration: none;">
+                    <div class="right d-flex flex-column bg-light-grey justify-content-right"
+                        style="background-image: url('../img/vika/shop/watches.jpg'); background-size: cover; padding-bottom: 2px;">
+                        <div class="text-uppercase p-h-2 font-weight-400 rounded">
+                            <div class="row">
+                                <div class="col-9"></div>
+                                <div class="m-v-1 p1 bg-grey col-3 center">
+                                    <p class="m0 dark font-weight-400 small">price</p>
+                                    <p class="p0 bold text-uppercase m0 black smaller">$98.00</p>
+                                </div>
+                            </div>
+                            <p class="m0 right white">hot deal</p>
+                            <p class="text-uppercase h6 white right m0 bold">
+                                watches </p>
+                            <div class="right m-v-1">
+                                <a href="#" style="text-decoration: none;"
+                                    class="m-v-1 button button-s font-weight-400 black bg-white text-uppercase small">shop
+                                    now
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <div class="col-md-3 p0">
+                <div class="right d-flex flex-column bg-light-grey justify-content-right"
+                    style="background-image: url('../img/vika/shop/background.jpg'); background-size: cover; padding-bottom: 3px;">
+                    <div class="text-uppercase font-weight-400 center">
+                        <div class="row">
+                            <div class="col-3"></div>
+                            <div class="col-6 m-v-2 center">
+                                <div class="bg-dark p1 white">
+                                    <p class="m0">deal</p>
+                                    <p class="text-uppercase h6 h4 m0 bold white">
+                                        promos</p>
+                                    <p class="small font-weight-400 m-v-07">limited sale<br> in our categories</p>
 
+                                    <a href="#"
+                                        class="m-v-05 button button-s font-weight-400 bg-light-grey black text-uppercase small">shop
+                                        now
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="col-3"></div>
 
-</div>
-</footer>       
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6 p0 lg-order-last">
+            <a href="#" style="text-decoration: none;">
+                <div class="h-100 right d-flex flex-column bg-light-grey justify-content-right"
+                    style="background-image: url('../img/vika/shop/man-1.jpg'); background-size: cover; padding-bottom: 3px;">
+                    <div class="text-uppercase p-h-2 font-weight-400 m-v-4 p-v-7">
+                        <div class="topmargin p5 h2 m-v-4 white">
+                            <p class="text-uppercase bold left m0 p0">
+                                men's</p>
+                            <p class="text-uppercase bold left">
+                                collection</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 p0">
+            <a href="#" style="text-decoration: none;">
+                <div class="p3">
+                    <div class="left font-weight-400">
+                        <p class="text-uppercase black left h5 topmargin bold">
+                            new men's collection </p>
+                        <p class="dark left m0 font-weight-400">
+                            Yes, this is our new collection, check it out our new arrivals.
+                        </p>
+                        <div class="row m-v-3">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="../img/vika/shop/featured-item-2.jpg" alt="alttext"
+                                        class="img-responsive">
+                                </a>
+                                <section class="m-v-1" style="background-color: #fff;">
+                                    <div class="center">
+                                        <a href="#" class="font-weight-400 dark">Men's Hoodie Supreme
+                                        </a>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <p class="h5 bold p0 m0 black m-v-05">$110</p>
+                                        </div>
+
+                                        <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                            <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                                <path fill="#000"
+                                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                                </path>
+                                            </svg>
+                                            add to cart
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="../img/vika/shop/featured-item-6.jpg" alt="alttext"
+                                        class="img-responsive">
+                                </a>
+                                <section class="m-v-1" style="background-color: #fff;">
+                                    <div class="center">
+                                        <a href="#" class="font-weight-400 dark">Men's Nike Air Sneakers
+                                        </a>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <p class="h5 bold p0 m0 black m-v-05">$189</p>
+                                        </div>
+
+                                        <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                            <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                                <path fill="#000"
+                                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                                </path>
+                                            </svg>
+                                            add to cart
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
+                        <div class="center topmargin">
+                            <a href="#" style="text-decoration: none;"
+                                class="m-v-1 button button-m font-weight-400 white text-uppercase small">load more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+    <div class="row">
+        <div class="col-md-6 p0">
+            <a href="#" style="text-decoration: none;">
+                <div class="h-100 right d-flex flex-column bg-light-grey justify-content-right"
+                    style="background-image: url('../img/vika/shop/black-and-white-model.jpg'); background-size: cover; padding-bottom: 3px;">
+                    <div class="text-uppercase p-h-2 font-weight-400 m-v-4 p-v-7">
+                        <div class="topmargin p5 h2 m-v-4 white">
+                            <p class="text-uppercase bold left m0 p0">
+                                women's</p>
+                            <p class="text-uppercase bold left">
+                                collection</p>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-6 p0">
+            <a href="#" style="text-decoration: none;">
+                <div class="p3">
+                    <div class="left font-weight-400">
+                        <p class="text-uppercase black left h5 topmargin bold">
+                            new ladies collection </p>
+                        <p class="dark left m0 font-weight-400">
+                            Yes, this is our new collection, check it out our new arrivals.
+                        </p>
+                        <div class="row m-v-3">
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="../img/vika/shop/ladies-sunglasses.jpg" alt="alttext"
+                                        class="img-responsive">
+                                </a>
+                                <section class="m-v-1" style="background-color: #fff;">
+                                    <div class="center">
+                                        <a href="#" class="font-weight-400 dark">Women's Sunglasses-Black
+                                        </a>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <p class="h5 bold p0 m0 black m-v-05">$130</p>
+                                        </div>
+
+                                        <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                            <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                                <path fill="#000"
+                                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                                </path>
+                                            </svg>
+                                            add to cart
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
+                            <div class="col-6">
+                                <a href="#">
+                                    <img src="../img/vika/shop/ladies-dress.jpg" alt="alttext" class="img-responsive">
+                                </a>
+                                <section class="m-v-1" style="background-color: #fff;">
+                                    <div class="center">
+                                        <a href="#" class="font-weight-400 dark">Dress with a Bright Print
+                                        </a>
+                                        <div>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                                data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                                <path fill="#ccc"
+                                                    d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                                </path>
+                                            </svg>
+                                            <p class="h5 bold p0 m0 black m-v-05">$189</p>
+                                        </div>
+
+                                        <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                            <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                                <path fill="#000"
+                                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                                </path>
+                                            </svg>
+                                            add to cart
+                                        </button>
+                                    </div>
+                                </section>
+                            </div>
+
+                        </div>
+                        <div class="center topmargin">
+                            <a href="#" style="text-decoration: none;"
+                                class="m-v-1 button button-m font-weight-400 white text-uppercase small">load more
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+
+    <div class="bg-light-grey p-h-4">
+        <div class="p-v-5">
+            <div>
+                <p class="black bold center text-uppercase h5 m0">featured products</p>
+                <p class="font-weight-400 center dark h6">Check it out our new arrivals</p>
+            </div>
+            <div class="row p-v-2">
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/fashion-dress-2.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Long White Knitted Dress
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#222225"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#222225"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#222225"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#222225"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#222225"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="h5 bold p0 m0 black m-v-05">$139</p>
+                                </div>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/bags.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <span class="p small position-absolute bg-danger" style="top: 2%; left: 70%;">
+                            <p class="p05 bold m0 white">-33%</p>
+                        </span>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Little Pink Bag
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div class="row justify-content-center">
+                                    <p class="d-inline h5 p0 m0 grey m-v-05 old-info center bold">$120</p>
+                                    <p class="d-inline h5 p0 m0 black m-v-05 center p-h-05 bold">$80</p>
+                                </div>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/mens-sunglasses.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Men's Sunglasses
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="h5 bold p0 m0 black m-v-05">$119</p>
+                                </div>
+
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/mens-bag.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Men's Bag
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="h5 bold p0 m0 black m-v-05">$150</p>
+                                </div>
+
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/ladies-sunglasses.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Women's Sunglasses-Black
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="h5 bold p0 m0 black m-v-05">$130</p>
+                                </div>
+
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-2">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/vika/shop/shoes-1.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Men's Sneakers
+                                </a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas"
+                                        data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc"
+                                            d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <p class="h5 bold p0 m0 black m-v-05">$200</p>
+                                </div>
+
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000"
+                                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="row m0 m-v-05">
+        <div class="col-md-4 p05">
+            <a href="#" style="text-decoration: none;">
+                <div class="row p-v-3 bg-dark justify-content-center">
+                    <div class="m-v-05">
+                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                            <path fill="#fff"
+                                d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="d-inline">
+                        <p class="bold h6 white p-h-1 m0 left">
+                            Money Back Guarentee </p>
+                        <p class="light-grey p-h-1 m0 left">
+                            100% moneyback guarentee in all orders
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 p05">
+            <a href="#" style="text-decoration: none;">
+                <div class="row p-v-3 bg-dark justify-content-center">
+                    <div class="m-v-05">
+                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                            <path fill="#fff"
+                                d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="d-inline">
+                        <p class="bold h6 white p-h-1 m0 left">
+                            Online Support 24/7
+                        </p>
+                        <p class="light-grey p-h-1 m0 left">
+                            Need assistance with our products
+                        </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col-md-4 p05">
+            <a href="#" style="text-decoration: none;">
+                <div class="row p-v-3 bg-dark justify-content-center">
+                    <div class="m-v-05">
+                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                            <path fill="#fff"
+                                d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z">
+                            </path>
+                        </svg>
+                    </div>
+                    <div class="d-inline">
+                        <p class="bold h6 white p-h-1 m0 left">
+                            Free Shipping &amp; Free Returns </p>
+                        <p class="light-grey p-h-1 m0 left">
+                            Free shipping on all orders over $99 </p>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <footer class="bg-dark p2 line-height-17">
+        <div class="container-fluid row grey">
+            <div class="col-md-6 col-lg-4 grey p-v-1">
+                <p class="white text-uppercase bold">SUBSCRIBE NEWSLETTER</p>
+                <p class="light-grey font-weight-400">
+                    Get all the latest information on Events, Sales and Offers.
+                    Sign up for newsletter today.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 grey p-v-1">
+                <div class="row m-v-2">
+                    <div class="col-9 p0 m0">
+                        <div class="form-group">
+                            <input type="email" class="form-control" id="inputCity" placeholder="Email Address">
+                        </div>
+                    </div>
+                    <div class="col-3 p0 left">
+                        <button class="m0 hover-shadow img-responsive"
+                            style="padding: 0.6rem 1rem 0.6rem 1rem; background-color: black;">Subscribe</button>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 grey p-v-1">
+                <div class="center m-v-2">
+                    <i class="icon-box hover-grey">
+                        <svg viewBox="0 0 24 24" class="icon-s">
+                            <path fill="#fff"
+                                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
+                            </path>
+                        </svg>
+                    </i>
+
+                    <i class="icon-box hover-grey">
+                        <svg viewBox="0 0 512 512" class="icon-s">
+                            <path fill="#fff" id="Twitter__x28_alt_x29_"
+                                d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
+                                                                        c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
+                                                                        c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
+                                                                        c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
+                                                                        C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
+                                                                        c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
+                                                                        c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
+                                                                        c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
+                                                                        c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
+                                                                        C414.973,206.142,393.023,203.486,381.384,198.639z">
+                            </path>
+                        </svg>
+                    </i>
+
+                    <i class="icon-box hover-grey">
+                        <svg viewBox="0 0 24 24" class="icon-s">
+                            <path fill="#fff"
+                                d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
+                            </path>
+                        </svg>
+                    </i>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid row grey">
+            <div class="col-md-6 col-lg-3 grey p-v-1">
+                <p class="white text-uppercase bold">contact information</p>
+                <div class="smaller m-v-1">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">address:</p>
+                    <p class="grey left m0 smallere font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
+                </div>
+                <div class="smaller m-v-1">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">phone:</p>
+                    <p class="grey left m0 smallere font-weight-400">+380 96 926 5003</p>
+                </div>
+                <div class="smaller m-v-1">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">EMAIL:</p>
+                    <p class="greyleft m0 smallere font-weight-400" style="word-wrap: break-word;">
+                        info@europeitoutsourcing.com
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-9 grey">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 grey p-v-1">
+                        <p class="white text-uppercase bold">my account</p>
+                        <div class="row">
+                            <div class="col-6 p0">
+                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">About us</a>
+                                    </li>
+                                    <li><a href="#" class="grey m0">Contact us</a></li>
+                                    <li><a href="#" class="grey m0">My account</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6 p0">
+                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Orders history</a></li>
+                                    <li><a href="#" class="grey m0">Advanced search</a>
+                                    </li>
+                                    <li><a href="#" class="grey m0">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 grey p-v-1">
+                        <p class="white text-uppercase bold">main features</p>
+                        <div class="row">
+                            <div class="col-6 p0">
+                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Pure HTML CSS</a>
+                                    </li>
+                                    <li><a href="#" class="grey m0">Fast Loading</a></li>
+                                    <li><a href="#" class="grey m0">Extendable with Variables</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Responsive &amp; Mobile first</a></li>
+                                    <li><a href="#" class="grey m0">100's of Free UI Elements</a>
+                                    </li>
+                                    <li><a href="#" class="grey m0">Free &amp; Open Source</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 grey p-v-1">
+                        <p class="white text-uppercase bold">working hours</p>
+                        <p class="grey font-weight-400">
+                            Mon - Fri / 8:00AM - 5:00PM
+                        </p>
+                    </div>
+                </div>
+                <hr class="m0">
+                <div class="row p-v-1">
+                    <div class="col-md-4 white center">
+                    </div>
+                    <div class="col-md-8 lg-order-first">
+                        <p class="center grey left m-v-1 smaller"> © Copyright 2018. All Rights Reserved Europe IT
+                            Outsourcing
+                            Company.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
 
 </html>
