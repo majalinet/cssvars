@@ -2514,7 +2514,6 @@ input::placeholder, textarea::placeholder {
 }
 
 [type="date"] {
-  background: #fff url(https://cdn1.iconfinder.com/data/icons/cc_mono_icon_set/blacks/16x16/calendar_2.png) 98% 50% no-repeat;
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
