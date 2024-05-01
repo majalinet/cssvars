@@ -1,18 +1,17 @@
 /*
 * CSS Vars Framework
-* Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed.
-* Base URI: https://github.com/majalinet/CSS-Vars
-* Version: 1.2
-* Copyright 2018-2023 Kim Majali and Contributers
-* Copyright 2018-2023 Europe IT Outsourcing company (https://www.europeitoutsourcing.com/)
-* Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
+* Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
+* Base URI: https://github.com/majalinet/cssvars
+* Version: 1.3
+* Copyright 2018-2024 Kim Majali and EITO company https://eito.pro
+* Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
 
  @-ms-viewport {
   width: device-width;
 }
 
-/* Varibles*/
+/* Variables*/
 
 :root {
   --color-1: #083c5c;
@@ -28,10 +27,12 @@
   --light-grey: #f6f6f6;
   --body-bg: #fff;
   --body-color: #111;
-  --fontweight: 300;
-  --fontweight-heading: 300;
+  --font-weight: 300;
+  --font-weight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+  --col-h-padding: 0;
+  --col-v-padding: 0;
   --line-height: 1.4;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
@@ -62,8 +63,8 @@
     --light-grey: #222536;
     --body-bg: #1b1d27;
     --body-color: #c0bebe;
-    --fontweight: 300;
-    --fontweight-heading: 300;
+    --font-weight: 300;
+    --font-weight-heading: 300;
     --font-size-mobile: 12px;
     --font-size-desktop: 16px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
@@ -81,8 +82,6 @@
   }
 } */
 
-
-
 [data-theme="dark"] {
   --color-1: #969494;
   --color-2:#7077a3;
@@ -97,10 +96,12 @@
   --light-grey: #222536;
   --body-bg: #1b1d27;
   --body-color: #c0bebe;
-  --fontweight: 300;
-  --fontweight-heading: 300;
+  --font-weight: 300;
+  --font-weight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+  --col-h-padding: 0;
+  --col-v-padding: 0;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:150, 148, 148;
@@ -133,7 +134,7 @@ body {
   width: 100%;
   font-family: var(--font-family);
   font-size: 1rem;
-  font-weight: var(--fontweight, 400);
+  font-weight: var(--font-weight, 400);
   line-height: var(--line-height, 1.5);
   text-align: justify;
   background-color: var(--body-bg, white);
@@ -151,7 +152,7 @@ ol ol, ul ul, ol ul, ul ol {
 }
 
 dt {
-  font-weight: var(--fontweight-heading, 400);
+  font-weight: var(--font-weight-heading, 400);
 }
 
 dd {
@@ -220,7 +221,7 @@ h1, h2, h3, h4, h5, h6 {
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
-  font-weight: var(--fontweight-heading, 300);
+  font-weight: var(--font-weight-heading, 300);
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
 }
@@ -576,8 +577,7 @@ h1 .bordered::after {
 .col-1, .col-2, .col-3, .col-4, .col-5, .col-6, .col-7, .col-8, .col-9, .col-10, .col-11, .col-12, .col, .col-auto, .col-sm-4, .col-sm-6, .col-sm-8, .col-sm-12, .col-sm, .col-sm-auto, .col-md-2, .col-md-3, .col-md-4, .col-md-5, .col-md-6, .col-md-8, .col-md-9, .col-md-10, .col-md-12, .col-md, .col-md-auto, .col-lg-1, .col-lg-2, .col-lg-3, .col-lg-4, .col-lg-5, .col-lg-6, .col-lg-7, .col-lg-8, .col-lg-9, .col-lg-10, .col-lg-11, .col-lg-12, .col-lg, .col-lg-auto, .col-xl-1, .col-xl-2, .col-xl-3, .col-xl-4, .col-xl-5, .col-xl-6, .col-xl-7, .col-xl-8, .col-xl-9, .col-xl-10, .col-xl-11, .col-xl-12, .col-xl, .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: var(--col-v-padding, 0) var(--col-h-padding, 0);
 }
 
 .col {
@@ -929,7 +929,7 @@ h1 .bordered::after {
   }
 }
 
-/* Dispaly */
+/* Display */
 
 .d-none {
   display: none;
@@ -1487,7 +1487,7 @@ button:hover {
   border-radius: 0.25rem;
 }
 
-/* Alerts & Mesages*/
+/* Alerts & Messages*/
 
 .msg {
   display: block;
@@ -1595,23 +1595,29 @@ tr {
   border-color: inherit;
 }
 
-.table-td-minw-15rem td {
+.table-td-min-w-15rem td {
   min-width: 15rem;
 }
-.table-td-minw-10rem td {
+.table-td-min-w-10rem td {
   min-width: 10rem;
 }
-.table-td-minw-5rem td {
+.table-td-min-w-5rem td {
   min-width: 5rem;
 }
 .table-td-w-15rem td {
-  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
 }
 .table-td-w-10rem td {
-  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
 }
 .table-td-w-5rem td {
-  width: 5rem;
+  min-width: 5rem;
+  max-width: 5rem;
+}
+.table-td-overflow-hidden td {
+  overflow: hidden;
 }
 
 
@@ -1979,7 +1985,7 @@ td button {
   height: auto;
 }
 
-/* reponsive embed */
+/* responsive embed */
 
 .embed-responsive {
   position: relative;
@@ -2054,7 +2060,6 @@ td button {
 }
 
 .carousel-small-img li img {
-  border-radius: 50%;
   vertical-align: middle;
 }
 
@@ -2117,7 +2122,7 @@ td button {
   transform: translateX(-75%);
 }
 
-.crrousel .slidesNavigation label:hover {
+.carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
 
@@ -2127,20 +2132,20 @@ td button {
   background: var(--color-1, black);
 }
 
-/* Gallary Box*/
+/* Gallery Box*/
 
-.gallary-box {
+.gallery-box {
   line-height: 1.5rem;
   margin: 0;
   padding: 1rem;
 }
 
-.gallary-box img {
+.gallery-box img {
   max-width: 100%;
   height: auto;
 }
 
-.key-features ul, .features ul, .testimonials ul, .team ul, .portfolio ul, .gallary-box ul, .list-style-none {
+.key-features ul, .features ul, .testimonials ul, .team ul, .portfolio ul, .gallery-box ul, .list-style-none {
   list-style: none;
   padding: 0;
 }
@@ -2319,7 +2324,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   margin: 2px;
 }
 
-/*Flexbox Image Gallary */
+/*Flexbox Image Gallery */
 
 .flex-gallery-container {
   width: 100%;
@@ -2554,7 +2559,7 @@ input::placeholder, textarea::placeholder {
   cursor: pointer;
 }
 
-.raiting-c-1 label {
+.rating-c-1 label {
   color: var(--color-1, grey);
 }
 
@@ -2707,7 +2712,7 @@ body, html {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-weight: var(--fontweight, 200);
+  font-weight: var(--font-weight, 200);
 }
 .accordionContent ul{
   padding-left: 0;
@@ -2950,7 +2955,7 @@ body, html {
     left: -9999px;
     background: none;
   }
-  .main-menu input[type="checkbox"]:fous {
+  .main-menu input[type="checkbox"]:focus {
     background: none;
   }
   .main-menu label {
@@ -3013,13 +3018,13 @@ body, html {
   }
 }
 
-.menu-borderd li {
+.menu-bordered li {
   border: solid 1px var(--color-1, black);
   margin: 0.75rem;
   padding: 0;
 }
 
-.menu-borderd li a {
+.menu-bordered li a {
   padding: 0.45rem;
 }
 

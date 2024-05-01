@@ -1,25 +1,17 @@
 /*
 * CSS Vars Framework
-* Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, Jquery, Font awesome, and many other resources and that affects the page load speed.
-* Base URI: https://github.com/majalinet/CSS-Vars
-* Version: 1.2
-* Copyright 2018-2023 Kim Majali and Contributers
-* Copyright 2018-2023 Europe IT Outsourcing company (https://www.europeitoutsourcing.com/)
-* Licensed under MIT (https://github.com/majalinet/Agile-CSS/blob/master/LICENSE)
+* Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
+* Base URI: https://github.com/majalinet/cssvars
+* Version: 1.3
+* Copyright 2018-2024 Kim Majali and EITO company https://eito.pro
+* Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
 
  @-ms-viewport {
   width: device-width;
 }
 
-/*
-  @font-face {
-    font-family: montserrat;
-    src: url(fonts/montserrat-hairline.otf);
-    }
-  */
-
-/* Varibles*/
+/* Variables*/
 
 .cssvars {
   --color-1: #083c5c;
@@ -35,10 +27,12 @@
   --light-grey: #f6f6f6;
   --body-bg: #fff;
   --body-color: #111;
-  --fontweight: 300;
-  --fontweight-heading: 300;
+  --font-weight: 300;
+  --font-weight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+  --col-h-padding: 0;
+  --col-v-padding: 0;
   --line-height: 1.4;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
@@ -69,8 +63,8 @@
     --light-grey: #222536;
     --body-bg: #1b1d27;
     --body-color: #c0bebe;
-    --fontweight: 300;
-    --fontweight-heading: 300;
+    --font-weight: 300;
+    --font-weight-heading: 300;
     --font-size-mobile: 12px;
     --font-size-desktop: 16px;
     --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
@@ -103,10 +97,12 @@
   --light-grey: #222536;
   --body-bg: #1b1d27;
   --body-color: #c0bebe;
-  --fontweight: 300;
-  --fontweight-heading: 300;
+  --font-weight: 300;
+  --font-weight-heading: 300;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
+  --col-h-padding: 0;
+  --col-v-padding: 0;
   --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
   "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:150, 148, 148;
@@ -138,7 +134,7 @@
   width: 100%;
   font-family: var(--font-family);
   font-size: 1rem;
-  font-weight: var(--fontweight, 400);
+  font-weight: var(--font-weight, 400);
   line-height: var(--line-height, 1.5);
   text-align: justify;
   background-color: var(--body-bg, white);
@@ -156,7 +152,7 @@
 }
 
 .cssvars dt {
-  font-weight: var(--fontweight-heading, 400);
+  font-weight: var(--font-weight-heading, 400);
 }
 
 .cssvars dd {
@@ -225,7 +221,7 @@
 .cssvars h1, .cssvars .h1, .cssvars h2, .cssvars .h2, .cssvars h3, .cssvars .h3, .cssvars h4, .cssvars .h4, .cssvars h5, .cssvars .h5, .cssvars h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
-  font-weight: var(--fontweight-heading, 300);
+  font-weight: var(--font-weight-heading, 300);
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
 }
@@ -585,8 +581,7 @@
 .cssvars .col-1, .cssvars .col-2, .cssvars .col-3, .cssvars .col-4, .cssvars .col-5, .cssvars .col-6, .cssvars .col-7, .cssvars .col-8, .cssvars .col-9, .cssvars .col-10, .cssvars .col-11, .cssvars .col-12, .cssvars .col, .cssvars .col-auto, .cssvars .col-sm-4, .cssvars .col-sm-6, .cssvars .col-sm-8, .cssvars .col-sm-12, .cssvars .col-sm, .cssvars .col-sm-auto, .cssvars .col-md-2, .cssvars .col-md-3, .cssvars .col-md-4, .cssvars .col-md-5, .cssvars .col-md-6, .cssvars .col-md-8, .cssvars .col-md-9, .cssvars .col-md-10, .cssvars .col-md-12, .cssvars .col-md, .cssvars .col-md-auto, .cssvars .col-lg-1, .cssvars .col-lg-2, .cssvars .col-lg-3, .cssvars .col-lg-4, .cssvars .col-lg-5, .cssvars .col-lg-6, .cssvars .col-lg-7, .cssvars .col-lg-8, .cssvars .col-lg-9, .cssvars .col-lg-10, .cssvars .col-lg-11, .cssvars .col-lg-12, .cssvars .col-lg, .cssvars .col-lg-auto, .cssvars .col-xl-1, .cssvars .col-xl-2, .cssvars .col-xl-3, .cssvars .col-xl-4, .cssvars .col-xl-5, .cssvars .col-xl-6, .cssvars .col-xl-7, .cssvars .col-xl-8, .cssvars .col-xl-9, .cssvars .col-xl-10, .cssvars .col-xl-11, .cssvars .col-xl-12, .cssvars .col-xl, .cssvars .col-xl-auto {
   position: relative;
   width: 100%;
-  padding-right: 1rem;
-  padding-left: 1rem;
+  padding: var(--col-v-padding, 0) var(--col-h-padding, 0);
 }
 
 .cssvars .col {
@@ -938,7 +933,7 @@
   }
 }
 
-/* Dispaly */
+/* Display */
 
 .cssvars .d-none {
   display: none;
@@ -1496,7 +1491,7 @@ height: 2.5rem;
   border-radius: 0.25rem;
 }
 
-/* Alerts & Mesages*/
+/* Alerts & Messages*/
 
 .cssvars .msg {
   display: block;
@@ -1604,23 +1599,29 @@ height: 2.5rem;
   border-color: inherit;
 }
 
-.cssvars .table-td-minw-15rem td {
+.cssvars .table-td-min-w-15rem td {
   min-width: 15rem;
 }
-.cssvars .table-td-minw-10rem td {
+.cssvars .table-td-min-w-10rem td {
   min-width: 10rem;
 }
-.cssvars .table-td-minw-5rem td {
+.cssvars .table-td-min-w-5rem td {
   min-width: 5rem;
 }
 .cssvars .table-td-w-15rem td {
-  width: 15rem;
+  min-width: 15rem;
+  max-width: 15rem;
 }
 .cssvars .table-td-w-10rem td {
-  width: 10rem;
+  min-width: 10rem;
+  max-width: 10rem;
 }
 .cssvars .table-td-w-5rem td {
-  width: 5rem;
+  min-width: 5rem;
+  max-width: 5rem;
+}
+.cssvars .table-td-overflow-hidden td {
+  overflow: hidden;
 }
 
 .cssvars .table td, .cssvars .table th {
@@ -1991,7 +1992,7 @@ height: 2.5rem;
   height: auto;
 }
 
-/* reponsive embed */
+/* responsive embed */
 
 .cssvars .embed-responsive {
   position: relative;
@@ -2066,7 +2067,6 @@ height: 2.5rem;
 }
 
 .cssvars .carousel-small-img li img {
-  border-radius: 50%;
   vertical-align: middle;
 }
 
@@ -2129,7 +2129,7 @@ height: 2.5rem;
   transform: translateX(-75%);
 }
 
-.cssvars .crrousel .slidesNavigation label:hover {
+.cssvars .carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
 
@@ -2139,20 +2139,20 @@ height: 2.5rem;
   background: var(--color-1, black);
 }
 
-/* Gallary Box*/
+/* Gallery Box*/
 
-.cssvars .gallary-box {
+.cssvars .gallery-box {
   line-height: 1.5rem;
   margin: 0;
   padding: 1rem;
 }
 
-.cssvars .gallary-box img {
+.cssvars .gallery-box img {
   max-width: 100%;
   height: auto;
 }
 
-.cssvars .key-features ul, .cssvars .features ul, .cssvars .testimonials ul, .cssvars .team ul, .cssvars .portfolio ul, .cssvars .gallary-box ul, .cssvars .list-style-none {
+.cssvars .key-features ul, .cssvars .features ul, .cssvars .testimonials ul, .cssvars .team ul, .cssvars .portfolio ul, .cssvars .gallery-box ul, .cssvars .list-style-none {
   list-style: none;
   padding: 0;
 }
@@ -2331,7 +2331,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   margin: 2px;
 }
 
-/*Flexbox Image Gallary */
+/*Flexbox Image Gallery */
 
 .cssvars .flex-gallery-container {
   width: 100%;
@@ -2566,7 +2566,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   cursor: pointer;
 }
 
-.cssvars .raiting-c-1 label {
+.cssvars .rating-c-1 label {
   color: var(--color-1, grey);
 }
 
@@ -2719,7 +2719,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-weight: var(--fontweight, 200);
+  font-weight: var(--font-weight, 200);
 }
 .cssvars .accordionContent ul{
   padding-left: 0;
@@ -2962,7 +2962,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
     left: -9999px;
     background: none;
   }
-  .cssvars .main-menu input[type="checkbox"]:fous {
+  .cssvars .main-menu input[type="checkbox"]:focus {
     background: none;
   }
   .cssvars .main-menu label {
@@ -3025,13 +3025,13 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   }
 }
 
-.cssvars .menu-borderd li {
+.cssvars .menu-bordered li {
   border: solid 1px var(--color-1, black);
   margin: 0.75rem;
   padding: 0;
 }
 
-.cssvars .menu-borderd li a {
+.cssvars .menu-bordered li a {
   padding: 0.45rem;
 }
 
