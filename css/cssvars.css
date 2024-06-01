@@ -1616,8 +1616,9 @@ tr {
   min-width: 5rem;
   max-width: 5rem;
 }
-.table-td-overflow-hidden td {
+.table-td-overflow-hidden td, .table-td-overflow-hidden th {
   overflow: hidden;
+  white-space: nowrap; 
 }
 
 
@@ -3918,4 +3919,16 @@ progress {
 input:focus, select:focus, textarea:focus {
   border-color: var(--color-1, black);
   outline: none;
+}
+
+.resize-grip {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 7px;
+  position: absolute;
+  cursor: col-resize;
+}
+.resize-grip:hover {
+  background-color: rgba(var(--info-rgb), 0.1);
 }

@@ -1620,8 +1620,9 @@ height: 2.5rem;
   min-width: 5rem;
   max-width: 5rem;
 }
-.cssvars .table-td-overflow-hidden td {
+.cssvars .table-td-overflow-hidden td, .cssvars .table-td-overflow-hidden th {
   overflow: hidden;
+  white-space: nowrap; 
 }
 
 .cssvars .table td, .cssvars .table th {
@@ -3915,4 +3916,16 @@ left: 105%;
 .cssvars input:focus, .cssvars select:focus, .cssvars textarea:focus {
   border-color: var(--color-1, black);
   outline: none;
+}
+
+.cssvars .resize-grip {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 7px;
+  position: absolute;
+  cursor: col-resize;
+}
+.cssvars .resize-grip:hover {
+  background-color: rgba(var(--info-rgb), 0.1);
 }
