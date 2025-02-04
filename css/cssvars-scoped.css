@@ -3796,8 +3796,13 @@ border-color: #ddd;}
 user-select: none;
 }
 
-
 .cssvars .styled-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  accent-color: var(--color-1,blue);
+}
+
+.cssvars .styled-checkbox2 {
   width: 1.5rem;
   height: 1.5rem;
   -webkit-appearance: none;
@@ -3810,14 +3815,14 @@ user-select: none;
   -moz-box-shadow: none !important;
   box-shadow: none !important;
 }
-.cssvars .styled-checkbox:focus {
+.cssvars .styled-checkbox2:focus {
     outline: none;
     -webkit-box-shadow: none !important;
     -moz-box-shadow: none !important;
     box-shadow: none !important;
 
 }
-.cssvars .styled-checkbox:checked {
+.cssvars .styled-checkbox2:checked {
   border: 0.4rem solid var(--color-1,lightgray);
     text-align: center;
     line-height: var(--line-height, 15px);
