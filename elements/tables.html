@@ -803,6 +803,7 @@
 
 
 <h2 class="m-t-8">Table Height</h2>
+<p>Add to the tables any of the classes <b>table-compact</b> <b>table-large-2x</b> <b>table-large-3x</b> <b>table-large-4x</b> <b>table-large-5x</b> </p>
 <p>Add the class <b>table-compact</b> to the table</p>
 <h5>Table compact</h5>
 <table class="table table-compact table-striped">
@@ -838,9 +839,9 @@
 
 
 
-<h5 class="m-t-4">Table Large</h5>
-<p>Add the class <b>table-large</b> to the table</p>
-<table class="table table-large table-striped">
+<h5 class="m-t-4">Table Large 2x</h5>
+<p>Add the class <b>table-large-2x</b> to the table</p>
+<table class="table table-large-2x table-bordered">
   <thead>
       <tr>
           <th>Firstname</th>
@@ -853,7 +854,7 @@
   </thead>
   <tbody>
       <tr>
-          <td>John</td>
+          <td>John<br>2nd line</td>
           <td>Doe</td>
           <td>john@example.com</td>
           <td>Montreal</td>
@@ -867,6 +868,79 @@
           <td>Kharkov</td>
           <td>Ukraine</td>
           <td>25</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h5 class="m-t-4">Table Large 3x</h5>
+<p>Add the class <b>table-large-3x</b> to the table</p>
+<table class="table table-large-3x table-bordered">
+  <thead>
+      <tr>
+          <th>First name</th>
+          <th>Last name</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+        <td>John<br>2nd line<br>3rd line</td>
+        <td>Doe</td>
+          <td>john@example.com</td>
+          <td>Montreal</td>
+          <td>Canada</td>
+          <td>30</td>
+      </tr>
+      <tr>
+          <td>Kim</td>
+          <td>Doe</td>
+          <td>Kim@example.com</td>
+          <td>Kharkov</td>
+          <td>Ukraine</td>
+          <td>25</td>
+      </tr>
+  </tbody>
+</table>
+
+
+<h5 class="m-t-4">Table Fixed Cell Height</h5>
+<p>Inside each cell add div with classes from <b>.mh-1rem</b> to <b>mh-10rem</b><br>
+  and based on your need add <b>overflow-y-scroll</b> or <b>overflow-y-auto</b> or <b>overflow-hidden</b></p>
+<table class="table table-large-2x table-bordered">
+  <thead>
+      <tr>
+          <th>Firstname</th>
+          <th>Lastname</th>
+          <th>Email</th>
+          <th>City</th>
+          <th>Country</th>
+          <th>Age</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>
+            <div class="mh-3rem overflow-y-auto">John<br>2nd line<br>3rd line<br></div>
+          </td>
+          <td>
+            <div class="mh-3rem overflow-y-auto">Doe</div>
+          </td>
+          <td>
+            <div class="mh-3rem overflow-y-auto">john@example.com</div>
+          </td>
+          <td>
+            <div class="mh-3rem overflow-y-auto">Montreal</div>
+          </td>
+          <td>
+            <div class="mh-3rem overflow-y-auto">Canada</div>
+          </td>
+          <td>
+            <div class="mh-3rem overflow-y-auto">30</div>
+          </td>
       </tr>
   </tbody>
 </table>

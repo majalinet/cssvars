@@ -1631,8 +1631,18 @@ tr {
 .table-compact td, .table-compact th {
   padding: 0.2rem;
 }
-.table-large td, .table-large th {
-  padding: 1rem;
+
+.table-large-2x tr td {
+  height: 4rem;
+}
+.table-large-3x tr td {
+  height: 6rem;
+}
+.table-large-4x tr td{
+  height: 8rem;
+}
+.table-large-5x tr td {
+  height: 10rem;
 }
 
 .table>thead>tr>th {

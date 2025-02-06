@@ -1634,8 +1634,18 @@ height: 2.5rem;
 .cssvars .table-compact td, .cssvars .table-compact th {
   padding: 0.2rem;
 }
-.cssvars .table-large td, .cssvars .table-large th {
-  padding: 1rem;
+
+.cssvars .table-large-2x tr td {
+  height: 4rem;
+}
+.cssvars .table-large-3x tr td {
+  height: 6rem;
+}
+.cssvars .table-large-4x tr td {
+  height: 8rem;
+}
+.cssvars .table-large-5x tr td {
+  height: 10rem;
 }
 
 .cssvars .table>thead>tr>th {
