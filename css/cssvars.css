@@ -3,7 +3,7 @@
 * Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
 * Base URI: https://github.com/majalinet/cssvars
 * Version: 1.3
-* Copyright 2018-2024 Kim Majali and EITO company https://eito.pro
+* Copyright 2018-2025 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
 
@@ -1620,7 +1620,6 @@ tr {
   overflow: hidden;
   white-space: nowrap; 
 }
-
 
 .table td, .table th {
   padding: .5rem;
