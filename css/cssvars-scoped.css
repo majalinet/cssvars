@@ -532,9 +532,16 @@
   margin-left: auto;
 }
 
+
 @media (min-width: 576px) {
   .cssvars .container {
     max-width: 540px;
+  }
+  .cssvars .w-25-responsive {
+    width: 100%;
+  }
+  .cssvars .w-50-responsive {
+    width: 100%;
   }
 }
 
@@ -542,11 +549,25 @@
   .cssvars .container {
     max-width: 720px;
   }
+  .cssvars .w-25-responsive {
+    width: 50%;
+  }
+  .cssvars .w-50-responsive {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
   .cssvars .container {
     max-width: 960px;
+  }
+  
+  .cssvars .w-25-responsive {
+    width: 25%;
+  }
+  
+  .cssvars .w-50-responsive {
+    width: 50%;
   }
 }
 

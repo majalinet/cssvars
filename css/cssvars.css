@@ -446,7 +446,6 @@ h1 .bordered::after {
 
 .w-50 {
   width: 50%;
-  height: auto;
 }
 
 .w-75 {
@@ -534,17 +533,37 @@ h1 .bordered::after {
   .container {
     max-width: 540px;
   }
+  .w-25-responsive {
+    width: 100%;
+  }
+  .w-50-responsive {
+    width: 100%;
+  }
 }
 
 @media (min-width: 768px) {
   .container {
     max-width: 720px;
   }
+  .w-25-responsive {
+    width: 50%;
+  }
+  .w-50-responsive {
+    width: 100%;
+  }
 }
 
 @media (min-width: 992px) {
   .container {
     max-width: 960px;
+  }
+
+  .w-25-responsive {
+    width: 25%;
+  }
+  
+  .w-50-responsive {
+    width: 50%;
   }
 }
 
