@@ -27,14 +27,14 @@
   --light-grey: #f6f6f6;
   --body-bg: #fff;
   --body-color: #111;
-  --font-weight: 300;
-  --font-weight-heading: 300;
+  --font-weight: 400;
+  --font-weight-heading: 500;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
   --col-h-padding: 0;
   --col-v-padding: 0;
   --line-height: 1.4;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
   --color-2-rgb:74, 78, 105;
   --dark-rgb: 34, 34, 37;
