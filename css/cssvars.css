@@ -3029,3 +3029,6 @@ input:focus, select:focus, textarea:focus {
 .resize-grip:hover {
   background-color: rgba(var(--info-rgb), 0.1);
 }
+
+.scrollbar-none {scrollbar-width: none;}
+.scrollbar-thin {  scrollbar-width: thin;}

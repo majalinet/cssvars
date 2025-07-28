@@ -3011,3 +3011,7 @@ left: 105%;
 .cssvars .resize-grip:hover {
   background-color: rgba(var(--info-rgb), 0.1);
 }
+
+.cssvars .scrollbar-none {scrollbar-width: none;}
+.cssvars .scrollbar-thin {  scrollbar-width: thin;}
+
