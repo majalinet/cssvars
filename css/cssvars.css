@@ -342,7 +342,7 @@ h1 .bordered::after {
   box-sizing: inherit;
 }
 
-.test-box div, .test-box header, .test-box main, .test-box section, .test-box footer, .test-box side {
+.test-box div, .test-box header, .test-box main, .test-box section, .test-box footer, .test-box aside {
   min-height: 3.57rem;
   border-style: solid;
   border-width: 0.075rem;

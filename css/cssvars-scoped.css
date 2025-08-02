@@ -342,7 +342,7 @@
   box-sizing: inherit;
 }
 
-.cssvars .test-box div, .cssvars .test-box header, .cssvars .test-box main, .cssvars .test-box section, .cssvars .test-box footer, .cssvars .test-box side {
+.cssvars .test-box div, .cssvars .test-box header, .cssvars .test-box main, .cssvars .test-box section, .cssvars .test-box footer, .cssvars .test-box aside {
   min-height: 3.57rem;
   border-style: solid;
   border-width: 0.075rem;
@@ -1097,7 +1097,7 @@ height: 2.5rem;
 }
 
 /* Alerts & Messages*/
-.msg {
+.cssvars .msg {
   display: block;
   border-left: 0.75rem solid rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
@@ -2020,7 +2020,7 @@ height: 2.5rem;
   opacity: 0.6;
 }
 
-[type="date"] {
+.cssvars [type="date"] {
   display: block;
   width: 100%;
   padding: 0.375rem 0.75rem;
@@ -2033,11 +2033,11 @@ height: 2.5rem;
   border-radius: 0.25rem;
 }
 
-[type="date"]::-webkit-inner-spin-button {
+.cssvars [type="date"]::-webkit-inner-spin-button {
   display: none;
 }
 
-[type="date"]::-webkit-calendar-picker-indicator {
+.cssvars [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
 
@@ -2525,7 +2525,7 @@ height: 2.5rem;
 .cssvars .m2 {  margin: 2rem;}
 .cssvars .m4 {  margin: 4rem;}
 .cssvars .m2px {  margin: 2px;}
-.topmargin { margin-top:3.125rem;}
+.cssvars .topmargin { margin-top:3.125rem;}
 
 /* Margin Vertical */
 .cssvars .m-v-02 { margin-block: 0.2rem; }
@@ -2557,7 +2557,7 @@ height: 2.5rem;
 .cssvars .p3 { padding: 3rem; }
 .cssvars .p4 { padding: 4rem; }
 .cssvars .p5 { padding: 5rem; }
-.cssvars .cssvars .p7 { padding: 7rem; }
+.cssvars .p7 { padding: 7rem; }
 
 /* Padding Vertical */
 .cssvars .p-v-02 {  padding-block: 0.2rem;}
