@@ -12,13 +12,13 @@
 }
 
 /* Variables*/
-
 .cssvars {
   --color-1: #083c5c;
   --color-2:#4a4e69;
   --dark: #495057;
   --grey: #ccc;
   --white: #fff;
+  --black: #000000;
   --danger: #cc3a3a;
   --info: #1191b8;
   --success: #0abfa4;
@@ -27,19 +27,20 @@
   --light-grey: #f6f6f6;
   --body-bg: #fff;
   --body-color: #111;
-  --font-weight: 300;
-  --font-weight-heading: 300;
+  --font-weight: 400;
+  --font-weight-heading: 500;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
   --col-h-padding: 0;
   --col-v-padding: 0;
   --line-height: 1.4;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:8, 60, 92;
   --color-2-rgb:74, 78, 105;
   --dark-rgb: 34, 34, 37;
   --grey-rgb: 204, 204, 204;
   --white-rgb: 255, 255, 255;
+  --black-rgb: 0, 0, 0;
   --danger-rgb: 204, 58, 58;
   --info-rgb: 17, 145, 184;
   --success-rgb: 10, 191, 164;
@@ -47,48 +48,17 @@
   --luxury-rgb:75, 47, 90;
 }
 
-/* Uncomment if you want auto-detect dark theme */
+/* If you want auto-detect dark theme, uncomment and remove [data-theme="dark"] {*/
 /* @media (prefers-color-scheme:dark){
-  .cssvars {
-    --color-1: #969494;
-    --color-2:#7077a3;
-    --dark: #4a4e6d;
-    --grey: #ccc;
-    --white: #fff;
-    --danger: #cc3a3a;
-    --info: #1191b8;
-    --success: #0abfa4;
-    --warning: #bda06a;
-    --luxury:#6a4380;
-    --light-grey: #222536;
-    --body-bg: #1b1d27;
-    --body-color: #c0bebe;
-    --font-weight: 300;
-    --font-weight-heading: 300;
-    --font-size-mobile: 12px;
-    --font-size-desktop: 16px;
-    --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
-    "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-    --color-1-rgb:150, 148, 148;
-    --color-2-rgb:112, 119, 163;
-    --dark-rgb: 74, 78, 109;
-    --grey-rgb: 204, 204, 204;
-    --white-rgb: 255, 255, 255;
-    --danger-rgb: 204, 58, 58;
-    --info-rgb: 17, 145, 184;
-    --success-rgb: 10, 191, 164;
-    --warning-rgb:189, 160, 106;
-    --luxury-rgb:106, 67, 128;
-  }
-} */
-
-
+  :root {
+  */
 [data-theme="dark"] .cssvars  {
   --color-1: #969494;
   --color-2:#7077a3;
   --dark: #4a4e6d;
   --grey: #ccc;
-  --white: #fff;
+  --white: #000;
+  --black: #fff;
   --danger: #cc3a3a;
   --info: #1191b8;
   --success: #0abfa4;
@@ -109,12 +79,31 @@
   --color-2-rgb:112, 119, 163;
   --dark-rgb: 74, 78, 109;
   --grey-rgb: 204, 204, 204;
-  --white-rgb: 255, 255, 255;
+  --white-rgb: 0, 0, 0;
+  --black-rgb: 255, 255, 255;
   --danger-rgb: 204, 58, 58;
   --info-rgb: 17, 145, 184;
   --success-rgb: 10, 191, 164;
   --warning-rgb:189, 160, 106;
   --luxury-rgb:106, 67, 128;
+}
+
+/* Styles variables */
+.cssvars {
+  --default-padding: 0;
+  --default-margin: 0;
+  --default-gap: 0;
+  --default-border: none;
+  --default-border-radius: 0;
+  --box-shadow: none;
+}
+
+.cssvars .styled, .cssvars .table, .cssvars .styled-parent > *, .cssvars > * {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--box-shadow);
 }
 
 .cssvars {
@@ -237,8 +226,8 @@
 .cssvars .font-weight-600, .cssvars .font-semibold {  font-weight: 600;}
 .cssvars .bold {  font-weight: bold;}
 .cssvars .italic {  font-style: italic;}
-/* fancy title */
 
+/* fancy title */
 .cssvars .fancy-title.title-dotted-border {
   background: url(../img/fabric-dark.png) center repeat-x;
 }
@@ -250,12 +239,10 @@
   margin-bottom: 1.8rem;
 }
 
-
-
 .cssvars .fancy-title h1, .cssvars .fancy-title h2, .cssvars .fancy-title h3, .cssvars .fancy-title h4, .cssvars .fancy-title h5, .cssvars .fancy-title h6 {
   position: relative;
   display: inline-block;
-  background-color: #fff;
+  background-color: var(--body-bg, white);
   padding: 0 1rem;
   margin: 1.5rem 0;
 }
@@ -273,7 +260,7 @@
   height: 0.2rem;
   content: " ";
   text-shadow: none;
-  background-color: #bbb;
+  background-color: var(--grey, #bbb);
   width: 10%;
 }
 
@@ -302,13 +289,8 @@
   line-height: 150%;
 }
 
-.cssvars .bordered-black {
-  border-color: black;
-}
-.cssvars .bordered-grey {
-  border-color:var(--grey, grey);
-}
-
+.cssvars .bordered-black { border-color: black;}
+.cssvars .bordered-grey { border-color:var(--grey, grey);}
   
 .cssvars .bordered-top {
   border-top: 0.125rem solid #dee2e6;
@@ -428,7 +410,6 @@
 .cssvars .h--3rem {height: calc(100% - 3rem)}
 .cssvars .h--4rem {height: calc(100% - 4rem)}
 
-
 .cssvars .container, .cssvars .container-fluid, .cssvars .container-half-fluid {
   width: 100%;
   padding-right: 1rem;
@@ -436,7 +417,6 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 
 @media (min-width: 576px) {
   .cssvars .container { max-width: 540px; }
@@ -773,11 +753,10 @@
 .cssvars .d-table-row {  display: table-row;}
 .cssvars .d-table-cell {  display: table-cell;}
 .cssvars .d-flex {  display: flex;}
-
 .cssvars .d-inline-flex {  display: inline-flex;}
 .cssvars .flex-row {  flex-direction: row;}
-.cssvars .flex-column {  flex-direction: column;}
 .cssvars .flex-row-reverse {  flex-direction: row-reverse;}
+.cssvars .flex-column {  flex-direction: column;}
 .cssvars .flex-column-reverse {  flex-direction: column-reverse;}
 .cssvars .flex-wrap {  flex-wrap: wrap;}
 .cssvars .flex-nowrap {  flex-wrap: nowrap;}
@@ -809,12 +788,16 @@
 .cssvars .align-self-center {  align-self: center;}
 .cssvars .align-self-baseline {  align-self: baseline;}
 .cssvars .align-self-stretch {  align-self: stretch;}
+
 .cssvars .text-uppercase {  text-transform: uppercase;}
 .cssvars .text-capitalize {  text-transform: capitalize;}
 .cssvars .text-lowercase {  text-transform: lowercase;}
 .cssvars .letter-spacing-0 {  letter-spacing: 0;}
 .cssvars .letter-spacing-1 {  letter-spacing: 0.075rem;}
 .cssvars .letter-spacing-2 {  letter-spacing: 0.15rem;}
+.cssvars .letter-spacing-3 { letter-spacing: 0.3rem; }
+.cssvars .letter-spacing-4 { letter-spacing: 0.45rem; }
+.cssvars .letter-spacing-5 { letter-spacing: 0.6rem; }
 
 .cssvars pre code {
   display: block;
@@ -980,9 +963,8 @@ height: 2.5rem;
   fill: var(--luxury, purple);
 }
 
-
 .cssvars .icon-black-bg {
-  background-color:black;
+  background-color: var(--black, black);
   fill: var(--body-bg, white);
 }
 
@@ -991,12 +973,12 @@ height: 2.5rem;
 }
 
 .cssvars .icon-dark-bg {
-  background-color: var(--dark, red);
+  background-color: var(--dark, rgb(72, 72, 72));
   fill: var(--body-bg, white);
 }
 
 .cssvars .icon-dark-fill {
-  fill: var(--dark, red);
+  fill: var(--dark, rgb(72, 72, 72));
 }
 .cssvars .icon-box {
   display: inline-block;
@@ -1004,7 +986,6 @@ height: 2.5rem;
 }
 
 /*dividers */
-
 .cssvars hr {
   margin: 3% 0 5% 0;
   margin-left: auto;
@@ -1020,13 +1001,12 @@ height: 2.5rem;
 }
 
 /*Quotes */
-
 .cssvars blockquote {
   padding: 0.75rem 1.5rem;
   margin: 0 0 1.5rem;
   font-size: 1.1rem;
   font-weight: 400;
-  border-left: 7px solid var(--color-1, black);
+  border-left: 0.5rem solid var(--color-1, black);
 }
 
 .cssvars .blockquote-footer {
@@ -1036,7 +1016,6 @@ height: 2.5rem;
 }
 
 /*Pagination */
-
 .cssvars .pagination {
   display: flex;
   padding-left: 0;
@@ -1054,7 +1033,7 @@ height: 2.5rem;
   padding: 0.5rem 0.75rem;
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
-  border: 1px solid #dee2e6;
+  border: 0.75rem solid #dee2e6;
 }
 
 .cssvars .page-item.active .page-link, .cssvars .page-link:focus, .cssvars .page-link:hover {
@@ -1071,7 +1050,6 @@ height: 2.5rem;
 }
 
 /* Buttons */
-
 .cssvars button, .cssvars .button, .cssvars .accordion .accordionBlock > label, .cssvars .tabs > label {
   background-color: var(--color-1);
   border: none;
@@ -1083,9 +1061,10 @@ height: 2.5rem;
   font-size: 1rem;
   border-radius: 0.2rem;
   margin: 0.5rem 0.1rem;
+  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
 }
 
-.cssvars .button{  padding: 0.37rem 0.95rem;}
+.cssvars .button {  padding: 0.37rem 0.95rem;}
 .cssvars .button-s {  font-size: 0.75rem;}
 .cssvars .button-m {  font-size: 1.25rem;}
 
@@ -1096,8 +1075,8 @@ height: 2.5rem;
 
 .cssvars button:hover {
   background-color: var(--color-1, black);
-  color: white;
-  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+  color: var(--body-bg, white);
+  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24));
 }
 
 .cssvars .button-w-25 {  width: 25%;}
@@ -1105,7 +1084,6 @@ height: 2.5rem;
 .cssvars .button-w-100 {  width: 100%;}
 
 /*badge*/
-
 .cssvars .badge {
   line-height: 1;
   display: inline-block;
@@ -1119,14 +1097,14 @@ height: 2.5rem;
 }
 
 /* Alerts & Messages*/
-.cssvars .msg {
+.msg {
   display: block;
-  border-left: 1px solid rgba(255, 255, 255, 0.5);
+  border-left: 0.75rem solid rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
   position: relative;
   padding: 0.75rem 1.25rem;
   margin-bottom: 1rem;
-  border: 1px solid transparent;
+  border: 0.75rem solid transparent;
   border-radius: 0.25rem;
 }
 
@@ -1210,7 +1188,7 @@ height: 2.5rem;
 .cssvars .table td, .cssvars .table th {
   padding: .5rem;
   vertical-align: top;
-  border-top: 1px solid var(--grey, #eee);
+  border-top: 0.0625rem solid var(--grey, #eee);
 }
 
 .cssvars .table-compact td, .cssvars .table-compact th {
@@ -1246,13 +1224,12 @@ height: 2.5rem;
   border-spacing: .5rem;
 }
 .cssvars .table-cell-separate td, .cssvars .table-cell-separate th  {
-   background-color: rgba(var(--grey-rgb), 0.15);
-   border: none;
-   
+  background-color: rgba(var(--grey-rgb), 0.15);
+  border: none;
 }
 .cssvars .table-cell-separate-color-1 td, .cssvars .table-cell-separate-color-1 th  {
-   background-color: rgba(var(--color-1-rgb), 0.1);
-   border: none;
+  background-color: rgba(var(--color-1-rgb), 0.1);
+  border: none;
 }
 
 .cssvars .table-dark-header th {
@@ -1292,12 +1269,9 @@ height: 2.5rem;
 .cssvars .table-hover tbody tr:hover {
   background-color: rgba(var(--grey-rgb), 0.1);
 }
+
 .cssvars .table-hover-color-1 tbody tr:hover {
   background-color: rgba(var(--color-1-rgb), 0.1);
-}
-
-.cssvars .table-hover tbody tr:hover {
-  background-color: rgba(0, 0, 0, 0.02);
 }
 
 .cssvars .table-bordered {
@@ -1330,7 +1304,6 @@ height: 2.5rem;
 }
 
 /* colors */
-
 .cssvars .color-1, .cssvars .color-1-hover:hover {
   color: var(--color-1, black);
 }
@@ -1364,11 +1337,11 @@ height: 2.5rem;
 }
 
 .cssvars .white, .cssvars .white-hover:hover {
-  color: white;
+  color: var(--white, #fff);
 }
 
 .cssvars .black, .cssvars .black-hover:hover {
-  color: black;
+  color: var(--black, #000);
 }
 
 .cssvars .color-gradient, .cssvars .color-gradient-hover:hover {
@@ -1437,13 +1410,16 @@ height: 2.5rem;
 .cssvars .bga-info, .cssvars .bga-info-hover:hover {
   background-color: rgba(var(--info-rgb), 0.1);
   color: var(--info, blue);
-}.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
+}
+.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
   background-color: rgba(var(--dark-rgb), 0.1);
   color: var(--dark, darkgray);
-}.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
+}
+.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
   background-color: rgba(var(--grey-rgb), 0.1);
   color: var(--grey, grey);
-}.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
+}
+.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
   background-color: rgba(var(--danger-rgb), 0.1);
   color: var(--danger, red);
 }
@@ -1451,7 +1427,6 @@ height: 2.5rem;
   background-color: rgba(var(--success-rgb), 0.1);
   color: var(--success, green);
 }
-
 .cssvars .warning{
   color: var(--warning, yellow);
 }
@@ -1466,11 +1441,11 @@ height: 2.5rem;
 }
 
 .cssvars .outline-warning {
-  border: 1px solid var(--warning, black);
+  border: 0.0625rem solid var(--warning, black);
 }
 
 .cssvars .bordered-left-warning{
-  border-left: 6px solid var(--warning, black);
+  border-left: 0.3rem solid var(--warning, black);
 }
 
 .cssvars .luxury{
@@ -1487,11 +1462,11 @@ height: 2.5rem;
 }
 
 .cssvars .outline-luxury {
-  border: 1px solid var(--luxury, black);
+  border: 0.0625rem solid var(--luxury, black);
 }
 
 .cssvars .bordered-left-luxury{
-  border-left: 6px solid var(--luxury, black);
+  border-left: 0.3rem solid var(--luxury, black);
 }
 
 .cssvars .brightness-150, .cssvars .brightness-150-hover:hover {
@@ -1629,7 +1604,6 @@ height: 2.5rem;
   overflow: hidden;
   list-style: none;
   position: relative;
-  -o-transition: transform 0.5s;
   transition: transform 0.5s;
 }
 
@@ -1678,12 +1652,10 @@ height: 2.5rem;
   height: 1.25rem;
   width: 1.25rem;
   border-radius: 50%;
-  border: solid 1px #2980b9;
+  border: solid 0.0625rem var(--info, #2980b9);
   font-size: 0;
 }
-
-/* You have to repeat this with each slide, 100/slides-num
-*/
+/* You have to repeat this with each slide, 100/slides-num*/
 
 .cssvars .radio-1:checked~.slides {
   transform: translateX(0%);
@@ -1704,8 +1676,8 @@ height: 2.5rem;
 .cssvars .carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
-
 /* You have to repeat this with each slide/dot */
+
 .cssvars .carousel .radio-1:checked~.slidesNavigation label#dotForRadio-1, .cssvars .carousel .radio-2:checked~.slidesNavigation label#dotForRadio-2, .cssvars .carousel .radio-3:checked~.slidesNavigation label#dotForRadio-3, .cssvars .carousel .radio-4:checked~.slidesNavigation label#dotForRadio-4 {
   background: var(--color-1, black);
 }
@@ -1733,7 +1705,7 @@ height: 2.5rem;
 
 .cssvars .gallery-box-photo-container img {
   max-width: 100%;
-  margin: 3px;
+  margin: 0.2rem;
 }
 
 .cssvars .gallery-box-main-image {
@@ -1741,11 +1713,11 @@ height: 2.5rem;
   visibility: hidden;
   top: 1rem;
   left: 1rem;
-  margin-right: 8px;
+  margin-right: 0.5rem;
 }
 
 .cssvars .gallery-box-photo-container {
-  padding: 0.625;
+  padding: 0.625rem;
   margin-bottom: 1rem;
 }
 
@@ -1754,16 +1726,21 @@ height: 2.5rem;
   margin: 0.325rem;
 }
 
-.cssvars .shadow, .cssvars .shadow-hover:hover {
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+/* Shadows */
+.cssvars .shadow, .cssvars .shadow-hover:hover{
+  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
+}
+
+.cssvars .shadow-1, .cssvars .shadow-1-hover:hover {
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
 }
 
 .cssvars .shadow-2, .cssvars .shadow-2-hover:hover {
-  border: solid 1px var(--light-grey, #f5f5f5);
-  box-shadow: 3px 3px 2px #aaaaaa;
+  border: solid 0.0625rem var(--light-grey, #f5f5f5);
+  box-shadow: 0.1875rem 0.1875rem 0.125rem #aaaaaa;
 }
 .cssvars .shadow-3, .cssvars .shadow-3-hover:hover {
-  border: solid 1px var(--light-grey, #f5f5f5);
+  border: solid 0.0625rem var(--light-grey, #f5f5f5);
   box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 }
 
@@ -1771,16 +1748,16 @@ height: 2.5rem;
   box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625 0.625 rgba(0, 0, 0, 0.22);
 }
 .cssvars .shadow-color, .cssvars .shadow-color-hover:hover {
-  box-shadow: 0 1px 3px rgba(var(--color-1-rgb, black)), 0 1px 2px rgba(var(--color-1-rgb, black));
+  box-shadow: 0 0.0625rem 0.1875rem rgba(var(--color-1-rgb, black)), 0 0.0625rem 0.125rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .shadow-color-2, .cssvars .shadow-color-2-hover:hover {
-  border: solid 1px rgba(var(--color-1-rgb, black));
-  box-shadow: 3px 3px 2px var(--color-1, black);
+  border: solid 0.0625rem rgba(var(--color-1-rgb, black));
+  box-shadow: 0.1875rem 0.1875rem 0.125rem var(--color-1, black);
 }
 .cssvars .shadow-color-3, .cssvars .shadow-color-3-hover:hover {
-  border: solid 1px #f5f5f5;
-box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
+  border: solid 0.0625rem #f5f5f5;
+  box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .shadow-color-4, .cssvars .shadow-color-4-hover:hover {
@@ -1789,8 +1766,6 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 
 /* Light Box */
 .cssvars .light-box-overlay {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   visibility: hidden;
   position: fixed;
@@ -1799,11 +1774,9 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   bottom: 0;
   left: 0;
   z-index: 999;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
-  background-color: rgba(0, 0, 0, 0.9);
+  background-color: rgba(var(--black-rgb), 0.9);
 }
 
 .cssvars .light-box-overlay:target, .cssvars .light-box-overlay.is-active {
@@ -1823,7 +1796,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .light-box-html {
   padding: 2em;
   max-width: 42em;
-  background-color: #fff;
+  background-color: var(--white, white);
 }
 
 .cssvars .light-box-figure {
@@ -1841,7 +1814,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .light-box-figcaption {
-  color: #fff;
+  color: var(--white, white)
 }
 
 .cssvars .light-box-image {
@@ -1891,7 +1864,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .light-box img {
-  margin: 2px;
+  margin: 0.125rem;
 }
 
 /*Flexbox Image Gallery */
@@ -1903,8 +1876,8 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .flex-gallery-image-container {
-  margin: 3px;
-  height: 310px;
+  margin: 0.1875rem;
+  height: 20rem;
   flex: 1 1 auto;
 }
 
@@ -1912,13 +1885,13 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   display: block;
   height: 100%;
   min-width: 100%;
-  max-width: 372px;
+  max-width: 24rem;
   object-fit: cover;
 }
 
 @media (max-width: 800px) {
   .cssvars .flex-gallery-image-container img {
-    max-width: 310px;
+    max-width: 20rem;
   }
 }
 
@@ -1930,7 +1903,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   .cssvars .flex-gallery-image-container {
     width: 100%;
     max-height: 40vh;
-    margin: 3px 0;
+    margin: 0.1875rem 0;
   }
 }
 
@@ -1939,9 +1912,9 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   width: 100%;
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(310px, 1fr));
-  grid-auto-rows: 50px;
+  grid-auto-rows: 3.125rem;
   grid-auto-flow: row dense;
-  grid-gap: 1px;
+  grid-gap: 0.0625rem;
 }
 
 .cssvars .masonry-container-2col {
@@ -2013,15 +1986,16 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   background-color: var(--body-bg, white);
   background-clip: padding-box;
   border-radius: 0.25rem;
-  box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
-  border: solid 2px var(--light-grey, #f5f5f5)
+  border: solid 0.125rem var(--light-grey, #f5f5f5);
+  box-shadow: var(--shadow-style, 0 0.33rem 1rem rgba(0, 0, 0, 0.08));
 }
 
 .cssvars .form-control-border {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
-  border: 1px solid #ced4da;
+  border: 0.0625rem solid #ced4da;
   box-shadow: none;
 }
+
 .cssvars select.form-control  {
   padding: 0.435rem 0.375rem;
 }
@@ -2055,7 +2029,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   color: var(--dark, rgba(41, 40, 40, 0.707));
   background-color: var(--body-bg, white);
   background-clip: padding-box;
-  border: 1px solid #ced4da;
+  border: 0.0625rem solid #ced4da;
   border-radius: 0.25rem;
 }
 
@@ -2116,7 +2090,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   background-size: cover;
 }
 
-.cssvars body, html {
+.cssvars body, .cssvars html {
   height: 100%;
 }
 
@@ -2176,7 +2150,6 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 /* Accordion */
-
 .cssvars .accordion {
   width: 100%;
   margin: auto;
@@ -2195,18 +2168,18 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .accordion .accordionBlock {
-  margin-bottom: 5px;
+  margin-bottom: 0.3125rem;
   display: block;
   width: 100%;
   float: left;
 }
 
 .cssvars .accordion .accordionBlock .accordionContent {
-  border: 1px solid #eee;
+  border: 0.0625rem solid #eee;
   border-top: 0 none;
   width: 100%;
   float: left;
-  padding: 10px;
+  padding: 0.625rem;
   font-weight: 400;
 }
 
@@ -2219,7 +2192,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .accordion input[type="radio"]:checked~label {
   background-color: var(--body-bg, white);
   color: var(--color-1, black);
-  border: 1px solid var(--color-1, black);
+  border: 0.0625rem solid var(--color-1, black);
 }
 
 .cssvars .accordion .accordionBlock .accordionContent {
@@ -2306,13 +2279,13 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .modal__close:after, .cssvars .modal__close:before {
   content: "";
   position: absolute;
-  width: 2px;
+ width: 0.125rem;
   height: 1.5em;
   background: var(--dark, #ccc);
   display: block;
   transform: rotate(45deg);
   left: 50%;
-  margin: -3px 0 0 -1px;
+  margin: -0.1875rem 0 0 -10.0625rem;
   top: 0;
 }
 
@@ -2330,13 +2303,6 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
     height: 90%;
     box-sizing: border-box;
   }
-}
-
-.cssvars .modal__inner p img {
-  max-width: 200px;
-  height: auto;
-  float: left;
-  margin: 0 1em 1em 0;
 }
 
 /* Promo Boxes */
@@ -2412,14 +2378,13 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .nav-top-border-hover ul li a:hover {
-  border-top: 2px solid var(--color-1, black);
-  margin-top:-2px;
+  border-top: 0.125rem solid var(--color-1, black);
+  margin-top:-0.125rem;
 }
 
-
 .cssvars .nav-bottom-border-hover ul li a:hover {
-  border-bottom: 2px solid var(--color-1, black);
-  margin-bottom:-2px;
+  border-bottom: 0.125rem solid var(--color-1, black);
+  margin-bottom:-0.125rem;
 }
 
 .cssvars .toggle-menu ul {
@@ -2429,7 +2394,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 
 .cssvars .toggle-menu ul li {
   width: 100%;
-  height: 3px;
+  height: 0.1875rem;
   background-color: var(--color-1, black);
   margin-bottom: 0.25rem;
 }
@@ -2490,13 +2455,13 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
     font-size: 1.3rem;
     padding: .9rem 1.8rem;
     display: block;
-    border-bottom: 1px solid rgba(225, 225, 225, 0.1);
+    border-bottom: 0.0625rem solid rgba(225, 225, 225, 0.1);
   }
 }
 
 @media only screen and (max-width: 360px) {
   .cssvars .main-menu label {
-    padding: 5px 0;
+    padding: 0.3125rem 0;
   }
   .cssvars .logo {
     font-size: 1.8rem;
@@ -2519,7 +2484,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
 
 .cssvars .menu-bordered li {
-  border: solid 1px var(--color-1, black);
+  border: solid 0.0625rem var(--color-1, black);
   margin: 0.75rem;
   padding: 0;
 }
@@ -2560,7 +2525,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .m2 {  margin: 2rem;}
 .cssvars .m4 {  margin: 4rem;}
 .cssvars .m2px {  margin: 2px;}
-.cssvars .topmargin {  margin-top: 50px;}
+.topmargin { margin-top:3.125rem;}
 
 /* Margin Vertical */
 .cssvars .m-v-02 { margin-block: 0.2rem; }
@@ -2592,6 +2557,7 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .p3 { padding: 3rem; }
 .cssvars .p4 { padding: 4rem; }
 .cssvars .p5 { padding: 5rem; }
+.cssvars .cssvars .p7 { padding: 7rem; }
 
 /* Padding Vertical */
 .cssvars .p-v-02 {  padding-block: 0.2rem;}
@@ -2695,7 +2661,6 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .colored-ul, .cssvars .indent-ul, .cssvars .half-indent-ul, .cssvars .no-indent-ul, .cssvars .colored-ol, .cssvars .steps-ol {
   list-style: none;
   text-indent: -0.7em;
-
 }
 
 .cssvars .no-indent-ul {
@@ -2704,7 +2669,6 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 .cssvars .half-indent-ul {
   text-indent: -1.5em;
 }
-
 
 .cssvars .colored-ul li::before {
   content: "â€¢ ";
@@ -2772,6 +2736,9 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 /* writing-mode classes */
 .cssvars .rtl {  direction: rtl;}
 .cssvars .ltr {  direction: ltr;}
+.cssvars .horizontal-tb, .cssvars .vertical-rl, .cssvars .vertical-lr {
+  writing-mode: var(--writing-mode);
+}
 .cssvars .horizontal-tb {  writing-mode: horizontal-tb;}
 .cssvars .vertical-rl {  writing-mode: vertical-rl;}
 .cssvars .vertical-lr {  writing-mode: vertical-lr;}
@@ -2786,19 +2753,19 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   color: var(--color-1, black);
 }
 
-.cssvars .par-2-cols {  column-count: 2;}
-.cssvars .par-3-cols {  column-count: 3;}
-.cssvars .par-4-cols {  column-count: 4;}
-.cssvars .par-cols-gap-2 {  column-gap: 2.5rem;}
-.cssvars .par-cols-gap-3 {  column-gap: 3.5rem;}
-.cssvars .par-cols-rule {  column-rule: 1px solid var(--grey, black);}
+.cssvars .par-2-cols { column-count: 2;}
+.cssvars .par-3-cols { column-count: 3;}
+.cssvars .par-4-cols { column-count: 4;}
+.cssvars .par-cols-gap-2 { column-gap: 2.5rem;}
+.cssvars .par-cols-gap-3 { column-gap: 3.5rem;}
+.cssvars .par-cols-rule { column-rule: 0.0625rem solid var(--grey, black); }
 .cssvars .opacity1, .cssvars .opacity1-hover:hover {  opacity: 1;}
 .cssvars .opacity07, .cssvars .opacity07-hover:hover {  opacity: 0.7;}
 .cssvars .opacity05, .cssvars .opacity05-hover:hover {  opacity: 0.5;}
 .cssvars .opacity03, .cssvars .opacity03-hover:hover {  opacity: 0.3;}
 
 .cssvars .custom-file-upload {
-  border: 1px solid var(--grey, #ccc);
+  border: 0.0625rem solid var(--grey, #ccc);
   display: inline-block;
   padding: 0.375rem 0.75rem;
   cursor: pointer;
@@ -2814,15 +2781,15 @@ box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
   padding: 0;
   margin: 0;
   border: none;
-  border-radius: 3px;
+  border-radius: 0.1875rem;
   overflow: hidden;
-  background-color: #fff;
+  background-color: var(--body-bg, white);
   display: inline;
   line-height: var(--line-height, 1.2);
 }
 
 .cssvars .select-link-style select {
-  padding: 5px;
+  padding: 0.3125rem;
   border: none;
   box-shadow: none;
   background-color: transparent;
@@ -2848,7 +2815,7 @@ border-color: #ddd;}
   color: var(--white, white)
 }
 .cssvars .main-nav-white a:hover {
-  border-bottom: 2px solid white !important;
+  border-bottom: 0.125rem solid white !important;
   color: var(--white, white)
 }
 
@@ -2884,8 +2851,8 @@ border-color: #ddd;}
 .cssvars .styled-checkbox2 {
   width: 1.5rem;
   height: 1.5rem;
-  appearance:         none;
-  margin-right: 10px;
+  appearance: none;
+  margin-right: 0.625rem;
   border: 0.3rem solid var(--grey,lightgray);
   display: inline-block;
   box-shadow: none !important;
@@ -2896,9 +2863,10 @@ border-color: #ddd;}
 
 }
 .cssvars .styled-checkbox2:checked {
-  border: 0.4rem solid var(--color-1,lightgray);
-    text-align: center;
-    line-height: var(--line-height, 15px);
+  border: 0.5rem solid var(--color-1,lightgray);
+  text-align: center;
+  line-height: var(--line-height, 1rem);
+  transform-origin: bottom left;
 }
 
 .cssvars .mx-auto{
@@ -2913,15 +2881,15 @@ margin-bottom:auto;
 .cssvars .tooltip {
 position: relative;
 display: inline-block;
-border-bottom: 1px dotted black;
+border-bottom: 0.0625rem dotted black;
 }
 
 .cssvars .tooltip .tooltip-body {
 visibility: hidden;
 width: 7.5rem;
 text-align: center;
-padding: 5px 0;
- position: absolute;
+padding: 0.3125rem 0;
+position: absolute;
 z-index: 1;
 }
 
@@ -2951,12 +2919,12 @@ margin-left: -3.75rem;
 }
 
 .cssvars .tooltip-left {
-top: -5px;
+top: -0.3125rem;
 right: 105%;
 }
 
 .cssvars .tooltip-right {
-top: -5px;
+top: -0.3125rem;
 left: 105%;
 }
 
@@ -2980,6 +2948,16 @@ left: 105%;
 
 .cssvars ::-moz-progress-bar {
   background-color: var(--color-1);
+}
+
+.cssvars .notification-panel{
+  z-index: 100;
+  position: fixed;
+  top:5rem;
+  right: 1rem;
+  display: none;
+  width: 22rem;
+  background-color: var(--body-bg, white);
 }
 
 .cssvars .table-layout-fixed {
@@ -3014,4 +2992,3 @@ left: 105%;
 
 .cssvars .scrollbar-none {scrollbar-width: none;}
 .cssvars .scrollbar-thin {  scrollbar-width: thin;}
-

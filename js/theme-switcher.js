@@ -7,6 +7,7 @@ const themes = [
         --dark: #495057;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #0abfa4;
@@ -32,7 +33,7 @@ const themes = [
         --warning-rgb:189, 160, 106;
         --luxury-rgb:75, 47, 90;
     }
-        `],
+    `],
     ['CSS Vars (dark)',
     `
     :root {
@@ -40,7 +41,8 @@ const themes = [
         --color-2:#7077a3;
         --dark: #4a4e6d;
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #0abfa4;
@@ -76,6 +78,7 @@ const themes = [
         --dark: #492529;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #b6e2d3;
         --success: #0abda2;
@@ -116,6 +119,7 @@ const themes = [
         --dark: rgb(189, 97, 111);
         --grey: #ccc;
         --white: #fae8e0;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #b6e2d3;
         --success: #0abda2;
@@ -151,6 +155,7 @@ const themes = [
         --dark: #222225;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #bcece0;
         --success: #36eee0;
@@ -191,7 +196,8 @@ const themes = [
         --color-2:#bcece0;
         --dark: #c23b7c;
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: #cc3a3a;
         --info: #bcece0;
         --success: #36eee0;
@@ -218,7 +224,7 @@ const themes = [
         --luxury-rgb:75, 47, 90;
     }
         `
-],
+    ],
     ['Summer Splash',
         `
     :root {
@@ -227,6 +233,7 @@ const themes = [
         --dark: #222225;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #75e6da;
@@ -266,7 +273,8 @@ const themes = [
         --color-2:#189ab4;
         --dark: #127083;
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: rgb(231, 81, 81);
         --info: #1191b8;
         --success: #75e6da;
@@ -301,6 +309,7 @@ const themes = [
         --dark: rgb(1, 95, 53);
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #bacc81;
@@ -340,7 +349,8 @@ const themes = [
         --color-2:#478c5c;
         --dark: rgb(1, 95, 53);
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #bacc81;
@@ -377,6 +387,7 @@ const themes = [
         --dark: #3b2137;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #0abfa4;
@@ -417,7 +428,8 @@ const themes = [
         --color-2:#613659;
         --dark: rgb(131, 103, 143);
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #0abfa4;
@@ -454,6 +466,7 @@ const themes = [
         --dark: #495057;
         --grey: #ccc;
         --white: #fff;
+        --black: #000;
         --danger: #cc3a3a;
         --info: #1191b8;
         --success: #0abfa4;
@@ -494,7 +507,8 @@ const themes = [
         --color-2:#922c40;
         --dark: #9b6a39;
         --grey: #ccc;
-        --white: #fff;
+        --white: #000;
+        --black: #fff;
         --danger: #922c40;
         --info: #1191b8;
         --success: #0abfa4;
@@ -533,19 +547,14 @@ console.log(themes[i][0])
 
 let style = ''
 var styleEl = document.createElement('style')
-styleEl.innrtHttml = style
-    document.head.appendChild(styleEl)
-
-
+styleEl.innerHTML = style
+document.head.appendChild(styleEl)
 
 function setTheme(){
 var val= document.querySelector('#themeSelector').value
 let theme = themes[val][1]
 document.querySelector('#ThemeCodeOutput').innerHTML = themes[val][1]
 
-
-    
-    
 let sheet = new CSSStyleSheet();
 // sheet.replaceSync('body { color: red; }');
 sheet.insertRule(theme);

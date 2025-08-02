@@ -1,0 +1,437 @@
+
+
+/* Styles */
+/* Brutalism (Anti-Design) 
+Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.
+Art studios, personal brands, underground music, radical startups.
+*/
+.brutal-style {
+  --font-weight-heading: 700;
+  --body-bg: var(--white);
+  --body-color: var(--dark);
+  --default-padding: 0.5rem;
+  --default-margin: 0.5rem;
+  --default-gap: 0.5rem;
+  --default-border: 0.125rem solid var(--dark);
+  --default-border-radius: 0;
+  --box-shadow: 0.5rem 0.5rem 0 var(--dark);
+  --font-family: "Courier New", monospace;
+}
+
+.brutal-lite-style {
+--body-bg: var(--white);
+--body-color: var(--dark);
+--font-weight: 700;
+--font-weight-heading: 800;
+--font-size-desktop: 1.125rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.3;
+--font-family: "Courier New", monospace;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 0.5rem;
+--default-border: 0.125rem solid var(--dark);
+--default-border-radius: 0;
+--box-shadow: none;
+}
+
+/* Glassmorphism 
+Glassmorphism: Best for modern, elegant UIs with frosted-glass visuals.
+Fintech, health tech, luxury apps, personal productivity tools.
+*/
+.glass-style {
+  --light-grey: rgba(var(--white-rgb), 0.2);
+  --body-bg: rgba(var(--color-1-rgb), 0.05);
+  --body-color: var(--color-1);
+  --default-padding: 1.5rem;
+  --default-margin: 1rem;
+  --default-gap: 1rem;
+  --default-border: 0.0625rem solid rgba(var(--color-1-rgb), 0.2);
+  --default-border-radius: 0.5rem;
+  --box-shadow: 0 0.25rem 0.75rem rgba(var(--color-1-rgb), 0.1);
+}
+
+[data-theme="dark"] .glass-style {
+  --body-bg: var(--dark);
+  --body-color: var(--light-grey);
+  --default-border: 0.0625rem solid rgba(var(--color-1-rgb), 0.3);
+  --box-shadow: 0 0.25rem 1rem rgba(var(--color-1-rgb), 0.25);
+}
+
+/* Retro & Vintage 
+Retro/Vintage: Ideal for nostalgic, playful, or thematic branding
+Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
+*/
+.retro-style {
+  --body-bg: rgba(var(--warning-rgb), 0.5);
+  --light-grey: rgba(var(--luxury-rgb), 0.1);
+  --color-1: var(--dark);
+  --font-weight-heading: 700;
+  --body-color: var(--luxury);
+  --default-padding: 1rem;
+  --default-margin: 1rem;
+  --default-gap: 1rem;
+  --default-border: 0.25rem dashed var(--danger);
+  --default-border-radius: 0;
+  --box-shadow: none;
+  --font-family: "Comic Sans MS", cursive;
+  --grey: var(--light-grey);
+}
+.retro-light-style {
+  --color-1: var(--warning);
+--body-bg: var(--light-grey);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1.125rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1.25rem;
+--line-height: 1.5;
+--font-family: "Courier", "Georgia", serif;
+--default-padding: 1.25rem;
+--default-margin: 1.25rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem dashed var(--grey);
+--default-border-radius: 0.5rem;
+--box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.15);
+}
+
+/* Minimalist / Clean - Focus: simplicity, whitespace, legibility 
+Minimalist: Perfect for clean, distraction-free content or portfolios.
+Tech startups, SaaS platforms, portfolios, architects, wellness brands.
+*/
+.minimalist-style {
+  --body-bg: var(--white);
+  --body-color: var(--dark);
+  --font-weight: 400;
+  --font-weight-heading: 500;
+  --font-size-desktop: 1rem;
+  --col-h-padding: 1rem;
+  --col-v-padding: 1rem;
+  --line-height: 1.6;
+  --font-family: "Helvetica Neue", sans-serif;
+  --default-padding: 1.5rem;
+  --default-margin: 1.5rem;
+  --default-gap: 1rem;
+  --default-border: 0.0625rem solid var(--light-grey);
+  --default-border-radius: 0.25rem;
+  --box-shadow: none;
+}
+
+/* Neon 
+Neon: Use in high-energy or futuristic entertainment/tech projects.
+Nightclubs, gaming platforms, youth fashion, media streaming.
+*/
+.neon-style {
+  --body-bg: black;
+  --color-1: var(--info);
+  --body-color: var(--info);
+  --light-grey: rgba(var(--info-rgb), 0.1);
+  --font-weight-heading: 700;
+  --font-family: "Orbitron", sans-serif;
+  --line-height: 1.5;
+  --box-shadow: 0 0 1rem var(--info); 
+  --black: var(--dark);
+  --default-padding: 1rem;
+
+}
+/* Cyberpunk 
+Cyberpunk: Great for edgy, tech-heavy or sci-fi-inspired UIs.
+Blockchain/crypto apps, game dev studios, hacker culture brands.
+*/
+.cyberpunk-style {
+--color-1: var(--luxury);
+--body-bg: var(--black);
+--body-color: rgba(var(--luxury-rgb), 0.9);
+--light-grey: rgba(var(--luxury-rgb), 0.2);
+--dark: rgba(var(--luxury-rgb), 0.7);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1.25rem;
+--line-height: 1.5;
+--font-family: "Audiowide", "Roboto Mono", monospace;
+--default-padding: 1.25rem;
+--default-margin: 1.25rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem solid var(--luxury);
+--default-border-radius: 0.25rem;
+--box-shadow: 0 0 0.75rem var(--luxury);
+
+}
+
+/* Luxury / Maximalism / Elegant - Focus: rich tones, refined edges, stylish typography 
+Luxury/Maximalist: Best for premium brands or dramatic, rich experiences.
+Jewellery, fashion houses, high-end services, interior design.
+*/
+.luxury-style {
+  --body-bg: var(--white); 
+  --color-1: var(--warning);
+  /* --body-color: var(--warning); */
+  /* --body-bg: var(--luxury);  */
+  /* --color-1: var(--luxury); */
+  --body-color: var(--black);
+--font-family: "Garamond", "Times New Roman", serif;  
+--font-weight-heading: 700;
+--light-grey: rgba(var(--warning-rgb), 0.1);
+--dark: rgba(var(--warning-rgb), 0.7);
+--black: rgba(var(--warning-rgb), 0.9);
+--font-size-desktop: 1.125rem;
+--line-height: 1.6;
+--default-padding: 2rem;
+--default-margin: 2rem;
+--default-gap: 1.5rem;
+--default-border: 0.0625rem solid var(--);
+--default-border-radius: 1rem;
+--box-shadow: 0 0.75rem 1.5rem rgba(var(--warning-rgb), 0.2);
+}
+
+/* High Contrast 
+High Contrast: Essential for accessibility or information-heavy UIs.
+Government sites, accessibility-first platforms, education.
+*/
+.high-contrast-style {
+--body-bg: var(--body-color);
+--body-bg: var(--white);
+--body-color: var(--black);
+--font-weight: 400;
+--font-weight-heading: 700;
+--font-size-desktop: 1rem;
+--line-height: 1.5;
+--font-family: "Arial Black", sans-serif;
+--default-border: 0.125rem solid var(--black);
+--default-border-radius: 0;
+--box-shadow: none;
+}
+
+/*Neumorphism (Soft UI)
+Neumorphism: Use for soft, tactile interfaces—best in moderation.
+IoT dashboards, smart home apps, lifestyle tools (in moderation).
+*/
+.neumorphism-style {
+  --color-1: rgba(var(--grey-rgb), 1);
+  --font-family: "Arial", sans-serif;
+  --font-weight-heading: 400;
+  --body-bg: var(--light-grey);
+  --body-color: var(--dark);
+  --default-padding: 1rem;
+  --default-margin: 1rem;
+  --default-gap: 1rem;
+  --default-border: none;
+  --default-border-radius: 0.5rem;
+  --box-shadow: 
+    0.3125rem 0.3125rem 0.75rem rgba(var(--dark-rgb), 0.1),
+    -0.3125rem -0.3125rem 0.75rem rgba(var(--white-rgb), 0.8);
+}
+
+
+/* Modern / Flat UI - Focus: colour blocks, clean lines, subtle shadows
+Flat 2.0: Use for clean, intuitive UIs with subtle depth cues.
+Fintech apps, e-commerce admin, task managers.
+*/
+.modern-style {
+--color-1: var(--info);
+--body-bg: var(--light-grey);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1.5rem;
+--line-height: 1.6;
+--font-family: "Roboto", "Arial", sans-serif;
+--default-padding: 1.25rem;
+--default-margin: 1.25rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem solid var(--light-grey);
+--default-border-radius: 0.5rem;
+--box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* Playful / Creative - Focus: colour variety, soft edges, friendly tones
+Best for fun, friendly, and energetic interfaces with expressive visuals and lively colours.
+Kids’ apps, creative studios, learning platforms, lifestyle blogs, and quirky e-commerce brands.
+*/
+.playful-style {
+--color-1: var(--success);
+--body-bg: var(--light-grey);
+--body-color: var(--body-color);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.6;
+--font-family: "Comic Sans MS", "Arial", sans-serif;
+--default-padding: 1.25rem;
+--default-margin: 1.25rem;
+--default-gap: 1rem;
+--default-border: 0.125rem dashed var(--success);
+--default-border-radius: 1rem;
+--box-shadow: 0 0.25rem 0.75rem rgba(0, 0, 0, 0.1);
+}
+
+/* material-style — Material Design 
+Ideal for clean, structured, and responsive interfaces based on Google’s design principles.
+SaaS platforms, productivity tools, fintech apps, government portals, and educational platforms.
+*/
+
+.material-style {
+  --color-1: var(--info);
+--body-bg: var(--white);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.5;
+--font-family: "Roboto", "Segoe UI", sans-serif;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 1rem;
+--default-border: none;
+--default-border-radius: 0.25rem;
+--box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.2);
+}
+
+/* APP STYLES ----------------------------------------------------------------------*/
+/* Modular / Card-Based UI
+Dashboard/Modular: Ideal for admin panels with widget/card layouts.
+CRMs, HR systems, ERP tools, SaaS dashboards.
+*/
+.modular-style {
+  --color-1: var(--info);
+  --body-bg: var(--white);
+  --body-color: var(--dark);
+  --font-weight: 400;
+  --font-weight-heading: 600;
+  --font-size-desktop: 1rem;
+  --col-h-padding: 1rem;
+  --col-v-padding: 1rem;
+  --line-height: 1.5;
+  --font-family: "Arial", sans-serif;
+  --default-padding: 1rem;
+  --default-margin: 1rem;
+  --default-gap: 1rem;
+  --default-border: none;
+  --default-border-radius: 0.25rem;
+  --box-shadow: none;
+}
+
+/* .flat2-style — Flat 2.0 
+Data-Driven: Best for analytics-heavy or chart-rich dashboards.
+Fintech apps, e-commerce admin, task managers.
+*/
+.flat-style {
+--body-bg: var(--white);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.6;
+--font-family: "Roboto", "Arial", sans-serif;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem solid var(--light-grey);
+--default-border-radius: 0.5rem;
+--box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.05);
+}
+
+/* .data-style — Data-Driven / Analytical 
+Data-Driven: Best for analytics-heavy or chart-rich dashboards.
+Analytics platforms, BI tools, performance monitoring.
+*/
+.data-style {
+--color-1: var(--success);
+--body-bg: var(--white);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 700;
+--font-size-desktop: 1rem;
+--col-h-padding: 0.75rem;
+--col-v-padding: 0.75rem;
+--line-height: 1.5;
+--font-family: "Segoe UI", "Roboto", sans-serif;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 0.75rem;
+--default-border: 0.0625rem solid var(--grey);
+--default-border-radius: 0.25rem;
+--box-shadow: none;
+}
+
+/* .enterprise-style — Enterprise / Functional
+Enterprise: Built for dense data tables and power-user workflows.
+B2B SaaS, legal/accounting tools, logistics & finance software.
+*/
+.enterprise-style {
+--color-1: var(--dark);
+--body-bg: var(--light-grey);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 0.9375rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.5;
+--font-family: "Tahoma", "Segoe UI", sans-serif;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem solid var(--grey);
+--default-border-radius: 0.25rem;
+--box-shadow: none;
+}
+
+/* .system-ui-style — OS-Like UI 
+System UI: Mimics desktop apps; great for dev tools or OS-like apps.
+Developer tools, code platforms, internal IT tools.
+*/
+.system-ui-style {
+--color-1: var(--color-2);
+--body-bg: var(--white);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 500;
+--font-size-desktop: 1rem;
+--col-h-padding: 1rem;
+--col-v-padding: 1rem;
+--line-height: 1.5;
+--font-family: "SF Pro Text", "Segoe UI", sans-serif;
+--default-padding: 1rem;
+--default-margin: 1rem;
+--default-gap: 1rem;
+--default-border: 0.0625rem solid var(--light-grey);
+--default-border-radius: 0.5rem;
+--box-shadow: 0 0 0.25rem rgba(0, 0, 0, 0.1);
+}
+
+/* .colorful-dashboard-style — Colorful Dashboard
+Colorful Dashboard: Use to bring energy to user dashboards and KPIs.
+Health tech, education, fitness tracking apps.
+*/
+.colorful-dashboard-style {
+--color-1: var(--success);
+--body-bg: var(--light-grey);
+--body-color: var(--dark);
+--font-weight: 400;
+--font-weight-heading: 600;
+--font-size-desktop: 1rem;
+--col-h-padding: 1.25rem;
+--col-v-padding: 1.25rem;
+--line-height: 1.6;
+--font-family: "Poppins", "Segoe UI", sans-serif;
+--default-padding: 1.5rem;
+--default-margin: 1.5rem;
+--default-gap: 1.5rem;
+--default-border: 0.0625rem solid var(--grey);
+--default-border-radius: 0.75rem;
+--box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
+}
+
