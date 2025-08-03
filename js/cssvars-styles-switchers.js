@@ -11,8 +11,8 @@ function changeStyle(){
     console.log(stylesElement.value)
     let bodyElement = document.querySelector('body')
     
+    bodyElement.classList.value=''
     if (stylesElement.value != 'none'){
-        bodyElement.classList.value=''
         bodyElement.classList.add(stylesElement.value)
     }
 }
