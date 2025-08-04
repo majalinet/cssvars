@@ -1033,18 +1033,18 @@ blockquote {
   padding: 0.5rem 0.75rem;
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
-  border: 0.75rem solid #dee2e6;
+  border: 0.0625rem solid var(--lite-grey, #dee2e6);
 }
 
 .page-item.active .page-link, .page-link:focus, .page-link:hover {
-  color: var(--body-bg, white);
+  color: rgba(var(--white-rgb, white), 1);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
 
 .page-item.active .page-link {
   z-index: 1;
-  color: var(--body-bg, white);
+  color: rgba(var(--white-rgb, white), 1);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
@@ -1075,7 +1075,7 @@ button, .button, .accordion .accordionBlock > label, .tabs > label {
 
 button:hover {
   background-color: var(--color-1, black);
-  color: var(--body-bg, white);
+  color: rgba(var(--white-rgb, white), 1);
   box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24));
 }
 
@@ -1537,7 +1537,7 @@ td button {
 
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: var(--body-bg, white);
+  background-color: rgba(var(--white-rgb, white), 1);
   border: 0.075rem solid var(--light-grey, #dee2e6);
   border-radius: 0.25rem;
   max-width: 100%;
