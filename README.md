@@ -20,7 +20,7 @@ Access hundreds of free and customizable UI elements – from complete layouts a
 With no dependencies, a minuscule file size ensures rapid loading times, enhancing user experience, mobile performance, SEO, and conversions.
 
 
-## Specifications
+## Features
 #### CSS Variables Based
 Simple to implement and modify. Set your styles simply by adjusting variables and using ready-made classes.
 
