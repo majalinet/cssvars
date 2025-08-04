@@ -1,9 +1,23 @@
 # CSS Vars Framework & UI Kit
+## Simplicity, Power, and Performance
+ Easy to use and customize, 100's of pure CSS UI elements to build light-weight HTML pages fast
+
+
 
 ## About
-CSS Vars framework has one main purpose to use as fewer resources as possible with instant integration without any installation needs.
-Most templates are built using CSS framework, Jquery, JS, Font awesome, and many other resources and that affects the page load speed.
+CSS Vars is built to provide developers with a clean, customizable, and effective front-end solution by linking one stylesheet. Customize styles using variables, use hundreds of reusable UI components, and build elegant and fast-loading web apps without extra bloat, no installs, setup, or config files.
 Please, visit https://cssvars.com
+
+
+## Philosophy
+### Simplicity
+Link one CSS file, and you're ready to go. Customize effortlessly with CSS variables, no complicated setups or installs required.
+
+### Power
+Access hundreds of free and customizable UI elements – from complete layouts and typography to advanced icons and interactive components. Create rich experiences with just HTML and CSS.
+
+### Performance
+With no dependencies, a minuscule file size ensures rapid loading times, enhancing user experience, mobile performance, SEO, and conversions.
 
 
 ## Specifications
