@@ -25,8 +25,10 @@
 
   <!-- <link rel="stylesheet" href="css/style.css" /> -->
   <link rel="stylesheet" href="css/cssvars.css" />
+  <link rel="stylesheet" href="css/cssvars-styles.css" />
 </head>
 
+<!-- <body class="system-ui-style"> -->
 <body>
   <div class="main-nav  bordered-bottom container-fluid">
     <div class="main-menu">
@@ -428,57 +430,64 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
             <h5>Margin and Padding</h5>
             <p>
               Add margin and padding classes to set the required space between
-              elements, please note that numbers are refering to rem which is
+              elements, please note that numbers are referring to rem which is
               the default font size.
             </p>
             <ul class="colored-ul">
+              <li><b>Formula:</b> We use <b>{p/m} {/-v-/-h-/-t-/-b-/-l-/-r-} {value}</b></li>
+              <li><b>Orientation:</b> -v- vertical, -h- horizontal, -t- top, -b- bottom, -l- left, -r- right</li>
+              <li><b>Values:</b> 0, 1, 2, 3, 4 are spacing values by rem, -1-16, -1-8, -1-4, -1-2, -3-4 is 1 rem divided by the value</li>
+              <li><b>Notes:</b><ul class="colored-ul">
+
+                <li><b>(two dashes) m-t-1</b> instead of mt-1, this increases readability, scalability, and the ease of maintenance.</li>
+                <li><b>(v/h) m-v-1</b> instead of (x/y) my-1, It mirrors CSS's logical properties, ensures adaptability. It's more future-proof, internationally friendly, and semantically clearer!</li>
+              </ul>
+              </li>
+            </ul>
+            <h6>Margin</h6>
+            <ul class="colored-ul">
               <li>
-                Add the classes <b>m0, m03, m05, m07, m1, m2 , m4, m2px</b> to any element to
-                increase or remove margin
+                Add the classes <b>m0, m-1-16(1/16 rem), m-1-8, .m-1-4, .m-1-2, .m-3-4, m1(1rem), m2, m3, m4</b> to increase or remove margin
               </li>
               <li>
-                Add the classes <b>m-v-05, m-v-07, m-v-1, m-v-2, m-v-3, m-v-4, m-v-10</b> to
-                any element to increase top and bottom margin
+                Add the classes <b>m-v-0, m-v--1-16, m-v--1-8, .m-v--1-4, .m-v--1-2, .m-v--3-4, m-v-1, m-v-2, m-v-3, m-v-4</b> to increase top and bottom margin
               </li>
               <li>
-                Add the classes <b>m-h-03, m-h-05, m-h-1, m-h-2, m-h-3, m-h-4, m-h-7</b> to any
-                element to increase left and right margin
+                Add the classes <b>m-h-0, m-h--1-16, m-h--1-8, .m-h--1-4, .m-h--1-2, .m-h--3-4, m-h-1, m-h-2, m-h-3, m-h-4</b> to increase left and right margin
               </li>
               <li>
-                Add the classes <b>m-t-05, m-t-1, m-t-2, m-t-3, m-t-4, m-t-6, m-t-8</b> to any
-                element to increase top margin only
+                Add the classes <b>m-t-0, m-t--1-16, m-t--1-8, .m-t--1-4, .m-t--1-2, .m-t--3-4, m-t-1, m-t-2, m-t-3, m-t-4</b> to increase top margin only
               </li>
               <li>
-                Add the classes <b>m-b-05, m-b-1, m-b-2, m-b-3, m-b-4, m-b-6, m-b-8</b> to any
-                element to increase bottom margin only
+                Add the classes <b>m-b-0, m-b--1-16, m-b--1-8, .m-b--1-4, .m-b--1-2, .m-b--3-4, m-b-1, m-b-2, m-b-3, m-b-4</b> to increase bottom margin only
               </li>
               <li>
-                Add the classes <b>m-d-1, m-d-2</b> to any element to increase
-                margin on desctop devices only
+                Add the classes <b>m-d-1, m-d-2</b> to increase
+                margin on desktop devices only
               </li>
+            </ul>
+            <h6>Padding</h6>
+            <ul class="colored-ul">
               <li>
-                Add the classes <b>p0, p05, p07, p1, p2 , p3, p4, p5, p6, p7</b> to any element to
+                Add the classes <b>p0, p-1-16(1/16 rem), p-1-8, .p-1-4, .p-1-2, .p-3-4, p1(1rem), p2, p3, p4</b> to
                 increase or remove padding
               </li>
               <li>
-                Add the classes <b>p-v-05, p-v-1, p-v-2, p-v-3, p-v-4, p-v-10</b> to
-                any element to increase top and bottom padding
+                Add the classes <b>p-v-0, p-v--1-16, p-v--1-8, .p-v--1-4, .p-v--1-2, .p-v--3-4, p-v-1, p-v-2, p-v-3, p-v-4</b> to
+                increase top and bottom padding
               </li>
               <li>
-                Add the classes <b>p-h-1, p-h-2, p-h-3, p-h-4</b> to any
-                element to increase left and right padding
+                Add the classes <b>p-h-0, p-h--1-16, p-h--1-8, .p-h--1-4, .p-h--1-2, .p-h--3-4, p-h-1, p-h-2, p-h-3, p-h-4</b> to increase left and right padding
               </li>
               <li>
-                Add the classes <b>p-t-05, p-t-1, p-t-2, p-t-3, p-t-4, p-t-6, p-t-8</b> to any
-                element to increase top padding only
+                Add the classes <b>p-t-0, p-t--1-16, p-t--1-8, .p-t--1-4, .p-t--1-2, .p-t--3-4, p-t-1, p-t-2, p-t-3, p-t-4</b> to increase top padding only
               </li>
               <li>
-                Add the classes <b>p-b-05, p-b-1, p-b-2, p-b-3, p-b-4, p-b-6, p-b-8</b> to any
-                element to increase bottom padding only
+                Add the classes <b>p-b-0, p-b--1-16, p-b--1-8, .p-b--1-4, .p-b--1-2, .p-b--3-4, p-b-1, p-b-2, p-b-3, p-b-4</b> to increase bottom padding only
               </li>
               <li>
-                Add the classes <b>p-d-1, p-d-2</b> to any element to increase
-                padding on desctop devices only
+                Add the classes <b>p-d-1, p-d-2</b> to increase
+                padding on desktop devices only
               </li>
             </ul>
           </div>
