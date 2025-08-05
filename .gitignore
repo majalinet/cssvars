@@ -1,1 +1,26 @@
+# Node dependencies
+node_modules/
+
+# Build directories
+dist/
+build/
+test/
+
+# Editor directories and files
+.idea/
+.vscode/
+
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+
+# Package files
+*.tgz
+*.zip
+
+# Local development files
+.temp/
+.tmp/
+
 
