@@ -17,7 +17,6 @@ test/
 
 # Package files
 *.tgz
-*.zip
 
 # Local development files
 .temp/
