@@ -76,6 +76,8 @@
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#quick-start">Quick Start</a></li>
           <li><a href="#theming">Theming</a></li>
+          <li><a href="#styles">Styles</a></li>
+          <li><a href="#marginAndPadding">Margin and Padding</a></li>
           <li><a href="#grid">Grid</a></li>
           <li><a href="#layouts">Layouts</a></li>
           <li><a href="#typography">Typography</a></li>
@@ -272,14 +274,14 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
       <td>Quick <br>⭐⭐⭐⭐</td>
       <td>Requires planning <br>⭐⭐⭐</td>
     </tr>
-    <tr>
+    <!-- <tr>
       <td><strong>Overall Score</strong></td>
       <td><strong>⭐⭐⭐⭐⭐ (58/60)</strong></td>
       <td><strong>⭐⭐⭐ (38/60)</strong></td>
       <td><strong>⭐⭐⭐⭐ (42/60)</strong></td>
       <td><strong>⭐⭐⭐⭐ (47/60)</strong></td>
       <td><strong>⭐⭐⭐ (37/60)</strong></td>
-    </tr>
+    </tr> -->
   </tbody>
 </table>
 </div>
@@ -407,7 +409,7 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
             <b class="dark-hover">dark-hover</b>
             <b class="white-hover">white-hover</b>
             <b class="color-gradient-hover">color-gradient-hover</b></p>
-          <div vlass="m-v-2">
+          <div class="m-v-2">
             <h5 class="m-t-2">Sizes</h5>
             <ul class="colored-ul">
               <li>
@@ -422,12 +424,128 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
               </li>
               <li>
                 Changing the values of <b>--fontweight-heading</b> will set
-                deafult font weight of h1-h6 elements and classes.
+                default font weight of h1-h6 elements and classes.
               </li>
             </ul>
           </div>
+
+
+          <div id="styles" class="m-t-4">
+          <h3>Styles</h3>
+          <p>
+            Themes handle your brand's core colors and fonts. Styles, however, offer a broader design application, allowing you to choose from over 20 well-known web design aesthetics such as minimalist, modern, material, flat, brutal, glass, retro, neon, cyberpunk, luxury, playful, modular, and system-ui.
+          </p>
+
+          <h6>How to use styles</h6>
+          <p>
+            To apply a style, simply add <b>the style class code to your body element</b>. For example, to apply the <b>brutalism</b> style, add the class <b>brutalism-style</b> to your element.
+
+          </p>
+          <p>
+            <b>Copy the class code</b> from the styles file <a href="https://github.com/majalinet/cssvars/blob/master/css/cssvars-styles.css">CSSvars styles</a> file and add it to your CSS file, or your HTML code if you use CDN, you can also link to the file if you want to use multiple styles.
+          </p>
+          <ul class="colored-ul">
+            <li class="m-b-1"><b>Brutalism (Anti-Design)</b><br>
+            Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.<br>
+            Art studios, personal brands, underground music, radical startups.
+          </li>
+            <li class="m-b-1"><b>Glassmorphism</b><br>
+            Glassmorphism: Best for modern, elegant UIs with frosted-glass visuals.<br>
+            Fintech, health tech, luxury apps, personal productivity tools.
+          </li>
+            <li class="m-b-1"><b>Retro & Vintage</b><br>
+            Retro/Vintage: Ideal for nostalgic, playful, or thematic branding.<br>
+            Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
+          </li>
+            <li class="m-b-1"><b>Minimalist</b><br>
+            Minimalist: Perfect for clean, distraction-free content or portfolios.<br>
+            Tech startups, SaaS platforms, portfolios, architects, wellness brands.
+          </li>
+
+            <li class="m-b-1"><b>Neon</b><br>
+            Neon: Use in high-energy or futuristic entertainment/tech projects.<br>
+            Nightclubs, gaming platforms, youth fashion, media streaming.
+          </li>
+
+
+            <li class="m-b-1"><b>Cyberpunk</b><br>
+            Cyberpunk: Great for edgy, tech-heavy or sci-fi-inspired UIs.<br>
+            Blockchain/crypto apps, game dev studios, hacker culture brands.
+              </li>
+
+
+
+
+
+
+            <li class="m-b-1"><b>High Contrast</b><br>
+            High Contrast: Essential for accessibility or information-heavy UIs.<br>
+            Government sites, accessibility-first platforms, education.
+              </li>
+
+            <li class="m-b-1"><b>Luxury</b><br>
+            Luxury: Use for high-end brands needing elegance and sophistication.<br>
+            Luxury goods, high-end services, fashion, jewelry.
+              </li>
+
+              <li class="m-b-1"><b>Neumorphism (Soft UI)</b><br>
+              Neumorphism: Use for soft, tactile interfaces—best in moderation.<br>
+              IoT dashboards, smart home apps, lifestyle tools (in moderation).
+              </li>
+
+              <li class="m-b-1"><b>Modern / Flat UI</b><br>
+              Flat 2.0: Use for clean, intuitive UIs with subtle depth cues.<br>
+              Fintech apps, e-commerce admin, task managers.
+              </li>
+
+              <li class="m-b-1"><b>Playful / Creative</b><br>
+              Best for fun, friendly, and energetic interfaces with expressive visuals and lively colours.<br>
+              Kids’ apps, creative studios, learning platforms, lifestyle blogs, and quirky e-commerce brands.
+              </li>
+
+              <li class="m-b-1"><b>Material Design</b><br>
+              Ideal for clean, structured, and responsive interfaces based on Google’s design principles.<br>
+              SaaS platforms, productivity tools, fintech apps, government portals, and educational platforms.
+              </li>
+
+              <li class="m-b-1"><b>Modular / Card-Based UI</b><br>
+              Dashboard/Modular: Ideal for admin panels with widget/card layouts.<br>
+              CRMs, HR systems, ERP tools, SaaS dashboards.
+              </li>
+
+              <li class="m-b-1"><b>Flat 2.0</b><br>
+              Data-Driven: Best for analytics-heavy or chart-rich dashboards.<br>
+              Fintech apps, e-commerce admin, task managers.
+              </li>
+
+              <li class="m-b-1"><b>Data-Driven / Analytical</b><br>
+              Data-Driven: Best for analytics-heavy or chart-rich dashboards.<br>
+              Analytics platforms, BI tools, performance monitoring.
+              </li>
+
+              <li class="m-b-1"><b>Enterprise / Functional</b><br>
+              Enterprise: Built for dense data tables and power-user workflows.<br>
+              B2B SaaS, legal/accounting tools, logistics & finance software.
+              </li>
+
+              <li class="m-b-1"><b>System UI (OS-Like UI)</b><br>
+              System UI: Mimics desktop apps; great for dev tools or OS-like apps.<br>
+              Developer tools, code platforms, internal IT tools.
+              </li>
+
+              <li class="m-b-1"><b>Colorful Dashboard</b><br>
+              Colorful Dashboard: Use to bring energy to user dashboards and KPIs.<br>
+              Health tech, education, fitness tracking apps.
+              </li>
+
+</ul>
+            
+        </div>
+  
+
+
           <div class="m-t-4">
-            <h5>Margin and Padding</h5>
+            <h3 id="marginAndPadding">Margin and Padding</h3>
             <p>
               Add margin and padding classes to set the required space between
               elements, please note that numbers are referring to rem which is
@@ -492,56 +610,7 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
             </ul>
           </div>
         </div>
-        <div class="m-t-4">
-          <h5>Styles</h5>
-          <p>
-            Change the website style by applying the most popular styles using
-            ready CSS clases.
-          </p>
 
-          <div class="row">
-            <div class="col">
-              <p>rounded</p>
-              <img src="img/sunglasses.jpg" class="img-responsive rounded" alt="alt text" />
-            </div>
-            <div class="col">
-              <p>img-thumnail</p>
-              <img src="img/sunglasses.jpg" class="img-responsive img-thumbnail" alt="alt text" />
-            </div>
-            <div class="col">
-              <p>circle</p>
-              <img src="img/sunglasses.jpg" class="img-responsive circle" alt="alt text" />
-            </div>
-
-            <div class="col">
-              <p>top-circle</p>
-              <img src="img/sunglasses.jpg" class="img-responsive top-circle" alt="alt text" />
-            </div>
-
-            <div class="col">
-              <p>circle bordered</p>
-              <img src="img/sunglasses.jpg" class="img-responsive circle bordered" alt="alt text" />
-            </div>
-            <div class="col">
-              <p>img-thumnail bordered</p>
-              <img src="img/sunglasses.jpg" class="img-responsive img-thumnail bordered" alt="alt text" />
-            </div>
-          </div>
-
-          <div class="row p-v-1">
-            <div class="col outline-color-1 p2 m1">outline-color-1</div>
-            <div class="col outline-color-2 p2 m1">outline-color-2</div>
-            <div class="col outline-color-info p2 m1">outline-color-info</div>
-            <div class="col outline-color-success p2 m1">
-              outline-color-success
-            </div>
-            <div class="col outline-color-dark p2 m1">outline-color-dark</div>
-            <div class="col outline-light-grey p2 m1">outline-light-grey</div>
-          </div>
-
-
-
-        </div>
       </div>
       <div class="m-v-4">
         <h3 id="grid">Grid</h3>
