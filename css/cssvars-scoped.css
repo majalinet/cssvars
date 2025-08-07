@@ -10,7 +10,6 @@
  @-ms-viewport {
   width: device-width;
 }
-
 /* Variables*/
 .cssvars {
   --color-1: #083c5c;
@@ -47,7 +46,6 @@
   --warning-rgb:189, 160, 106;
   --luxury-rgb:75, 47, 90;
 }
-
 /* If you want auto-detect dark theme, uncomment and remove [data-theme="dark"] {*/
 /* @media (prefers-color-scheme:dark){
   :root {
@@ -87,7 +85,6 @@
   --warning-rgb:189, 160, 106;
   --luxury-rgb:106, 67, 128;
 }
-
 /* Styles variables */
 .cssvars {
   --default-padding: 0;
@@ -97,7 +94,6 @@
   --default-border-radius: 0;
   --box-shadow: none;
 }
-
 .cssvars .styled, .cssvars .table, .cssvars .styled-parent > *, .cssvars > * {
   padding: var(--default-padding);
   margin: var(--default-margin);
@@ -105,8 +101,9 @@
   border-radius: var(--default-border-radius);
   box-shadow: var(--box-shadow);
 }
-
+/* main elements */
 .cssvars {
+  width: 100%;
   box-sizing: border-box;
   font-size: var(--font-size-mobile, 12px);
 }
@@ -141,10 +138,6 @@
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-
-.cssvars .smaller { font-size: 90%; }
-.cssvars .small { font-size: 80%; }
-.cssvars .extra-small { font-size: 70%; }
 
 .cssvars a {
   color: var(--color-1, black);
@@ -181,9 +174,7 @@
   overflow: visible;
 }
 
-.cssvars .auto-overflow-x {  overflow-x: auto;}
-
-/* headings */
+/* Typography */
 .cssvars h1, .cssvars h2, .cssvars h3, .cssvars h4, .cssvars h5, .cssvars h6 {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -220,25 +211,25 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
-.cssvars .font-weight-200, .cssvars .font-thin {  font-weight: 200;}
-.cssvars .font-weight-400, .cssvars .font-regular {  font-weight: 400;}
-.cssvars .font-weight-600, .cssvars .font-semibold {  font-weight: 600;}
-.cssvars .bold {  font-weight: bold;}
-.cssvars .italic {  font-style: italic;}
-
+.cssvars pre code {
+  display: block;
+  padding: 1rem;
+  overflow-x: auto;
+}
+.cssvars .par {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
 /* fancy title */
 .cssvars .fancy-title.title-dotted-border {
   background: url(../img/fabric-dark.png) center repeat-x;
 }
-
 .cssvars .title-center {  text-align: center;}
-
 .cssvars .fancy-title {
   position: relative;
   margin-bottom: 1.8rem;
 }
-
 .cssvars .fancy-title h1, .cssvars .fancy-title h2, .cssvars .fancy-title h3, .cssvars .fancy-title h4, .cssvars .fancy-title h5, .cssvars .fancy-title h6 {
   position: relative;
   display: inline-block;
@@ -246,14 +237,12 @@
   padding: 0 1rem;
   margin: 1.5rem 0;
 }
-
 .cssvars .short-line {
   width: 100%;
   margin: 0;
   padding: 0;
   text-align: center;
 }
-
 .cssvars .short-line:after {
   display: inline-block;
   margin: 0 0 0.6rem 1.2rem;
@@ -263,7 +252,6 @@
   background-color: var(--grey, #bbb);
   width: 10%;
 }
-
 .cssvars .short-line:before {
   display: inline-block;
   margin: 0 1.2rem 0.6rem 0;
@@ -273,66 +261,94 @@
   background-color: #bbb;
   width: 10%;
 }
-
-.cssvars .bordered {
-  border: 0.125rem solid #dee2e6;
-  border-color: var(--color-1, black);
-  display: inline;
-  padding: 0.4rem;
+/* List styles */
+.cssvars .colored-ul, .cssvars .indent-ul, .cssvars .half-indent-ul, .cssvars .no-indent-ul, .cssvars .colored-ol, .cssvars .steps-ol {
+  list-style: none;
+  text-indent: -0.7em;
 }
-
-.cssvars .bordered-bottom {
-  border-bottom: 0.125rem solid #dee2e6;
-  border-color: var(--color-1, black);
-  display: inline;
-  padding: 0.4rem;
-  line-height: 150%;
-}
-
-.cssvars .bordered-black { border-color: black;}
-.cssvars .bordered-grey { border-color:var(--grey, grey);}
-  
-.cssvars .bordered-top {
-  border-top: 0.125rem solid #dee2e6;
-  border-color: var(--color-1, black);
-  display: inline;
-  padding: 0.4rem;
-  line-height: 150%;
-}
-
-.cssvars .bordered-top-light-grey {
-  border-top: 0.125rem solid #dee2e6;
-  border-color: var(--light-grey, black);
-  display: inline;
-  padding: 0.4rem;
-  line-height: 150%;
-}
-
-.cssvars .bordered-left{
-  border-left: 0.375rem solid var(--color-1, black);
-}
-.cssvars .bordered-left-color-2{
-  border-left: 0.375rem solid var(--color-2, black);
-}
-
-.cssvars .bordered-left-info{
-  border-left: 0.375rem solid var(--info, black);
-}
-.cssvars .bordered-left-success{
-  border-left: 0.375rem solid var(--success, black);
-}
-
-.cssvars .bordered-left-danger{
-  border-left: 0.375rem solid var(--danger, black);
-}
-.cssvars .bordered-left-grey{
-  border-left: 0.375rem solid var(--grey, black);
-}
-
-.cssvars h1 .bordered::after {
+.cssvars .no-indent-ul {  padding: inherit;}
+.cssvars .half-indent-ul {  text-indent: -1.5em;}
+.cssvars .colored-ul li::before {
+  content: "â€¢ ";
   color: var(--color-1, black);
-  display: block;
 }
+.cssvars .colored-ol {  counter-reset: my-awesome-counter;}
+.cssvars .colored-ol li {  counter-increment: my-awesome-counter;}
+.cssvars .colored-ol li::before {
+  content: counter(my-awesome-counter) ". ";
+  color: var(--color-1,black);
+  font-weight: 400;
+}
+.cssvars .bolded-ol {  counter-reset: my-bolded-counter;}
+.cssvars .bolded-ol li {
+  counter-increment: my-bolded-counter;
+  display: flex;
+  margin-bottom: 1rem;
+}
+.cssvars .bolded-ol li::before {
+  content: "0" counter(my-bolded-counter);
+  color: var(--color-1);
+  font-weight: 400;
+  font-size: 3em;
+  margin-right: 0.5rem;
+  line-height: 1;
+}
+.cssvars .steps-ol li {
+  margin: 1.2rem 0 2rem 0;
+  padding-top: 1.2em;
+  display: block;
+  position: relative;
+  counter-increment: inst;
+  text-indent: 0;
+}
+.cssvars .steps-ol li::before {
+  content: counter(inst);
+  background: var(--color-1, black);
+  background-color: rgba(var(--color-1-rgb), 0.1);
+  color: var(--color-1, black);
+  font-weight: 400;
+  font-size: 1.5em;
+  text-align: center;
+  left: -5%;
+  top: -0.65em;
+  width: 3rem;
+  position: absolute;
+}
+/* Transform Classes */
+.cssvars .rotate-10 {  transform: rotate(10deg);}
+.cssvars .rotate-20 {  transform: rotate(20deg);}
+.cssvars .rotate--10 {  transform: rotate(-10deg);}
+.cssvars .rotate--20 {  transform: rotate(-20deg);}
+/* Writing direction and mode utility classes */
+.cssvars .rtl {  direction: rtl;}
+.cssvars .ltr {  direction: ltr;}
+.cssvars .horizontal-tb, .cssvars .vertical-rl, .cssvars .vertical-lr {
+  writing-mode: var(--writing-mode);
+}
+.cssvars .horizontal-tb {  writing-mode: horizontal-tb;}
+.cssvars .vertical-rl {  writing-mode: vertical-rl;}
+.cssvars .vertical-lr {  writing-mode: vertical-lr;}
+
+.cssvars .drop-caps {
+  float: left;
+  font-size: 4.7rem;
+  line-height: 3.75rem;
+  padding-top: 0.25rem;
+  padding-right: 0.5rem;
+  padding-left: 0.2rem;
+  color: var(--color-1, black);
+}
+
+.cssvars .par-2-cols { column-count: 2;}
+.cssvars .par-3-cols { column-count: 3;}
+.cssvars .par-4-cols { column-count: 4;}
+.cssvars .par-cols-gap-2 { column-gap: 2.5rem;}
+.cssvars .par-cols-gap-3 { column-gap: 3.5rem;}
+.cssvars .par-cols-rule { column-rule: 0.0625rem solid var(--grey, black); }
+.cssvars .opacity1, .cssvars .opacity1-hover:hover {  opacity: 1;}
+.cssvars .opacity07, .cssvars .opacity07-hover:hover {  opacity: 0.7;}
+.cssvars .opacity05, .cssvars .opacity05-hover:hover {  opacity: 0.5;}
+.cssvars .opacity03, .cssvars .opacity03-hover:hover {  opacity: 0.3;}
 
 .cssvars .heading-box {
   margin: 2.5rem 0;
@@ -350,66 +366,7 @@
   text-align: center;
   background-color: var(--light-grey);
 }
-
-.cssvars .margin-left-right-auto {
-  margin-left: auto;
-  margin-right: auto;
-}
-
-.cssvars .w-25 {  width: 25%;}
-.cssvars .w-50 {  width: 50%;}
-.cssvars .w-75 {  width: 75%;}
-.cssvars .w-100 {  width: 100%;}
-.cssvars .h-25 {  min-height: 25%;}
-.cssvars .h-50 {  min-height: 50%;}
-.cssvars .h-75 {  min-height: 75%;}
-.cssvars .h-100 {  min-height: 100%;}
-.cssvars .h-150 {  min-height: 150%;}
-
-.cssvars .h-1rem {height: 1rem;}
-.cssvars .h-2rem {height: 2rem;}
-.cssvars .h-3rem {height: 3rem;}
-.cssvars .h-4rem {height: 4rem;}
-.cssvars .h-5rem {height: 5rem;}
-.cssvars .h-6rem {height: 6rem;}
-.cssvars .h-8rem {height: 8rem;}
-.cssvars .h-10rem {height: 10rem;}
-.cssvars .mh-1rem {max-height: 1rem;}
-.cssvars .mh-2rem {max-height: 2rem;}
-.cssvars .mh-3rem {max-height: 3rem;}
-.cssvars .mh-4rem {max-height: 4rem;}
-.cssvars .mh-5rem {max-height: 5rem;}
-.cssvars .mh-6rem {max-height: 6rem;}
-.cssvars .mh-8rem {max-height: 8rem;}
-.cssvars .mh-10rem {max-height: 10rem;}
-
-.cssvars .w-1rem {width: 1rem;}
-.cssvars .w-2rem {width: 2rem;}
-.cssvars .w-3rem {width: 3rem;}
-.cssvars .w-4rem {width: 4rem;}
-.cssvars .w-5rem {width: 5rem;}
-.cssvars .w-6rem {width: 6rem;}
-.cssvars .w-8rem {width: 8rem;}
-.cssvars .w-10rem {width: 10rem;}
-.cssvars .mw-1rem {max-width: 1rem;}
-.cssvars .mw-2rem {max-width: 2rem;}
-.cssvars .mw-3rem {max-width: 3rem;}
-.cssvars .mw-4rem {max-width: 4rem;}
-.cssvars .mw-5rem {max-width: 5rem;}
-.cssvars .mw-6rem {max-width: 6rem;}
-.cssvars .mw-8rem {max-width: 8rem;}
-.cssvars .mw-10rem {max-width: 10rem;}
-
-.cssvars .w--1rem {width: calc(100% - 1rem)}
-.cssvars .w--2rem {width: calc(100% - 2rem)}
-.cssvars .w--3rem {width: calc(100% - 3rem)}
-.cssvars .w--4rem {width: calc(100% - 4rem)}
-
-.cssvars .h--1rem {height: calc(100% - 1rem)}
-.cssvars .h--2rem {height: calc(100% - 2rem)}
-.cssvars .h--3rem {height: calc(100% - 3rem)}
-.cssvars .h--4rem {height: calc(100% - 4rem)}
-
+/* Containers */
 .cssvars .container, .cssvars .container-fluid, .cssvars .container-half-fluid {
   width: 100%;
   padding-right: 1rem;
@@ -440,100 +397,82 @@
   .cssvars .container { max-width: 1140px; }
   .cssvars .container-half-fluid { max-width: 85%; }
 }
-
+/* Grid system */
 .cssvars .row {
   display: flex;
   flex-wrap: wrap;
 }
-
 .cssvars .no-gutters {
   margin-right: 0;
   margin-left: 0;
 }
-
 .cssvars .no-gutters>.col, .cssvars .no-gutters>[class*="col-"] {
   padding-right: 0;
   padding-left: 0;
 }
-
 .cssvars .col-1, .cssvars .col-2, .cssvars .col-3, .cssvars .col-4, .cssvars .col-5, .cssvars .col-6, .cssvars .col-7, .cssvars .col-8, .cssvars .col-9, .cssvars .col-10, .cssvars .col-11, .cssvars .col-12, .cssvars .col, .cssvars .col-auto, .cssvars .col-sm-4, .cssvars .col-sm-6, .cssvars .col-sm-8, .cssvars .col-sm-12, .cssvars .col-sm, .cssvars .col-sm-auto, .cssvars .col-md-2, .cssvars .col-md-3, .cssvars .col-md-4, .cssvars .col-md-5, .cssvars .col-md-6, .cssvars .col-md-8, .cssvars .col-md-9, .cssvars .col-md-10, .cssvars .col-md-12, .cssvars .col-md, .cssvars .col-md-auto, .cssvars .col-lg-1, .cssvars .col-lg-2, .cssvars .col-lg-3, .cssvars .col-lg-4, .cssvars .col-lg-5, .cssvars .col-lg-6, .cssvars .col-lg-7, .cssvars .col-lg-8, .cssvars .col-lg-9, .cssvars .col-lg-10, .cssvars .col-lg-11, .cssvars .col-lg-12, .cssvars .col-lg, .cssvars .col-lg-auto, .cssvars .col-xl-1, .cssvars .col-xl-2, .cssvars .col-xl-3, .cssvars .col-xl-4, .cssvars .col-xl-5, .cssvars .col-xl-6, .cssvars .col-xl-7, .cssvars .col-xl-8, .cssvars .col-xl-9, .cssvars .col-xl-10, .cssvars .col-xl-11, .cssvars .col-xl-12, .cssvars .col-xl, .cssvars .col-xl-auto {
   position: relative;
   width: 100%;
   padding: var(--col-v-padding, 0) var(--col-h-padding, 0);
 }
-
 .cssvars .col {
   flex-basis: 0;
   flex-grow: 1;
   max-width: 100%;
 }
-
 .cssvars .col-auto {
   flex: 0 0 auto;
   width: auto;
   max-width: 100%;
 }
-
 .cssvars .col-1 {
   flex: 0 0 8.333333%;
   max-width: 8.333333%;
 }
-
 .cssvars .col-2 {
   flex: 0 0 16.666667%;
   max-width: 16.666667%;
 }
-
 .cssvars .col-3 {
   flex: 0 0 25%;
   max-width: 25%;
 }
-
 .cssvars .col-4 {
   flex: 0 0 33.333333%;
   max-width: 33.333333%;
 }
-
 .cssvars .col-5 {
   flex: 0 0 41.666667%;
   max-width: 41.666667%;
 }
-
 .cssvars .col-6 {
   flex: 0 0 50%;
   max-width: 50%;
 }
-
 .cssvars .col-7 {
   flex: 0 0 58.333333%;
   max-width: 58.333333%;
 }
-
 .cssvars .col-8 {
   flex: 0 0 66.666667%;
   max-width: 66.666667%;
 }
-
 .cssvars .col-9 {
   flex: 0 0 75%;
   max-width: 75%;
 }
-
 .cssvars .col-10 {
   flex: 0 0 83.333333%;
   max-width: 83.333333%;
 }
-
 .cssvars .col-11 {
   flex: 0 0 91.666667%;
   max-width: 91.666667%;
 }
-
 .cssvars .col-12 {
   flex: 0 0 100%;
   max-width: 100%;
 }
-
 @media (min-width: 576px) {
   .cssvars .col-sm {
     flex-basis: 0;
@@ -562,7 +501,6 @@
     max-width: 100%;
   }
 }
-
 @media (min-width: 768px) {
   .cssvars .col-md {
     flex-basis: 0;
@@ -615,7 +553,6 @@
     max-width: 100%;
   }
 }
-
 @media (min-width: 992px) {
   .cssvars .col-lg {
     flex-basis: 0;
@@ -682,7 +619,6 @@
     order: 13;
   }
 }
-
 @media (min-width: 1200px) {
   .cssvars .col-xl {
     flex-basis: 0;
@@ -743,75 +679,7 @@
     max-width: 100%;
   }
 }
-
-/* Display */
-.cssvars .d-none { display: none;}
-.cssvars .d-inline { display: inline;}
-.cssvars .d-inline-block { display: inline-block;}
-.cssvars .d-block { display: block;}
-.cssvars .d-table { display: table;}
-.cssvars .d-table-row {  display: table-row;}
-.cssvars .d-table-cell {  display: table-cell;}
-.cssvars .d-flex {  display: flex;}
-.cssvars .d-inline-flex {  display: inline-flex;}
-.cssvars .flex-row {  flex-direction: row;}
-.cssvars .flex-row-reverse {  flex-direction: row-reverse;}
-.cssvars .flex-column {  flex-direction: column;}
-.cssvars .flex-column-reverse {  flex-direction: column-reverse;}
-.cssvars .flex-wrap {  flex-wrap: wrap;}
-.cssvars .flex-nowrap {  flex-wrap: nowrap;}
-.cssvars .flex-wrap-reverse {  flex-wrap: wrap-reverse;}
-.cssvars .flex-fill {  flex: 1 1 auto;}
-.cssvars .flex-grow-0 {  flex-grow: 0;}
-.cssvars .flex-grow-1 {  flex-grow: 1;}
-.cssvars .flex-shrink-0 {  flex-shrink: 0;}
-.cssvars .flex-shrink-1 {  flex-shrink: 1;}
-.cssvars .justify-content-start {  justify-content: flex-start;}
-.cssvars .justify-content-end {  justify-content: flex-end;}
-.cssvars .justify-content-center {  justify-content: center;}
-.cssvars .justify-content-between {  justify-content: space-between;}
-.cssvars .justify-content-around {  justify-content: space-around;}
-.cssvars .align-items-start {  align-items: flex-start;}
-.cssvars .align-items-end {  align-items: flex-end;}
-.cssvars .align-items-center {  align-items: center;}
-.cssvars .align-items-baseline {  align-items: baseline;}
-.cssvars .align-items-stretch {  align-items: stretch;}
-.cssvars .align-content-start {  align-content: flex-start;}
-.cssvars .align-content-end {  align-content: flex-end;}
-.cssvars .align-content-center {  align-content: center;}
-.cssvars .align-content-between {  align-content: space-between;}
-.cssvars .align-content-around {  align-content: space-around;}
-.cssvars .align-content-stretch {  align-content: stretch;}
-.cssvars .align-self-auto {  align-self: auto;}
-.cssvars .align-self-start {  align-self: flex-start;}
-.cssvars .align-self-end {  align-self: flex-end;}
-.cssvars .align-self-center {  align-self: center;}
-.cssvars .align-self-baseline {  align-self: baseline;}
-.cssvars .align-self-stretch {  align-self: stretch;}
-
-.cssvars .text-uppercase {  text-transform: uppercase;}
-.cssvars .text-capitalize {  text-transform: capitalize;}
-.cssvars .text-lowercase {  text-transform: lowercase;}
-.cssvars .letter-spacing-0 {  letter-spacing: 0;}
-.cssvars .letter-spacing-1 {  letter-spacing: 0.075rem;}
-.cssvars .letter-spacing-2 {  letter-spacing: 0.15rem;}
-.cssvars .letter-spacing-3 { letter-spacing: 0.3rem; }
-.cssvars .letter-spacing-4 { letter-spacing: 0.45rem; }
-.cssvars .letter-spacing-5 { letter-spacing: 0.6rem; }
-
-.cssvars pre code {
-  display: block;
-  padding: 1rem;
-  overflow-x: auto;
-}
-
 /* Map */
-.cssvars .par {
-  width: 100%;
-  height: auto;
-  position: relative;
-}
-
 .cssvars .map {
   width: 100%;
   height: auto;
@@ -820,7 +688,6 @@
   left: 0;
   pointer-events: none;
 }
-
 .cssvars .cont {
   width: 100%;
   height: 100%;
@@ -830,18 +697,15 @@
   color: var(--white, white);
   box-sizing: border-box;
 }
-
 /* Icons */
 .cssvars .icon-xxs {
   width: 1rem;
   height: 1rem;
 }
-
 .cssvars .icon-xs {
   width: 1.5rem;
   height: 1.5rem;
 }
-
 .cssvars .icon-s {
   width: 2rem;
   height: 2rem;
@@ -854,22 +718,18 @@ height: 2.5rem;
   width: 3rem;
   height: 3rem;
 }
-
 .cssvars .icon-m {
   width: 4rem;
   height: 4rem;
 }
-
 .cssvars .icon-ml {
   width: 6rem;
   height: 6rem;
 }
-
 .cssvars .icon-lg {
   width: 8rem;
   height: 8rem;
 }
-
 .cssvars .icon-xl {
   width: 12rem;
   height: 12rem;
@@ -878,7 +738,6 @@ height: 2.5rem;
   background-color: var(--white, white);
   fill: black;
 }
-
 .cssvars .icon-white-fill {
   fill: var(--white, white);
 }
@@ -886,16 +745,13 @@ height: 2.5rem;
   background-color: var(--light-grey, #aaa);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-light-grey-fill {
   fill: var(--light-grey, #aaa);
 }
-
 .cssvars .icon-grey-bg {
   background-color: var(--grey, #aaa);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-grey-fill {
   fill: var(--grey, #aaa);
 }
@@ -903,47 +759,37 @@ height: 2.5rem;
   background-color: var(--color-1, red);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-color-1-fill {
   fill: var(--color-1, red);
 }
-
 .cssvars .icon-color-2-bg {
   background-color: var(--color-2, red);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-color-2-fill {
   fill: var(--color-2, red);
 }
-
 .cssvars .icon-color-white-fill {
   fill: var(--white, white);
 }
-
 .cssvars .icon-info-bg {
   background-color: var(--info, green);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-info-fill {
   fill: var(--info, green);
 }
-
 .cssvars .icon-success-bg {
   background-color: var(--success, blue);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-success-fill {
   fill: var(--success, blue);
 }
-
 .cssvars .icon-danger-bg {
   background-color: var(--danger, red);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-danger-fill {
   fill: var(--danger, red);
 }
@@ -951,7 +797,6 @@ height: 2.5rem;
   background-color: var(--warning, yellow);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-warning-fill {
   fill: var(--warning, yellow);
 }
@@ -959,25 +804,20 @@ height: 2.5rem;
   background-color: var(--luxury, purple);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-luxury-fill {
   fill: var(--luxury, purple);
 }
-
 .cssvars .icon-black-bg {
   background-color: var(--black, black);
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-black-fill {
   fill: black;
 }
-
 .cssvars .icon-dark-bg {
   background-color: var(--dark, rgb(72, 72, 72));
   fill: var(--body-bg, white);
 }
-
 .cssvars .icon-dark-fill {
   fill: var(--dark, rgb(72, 72, 72));
 }
@@ -985,22 +825,18 @@ height: 2.5rem;
   display: inline-block;
   padding: 0.5rem;
 }
-
 /*dividers */
 .cssvars hr {
   margin: 3% 0 5% 0;
   margin-left: auto;
   margin-right: auto;
 }
-
 .cssvars hr.width-50 {
   width: 50%;
 }
-
 .cssvars hr.width-short {
   width: 3rem;
 }
-
 /*Quotes */
 .cssvars blockquote {
   padding: 0.75rem 1.5rem;
@@ -1009,13 +845,11 @@ height: 2.5rem;
   font-weight: 400;
   border-left: 0.5rem solid var(--color-1, black);
 }
-
 .cssvars .blockquote-footer {
   display: block;
   font-size: 80%;
   color: var(--color-1, black);
 }
-
 /*Pagination */
 .cssvars .pagination {
   display: flex;
@@ -1023,11 +857,9 @@ height: 2.5rem;
   list-style: none;
   border-radius: 0.25rem;
 }
-
 .cssvars .btn-link, .cssvars .page-link, .cssvars .page-link:focus, .cssvars .page-link:hover {
   color: var(--color-1, black);
 }
-
 .cssvars .page-link {
   position: relative;
   display: block;
@@ -1036,20 +868,17 @@ height: 2.5rem;
   color: var(--color-1, black);
   border: 0.75rem solid #dee2e6;
 }
-
 .cssvars .page-item.active .page-link, .cssvars .page-link:focus, .cssvars .page-link:hover {
   color: var(--body-bg, white);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
-
 .cssvars .page-item.active .page-link {
   z-index: 1;
   color: var(--body-bg, white);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
-
 /* Buttons */
 .cssvars button, .cssvars .button, .cssvars .accordion .accordionBlock > label, .cssvars .tabs > label {
   background-color: var(--color-1);
@@ -1064,26 +893,21 @@ height: 2.5rem;
   margin: 0.5rem 0.1rem;
   box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
 }
-
 .cssvars .button {  padding: 0.37rem 0.95rem;}
 .cssvars .button-s {  font-size: 0.75rem;}
 .cssvars .button-m {  font-size: 1.25rem;}
-
 .cssvars .button-lg {
   font-size: 1.75rem;
   font-weight: 200;
 }
-
 .cssvars button:hover {
   background-color: var(--color-1, black);
   color: var(--body-bg, white);
   box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24));
 }
-
 .cssvars .button-w-25 {  width: 25%;}
 .cssvars .button-w-50 {  width: 50%;}
 .cssvars .button-w-100 {  width: 100%;}
-
 /*badge*/
 .cssvars .badge {
   line-height: 1;
@@ -1096,7 +920,6 @@ height: 2.5rem;
   vertical-align: baseline;
   border-radius: 0.25rem;
 }
-
 /* Alerts & Messages*/
 .cssvars .msg {
   display: block;
@@ -1108,58 +931,21 @@ height: 2.5rem;
   border: 0.75rem solid transparent;
   border-radius: 0.25rem;
 }
-
-.cssvars .float-right {  float: right;}
-.cssvars .float-left {  float: left;}
-.cssvars .float-none {  float: none;}
-.cssvars .clear-right {  clear: right;}
-.cssvars .clear-left {  clear: left;}
-.cssvars .clear-both {  clear: both;}
-.cssvars .clear-fix, .cssvars .overflow-auto {  overflow: auto;}
-
-.cssvars .overflow-y-auto {overflow-y: auto;}
-.cssvars .overflow-y-scroll {overflow-y: scroll;}
-.cssvars .overflow-x-scroll {overflow-x: scroll;}
-.cssvars .overflow-hidden {overflow: hidden;}
-.cssvars .overflow-visible {overflow: visible;}
-
-.cssvars .z-index-1 {z-index: 1;}
-.cssvars .z-index-2 {z-index: 2;}
-.cssvars .z-index-3 {z-index: 2;}
-.cssvars .z-index-10 {z-index: 10;}
-.cssvars .z-index-100 {z-index: 100;}
-
-.cssvars .rounded {  border-radius: 0.5rem;}
-.cssvars .rounded-0 {  border-radius: 0px;}
-.cssvars .top-rounded {  border-radius: 0.5rem 0.5rem 0 0;}
-.cssvars .bottom-rounded {  border-radius: 0 0 0.5rem 0.5rem;}
-.cssvars .right-rounded {  border-radius: 0 0.5rem 0.5rem 0;}
-.cssvars .left-rounded {  border-radius: 0.5rem 0 0 0.5rem;}
-
-.cssvars .circle {  border-radius: 50%;}
-.cssvars .top-circle {  border-radius: 50% 50% 0 0;}
-.cssvars .bottom-circle {  border-radius: 0 0 50% 50%;}
-.cssvars .right-circle {  border-radius: 50% 0 0 50%;}
-.cssvars .left-circle {  border-radius: 0 50% 50% 0;}
-
 /*tables*/
 .cssvars .table {
   min-width: 100%;
   margin-bottom: 1rem;
   table-layout: fixed;
 }
-
 .cssvars table {
   border-spacing: 0;
   border-collapse: collapse;
 }
-
 .cssvars tr {
   display: table-row;
   vertical-align: inherit;
   border-color: inherit;
 }
-
 .cssvars .table-td-min-w-15rem td {
   min-width: 15rem;
 }
@@ -1185,22 +971,18 @@ height: 2.5rem;
   overflow: hidden;
   white-space: nowrap; 
 }
-
 .cssvars .table td, .cssvars .table th {
   padding: .5rem;
   vertical-align: top;
   border-top: 0.0625rem solid var(--grey, #eee);
 }
-
 .cssvars .table-compact td, .cssvars .table-compact th {
   padding: 0.2rem;
 }
-
 .cssvars .table-large-2x tr td {  height: 4rem;}
 .cssvars .table-large-3x tr td {  height: 6rem;}
 .cssvars .table-large-4x tr td {  height: 8rem;}
 .cssvars .table-large-5x tr td {  height: 10rem;}
-
 .cssvars .table>thead>tr>th {
   vertical-align: bottom;
   border-bottom: 0.15rem solid #ddd;
@@ -1208,7 +990,6 @@ height: 2.5rem;
   font-weight: 600;
   color: var(--color-1, lightgray);
 }
-
 .cssvars .table-striped tbody tr:nth-of-type(odd) {
   background-color: rgba(var(--grey-rgb), 0.15);
 }
@@ -1218,7 +999,6 @@ height: 2.5rem;
 .cssvars .table-cell-border-none td, .cssvars .table-cell-border-none th {
   border: none !important;
 }
-
 .cssvars .table-cell-separate, .cssvars .table-cell-separate-color-1 {
   background:transparent;
   border-collapse: separate;
@@ -1232,7 +1012,6 @@ height: 2.5rem;
   background-color: rgba(var(--color-1-rgb), 0.1);
   border: none;
 }
-
 .cssvars .table-dark-header th {
   background-color: var(--dark);
   color: var(--body-bg) !important;
@@ -1249,7 +1028,6 @@ height: 2.5rem;
   background-color: var(--color-1);
   color: var(--body-bg);
 }
-
 .cssvars .table-dark-1st-col td:nth-child(1), .cssvars .table-dark-1st-col th:nth-child(1) {  
   background-color: var(--dark);
   color: var(--body-bg);
@@ -1266,276 +1044,42 @@ height: 2.5rem;
   background-color: var(--color-1);
   color: var(--body-bg);
 }
-
 .cssvars .table-hover tbody tr:hover {
   background-color: rgba(var(--grey-rgb), 0.1);
 }
-
 .cssvars .table-hover-color-1 tbody tr:hover {
   background-color: rgba(var(--color-1-rgb), 0.1);
 }
-
 .cssvars .table-bordered {
   border: 0.075rem solid #dee2e6;
 }
-
 .cssvars .table-bordered td, .cssvars .table-bordered th {
   border: 0.075rem solid #dee2e6;
 }
-
 .cssvars .table-bordered thead td, .cssvars .table-bordered thead th {
   border-bottom-width: 0.15rem;
 }
-
 .cssvars .table-bordered-color-1 {
   border: 0.075rem solid var(--color-1, lightgray);
 }
-
 .cssvars .table-bordered-color-1 td, .cssvars .table-bordered-color-1 th {
   border: 0.075rem solid var(--color-1, lightgray);
 }
-
 .cssvars .table-bordered-color-1 thead td, .cssvars .table-bordered-color-1 thead th {
   border-bottom: 0.15rem solid var(--color-1, lightgray);
 }
-
 .cssvars td button {
   margin-top: auto;
   margin-bottom: auto;
 }
-
-/* colors */
-.cssvars .color-1, .cssvars .color-1-hover:hover {
-  color: var(--color-1, black);
+.cssvars .table-layout-fixed {
+  table-layout: fixed;
 }
-
-.cssvars .color-2, .cssvars .color-2-hover:hover {
-  color: var(--color-2, black);
-}
-
-.cssvars .success, .cssvars .success-hover:hover {
-  color: var(--success, green);
-}
-
-.cssvars .info, .cssvars .info-hover:hover {
-  color: var(--info, blue);
-}
-
-.cssvars .danger, .cssvars .danger-hover:hover {
-  color: var(--danger, red);
-}
-
-.cssvars .dark, .cssvars .dark-hover:hover {
-  color: var(--dark, rgba(41, 40, 40, 0.707));
-}
-
-.cssvars .grey, .cssvars .grey-hover:hover {
-  color: var(--grey, rgba(204, 204, 204, 1));
-}
-
-.cssvars .light-grey, .cssvars .light-grey-hover:hover {
-  color: var(--light-grey, rgba(128, 128, 128, 0.808));
-}
-
-.cssvars .white, .cssvars .white-hover:hover {
-  color: var(--white, #fff);
-}
-
-.cssvars .black, .cssvars .black-hover:hover {
-  color: var(--black, #000);
-}
-
-.cssvars .color-gradient, .cssvars .color-gradient-hover:hover {
-  background: linear-gradient( to top, var(--color-1, black) 0, var(--color-2, black) 100%);
-  background-clip: text;
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.cssvars .bg-color-1, .cssvars .bg-color-1-hover:hover {
-  background-color: var(--color-1, black);
-}
-
-.cssvars .bg-color-2, .cssvars .bg-color-2-hover:hover {
-  background-color: var(--color-2, black);
-}
-
-.cssvars .bg-color-gradient, .cssvars .bg-color-gradient-hover:hover {
-  background: linear-gradient( to right, var(--color-1, black) 0, var(--color-2, black) 100%);
-}
-
-.cssvars .bg-success, .cssvars .bg-success-hover:hover {
-  background-color: var(--success, green);
-}
-
-.cssvars .bg-info, .cssvars .bg-info-hover:hover {
-  background-color: var(--info, blue);
-}
-
-.cssvars .bg-danger, .cssvars .bg-danger-hover:hover {
-  background-color: var(--danger, red);
-}
-
-.cssvars .bg-dark, .cssvars .bg-dark-hover:hover {
-  background-color: var(--dark, darkgray);
-}
-
-.cssvars .bg-black, .cssvars .bg-black-hover:hover {
-  background-color: var(--black, #000);
-}
-
-.cssvars .bg-grey, .cssvars .bg-grey-hover:hover {
-  background-color: var(--grey, grey);
-}
-
-.cssvars .bg-white, .cssvars .bg-white-hover:hover {
-  background-color: var(--white, white);
-}
-
-.cssvars .bg-body-bg, .cssvars .bg-body-bg-hover:hover {
-  background-color: var(--body-bg, white);
-}
-
-.cssvars .bg-light-grey, .cssvars .bg-lite-grey, .cssvars .bg-light-grey-hover:hover {
-  background-color: var(--light-grey, grey);
-}
-
-.cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
-  background-color: rgba(var(--color-1-rgb), 0.1);
-  color: var(--color-1, black);
-}
-.cssvars .bga-color-2, .cssvars .bga-color-2-hover:hover {
-  background-color: rgba(var(--color-2-rgb), 0.1);
-  color: var(--color-2, black);
-}
-.cssvars .bga-info, .cssvars .bga-info-hover:hover {
-  background-color: rgba(var(--info-rgb), 0.1);
-  color: var(--info, blue);
-}
-.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
-  background-color: rgba(var(--dark-rgb), 0.1);
-  color: var(--dark, darkgray);
-}
-.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
-  background-color: rgba(var(--grey-rgb), 0.1);
-  color: var(--grey, grey);
-}
-.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
-  background-color: rgba(var(--danger-rgb), 0.1);
-  color: var(--danger, red);
-}
-.cssvars .bga-success, .cssvars .bga-success-hover:hover {
-  background-color: rgba(var(--success-rgb), 0.1);
-  color: var(--success, green);
-}
-.cssvars .warning{
-  color: var(--warning, yellow);
-}
-
-.cssvars .bg-warning, .cssvars .bg-warning-hover:hover {
-  background-color: var(--warning, black);
-}
-
-.cssvars .bga-warning, .cssvars .bga-warning-hover:hover {
-  background-color: rgba(var(--warning-rgb), 0.1);
-  color: var(--warning, black);
-}
-
-.cssvars .outline-warning {
-  border: 0.0625rem solid var(--warning, black);
-}
-
-.cssvars .bordered-left-warning{
-  border-left: 0.3rem solid var(--warning, black);
-}
-
-.cssvars .luxury{
-  color: var(--luxury, yellow);
-}
-
-.cssvars .bg-luxury, .cssvars .bg-luxury-hover:hover {
-  background-color: var(--luxury, black);
-}
-
-.cssvars .bga-luxury, .cssvars .bga-luxury-hover:hover {
-  background-color: rgba(var(--luxury-rgb), 0.1);
-  color: var(--luxury, black);
-}
-
-.cssvars .outline-luxury {
-  border: 0.0625rem solid var(--luxury, black);
-}
-
-.cssvars .bordered-left-luxury{
-  border-left: 0.3rem solid var(--luxury, black);
-}
-
-.cssvars .brightness-150, .cssvars .brightness-150-hover:hover {
-  filter: brightness(150%);
-}
-
-.cssvars .brightness-100, .cssvars .brightness-100-hover:hover {
-  filter: brightness(100%);
-}
-
-.cssvars .brightness-66, .cssvars .brightness-66-hover:hover {
-  filter: brightness(66%);
-}
-
-.cssvars .brightness-33, .cssvars .brightness-33-hover:hover {
-  filter: brightness(33%);
-}
-
-/* outlined */
-.cssvars .outline-color-1 {
-  border: 0.075rem solid var(--color-1, black);
-}
-
-.cssvars .outline-color-2 {
-  border: 0.075rem solid var(--color-2, black);
-}
-
-.cssvars .outline-color-dark, .cssvars .outline-dark {
-  border: 0.075rem solid var(--dark, black);
-}
-
-.cssvars .outline-color-grey, .cssvars .outline-grey {
-  border: 0.075rem solid var(--grey, black);
-}
-
-.cssvars .outline-color-info, .cssvars .outline-info {
-  border: 0.075rem solid var(--info, black);
-}
-
-.cssvars .outline-color-success, .cssvars .outline-success {
-  border: 0.075rem solid var(--success, black);
-}
-
-.cssvars .outline-color-danger, .cssvars .outline-danger {
-  border: 0.075rem solid var(--danger, black);
-}
-
-.cssvars .outline-light-grey {
-  border: 0.075rem solid var(--light-grey, black);
-}
-
-.cssvars .outline-color-white, .cssvars .outline-white {
-  border: 0.075rem solid var(--white, white);
-}
-.cssvars .outline-color-black, .cssvars .outline-black {
-  border: 0.075rem solid black;
-}
-
-.cssvars .invalid {
-  border: 0.075rem solid var(--danger, black);
-}
-
 /* Images */
 .cssvars .img-responsive {
   max-width: 100%;
   height: auto;
 }
-
 .cssvars .img-thumbnail {
   padding: 0.25rem;
   background-color: var(--body-bg, white);
@@ -1544,8 +1088,12 @@ height: 2.5rem;
   max-width: 100%;
   height: auto;
 }
-
-/* responsive embed */
+/* responsive */
+.cssvars .audio-responsive {
+  max-height: 100%;
+  max-width: 100%;
+  object-fit: contain;
+}
 .cssvars .embed-responsive {
   position: relative;
   display: block;
@@ -1553,12 +1101,10 @@ height: 2.5rem;
   padding: 0;
   overflow: hidden;
 }
-
 .cssvars .embed-responsive::before {
   display: block;
   content: "";
 }
-
 .cssvars .embed-responsive, .cssvars .embed-responsive-item, .cssvars .embed-responsive embed, .cssvars .embed-responsive iframe, .cssvars .embed-responsive object, .cssvars .embed-responsive video {
   position: absolute;
   top: 0;
@@ -1568,23 +1114,18 @@ height: 2.5rem;
   height: 100%;
   border: 0;
 }
-
 .cssvars .embed-responsive-21by9::before {
   padding-top: 42.857143%;
 }
-
 .cssvars .embed-responsive-16by9::before {
   padding-top: 56.25%;
 }
-
 .cssvars .embed-responsive-4by3::before {
   padding-top: 75%;
 }
-
 .cssvars .embed-responsive-1by1::before {
   padding-top: 100%;
 }
-
 /*Carousel*/
 .cssvars .carousel {
   text-align: center;
@@ -1595,7 +1136,6 @@ height: 2.5rem;
   position: relative;
   overflow: hidden;
 }
-
 .cssvars .carousel .slides {
   text-align: center;
   width: 400%;
@@ -1607,24 +1147,20 @@ height: 2.5rem;
   position: relative;
   transition: transform 0.5s;
 }
-
 .cssvars .carousel .slides li {
   width: 25%;
   position: relative;
   float: left;
 }
-
 .cssvars .carousel-small-img li img {
   vertical-align: middle;
 }
-
 .cssvars .carousel li span.author {
   margin-top: 0.5em;
   font-size: 1.2em;
   color: var(--dark, #777777);
   display: block;
 }
-
 .cssvars .carousel .slidesNavigation {
   display: block;
   list-style: none;
@@ -1637,15 +1173,12 @@ height: 2.5rem;
   margin-left: -3.25rem;
   /*adjusting the centering by applying a negative margin of half of the width*/
 }
-
 .cssvars .carousel .slidesNavigation-2 {
   left: 53%;
 }
-
 .cssvars .carousel input {
   display: none;
 }
-
 .cssvars .carousel .slidesNavigation label {
   float: left;
   margin: 0.375rem;
@@ -1657,58 +1190,46 @@ height: 2.5rem;
   font-size: 0;
 }
 /* You have to repeat this with each slide, 100/slides-num*/
-
 .cssvars .radio-1:checked~.slides {
   transform: translateX(0%);
 }
-
 .cssvars .radio-2:checked~.slides {
   transform: translateX(-25%);
 }
-
 .cssvars .radio-3:checked~.slides {
   transform: translateX(-50%);
 }
-
 .cssvars .radio-4:checked~.slides {
   transform: translateX(-75%);
 }
-
 .cssvars .carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
 /* You have to repeat this with each slide/dot */
-
 .cssvars .carousel .radio-1:checked~.slidesNavigation label#dotForRadio-1, .cssvars .carousel .radio-2:checked~.slidesNavigation label#dotForRadio-2, .cssvars .carousel .radio-3:checked~.slidesNavigation label#dotForRadio-3, .cssvars .carousel .radio-4:checked~.slidesNavigation label#dotForRadio-4 {
   background: var(--color-1, black);
 }
-
 /* Gallery Box*/
 .cssvars .gallery-box {
   line-height: 1.5rem;
   margin: 0;
   padding: 1rem;
 }
-
 .cssvars .gallery-box img {
   max-width: 100%;
   height: auto;
 }
-
 .cssvars .key-features ul, .cssvars .features ul, .cssvars .testimonials ul, .cssvars .team ul, .cssvars .portfolio ul, .cssvars .gallery-box ul, .cssvars .list-style-none {
   list-style: none;
   padding: 0;
 }
-
 .cssvars .gallery-box-photo-container .gallery-box-thumbnail-image>img {
   width: 5rem;
 }
-
 .cssvars .gallery-box-photo-container img {
   max-width: 100%;
   margin: 0.2rem;
 }
-
 .cssvars .gallery-box-main-image {
   position: absolute;
   visibility: hidden;
@@ -1716,55 +1237,14 @@ height: 2.5rem;
   left: 1rem;
   margin-right: 0.5rem;
 }
-
 .cssvars .gallery-box-photo-container {
   padding: 0.625rem;
   margin-bottom: 1rem;
 }
-
 .cssvars .gallery-box-thumbnail-image {
   display: inline-block;
   margin: 0.325rem;
 }
-
-/* Shadows */
-.cssvars .shadow, .cssvars .shadow-hover:hover{
-  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
-}
-
-.cssvars .shadow-1, .cssvars .shadow-1-hover:hover {
-  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
-}
-
-.cssvars .shadow-2, .cssvars .shadow-2-hover:hover {
-  border: solid 0.0625rem var(--light-grey, #f5f5f5);
-  box-shadow: 0.1875rem 0.1875rem 0.125rem #aaaaaa;
-}
-.cssvars .shadow-3, .cssvars .shadow-3-hover:hover {
-  border: solid 0.0625rem var(--light-grey, #f5f5f5);
-  box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
-}
-
-.cssvars .shadow-4, .cssvars .shadow-4-hover:hover, .cssvars .hover-shadow:hover {
-  box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625 0.625 rgba(0, 0, 0, 0.22);
-}
-.cssvars .shadow-color, .cssvars .shadow-color-hover:hover {
-  box-shadow: 0 0.0625rem 0.1875rem rgba(var(--color-1-rgb, black)), 0 0.0625rem 0.125rem rgba(var(--color-1-rgb, black));
-}
-
-.cssvars .shadow-color-2, .cssvars .shadow-color-2-hover:hover {
-  border: solid 0.0625rem rgba(var(--color-1-rgb, black));
-  box-shadow: 0.1875rem 0.1875rem 0.125rem var(--color-1, black);
-}
-.cssvars .shadow-color-3, .cssvars .shadow-color-3-hover:hover {
-  border: solid 0.0625rem #f5f5f5;
-  box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
-}
-
-.cssvars .shadow-color-4, .cssvars .shadow-color-4-hover:hover {
-  box-shadow: 0 0.625 1.25rem rgba(var(--color-1-rgb, black)), 0 0.625 0.625 rgba(var(--color-1-rgb, black));
-}
-
 /* Light Box */
 .cssvars .light-box-overlay {
   display: flex;
@@ -1779,50 +1259,40 @@ height: 2.5rem;
   align-items: center;
   background-color: rgba(var(--black-rgb), 0.9);
 }
-
 .cssvars .light-box-overlay:target, .cssvars .light-box-overlay.is-active {
   visibility: visible;
 }
-
 .cssvars .light-box-content {
   max-height: 100%;
   overflow: auto;
 }
-
 .cssvars :target>.light-box-content, .cssvars .is-active>.light-box-content {
   animation: 0.4s ease-out 0.2s both;
   animation-name: inherit;
 }
-
 .cssvars .light-box-html {
   padding: 2em;
   max-width: 42em;
   background-color: var(--white, white);
 }
-
 .cssvars .light-box-figure {
   display: none;
   margin: 1.5em;
 }
-
 .cssvars :target>.light-box-figure, .cssvars .is-active>.light-box-figure {
   display: block;
 }
-
 .cssvars .light-box-figure img {
   display: block;
   height: 0;
 }
-
 .cssvars .light-box-figcaption {
   color: var(--white, white)
 }
-
 .cssvars .light-box-image {
   max-width: 100%;
   background-size: 100%;
 }
-
 .cssvars .light-box-control {
   position: absolute;
   width: 3em;
@@ -1831,27 +1301,22 @@ height: 2.5rem;
   background-size: cover;
   text-indent: -999em;
 }
-
 .cssvars .light-box-close {
   top: 1em;
   right: 1em;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M21.7%2010.3c-0.4-0.4-1-0.4-1.4%200l-4.3%204.3-4.2-4.2c-0.4-0.4-1-0.4-1.4%200-0.4%200.4-0.4%201%200%201.4l4.2%204.2-4.3%204.3c-0.4%200.4-0.4%201%200%201.4%200.4%200.4%201%200.4%201.4%200l4.3-4.3%204.2%204.2c0.4%200.4%201%200.4%201.4%200%200.4-0.4%200.4-1%200-1.4l-4.2-4.2%204.3-4.3C22.1%2011.3%2022.1%2010.7%2021.7%2010.3zM16%200C7.2%200%200%207.2%200%2016s7.2%2016%2016%2016c8.8%200%2016-7.2%2016-16S24.8%200%2016%200zM16%2030C8.3%2030%202%2023.7%202%2016S8.3%202%2016%202s14%206.3%2014%2014S23.7%2030%2016%2030z%22%2F%3E%3C%2Fsvg%3E");
 }
-
 .cssvars .light-box-prev {
   left: 2em;
   transform: rotate(180deg);
 }
-
 .cssvars .light-box-next {
   right: 2em;
 }
-
 .cssvars .light-box-untarget {
   position: fixed;
   top: 0;
 }
-
 .cssvars .light-box-prev, .cssvars .light-box-next {
   top: 50%;
   margin-top: -1.5em;
@@ -1859,15 +1324,12 @@ height: 2.5rem;
   transition: opacity 0.2s;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20x%3D%220%22%20y%3D%220%22%20width%3D%2244.1%22%20height%3D%2294.7%22%20viewBox%3D%220%200%2044.1%2094.7%22%20enable-background%3D%22new%200%200%2044.088%2094.67%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M44.1%2047.3L1.5%2094.7%200%2093.3l41.4-46L0%201.3%201.5%200%2044.1%2047.3z%22%2F%3E%3C%2Fsvg%3E");
 }
-
 .cssvars .light-box-prev:hover, .cssvars .light-box-prev:focus, .cssvars .light-box-next:hover, .cssvars .light-box-next:focus {
   opacity: 1;
 }
-
 .cssvars .light-box img {
   margin: 0.125rem;
 }
-
 /*Flexbox Image Gallery */
 .cssvars .flex-gallery-container {
   width: 100%;
@@ -1875,13 +1337,11 @@ height: 2.5rem;
   display: flex;
   flex-flow: row wrap;
 }
-
 .cssvars .flex-gallery-image-container {
   margin: 0.1875rem;
   height: 20rem;
   flex: 1 1 auto;
 }
-
 .cssvars .flex-gallery-image-container img {
   display: block;
   height: 100%;
@@ -1889,13 +1349,11 @@ height: 2.5rem;
   max-width: 24rem;
   object-fit: cover;
 }
-
 @media (max-width: 800px) {
   .cssvars .flex-gallery-image-container img {
     max-width: 20rem;
   }
 }
-
 @media (max-width: 650px) {
   .cssvars .flex-gallery-container {
     width: 100%;
@@ -1907,7 +1365,6 @@ height: 2.5rem;
     margin: 0.1875rem 0;
   }
 }
-
 /* Masonry Grid */
 .cssvars .masonry-container {
   width: 100%;
@@ -1917,66 +1374,47 @@ height: 2.5rem;
   grid-auto-flow: row dense;
   grid-gap: 0.0625rem;
 }
-
 .cssvars .masonry-container-2col {
   grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   grid-auto-rows: auto;
 }
-
 .cssvars .masonry-container-1col {
   grid-template-columns: repeat(auto-fit, minmax(1200px, 1fr));
   grid-auto-rows: auto;
 }
-
 .cssvars .masonry-large, .cssvars .masonry-medium, .cssvars .masonry-small {
   display: flex;
   height: 100%;
   width: 100%;
   grid-column: auto / span 1;
 }
-
 .cssvars .masonry-large {  grid-row: auto / span 7;}
 .cssvars .masonry-medium {  grid-row: auto / span 6;}
 .cssvars .masonry-small {  grid-row: auto / span 5;}
-
 .cssvars .masonry-gallery-img img {
   width: 100%;
   height: auto;
   -o-object-fit: cover;
   object-fit: cover;
 }
-
-/* Justify row content*/
-.cssvars .justify-content-end {  justify-content: flex-end;}
-.cssvars .justify-content-center {  justify-content: center;}
-.cssvars .justify-content-between {  justify-content: space-between;}
-.cssvars .justify-content-around {  justify-content: space-around;}
-.cssvars .align-items-start {  align-items: flex-start;}
-.cssvars .align-items-end {  align-items: flex-end;}
-.cssvars .align-items-center {  -webkit-box-align: center;}
-
 /* Forms */
 .cssvars .form-group {
   margin-bottom: 1rem;
 }
-
 .cssvars .form-text {
   display: block;
   margin-top: 0.25rem;
 }
-
 .cssvars .form-row {
   display: flex;
   flex-wrap: wrap;
   margin-right: -0.3125rem;
   margin-left: -0.3125rem;
 }
-
 .cssvars .form-row>.col, .cssvars .form-row>[class*="col-"] {
   padding-right: 0.3125rem;
   padding-left: 0.3125rem;
 }
-
 .cssvars .form-control {
   display: block;
   width: 100%;
@@ -1990,37 +1428,31 @@ height: 2.5rem;
   border: solid 0.125rem var(--light-grey, #f5f5f5);
   box-shadow: var(--shadow-style, 0 0.33rem 1rem rgba(0, 0, 0, 0.08));
 }
-
 .cssvars .form-control-border {
   transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
   border: 0.0625rem solid #ced4da;
   box-shadow: none;
 }
-
 .cssvars select.form-control  {
   padding: 0.435rem 0.375rem;
 }
-
 .cssvars .form-check-inline {
   display: inline-flex;
   align-items: center;
   padding-left: 0;
   margin-right: 0.75rem;
 }
-
 .cssvars .form-check-inline .form-check-input {
   position: static;
   margin-top: 0;
   margin-right: 0.3125rem;
   margin-left: 0;
 }
-
 .cssvars input::placeholder, .cssvars textarea::placeholder {
   color: var(--dark, grey);
   font-size: 1rem;
   opacity: 0.6;
 }
-
 .cssvars [type="date"] {
   display: block;
   width: 100%;
@@ -2033,26 +1465,21 @@ height: 2.5rem;
   border: 0.0625rem solid #ced4da;
   border-radius: 0.25rem;
 }
-
 .cssvars [type="date"]::-webkit-inner-spin-button {
   display: none;
 }
-
 .cssvars [type="date"]::-webkit-calendar-picker-indicator {
   opacity: 0;
 }
-
 /* Rating */
 .cssvars .rating {
   display: flex;
   flex-direction: row-reverse;
   justify-content: center;
 }
-
 .cssvars .rating>input {
   display: none;
 }
-
 .cssvars .rating>label {
   position: relative;
   width: 1.1em;
@@ -2060,29 +1487,55 @@ height: 2.5rem;
   color: var(--warning, #ffd700);
   cursor: pointer;
 }
-
 .cssvars .rating-c-1 label {
   color: var(--color-1, grey);
 }
-
 .cssvars .rating>label::before {
   content: "\2605";
   position: absolute;
   opacity: 0;
 }
-
 .cssvars .rating>label:hover:before, .cssvars .rating>label:hover~label:before {
   opacity: 1;
 }
-
 .cssvars .rating>input:checked~label:before {
   opacity: 1;
 }
-
 .cssvars .rating:hover>input:checked~label:before {
   opacity: 0.4;
 }
-
+.cssvars input:focus, .cssvars select:focus, .cssvars textarea:focus {
+  border-color: var(--color-1, black);
+  outline: none;
+}
+.cssvars .styled-checkbox {
+  width: 1.5rem;
+  height: 1.5rem;
+  accent-color: var(--color-1,blue);
+}
+.cssvars .styled-checkbox2 {
+  width: 1.5rem;
+  height: 1.5rem;
+  appearance: none;
+  margin-right: 0.625rem;
+  border: 0.3rem solid var(--grey,lightgray);
+  display: inline-block;
+  box-shadow: none !important;
+}
+.cssvars .styled-checkbox2:focus {
+    outline: none;
+    box-shadow: none !important;
+}
+.cssvars .styled-checkbox2:checked {
+  border: 0.5rem solid var(--color-1,lightgray);
+  text-align: center;
+  line-height: var(--line-height, 1rem);
+  transform-origin: bottom left;
+}
+.cssvars .disabled {
+  pointer-events: none;
+  opacity: 0.5;
+}
 .cssvars .parallax-img {
   background-image: url("../img/img_parallax.jpg");
   background-attachment: fixed;
@@ -2090,33 +1543,15 @@ height: 2.5rem;
   background-repeat: no-repeat;
   background-size: cover;
 }
-
-.cssvars body, .cssvars html {
-  height: 100%;
-}
-
-.cssvars .center {  text-align: center;}
-.cssvars .left {  text-align: left;}
-.cssvars .right {  text-align: right;}
-.cssvars .justified {  text-align: justify;}
-
-.cssvars .content-in-middle {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-
 /* Tabs */
 .cssvars .tabs {
   display: flex;
   flex-wrap: wrap;
 }
-
 .cssvars .tabs label {
   order: 1;
   display: block;
 }
-
 .cssvars .tabs .tab {
   order: 99;
   flex-grow: 1;
@@ -2124,21 +1559,17 @@ height: 2.5rem;
   display: none;
   padding: 1rem;
 }
-
 .cssvars .tabs input[type="radio"] {
   display: none;
 }
-
 .cssvars .tabs input[type="radio"]:checked+label {
   background-color: var(--body-bg, white);
   color: var(--color-1, black);
   border: 1px solid var(--color-1, black);
 }
-
 .cssvars .tabs input[type="radio"]:checked+label+.tab {
   display: block;
 }
-
 @media (max-width: 45em) {
   .cssvars .tabs .tab, .cssvars .tabs label {
     order: initial;
@@ -2149,32 +1580,26 @@ height: 2.5rem;
     margin-top: 0.2rem;
   }
 }
-
 /* Accordion */
 .cssvars .accordion {
   width: 100%;
   margin: auto;
 }
-
 .cssvars .accordion input[type="radio"] {
   display: none;
 }
-
 .cssvars .accordion input[type="radio"]~.accordionContent {
   display: none;
 }
-
 .cssvars .accordion input[type="radio"]:checked~.accordionContent {
   display: block;
 }
-
 .cssvars .accordion .accordionBlock {
   margin-bottom: 0.3125rem;
   display: block;
   width: 100%;
   float: left;
 }
-
 .cssvars .accordion .accordionBlock .accordionContent {
   border: 0.0625rem solid #eee;
   border-top: 0 none;
@@ -2183,19 +1608,16 @@ height: 2.5rem;
   padding: 0.625rem;
   font-weight: 400;
 }
-
 .cssvars .accordion .accordionBlock label {
   width: 100%;
   margin-bottom: 0;
   float: left;
 }
-
 .cssvars .accordion input[type="radio"]:checked~label {
   background-color: var(--body-bg, white);
   color: var(--color-1, black);
   border: 0.0625rem solid var(--color-1, black);
 }
-
 .cssvars .accordion .accordionBlock .accordionContent {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
@@ -2214,7 +1636,6 @@ height: 2.5rem;
     opacity: 1;
   }
 }
-
 /* Modal */
 .cssvars .modal {
   opacity: 0;
@@ -2229,7 +1650,6 @@ height: 2.5rem;
   transition: opacity 0.25s ease;
   z-index: 10;
 }
-
 .cssvars .modal__bg {
   position: absolute;
   top: 0;
@@ -2238,20 +1658,16 @@ height: 2.5rem;
   left: 0;
   cursor: pointer;
 }
-
 .cssvars .modal-state {
   display: none;
 }
-
 .cssvars .modal-state:checked+.modal {
   opacity: 1;
   visibility: visible;
 }
-
 .cssvars .modal-state:checked+.modal .modal__inner {
   top: 0;
 }
-
 .cssvars .modal__inner {
   transition: top 0.25s ease;
   position: absolute;
@@ -2267,7 +1683,6 @@ height: 2.5rem;
   padding: 1em 2em;
   height: 50%;
 }
-
 .cssvars .modal__close {
   position: absolute;
   right: 1em;
@@ -2276,11 +1691,10 @@ height: 2.5rem;
   height: 1.1em;
   cursor: pointer;
 }
-
 .cssvars .modal__close:after, .cssvars .modal__close:before {
   content: "";
   position: absolute;
- width: 0.125rem;
+  width: 0.125rem;
   height: 1.5em;
   background: var(--dark, #ccc);
   display: block;
@@ -2289,15 +1703,12 @@ height: 2.5rem;
   margin: -0.1875rem 0 0 -10.0625rem;
   top: 0;
 }
-
 .cssvars .modal__close:hover:after, .cssvars .modal__close:hover:before {
   background: #aaa;
 }
-
 .cssvars .modal__close:before {
   transform: rotate(-45deg);
 }
-
 @media screen and (max-width: 768px) {
   .cssvars .modal__inner {
     width: 90%;
@@ -2305,18 +1716,15 @@ height: 2.5rem;
     box-sizing: border-box;
   }
 }
-
 /* Promo Boxes */
 .cssvars .promo-box {
   margin: 3rem 0;
   padding: 4rem 3rem;
 }
-
 .cssvars .promo-box-s {
   margin: 1.5rem 0;
   padding: 2rem 1.5rem;
 }
-
 /* Main Menu */
 .cssvars .main-menu li {  list-style: none;}
 .cssvars .main-menu a {  text-decoration: none;}
@@ -2326,12 +1734,10 @@ height: 2.5rem;
   display: table;
   position: relative;
 }
-
 .cssvars .main-nav {
   width: 100%;
   display: table;
 }
-
 .cssvars .logo {
   height: auto;
   position: absolute;
@@ -2339,75 +1745,60 @@ height: 2.5rem;
   bottom: 0;
   margin: auto;
 }
-
 .cssvars .nav, .cssvars .nav-stable {
   width: auto;
   float: right;
 }
-
 .cssvars .nav ul, .cssvars .nav-stable ul {
   display: table;
   float: right;
 }
-
 .cssvars .nav ul li, .cssvars .nav-stable ul li {
   float: left;
 }
-
 .cssvars .nav ul li:last-child, .cssvars .nav-stable ul li:last-child {
   padding-right: 0;
 }
-
 .cssvars .nav ul li a, .cssvars .nav-stable ul li a {
   color: var(--color-1, black);
   font-size: 1.1rem;
   padding: 1rem;
   display: inline-block;
 }
-
 .cssvars .nav ul li a:hover, .cssvars .nav-stable ul li a:hover {
   color: var(--dark, grey);
 }
-
 .cssvars .nav ul li:hover, .cssvars .nav-stable ul li:hover{
   border-color: var(--white, white);
 }
-
 .cssvars .nav-bg-hover ul li a:hover {
   background-color: var(--color-1, black);
   color: var(--white, white);
 }
-
 .cssvars .nav-top-border-hover ul li a:hover {
   border-top: 0.125rem solid var(--color-1, black);
   margin-top:-0.125rem;
 }
-
 .cssvars .nav-bottom-border-hover ul li a:hover {
   border-bottom: 0.125rem solid var(--color-1, black);
   margin-bottom:-0.125rem;
 }
-
 .cssvars .toggle-menu ul {
   display: table;
   width: 1.5rem;
 }
-
 .cssvars .toggle-menu ul li {
   width: 100%;
   height: 0.1875rem;
   background-color: var(--color-1, black);
   margin-bottom: 0.25rem;
 }
-
 .cssvars .toggle-menu ul li:last-child {
   margin-bottom: 0;
 }
-
 .cssvars .main-menu input[type="checkbox"], .cssvars .main-menu label {
   display: none;
 }
-
 @media only screen and (max-width: 980px) {
   .cssvars .main-nav {
     padding: 1.25rem 0;
@@ -2459,7 +1850,6 @@ height: 2.5rem;
     border-bottom: 0.0625rem solid rgba(225, 225, 225, 0.1);
   }
 }
-
 @media only screen and (max-width: 360px) {
   .cssvars .main-menu label {
     padding: 0.3125rem 0;
@@ -2471,29 +1861,24 @@ height: 2.5rem;
     top: 4rem;
   }
 }
-
 @media only screen and (max-width: 1440px) {
   .cssvars .main-menu {
     max-width: 95%;
   }
 }
-
 @media only screen and (max-width: 480px) {
   .cssvars .main-menu {
     max-width: 90%;
   }
 }
-
 .cssvars .menu-bordered li {
   border: solid 0.0625rem var(--color-1, black);
   margin: 0.75rem;
   padding: 0;
 }
-
 .cssvars .menu-bordered li a {
   padding: 0.45rem;
 }
-
 /* Breadcrumb */
 .cssvars .breadcrumb {
   padding: 0;
@@ -2504,7 +1889,6 @@ height: 2.5rem;
   border-radius: 0.25rem;
   margin: 1rem 0;
 }
-
 .cssvars .breadcrumb li {
   display: flex;
   flex-wrap: wrap;
@@ -2512,11 +1896,134 @@ height: 2.5rem;
   border-radius: 0.25rem;
   margin: 0 0.25rem;
 }
-
 .cssvars .breadcrumb li a::after {
   content: ">";
 }
-
+.cssvars .custom-file-upload {
+  border: 0.0625rem solid var(--grey, #ccc);
+  display: inline-block;
+  padding: 0.375rem 0.75rem;
+  cursor: pointer;
+  color: var(--color-1, black);
+  background-color: transparent;
+}
+.cssvars .custom-file-upload input{
+  display: none;
+  }
+.cssvars .select-link-style {
+  padding: 0;
+  margin: 0;
+  border: none;
+  border-radius: 0.1875rem;
+  overflow: hidden;
+  background-color: var(--body-bg, white);
+  display: inline;
+  line-height: var(--line-height, 1.2);
+}
+.cssvars .select-link-style select {
+  padding: 0.3125rem;
+  border: none;
+  box-shadow: none;
+  background-color: transparent;
+  background-image: none;
+  appearance: none;
+  text-decoration: underline;
+}
+.cssvars .select-link-style select:focus {
+  outline: none;
+}
+.cssvars .text-decoration-none-onhover:hover{
+  text-decoration:none;
+}
+.cssvars .main-nav-white a {
+  color: var(--white, white)
+}
+.cssvars .main-nav-white a:hover {
+  border-bottom: 0.125rem solid white !important;
+  color: var(--white, white)
+}
+/* Tooltip */
+.cssvars .tooltip {
+position: relative;
+display: inline-block;
+border-bottom: 0.0625rem dotted black;
+}
+.cssvars .tooltip .tooltip-body {
+visibility: hidden;
+width: 7.5rem;
+text-align: center;
+padding: 0.3125rem 0;
+position: absolute;
+z-index: 1;
+}
+.cssvars .tooltip2x {
+width: 15rem !important;
+}
+.cssvars .tooltip3x {
+width: 22.5rem !important;
+}
+.cssvars .tooltip4x {
+width: 30rem !important;
+}
+.cssvars .tooltip:hover .tooltip-body {
+visibility: visible;
+}
+.cssvars .tooltip-top {
+bottom: 100%;
+left: 50%;
+margin-left: -3.75rem;
+}
+.cssvars .tooltip-bottom {
+top: 100%;
+left: 50%;
+margin-left: -3.75rem;
+}
+.cssvars .tooltip-left {
+top: -0.3125rem;
+right: 105%;
+}
+.cssvars .tooltip-right {
+top: -0.3125rem;
+left: 105%;
+}
+/* Progress Bar */
+.cssvars progress {
+  accent-color: var(--color-1);
+  appearance: none;
+  border: none;
+}
+.cssvars ::-webkit-progress-bar {
+  background-color: var(--grey);
+}
+.cssvars ::-webkit-progress-value {
+  background-color: var(--color-1);
+}
+.cssvars ::-moz-progress-bar {
+  background-color: var(--color-1);
+}
+/* Notification */
+.cssvars .notification-panel{
+  z-index: 100;
+  position: fixed;
+  top:5rem;
+  right: 1rem;
+  display: none;
+  width: 22rem;
+  background-color: var(--body-bg, white);
+}
+/* Resize */
+.cssvars .resize-grip {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  width: 7px;
+  position: absolute;
+  cursor: col-resize;
+}
+.cssvars .resize-grip:hover {
+  background-color: rgba(var(--info-rgb), 0.1);
+}
+/*-- Utility Classes --*/
 /* Padding and Margin */
 .cssvars .m0 { margin: 0; }
 .cssvars .m-1-16 { margin: 0.0625rem; }
@@ -2594,7 +2101,17 @@ height: 2.5rem;
 .cssvars .m-b-2 { margin-bottom: clamp(1rem, 3.33vw, 2rem); }
 .cssvars .m-b-3 { margin-bottom: clamp(1.5rem, 3.33vw, 3rem); }
 .cssvars .m-b-4 { margin-bottom: clamp(2rem, 3.33vw, 4rem); }
-
+.m-auto {
+  margin: auto;
+}
+.cssvars .m-h-auto {
+  margin-right: auto;
+  margin-left: auto;
+}
+.cssvars .m-v-auto {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 /* Padding */
 .cssvars .p0 { padding: 0; }
 .cssvars .p-1-16 { padding: 0.0625rem; }
@@ -2679,199 +2196,362 @@ height: 2.5rem;
   .cssvars .m-d-1 {    margin: 1rem;  }
   .cssvars .m-d-2 {    margin: 2rem;  }
 }
-
-.cssvars .old-info {  text-decoration: line-through;}
-.cssvars .overline {  text-decoration: overline;}
-.cssvars .underline {  text-decoration: underline;}
-
-.cssvars .decoration-none {  text-decoration: none;}
-.cssvars .hover-underline:hover {  text-decoration: underline;}
-.cssvars .hover-white:hover {  background-color: var(--white, black);}
-.cssvars .hover-grey:hover {  background-color: var(--grey, black);}
-
-.cssvars .line-height-1 {  line-height: 1;}
-.cssvars .line-height-17 {  line-height: 1.7;}
-.cssvars .line-height-2 {  line-height: 2;}
-
+/* Positioning */
 .cssvars .position-static {  position: static;}
 .cssvars .position-fixed {  position: fixed;}
 .cssvars .position-absolute {  position: absolute;}
 .cssvars .position-relative {  position: relative;}
 .cssvars .position-sticky {  position: sticky;}
+
 .cssvars .top-0 {  top: 0;}
 .cssvars .bottom-0 {  bottom: 0;}
 .cssvars .right-0 {  right: 0;}
 .cssvars .left-0 {  left: 0;}
-
-.cssvars .colored-ul, .cssvars .indent-ul, .cssvars .half-indent-ul, .cssvars .no-indent-ul, .cssvars .colored-ol, .cssvars .steps-ol {
-  list-style: none;
-  text-indent: -0.7em;
+.cssvars .top-1 { top: 1rem; }
+.cssvars .bottom-1 { bottom: 1rem; }
+.cssvars .right-1 { right: 1rem; }
+.cssvars .left-1 { left: 1rem; }
+.cssvars .top-2 { top: 2rem; }
+.cssvars .bottom-2 { bottom: 2rem; }
+.cssvars .right-2 { right: 2rem; }
+.cssvars .left-2 { left: 2rem; }
+/* Justify row content*/
+.cssvars .justify-content-end {  justify-content: flex-end;}
+.cssvars .justify-content-center {  justify-content: center;}
+.cssvars .justify-content-between {  justify-content: space-between;}
+.cssvars .justify-content-around {  justify-content: space-around;}
+.cssvars .align-items-start {  align-items: flex-start;}
+.cssvars .align-items-end {  align-items: flex-end;}
+.cssvars .align-items-center {  -webkit-box-align: center;}
+/* Shadows */
+.cssvars .shadow, .cssvars .shadow-hover:hover{
+  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
 }
-
-.cssvars .no-indent-ul {
-  padding: inherit;
+.cssvars .shadow-1, .cssvars .shadow-1-hover:hover {
+  box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24);
 }
-.cssvars .half-indent-ul {
-  text-indent: -1.5em;
+.cssvars .shadow-2, .cssvars .shadow-2-hover:hover {
+  border: solid 0.0625rem var(--light-grey, #f5f5f5);
+  box-shadow: 0.1875rem 0.1875rem 0.125rem #aaaaaa;
 }
-
-.cssvars .colored-ul li::before {
-  content: "â€¢ ";
-  color: var(--color-1, black);
+.cssvars .shadow-3, .cssvars .shadow-3-hover:hover {
+  border: solid 0.0625rem var(--light-grey, #f5f5f5);
+  box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 }
-
-.cssvars .colored-ol {
-  counter-reset: my-awesome-counter;
+.cssvars .shadow-4, .cssvars .shadow-4-hover:hover, .cssvars .hover-shadow:hover {
+  box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625 0.625 rgba(0, 0, 0, 0.22);
 }
-.cssvars .colored-ol li {
-  counter-increment: my-awesome-counter;
+.cssvars .shadow-color, .cssvars .shadow-color-hover:hover {
+  box-shadow: 0 0.0625rem 0.1875rem rgba(var(--color-1-rgb, black)), 0 0.0625rem 0.125rem rgba(var(--color-1-rgb, black));
 }
-.cssvars .colored-ol li::before {
-  content: counter(my-awesome-counter) ". ";
-  color: var(--color-1,black);
-  font-weight: 400;
+.cssvars .shadow-color-2, .cssvars .shadow-color-2-hover:hover {
+  border: solid 0.0625rem rgba(var(--color-1-rgb, black));
+  box-shadow: 0.1875rem 0.1875rem 0.125rem var(--color-1, black);
 }
-
-.cssvars .bolded-ol {
-  counter-reset: my-bolded-counter;
+.cssvars .shadow-color-3, .cssvars .shadow-color-3-hover:hover {
+  border: solid 0.0625rem #f5f5f5;
+  box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
 }
-.cssvars .bolded-ol li {
-  counter-increment: my-bolded-counter;
-  display: flex;
-  margin-bottom: 1rem;
+.cssvars .shadow-color-4, .cssvars .shadow-color-4-hover:hover {
+  box-shadow: 0 0.625 1.25rem rgba(var(--color-1-rgb, black)), 0 0.625 0.625 rgba(var(--color-1-rgb, black));
 }
-.cssvars .bolded-ol li::before {
-  content: "0" counter(my-bolded-counter);
-  color: var(--color-1);
-  font-weight: 400;
-  font-size: 3em;
-  margin-right: 0.5rem;
-  line-height: 1;
-}
-
-.cssvars .steps-ol li {
-  margin: 1.2rem 0 2rem 0;
-  padding-top: 1.2em;
-  display: block;
-  position: relative;
-  counter-increment: inst;
-  text-indent: 0;
-  
-}
-.cssvars .steps-ol li::before {
-  content: counter(inst);
-  background: var(--color-1, black);
+/* Backgrounds with alpha */
+.cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
   background-color: rgba(var(--color-1-rgb), 0.1);
   color: var(--color-1, black);
-  font-weight: 400;
-  font-size: 1.5em;
-  text-align: center;
-  left: -5%;
-  top: -0.65em;
-  width: 3rem;
-  position: absolute;
 }
-
-/* Transform Classes */
-.cssvars .rotate-10 {  transform: rotate(10deg);}
-.cssvars .rotate-20 {  transform: rotate(20deg);}
-.cssvars .rotate--10 {  transform: rotate(-10deg);}
-.cssvars .rotate--20 {  transform: rotate(-20deg);}
-
-/* writing-mode classes */
-.cssvars .rtl {  direction: rtl;}
-.cssvars .ltr {  direction: ltr;}
-.cssvars .horizontal-tb, .cssvars .vertical-rl, .cssvars .vertical-lr {
-  writing-mode: var(--writing-mode);
+.cssvars .bga-color-2, .cssvars .bga-color-2-hover:hover {
+  background-color: rgba(var(--color-2-rgb), 0.1);
+  color: var(--color-2, black);
 }
-.cssvars .horizontal-tb {  writing-mode: horizontal-tb;}
-.cssvars .vertical-rl {  writing-mode: vertical-rl;}
-.cssvars .vertical-lr {  writing-mode: vertical-lr;}
-
-.cssvars .drop-caps {
-  float: left;
-  font-size: 4.7rem;
-  line-height: 3.75rem;
-  padding-top: 0.25rem;
-  padding-right: 0.5rem;
-  padding-left: 0.2rem;
-  color: var(--color-1, black);
+.cssvars .bga-info, .cssvars .bga-info-hover:hover {
+  background-color: rgba(var(--info-rgb), 0.1);
+  color: var(--info, blue);
 }
-
-.cssvars .par-2-cols { column-count: 2;}
-.cssvars .par-3-cols { column-count: 3;}
-.cssvars .par-4-cols { column-count: 4;}
-.cssvars .par-cols-gap-2 { column-gap: 2.5rem;}
-.cssvars .par-cols-gap-3 { column-gap: 3.5rem;}
-.cssvars .par-cols-rule { column-rule: 0.0625rem solid var(--grey, black); }
-.cssvars .opacity1, .cssvars .opacity1-hover:hover {  opacity: 1;}
-.cssvars .opacity07, .cssvars .opacity07-hover:hover {  opacity: 0.7;}
-.cssvars .opacity05, .cssvars .opacity05-hover:hover {  opacity: 0.5;}
-.cssvars .opacity03, .cssvars .opacity03-hover:hover {  opacity: 0.3;}
-
-.cssvars .custom-file-upload {
-  border: 0.0625rem solid var(--grey, #ccc);
-  display: inline-block;
-  padding: 0.375rem 0.75rem;
-  cursor: pointer;
-  color: var(--color-1, black);
-  background-color: transparent;
+.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
+  background-color: rgba(var(--dark-rgb), 0.1);
+  color: var(--dark, darkgray);
 }
-
-.cssvars .custom-file-upload input{
-  display: none;
-  }
-
-  .cssvars .select-link-style {
-  padding: 0;
-  margin: 0;
-  border: none;
-  border-radius: 0.1875rem;
-  overflow: hidden;
+.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
+  background-color: rgba(var(--grey-rgb), 0.1);
+  color: var(--grey, grey);
+}
+.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
+  background-color: rgba(var(--danger-rgb), 0.1);
+  color: var(--danger, red);
+}
+.cssvars .bga-success, .cssvars .bga-success-hover:hover {
+  background-color: rgba(var(--success-rgb), 0.1);
+  color: var(--success, green);
+}
+.cssvars .bga-warning, .cssvars .bga-warning-hover:hover {
+  background-color: rgba(var(--warning-rgb), 0.1);
+  color: var(--warning, black);
+}
+.cssvars .bga-luxury, .cssvars .bga-luxury-hover:hover {
+  background-color: rgba(var(--luxury-rgb), 0.1);
+  color: var(--luxury, black);
+}
+/* Background colors */
+.cssvars .bg-color-1, .cssvars .bg-color-1-hover:hover {
+  background-color: var(--color-1, black);
+}
+.cssvars .bg-color-2, .cssvars .bg-color-2-hover:hover {
+  background-color: var(--color-2, black);
+}
+.cssvars .bg-color-gradient, .cssvars .bg-color-gradient-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--color-2, black) 100%);
+}
+.cssvars .bg-success, .cssvars .bg-success-hover:hover {
+  background-color: var(--success, green);
+}
+.cssvars .bg-info, .cssvars .bg-info-hover:hover {
+  background-color: var(--info, blue);
+}
+.cssvars .bg-danger, .cssvars .bg-danger-hover:hover {
+  background-color: var(--danger, red);
+}
+.cssvars .bg-dark, .cssvars .bg-dark-hover:hover {
+  background-color: var(--dark, darkgray);
+}
+.cssvars .bg-black, .cssvars .bg-black-hover:hover {
+  background-color: var(--black, #000);
+}
+.cssvars .bg-grey, .cssvars .bg-grey-hover:hover {
+  background-color: var(--grey, grey);
+}
+.cssvars .bg-white, .cssvars .bg-white-hover:hover {
+  background-color: var(--white, white);
+}
+.cssvars .bg-body-bg, .cssvars .bg-body-bg-hover:hover {
   background-color: var(--body-bg, white);
-  display: inline;
-  line-height: var(--line-height, 1.2);
 }
-
-.cssvars .select-link-style select {
-  padding: 0.3125rem;
-  border: none;
-  box-shadow: none;
-  background-color: transparent;
-  background-image: none;
-  appearance: none;
-  text-decoration: underline;
+.cssvars .bg-light-grey, .cssvars .bg-lite-grey, .cssvars .bg-light-grey-hover:hover {
+  background-color: var(--light-grey, grey);
 }
-
-.cssvars .select-link-style select:focus {
-  outline: none;
+.cssvars .bg-warning, .cssvars .bg-warning-hover:hover {
+  background-color: var(--warning, black);
 }
-
-.cssvars .text-decoration-none-onhover:hover{
-  text-decoration:none;
+.cssvars .bg-luxury, .cssvars .bg-luxury-hover:hover {
+  background-color: var(--luxury, black);
 }
-
-.cssvars .border-light-grey{
-border-style: solid;
-border-color: #ddd;}
-
-
-.cssvars .main-nav-white a {
-  color: var(--white, white)
+/* colors */
+.cssvars .color-1, .cssvars .color-1-hover:hover {
+  color: var(--color-1, black);
 }
-.cssvars .main-nav-white a:hover {
-  border-bottom: 0.125rem solid white !important;
-  color: var(--white, white)
+.cssvars .color-2, .cssvars .color-2-hover:hover {
+  color: var(--color-2, black);
 }
-
-.cssvars .desktop-only{  display: none !important;}
-.cssvars .mobile-only{  display: inline-block;}
-
-@media (min-width: 992px) {
-  .cssvars .desktop-only{    display: inline-block !important;  }
-  .cssvars .mobile-only{    display: none;  }
+.cssvars .success, .cssvars .success-hover:hover {
+  color: var(--success, green);
 }
+.cssvars .info, .cssvars .info-hover:hover {
+  color: var(--info, blue);
+}
+.cssvars .danger, .cssvars .danger-hover:hover {
+  color: var(--danger, red);
+}
+.cssvars .dark, .cssvars .dark-hover:hover {
+  color: var(--dark, rgba(41, 40, 40, 0.707));
+}
+.cssvars .grey, .cssvars .grey-hover:hover {
+  color: var(--grey, rgba(204, 204, 204, 1));
+}
+.cssvars .light-grey, .cssvars .light-grey-hover:hover {
+  color: var(--light-grey, rgba(128, 128, 128, 0.808));
+}
+.cssvars .white, .cssvars .white-hover:hover {
+  color: var(--white, #fff);
+}
+.cssvars .black, .cssvars .black-hover:hover {
+  color: var(--black, #000);
+}
+.cssvars .warning{
+  color: var(--warning, yellow);
+}
+.cssvars .luxury{
+  color: var(--luxury, yellow);
+}
+.cssvars .color-gradient, .cssvars .color-gradient-hover:hover {
+  background: linear-gradient( to top, var(--color-1, black) 0, var(--color-2, black) 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+/* outlined */
+.cssvars .outline-color-1 {
+  border: 0.075rem solid var(--color-1, black);
+}
+.cssvars .outline-color-2 {
+  border: 0.075rem solid var(--color-2, black);
+}
+.cssvars .outline-color-dark, .cssvars .outline-dark {
+  border: 0.075rem solid var(--dark, black);
+}
+.cssvars .outline-color-grey, .cssvars .outline-grey {
+  border: 0.075rem solid var(--grey, black);
+}
+.cssvars .outline-color-info, .cssvars .outline-info {
+  border: 0.075rem solid var(--info, black);
+}
+.cssvars .outline-color-success, .cssvars .outline-success {
+  border: 0.075rem solid var(--success, black);
+}
+.cssvars .outline-color-danger, .cssvars .outline-danger {
+  border: 0.075rem solid var(--danger, black);
+}
+.cssvars .outline-light-grey {
+  border: 0.075rem solid var(--light-grey, black);
+}
+.cssvars .outline-color-white, .cssvars .outline-white {
+  border: 0.075rem solid var(--white, white);
+}
+.cssvars .outline-color-black, .cssvars .outline-black {
+  border: 0.075rem solid black;
+}
+.cssvars .outline-warning {
+  border: 0.0625rem solid var(--warning, black);
+}
+.cssvars .outline-luxury {
+  border: 0.0625rem solid var(--luxury, black);
+}
+.cssvars .invalid {
+  border: 0.075rem solid var(--danger, black);
+}
+/* Brightness utilities */
+.cssvars .brightness-150, .cssvars .brightness-150-hover:hover {
+  filter: brightness(150%);
+}
+.cssvars .brightness-100, .cssvars .brightness-100-hover:hover {
+  filter: brightness(100%);
+}
+.cssvars .brightness-66, .cssvars .brightness-66-hover:hover {
+  filter: brightness(66%);
+}
+.cssvars .brightness-33, .cssvars .brightness-33-hover:hover {
+  filter: brightness(33%);
+}
+/* round and circle */
+.cssvars .rounded-style { border-radius: var(--default-border-radius);}
+.cssvars .rounded { border-radius: 0.5rem; }
 
+.cssvars .rounded-1-4 { border-radius: 0.25rem; }
+.cssvars .rounded-1-8 { border-radius: 0.125rem; }
+.cssvars .rounded-0 { border-radius: 0; }
+.cssvars .rounded-t { border-radius: 0.5rem 0.5rem 0 0; }
+.cssvars .rounded-t-1-4 { border-radius: 0.25rem 0.25rem 0 0; }
+.cssvars .rounded-t-1-8 { border-radius: 0.125rem 0.125rem 0 0; }
+.cssvars .rounded-b { border-radius: 0 0 0.5rem 0.5rem; }
+.cssvars .rounded-b-1-4 { border-radius: 0 0 0.25rem 0.25rem; }
+.cssvars .rounded-b-1-8 { border-radius: 0 0 0.125rem 0.125rem; }
+.cssvars .rounded-r { border-radius: 0 0.5rem 0.2rem 0; }
+.cssvars .rounded-r-1-4 { border-radius: 0 0.25rem 0.25rem 0; }
+.cssvars .rounded-r-1-8 { border-radius: 0 0.125rem 0.125rem 0; }
+.cssvars .rounded-l { border-radius: 0.5rem 0 0 0.5rem; }
+.cssvars .rounded-l-1-4 { border-radius: 0.25rem 0 0 0.25rem; }
+.cssvars .rounded-l-1-8 { border-radius: 0.125rem 0 0 0.125rem; }
+
+.cssvars .circle { border-radius: 50%; }
+.cssvars .circle-t { border-radius: 50% 50% 0 0; }
+.cssvars .circle-b { border-radius: 0 0 50% 50%; }
+.cssvars .circle-r { border-radius: 50% 0 0 50%; }
+.cssvars .circle-l { border-radius: 0 50% 50% 0; }
+/* Width and height utilities */
+.cssvars .w-25 {  width: 25%;}
+.cssvars .w-33 { width: 33.3333%; }
+.cssvars .w-50 {  width: 50%;}
+.cssvars .w-66 { width: 66.6667%; }
+.cssvars .w-75 {  width: 75%;}
+.cssvars .w-100 {  width: 100%;}
+.cssvars .h-25 {  height: 25%;}
+.cssvars .h-33 { height: 33.3333%; }
+.cssvars .h-50 {  height: 50%;}
+.cssvars .h-66 { height: 66.6667%; }
+.cssvars .h-75 {  height: 75%;}
+.cssvars .h-100 {  height: 100%;}
+
+.cssvars .w-25-vw { width: 25vw; }
+.cssvars .w-33-vw { width: 33.3333vw; }
+.cssvars .w-50-vw { width: 50vw; }
+.cssvars .w-66-vw { width: 66.6667vw; }
+.cssvars .w-75-vw { width: 75vw; }
+.cssvars .w-100-vw { width: 100vw; }
+.cssvars .h-25-vh { height: 25vh; }
+.cssvars .h-33-vh { height: 33.3333vh; }
+.cssvars .h-50-vh { height: 50vh; }
+.cssvars .h-75-vh { height: 75vh; }
+.cssvars .h-66-vh { height: 66.6667vh; }
+.cssvars .h-100-vh { height: 100vh; }
+
+.cssvars .h-1rem {height: 1rem;}
+.cssvars .h-2rem {height: 2rem;}
+.cssvars .h-3rem {height: 3rem;}
+.cssvars .h-4rem {height: 4rem;}
+.cssvars .h-5rem {height: 5rem;}
+.cssvars .h-6rem {height: 6rem;}
+.cssvars .h-8rem {height: 8rem;}
+.cssvars .h-10rem {height: 10rem;}
+.cssvars .mh-1rem {max-height: 1rem;}
+.cssvars .mh-2rem {max-height: 2rem;}
+.cssvars .mh-3rem {max-height: 3rem;}
+.cssvars .mh-4rem {max-height: 4rem;}
+.cssvars .mh-5rem {max-height: 5rem;}
+.cssvars .mh-6rem {max-height: 6rem;}
+.cssvars .mh-8rem {max-height: 8rem;}
+.cssvars .mh-10rem {max-height: 10rem;}
+
+.cssvars .w-1rem {width: 1rem;}
+.cssvars .w-2rem {width: 2rem;}
+.cssvars .w-3rem {width: 3rem;}
+.cssvars .w-4rem {width: 4rem;}
+.cssvars .w-5rem {width: 5rem;}
+.cssvars .w-6rem {width: 6rem;}
+.cssvars .w-8rem {width: 8rem;}
+.cssvars .w-10rem {width: 10rem;}
+.cssvars .mw-1rem {max-width: 1rem;}
+.cssvars .mw-2rem {max-width: 2rem;}
+.cssvars .mw-3rem {max-width: 3rem;}
+.cssvars .mw-4rem {max-width: 4rem;}
+.cssvars .mw-5rem {max-width: 5rem;}
+.cssvars .mw-6rem {max-width: 6rem;}
+.cssvars .mw-8rem {max-width: 8rem;}
+.cssvars .mw-10rem {max-width: 10rem;}
+
+.cssvars .w--1rem {width: calc(100% - 1rem)}
+.cssvars .w--2rem {width: calc(100% - 2rem)}
+.cssvars .w--3rem {width: calc(100% - 3rem)}
+.cssvars .w--4rem {width: calc(100% - 4rem)}
+
+.cssvars .h--1rem {height: calc(100% - 1rem)}
+.cssvars .h--2rem {height: calc(100% - 2rem)}
+.cssvars .h--3rem {height: calc(100% - 3rem)}
+.cssvars .h--4rem {height: calc(100% - 4rem)}
+/* Text utilities */
+.cssvars .smaller { font-size: 90%; }
+.cssvars .small { font-size: 80%; }
+.cssvars .extra-small { font-size: 70%; }
+
+.cssvars .font-weight-200, .cssvars .font-thin {  font-weight: 200;}
+.cssvars .font-weight-400, .cssvars .font-regular {  font-weight: 400;}
+.cssvars .font-weight-600, .cssvars .font-semibold {  font-weight: 600;}
+.cssvars .bold {  font-weight: bold;}
+.cssvars .italic {  font-style: italic;}
+
+.cssvars .text-uppercase {  text-transform: uppercase;}
+.cssvars .text-capitalize {  text-transform: capitalize;}
+.cssvars .text-lowercase {  text-transform: lowercase;}
+.cssvars .letter-spacing-0 {  letter-spacing: 0;}
+.cssvars .letter-spacing-1 {  letter-spacing: 0.075rem;}
+.cssvars .letter-spacing-2 {  letter-spacing: 0.15rem;}
+.cssvars .letter-spacing-3 { letter-spacing: 0.3rem; }
+.cssvars .letter-spacing-4 { letter-spacing: 0.45rem; }
+.cssvars .letter-spacing-5 { letter-spacing: 0.6rem; }
+
+.cssvars .center {  text-align: center;}
+.cssvars .left {  text-align: left;}
+.cssvars .right {  text-align: right;}
+.cssvars .justified {  text-align: justify;}
+.cssvars .unselectable{user-select: none;}
 .cssvars .height-1lines{
     height:1.4rem;
     overflow:hidden;
@@ -2884,156 +2564,165 @@ border-color: #ddd;}
     height:4.8rem;
     overflow:hidden;
 }
-
-.cssvars .unselectable{user-select: none;}
-
-.cssvars .styled-checkbox {
-  width: 1.5rem;
-  height: 1.5rem;
-  accent-color: var(--color-1,blue);
-}
-
-.cssvars .styled-checkbox2 {
-  width: 1.5rem;
-  height: 1.5rem;
-  appearance: none;
-  margin-right: 0.625rem;
-  border: 0.3rem solid var(--grey,lightgray);
-  display: inline-block;
-  box-shadow: none !important;
-}
-.cssvars .styled-checkbox2:focus {
-    outline: none;
-    box-shadow: none !important;
-
-}
-.cssvars .styled-checkbox2:checked {
-  border: 0.5rem solid var(--color-1,lightgray);
-  text-align: center;
-  line-height: var(--line-height, 1rem);
-  transform-origin: bottom left;
-}
-
-.cssvars .mx-auto{
-margin-right:auto;
-margin-left:auto;
-}
-.cssvars .my-auto{
-margin-top:auto;
-margin-bottom:auto;
-}
-
-.cssvars .tooltip {
-position: relative;
-display: inline-block;
-border-bottom: 0.0625rem dotted black;
-}
-
-.cssvars .tooltip .tooltip-body {
-visibility: hidden;
-width: 7.5rem;
-text-align: center;
-padding: 0.3125rem 0;
-position: absolute;
-z-index: 1;
-}
-
-.cssvars .tooltip2x {
-width: 15rem !important;
-}
-.cssvars .tooltip3x {
-width: 22.5rem !important;
-}
-.cssvars .tooltip4x {
-width: 30rem !important;
-}
-
-.cssvars .tooltip:hover .tooltip-body {
-visibility: visible;
-}
-
-.cssvars .tooltip-top {
-bottom: 100%;
-left: 50%;
-margin-left: -3.75rem;
-}
-.cssvars .tooltip-bottom {
-top: 100%;
-left: 50%;
-margin-left: -3.75rem;
-}
-
-.cssvars .tooltip-left {
-top: -0.3125rem;
-right: 105%;
-}
-
-.cssvars .tooltip-right {
-top: -0.3125rem;
-left: 105%;
-}
-
-.cssvars .disabled {
-  pointer-events: none;
-}
-
-.cssvars progress {
-  accent-color: var(--color-1);
-  appearance: none;
-  border: none;
-}
-
-.cssvars ::-webkit-progress-bar {
-  background-color: var(--grey);
-}
-
-.cssvars ::-webkit-progress-value {
-  background-color: var(--color-1);
-}
-
-.cssvars ::-moz-progress-bar {
-  background-color: var(--color-1);
-}
-
-.cssvars .notification-panel{
-  z-index: 100;
-  position: fixed;
-  top:5rem;
-  right: 1rem;
-  display: none;
-  width: 22rem;
-  background-color: var(--body-bg, white);
-}
-
-.cssvars .table-layout-fixed {
-  table-layout: fixed;
+.cssvars .content-in-middle {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
 }
 .cssvars .word-wrap-break {
   word-wrap:break-word;
 }
 
-.cssvars .audio-responsive {
-  max-height: 100%;
-  max-width: 100%;
-  object-fit: contain;
-}
+.cssvars .old-info {  text-decoration: line-through;}
+.cssvars .overline {  text-decoration: overline;}
+.cssvars .underline {  text-decoration: underline;}
+.cssvars .decoration-none {  text-decoration: none;}
+.cssvars .hover-underline:hover {  text-decoration: underline;}
+.cssvars .hover-white:hover {  background-color: var(--white, black);}
+.cssvars .hover-grey:hover {  background-color: var(--grey, black);}
+.cssvars .line-height-1 {  line-height: 1;}
+.cssvars .line-height-17 {  line-height: 1.7;}
+.cssvars .line-height-2 {  line-height: 2;}
+/* Border */
+.cssvars .border { border-style: solid; border-width: 0.0625rem; }
+.cssvars .border-style { border: var(--default-border-radius);}
 
-.cssvars input:focus, .cssvars select:focus, .cssvars textarea:focus {
-  border-color: var(--color-1, black);
-  outline: none;
-}
+.cssvars .border-0 { border-width: 0; }
+.cssvars .border { border-width: 0.0625rem; }
+.cssvars .border-2 { border-width: 0.125rem; }
+.cssvars .border-4 { border-width: 0.25rem; }
+.cssvars .border-8 { border-width: 0.5rem; }
 
-.cssvars .resize-grip {
-  top: 0;
-  right: 0;
-  bottom: 0;
-  width: 7px;
-  position: absolute;
-  cursor: col-resize;
-}
-.cssvars .resize-grip:hover {
-  background-color: rgba(var(--info-rgb), 0.1);
-}
+.cssvars .border-t { border-top-width: 0.0625rem; }
+.cssvars .border-t-0 { border-top-width: 0; }
+.cssvars .border-t-2 { border-top-width: 0.125rem; }
+.cssvars .border-t-4 { border-top-width: 0.25rem; }
+.cssvars .border-t-8 { border-top-width: 0.5rem; }
+.cssvars .border-r { border-right-width: 0.0625rem; }
+.cssvars .border-r-0 { border-right-width: 0; }
+.cssvars .border-r-2 { border-right-width: 0.125rem; }
+.cssvars .border-r-4 { border-right-width: 0.25rem; }
+.cssvars .border-r-8 { border-right-width: 0.5rem; }
+.cssvars .border-b { border-bottom-width: 0.0625rem; }
+.cssvars .border-b-0 { border-bottom-width: 0; }
+.cssvars .border-b-2 { border-bottom-width: 0.125rem; }
+.cssvars .border-b-4 { border-bottom-width: 0.25rem; }
+.cssvars .border-b-8 { border-bottom-width: 0.5rem; }
+.cssvars .border-l { border-left-width: 0.0625rem; }
+.cssvars .border-l-0 { border-left-width: 0; }
+.cssvars .border-l-2 { border-left-width: 0.125rem; }
+.cssvars .border-l-4 { border-left-width: 0.25rem; }
+.cssvars .border-l-8 { border-left-width: 0.5rem; }
+.cssvars .border-h { border-left-width: 0.0625rem; border-right-width: 0.0625rem; }
+.cssvars .border-h-0 { border-left-width: 0; border-right-width: 0; }
+.cssvars .border-h-2 { border-left-width: 0.125rem; border-right-width: 0.125rem; }
+.cssvars .border-h-4 { border-left-width: 0.25rem; border-right-width: 0.25rem; }
+.cssvars .border-h-8 { border-left-width: 0.5rem; border-right-width: 0.5rem; }
+.cssvars .border-v { border-top-width: 0.0625rem; border-bottom-width: 0.0625rem; }
+.cssvars .border-v-0 { border-top-width: 0; border-bottom-width: 0; }
+.cssvars .border-v-2 { border-top-width: 0.125rem; border-bottom-width: 0.125rem; }
+.cssvars .border-v-4 { border-top-width: 0.25rem; border-bottom-width: 0.25rem; }
+.cssvars .border-v-8 { border-top-width: 0.5rem; border-bottom-width: 0.5rem; }
 
+.cssvars .border-solid { border-style: solid; }
+.cssvars .border-dashed { border-style: dashed; }
+.cssvars .border-dotted { border-style: dotted; }
+.cssvars .border-double { border-style: double; }
+.cssvars .border-none { border-style: none; }
+
+.cssvars .border-color-1 { border-color: var(--color-1, black); }
+.cssvars .border-color-2 { border-color: var(--color-2, black); }
+.cssvars .border-info { border-color: var(--info, blue); }
+.cssvars .border-success { border-color: var(--success, green); }
+.cssvars .border-danger { border-color: var(--danger, red); }
+.cssvars .border-dark { border-color: var(--dark, darkgray); }
+.cssvars .border-grey { border-color: var(--grey, grey); }
+.cssvars .border-light-grey { border-color: var(--light-grey, grey); }
+.cssvars .border-warning { border-color: var(--warning, black); }
+.cssvars .border-luxury { border-color: var(--luxury, black); }
+.cssvars .border-white { border-color: var(--white, white); }
+.cssvars .border-black { border-color: var(--black, black); }
+.cssvars .border-a-color-1 { border-color: rgba(var(--color-1-rgb), 0.2); }
+.cssvars .border-a-color-2 { border-color: rgba(var(--color-2-rgb), 0.2); }
+.cssvars .border-a-info { border-color: rgba(var(--info-rgb), 0.2); }
+.cssvars .border-a-success { border-color: rgba(var(--success-rgb), 0.2); }
+.cssvars .border-a-danger { border-color: rgba(var(--danger-rgb), 0.2); }
+.cssvars .border-a-dark { border-color: rgba(var(--dark-rgb), 0.2); }
+.cssvars .border-a-grey { border-color: rgba(var(--grey-rgb), 0.2); }
+.cssvars .border-a-light-grey { border-color: rgba(var(--light-grey-rgb), 0.2); }
+.cssvars .border-a-warning { border-color: rgba(var(--warning-rgb), 0.2);    }
+.cssvars .border-a-white { border-color: rgba(var(--white-rgb), 0.2); }
+.cssvars .border-a-black { border-color: rgba(var(--black-rgb), 0.2); }
+/* Display */
+.cssvars .d-none { display: none;}
+.cssvars .d-inline { display: inline;}
+.cssvars .d-inline-block { display: inline-block;}
+.cssvars .d-block { display: block;}
+.cssvars .d-table { display: table;}
+.cssvars .d-table-row {  display: table-row;}
+.cssvars .d-table-cell {  display: table-cell;}
+.cssvars .d-flex {  display: flex;}
+.cssvars .d-inline-flex {  display: inline-flex;}
+.cssvars .flex-row {  flex-direction: row;}
+.cssvars .flex-row-reverse {  flex-direction: row-reverse;}
+.cssvars .flex-column {  flex-direction: column;}
+.cssvars .flex-column-reverse {  flex-direction: column-reverse;}
+.cssvars .flex-wrap {  flex-wrap: wrap;}
+.cssvars .flex-nowrap {  flex-wrap: nowrap;}
+.cssvars .flex-wrap-reverse {  flex-wrap: wrap-reverse;}
+.cssvars .flex-fill {  flex: 1 1 auto;}
+.cssvars .flex-grow-0 {  flex-grow: 0;}
+.cssvars .flex-grow-1 {  flex-grow: 1;}
+.cssvars .flex-shrink-0 {  flex-shrink: 0;}
+.cssvars .flex-shrink-1 {  flex-shrink: 1;}
+.cssvars .justify-content-start {  justify-content: flex-start;}
+.cssvars .justify-content-end {  justify-content: flex-end;}
+.cssvars .justify-content-center {  justify-content: center;}
+.cssvars .justify-content-between {  justify-content: space-between;}
+.cssvars .justify-content-around {  justify-content: space-around;}
+.cssvars .align-items-start {  align-items: flex-start;}
+.cssvars .align-items-end {  align-items: flex-end;}
+.cssvars .align-items-center {  align-items: center;}
+.cssvars .align-items-baseline {  align-items: baseline;}
+.cssvars .align-items-stretch {  align-items: stretch;}
+.cssvars .align-content-start {  align-content: flex-start;}
+.cssvars .align-content-end {  align-content: flex-end;}
+.cssvars .align-content-center {  align-content: center;}
+.cssvars .align-content-between {  align-content: space-between;}
+.cssvars .align-content-around {  align-content: space-around;}
+.cssvars .align-content-stretch {  align-content: stretch;}
+.cssvars .align-self-auto {  align-self: auto;}
+.cssvars .align-self-start {  align-self: flex-start;}
+.cssvars .align-self-end {  align-self: flex-end;}
+.cssvars .align-self-center {  align-self: center;}
+.cssvars .align-self-baseline {  align-self: baseline;}
+.cssvars .align-self-stretch {  align-self: stretch;}
+/* float, Overflow and z-index */
+.cssvars .float-right {  float: right;}
+.cssvars .float-left {  float: left;}
+.cssvars .float-none {  float: none;}
+.cssvars .clear-right {  clear: right;}
+.cssvars .clear-left {  clear: left;}
+.cssvars .clear-both {  clear: both;}
+.cssvars .clear-fix, .cssvars .overflow-auto {  overflow: auto;}
+.cssvars .auto-overflow-x {  overflow-x: auto;}
+.cssvars .overflow-y-auto {overflow-y: auto;}
+.cssvars .overflow-y-scroll {overflow-y: scroll;}
+.cssvars .overflow-x-scroll {overflow-x: scroll;}
+.cssvars .overflow-hidden {overflow: hidden;}
+.cssvars .overflow-visible {overflow: visible;}
 .cssvars .scrollbar-none {scrollbar-width: none;}
 .cssvars .scrollbar-thin {  scrollbar-width: thin;}
+.cssvars .z-index-1 {z-index: 1;}
+.cssvars .z-index-2 {z-index: 2;}
+.cssvars .z-index-3 {z-index: 2;}
+.cssvars .z-index-10 {z-index: 10;}
+.cssvars .z-index-100 {z-index: 100;}
+
+.cssvars .desktop-only{  display: none !important;}
+.cssvars .mobile-only{  display: inline-block;}
+
+@media (min-width: 992px) {
+  .cssvars .desktop-only{    display: inline-block !important;  }
+  .cssvars .mobile-only{    display: none;  }
+}
