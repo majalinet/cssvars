@@ -2432,8 +2432,8 @@ left: 105%;
   filter: brightness(33%);
 }
 /* round and circle */
-.cssvars .rounded-style { border-radius: var(--default-border-radius);}
 .cssvars .rounded { border-radius: 0.5rem; }
+.cssvars .rounded-style { border-radius: var(--default-border-radius);}
 
 .cssvars .rounded-1-4 { border-radius: 0.25rem; }
 .cssvars .rounded-1-8 { border-radius: 0.125rem; }
@@ -2705,19 +2705,23 @@ left: 105%;
 .cssvars .clear-left {  clear: left;}
 .cssvars .clear-both {  clear: both;}
 .cssvars .clear-fix, .cssvars .overflow-auto {  overflow: auto;}
-.cssvars .auto-overflow-x {  overflow-x: auto;}
+.cssvars .overflow-x-auto {  overflow-x: auto;}
+.cssvars .overflow-x-scroll {overflow-x: scroll;}
+.cssvars .overflow-x-hidden {overflow-x: hidden;}
 .cssvars .overflow-y-auto {overflow-y: auto;}
 .cssvars .overflow-y-scroll {overflow-y: scroll;}
-.cssvars .overflow-x-scroll {overflow-x: scroll;}
+.cssvars .overflow-y-hidden {overflow-y: hidden;}
 .cssvars .overflow-hidden {overflow: hidden;}
 .cssvars .overflow-visible {overflow: visible;}
 .cssvars .scrollbar-none {scrollbar-width: none;}
 .cssvars .scrollbar-thin {  scrollbar-width: thin;}
-.cssvars .z-index-1 {z-index: 1;}
-.cssvars .z-index-2 {z-index: 2;}
-.cssvars .z-index-3 {z-index: 2;}
-.cssvars .z-index-10 {z-index: 10;}
-.cssvars .z-index-100 {z-index: 100;}
+.cssvars .z--1 {z-index: -1;}
+.cssvars .z-0 {z-index: 0;}
+.cssvars .z-1 {z-index: 1;}
+.cssvars .z-2 {z-index: 2;}
+.cssvars .z-3 {z-index: 3;}
+.cssvars .z-10 {z-index: 10;}
+.cssvars .z-100 {z-index: 100;}
 
 .cssvars .desktop-only{  display: none !important;}
 .cssvars .mobile-only{  display: inline-block;}
