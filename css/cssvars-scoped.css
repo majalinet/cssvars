@@ -1731,7 +1731,6 @@ height: 2.5rem;
 .cssvars .main-menu {
   width: 100%;
   margin: 0px auto;
-  display: table;
   position: relative;
 }
 .cssvars .main-nav {
@@ -1760,8 +1759,6 @@ height: 2.5rem;
   padding-right: 0;
 }
 .cssvars .nav ul li a, .cssvars .nav-stable ul li a {
-  color: var(--color-1, black);
-  font-size: 1.1rem;
   padding: 1rem;
   display: inline-block;
 }
@@ -1826,12 +1823,8 @@ height: 2.5rem;
   }
   .cssvars .nav {
     display: none;
-    position: absolute;
-    right: 0;
-    top: 4rem;
     background-color: var(--color-1, black);
-    padding: 0;
-    z-index: 99;
+    width: 100%;
   }
   .cssvars .nav ul {
     width: auto;
@@ -2527,9 +2520,12 @@ left: 105%;
 .cssvars .h--3rem {height: calc(100% - 3rem)}
 .cssvars .h--4rem {height: calc(100% - 4rem)}
 /* Text utilities */
-.cssvars .smaller { font-size: 90%; }
-.cssvars .small { font-size: 80%; }
-.cssvars .extra-small { font-size: 70%; }
+.double { font-size: 200%; }
+.large { font-size: 150%; }
+.larger { font-size: 125%; }
+.smaller { font-size: 85%; }
+.small { font-size: 75%; }
+.half { font-size: 50%; }
 
 .cssvars .font-weight-200, .cssvars .font-thin {  font-weight: 200;}
 .cssvars .font-weight-400, .cssvars .font-regular {  font-weight: 400;}

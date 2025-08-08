@@ -1731,7 +1731,6 @@ input:focus, select:focus, textarea:focus {
 .main-menu {
   width: 100%;
   margin: 0px auto;
-  display: table;
   position: relative;
 }
 .main-nav {
@@ -1760,8 +1759,6 @@ input:focus, select:focus, textarea:focus {
   padding-right: 0;
 }
 .nav ul li a, .nav-stable ul li a {
-  color: var(--color-1, black);
-  font-size: 1.1rem;
   padding: 1rem;
   display: inline-block;
 }
@@ -1826,15 +1823,12 @@ input:focus, select:focus, textarea:focus {
   }
   .nav {
     display: none;
-    position: absolute;
-    right: 0;
-    top: 4rem;
     background-color: var(--color-1, black);
-    padding: 0;
-    z-index: 99;
+    width: 100%;
   }
   .nav ul {
     width: auto;
+    box-shadow: none;
   }
   .nav ul li {
     float: none;
@@ -2527,9 +2521,12 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 .h--3rem {height: calc(100% - 3rem)}
 .h--4rem {height: calc(100% - 4rem)}
 /* Text utilities */
-.smaller { font-size: 90%; }
-.small { font-size: 80%; }
-.extra-small { font-size: 70%; }
+.double { font-size: 200%; }
+.large { font-size: 150%; }
+.larger { font-size: 125%; }
+.smaller { font-size: 85%; }
+.small { font-size: 75%; }
+.half { font-size: 50%; }
 
 .font-weight-200, .font-thin { font-weight: 200; }
 .font-weight-400, .font-regular { font-weight: 400; }
