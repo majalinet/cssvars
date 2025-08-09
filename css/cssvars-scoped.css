@@ -812,7 +812,7 @@ height: 2.5rem;
   fill: var(--body-bg, white);
 }
 .cssvars .icon-black-fill {
-  fill: black;
+  fill: var(--black, black);
 }
 .cssvars .icon-dark-bg {
   background-color: var(--dark, rgb(72, 72, 72));
@@ -1127,53 +1127,30 @@ height: 2.5rem;
 }
 /*Carousel*/
 .cssvars .carousel {
-  text-align: center;
-  padding: 1em 0;
-  height: auto;
-  width: 100%;
-  margin: auto;
   position: relative;
   overflow: hidden;
 }
 .cssvars .carousel .slides {
-  text-align: center;
-  width: 400%;
+  width: 500%;
   left: 0;
   padding-left: 0;
-  padding-top: 0.2em;
-  overflow: hidden;
   list-style: none;
   position: relative;
   transition: transform 0.5s;
 }
 .cssvars .carousel .slides li {
-  width: 25%;
+  width: 20%;
+  height: 100%;
   position: relative;
   float: left;
-}
-.cssvars .carousel-small-img li img {
-  vertical-align: middle;
-}
-.cssvars .carousel li span.author {
-  margin-top: 0.5em;
-  font-size: 1.2em;
-  color: var(--dark, #777777);
-  display: block;
 }
 .cssvars .carousel .slidesNavigation {
   display: block;
   list-style: none;
-  text-align: center;
   bottom: 1rem;
   position: absolute;
-  width: 8rem;
-  /*This width  is the addition of the width of all the navigations dots - So in this case is   104 because the navigation dots are 26px (width:10px and 6px margin left + 6 px margin right) and there are 4 dots so 4x26=104 */
   left: 50%;
   margin-left: -3.25rem;
-  /*adjusting the centering by applying a negative margin of half of the width*/
-}
-.cssvars .carousel .slidesNavigation-2 {
-  left: 53%;
 }
 .cssvars .carousel input {
   display: none;
@@ -1181,31 +1158,22 @@ height: 2.5rem;
 .cssvars .carousel .slidesNavigation label {
   float: left;
   margin: 0.375rem;
-  display: block;
   height: 1.25rem;
   width: 1.25rem;
   border-radius: 50%;
-  border: solid 0.0625rem var(--info, #2980b9);
-  font-size: 0;
-}
-/* You have to repeat this with each slide, 100/slides-num*/
-.cssvars .radio-1:checked~.slides {
-  transform: translateX(0%);
-}
-.cssvars .radio-2:checked~.slides {
-  transform: translateX(-25%);
-}
-.cssvars .radio-3:checked~.slides {
-  transform: translateX(-50%);
-}
-.cssvars .radio-4:checked~.slides {
-  transform: translateX(-75%);
+  border: solid 0.0625rem var(--grey, #2980b9);
 }
 .cssvars .carousel .slidesNavigation label:hover {
   cursor: pointer;
 }
-/* You have to repeat this with each slide/dot */
-.cssvars .carousel .radio-1:checked~.slidesNavigation label#dotForRadio-1, .cssvars .carousel .radio-2:checked~.slidesNavigation label#dotForRadio-2, .cssvars .carousel .radio-3:checked~.slidesNavigation label#dotForRadio-3, .cssvars .carousel .radio-4:checked~.slidesNavigation label#dotForRadio-4 {
+.cssvars .radio-1:checked~.slides {transform: translateX(0%);}
+.cssvars .radio-2:checked~.slides {transform: translateX(-20%);}
+.cssvars .radio-3:checked~.slides {transform: translateX(-40%);}
+.cssvars .radio-4:checked~.slides {transform: translateX(-60%);}
+.cssvars .radio-5:checked~.slides {transform: translateX(-80%);}
+
+.cssvars .carousel .radio-1:checked~.slidesNavigation label#dotForRadio-1, .cssvars .carousel .radio-2:checked~.slidesNavigation label#dotForRadio-2, .cssvars .carousel .radio-3:checked~.slidesNavigation label#dotForRadio-3, 
+.cssvars .carousel .radio-4:checked~.slidesNavigation label#dotForRadio-4, .cssvars .carousel .radio-5:checked~.slidesNavigation label#dotForRadio-5 {
   background: var(--color-1, black);
 }
 /* Gallery Box*/
