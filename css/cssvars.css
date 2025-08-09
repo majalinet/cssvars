@@ -900,10 +900,9 @@ button, .button, .accordion .accordionBlock > label, .tabs > label {
   font-size: 1.75rem;
   font-weight: 200;
 }
-button:hover {
-  background-color: var(--color-1, black);
-  color: rgba(var(--white-rgb, white), 1);
-  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24));
+button:hover, .button:hover {
+  text-decoration: none;
+  filter: brightness(90%);
 }
 .button-w-25 {  width: 25%;}
 .button-w-50 {  width: 50%;}
@@ -2418,6 +2417,12 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 }
 .brightness-100, .brightness-100-hover:hover {
   filter: brightness(100%);
+}
+.brightness-90, .brightness-90-hover:hover {
+  filter: brightness(90%);
+}
+.brightness-80, .brightness-80-hover:hover {
+  filter: brightness(80%);
 }
 .brightness-66, .brightness-66-hover:hover {
   filter: brightness(66%);

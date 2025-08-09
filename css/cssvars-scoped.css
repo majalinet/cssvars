@@ -900,10 +900,9 @@ height: 2.5rem;
   font-size: 1.75rem;
   font-weight: 200;
 }
-.cssvars button:hover {
-  background-color: var(--color-1, black);
-  color: var(--body-bg, white);
-  box-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.125rem 0.25rem rgba(0, 0, 0, 0.24));
+.cssvars button:hover, .cssvars .button:hover {
+  text-decoration: none;
+  filter: brightness(90%);
 }
 .cssvars .button-w-25 {  width: 25%;}
 .cssvars .button-w-50 {  width: 50%;}
@@ -2412,16 +2411,22 @@ left: 105%;
   border: 0.075rem solid var(--danger, black);
 }
 /* Brightness utilities */
-.cssvars .brightness-150, .cssvars .brightness-150-hover:hover {
+.cssvars .brightness-150, .brightness-150-hover:hover {
   filter: brightness(150%);
 }
-.cssvars .brightness-100, .cssvars .brightness-100-hover:hover {
+.cssvars .brightness-100, .brightness-100-hover:hover {
   filter: brightness(100%);
 }
-.cssvars .brightness-66, .cssvars .brightness-66-hover:hover {
+.cssvars .brightness-90, .brightness-90-hover:hover {
+  filter: brightness(90%);
+}
+.cssvars .brightness-80, .brightness-80-hover:hover {
+  filter: brightness(80%);
+}
+.cssvars .brightness-66, .brightness-66-hover:hover {
   filter: brightness(66%);
 }
-.cssvars .brightness-33, .cssvars .brightness-33-hover:hover {
+.cssvars .brightness-33, .brightness-33-hover:hover {
   filter: brightness(33%);
 }
 /* round and circle */
