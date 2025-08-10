@@ -1704,13 +1704,6 @@ height: 2.5rem;
   width: 100%;
   display: table;
 }
-.cssvars .logo {
-  height: auto;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  margin: auto;
-}
 .cssvars .nav, .cssvars .nav-stable {
   width: auto;
   float: right;
@@ -1728,9 +1721,6 @@ height: 2.5rem;
 .cssvars .nav ul li a, .cssvars .nav-stable ul li a {
   padding: 1rem;
   display: inline-block;
-}
-.cssvars .nav ul li a:hover, .cssvars .nav-stable ul li a:hover {
-  color: var(--dark, grey);
 }
 .cssvars .nav ul li:hover, .cssvars .nav-stable ul li:hover{
   border-color: var(--white, white);
@@ -1766,11 +1756,7 @@ height: 2.5rem;
 @media only screen and (max-width: 980px) {
   .cssvars .main-nav {
     padding: 1.25rem 0;
-  }
-  .cssvars .logo {
-    padding: 0;
-  }
-  .cssvars .main-menu input[type="checkbox"] {
+  } .cssvars .main-menu input[type="checkbox"] {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -1814,9 +1800,6 @@ height: 2.5rem;
   .cssvars .main-menu label {
     padding: 0.3125rem 0;
   }
-  .cssvars .logo {
-    font-size: 1.8rem;
-  }
   .cssvars .nav {
     top: 4rem;
   }
@@ -1841,23 +1824,27 @@ height: 2.5rem;
 }
 /* Breadcrumb */
 .cssvars .breadcrumb {
-  padding: 0;
-  font-size: 0.8rem;
-  display: flex;
-  flex-wrap: wrap;
-  list-style: none;
+  display: inline-flex;
   border-radius: 0.25rem;
-  margin: 1rem 0;
 }
 .cssvars .breadcrumb li {
-  display: flex;
-  flex-wrap: wrap;
   list-style: none;
-  border-radius: 0.25rem;
-  margin: 0 0.25rem;
+  margin: 0 0.5rem;
+  align-items: center;
+  text-decoration: none;
+}
+.cssvars .breadcrumb li a:hover {
+  text-decoration: none;
 }
 .cssvars .breadcrumb li a::after {
-  content: ">";
+  content: " >";
+  margin-left: 0.5rem;
+}
+.cssvars .breadcrumb_back_slash li a::after {
+  content: " /";
+}
+.cssvars .breadcrumb_arrow li a::after {
+  content: " ➔";
 }
 .cssvars .custom-file-upload {
   border: 0.0625rem solid var(--grey, #ccc);

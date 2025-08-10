@@ -1,5 +1,5 @@
 // Header, Hero, breadcrumb, Content, Feature, Contact, CTA, Footer, Blog, E-commerce, Gallery, List, Navigation, 
-// Step, Team, Pricing, Product, Section, Testimonial, Video, Statistic, portfolio,
+// Step, Team, Pricing, Product, Testimonial, Video, Statistic, portfolio,
 
 const blocks = [
     {
