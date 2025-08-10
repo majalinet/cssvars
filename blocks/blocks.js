@@ -406,7 +406,65 @@ const blocks = [
 </div>`
             },
         ]
-    }
+    },
+    {
+        name: "Breadcrumb",
+        items: [
+            {
+                title: "Breadcrumb 1",
+                description: "Description for Breadcrumb 1",
+                code: `
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb p0">
+    <li class="breadcrumb-item"><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg></a></li>
+    <li class="breadcrumb-item"><a href="#">Category</a></li>
+    <li class="breadcrumb-item bold" aria-current="page">Page</li>
+  </ol>
+</nav>
+`
+            },
+            {
+                title: "Breadcrumb 2",
+                description: "Description for Breadcrumb 2",
+                code: `
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb shadow-3 p-1-8">
+    <li class="breadcrumb-item"><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg> Home</a></li>
+    <li class="breadcrumb-item"><a href="#">Category</a></li>
+    <li class="breadcrumb-item bold" aria-current="page">Page</li>
+  </ol>
+</nav>
+`
+            },
+            {
+                title: "Breadcrumb 3",
+                description: "Description for Breadcrumb 3",
+                code: `
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb breadcrumb_back_slash bga-color-1 p-1-8">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#"> Category</a></li>
+    <li class="breadcrumb-item bold" aria-current="page">Page</li>
+  </ol>
+</nav>
+`
+            },
+            {
+                title: "Breadcrumb 4",
+                description: "Description for Breadcrumb 4",
+                code: `
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb breadcrumb_arrow p-1-8 border border-color-1">
+    <li class="breadcrumb-item"><a href="#">Home</a></li>
+    <li class="breadcrumb-item"><a href="#"> Category</a></li>
+    <li class="breadcrumb-item bold" aria-current="page">Page</li>
+  </ol>
+</nav>
+`
+            },
+        ]
+    },
+
 ]
 
 const blockList = document.getElementById("blocksList")
