@@ -880,7 +880,7 @@ blockquote {
   border-color: var(--color-1, black);
 }
 /* Buttons */
-button, .button, .accordion .accordionBlock > label, .tabs > label {
+button, .button, .accordion-label, .tabs > label {
   background-color: var(--color-1);
   border: none;
   color: rgba(var(--white-rgb, white), 1);
@@ -1552,47 +1552,26 @@ input:focus, select:focus, textarea:focus {
   width: 100%;
   margin: auto;
 }
-.accordion input[type="radio"] {
-  display: none;
-}
-.accordion input[type="radio"]~.accordionContent {
-  display: none;
-}
-.accordion input[type="radio"]:checked~.accordionContent {
-  display: block;
-}
-.accordion .accordionBlock {
+.accordion input[type="radio"] { display: none; }
+.accordion input[type="radio"]~.accordion-content { display: none; }
+.accordion input[type="radio"]:checked~.accordion-content { display: block; }
+.accordion-block {
   margin-bottom: 0.3125rem;
-  display: block;
+  clear: both;
+}
+.accordion-label {
   width: 100%;
-  float: left;
+  cursor: pointer;
 }
-.accordion .accordionBlock .accordionContent {
-  border: 0.0625rem solid #eee;
-  border-top: 0 none;
-  width: 100%;
-  float: left;
-  padding: 0.625rem;
-  font-weight: 400;
-}
-.accordion .accordionBlock label {
-  width: 100%;
-  margin-bottom: 0;
-  float: left;
-}
-.accordion input[type="radio"]:checked~label {
-  background-color: var(--body-bg, white);
-  color: var(--color-1, black);
-  border: 0.0625rem solid var(--color-1, black);
-}
-.accordion .accordionBlock .accordionContent {
+.accordion-content {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-weight: var(--font-weight, 200);
 }
-.accordionContent ul{
-  padding-left: 0;
+.accordion input[type="radio"]:checked ~ .accordion-label {
+  background-color: var(--body-bg, white);
+  color: var(--body-color, black);
+  font-weight: 600;
 }
 @keyframes fadeInAccordion {
   0% {
@@ -2203,6 +2182,9 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 }
 .shadow-color-4, .shadow-color-4-hover:hover {
   box-shadow: 0 0.625 1.25rem rgba(var(--color-1-rgb, black)), 0 0.625 0.625 rgba(var(--color-1-rgb, black));
+}
+.shadow-none, .shadow-none_hover:hover {
+  box-shadow: none;
 }
 /* Backgrounds with alpha */
 .bga-color-1, .bga-color-1-hover:hover {

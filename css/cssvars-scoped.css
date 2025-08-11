@@ -880,7 +880,7 @@ height: 2.5rem;
   border-color: var(--color-1, black);
 }
 /* Buttons */
-.cssvars button, .cssvars .button, .cssvars .accordion .accordionBlock > label, .cssvars .tabs > label {
+.cssvars button, .cssvars .button, .cssvars  .accordion-label, .cssvars .tabs > label {
   background-color: var(--color-1);
   border: none;
   color: rgba(var(--white-rgb, white), 1);
@@ -1548,51 +1548,30 @@ height: 2.5rem;
   }
 }
 /* Accordion */
-.cssvars .accordion {
+.accordion {
   width: 100%;
   margin: auto;
 }
-.cssvars .accordion input[type="radio"] {
-  display: none;
-}
-.cssvars .accordion input[type="radio"]~.accordionContent {
-  display: none;
-}
-.cssvars .accordion input[type="radio"]:checked~.accordionContent {
-  display: block;
-}
-.cssvars .accordion .accordionBlock {
+.cssvars .accordion input[type="radio"] { display: none; }
+.cssvars .accordion input[type="radio"]~.accordion-content { display: none; }
+.cssvars .accordion input[type="radio"]:checked~.accordion-content { display: block; }
+.cssvars .accordion-block {
   margin-bottom: 0.3125rem;
-  display: block;
+  clear: both;
+}
+.cssvars .accordion-label {
   width: 100%;
-  float: left;
+  cursor: pointer;
 }
-.cssvars .accordion .accordionBlock .accordionContent {
-  border: 0.0625rem solid #eee;
-  border-top: 0 none;
-  width: 100%;
-  float: left;
-  padding: 0.625rem;
-  font-weight: 400;
-}
-.cssvars .accordion .accordionBlock label {
-  width: 100%;
-  margin-bottom: 0;
-  float: left;
-}
-.cssvars .accordion input[type="radio"]:checked~label {
-  background-color: var(--body-bg, white);
-  color: var(--color-1, black);
-  border: 0.0625rem solid var(--color-1, black);
-}
-.cssvars .accordion .accordionBlock .accordionContent {
+.cssvars .accordion-content {
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
-  font-weight: var(--font-weight, 200);
 }
-.cssvars .accordionContent ul{
-  padding-left: 0;
+.cssvars .accordion input[type="radio"]:checked ~ .accordion-label {
+  background-color: var(--body-bg, white);
+  color: var(--body-color, black);
+  font-weight: 600;
 }
 @keyframes fadeInAccordion {
   0% {
@@ -2201,6 +2180,9 @@ left: 105%;
 }
 .cssvars .shadow-color-4, .cssvars .shadow-color-4-hover:hover {
   box-shadow: 0 0.625 1.25rem rgba(var(--color-1-rgb, black)), 0 0.625 0.625 rgba(var(--color-1-rgb, black));
+}
+.shadow-none, .shadow-none_hover:hover {
+  box-shadow: none;
 }
 /* Backgrounds with alpha */
 .cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
