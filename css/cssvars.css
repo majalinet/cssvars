@@ -6,8 +6,7 @@
 * Copyright 2018-2025 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
-
- @-ms-viewport {
+@-ms-viewport {
   width: device-width;
 }
 /* Variables*/
@@ -107,13 +106,11 @@ html {
   box-sizing: border-box;
   font-size: var(--font-size-mobile, 12px);
 }
-
 @media (min-width: 992px) {
   html {
     font-size: var(--font-size-desktop, 16px);
   }
 }
-
 body {
   margin: 0;
   width: 100%;
@@ -125,61 +122,50 @@ body {
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
 }
-
 ol, ul, dl {
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: left;
 }
-
 ol ol, ul ul, ol ul, ul ol {  margin-bottom: 0;}
 dt {  font-weight: var(--font-weight-heading, 400);}
 dd {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-
 a {
   color: var(--color-1, black);
   text-decoration: none;
   background-color: transparent;
 }
-
 a:hover {
   color: var(--grey, grey);
   text-decoration: underline;
 }
-
 figure {
   margin: 0 0 1rem;
 }
-
 img {
   vertical-align: middle;
   border-style: none;
 }
-
 svg {
   overflow: hidden;
   vertical-align: middle;
 }
-
 table {
   border-collapse: collapse;
 }
-
 hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
-
 /* Typography */
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
@@ -187,26 +173,22 @@ h1, .h1, h2, .h2, h3, .h3, h4, .h4, h5, .h5, h6 {
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
 }
-
 h1, .h1 { font-size: 2.7rem; }
 h2, .h2 { font-size: 2.2rem; }
 h3, .h3 { font-size: 2rem; }
 h4, .h4 { font-size: 1.7rem; }
 h5, .h5 { font-size: 1.4rem; }
 h6, .h6 { font-size: 1.2rem; }
-
 .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
-
 .display-1 { font-size: 5rem; }
 .display-2 { font-size: 4rem; }
 .display-3 { font-size: 3rem; }
 .display-4 { font-size: 2.5rem; }
 .display-5 { font-size: 2rem; }
 .display-6 { font-size: 1.5rem; }
-
 p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -328,7 +310,6 @@ pre code {
 .horizontal-tb { --writing-mode: horizontal-tb; }
 .vertical-rl   { --writing-mode: vertical-rl; }
 .vertical-lr   { --writing-mode: vertical-lr; }
-
 .drop-caps {
   float: left;
   font-size: 4.7rem;
@@ -338,7 +319,6 @@ pre code {
   padding-left: 0.2rem;
   color: var(--color-1, black);
 }
-
 .par-2-cols { column-count: 2; }
 .par-3-cols { column-count: 3; }
 .par-4-cols { column-count: 4; }
@@ -349,15 +329,12 @@ pre code {
 .opacity07, .opacity07-hover:hover { opacity: 0.7; }
 .opacity05, .opacity05-hover:hover { opacity: 0.5; }
 .opacity03, .opacity03-hover:hover { opacity: 0.3; }
-
 .heading-box {
   margin: 2.5rem 0;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 .test-box div, .test-box header, .test-box main, .test-box section, .test-box footer, .test-box aside {
   min-height: 3.57rem;
   border-style: solid;
@@ -374,25 +351,21 @@ pre code {
   margin-right: auto;
   margin-left: auto;
 }
-
 @media (min-width: 576px) {
   .container { max-width: 540px; }
   .w-25-responsive,
   .w-50-responsive { width: 100%; }
 }
-
 @media (min-width: 768px) {
   .container { max-width: 720px; }
   .w-25-responsive { width: 50%; }
   .w-50-responsive { width: 100%; }
 }
-
 @media (min-width: 992px) {
   .container { max-width: 960px; }
   .w-25-responsive { width: 25%; }
   .w-50-responsive { width: 50%; }
 }
-
 @media (min-width: 1200px) {
   .container { max-width: 1140px; }
   .container-half-fluid { max-width: 85%; }
@@ -1113,18 +1086,10 @@ td button {
   height: 100%;
   border: 0;
 }
-.embed-ultra-wide::before { /* 21:9 aspect ratio */
-  padding-top: 42.857143%;
-}
-.embed-wide-screen::before { /* 16:9 aspect ratio */
-  padding-top: 56.25%;
-}
-.embed-standard::before { /* 4:3 aspect ratio */
-  padding-top: 75%;
-}
-.embed-square::before { /* 1:1 aspect ratio */
-  padding-top: 100%;
-}
+.embed-ultra-wide::before { padding-top: 42.857143%; }
+.embed-wide-screen::before { padding-top: 56.25%; }
+.embed-standard::before { padding-top: 75%; }
+.embed-square::before { padding-top: 100%; }
 /*Carousel*/
 .carousel {
   position: relative;
@@ -2143,6 +2108,26 @@ progress {
 .bottom-2 { bottom: 2rem; }
 .right-2 { right: 2rem; }
 .left-2 { left: 2rem; }
+.top-3 { top: 3rem; }
+.bottom-3 { bottom: 3rem; }
+.right-3 { right: 3rem; }
+.left-3 { left: 3rem; }
+.top-4 { top: 4rem; }
+.bottom-4 { bottom: 4rem; }
+.right-4 { right: 4rem; }
+.left-4 { left: 4rem; }
+.top-25 { top: 25%; }
+.right-25 { right: 25%; }
+.top-50 { top: 50%; }
+.right-50 { right: 50%; }
+.top-75 { top: 75%; }
+.right-75 { right: 75%; }
+.top-25-vh { top: 25vh; }
+.right-25-vw { right: 25vw; }
+.top-50-vh { top: 50vh; }
+.right-50-vw { right: 50vw; }
+.top-75-vh { top: 75vh; }
+.right-75-vw { right: 75vw; }
 /* Justify row content*/
 .justify-content-end {  justify-content: flex-end;}
 .justify-content-center {  justify-content: center;}

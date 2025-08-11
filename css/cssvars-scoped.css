@@ -6,8 +6,7 @@
 * Copyright 2018-2025 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
-
- @-ms-viewport {
+@-ms-viewport {
   width: device-width;
 }
 /* Variables*/
@@ -107,13 +106,11 @@
   box-sizing: border-box;
   font-size: var(--font-size-mobile, 12px);
 }
-
 @media (min-width: 992px) {
   .cssvars html {
     font-size: var(--font-size-desktop, 16px);
   }
 }
-
 .cssvars, .cssvars body {
   margin: 0;
   width: 100%;
@@ -125,61 +122,50 @@
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
 }
-
 .cssvars ol, .cssvars ul, .cssvars dl {
   margin-top: 0;
   margin-bottom: 1rem;
   text-align: left;
 }
-
 .cssvars ol ol, .cssvars ul ul, .cssvars ol ul, .cssvars ul ol {  margin-bottom: 0;}
 .cssvars dt {  font-weight: var(--font-weight-heading, 400);}
 .cssvars dd {
   margin-bottom: 0.5rem;
   margin-left: 0;
 }
-
 .cssvars a {
   color: var(--color-1, black);
   text-decoration: none;
   background-color: transparent;
 }
-
 .cssvars a:hover {
   color: var(--grey, grey);
   text-decoration: underline;
 }
-
 .cssvars figure {
   margin: 0 0 1rem;
 }
-
 .cssvars img {
   vertical-align: middle;
   border-style: none;
 }
-
 .cssvars svg {
   overflow: hidden;
   vertical-align: middle;
 }
-
 .cssvars table {
   border-collapse: collapse;
 }
-
 .cssvars hr {
   box-sizing: content-box;
   height: 0;
   overflow: visible;
 }
-
 /* Typography */
 .cssvars h1, .cssvars h2, .cssvars h3, .cssvars h4, .cssvars h5, .cssvars h6 {
   margin-top: 0;
   margin-bottom: 1rem;
 }
-
 .cssvars h1, .cssvars .h1, .cssvars h2, .cssvars .h2, .cssvars h3, .cssvars .h3, .cssvars h4, .cssvars .h4, .cssvars h5, .cssvars .h5, .cssvars h6 {
   margin: 0 0 0.5rem 0;
   font-family: inherit;
@@ -187,26 +173,22 @@
   line-height: var(--line-height, 1.2);
   color: var(--color-1, black);
 }
-
 .cssvars h1, .cssvars .h1 {font-size: 2.7rem;}
 .cssvars h2, .cssvars .h2 {font-size: 2.2rem;}
 .cssvars h3, .cssvars .h3 {  font-size: 2rem;}
 .cssvars h4, .cssvars .h4 {  font-size: 1.7rem;}
 .cssvars h5, .cssvars .h5 {  font-size: 1.4rem;}
 .cssvars h6, .cssvars .h6 {  font-size: 1.2rem;}
-
 .cssvars .lead {
   font-size: 1.25rem;
   font-weight: 300;
 }
-
 .cssvars .display-1 {  font-size: 5rem;}
 .cssvars .display-2 {  font-size: 4rem;}
 .cssvars .display-3 {  font-size: 3rem;}
 .cssvars .display-4 {  font-size: 2.5rem;}
 .cssvars .display-5 {  font-size: 2rem;}
 .cssvars .display-6 {  font-size: 1.5rem;}
-
 .cssvars p {
   margin-top: 0;
   margin-bottom: 1rem;
@@ -328,7 +310,6 @@
 .cssvars .horizontal-tb {  writing-mode: horizontal-tb;}
 .cssvars .vertical-rl {  writing-mode: vertical-rl;}
 .cssvars .vertical-lr {  writing-mode: vertical-lr;}
-
 .cssvars .drop-caps {
   float: left;
   font-size: 4.7rem;
@@ -338,7 +319,6 @@
   padding-left: 0.2rem;
   color: var(--color-1, black);
 }
-
 .cssvars .par-2-cols { column-count: 2;}
 .cssvars .par-3-cols { column-count: 3;}
 .cssvars .par-4-cols { column-count: 4;}
@@ -349,15 +329,12 @@
 .cssvars .opacity07, .cssvars .opacity07-hover:hover {  opacity: 0.7;}
 .cssvars .opacity05, .cssvars .opacity05-hover:hover {  opacity: 0.5;}
 .cssvars .opacity03, .cssvars .opacity03-hover:hover {  opacity: 0.3;}
-
 .cssvars .heading-box {
   margin: 2.5rem 0;
 }
-
 *, *::before, *::after {
   box-sizing: inherit;
 }
-
 .cssvars .test-box div, .cssvars .test-box header, .cssvars .test-box main, .cssvars .test-box section, .cssvars .test-box footer, .cssvars .test-box aside {
   min-height: 3.57rem;
   border-style: solid;
@@ -374,25 +351,21 @@
   margin-right: auto;
   margin-left: auto;
 }
-
 @media (min-width: 576px) {
   .cssvars .container { max-width: 540px; }
   .cssvars .w-25-responsive { width: 100%; }
   .cssvars .w-50-responsive { width: 100%; }
 }
-
 @media (min-width: 768px) {
   .cssvars .container { max-width: 720px; }
   .cssvars .w-25-responsive { width: 50%; }
   .cssvars .w-50-responsive { width: 100%; }
 }
-
 @media (min-width: 992px) {
   .cssvars .container { max-width: 960px; }
   .cssvars .w-25-responsive { width: 25%; }
   .cssvars .w-50-responsive { width: 50%; }
 }
-
 @media (min-width: 1200px) {
   .cssvars .container { max-width: 1140px; }
   .cssvars .container-half-fluid { max-width: 85%; }
@@ -1113,18 +1086,10 @@ height: 2.5rem;
   height: 100%;
   border: 0;
 }
-.cssvars .embed-ultra-wide::before { /* 21:9 aspect ratio */
-  padding-top: 42.857143%;
-}
-.cssvars .embed-wide-screen::before { /* 16:9 aspect ratio */
-  padding-top: 56.25%;
-}
-.cssvars .embed-standard::before { /* 4:3 aspect ratio */
-  padding-top: 75%;
-}
-.cssvars .embed-square::before { /* 1:1 aspect ratio */
-  padding-top: 100%;
-}
+.cssvars .embed-ultra-wide::before { padding-top: 42.857143%; }
+.cssvars .embed-wide-screen::before { padding-top: 56.25%; }
+.cssvars .embed-standard::before { padding-top: 75%; }
+.cssvars .embed-square::before { padding-top: 100%; }
 /*Carousel*/
 .cssvars .carousel {
   position: relative;
@@ -2134,13 +2099,33 @@ left: 105%;
 .cssvars .right-0 {  right: 0;}
 .cssvars .left-0 {  left: 0;}
 .cssvars .top-1 { top: 1rem; }
-.cssvars .bottom-1 { bottom: 1rem; }
+.cssvars .bottom-1{ bottom: 1rem; }
 .cssvars .right-1 { right: 1rem; }
 .cssvars .left-1 { left: 1rem; }
 .cssvars .top-2 { top: 2rem; }
 .cssvars .bottom-2 { bottom: 2rem; }
 .cssvars .right-2 { right: 2rem; }
 .cssvars .left-2 { left: 2rem; }
+.cssvars .top-3 { top: 3rem; }
+.cssvars .bottom-3 { bottom: 3rem; }
+.cssvars .right-3 { right: 3rem; }
+.cssvars .left-3 { left: 3rem; }
+.cssvars .top-4 { top: 4rem; }
+.cssvars .bottom-4 { bottom: 4rem; }
+.cssvars .right-4 { right: 4rem; }
+.cssvars .left-4 { left: 4rem; }
+.cssvars .top-25 { top: 25%; }
+.cssvars .right-25 { right: 25%; }
+.cssvars .top-50 { top: 50%; }
+.cssvars .right-50 { right: 50%; }
+.cssvars .top-75 { top: 75%; }
+.cssvars .right-75 { right: 75%; }
+.cssvars .top-25-vh { top: 25vh; }
+.cssvars .right-25-vw { right: 25vw; }
+.cssvars .top-50-vh { top: 50vh; }
+.cssvars .right-50-vw { right: 50vw; }
+.cssvars .top-75-vh { top: 75vh; }
+.cssvars .right-75-vw { right: 75vw; }
 /* Justify row content*/
 .cssvars .justify-content-end {  justify-content: flex-end;}
 .cssvars .justify-content-center {  justify-content: center;}
