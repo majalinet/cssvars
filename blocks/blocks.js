@@ -1,4 +1,4 @@
-// Header, Hero, breadcrumb, Content, Feature, Contact, CTA, Footer, Blog, E-commerce, Gallery, List, Navigation, 
+// Header, Hero, breadcrumb, Content, List, Feature, CTA, Contact, Footer, Blog, E-commerce, Gallery, Navigation, 
 // Step, Team, Pricing, Product, Testimonial, Video, Statistic, portfolio,
 
 const blocks = [
@@ -464,7 +464,244 @@ const blocks = [
             },
         ]
     },
+    {
+        name: "Content",
+        items: [
+            {
+                title: "Content 1",
+                description: "Description for Content 1",
+                code: `
+<div class="row" id="about">
+  <div class="topmargin container p-v-1">
+    <h4 class="black bold center text-uppercase">About CSS Vars</h4>
+    <p class="dark center display-6 font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil illo
+      omnis,<br> Enim nihil illo omnis libero voluptatibus.</p>
+    <hr class="width-short center w-50">
+  </div>
+  <div class="row container">
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-8.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <section>
+        <div class="p-v-2">
+          <a href="#" class="bold black p0 h6">OUR MISSION</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim nihil illo omnis.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-10.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <section>
+        <div class="p-v-2">
+          <a href="#" class="bold black p0 h6">OUR FOCUS</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim nihil illo omnis.
+          </p>
+        </div>
+      </section>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-11.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <section>
+        <div class="p-v-2">
+          <a href="#" class="bold black p0 h6">OUR VALUES.</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Enim nihil illo omnis.
+          </p>
+        </div>
+      </section>
+    </div>
+  </div>
+</div>
+`
+            },
+            {
+                title: "Content 2",
+                description: "Description for Content 2",
+                code: `
+  <div class="row m-v-10" id="services">
+    <div class="topmargin container">
+      <h4 class="black bold center text-uppercase topmargin">SERVICES</h4>
+      <p class="dark center display-6">Our main AI and development services.
+      </p>
+      <hr class="width-short center w-50">
+    </div>
+    <div class="row justify-content-center container m-v-1">
+      <div class="col-md-4 p1">
+        <div class="black">
+          <div class="d-flex justify-content-center">
+            <i class="icon-box circle bg-black">
+              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
+                <path d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"></path>
+              </svg>
+            </i>
+          </div>
+          <h5 class="center m-v-1 text-uppercase black bold h6">AIaaS</h5>
+          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae ad ipsam.</p>
+        </div>
+      </div>
+      <div class="col-md-4 p1">
+        <div class="black">
+          <div class="d-flex justify-content-center">
+            <i class="icon-box circle bg-black">
+              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
+                <path d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15V18H12V15H11M13,15V18H14V15H13M15,15V18H16V15H15Z"></path>
+              </svg>
+            </i>
+          </div>
+          <p class="center m-v-1 text-uppercase black bold h6">AI Development</p>
+          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae ad ipsam.</p>
+        </div>
+      </div>
+      <div class="col-md-4 p1">
+        <div class=" black">
+          <div class="d-flex justify-content-center">
+            <i class="icon-box circle bg-black">
+              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
+                <path d="M20.45 17.39L12.36 21.97V18.4L17.4 15.63L20.45 17.39M21 16.89V7.31L18.04 9V15.18L21 16.89M3.55 17.39L11.64 21.96V18.4L6.6 15.63L3.55 17.39M3 16.89V7.31L5.96 9V15.18L3 16.89M3.35 6.69L11.64 2V5.45L6.33 8.37L6.28 8.39L3.35 6.69M20.65 6.69L12.36 2V5.45L17.67 8.38L17.71 8.4L20.65 6.69M11.64 17.59L6.67 14.85V9.44L11.64 12.31V17.59M12.36 17.59L17.33 14.86V9.44L12.36 12.31V17.59M7 8.81L12 6.06L17 8.81L12 11.69L7 8.81Z"></path>
+                <path d="M0 0h24v24H0z" fill="none"></path>
+              </svg>
+            </i>
+          </div>
+          <h5 class="center m-v-1 text-uppercase black bold h6">Web Development</h5>
+          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Recusandae ad ipsam.</p>
+        </div>
+      </div>
+    </div>
 
+</div>
+`
+            },
+            {
+                title: "Content 3",
+                description: "Description for Content 3",
+                code: `
+<div class=" bg-light-grey">
+  <div class="container row p-v-3">
+    <div class="col-md-6 p-h-3">
+      <h3 class="left black"><strong>Who</strong> We Are</h3>
+      <hr class="m0 width-short m-v-2">
+
+      <p class="m-v-2">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur pellentesque neque eget diam
+        posuere porta. Quisque ut nulla at nunc vehicula lacinia. Proin adipiscing porta tellus, ut feugiat
+        nibh adipiscing sit amet. In eu justo a felis faucibus ornare vel id metus. Vestibulum ante ipsum
+        primis in faucibus orci luctus et ultrices posuere cubilia Curae; In eu libero ligula.
+      </p>
+      <div class="container m-v-2">
+        <a href="#" class="bold">Learn More →</a>
+      </div>
+      <p></p>
+    </div>
+
+    <div class="col-md-6 p-h-3">
+      <h5 class="left display-5 black"><strong>Our</strong> Commitment</h5>
+      <hr class="m0 left width-short m-v-2">
+
+
+      <p class="m-v-2">
+        Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi
+        elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a
+        sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio.
+        Sed non mauris vitae erat consequat.
+      </p>
+    </div>
+  </div>
+</div>
+`
+            },
+            {
+                title: "Content 4",
+                description: "Description for Content 4",
+                code: `
+<div class="container m-t-6">
+  <h1 class="black bold display-3 center">We help and solve your<br> business problem</h1>
+  <div class="row container justify-content-center m-t-2">
+    <div class="col-md-4">
+      <div class=" black  center p2">
+        <i class="icon-box bga-color-2 circle">
+          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
+            <path
+              d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z">
+            </path>
+          </svg>
+        </i>
+        <h4 class="center black bold  h5">Fast Service</h4>
+        <p class="dark font-weight-400">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl
+          condimentum id venenatis.</p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class=" black  center p2">
+        <i class="icon-box bga-color-2 circle">
+          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
+            <path d="M5,9V21H1V9H5M9,21A2,2 0 0,1 7,19V9C7,8.45 7.22,7.95 7.59,7.59L14.17,1L15.23,2.06C15.5,2.33 15.67,2.7 15.67,3.11L15.64,3.43L14.69,8H21C22.11,8 23,8.9 23,10V12C23,12.26 22.95,12.5 22.86,12.73L19.84,19.78C19.54,20.5 18.83,21 18,21H9M9,19H18.03L21,12V10H12.21L13.34,4.68L9,9.03V19Z"></path>
+          </svg>
+        </i>
+        <h4 class="center black bold h5">Great Support</h4>
+        <p class="dark font-weight-400">Suspendisse sed nisi lacus sed. Tincidunt vitae semper quis lectus.Mi quis
+          hendrerit dolor magna eget. </p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class=" black center  p2">
+        <i class="icon-box bga-color-2 circle">
+          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
+            <path d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3M10,5.47L14,6.87V18.53L10,17.13V5.47M5,6.46L8,5.45V17.15L5,18.31V6.46M19,17.54L16,18.55V6.86L19,5.7V17.54Z"></path>
+          </svg>
+        </i>
+        <h4 class="center black bold h5">Use it anywhere</h4>
+        <p class="dark font-weight-400">Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus
+          pretium quam vulputate. </p>
+      </div>
+    </div>
+  </div>
+  <div class="center">
+    <button class="bg-color-2 white p-h-2">READ MORE</button>
+  </div>
+</div>
+`
+            },
+            {
+                title: "Content 5",
+                description: "Description for Content 5",
+                code: `
+
+`
+            },
+            {
+                title: "Content 6",
+                description: "Description for Content 6",
+                code: `
+
+`
+            },
+            {
+                title: "Content 7",
+                description: "Description for Content 7",
+                code: `
+
+`
+            },
+            {
+                title: "Content 8",
+                description: "Description for Content 8",
+                code: `
+
+`
+            },
+        ]
+    },
 ]
 
 const blockList = document.getElementById("blocksList")

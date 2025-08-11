@@ -1093,18 +1093,18 @@ td button {
   max-width: 100%;
   object-fit: contain;
 }
-.embed-responsive {
+.embed {
   position: relative;
   display: block;
   width: 100%;
   padding: 0;
   overflow: hidden;
 }
-.embed-responsive::before {
+.embed::before {
   display: block;
   content: "";
 }
-.embed-responsive .embed-responsive-item, .embed-responsive embed, .embed-responsive iframe, .embed-responsive object, .embed-responsive video {
+.embed .embed-item, .embed embed, .embed iframe, .embed object, .embed video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1113,16 +1113,16 @@ td button {
   height: 100%;
   border: 0;
 }
-.embed-responsive-21by9::before {
+.embed-ultra-wide::before { /* 21:9 aspect ratio */
   padding-top: 42.857143%;
 }
-.embed-responsive-16by9::before {
+.embed-wide-screen::before { /* 16:9 aspect ratio */
   padding-top: 56.25%;
 }
-.embed-responsive-4by3::before {
+.embed-standard::before { /* 4:3 aspect ratio */
   padding-top: 75%;
 }
-.embed-responsive-1by1::before {
+.embed-square::before { /* 1:1 aspect ratio */
   padding-top: 100%;
 }
 /*Carousel*/

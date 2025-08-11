@@ -17,33 +17,14 @@
             Responsive Embeds| CSS Vars Framework and UI Kit Free & Open Source
     </title>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="../img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="../img/favicons/manifest.json" />
+   
     <link rel="icon" href="favicon.ico" />
     <meta
       name="msapplication-config"
       content="../img/favicons/browserconfig.xml"
     />
-    <meta name="theme-color" content="#FF530D" />
 
-    <link rel="stylesheet" href="../css/agile.css" />
+    <link rel="stylesheet" href="../css/cssvars.css" />
   </head>
 
   <body>
@@ -67,7 +48,7 @@
 
         <nav class="nav">
           <ul>
-            <li><a href="../docs.html">Documentaion</a></li>
+            <li><a href="../docs.html">Documentation</a></li>
             <li><a href="elements.html">UI Elements</a></li>
             <li><a href="../sections/sections.html">Sections</a></li>
             <li><a href="../themes/themes.html">Themes</a></li>
@@ -148,27 +129,62 @@
 
 
         <h2 id="embeds">Responsive Embeds</h2>
-        <div class="row">
-            <div class="col-md-6">
-        <h5>Responsive Embeds 16by9</h5>
+            To make responsive embeds:
 
-        <p>on div class="<b>embed-responsive embed-responsive-16by9</b>" <br>
-        on iframe class="<b>embed-responsive-item</b>"</p>
-        <div class="embed-responsive embed-responsive-16by9">
-          <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-        </div>
+        <ul class="colored-ul">
+          <li>Create tow divs
+            <ul class="colored-ul">
+              <li>Outer div with class <b>embed</b> and size class, like <b>embed-wide-screen</b></li>
+              <li>Inner div with class <b>embed-item</b></li>
+            </ul>
+          </li>
+          <li>
+            Classes for embed sizes:
+            <ul class="colored-ul">
+              <li><b>embed-ultra-wide</b> - 21:9 aspect ratio</li>
+              <li><b>embed-wide-screen</b> - 16:9 aspect ratio</li>
+              <li><b>embed-standard:</b> - 4:3 aspect ratio</li>
+              <li><b>embed-square</b> - 1:1 aspect ratio</li>
+            </ul>
+          </li>
+          <li>Make sure to remove padding on the outer div and parent elements</li>
+          </ul>
+
+
+        <div class="row m-t-4">
+          <div class="col-md-6">
+            <h5>Responsive embed-ultra-wide</h5>
+            <p>ON div class="<b>embed embed-ultra-wide</b>" <br>
+              on iframe class="<b>embed-item</b>"</p>
+            <div class="embed embed-ultra-wide">
+              <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
             </div>
-            <div class="col-md-6">
-
-        <h5>Responsive Embeds 1by1</h5>
-
-        <p>on div class="<b>embed-responsive embed-responsive-1by1</b>" <br>
-            on iframe class="<b>embed-responsive-item</b>"</p>
-<div class="embed-responsive embed-responsive-1by1">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
-  </div></div>
-
-
+          </div>
+          <div class="col-md-6">
+            <h5>Responsive embed-wide-screen</h5>
+            <p>ON div class="<b>embed embed-wide-screen</b>" <br>
+              on iframe class="<b>embed-item</b>"</p>
+            <div class="embed embed-wide-screen">
+              <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5>Responsive embed-standard</h5>
+            <p>on div class="<b>embed embed-standard</b>" <br>
+              on iframe class="<b>embed-item</b>"</p>
+            <div class="embed embed-standard">
+              <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+          </div>
+          <div class="col-md-6">
+            <h5>Responsive embed-square</h5>
+            <p>on div class="<b>embed embed-square</b>" <br>
+              on iframe class="<b>embed-item</b>"</p>
+            <div class="embed embed-square">
+              <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+            </div>
+          </div>        
+        
         </div>
  </div>
     </main>

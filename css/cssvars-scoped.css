@@ -1093,18 +1093,18 @@ height: 2.5rem;
   max-width: 100%;
   object-fit: contain;
 }
-.cssvars .embed-responsive {
+.cssvars .embed {
   position: relative;
   display: block;
   width: 100%;
   padding: 0;
   overflow: hidden;
 }
-.cssvars .embed-responsive::before {
+.cssvars .embed::before {
   display: block;
   content: "";
 }
-.cssvars .embed-responsive, .cssvars .embed-responsive-item, .cssvars .embed-responsive embed, .cssvars .embed-responsive iframe, .cssvars .embed-responsive object, .cssvars .embed-responsive video {
+.cssvars .embed .embed-item, .cssvars .embed embed, .cssvars .embed iframe, .cssvars .embed object, .cssvars .embed video {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -1113,16 +1113,16 @@ height: 2.5rem;
   height: 100%;
   border: 0;
 }
-.cssvars .embed-responsive-21by9::before {
+.cssvars .embed-ultra-wide::before { /* 21:9 aspect ratio */
   padding-top: 42.857143%;
 }
-.cssvars .embed-responsive-16by9::before {
+.cssvars .embed-wide-screen::before { /* 16:9 aspect ratio */
   padding-top: 56.25%;
 }
-.cssvars .embed-responsive-4by3::before {
+.cssvars .embed-standard::before { /* 4:3 aspect ratio */
   padding-top: 75%;
 }
-.cssvars .embed-responsive-1by1::before {
+.cssvars .embed-square::before { /* 1:1 aspect ratio */
   padding-top: 100%;
 }
 /*Carousel*/
