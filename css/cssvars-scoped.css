@@ -1700,7 +1700,8 @@ height: 2.5rem;
 @media only screen and (max-width: 980px) {
   .cssvars .main-nav {
     padding: 1.25rem 0;
-  } .cssvars .main-menu input[type="checkbox"] {
+  } 
+  .cssvars .main-menu input[type="checkbox"] {
     position: absolute;
     top: -9999px;
     left: -9999px;
@@ -2213,8 +2214,29 @@ left: 105%;
 .cssvars .bg-color-2, .cssvars .bg-color-2-hover:hover {
   background-color: var(--color-2, black);
 }
-.cssvars .bg-color-gradient, .cssvars .bg-color-gradient-hover:hover {
+.cssvars .bg-gradient, .cssvars .bg-gradient-hover:hover {
   background: linear-gradient( to right, var(--color-1, black) 0, var(--color-2, black) 100%);
+}
+.cssvars .bg-gradient-info, .cssvars .bg-gradient-info-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--info, blue) 100%);
+}
+.cssvars .bg-gradient-success, .cssvars .bg-gradient-success-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--success, green) 100%);
+}
+.cssvars .bg-gradient-danger, .cssvars .bg-gradient-danger-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--danger, red) 100%);
+}
+.cssvars .bg-gradient-warning, .cssvars .bg-gradient-warning-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--warning, yellow) 100%);
+}
+.cssvars .bg-gradient-luxury, .cssvars .bg-gradient-luxury-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--luxury, purple) 100%);
+}
+.cssvars .bg-gradient-black, .cssvars .bg-gradient-black-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--black, black) 100%);
+}
+.cssvars .bg-gradient-white, .cssvars .bg-gradient-white-hover:hover {
+  background: linear-gradient( to right, var(--color-1, black) 0, var(--white, white) 100%);
 }
 .cssvars .bg-success, .cssvars .bg-success-hover:hover {
   background-color: var(--success, green);
@@ -2573,9 +2595,19 @@ left: 105%;
 .cssvars .border-a-dark { border-color: rgba(var(--dark-rgb), 0.2); }
 .cssvars .border-a-grey { border-color: rgba(var(--grey-rgb), 0.2); }
 .cssvars .border-a-light-grey { border-color: rgba(var(--light-grey-rgb), 0.2); }
-.cssvars .border-a-warning { border-color: rgba(var(--warning-rgb), 0.2);    }
+.cssvars .border-a-warning { border-color: rgba(var(--warning-rgb), 0.2); }
+.border-a-luxury { border-color: rgba(var(--luxury-rgb), 0.2); }
 .cssvars .border-a-white { border-color: rgba(var(--white-rgb), 0.2); }
 .cssvars .border-a-black { border-color: rgba(var(--black-rgb), 0.2); }
+
+.cssvars .border-gradient { border-image: linear-gradient(to right, var(--color-1, black), var(--color-2, black)) 1; }
+.cssvars .border-gradient-info { border-image: linear-gradient(to right, var(--color-1, black), var(--info, blue)) 1; }
+.cssvars .border-gradient-success { border-image: linear-gradient(to right, var(--color-1, black), var(--success, green)) 1; }
+.cssvars .border-gradient-danger { border-image: linear-gradient(to right, var(--color-1, black), var(--danger, red)) 1; }
+.cssvars .border-gradient-warning { border-image: linear-gradient(to right, var(--color-1, black), var(--warning, yellow)) 1; }
+.cssvars .border-gradient-luxury { border-image: linear-gradient(to right, var(--color-1, black), var(--luxury, purple)) 1; }
+.cssvars .border-gradient-black { border-image: linear-gradient(to right, var(--color-1, black), var(--black, black)) 1; }
+.cssvars .border-gradient-white { border-image: linear-gradient(to right, var(--color-1, black), var(--white, white)) 1; }
 /* Display */
 .cssvars .d-none { display: none;}
 .cssvars .d-inline { display: inline;}
