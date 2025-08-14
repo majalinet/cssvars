@@ -1948,7 +1948,17 @@ const blocks = [
                 title: "Video 1",
                 description: "Description for Video 1",
                 code: `
-
+<section class="row container m-t-6">
+  <div class="col-md-7 m0 p0 embed embed-wide-screen ">
+      <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY"></iframe>
+  </div>
+  <div class="col-md-5">
+    <p class="text-uppercase dark m-r-05 m-l-2 font-weight-400 m-t-4">SELL YOUR MESSAGE</p>
+    <h2 class="m-t-05 bold black left m-l-2">Tell your product story with a video demo</h2>
+    <p class="dark font-weight-400 left m-l-2">Quis commodo odio aenean sed adipiscing diam. Accumsan in nisl nisi
+      scelerisque eu ultrices vitae. </p>
+  </div>
+</section>
 `
             },
         ]
@@ -1960,7 +1970,322 @@ const blocks = [
                 title: "Testimonial 1",
                 description: "Description for Testimonial 1",
                 code: `
+<section class="parallax-img h-100-vh m-v-2"
+  style="background-image: url('../img/vika/design-company/background-2.jpg');">
+  <div class="p-v-4">
+    <div class="row">
+      <div class="col-md-5"></div>
+      <div class="col-md-7">
+        <div class="d-flex flex-column justify-content-center h-100-vh">
+          <div class="center">
+            <div class="container">
+              <h6 class="white bold center text-uppercase">WHAT CLIENTS SAY?</h6>
+              <p class="light-grey center">Some of our Clients love us &amp; so we do!
+              </p>
+              <hr class="width-short center w-50">
+            </div>
+          </div>
+          <div class="row" id="carousel">
+            <div class="carousel carousel-small-img">
+              <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
+              <input type="radio" name="slides" id="radio-2" class="radio-2">
+              <input type="radio" name="slides" id="radio-3" class="radio-3">
+              <ul class="slides  ">
+                <li class="slide p-b-4">
+                  <p class="white font-weight-400 italic center h6">
+                    "Similique fugit repellendus expedita excepturi iure perferendis<br> provident
+                    quia
+                    eaque. Repellendus, vero numquam?"
+                  </p>
+                  <p class="center white text-uppercase background-color m0 p0 bold">- STEVE JOBS</p>
+                  <p class="center small dark">Apple Inc.</p>
+                </li>
+                <li class="slide p-b-4">
+                  <p class="white font-weight-400 italic center h6">
+                    "Natus voluptatum enim quod necessitatibus quis expedita harum<br> provident eos
+                    obcaecati id culpa corporis molestias."
+                  </p>
+                  <p class="center white text-uppercase background-color m0 p0 bold">- COLLIS TA'EED
+                  </p>
+                  <p class="center small dark">Envato Inc.</p>
+                </li>
+                <li class="slide p-b-4">
+                  <p class="white font-weight-400 italic center h6">
+                    "Incidunt deleniti blanditiis quas aperiam recusandae consequatur<br> ullam
+                    quibusdam cum libero illo rerum!"
+                  </p>
+                  <p class="center white text-uppercase background-color m0 p0 bold">- JOHN DOE
+                  </p>
+                  <p class="center small dark">XYZ Inc.</p>
+                </li>
+              </ul>
+              <div class="slidesNavigation">
+                <label for="radio-1" id="dotForRadio-1"></label>
+                <label for="radio-2" id="dotForRadio-2"></label>
+                <label for="radio-3" id="dotForRadio-3"></label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Testimonial 2",
+                description: "Description for Testimonial 2",
+                code: `
+<section class="row container m-v-4">
+  <div class="col-12">
+    <h1 class="black center m-t-6 font-weight-600">Testimonials</h1>
+    <p class="center dark m-v-05 font-weight-400">People love what we do and we want to let your know</p>
+  </div>
 
+  <div class="col-md-4 center p1">
+    <div class="center shadow-3 rounded">
+      <div class="p-h-1 center m-v-1">
+        <p class="black font-weight-600">"Once you try this product you will never go back. Lovely to see so many
+          professionals."</p>
+      </div>
+      <div class="p-b-1 center h6">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <div class="center m-b-1">
+          <span class="font-weight-600 black m-v-2">Melly Doe<br><span class="small dark">Lead Manager</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="col-md-4 center p1">
+    <div class="center shadow-3 rounded">
+      <div class="p-h-1 center m-v-1">
+        <p class="black font-weight-600">"Once you try this product you will never go back. Lovely to see so many
+          professionals."</p>
+      </div>
+      <div class="p-b-1 center h6">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <div class="center m-b-1">
+          <span class="font-weight-600 black m-v-2">Jess Doe<br><span class="small dark">Designer</span>
+          </span>
+      </div>
+    </div>
+
+  </div>
+  <div class="col-md-4 center p1">
+    <div class="center shadow-3 rounded">
+      <div class="p-h-1 center m-v-1">
+        <p class="black font-weight-600">"Once you try this product you will never go back. Lovely to see so many
+          professionals."</p>
+      </div>
+      <div class="p-b-1 center h6">
+        ⭐⭐⭐⭐⭐
+      </div>
+      <div class="center m-b-1">
+          <span class="font-weight-600 black m-v-2">Ann Doe<br><span class="small dark">Product Manager</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Testimonial 3",
+                description: "Description for Testimonial 3",
+                code: `
+<section class="p-v-4 bg-color-1">
+  <div class="">
+    <h4 class="center bold white">Reviews</h4>
+    <hr class="width-short center">
+  </div>
+  <div class="row container">
+    <div class="col-md-6 p2">
+      <p class="bold white">Kris Doe <br>⭐⭐⭐⭐⭐</p>
+      <p class="m0 light-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+        vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est, in
+        consequat, in consequat.</p>
+    </div>
+
+    <div class="col-md-6 p2">
+      <p class="bold white">Bob Doe <br>⭐⭐⭐⭐⭐</p>
+      <p class="m0 light-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+        vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est, in
+        consequat, in consequat.</p>
+    </div>
+  </div>
+
+  <div class="row container">
+    <div class="col-md-6 p2">
+      <p class="bold white">Anna Doe <br>⭐⭐⭐⭐⭐</p>
+      <p class="m0 light-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+        vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est, in
+        consequat, in consequat.</p>
+    </div>
+
+    <div class="col-md-6 p2">
+      <p class="bold white">Emma Doe <br>⭐⭐⭐⭐⭐</p>
+
+      <p class="m0 light-grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit
+        vehicula est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est, in
+        consequat, in consequat.</p>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Testimonial 4",
+                description: "Description for Testimonial 4",
+                code: `
+<section class="p-v-4">
+  <div class="row p-v-2 container">
+    <div class="col-md-6">
+      <p class="h3">«</p>
+      <p class="m0 p-h-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est, in consequat. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
+        consequatt,in consequat.</p>
+      <p class="h3 right">»</p>
+      <p></p>
+
+      <div class="row m-v-2">
+        <div class="col-3 p-h-2">
+          <img src="../img/blocks/worker-2-s.jpg" class="circle icon-m">
+        </div>
+
+        <div class="col-9 p-v-1">
+          <span class="font-weight-400"> Hanna Joe<br><span class="small dark">Developer</span>
+          </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <p class="h3">«</p>
+      <p class="m0 p-h-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula
+        est,
+        in consequat.
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec hendrerit vehicula est, in
+        consequatt,
+        in consequat.</p>
+      <p class="h3 right">»</p>
+      <p></p>
+
+      <div class="row m-v-2">
+        <div class="col-3 p-h-2">
+          <img src="../img/blocks/worker-3-s.jpg" class="circle icon-m">
+        </div>
+        <div class="col-9 p-v-1">
+          <span class="font-weight-400"> Ann Doe<br><span class="small dark">CEO &amp; Founder</span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Testimonial 5",
+                description: "Description for Testimonial 5",
+                code: `
+<section class="m-v-4">
+  <h1 class="black bold center m-t-6">Our customers are lovin' it</h1>
+  <p class="center dark h6">Condimentum mattis pellentesque id nibh tortor id aliquet lectus<br> proin.Fermentum leo vel orci porta.</p>
+  <div class="row container justify-content-center">
+    <div class="col-md-4">
+      <div class=" black center p2">
+        <img src="../img/blocks/worker-1-s.jpg" class=" img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"Scelerisque in dictum non consectetur. Id aliquet lectus proin nibh nisl
+          condimentum id."</p>
+        <p class="black bold">Ann Doe<br><span class="dark">Senior Developer</span></p>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <div class=" black center p2">
+        <img src="../img/blocks/worker-2-s.jpg" class=" img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"Scelerisque in dictum non consectetur. Id aliquet lectus proin nibh nisl
+          condimentum id."</p>
+        <p class="black bold">Emma Joe<br><span class="dark">Interface Designer</span></p>
+      </div>
+    </div>
+
+
+    <div class="col-md-4">
+      <div class=" black center p2">
+        <img src="../img/blocks/worker-3-s.jpg" class=" img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"Scelerisque in dictum non consectetur. Id aliquet lectus proin nibh nisl
+          condimentum id."</p>
+        <p class="black bold">Jess Smith<br><span class="dark">Product Specialist</span></p>
+      </div>
+    </div>
+    <hr class="col-12">
+  </div>
+</section>
+`
+            },
+            {
+                title: "Testimonial 6",
+                description: "Description for Testimonial 6",
+                code: `
+<section class="container m-t-2">
+  <h1 class="black left font-weight-600 m-t-6">What Our Customers Say</h1>
+  <div class="row p-v-4 container">
+    <div class="col-md-4">
+      <p class="h3">❝</p>
+      <p class="m0 p-h-2 center">Great user experience on your website. I found exactly what I was looking for at a
+        great price. I will definitely be telling my friends.</p>
+      <div class="row m-v-2">
+        <div class="col-3 p-h-2">
+          <img src="../img/blocks/worker-1-s.jpg" class="circle icon-m">
+        </div>
+        <div class="col-9 p-v-1">
+          <span class="font-weight-400 m-l-1"> Jess Doe<br></span>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <p class="h3">❝</p>
+      <p class="m0 p-h-2 center">Great user experience on your website. I found exactly what I was looking for at a
+        great price. I will definitely be telling my friends.</p>
+      <div class="row m-v-2">
+        <div class="col-3 p-h-2">
+          <img src="../img/blocks/worker-2-s.jpg" class="circle icon-m">
+        </div>
+        <div class="col-9 p-v-1">
+          <span class="font-weight-400 m-l-1"> Hanna Doe<br> </span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-4">
+      <p class="h3">❝</p>
+      <p class="m0 p-h-2 center">Great user experience on your website. I found exactly what I was looking for at a
+        great price. I will definitely be telling my friends.
+      </p>
+      <p></p>
+
+      <div class="row m-v-2">
+        <div class="col-3 p-h-2">
+          <img src="../img/blocks/worker-3-s.jpg" class="circle icon-m">
+        </div>
+        <div class="col-9 p-v-1">
+          <span class="font-weight-400 m-l-1">Helen Joe<br> </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 `
             },
         ]
@@ -1972,7 +2297,88 @@ const blocks = [
                 title: "FAQ 1",
                 description: "Description for FAQ 1",
                 code: `
+<section class="container row m-v-2">
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">How do I become a member?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
 
+    <h4 class="black m-t-4">Is it free to be a member?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
+  </div>
+
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">Is it free to use?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid.
+    </p>
+
+    <h4 class="black m-t-4">Will I receive updates for free?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
+  </div>
+</section>
+`
+            },
+            {
+                title: "FAQ 2",
+                description: "Description for FAQ 2",
+                code: `
+<section class="container m-v-3 p2">
+  <h3 class="center bold black">FAQ'S</h3>
+  <hr class=" width-short center w-50">
+
+  <p class="center font-weight-400 p-h-4 m-h-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+    Aspernatur
+    repudiandae et saepe, veniam aliquam molestias quod, quasi minus sequi, doloremque dolorum eaque similique
+    eligendi omnis ea!
+  </p>
+  
+  <div class="accordion">
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle1">
+      <label for="accordionTitle1" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur
+        adipisicing?</label>
+      <div class="accordion-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+        and scrambled it to make a type specimen book.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle2">
+      <label for="accordionTitle2" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur adipisicing
+        elit?</label>
+      <div class="accordion-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+        industry's standard dummy text ever since the 1500s, when an unknown printer
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle3">
+      <label for="accordionTitle3" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur
+        adipisicing?</label>
+      <div class="accordion-content">
+        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+      </div>
+    </div>
+  </div>
+</section>
 `
             },
         ]
@@ -1984,7 +2390,31 @@ const blocks = [
                 title: "CTA 1",
                 description: "Description for CTA 1",
                 code: `
-
+<section>
+  <div class="container m-t-6 p-v-4 m-v-4">
+    <h2 class="center black font-weight-600">Take your first leap towards success</h2>
+    <p class="center">Meet our experts and we will help you elevate your business to new levels.</p>
+    <div class="center">
+    <a href="#" class=" button button-lg bg-black m-t-2 rounded">Sign up for free</a>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "CTA 2",
+                description: "Description for CTA 2",
+                code: `
+<section class="p-v-4">
+  <div class="d-flex bg-color-1 m-v-4 flex-column">
+    <h1 class="center white font-weight-600 m-t-4">Try it for free</h1>
+    <p class="h6 center white m-t-1">No credit card required. Start your 14-day free trial now.</p>
+    <div class="center m-b-4">
+      <a href="#" class=" button button-lg bg-white color-1 m-1-2 rounded">Try it now</a>
+      <a href="#" class=" button button-lg outline-white white m-1-2 rounded">Contact Sales</a>
+    </div>
+  </div>
+</section>
 `
             },
         ]
@@ -1996,7 +2426,207 @@ const blocks = [
                 title: "Pricing 1",
                 description: "Description for Pricing 1",
                 code: `
+<section class="m-v-4 center d-flex flex-column justify-content-center">
+  <h2 class="black center text-uppercase">Pricing</h2>
+  <p class="display-6 dark">Pick the right plan</p>
+  <hr class="width-short m-v-1">
+  <div class="row container">
+    <div class="col-md-4 bg-light-grey p-v-1 shadow">
+      <p class="h3 text-uppercase p-v-1 dark">Standard</p>
+      <hr class="width-short">
+      <p><span class="display-1 m-v-1">$9</span> /mo</p>
+      <hr class="width-short m-v-2">
+      <ul class="list-style-none m-v-1 center">
+        <li>Full Access</li>
+        <li>Source Files</li>
+        <li>100 User Accounts</li>
+        <li>1 Year License</li>
+      </ul>
+      <hr class="width-short">
+      <a href="#" class="button w-50 button-lg bg-black">Subscribe</a>
+    </div>
+    <div class="col-md-4  p-v-1 shadow">
+      <p class="h3 text-uppercase p-v-1">Professional</p>
+      <p class="display-6 dark">Most Popular</p>
+      <hr class="width-short">
+      <p class="color-1"><span class="display-1 m-v-1">$19</span> /mo</p>
+      <hr class="width-short m-v-2">
+      <ul class="list-style-none m-v-1 center">
+        <li>Full Access</li>
+        <li>Source Files</li>
+        <li>200 User Accounts</li>
+        <li>2 Year License</li>
+      </ul>
+      <hr class="width-short">
+      <a href="#" class="button w-50 button-lg">Subscribe</a>
+    </div>
+    <div class="col-md-4 bg-light-grey p-v-1 shadow">
+      <p class="h3 text-uppercase p-v-1 dark">Business</p>
+      <hr class="width-short">
+      <p><span class="display-1 m-v-1">$29</span> /mo</p>
+      <hr class="width-short m-v-2">
+      <ul class="list-style-none m-v-1 center">
+        <li>Full Access</li>
+        <li>Source Files</li>
+        <li>300 User Accounts</li>
+        <li>3 Year License</li>
+      </ul>
+      <hr class="width-short">
+      <a href="#" class="button w-50 button-lg bg-black">Subscribe</a>
+    </div>
 
+  </div>
+</section>
+`
+            },
+            {
+                title: "Pricing 2",
+                description: "Description for Pricing 2",
+                code: `
+<section class="m-v-4">
+  <p class="display-5 dark center">Package Details</p>
+  <hr class="width-short">
+  <div class="row container">
+    <div class="col-md-9 p1 shadow">
+      <p class="display-5 dark p1">Get all what you need in one package?</p>
+      <hr class="m1 width-short">
+      <div class="row p1">
+        <div class="col-md-6 left">
+            <ul style="list-style-type:none" class="font-weight-400 line-height-2 p0">
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#222225" d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z"></path>
+                    </svg>
+
+
+                    <p class="black d-inline">Ultra Responsive Layouts</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#222225" d="M5,19A1,1 0 0,0 6,20H18A1,1 0 0,0 19,19C19,18.79 18.93,18.59 18.82,18.43L13,8.35V4H11V8.35L5.18,18.43C5.07,18.59 5,18.79 5,19M6,22A3,3 0 0,1 3,19C3,18.4 3.18,17.84 3.5,17.37L9,7.81V6A1,1 0 0,1 8,5V4A2,2 0 0,1 10,2H14A2,2 0 0,1 16,4V5A1,1 0 0,1 15,6V7.81L20.5,17.37C20.82,17.84 21,18.4 21,19A3,3 0 0,1 18,22H6M13,16L14.34,14.66L16.27,18H7.73L10.39,13.39L13,16M12.5,12A0.5,0.5 0 0,1 13,12.5A0.5,0.5 0 0,1 12.5,13A0.5,0.5 0 0,1 12,12.5A0.5,0.5 0 0,1 12.5,12Z"></path>
+                    </svg>
+                    <p class="black d-inline">Advanced Admin Panel</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#2222225" d="M9.62,12L12,5.67L14.37,12M11,3L5.5,17H7.75L8.87,14H15.12L16.25,17H18.5L13,3H11Z"></path>
+                    </svg>
+                    <p class="black d-inline">Support for Custom Fonts</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#2222225" d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z"></path>
+                    </svg>
+                    <p class="black d-inline">Photoshop Source Files Included</p>
+                </li>
+            </ul>
+        </div>
+        <div class="col-md-6 p-h-1 left">
+            <ul style="list-style-type:none" class="font-weight-400 line-height-2 p0">
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#2222225" d="M12,9A3,3 0 0,1 15,12A3,3 0 0,1 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9M12,4.5C17,4.5 21.27,7.61 23,12C21.27,16.39 17,19.5 12,19.5C7,19.5 2.73,16.39 1,12C2.73,7.61 7,4.5 12,4.5M3.18,12C4.83,15.36 8.24,17.5 12,17.5C15.76,17.5 19.17,15.36 20.82,12C19.17,8.64 15.76,6.5 12,6.5C8.24,6.5 4.83,8.64 3.18,12Z">
+                        </path>
+                    </svg>
+                    <p class="black d-inline">Photoshop Source Files Included</p>
+                </li>
+                <li><svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#222225" d="M7.5,5.6L5,7L6.4,4.5L5,2L7.5,3.4L10,2L8.6,4.5L10,7L7.5,5.6M19.5,15.4L22,14L20.6,16.5L22,19L19.5,17.6L17,19L18.4,16.5L17,14L19.5,15.4M22,2L20.6,4.5L22,7L19.5,5.6L17,7L18.4,4.5L17,2L19.5,3.4L22,2M13.34,12.78L15.78,10.34L13.66,8.22L11.22,10.66L13.34,12.78M14.37,7.29L16.71,9.63C17.1,10 17.1,10.65 16.71,11.04L5.04,22.71C4.65,23.1 4,23.1 3.63,22.71L1.29,20.37C0.9,20 0.9,19.35 1.29,18.96L12.96,7.29C13.35,6.9 14,6.9 14.37,7.29Z"></path>
+                    </svg>
+                    <p class="black d-inline">Tons of Customization Options</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#222225" d="M2,2H16V16H2V2M22,8V22H8V18H18V8H22M4,4V14H14V4H4Z"></path>
+                    </svg>
+                    <p class="black d-inline">Premium Sliders Included</p>
+                </li>
+                <li>
+                    <svg viewBox="0 0 24 24" class="m-h-05 icon-xs img-responsive">
+                        <path fill="#222225" d="M19.79,15.41C20.74,13.24 20.74,10.75 19.79,8.59L17.05,9.83C17.65,11.21 17.65,12.78 17.06,14.17L19.79,15.41M15.42,4.21C13.25,3.26 10.76,3.26 8.59,4.21L9.83,6.94C11.22,6.35 12.79,6.35 14.18,6.95L15.42,4.21M4.21,8.58C3.26,10.76 3.26,13.24 4.21,15.42L6.95,14.17C6.35,12.79 6.35,11.21 6.95,9.82L4.21,8.58M8.59,19.79C10.76,20.74 13.25,20.74 15.42,19.78L14.18,17.05C12.8,17.65 11.22,17.65 9.84,17.06L8.59,19.79M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8Z"></path>
+                    </svg>
+                    <p class="black d-inline">24x7 Priority Email Support</p>
+                </li>
+            </ul>
+        </div>
+      </div>
+
+    </div>
+    <div class="col-md-3 p-v-2 shadow center bg-light-grey">
+      <p class="display-6 dark text-uppercase">as low as</p>
+      <p class="color-1 display-1 m-v-1">$19</p>
+      <p class="display-6 dark text-uppercase">monthly</p>
+      <a href="#" class="button w-100 button-lg">Subscribe</a>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Pricing 3",
+                description: "Description for Pricing 3",
+                code: `
+<section class="container m-v-4 ">
+  <p class="display-5 dark center">Compare Plans</p>
+  <hr class="width-short m-v-1">
+<div class="container auto-overflow-x">
+  <table class="table table-hover">
+    <thead>
+      <tr>
+        <th class="w-50"></th>
+        <th>Standard</th>
+        <th>Professional</th>
+        <th>Business</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Accounts</th>
+        <td>1</td>
+        <td>5</td>
+        <td>20</td>
+      </tr>
+      <tr>
+        <th>Space</th>
+        <td>1 GB</td>
+        <td>3 GB</td>
+        <td>10 GB</td>
+      </tr>
+      <tr>
+        <th>Email Support</th>
+        <td>✕</td>
+        <td>✓</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <th>Phone Support</th>
+        <td>✕</td>
+        <td>✕</td>
+        <td>✓</td>
+      </tr>
+      <tr>
+        <th>Price</th>
+        <td>$9</td>
+        <td>$19</td>
+        <td>$29</td>
+      </tr>
+      <tr>
+        <th></th>
+        <td>
+          <a href="#" class="button bg-black">Subscribe</a>
+        </td>
+        <td>
+          <a href="#" class="button">Subscribe</a>
+        </td>
+        <td>
+          <a href="#" class="button bg-black">Subscribe</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+</section>
 `
             },
         ]
@@ -2008,7 +2638,278 @@ const blocks = [
                 title: "Contact 1",
                 description: "Description for Contact 1",
                 code: `
+<section class="h-100 d-flex flex-column m-v-2" id="contacts">
+  <div class="container m-v-2">
+    <h4 class="black bold center text-uppercase">GET IN TOUCH WITH US</h4>
+    <p class="dark center display-6">Still have Questions? Contact Us using the Form below.
+    </p>
+    <hr class="width-short center">
+  </div>
+  <div class="row container">
+    <div class="col-md-6 p1">
+      <div class="fancy-title title-fancy-right top-margin">
+        <p class="h5 bold black">Send us an email</p>
+      </div>
+      <div class="row">
+        <div class="col-md-4 p-1-8">
+          <div class="form-group">
+            <label for="exampleInputName1" class="bold">NAME*</label>
+            <input type="text" class="form-control" id="exampleInputName1" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <div class="col-md-4 p-1-8">
+          <div class="form-group">
+            <label for="exampleInputEmail1" class="bold">EMAIL*</label>
+            <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp">
+          </div>
+        </div>
+        <div class="col-md-4 p-1-8">
+          <div class="form-group">
+            <label for="exampleInputPhone1" class="bold">PHONE</label>
+            <input type="tel" class="form-control" id="exampleInputPhone1">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 p-1-8">
+          <label for=" exampleInputSubject1" class="bold">SUBJECT*</label>
+          <input type="text" class="form-control" id="exampleInputSubject1" aria-describedby="emailHelp">
+        </div>
+        <div class="col-md-4 p-1-8">
+          <div class="form-group">
+            <label for="exampleselectServices1" class="bold">SERVICES*</label>
+            <select id="exampleselectServices1" class="form-control">
+              <option selected="" disabled="">--Select One--</option>
+              <option>Wordpress</option>
+              <option>PHP / MySQL</option>
+              <option>HTML5 / CSS3</option>
+              <option>Graphic Design</option>
+            </select>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-1-8">
+          <div class="form-group">
+            <label for="exampleselectServices1" class="bold">MESSAGE*</label>
+            <textarea class="form-control" rows="5" id="comment2"></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="btn btn-primary bg-color-2 text-uppercase">send message</button>
+    </div>
+    <div class="col-md-6 p1">
+      <iframe class="h-100"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2563.0995438058467!2d36.32569397172177!3d50.028230542620506!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a7655bee7ecd%3A0xade22c5c2ba08ae2!2sKaravan+Mall!5e0!3m2!1sen!2sua!4v1540825240830"
+        allowfullscreen="" style="border: 0;" width="100%">
+      </iframe>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Contact 2",
+                description: "Description for Contact 2",
+                code: `
+<section class="row container m-v-4">
+  <div class="col-md-3 p1">
+    <div class="outline-color-2 black rounded p2">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-2-fill icon-m" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z"></path>
+            <path
+              d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
+            </path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="center bold">OUR LOCATION</h5>
+      <p class="center dark h6">Kharkov, Ukraine</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="outline-color-2 black rounded p2">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-2-fill  icon-m" viewBox="0 0 24 24">
+            <path fill="none" d="M0 0h24v24H0V0z"></path>
+            <path
+              d="M19.23 15.26l-2.54-.29c-.61-.07-1.21.14-1.64.57l-1.84 1.84c-2.83-1.44-5.15-3.75-6.59-6.59l1.85-1.85c.43-.43.64-1.03.57-1.64l-.29-2.52c-.12-1.01-.97-1.77-1.99-1.77H5.03c-1.13 0-2.07.94-2 2.07.53 8.54 7.36 15.36 15.89 15.89 1.13.07 2.07-.87 2.07-2v-1.73c.01-1.01-.75-1.86-1.76-1.98z">
+            </path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="center bold">PHONE CALL</h5>
+      <p class="center dark h6">(86) 123 456 789</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="outline-color-2 black rounded p2">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-2-fill  icon-m" viewBox="0 0 24 24">
+            <path
+              d="M12,15C12.81,15 13.5,14.7 14.11,14.11C14.7,13.5 15,12.81 15,12C15,11.19 14.7,10.5 14.11,9.89C13.5,9.3 12.81,9 12,9C11.19,9 10.5,9.3 9.89,9.89C9.3,10.5 9,11.19 9,12C9,12.81 9.3,13.5 9.89,14.11C10.5,14.7 11.19,15 12,15M12,2C14.75,2 17.1,3 19.05,4.95C21,6.9 22,9.25 22,12V13.45C22,14.45 21.65,15.3 21,16C20.3,16.67 19.5,17 18.5,17C17.3,17 16.31,16.5 15.56,15.5C14.56,16.5 13.38,17 12,17C10.63,17 9.45,16.5 8.46,15.54C7.5,14.55 7,13.38 7,12C7,10.63 7.5,9.45 8.46,8.46C9.45,7.5 10.63,7 12,7C13.38,7 14.55,7.5 15.54,8.46C16.5,9.45 17,10.63 17,12V13.45C17,13.86 17.16,14.22 17.46,14.53C17.76,14.84 18.11,15 18.5,15C18.92,15 19.27,14.84 19.57,14.53C19.87,14.22 20,13.86 20,13.45V12C20,9.81 19.23,7.93 17.65,6.35C16.07,4.77 14.19,4 12,4C9.81,4 7.93,4.77 6.35,6.35C4.77,7.93 4,9.81 4,12C4,14.19 4.77,16.07 6.35,17.65C7.93,19.23 9.81,20 12,20H17V22H12C9.25,22 6.9,21 4.95,19.05C3,17.1 2,14.75 2,12C2,9.25 3,6.9 4.95,4.95C6.9,3 9.25,2 12,2Z">
+            </path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="center bold">Send Email</h5>
+      <p class="center dark h6">info@example.com</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="outline-color-2 black rounded p2">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg viewBox="0 0 24 24" class="icon-color-2-fill  icon-m">
+            <path
+              d="M19 3A2 2 0 0 1 21 5V19A2 2 0 0 1 19 21H5A2 2 0 0 1 3 19V5A2 2 0 0 1 5 3H19M18.5 18.5V13.2A3.26 3.26 0 0 0 15.24 9.94C14.39 9.94 13.4 10.46 12.92 11.24V10.13H10.13V18.5H12.92V13.57C12.92 12.8 13.54 12.17 14.31 12.17A1.4 1.4 0 0 1 15.71 13.57V18.5H18.5M6.88 8.56A1.68 1.68 0 0 0 8.56 6.88C8.56 5.95 7.81 5.19 6.88 5.19A1.69 1.69 0 0 0 5.19 6.88C5.19 7.81 5.95 8.56 6.88 8.56M8.27 18.5V10.13H5.5V18.5H8.27Z">
+            </path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="center bold">FOLLOW US</h5>
+      <p class="center dark h6">4.3K Followers</p>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Contact 3",
+                description: "Description for Contact 3",
+                code: `
+<section class="row w-100">
+  <div class="map col-md-8">
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.3389252056154!2d36.23284021559873!3d50.00500237941637!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e09c6500c1%3A0xac08227baf5f1911!2z0L_Quy4g0KHQstC-0LHQvtC00YssIDgsINCl0LDRgNGM0LrQvtCyLCDQpdCw0YDRjNC60L7QstGB0LrQsNGPINC-0LHQu9Cw0YHRgtGMLCA2MTAwMA!5e0!3m2!1sru!2sua!4v1555663309439!5m2!1sru!2sua"
+      width="100%" height="600" frameborder="0" style="border:0" allowfullscreen="">
+    </iframe>
+  </div>
+  <div class="container col-md-4 bg-dark p1">
+    <h5 class="white bold m1">Contact Us</h5>
+    <div class="">
+      <div class="row white">
+        <div class=" col-2 p0">
+          <svg viewBox="0 0 24 24" class="icon-s m-v-1 icon-white-fill">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path>
+          </svg>
+        </div>
+        <div class="col-10 p0">
+          <div class="p0 grey small">Call Us</div>
+          <div class="p0 m0 bold white">(86) 123 456 789</div>
+        </div>
+      </div>
+      <div class="row white">
+        <div class=" col-2 p0">
+          <svg viewBox="0 0 24 24" class="icon-s m-v-1 icon-white-fill">
+            <path d="M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5M12,2A7,7 0 0,0 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9A7,7 0 0,0 12,2Z"></path>
+          </svg>
+        </div>
+        <div class="col-10 p0">
+          <div class="p0 grey small">Our Location</div>
+          <div class="p0 m0 bold white text-uppercase">Kharkov, Ukraine</div>
+        </div>
+      </div>
+      <div class="m-t-2">
+        <p class="text-uppercase white bold">send a message</p>
+        <div class="row">
+          <div class="form-group col-md-6 p-1-16">
+            <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="emailHelp"
+              placeholder="YOUR NAME">
+          </div>
+          <div class="form-group col-md-6 w-100  p-1-16">
+            <input type="tel" class="form-control" id="exampleInputLastName1" aria-describedby="emailHelp"
+              placeholder="PHONE">
+          </div>
+        </div>
+        <div class="row">
+          <div class="form-group w-100 p-1-16">
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+              placeholder="EMAIL ADDRESS">
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control p-1-16" rows="5" id="comment" placeholder="COMMENT"></textarea>
+        </div>
+        <div class="right">
+          <a type="submit" class="button white small bold bg-black">SUBMIT</a>
+        </div>
+      </div>
 
+    </div>
+  </div>
+
+</section>
+`
+            },
+            {
+                title: "Contact 4",
+                description: "Description for Contact 4",
+                code: `
+<section class="m-v-4">
+
+  <div class=" container row m-t-6">
+    <div class="col-md-4 center">
+      <h5 class="grey bold">Email Us</h5>
+      <p class="bold info h6">cssvars@company.pro</p>
+    </div>
+    <div class="col-md-4 center">
+      <h5 class="grey bold">Call</h5>
+      <p class="bold info h6">123 456 789</p>
+    </div>
+    <div class="col-md-4 center">
+      <h5 class="grey bold">Support</h5>
+      <p class="bold info h6"><a class="info">Leave a message</a></p>
+    </div>
+    <hr class="col-12">
+  </div>
+  <h1 class="m-t-2 center bold black">Start the conversation</h1>
+  <h6 class="dark center font-weight-400 m-t-1">Duis aute irure dolor in reprehenderit in voluptate velit esse<br>
+    cillum dolore eu fugiat nulla pariatur.</h6>
+  <div class="container-half-fluid m-t-4">
+
+    <form class="container">
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="name" class="form-control" id="inputName4" placeholder="Full Name">
+        </div>
+        <div class="form-group col-md-6">
+          <input type="email" class="form-control" id="inputEmail4" placeholder="Email Adress">
+        </div>
+      </div>
+      <div class="form-row">
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="inputCompany" placeholder="Company optional">
+
+        </div>
+        <div class="form-group col-md-6">
+          <input type="text" class="form-control" id="inputCompany" placeholder="Phone">
+
+
+        </div>
+
+      </div>
+
+
+      <div class="form-group">
+        <textarea class="form-control" rows="5" id="comment" placeholder="Comments"></textarea>
+      </div>
+      <div class="form-group">
+        <div class="form-check">
+          <input class="form-check-input" type="checkbox" id="gridCheck">
+          <label class="form-check-label" for="gridCheck">
+            Check me out
+          </label>
+        </div>
+      </div>
+      <button type="submit" class="btn bg-info btn-primary">Send Message</button>
+    </form>
+  </div>
+</section>
 `
             },
         ]
@@ -2020,7 +2921,204 @@ const blocks = [
                 title: "Footer 1",
                 description: "Description for Footer 1",
                 code: `
+<footer class="center p2 color-1 bg-light-grey m-t-4">
+  <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/cssvars-logo-with-text.png" class="h-4rem">
+  <p class="color-1 smaller">
+    Built with love in by Kim Majali,
+    <a href="https://www.europeitoutsourcing.com/">EITO</a> team, and contributors.
 
+    <a href="https://github.com/majalinet/Agile-CSS" target="_blank">
+      <i class="icon-box">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">
+          <path
+            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+          </path>
+        </svg>
+      </i>
+    </a>
+  </p>
+</footer>
+`
+            },
+            {
+                title: "Footer 2",
+                description: "Description for Footer 2",
+                code: `
+<footer class="p-v-1 row container">
+  <div class="col-md-6">
+    <p class="center small black left m-v-1"> © Copyright 2025. All Rights Reserved Europe IT Outsourcing
+      Company. <span class="smaller"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></span>
+    </p>
+  </div>
+  <div class="col-md-6 right">
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225"
+          d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+      </svg>
+    </i>
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225"
+          d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
+        </path>
+      </svg>
+    </i>
+  </div>
+</footer>
+`
+            },
+            {
+                title: "Footer 3",
+                description: "Description for Footer 3",
+                code: `
+<footer class="bordered-top-light-grey  d-block">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v-05 font-weight-400">Company</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="about.html">About</a></li>
+        <li class="m-h-1"><a href="news.html">News</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v-05 font-weight-400">Products</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="search.html">Search products</a></li>
+        <li class="m-h-1"><a href="Products.html">Browse products</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v-05 font-weight-400">Sellers</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="Responsibility.html">Responsibility</a></li>
+        <li class="m-h-1"><a href="how-to-host.html">How to join</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v-05 font-weight-400">Support</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="faq.html">F.A.Q</a></li>
+        <li class="m-h-1"><a href="contact-us.html">Contact us</a></li>
+      </ul>
+    </div>
+    <div class=" p-v-1 small row bordered-top-light-grey m-t-2">
+      <p class="color-1">
+        <a href="#" id="logo" target="_blank" rel="noopener noreferrer">
+          <img class="icon-xs" src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png">
+        </a>
+        © Copyright 2025. All rights reserved for inc. <a href="terms.html">Terms</a>. 
+        <a href="privacy.html">Privacy</a></p>
+      <p>
+        <i><a href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+              <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+            </svg>
+          </a></i>
+        <i><a href="#" target="_blank" rel="noopener noreferrer">
+            <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+              <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+            </svg>
+          </a></i>
+      </p>
+    </div>
+  </div>
+</footer>
+`
+            },
+            {
+                title: "Footer 4",
+                description: "Description for Footer 4",
+                code: `
+<footer class="container-fluid row">
+  <div class="col-md-6 col-lg-3 p2">
+    <a href="https://www.europeitoutsourcing.com">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="icon-m m-b-2" alt="Europe IT Outsourcing Logo"></a>
+    <p class="smaller">Europe IT Outsourcing is your team of expert and certified professionals,
+      accompanied with many well-trained professionals, and 10's of essential tools to grow your business.</p>
+
+      <p class="small"></a>
+      © Copyright 2025. All rights reserved for inc. <a href="terms.html">Terms</a>. 
+      <a href="privacy.html">Privacy</a></p>
+
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Location</p>
+    <iframe class=" w-100"
+      src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10163.10790377248!2d30.5048645!3d50.4452547!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x8176aca03e72dc3!2sHilton+Kyiv!5e0!3m2!1sen!2sua!4v1540554610949"
+      width="100%" height="200px" style="border:0;" allowfullscreen=""></iframe>
+
+
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Connect</p>
+    <div itemscope="" itemtype="http://schema.org/Organization" style="font-size: 14px; color:#4e4e4e;">
+      <span itemprop="name">Europe IT Outsourcing</span><br>
+      <div itemprop="address" itemscope="" itemtype="http://schema.org/PostalAddress">
+        <span itemprop="streetAddress">Geroyev Truda 4,</span>
+        <span itemprop="addressCity">Kharkov</span> <span itemprop="addressCountry">Ukraine</span><br>
+        <span style="font-weight: 600">Phone:</span>
+        <span itemprop="telephone">+123 456 7890</span>
+        <br><span style="font-weight: 600">Email:</span><span> info@example.com</span>
+      </div>
+      
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="icon-box  hover-shadow">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">
+            <path
+              d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
+            </path>
+          </svg>
+        </i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="icon-box  hover-shadow">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">
+            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+          </svg>
+        </i>
+      </a>
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="icon-box hover-shadow">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">
+            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+          </svg>
+        </i>
+      </a>
+
+      <a href="#" target="_blank" rel="noopener noreferrer">
+        <i class="icon-box hover-shadow">
+          <svg viewBox="-7 0 32 32" class="icon-color-1-fill  icon-s">
+            <path d="M16.844 9.156l-6.375 7.875 6.938 8.563h-2.906l-5.469-6.781-5.5 6.781h-2.906l6.969-8.563-6.375-7.875h2.906l4.906 6.063 4.875-6.063h2.938z"></path>
+          </svg>
+        </i>
+      </a>
+
+
+      <form class="row">
+        <input type="email" class="form-control" id="exampleInputEmail2" aria-describedby="emailHelp"
+          placeholder="Enter your email to receive our newsletter">
+
+
+        <button type="submit" class="button w-100 w-100">Submit</button>
+
+      </form>
+    </div>
+
+
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Links</p>
+    <ul class="no-indent-ul">
+      <li><a href="#">Who We Are</a></li>
+      <li><a href="#">Services</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#">Partnership</a></li>
+      <li><a href="#get-quote" class="bold">Get A Free Consultation</a></li>
+    </ul>
+  </div>    
+</footer>
 `
             },
         ]
@@ -2032,7 +3130,216 @@ const blocks = [
                 title: "Blog 1",
                 description: "Description for Blog 1",
                 code: `
+<section class=" bg-light-grey p-v-3">
+  <div class="container p-v-1">
+    <h4 class="black bold center">Our Blog</h4>
+    <p class="text-uppercase dark center">RECENT POSTS</p>
+  </div>
+  <div class="row container">
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-1.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller font-weight-400">oct-4-2025</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">marketing</p>
+          <a href="#" class="bold black text-uppercase p0">How to Attract a Customer with a Marketing
+            Model AIDA?</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-10.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller font-weight-400">sep-7-2025</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">GRAPHIC DESIGN</p>
+          <a href="#" class="bold black text-uppercase p0">Masking, Effects &amp; Patterns in Adobe
+            Illustrator</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-2.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller font-weight-400">sep-4-2025</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">web design</p>
+          <a href="#" class="bold black text-uppercase p0">Quality Web Design Principles To Follow in 2025</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
+            adipisicing elit.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center m-v-2">
+    <a href="#" class="button bg-black text-uppercase bold small p-v-1 p-h-2">view our blog</a>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Blog 2",
+                description: "Description for Blog 2",
+                code: `
+<section class=" bg-light-grey p-v-3">
+  <div class="row m-v-1">
+      <div class="col-md-12 center">
+          <h2 class="center black">Latest News</h2>
+          <hr class=" width-short m-v-2">
+      </div>
+  </div>
+  <div class="row container">
+      <div class="col-md-6">
+          <div class="outline-light-grey m0">
+              <div class="row">
+                  <div class="col-4 p0 m0">
+                      <img src="../img/blocks/shop1.jpg" class="img-responsive">
+                  </div>
+                  <div class="col-8 left p1">
+                      <p><span class="font-weight-400 left"><a href="#" class=" h5 black">Related article post
+                                  name</a></span>
+                          <span class="badge black">Admin wrote on 5/2/2019</span>
+                        </p>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi perferendis.
+                      </p>
+                      <div class="m-v-1">
+                          <a href="#">Read More →</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="outline-light-grey m0">
+              <div class="row">
+                  <div class="col-4 p0 m0">
+                      <img src="../img/blocks/shop6.jpg" class="img-responsive">
+                  </div>
 
+                  <div class="col-8 left p1">
+                      <p><span class="font-weight-400 left"><a href="#" class=" h5 black">Related article post
+                                  name</a></span>
+                          <span class="badge black">Admin wrote on 5/2/2019</span>
+                        </p>
+                      <p>
+                          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Mollitia nisi perferendis.
+                      </p>
+                      <div class="m-v-1">
+                          <a href="#">Read More →</a>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Blog 3",
+                description: "Description for Blog 3",
+                code: `
+<section class="section bg-light-grey p-v-4">
+  <div class="row m4 bg-white outline-color-grey">
+    <div class="col-md-6 p1 m-auto">
+      <div class="container">
+        <p class="d-inline font-weight-600 left h6 badge larger bga-success">Marketing</p>
+        <p class="d-inline dark font-weight-400 m-h-1">2 March, 2023</p>
+        <h3 class="black bold left m-t-2">How to Attract a Customer with a Marketing Model AIDA?</h3>
+        <p class="m-t-1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+        <div class="row">
+          <div class="col-9 p-h-2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 m0 p0">
+      <img src="../img/blocks/work-4.jpg" class=" img-responsive  h-100">
+    </div>
+  </div>
+  <div class="row m4 m-t-2 bg-white outline-color-grey">
+    <div class="col-md-6 p1 m-auto">
+      <div class="container m-t-4">
+        <p class="d-inline font-weight-600 left h6 badge larger bga-success">Startups</p>
+        <p class="d-inline dark font-weight-400 m-h-1">13 March, 2023</p>
+        <h3 class="black bold left m-t-2">10 Tips on How to Make Your Content Better</h3>
+        <p class="m-t-1">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim
+          id est laborum.</p>
+        <div class="row">
+          <div class="col-9 p-h-2">
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 m0 p0">
+      <img src="../img/blocks/work-5.jpg" class=" img-responsive  h-100">
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Blog 4",
+                description: "Description for Blog 4",
+                code: `
+<section class="bg-color-1 p-v-4">
+  <div class="p-v-3 container m-b-4 bga-grey">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="../img/blocks/worker-2-s.jpg" class="img-responsive circle icon-lg">
+      </div>
+      <div class="col-md-10">
+        <p class="grey">March 10, 2025</p>
+        <h5 class="white bold left">How to Attract a Customer with a Marketing Model AIDA?</h5>
+        <p class="grey left">Habitant morbi tristique senectus et netus et malesuada fames. Tristique nulla aliquet enim
+          tortor at<br> auctor urna.Aliquam nulla facilisi cras fermentum odio. Fermentum dui faucibus in ornare. </p>
+        <a href="#" class="info bold">Read Story</a>
+      </div>
+    </div>
+  </div>
+
+  <div class="p-v-3 container bga-grey">
+    <div class="row">
+      <div class="col-md-2">
+        <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-lg">
+      </div>
+      <div class="col-md-10">
+        <p class="grey">March 19, 2025</p>
+        <h5 class="white bold left">How do Content Marketing, Content Strategy Differ?</h5>
+        <p class="grey left">Habitant morbi tristique senectus et netus et malesuada fames. Tristique nulla aliquet enim
+          tortor at<br> auctor urna.Aliquam nulla facilisi cras fermentum odio. Fermentum dui faucibus in ornare. </p>
+        <a href="#" class="info bold">Read Story</a>
+      </div>
+    </div>
+  </div>
+</section>
 `
             },
         ]
@@ -2056,7 +3363,165 @@ const blocks = [
                 title: "Portfolio 1",
                 description: "Description for Portfolio 1",
                 code: `
+<section class="row container" id="portfolio">
+  <div class="topmargin container p-v-1">
+    <h4 class="black bold center text-uppercase">OUR WORKS</h4>
+    <p class="dark center display-6">Some of the Awesome Projects we've worked on.</p>
+    <hr class="width-short center w-50">
+  </div>
+  <div class="col-md-3 p0">
+    <div class="position-relative">
+      <img src="../img/blocks/work-1.jpg" alt="alttext" class="img-responsive brightness-33-hover">
+      <div class="center p-v-2">
+        <a href="#" class="h6 black">Open Imagination</a><br>
+        <a href="#" class="dark">Media,</a> <a href="#" class="dark">Icons</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 p0">
+    <div class="position-relative">
+      <img src="../img/blocks/work-5.jpg" alt="alttext" class="img-responsive brightness-33-hover">
+      <div class="center p-v-2">
+        <a href="#" class="h6 black">Locked Steel Gate</a><br>
+        <a href="#" class="dark">Illustrations</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 p0">
+    <div class="position-relative">
+      <img src="../img/blocks/work-2.jpg" alt="alttext" class="img-responsive brightness-33-hover">
+      <div class="center p-v-2">
+        <a href="#" class="h6 black">Mac Sunglasses</a><br>
+        <a href="#" class="dark">Graphics,</a> <a href="#" class="dark">UI Elements</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-3 p0">
+    <div class="position-relative">
+      <img src="../img/blocks/work-4.jpg" alt="alttext" class="img-responsive brightness-33-hover">
+      <div class="center p-v-2">
+        <a href="#" class="h6 black">Morning Dew</a><br>
+        <a href="#" class="dark">Icons,</a> <a href="#" class="dark">Illustrations</a>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Portfolio 2",
+                description: "Description for Portfolio 2",
+                code: `
+<section class="row bg-light-grey p-v-3">
+  <div class="topmargin container p-v-1">
+    <h4 class="black bold center">Cases</h4>
+    <p class="text-uppercase dark center">SUCCESFULL PROJECTS</p>
+  </div>
+  <div class="row container">
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-1.jpg" alt="alttext" class="img-responsive brightness-100-hover brightness-66">
+      </a>
+      <div class="bg-white">
+        <div class="center p-v-2">
+          <a href="#" class="bold black text-uppercase">agile website</a>
+          <p class="text-uppercase dark small">SUCCESFULL PROJECTS</p>
+        </div>
+        <div class="center p-v-1 bg-light-grey m0">
+          <a href="#" class="button bg-black text-uppercase bold small p-v-1 p-h-2 button-s">View more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-2.jpg" alt="alttext" class="img-responsive brightness-100-hover brightness-66">
+      </a>
+      <div class="bg-white">
+        <div class="center p-v-2">
+          <a href="#" class="bold black text-uppercase">agile app</a>
+          <p class="text-uppercase dark small">mobile app</p>
+        </div>
+        <div class="center p-v-1 bg-light-grey m0">
+          <a href="#" class="button bg-black text-uppercase bold small p-v-1 p-h-2 button-s">View more</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-4.jpg" alt="alttext" class="img-responsive brightness-100-hover brightness-66">
+      </a>
+      <div class="bg-white">
+        <div class="center p-v-2">
+          <a href="#" class="bold black text-uppercase">agile brand</a>
+          <p class="text-uppercase dark small">brand</p>
+        </div>
+        <div class="center p-v-1 bg-light-grey m0">
+          <a href="#" class="button bg-black text-uppercase bold small p-v-1 p-h-2 button-s">View more</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Portfolio 3",
+                description: "Description for Portfolio 3",
+                code: `
+<div class="row container-fluid m-v-4">
+  <div class="col-md-4 outline-light-grey p1">
+    <div class="post">
+      <div class="post-top">
+        <a href="#">
+          <figure><img src="../img/blocks/work-1.jpg" class="post-top-img img-responsive rounded"></figure>
+        </a>
+      </div>
+      <div class="post-content">
+        <a href="#">
+          <h5 class="bold black left">Project World Media</h5>
+        </a>
+        <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. </p>
+        <a href="" class="info bold">Read Story</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 outline-light-grey p1">
+    <div class="post">
+      <div class="post-top">
+        <a href="#">
+          <figure><img src="../img/blocks/work-2.jpg" class="post-top-img img-responsive rounded"></figure>
+        </a>
+      </div>
+      <div class="post-content">
+        <a href="#">
+          <h5 class="bold black left">The Project</h5>
+        </a>
+        <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. </p>
+        <a href="" class="info bold">Read Story</a>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4 outline-light-grey p1">
+    <div class="post">
+      <div class="post-top">
+        <a href="#">
+          <figure><img src="../img/blocks/work-4.jpg" class="post-top-img img-responsive rounded"></figure>
+        </a>
+      </div>
+      <div class="post-content">
+        <a href="#">
+          <h5 class="bold black left">City Project</h5>
+        </a>
+        <p class="left">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+          labore et dolore magna aliqua. </p>
+        <a href="" class="info bold">Read Story</a>
 
+      </div>
+    </div>
+  </div>
+</div>
 `
             },
         ]
@@ -2068,7 +3533,246 @@ const blocks = [
                 title: "Team 1",
                 description: "Description for Team 1",
                 code: `
-
+<section class="row container m-v-4">
+  <div class="p-v-1 col-md-12">
+    <h4 class="center black text-uppercase bold">Our team</h4>
+    <p class="dark center display-6">People who have contributed enormously to our Company.
+    </p>
+    <hr class="width-short center w-50">
+  </div>
+  <div class="col-md-6 row m-v-2">
+      <div class="col-md-5 p0">
+        <img src="../img/blocks/worker-1.jpg" alt="alttext" class="img-responsive col-md-5">
+      </div>
+      <div class="col-md-7 p-h-1 bg-white">
+        <p class="h6 bold black text-uppercase m0">bob DOE</p>
+        <p class="color-2 italic">CEO</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 row m-v-2">
+      <div class="col-md-5 p0">
+        <img src="../img/blocks/worker-2.jpg" alt="alttext" class="img-responsive col-md-5">
+      </div>
+      <div class="col-md-7 p-h-1 bg-white">
+        <p class="h6 bold black text-uppercase m0">bella DOE</p>
+        <p class="color-2 italic">Developer</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 row m-v-2">
+      <div class="col-md-5 p0">
+        <img src="../img/blocks/worker-4.jpg" alt="alttext" class="img-responsive col-md-5">
+      </div>
+      <div class="col-md-7 p-h-1 bg-white">
+        <p class="h6 bold black text-uppercase m0">kim DOE</p>
+        <p class="color-2 italic">Co-Founder</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-6 row m-v-2">
+      <div class="col-md-5 p0">
+        <img src="../img/blocks/worker-3.jpg" alt="alttext" class="img-responsive col-md-5">
+      </div>
+      <div class="col-md-7 p-h-1 bg-white">
+        <p class="h6 bold black text-uppercase m0">Ann DOE</p>
+        <p class="color-2 italic">Support</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
+`
+            },
+            {
+                title: "Team 2",
+                description: "Description for Team 2",
+                code: `
+<section class="row container m-v-4">
+  <div class="p-v-1 col-md-12">
+    <h4 class="center black text-uppercase bold">Our team</h4>
+    <p class="dark center display-6">People who have contributed enormously to our Company.
+    </p>
+    <hr class="width-short center w-50">
+  </div>
+  <div class=" col-12 col-md-6 col-lg-3 row p-1-2">
+      <img src="../img/blocks/worker-1.jpg" alt="alttext" class="col-12 img-responsive">
+      <div class="p-t-1 bg-white shadow-3 p-1-2">
+        <p class="h6 bold black text-uppercase m0">bob DOE</p>
+        <p class="color-2 italic">CEO</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class=" col-12 col-md-6 col-lg-3 row p-1-2">
+      <img src="../img/blocks/worker-2.jpg" alt="alttext" class="col-12 img-responsive">
+      <div class="p-t-1 bg-white shadow-3 p-1-2">
+        <p class="h6 bold black text-uppercase m0">bella DOE</p>
+        <p class="color-2 italic">Developer</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class=" col-12 col-md-6 col-lg-3 row p-1-2">
+      <img src="../img/blocks/worker-4.jpg" alt="alttext" class="col-12 img-responsive">
+      <div class="p-t-1 bg-white shadow-3 p-1-2">
+        <p class="h6 bold black text-uppercase m0">kim DOE</p>
+        <p class="color-2 italic">Co-Founder</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+  <div class=" col-12 col-md-6 col-lg-3 row p-1-2">
+      <img src="../img/blocks/worker-3.jpg" alt="alttext" class="col-12 img-responsive">
+      <div class="p-t-1 bg-white shadow-3 p-1-2">
+        <p class="h6 bold black text-uppercase m0">Ann DOE</p>
+        <p class="color-2 italic">Support</p>
+        <p class="dark">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quaerat
+          assumenda similique unde mollitia.
+        </p>
+        <div class="row">
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+              </svg>
+            </i>
+          </a>
+          <a href="#:">
+            <i class="icon-box circle m0 bordered hover-grey">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+                <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+              </svg>
+            </i>
+          </a>
+        </div>
+      </div>
+    </div>
+</div>
+</section>
 `
             },
         ]
@@ -2085,10 +3789,13 @@ const blocks = [
 
 
 const blockList = document.getElementById("blocksList")
+const blocksIndex = document.getElementById("blocksIndex")
 for (const block of blocks) {
     const categoryHeader = document.createElement("p")
     categoryHeader.className = "text-uppercase font-semibold m-b-0"
-    categoryHeader.textContent = block.name;
+    categoryHeader.id = block.name.replace(/\s+/g, '-').toLowerCase() + "-header"
+    categoryHeader.innerHTML = `<a href="#${categoryHeader.id}">${block.name}</a>`;
+    categoryHeader.innerHTML = block.name;
     blockList.appendChild(categoryHeader);
 
     for (const item of block.items) {
@@ -2114,6 +3821,10 @@ function loadBlock(title) {
     const previewPanelMain = document.getElementById("previewPanelMain")
     const blockItem = findItemByTitle(title)
     previewPanelMain.innerHTML = blockItem.code
+    blockId = title.replace(/\s+/g, '-').toLowerCase()
+    window.location.hash = blockId;
+    document.title = `${blockItem.title} | CSSvars Blocks`;
+
 }
 
 function switchTheme() {
@@ -2133,3 +3844,27 @@ function copyCode() {
         msg.classList.add("d-none")
     }, 3000)
 }
+
+function loadBlockFromHashOrDefault() {
+  const hash = window.location.hash.replace('#', '');
+  if (hash) {
+    console.log('found')
+    // Try to find block by hash (title converted to id)
+    for (const block of blocks) {
+      for (const item of block.items) {
+        if (item.title.replace(/\s+/g, '-').toLowerCase() === hash) {
+          loadBlock(item.title);
+          return;
+        }
+      }
+    }
+  }
+  // If no hash or not found, load first block
+      console.log('not found')
+  if (blocks.length && blocks[0].items.length) {
+    loadBlock(blocks[0].items[0].title);
+  }
+}
+
+// Call on page load
+window.addEventListener("DOMContentLoaded", loadBlockFromHashOrDefault);
