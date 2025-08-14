@@ -676,26 +676,1397 @@ const blocks = [
                 title: "Content 5",
                 description: "Description for Content 5",
                 code: `
-
+<section class="parallax-img m-t-4 h-100-vh m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
+  <div class="h-100-vh d-flex flex-column justify-content-center align-items-center p-v-3">
+    <div class="col-8 shadow-3 p3 rounded bg-white center">
+        <svg class="icon-color-1-fill icon-ml" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"></path></svg>
+        <h3 class="black bold center">We believe that people can be truly happy on the outside only after reaching happiness within.</h3>
+        <p class="m-t-2 black bold h6">Victoria Perry</p>
+        <p class="grey ">CEO and Co-Founder</p>
+    </div>
+  </div>
+</section>
 `
             },
             {
                 title: "Content 6",
                 description: "Description for Content 6",
                 code: `
-
+<section class="row m-h-3">
+  <div class="col-md-6 m-t-2">
+    <img src="../img/blocks/technology.jpg" class="img-responsive">
+  </div>
+  <div class="col-md-6">
+    <div class="row">
+    <div class="col-md-6">
+        <div class=" black  center p2">
+            <i class="icon-box bga-color-2 circle">
+                <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m">
+                    <path fill="color-1" d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,4V16H8.83L12,19.17L15.17,16H20V4H4M7.5,6A1.5,1.5 0 0,1 9,7.5A1.5,1.5 0 0,1 7.5,9A1.5,1.5 0 0,1 6,7.5A1.5,1.5 0 0,1 7.5,6M6,14L11,9L13,11L18,6V14H6Z"></path>
+                </svg>
+            </i>
+            <p class="center black m-t-05 text-uppercase font-weight-600">PROTOTYPE AN IDEA</p>
+            <p class="dark ">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <div class=" black  center p2">
+            <i class="icon-box bga-color-2 circle">
+                <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m">
+                    <path fill="color-1" d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                </svg>
+            </i>
+            <p class="center black m-t-05 text-uppercase font-weight-600">RESEARCH USER NEEDS</p>
+            <p class="dark ">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+    <div class="col-md-6">
+        <div class=" black  center p2">
+            <i class="icon-box bga-color-2 circle">
+                <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m">
+                    <path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"></path>
+                </svg>
+            </i>
+            <p class="center black m-t-05 text-uppercase font-weight-600">DESIGN A NEW PRODUCT</p>
+            <p class="dark ">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+        </div>
+      </div>
+      <div class="col-md-6">
+          <div class=" black  center p2">
+              <i class="icon-box bga-color-2 circle">
+                  <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m">
+                      <path fill="color-1" d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,4V16H8.83L12,19.17L15.17,16H20V4H4M6,7H18V9H6V7M6,11H16V13H6V11Z"></path>
+                  </svg>
+              </i>
+              <p class="center black m-t-05 text-uppercase font-weight-600">IMPROVE A PRODUCT</p>
+              
+              <p class="dark ">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum id venenatis.</p>
+          </div>
+      </div>
+    </div>
+  </div>
+</section>
 `
             },
             {
                 title: "Content 7",
                 description: "Description for Content 7",
                 code: `
+<section class="container p-v-3">
+  <div class="m-v-2">
+    <h4 class="black bold center">What We Do</h4>
+    <p class="text-uppercase dark center">OUR AMAZING SERVICES</p>
+  </div>
+  <div class="row m-v-2">
+    <div class="col-md-6 line-height-2 left p0">
+      <div class="row m-v-1">
+        <div class="col-md-2 p0 center">
+          <svg viewBox="0 0 24 24" class="icon-s icon-color-2-fill m-v-1">
+            <path
+              d="M1,1V5H2V19H1V23H5V22H19V23H23V19H22V5H23V1H19V2H5V1M5,4H19V5H20V19H19V20H5V19H4V5H5M6,6V14H9V18H18V9H14V6M8,8H12V12H8M14,11H16V16H11V14H14">
+            </path>
+          </svg>
+        </div>
 
+        <div class="col-md-10 p0">
+          <p class="bold black h6 m0">WEB DESIGN</p>
+          <p class="dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+            dolorem et ut
+            praesentium consectetur, voluptas commodi laboriosam modi suscipit?</p>
+
+        </div>
+      </div>
+      <div class="row m-v-1">
+        <div class="col-md-2 p0 center">
+          <svg viewBox="0 0 24 24" class="icon-s icon-color-2-fill m-v-1">
+            <path
+              d="M16,18H7V4H16M11.5,22A1.5,1.5 0 0,1 10,20.5A1.5,1.5 0 0,1 11.5,19A1.5,1.5 0 0,1 13,20.5A1.5,1.5 0 0,1 11.5,22M15.5,1H7.5A2.5,2.5 0 0,0 5,3.5V20.5A2.5,2.5 0 0,0 7.5,23H15.5A2.5,2.5 0 0,0 18,20.5V3.5A2.5,2.5 0 0,0 15.5,1Z">
+            </path>
+          </svg>
+        </div>
+
+        <div class="col-md-10 p0">
+          <p class="bold black h6 m0">MOBILE APPS</p>
+          <p class="dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+            dolorem et ut
+            praesentium consectetur, voluptas commodi laboriosam modi suscipit?</p>
+
+        </div>
+      </div>
+      <div class="row m-v-1">
+        <div class="col-md-2 p0 center">
+          <svg viewBox="0 0 24 24" class="icon-s icon-color-2-fill m-v-1">
+            <path
+              d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z">
+            </path>
+          </svg>
+        </div>
+
+        <div class="col-md-10 p0">
+          <p class="bold black h6 m0">WEB DEVELOPMENT + ECOMMERCE</p>
+          <p class="dark font-weight-400">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro
+            dolorem et ut
+            praesentium consectetur, voluptas commodi laboriosam modi suscipit?</p>
+          <button class="outline-color-1 text-uppercase bold small p-v-1 p-h-2">contact us</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 row d-inline p0">
+      <div class="center m-v-2">
+        <img src="../img/blocks/work-10.jpg" class="col-md-4 m-v-2 p0 img-responsive">
+      </div>
+    </div>
+  </div>
+</section>
 `
             },
             {
                 title: "Content 8",
                 description: "Description for Content 8",
+                code: `
+<section class="row container">
+          <div class="col-md-6 p-v-3">
+              <div class="row">
+                  <div class="row m-v-1">
+                      <div class="col-md-5 p0">
+                          <img src="../img/blocks/worker-2.jpg" alt="alttext" class="img-responsive">
+                      </div>
+
+                      <div class="col-md-7 p0 m-v-3 position-absolute outline-light-grey bg-white right-2 top-4 w-75">
+                          <div class="p-v-1 p-h-2">
+                              <p class="h6 bold black text-uppercase">Long format image</p>
+                              <span class="p05 bg-grey black"> 30 May </span>
+                              <p class="dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit...
+                              </p>
+                              <a href="#" class="noHover-dark text-uppercase bold">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-md-6 p-v-3">
+              <div class="row">
+                  <div class="row m-v-1">
+                      <div class="col-md-5 p0">
+                          <img src="../img/blocks/worker-4.jpg" alt="alttext" class="img-responsive">
+                      </div>
+
+                      <div class="col-md-7 p0 m-v-3 position-absolute outline-light-grey bg-white right-2 top-4 w-75">
+                          <div class="p1">
+                              <p class="h6 bold black text-uppercase">Long format image</p>
+                              <span class="p05 bg-grey black"> 17 Jun </span>
+                              <p class="dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur
+                                  adipiscing elit...
+                              </p>
+                              <a href="#" class="noHover-dark text-uppercase bold">Read More</a>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+</section>
+`
+            },
+            {
+                title: "Content 9",
+                description: "Description for Content 9",
+                code: `
+<section class="container m-t-6">
+  <h1 class="bold black center">Benefits galore when you join</h1>
+  <p class="center h6 font-weight-400 m-t-1 dark">Tortor at auctor urna nunc id. Sed elementum tempus egestas<br> sed
+    sed risus pretium quam. At ultrices mi tempus.</p>
+  <div class="row m-t-4">
+    <div class="col-md-6">
+      <div class="outline-light-grey black m05 p2">
+        <div class="d-flex left m1">
+          <svg viewBox="0 0 24 24" class="icon-info-fill icon-s">
+            <path
+              d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z">
+            </path>
+          </svg>
+        </div>
+        <h4 class="left bold black">Competitive Salary</h4>
+        <p class="dark left font-weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, RipenApps is the
+          best place to acquire the same.</p>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="outline-light-grey black m05 p2">
+        <div class="d-flex left m1">
+          <svg xmlns="http://www.w3.org/2000/svg" class="icon-info-fill icon-s" viewBox="0 0 24 24">
+            <path
+              d="M11,9H9V2H7V9H5V2H3V9C3,11.12 4.66,12.84 6.75,12.97V22H9.25V12.97C11.34,12.84 13,11.12 13,9V2H11V9M16,6V14H18.5V22H21V2C18.24,2 16,4.24 16,6Z">
+            </path>
+          </svg>
+        </div>
+        <h4 class="left bold black">Daily Meals</h4>
+        <p class="dark left font-weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+          tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, RipenApps is the
+          best place to acquire the same.</p>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-md-6">
+        <div class="outline-light-grey black m05 p2">
+          <div class="d-flex left m1">
+            <svg viewBox="0 0 24 24" class="icon-info-fill icon-s">
+              <path
+                d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z">
+              </path>
+            </svg>
+          </div>
+          <h4 class="left bold black">Free Equipment</h4>
+          <p class="dark left font-weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, RipenApps is the
+            best place to acquire the same.</p>
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <div class="outline-light-grey black m05 p2">
+          <div class="d-flex left m1">
+            <svg viewBox="0 0 24 24" class="icon-info-fill icon-s">
+              <path fill="color-1"
+                d="M12,17.5C14.33,17.5 16.3,16.04 17.11,14H6.89C7.69,16.04 9.67,17.5 12,17.5M8.5,11A1.5,1.5 0 0,0 10,9.5A1.5,1.5 0 0,0 8.5,8A1.5,1.5 0 0,0 7,9.5A1.5,1.5 0 0,0 8.5,11M15.5,11A1.5,1.5 0 0,0 17,9.5A1.5,1.5 0 0,0 15.5,8A1.5,1.5 0 0,0 14,9.5A1.5,1.5 0 0,0 15.5,11M12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20M12,2C6.47,2 2,6.5 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2Z">
+              </path>
+            </svg>
+          </div>
+          <h4 class="left bold black">Team Retreats</h4>
+          <p class="dark left font-weight-400">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud, RipenApps is the
+            best place to acquire the same.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },
+        {
+        name: "List",
+        items: [
+                {
+                title: "List 1",
+                description: "Description for list 1",
+                code: `
+<section class="p-v-4 container">
+  <div class="row">
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+    <div class="col-4 col-md-2">
+      <img src="../img/blocks/client-logo.png" alt="client" class="img-responsive m0 p0">
+    </div>
+  </div>
+</section>
+`
+            },
+                {
+                title: "List 2",
+                description: "Description for list 2",
+                code: `
+<section class="container p-v-4">
+  <h2 class="black center">Design and Concept Development</h2>
+  <p class="dark center h6">Lorem ipsum dolor sit, consectetur some adipiscing elit<br> eiusmod tempor
+    incididu</p>
+  <div class="row m-t-4">
+    <div class="col-md-4 p-h-2">
+      <h4 class="black bold">Design</h4>
+      <ul class="no-indent-ul">
+        <li class="h6 dark m-t-1 p-1-4"><span class="large black">+</span> Product Mockup</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Branding</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Illustrations</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> UI/UX</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Websites</li>
+      </ul>
+    </div>
+    <div class="col-md-4 p-h-2">
+      <h4 class="black bold"> Web Design</h4>
+      <ul class="no-indent-ul">
+        <li class="h6 dark m-t-1 p-1-4"><span class="large black">+</span> Prototype</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Website Analysis</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Illustrations</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Content Writing</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Website Hosting</li>
+      </ul>
+    </div>
+    <div class="col-md-4 p-h-2">
+      <h4 class="black bold">Development</h4>
+      <ul class="no-indent-ul">
+        <li class="h6 dark m-t-1 p-1-4"><span class="large black">+</span> WordPress</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Application Devloment</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Front-end</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> PHP</li>
+        <li class="h6 dark p-1-4"><span class="large black">+</span> Javascript</li>
+      </ul>
+
+
+    </div>
+  </div>
+</section>
+`
+            },
+                {
+                title: "List 3",
+                description: "Description for list 3",
+                code: `
+<section class="row p-v-4  bg-dark">
+  <div class="row m-v-4 container-fluid">
+    <div class="col-md-4 p1">
+      <h6 class="white text-uppercase left">My skills<br> <span class="display-3">Expertise</span></h6>
+      <p class="grey left h6 m-t-1">Facilisi morbi tempus iaculis urna id volutpat lacus laoreet. Malesuada proin libero
+        nunc. Mattis aliquam faucibus purus in massa tempor nec. </p>
+      <a href="#" class="button button-m bg-white black p-h-1">RESUME</a>
+    </div>
+    <div class="col-md-4 p1">
+      <h6 class="grey">— Brand Development &amp; Advertising</h6>
+      <h6 class="grey m-t-05">— Direct-Response Marketing</h6>
+      <h6 class="grey m-t-05">— Search Marketing: SEO &amp; PPC</h6>
+      <h6 class="grey m-t-05">— Digital Video &amp; TV, including Super Bowl</h6>
+      <h6 class="grey m-t-05">— Streaming &amp; Radio</h6>
+      <h6 class="grey m-t-05">— Out-of-Home</h6>
+      <h6 class="grey m-t-05">— Influencer Marketing: Podcast &amp; YouTube</h6>
+      <h6 class="grey m-t-05">— Email Marketing, Design &amp; Dev</h6>
+    </div>
+    <div class="col-md-4 p1">
+      <h6 class="grey">— Website Design &amp; Development</h6>
+      <h6 class="grey m-t-05">— Advertising Creative (All Mediums)</h6>
+      <h6 class="grey m-t-05">— Identity Design</h6>
+      <h6 class="grey m-t-05">— Conversion Rate Optimization</h6>
+      <h6 class="grey m-t-05">— Copywriting (Ad, Web, &amp; Product)</h6>
+      <h6 class="grey m-t-05">— Media Planning &amp; Buying (up to $100MM)</h6>
+      <h6 class="grey m-t-05">— Content Strategy &amp; Execution</h6>
+      <h6 class="grey m-t-05">— Business Development</h6>
+    </div>
+  </div>
+</section>
+`
+            },
+                {
+                title: "List 4",
+                description: "Description for list 4",
+                code: `
+<section class="container-fluid m-p-4 h-100-vh bg-light-grey center d-flex flex-column justify-content-center">
+  <h2 class="center black font-weight-600">Our Services</h2>
+  <p class="h5 dark">List of awsome Services CSS Vars</p>
+  <div class="row justify-content-center">
+      <div class="col-md-4">
+          <div class="black p2 bg-white m1">
+              <div class="d-flex justify-content-center">
+                  <i class="icon-box">
+                      <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                          <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"></path>
+                          <path d="M0 0h24v24H0z" fill="none"></path>
+                      </svg>
+                  </i>
+              </div>
+              <h5 class="center black font-weight-600">Based on Variables</h5>
+              <p class="center">Easy to use and customize</p>
+          </div>
+      </div>
+      <div class="col-md-4">
+      <div class=" black p2 bg-white m1">
+          <div class="d-flex justify-content-center">
+              <i class="icon-box">
+                  <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                      <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z"></path>
+                  </svg>
+              </i>
+          </div>
+          <h5 class="center black font-weight-600">Pure HTML CSS</h5>
+          <p class="center">Everything you need without JS</p>
+      </div>
+      </div>
+      <div class="col-md-4">
+          <div class=" black   p2 bg-white m1">
+              <div class="d-flex justify-content-center">
+                  <i class="icon-box">
+                      <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                          <path d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z"></path>
+                      </svg>
+                  </i>
+              </div>
+              <h5 class="center black font-weight-600">Fast Loading</h5>
+              <p class="center">A small CSS file makes wonders</p>
+          </div>
+      </div>
+  </div>
+  <div class="row justify-content-center">
+      <div class="col-md-4 m-t-1">
+          <div class=" black p2 bg-white m1">
+              <div class="d-flex justify-content-center">
+                  <i class="icon-box">
+                      <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                          <path d="M19.5,3.09L20.91,4.5L16.41,9H20V11H13V4H15V7.59L19.5,3.09M20.91,19.5L19.5,20.91L15,16.41V20H13V13H20V15H16.41L20.91,19.5M4.5,3.09L9,7.59V4H11V11H4V9H7.59L3.09,4.5L4.5,3.09M3.09,19.5L7.59,15H4V13H11V20H9V16.41L4.5,20.91L3.09,19.5Z"></path>
+                  </svg> 
+                  </i>
+              </div>
+              <h5 class="center black font-weight-600">Responsive &amp; Mobile first</h5>
+              <p class="center">Much more than just a grid</p>
+          </div>
+      </div>
+
+
+      <div class="col-md-4 m-t-1">
+          <div class=" black p2 bg-white m1">
+              <div class="d-flex justify-content-center">
+                  <i class="icon-box">
+                      <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                          <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+                      </svg>
+                  </i>
+              </div>
+              <h5 class="center black font-weight-600">100's of Free UI Elements</h5>
+              <p class="center">All needed elements are ready</p>
+          </div>
+      </div>
+      <div class="col-md-4 m-t-1">
+          <div class=" black p2 bg-white m1">
+              <div class="d-flex justify-content-center">
+                  <i class="icon-box">
+                      <svg class="icon-black-fill  icon-m" viewBox="0 0 24 24">
+                          <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+                      </svg>
+                  </i>
+              </div>
+              <h5 class="center black font-weight-600">Free &amp; Open Source</h5>
+              <p class="center">Built with love to be used</p>
+          </div>
+      </div>
+  </div>
+</section>
+`
+            },
+                {
+                title: "List 5",
+                description: "Description for list 5",
+                code: `
+<section class="row container m-v-4">
+  <div class="col-md-4 m0 p0">
+    <img src="../img/blocks/work-2.jpg" class="img-responsive p1">
+  </div>
+
+  <div class="col-md-8 left">
+    <h4 class="bold p-v-1 black">Overview</h4>
+    <hr class="width-short m0">
+
+    <p class="m-v-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer 
+      <span><a href="#" class="color-2">(View More...)</a></span>
+    </p>
+
+    <div class="row topmargin">
+      <div class="col-md-4">
+        <table id="tables" class="table">
+          <tbody>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">20 ROOMS, 5 LUXURY SUITES</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">FITNESS CENTER</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">AIRPORT TRANSPORATION</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <table id="tables" class="table">
+          <tbody>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">24-HOUR IN-ROOM DINING</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">FREE WI-FI</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">PETS STAY FREE</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <div class="col-md-4">
+        <table id="tables" class="table">
+          <tbody>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">VALET CAR SERVICE</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">POOL</span></td>
+            </tr>
+            <tr>
+              <td><span class="large warning bold">✓</span> <span class="small p p0">SPA PROCEDURES</span></td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },
+    {
+        name: "Feature",
+        items: [
+            {
+                title: "Feature 1",
+                description: "Description for feature 1",
+                code: `
+<section class="row container justify-content-center">
+  <div class="col-md-4">
+    <div class=" black  center p2">
+      <svg viewBox="0 0 24 24" class="icon-success-fill icon-ml">
+        <path
+          d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z">
+        </path>
+      </svg>
+      <h4 class="center black bold  h5">Fast Service</h4>
+
+      <p class="dark font-weight-400">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum
+        id venenatis.</p>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <div class=" black  center p2">
+      <svg viewBox="0 0 24 24" class="icon-info-fill icon-ml">
+        <path fill="color-1"
+          d="M5,9V21H1V9H5M9,21A2,2 0 0,1 7,19V9C7,8.45 7.22,7.95 7.59,7.59L14.17,1L15.23,2.06C15.5,2.33 15.67,2.7 15.67,3.11L15.64,3.43L14.69,8H21C22.11,8 23,8.9 23,10V12C23,12.26 22.95,12.5 22.86,12.73L19.84,19.78C19.54,20.5 18.83,21 18,21H9M9,19H18.03L21,12V10H12.21L13.34,4.68L9,9.03V19Z">
+        </path>
+      </svg>
+      <h4 class="center black bold h5">Great Support</h4>
+
+      <p class="dark font-weight-400">Suspendisse sed nisi lacus sed. Tincidunt vitae semper quis lectus.Mi quis
+        hendrerit dolor magna eget. </p>
+    </div>
+  </div>
+
+
+  <div class="col-md-4">
+    <div class=" black center  p2">
+      <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml">
+        <path fill="color-1"
+          d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3M10,5.47L14,6.87V18.53L10,17.13V5.47M5,6.46L8,5.45V17.15L5,18.31V6.46M19,17.54L16,18.55V6.86L19,5.7V17.54Z">
+        </path>
+      </svg>
+      <h4 class="center black bold h5">Use it anywhere</h4>
+
+      <p class="dark font-weight-400">Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus pretium
+        quam vulputate. </p>
+    </div>
+  </div>
+
+</section>
+`
+            },
+            {
+                title: "Feature 2",
+                description: "Description for feature 2",
+                code: `
+<section class="h-25  m-t-6 d-flex flex-column bg-light-grey">
+  <div class="row m-h-7">
+    <div class="col-md-4 center m-t-4">
+      <svg viewBox="0 0 24 24" class="icon-dark-fill icon-m">
+        <path fill="color-1"
+          d="M21,16H3V4H21M21,2H3C1.89,2 1,2.89 1,4V16A2,2 0 0,0 3,18H10V20H8V22H16V20H14V18H21A2,2 0 0,0 23,16V4C23,2.89 22.1,2 21,2Z">
+        </path>
+      </svg>
+      <p class="black m-t-05 font-weight-600 h6">Web Design</p>
+      <p class="dark">Diam maecenas ultricies mi eget mauris<br> pharetra et ultrices neque. Cursus vitae<br> congue
+        mauris rhoncus aenean.</p>
+    </div>
+    <div class="col-md-4 center m-t-4">
+      <svg viewBox="0 0 24 24" class="icon-dark-fill icon-m">
+        <path fill="color-1"
+          d="M4,17L6.75,14.25L6.72,14.23C6.14,13.64 6.14,12.69 6.72,12.11L11.46,7.37L15.7,11.61L10.96,16.35C10.39,16.93 9.46,16.93 8.87,16.37L8.24,17H4M15.91,2.91C16.5,2.33 17.45,2.33 18.03,2.91L20.16,5.03C20.74,5.62 20.74,6.57 20.16,7.16L16.86,10.45L12.62,6.21L15.91,2.91Z">
+        </path>
+      </svg>
+      <p class="black m-t-05 font-weight-600 h6">Branding Design</p>
+      <p class="dark">Diam maecenas ultricies mi eget mauris<br> pharetra et ultrices neque. Cursus vitae<br> congue
+        mauris rhoncus aenean.</p>
+    </div>
+    <div class="col-md-4 center m-t-4">
+      <svg viewBox="0 0 24 24" class="icon-dark-fill icon-m">
+        <path fill="color-1"
+          d="M9.75 20.85C11.53 20.15 11.14 18.22 10.24 17C9.35 15.75 8.12 14.89 6.88 14.06C6 13.5 5.19 12.8 4.54 12C4.26 11.67 3.69 11.06 4.27 10.94C4.86 10.82 5.88 11.4 6.4 11.62C7.31 12 8.21 12.44 9.05 12.96L10.06 11.26C8.5 10.23 6.5 9.32 4.64 9.05C3.58 8.89 2.46 9.11 2.1 10.26C1.78 11.25 2.29 12.25 2.87 13.03C4.24 14.86 6.37 15.74 7.96 17.32C8.3 17.65 8.71 18.04 8.91 18.5C9.12 18.94 9.07 18.97 8.6 18.97C7.36 18.97 5.81 18 4.8 17.36L3.79 19.06C5.32 20 7.88 21.47 9.75 20.85M20.84 5.25C21.06 5.03 21.06 4.67 20.84 4.46L19.54 3.16C19.33 2.95 18.97 2.95 18.76 3.16L17.74 4.18L19.82 6.26M11 10.92V13H13.08L19.23 6.85L17.15 4.77L11 10.92Z">
+        </path>
+      </svg>
+      <p class="black m-t-05 font-weight-600 h6">Print Design</p>
+      <p class="dark p-b-4">Diam maecenas ultricies mi eget mauris<br> pharetra et ultrices neque. Cursus vitae<br>
+        congue mauris rhoncus aenean.</p>
+    </div>
+  </div>
+</section>                
+`
+            },
+            {
+                title: "Feature 3",
+                description: "Description for feature 3",
+                code: `
+<section class="container m-v-4 p-v-4">
+  <h4 class="dark m-t-4 center font-weight-600">Trusted by teams at the world's best companies</h4>
+  <div class="m-h-7">
+    <div class="row  m-t-4">
+      <div class="col-md-3 center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="icon-dark-fill  icon-sm" viewBox="0 0 16 16">
+          <path
+            d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z">
+          </path>
+        </svg>
+        <h4 class="dark m-t-05">Windows</h4>
+      </div>
+      <div class="col-md-3 center">
+
+        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
+          <path fill="color-1"
+            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Google play</h4>
+      </div>
+      <div class="col-md-3 center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-dark-fill  icon-sm" viewBox="0 0 24 24">
+          <path
+            d="M6.5,2H10.5L13.44,10.83L13.5,2H17.5V22C16.25,21.78 14.87,21.64 13.41,21.58L10.5,13L10.43,21.59C9.03,21.65 7.7,21.79 6.5,22V2Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Netflix</h4>
+      </div>
+      <div class="col-md-3 center">
+        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
+          <path fill="color-1"
+            d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Apple</h4>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+`
+            },
+            {
+                title: "Feature 4",
+                description: "Description for feature 4",
+                code: `
+<div class="row  m-t-6 justify-content-center">
+  <div class="col-md-4">
+    <div class="">
+      <div class="p-v-4 bga-grey center">
+        <svg class="icon-dark-fill  icon-lg" viewBox="0 0 24 24">
+          <path
+            d="M19.5,3.09L20.91,4.5L16.41,9H20V11H13V4H15V7.59L19.5,3.09M20.91,19.5L19.5,20.91L15,16.41V20H13V13H20V15H16.41L20.91,19.5M4.5,3.09L9,7.59V4H11V11H4V9H7.59L3.09,4.5L4.5,3.09M3.09,19.5L7.59,15H4V13H11V20H9V16.41L4.5,20.91L3.09,19.5Z">
+          </path>
+        </svg>
+        <h5 class="black center font-weight-600 p-h-1">Responsive &amp; Mobile first</h5>
+        <p class="m-t-05 dark font-weight-400">Responsive images, videos, galleries,<br> tables, menus, maps, frames,
+          embeds</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="">
+      <div class="p-v-4 bga-grey center">
+        <svg class="icon-dark-fill  icon-lg" viewBox="0 0 24 24">
+          <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+        </svg>
+        <h5 class="black center font-weight-600 p-h-1">100's of Free UI Elements</h5>
+        <p class="m-t-05 dark font-weight-400">Typography, buttons, cards, icons,<br> tabs, carousel, masonry, Flex
+          gallery</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="">
+      <div class="p-v-4 bga-grey center">
+        <svg class="icon-dark-fill  icon-lg" viewBox="0 0 24 24">
+          <path
+            d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z">
+          </path>
+        </svg>
+        <h5 class="black center font-weight-600 p-h-1">Free &amp; Open Source</h5>
+        <p class="m-t-05 dark font-weight-400">Free framework, UI elements, &amp;<br> themes. Download, use, enjoy &amp;
+          share</p>
+      </div>
+    </div>
+  </div>
+</div>
+`
+            },
+            {
+                title: "Feature 5",
+                description: "Description for feature 5",
+                code: `
+<section class="">
+  <div class="row container-fluid m-v-4 p-v-4">
+    <div class="col-md-6">
+      <img src="../img/blocks/technology.jpg" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+      <p class="grey font-weight-600 text-uppercase center m-t-1">Feature</p>
+      <h3 class="black center font-weight-600 m-t-4">Simple and super-easy to use!</h3>
+      <p class="dark center m-t-1">Diam quam nulla porttitor massa id neque aliquam. Hendrerit dolor<br> magna eget est
+        lorem ipsum dolor. Turpis egestas maecenas<br> pharetra convallis.</p>
+      <div class="center">
+        <button class="bg-white-hover black-hover p-h-4 m-t-2 rounded">Learn more</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="row container-fluid m-v-4 p-v-4">
+    <div class="col-md-6">
+      <p class="grey font-weight-600 text-uppercase center m-t-1">Feature</p>
+      <h3 class="black center font-weight-600 m-t-4">Simplicity is the key!</h3>
+      <p class="dark center m-t-1">Diam quam nulla porttitor massa id neque aliquam. Hendrerit dolor<br> magna eget est
+        lorem ipsum dolor. Turpis egestas maecenas<br> pharetra convallis.</p>
+      <div class="center">
+        <button class="bg-white-hover black-hover p-h-4 m-t-2 rounded">Learn more</button>
+      </div>
+    </div>
+    <div class="col-md-6">
+      <img src="../img/blocks/laptop.jpg" class="img-responsive">
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },
+    {
+        name: "Steps",
+        items: [
+                {
+                title: "Steps 1",
+                description: "Description for steps 1",
+                code: `
+<section class="container bg-white rounded m-t-6">
+  <div class="row m-t-2">
+    <div class="col-md-6 p-v-2">
+      <img src="../img/blocks/technology.jpg" width="430" height="230" class="img-responsive m-l-2">
+      <h2 class="left black m-t-2 font-weight-600 m-l-2">How to join to our<br> community</h2>
+      <p class="dark m-t-1 m-l-2 h6">Just 3 simple steps to optimize your company<br> operations.</p>
+      <a href="#" class="button rounded bg-info d-inline- m-l-2" target="_blank">Try for free</a>
+
+
+    </div>
+    <div class="col-md-6">
+      <h3 class="black  bold  left m-t-4 m-l-3">Step 1</h3>
+      <p class="dark font-weight-400 left  m-v-2 m-l-3">Sagittis orci a scelerisque purus semper eget<br> duis. Nulla
+        facilisi morbi tempus iaculis. </p>
+      <hr class="col-9">
+      <h3 class="black  bold  left  m-l-3">Step 2</h3>
+      <p class="dark font-weight-400 left  m-v-2 m-l-3">Egestas diam in arcu cursus euismod quis viverra<br> nibh. Sem
+        et tortor consequat id porta nibh. </p>
+      <hr class="col-9">
+      <h3 class="black  bold  left  m-l-3">Step 3</h3>
+      <p class="dark font-weight-400 left  m-v-2 m-l-3">Adipiscing elit pellentesque habitant morbi tristique<br>
+        senectus et netus et. Mollis aliquam ut porttitor leo. </p>
+    </div>
+  </div>
+</section>
+`
+            },
+                {
+                title: "Steps 2",
+                description: "Description for steps 2",
+                code: `
+<section class="container m-t-6">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../img/blocks/worker-2.jpg" class="img-responsive">
+    </div>
+    <div class="col-md-6">
+      <h1 class="black center bold left display-3 m-t-4 m-l-3" style="font-family: Segoe UI Emoji">We partner with<br>
+        your business</h1>
+      <p class="dark font-weight-400 m-l-3 h6 left">Eget nunc lobortis mattis aliquam faucibus purus<br> in massa.Donec
+        ultrices tincidunt arcu non<br> sodales neque sodales ut etiam.</p>
+
+      <div class="row align-items-center m-b-1">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">1</div>
+        <p class="m-l-1 h6 dark">Risus feugiat in ante.</p>
+      </div>
+      <div class="row align-items-center m-b-1">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">2</div>
+        <p class="m-l-1 h6 dark">Lectus magna fringilla urna.</p>
+      </div>
+      <div class="row align-items-center m-b-1">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">3</div>
+        <p class="m-l-1 h6 dark">Leo vel orci porta non pulvinar</p>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },
+    {
+        name: "Statistics",
+        items: [
+            {
+                title: "Statistics 1",
+                description: "Description for Statistics 1",
+                code: `
+<section class="parallax-img h-50 m-v-2 opacity1" style="background-image: url('../img/blocks/design-8.jpg');">
+  <div class="p-v-1">
+
+    <div class="row justify-content-center container center m-v-2">
+      <div class="col-md-3 p1">
+        <svg viewBox="0 0 24 24" class="icon-m icon-white-fill">
+          <path
+            d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z">
+          </path>
+        </svg>
+        <p class=" white h2">50000+</p>
+        <hr class="width-short center w-50 m-v-2">
+        <p class="white text-uppercase  ">LINES OF CODES</p>
+      </div>
+
+
+      <div class="col-md-3 p1">
+        <svg viewBox="0 0 24 24" class="icon-m icon-white-fill">
+          <path
+            d="M19,1L17.74,3.75L15,5L17.74,6.26L19,9L20.25,6.26L23,5L20.25,3.75M9,4L6.5,9.5L1,12L6.5,14.5L9,20L11.5,14.5L17,12L11.5,9.5M19,15L17.74,17.74L15,19L17.74,20.25L19,23L20.25,20.25L23,19L20.25,17.74">
+          </path>
+        </svg>
+        <p class=" white h2">12345+</p>
+        <hr class="width-short center w-50 m-v-2">
+        <p class="white text-uppercase  ">KBS OF HTML FILES</p>
+      </div>
+
+      <div class="col-md-3 p1">
+        <svg viewBox="0 0 24 24" class="icon-m icon-white-fill">
+          <path
+            d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z">
+          </path>
+        </svg>
+        <p class=" white h2">365*</p>
+        <hr class="width-short center w-50 m-v-2">
+        <p class="white text-uppercase  ">NO. OF TEMPLATES</p>
+      </div>
+
+      <div class="col-md-3 p1">
+        <svg viewBox="0 0 24 24" class="icon-m icon-white-fill">
+          <path
+            d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z">
+          </path>
+        </svg>
+        <p class=" white h2">10000+</p>
+        <hr class="width-short center w-50 m-v-2">
+        <p class="white text-uppercase  ">HOURS OF CODING</p>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Statistics 2",
+                description: "Description for Statistics 2",
+                code: `
+<section class="row  m-t-6 justify-content-center">
+  <div class="col-md-4">
+    <div class="">
+      <div class="p-v-4 bga-grey">
+        <h1 class="center bold display-2 dark p-h-1">100+</h1>
+        <p class="dark center font-weight-600 p-h-1">Websites developed</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="">
+
+
+      <div class="p-v-4 bga-grey">
+        <h5 class="center bold display-2 dark p-h-1">800K</h5>
+        <p class="dark center font-weight-600 p-h-1">Quality leads</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-md-4">
+    <div class="">
+
+
+      <div class="p-v-4 bga-grey">
+        <h5 class="center bold display-2 dark p-h-1"> 45K</h5>
+        <p class="dark center font-weight-600 p-h-1">Paid subscribers &amp; users</p>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Statistics 3",
+                description: "Description for Statistics 3",
+                code: `
+<section class="parallax-img" style="background-image: url('../img/blocks/design-8.jpg'); min-height: 400px;">
+  <div class="row m-h-4">
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">233</h1>
+        <h6 class="white m-t-1 text-uppercase">Happy Customers</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">132</h1>
+        <h6 class="white m-t-1 text-uppercase">Project Completed</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">250</h1>
+        <h6 class="white m-t-1 text-uppercase">Cups of coffee</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">25</h1>
+        <h6 class="white m-t-1 text-uppercase">Awards</h6>
+      </div>
+    </div>
+  </div>
+
+</section>
+`
+            },
+            {
+                title: "Statistics 4",
+                description: "Description for Statistics 4",
+                code: `
+<section class="h-25 d-flex  m-t-6 flex-column bg-gradient-black">
+  <div class="row  m-h-3 m-v-2 p0">
+    <div class="col-md-4">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white font-weight-600">12%</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Lorem ipsum dolor sit amet,<br> consectetur adipisicing
+            elit.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-4 p05">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white font-weight-600">1,8x</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Lorem ipsum dolor sit amet,<br> consectetur adipisicing
+            elit.</p>
+        </div>
+
+      </div>
+    </div>
+    <div class="col-md-4 p05">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white  font-weight-600">3k+</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Lorem ipsum dolor sit amet,<br> consectetur adipisicing
+            elit.</p>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },    
+    {
+        name: "Gallery",
+        items: [
+            {
+                title: "Gallery 1",
+                description: "Description for Gallery 1",
+                code: `
+<section class="container m-v-4">
+  <h4 class="center black">Our <strong>Masonry Gallery</strong></h4>
+  <div class="m-v-1">
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+          magna.</p>
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+        
+  <div class="masonry-container">
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/595747/pexels-photo-595747.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1029039/pexels-photo-1029039.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/983436/pexels-photo-983436.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1028437/pexels-photo-1028437.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/963436/pexels-photo-963436.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-medium masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/814372/pexels-photo-814372.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1018797/pexels-photo-1018797.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-medium masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/830912/pexels-photo-830912.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/890500/pexels-photo-890500.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/863985/pexels-photo-863985.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-medium masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/398549/pexels-photo-398549.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1024252/pexels-photo-1024252.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/91216/pexels-photo-91216.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-small masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/1018350/pexels-photo-1018350.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-large masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/881462/pexels-photo-881462.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-medium masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/380285/pexels-photo-380285.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+            <div class="masonry-medium masonry-gallery-img">
+              <img src="https://images.pexels.com/photos/837500/pexels-photo-837500.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+            </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Gallery 2",
+                description: "Description for Gallery 2",
+                code: `
+<section class="container m-v-4">
+  <h4 class="center black">Our <strong>Flex Gallery</strong></h4>
+  <div class="m-v-1">
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+          magna.</p>
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+
+  <div class="flex-gallery-container">
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/863985/pexels-photo-863985.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/830912/pexels-photo-830912.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1029039/pexels-photo-1029039.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1029594/pexels-photo-1029594.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/775414/pexels-photo-775414.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/983436/pexels-photo-983436.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1028437/pexels-photo-1028437.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/963436/pexels-photo-963436.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1028599/pexels-photo-1028599.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/814372/pexels-photo-814372.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1018797/pexels-photo-1018797.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/890500/pexels-photo-890500.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/398549/pexels-photo-398549.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1024252/pexels-photo-1024252.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/91216/pexels-photo-91216.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+    <div class="flex-gallery-image-container">
+      <img src="https://images.pexels.com/photos/1105534/pexels-photo-1105534.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260">
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Gallery 3",
+                description: "Description for Gallery 3",
+                code: `
+<section class=" m-v-4">
+  <h4 class="center black">Our <strong>Light Box Gallery</strong></h4>
+  <div class="m-v-1">
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+          magna.</p>
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+
+    <div class="row justify-content-center container">
+      <div class="light-box shadow-3 col-4">
+        <a class="light-box-link" href="#light-box-img1">
+          <img src="../img/blocks/img1.jpg" class="img-responsive" alt="Demo image">
+        </a>
+        <div id="light-box-img1" class="light-box-overlay fadeIn">
+          <figure class="light-box-content light-box-figure">
+            <div class="light-box-image"
+              style="width: 800px; padding-top: 66.25%; background-image: url(../img/blocks//img1.jpg);">
+            </div>
+          </figure>
+          <a href="#light-box-untarget" class="light-box-close light-box-control">Close</a>
+          <a class="light-box-next light-box-control" href="#light-box-img2">Next</a>
+        </div>
+      </div>
+  
+      <div class="light-box shadow-3 col-4">
+        <a class="light-box-link" href="#light-box-img2">
+          <img src="../img/blocks/img2.jpg" class="img-responsive" alt="Demo image">
+        </a>
+        <div id="light-box-img2" class="light-box-overlay fadeIn">
+          <figure class="light-box-content light-box-figure">
+            <div class="light-box-image"
+              style="width: 800px; padding-top: 66.25%; background-image: url(../img/blocks/img2.jpg);">
+            </div>
+          </figure>
+          <a href="#light-box-untarget" class="light-box-close light-box-control">Close</a>
+          <a class="light-box-next light-box-control" href="#light-box-img3">Next</a>
+          <a class="light-box-prev light-box-control" href="#light-box-img1">Prev</a>
+        </div>
+      </div>
+  
+      <div class="light-box shadow-3 col-4">
+        <a class="light-box-link" href="#light-box-img3">
+          <img src="../img/blocks/img3.jpg" class="img-responsive" alt="Demo image">
+        </a>
+        <div id="light-box-img3" class="light-box-overlay fadeIn">
+          <figure class="light-box-content light-box-figure">
+            <div class="light-box-image"
+              style="width: 800px; padding-top: 66.25%; background-image: url(../img/blocks/img3.jpg);">
+            </div>
+          </figure>
+          <a href="#light-box-untarget" class="light-box-close light-box-control">Close</a>
+          <a class="light-box-prev light-box-control" href="#light-box-img2">Prev</a>
+        </div>
+      </div>
+    </div>
+</section>
+`
+            },
+            {
+                title: "Gallery 4",
+                description: "Description for Gallery 4",
+                code: `
+<section class=" m-v-4">
+  <h4 class="center black">Our <strong>Gallery Box</strong></h4>
+  <div class="m-v-1">
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec eu pulvinar
+          magna.</p>
+      <p class="center dark m0 p0">Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
+  </div>
+
+  <div class="row justify-content-center container">
+    <div id="gallery-box-photo-container" class="gallery-box-photo-container rounded shadow-3">
+      <img id="main-image" src="../img/blocks/img1.jpg"><br>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="../img/blocks/img1.jpg" onclick="document.getElementById('main-image').src='../img/blocks/img1.jpg'">
+    </div>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="../img/blocks/img2.jpg" onclick="document.getElementById('main-image').src='../img/blocks/img2.jpg'">
+    </div>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="../img/blocks/img3.jpg" onclick="document.getElementById('main-image').src='../img/blocks/img3.jpg'">
+    </div>
+    </div>
+  </div>
+</section>
+`
+            },
+        ]
+    },    
+    {
+        name: "Video",
+        items: [
+            {
+                title: "Video 1",
+                description: "Description for Video 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Testimonial",
+        items: [
+            {
+                title: "Testimonial 1",
+                description: "Description for Testimonial 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "FAQ",
+        items: [
+            {
+                title: "FAQ 1",
+                description: "Description for FAQ 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "CTA",
+        items: [
+            {
+                title: "CTA 1",
+                description: "Description for CTA 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Pricing",
+        items: [
+            {
+                title: "Pricing 1",
+                description: "Description for Pricing 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Contact",
+        items: [
+            {
+                title: "Contact 1",
+                description: "Description for Contact 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Footer",
+        items: [
+            {
+                title: "Footer 1",
+                description: "Description for Footer 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Blog",
+        items: [
+            {
+                title: "Blog 1",
+                description: "Description for Blog 1",
+                code: `
+
+`
+            },
+        ]
+    },
+//     {
+//         name: "E-commerce",
+//         items: [
+//           {
+//                 title: "E-commerce 1",
+//                 description: "Description for E-commerce 1",
+//                 code: `
+
+// `
+//             },
+//         ]
+//     },
+    {
+        name: "Portfolio",
+        items: [
+            {
+                title: "Portfolio 1",
+                description: "Description for Portfolio 1",
+                code: `
+
+`
+            },
+        ]
+    },
+    {
+        name: "Team",
+        items: [
+            {
+                title: "Team 1",
+                description: "Description for Team 1",
                 code: `
 
 `
@@ -703,6 +2074,15 @@ const blocks = [
         ]
     },
 ]
+
+
+
+
+
+
+
+
+
 
 const blockList = document.getElementById("blocksList")
 for (const block of blocks) {

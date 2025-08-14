@@ -1189,7 +1189,7 @@ height: 2.5rem;
   z-index: 999;
   justify-content: center;
   align-items: center;
-  background-color: rgba(var(--black-rgb), 0.9);
+  background-color: rgba(0, 0, 0, 0.9);
 }
 .cssvars .light-box-overlay:target, .cssvars .light-box-overlay.is-active {
   visibility: visible;
