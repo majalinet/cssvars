@@ -26,13 +26,19 @@
   --body-bg: #fff;
   --body-color: #111;
   --font-weight: 400;
-  --font-weight-heading: 500;
   --font-size-mobile: 12px;
   --font-size-desktop: 16px;
   --col-h-padding: 0;
   --col-v-padding: 0;
   --line-height: 1.4;
   --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  
+  --heading-font-weight: 500;
+  --heading-color: var(--color-1, black);
+  --heading-font: var(--font-family, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif');
+  --heading-line-height: 1.2;
+  --heading-letter-spacing: 0;
+
   --color-1-rgb:8, 60, 92;
   --color-2-rgb:74, 78, 105;
   --dark-rgb: 34, 34, 37;
@@ -64,14 +70,6 @@
   --light-grey: #222536;
   --body-bg: #1b1d27;
   --body-color: #c0bebe;
-  --font-weight: 300;
-  --font-weight-heading: 300;
-  --font-size-mobile: 12px;
-  --font-size-desktop: 16px;
-  --col-h-padding: 0;
-  --col-v-padding: 0;
-  --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif, 
-  "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --color-1-rgb:150, 148, 148;
   --color-2-rgb:112, 119, 163;
   --dark-rgb: 74, 78, 109;
@@ -128,7 +126,7 @@
   text-align: left;
 }
 .cssvars ol ol, .cssvars ul ul, .cssvars ol ul, .cssvars ul ol {  margin-bottom: 0;}
-.cssvars dt {  font-weight: var(--font-weight-heading, 400);}
+.cssvars dt {  font-weight: var(--heading-font-weight, 400);}
 .cssvars dd {
   margin-bottom: 0.5rem;
   margin-left: 0;
@@ -168,11 +166,19 @@
 }
 .cssvars h1, .cssvars .h1, .cssvars h2, .cssvars .h2, .cssvars h3, .cssvars .h3, .cssvars h4, .cssvars .h4, .cssvars h5, .cssvars .h5, .cssvars h6 {
   margin: 0 0 0.5rem 0;
-  font-family: inherit;
-  font-weight: var(--font-weight-heading, 300);
-  line-height: var(--line-height, 1.2);
-  color: var(--color-1, black);
+  font-family: var(--heading-font);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+  line-height: var(--heading-line-height);
+  letter-spacing: var(--heading-letter-spacing);
 }
+
+.heading-color { color: var(--heading-color); }
+.heading-font { font-family: var(--heading-font); }
+.heading-font-weight { font-weight: var(--heading-font-weight); }
+.heading-line-height { line-height: var(--heading-line-height); }
+.heading-letter-spacing { letter-spacing: var(--heading-letter-spacing); }
+
 .cssvars h1, .cssvars .h1 {font-size: 2.7rem;}
 .cssvars h2, .cssvars .h2 {font-size: 2.2rem;}
 .cssvars h3, .cssvars .h3 {  font-size: 2rem;}
@@ -2424,6 +2430,19 @@ left: 105%;
 .cssvars .h-75-vh { height: 75vh; }
 .cssvars .h-66-vh { height: 66.6667vh; }
 .cssvars .h-100-vh { height: 100vh; }
+
+.cssvars .w-25-vw-min { min-width: 25vw; }
+.cssvars .w-33-vw-min { min-width: 33.3333vw; }
+.cssvars .w-50-vw-min { min-width: 50vw; }
+.cssvars .w-66-vw-min { min-width: 66.6667vw; }
+.cssvars .w-75-vw-min { min-width: 75vw; }
+.cssvars .w-100-vw-min { min-width: 100vw; }
+.cssvars .h-25-vh-min { min-height: 25vh; }
+.cssvars .h-33-vh-min { min-height: 33.3333vh; }
+.cssvars .h-50-vh-min { min-height: 50vh; }
+.cssvars .h-66-vh-min { min-height: 66.6667vh; }
+.cssvars .h-75-vh-min { min-height: 75vh; }
+.cssvars .h-100-vh-min { min-height: 100vh; }
 
 .cssvars .h-1rem {height: 1rem;}
 .cssvars .h-2rem {height: 2rem;}

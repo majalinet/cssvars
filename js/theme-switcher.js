@@ -17,7 +17,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #111;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
           --font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, 
@@ -52,7 +52,7 @@ const themes = [
         --body-bg: #1b1d27;
         --body-color: #c0bebe;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -88,7 +88,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #68343b;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -129,7 +129,7 @@ const themes = [
         --body-bg: #3f1f24;
         --body-color: #d8a7b1;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -165,7 +165,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #111;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -207,7 +207,7 @@ const themes = [
         --body-bg: #4c5270;
         --body-color: #bcece0;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -243,7 +243,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #111;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -284,7 +284,7 @@ const themes = [
         --body-bg: #05445e;
         --body-color: #189ab4;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -319,7 +319,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #111;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -360,7 +360,7 @@ const themes = [
         --body-bg: #013a20;
         --body-color: #cdd193;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -397,7 +397,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #3a2135;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -439,7 +439,7 @@ const themes = [
         --body-bg: #211522;
         --body-color: #d3b1c2;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -476,7 +476,7 @@ const themes = [
         --body-bg: #fff;
         --body-color: #1e2640;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 
@@ -518,7 +518,7 @@ const themes = [
         --body-bg: #1e2640;
         --body-color: #f3eac0;
         --font-weight: 400;
-        --font-weight-heading: 500;
+        --heading-font-weight: 500;
         --font-size-mobile: 12px;
         --font-size-desktop: 16px;
         --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, 

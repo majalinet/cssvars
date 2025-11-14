@@ -177,7 +177,7 @@ const blocks = [
             {
                 title: "Hero 1",
                 description: "Description for item 1",
-                code: `<div class="row h-100-vh p2 m-v-auto">
+                code: `<div class="row h-100-vh-min p2 m-v-auto">
   <div class="row m-v-auto">
     <div class="col-md-5 m-v-auto p2">
       <p class="grey text-uppercase bold">Free 30 days trial</p>
@@ -216,7 +216,7 @@ const blocks = [
             {
                 title: "Hero 3",
                 description: "Description for item 3",
-                code: `<div class="row h-100-vh p2 m-v-auto">
+                code: `<div class="row h-100-vh-min p2 m-v-auto">
   <div class="row m-v-auto">
         <div class="col-md-6 p2">
         <img src="../img/blocks/technology.jpg" class="img-responsive rounded">
@@ -309,7 +309,7 @@ const blocks = [
             {
                 title: "Hero 5",
                 description: "Description for item 5",
-                code: `<div class="h-100-vh d-flex flex-column justify-content-center bg-light-grey" style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
+                code: `<div class="h-100-vh-min d-flex flex-column justify-content-center bg-light-grey" style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
     <h1 class="center black font-weight-600 display-3">Welcome to our adventure</h1>
     <h5 class="center black font-weight-400">A place where amazing things get done!</h5>
   <div class="center m-t-2"> 
@@ -354,7 +354,7 @@ const blocks = [
             {
                 title: "Hero 8",
                 description: "Description for item 8",
-                code: `<div class="carousel p0 h-100-vh">
+                code: `<div class="carousel p0 h-100-vh-min">
   <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
   <input type="radio" name="slides" id="radio-2" class="radio-2">
   <input type="radio" name="slides" id="radio-3" class="radio-3">
@@ -676,8 +676,8 @@ const blocks = [
                 title: "Content 5",
                 description: "Description for Content 5",
                 code: `
-<section class="parallax-img m-t-4 h-100-vh m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
-  <div class="h-100-vh d-flex flex-column justify-content-center align-items-center p-v-3">
+<section class="parallax-img m-t-4 h-100-vh-min m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
+  <div class="h-100-vh-min d-flex flex-column justify-content-center align-items-center p-v-3">
     <div class="col-8 shadow-3 p3 rounded bg-white center">
         <svg class="icon-color-1-fill icon-ml" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"></path></svg>
         <h3 class="black bold center">We believe that people can be truly happy on the outside only after reaching happiness within.</h3>
@@ -1069,7 +1069,7 @@ const blocks = [
                 title: "List 4",
                 description: "Description for list 4",
                 code: `
-<section class="container-fluid m-p-4 h-100-vh bg-light-grey center d-flex flex-column justify-content-center">
+<section class="container-fluid m-p-4 h-100-vh-min bg-light-grey center d-flex flex-column justify-content-center">
   <h2 class="center black font-weight-600">Our Services</h2>
   <p class="h5 dark">List of awsome Services CSS Vars</p>
   <div class="row justify-content-center">
@@ -1970,13 +1970,13 @@ const blocks = [
                 title: "Testimonial 1",
                 description: "Description for Testimonial 1",
                 code: `
-<section class="parallax-img h-100-vh m-v-2"
+<section class="parallax-img h-100-vh-min m-v-2"
   style="background-image: url('../img/vika/design-company/background-2.jpg');">
   <div class="p-v-4">
     <div class="row">
       <div class="col-md-5"></div>
       <div class="col-md-7">
-        <div class="d-flex flex-column justify-content-center h-100-vh">
+        <div class="d-flex flex-column justify-content-center h-100-vh-min">
           <div class="center">
             <div class="container">
               <h6 class="white bold center text-uppercase">WHAT CLIENTS SAY?</h6>

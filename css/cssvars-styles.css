@@ -4,7 +4,7 @@ Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.
 Art studios, personal brands, underground music, radical startups.
 */
 .brutal-style {
-  --font-weight-heading: 700;
+  --heading-font-weight: 700;
   --body-bg: var(--white);
   --body-color: var(--dark);
   --default-padding: 0.5rem;
@@ -20,7 +20,7 @@ Art studios, personal brands, underground music, radical startups.
 --body-bg: var(--white);
 --body-color: var(--dark);
 --font-weight: 700;
---font-weight-heading: 800;
+--heading-font-weight: 800;
 --font-size-desktop: 1.125rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -65,7 +65,7 @@ Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
   --body-bg: rgba(var(--warning-rgb), 0.5);
   --light-grey: rgba(var(--luxury-rgb), 0.1);
   --color-1: var(--dark);
-  --font-weight-heading: 700;
+  --heading-font-weight: 700;
   --body-color: var(--luxury);
   --default-padding: 1rem;
   --default-margin: 1rem;
@@ -81,7 +81,7 @@ Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
 --body-bg: var(--light-grey);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1.125rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1.25rem;
@@ -103,7 +103,7 @@ Tech startups, SaaS platforms, portfolios, architects, wellness brands.
   --body-bg: var(--white);
   --body-color: var(--dark);
   --font-weight: 400;
-  --font-weight-heading: 500;
+  --heading-font-weight: 500;
   --font-size-desktop: 1rem;
   --col-h-padding: 1rem;
   --col-v-padding: 1rem;
@@ -126,7 +126,7 @@ Nightclubs, gaming platforms, youth fashion, media streaming.
   --color-1: var(--info);
   --body-color: var(--info);
   --light-grey: rgba(var(--info-rgb), 0.1);
-  --font-weight-heading: 700;
+  --heading-font-weight: 700;
   --font-family: "Orbitron", sans-serif;
   --line-height: 1.5;
   --box-shadow: 0 0 1rem var(--info); 
@@ -145,7 +145,7 @@ Blockchain/crypto apps, game dev studios, hacker culture brands.
 --light-grey: rgba(var(--luxury-rgb), 0.2);
 --dark: rgba(var(--luxury-rgb), 0.7);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1.25rem;
@@ -172,7 +172,7 @@ Jewellery, fashion houses, high-end services, interior design.
   /* --color-1: var(--luxury); */
   --body-color: var(--black);
 --font-family: "Garamond", "Times New Roman", serif;  
---font-weight-heading: 700;
+--heading-font-weight: 700;
 --light-grey: rgba(var(--warning-rgb), 0.1);
 --dark: rgba(var(--warning-rgb), 0.7);
 --black: rgba(var(--warning-rgb), 0.9);
@@ -195,7 +195,7 @@ Government sites, accessibility-first platforms, education.
 --body-bg: var(--white);
 --body-color: var(--black);
 --font-weight: 400;
---font-weight-heading: 700;
+--heading-font-weight: 700;
 --font-size-desktop: 1rem;
 --line-height: 1.5;
 --font-family: "Arial Black", sans-serif;
@@ -211,7 +211,7 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
 .neumorphism-style {
   --color-1: rgba(var(--grey-rgb), 1);
   --font-family: "Arial", sans-serif;
-  --font-weight-heading: 400;
+  --heading-font-weight: 400;
   --body-bg: var(--light-grey);
   --body-color: var(--dark);
   --default-padding: 1rem;
@@ -234,7 +234,7 @@ Fintech apps, e-commerce admin, task managers.
 --body-bg: var(--light-grey);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1.5rem;
@@ -257,7 +257,7 @@ Kids’ apps, creative studios, learning platforms, lifestyle blogs, and quirky 
 --body-bg: var(--light-grey);
 --body-color: var(--body-color);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -281,7 +281,7 @@ SaaS platforms, productivity tools, fintech apps, government portals, and educat
 --body-bg: var(--white);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -305,7 +305,7 @@ CRMs, HR systems, ERP tools, SaaS dashboards.
   --body-bg: var(--white);
   --body-color: var(--dark);
   --font-weight: 400;
-  --font-weight-heading: 600;
+  --heading-font-weight: 600;
   --font-size-desktop: 1rem;
   --col-h-padding: 1rem;
   --col-v-padding: 1rem;
@@ -327,7 +327,7 @@ Fintech apps, e-commerce admin, task managers.
 --body-bg: var(--white);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -350,7 +350,7 @@ Analytics platforms, BI tools, performance monitoring.
 --body-bg: var(--white);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 700;
+--heading-font-weight: 700;
 --font-size-desktop: 1rem;
 --col-h-padding: 0.75rem;
 --col-v-padding: 0.75rem;
@@ -373,7 +373,7 @@ B2B SaaS, legal/accounting tools, logistics & finance software.
 --body-bg: var(--light-grey);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 0.9375rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -396,7 +396,7 @@ Developer tools, code platforms, internal IT tools.
 --body-bg: var(--white);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 500;
+--heading-font-weight: 500;
 --font-size-desktop: 1rem;
 --col-h-padding: 1rem;
 --col-v-padding: 1rem;
@@ -419,7 +419,7 @@ Health tech, education, fitness tracking apps.
 --body-bg: var(--light-grey);
 --body-color: var(--dark);
 --font-weight: 400;
---font-weight-heading: 600;
+--heading-font-weight: 600;
 --font-size-desktop: 1rem;
 --col-h-padding: 1.25rem;
 --col-v-padding: 1.25rem;
