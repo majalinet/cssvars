@@ -3,7 +3,7 @@
 * Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
 * Base URI: https://github.com/majalinet/cssvars
 * Version: 2.0
-* Copyright 2018-2025 Kim Majali and EITO company https://eito.pro
+* Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
 */
 @-ms-viewport {
@@ -2498,7 +2498,7 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 .font-weight-200, .font-thin { font-weight: 200; }
 .font-weight-400, .font-regular { font-weight: 400; }
 .font-weight-600, .font-semibold { font-weight: 600; }
-.bold { font-weight: bold; }
+.bold, b, strong { font-weight: bold; }
 .italic { font-style: italic; }
 
 .text-uppercase { text-transform: uppercase; }
