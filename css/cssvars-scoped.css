@@ -1940,10 +1940,10 @@ left: 105%;
 .cssvars .m-1-4 { margin: 0.25rem; }
 .cssvars .m-1-2 { margin: 0.5rem; }
 .cssvars .m-3-4 { margin: 0.75rem; }
-.cssvars .m1 { margin: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .m2 { margin: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .m3 { margin: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .m4 { margin: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .m1 { margin: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .m2 { margin: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .m3 { margin: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .m4 { margin: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .m-v-0 { margin-block: 0; }
 .cssvars .m-v--1-16 { margin-block: 0.0625rem; }
@@ -1962,10 +1962,10 @@ left: 105%;
 .cssvars .m-h--1-4 { margin-inline: 0.25rem; }
 .cssvars .m-h--1-2 { margin-inline: 0.5rem; }
 .cssvars .m-h--3-4 { margin-inline: 0.75rem; }
-.cssvars .m-h-1 { margin-inline: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .m-h-2 { margin-inline: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .m-h-3 { margin-inline: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .m-h-4 { margin-inline: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .m-h-1 { margin-inline: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .m-h-2 { margin-inline: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .m-h-3 { margin-inline: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .m-h-4 { margin-inline: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .m-r-0 { margin-right: 0; }
 .cssvars .m-r--1-16 { margin-right: 0.0625rem; }
@@ -1973,10 +1973,10 @@ left: 105%;
 .cssvars .m-r--1-4 { margin-right: 0.25rem; }
 .cssvars .m-r--1-2 { margin-right: 0.5rem; }
 .cssvars .m-r--3-4 { margin-right: 0.75rem; }
-.cssvars .m-r-1 { margin-right: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .m-r-2 { margin-right: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .m-r-3 { margin-right: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .m-r-4 { margin-right: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .m-r-1 { margin-right: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .m-r-2 { margin-right: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .m-r-3 { margin-right: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .m-r-4 { margin-right: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .m-l-0 { margin-left: 0; }
 .cssvars .m-l--1-16 { margin-left: 0.0625rem; }
@@ -1984,10 +1984,10 @@ left: 105%;
 .cssvars .m-l--1-4 { margin-left: 0.25rem; }
 .cssvars .m-l--1-2 { margin-left: 0.5rem; }
 .cssvars .m-l--3-4 { margin-left: 0.75rem; }
-.cssvars .m-l-1 { margin-left: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .m-l-2 { margin-left: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .m-l-3 { margin-left: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .m-l-4 { margin-left: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .m-l-1 { margin-left: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .m-l-2 { margin-left: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .m-l-3 { margin-left: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .m-l-4 { margin-left: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .m-t-0 { margin-top: 0; }
 .cssvars .m-t--1-16 { margin-top: 0.0625rem; }
@@ -2028,10 +2028,10 @@ left: 105%;
 .cssvars .p-1-4 { padding: 0.25rem; }
 .cssvars .p-1-2 { padding: 0.5rem; }
 .cssvars .p-3-4 { padding: 0.75rem; }
-.cssvars .p1 { padding: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .p2 { padding: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .p3 { padding: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .p4 { padding: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .p1 { padding: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .p2 { padding: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .p3 { padding: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .p4 { padding: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .p-v-0 { padding-block: 0; }
 .cssvars .p-v--1-16 { padding-block: 0.0625rem; }
@@ -2050,10 +2050,10 @@ left: 105%;
 .cssvars .p-h--1-4 { padding-inline: 0.25rem; }
 .cssvars .p-h--1-2 { padding-inline: 0.5rem; }
 .cssvars .p-h--3-4 { padding-inline: 0.75rem; }
-.cssvars .p-h-1 { padding-inline: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .p-h-2 { padding-inline: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .p-h-3 { padding-inline: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .p-h-4 { padding-inline: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .p-h-1 { padding-inline: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .p-h-2 { padding-inline: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .p-h-3 { padding-inline: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .p-h-4 { padding-inline: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .p-r-0 { padding-right: 0; }
 .cssvars .p-r--1-16 { padding-right: 0.0625rem; }
@@ -2061,10 +2061,10 @@ left: 105%;
 .cssvars .p-r--1-4 { padding-right: 0.25rem; }
 .cssvars .p-r--1-2 { padding-right: 0.5rem; }
 .cssvars .p-r--3-4 { padding-right: 0.75rem; }
-.cssvars .p-r-1 { padding-right: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .p-r-2 { padding-right: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .p-r-3 { padding-right: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .p-r-4 { padding-right: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .p-r-1 { padding-right: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .p-r-2 { padding-right: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .p-r-3 { padding-right: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .p-r-4 { padding-right: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .p-l-0 { padding-left: 0; }
 .cssvars .p-l--1-16 { padding-left: 0.0625rem; }
@@ -2072,10 +2072,10 @@ left: 105%;
 .cssvars .p-l--1-4 { padding-left: 0.25rem; }
 .cssvars .p-l--1-2 { padding-left: 0.5rem; }
 .cssvars .p-l--3-4 { padding-left: 0.75rem; }
-.cssvars .p-l-1 { padding-left: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .p-l-2 { padding-left: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .p-l-3 { padding-left: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .p-l-4 { padding-left: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .p-l-1 { padding-left: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
+.cssvars .p-l-2 { padding-left: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
+.cssvars .p-l-3 { padding-left: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
+.cssvars .p-l-4 { padding-left: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
 
 .cssvars .p-t-0 { padding-top: 0; }
 .cssvars .p-t--1-16 { padding-top: 0.0625rem; }
