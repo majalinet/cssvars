@@ -392,6 +392,11 @@
   display: flex;
   flex-wrap: wrap;
 }
+/* Gap utility — for flex/grid containers (.row, .d-flex, etc.) */
+.cssvars .gap   { gap: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
 .cssvars .no-gutters {
   margin-right: 0;
   margin-left: 0;
