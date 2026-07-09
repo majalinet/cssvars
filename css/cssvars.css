@@ -106,7 +106,7 @@
   --default-border-radius: 0;
   --box-shadow: none;
 }
-.styled, .table, .styled-parent > *, body > * {
+.styled, .table, .styled-parent > *, body > *, section, article, aside {
   padding: var(--default-padding);
   margin: var(--default-margin);
   border: var(--default-border);

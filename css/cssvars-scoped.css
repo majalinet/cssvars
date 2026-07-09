@@ -106,7 +106,7 @@
   --default-border-radius: 0;
   --box-shadow: none;
 }
-.cssvars .styled, .cssvars .table, .cssvars .styled-parent > *, .cssvars > * {
+.cssvars .styled, .cssvars .table, .cssvars .styled-parent > *, .cssvars body > *, .cssvars section, .cssvars article, .cssvars aside {
   padding: var(--default-padding);
   margin: var(--default-margin);
   border: var(--default-border);
