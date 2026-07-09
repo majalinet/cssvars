@@ -397,6 +397,12 @@
 .cssvars .gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
 .cssvars .gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
 .cssvars .gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
+
+.cssvars .child-p > div { padding: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .child-p-2 > div { padding: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .child-p-3 > div { padding: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .child-p-4 > div { padding: clamp(2rem, 3.33vw, 4rem); }
+
 .cssvars .no-gutters {
   margin-right: 0;
   margin-left: 0;
