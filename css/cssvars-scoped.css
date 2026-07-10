@@ -1,14 +1,10 @@
-/*
-* CSS Vars Framework
+/* CSS Vars Framework
 * Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
 * Base URI: https://github.com/majalinet/cssvars
 * Version: 2.0
 * Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
-* Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE
-*/
-@-ms-viewport {
-  width: device-width;
-}
+* Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE */
+@-ms-viewport { width: device-width; }
 /* Variables*/
 .cssvars {
   --color-1: #083c5c;
@@ -861,7 +857,7 @@ height: 2.5rem;
 .cssvars button, .cssvars .button, .cssvars  .accordion-label, .cssvars .tabs > label {
   background-color: var(--color-1);
   border: none;
-  color: color-mix(in srgb, var(--white, white) 10%, transparent);
+  color: var(--body-bg, white);
   font-weight: 400;
   padding: 0.5rem 0.95rem;
   text-decoration: none;
