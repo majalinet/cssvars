@@ -46,27 +46,15 @@
   --h4-size: 1.25rem;
   --h5-size: 1rem;
   --h6-size: 0.875rem;
-
   --display-1-size: clamp(2.5rem, 3rem + 4vw, 5.5rem);
   --display-2-size: clamp(2.25rem, 2.75rem + 3.5vw, 4.75rem);
   --display-3-size: clamp(2rem, 2.25rem + 3vw, 4rem);
   --display-4-size: clamp(1.85rem, 2rem + 2.25vw, 3.25rem);
   --display-5-size: clamp(1.7rem, 1.75rem + 1.5vw, 2.75rem);
   --display-6-size: clamp(1.6rem, 1.6rem + 1vw, 2.25rem);
-
-  --color-1-rgb:8, 60, 92;
-  --color-2-rgb:74, 78, 105;
-  --dark-rgb: 34, 34, 37;
-  --grey-rgb: 204, 204, 204;
-  --white-rgb: 255, 255, 255;
-  --black-rgb: 0, 0, 0;
-  --danger-rgb: 204, 58, 58;
-  --info-rgb: 17, 145, 184;
-  --success-rgb: 10, 191, 164;
-  --warning-rgb:189, 160, 106;
-  --luxury-rgb:75, 47, 90;
 }
-/* If you want auto-detect dark theme, uncomment and remove [data-theme="dark"] {*/
+/* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
+  @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
 /* @media (prefers-color-scheme:dark){
   :root {
   */
@@ -85,17 +73,6 @@
   --light-grey: #222536;
   --body-bg: #1b1d27;
   --body-color: #c0bebe;
-  --color-1-rgb:150, 148, 148;
-  --color-2-rgb:112, 119, 163;
-  --dark-rgb: 74, 78, 109;
-  --grey-rgb: 204, 204, 204;
-  --white-rgb: 0, 0, 0;
-  --black-rgb: 255, 255, 255;
-  --danger-rgb: 204, 58, 58;
-  --info-rgb: 17, 145, 184;
-  --success-rgb: 10, 191, 164;
-  --warning-rgb:189, 160, 106;
-  --luxury-rgb:106, 67, 128;
 }
 /* Styles variables */
 :root {
@@ -303,7 +280,7 @@ pre code {
 .steps-ol li::before {
   content: counter(inst);
   background: var(--color-1, black);
-  background-color: rgba(var(--color-1-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
   color: var(--color-1, black);
   font-weight: 400;
   font-size: 1.5em;
@@ -870,13 +847,13 @@ blockquote {
   border: 0.0625rem solid var(--lite-grey, #dee2e6);
 }
 .page-item.active .page-link, .page-link:focus, .page-link:hover {
-  color: rgba(var(--white-rgb, white), 1);
+  color: var(--body-bg, white);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
 .page-item.active .page-link {
   z-index: 1;
-  color: rgba(var(--white-rgb, white), 1);
+  color: var(--body-bg, white);
   background-color: var(--color-1, black);
   border-color: var(--color-1, black);
 }
@@ -884,7 +861,7 @@ blockquote {
 button, .button, .accordion-label, .tabs > label {
   background-color: var(--color-1);
   border: none;
-  color: rgba(var(--white-rgb, white), 1);
+  color: color-mix(in srgb, var(--white, white) 10%, transparent);
   font-weight: 400;
   padding: 0.5rem 0.95rem;
   text-decoration: none;
@@ -991,10 +968,10 @@ tr {
   color: var(--color-1, lightgray);
 }
 .table-striped tbody tr:nth-of-type(odd) {
-  background-color: rgba(var(--grey-rgb), 0.15);
+  background-color: color-mix(in srgb, var(--grey, grey) 15%, transparent);
 }
 .table-striped-color-1 tbody tr:nth-of-type(odd) {
-  background-color: rgba(var(--color-1-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .table-cell-border-none td, .table-cell-border-none th {
   border: none !important;
@@ -1005,11 +982,11 @@ tr {
   border-spacing: .5rem;
 }
 .table-cell-separate td, .table-cell-separate th  {
-  background-color: rgba(var(--grey-rgb), 0.15);
+  background-color: color-mix(in srgb, var(--grey, grey) 15%, transparent);
   border: none;
 }
 .table-cell-separate-color-1 td, .table-cell-separate-color-1 th  {
-  background-color: rgba(var(--color-1-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
   border: none;
 }
 .table-dark-header th {
@@ -1045,10 +1022,10 @@ tr {
   color: var(--body-bg);
 }
 .table-hover tbody tr:hover {
-  background-color: rgba(var(--grey-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--grey, grey) 10%, transparent);
 }
 .table-hover-color-1 tbody tr:hover {
-  background-color: rgba(var(--color-1-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .table-bordered {
   border: 0.075rem solid var(--grey, #dee2e6);
@@ -1082,7 +1059,7 @@ td button {
 }
 .img-thumbnail {
   padding: 0.25rem;
-  background-color: rgba(var(--white-rgb, white), 1);
+  background-color: color-mix(in srgb, var(--white, white) 10%, transparent);
   border: 0.075rem solid var(--light-grey, #dee2e6);
   border-radius: 0.25rem;
   max-width: 100%;
@@ -1941,7 +1918,7 @@ progress {
   cursor: col-resize;
 }
 .resize-grip:hover {
-  background-color: rgba(var(--info-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
 }
 /*-- Utility Classes --*/
 /* Padding and Margin */
@@ -2182,57 +2159,57 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
   box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625 0.625 rgba(0, 0, 0, 0.22);
 }
 .shadow-color, .shadow-color-hover:hover {
-  box-shadow: 0 0.0625rem 0.1875rem rgba(var(--color-1-rgb, black)), 0 0.0625rem 0.125rem rgba(var(--color-1-rgb, black));
+  box-shadow: 0 0.0625rem 0.1875rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.0625rem 0.125rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .shadow-color-2, .shadow-color-2-hover:hover {
-  border: solid 0.0625rem rgba(var(--color-1-rgb, black));
+  border: solid 0.0625rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
   box-shadow: 0.1875rem 0.1875rem 0.125rem var(--color-1, black);
 }
 .shadow-color-3, .shadow-color-3-hover:hover {
   border: solid 0.0625rem #f5f5f5;
-  box-shadow: 0 0.33rem 1rem rgba(var(--color-1-rgb, black));
+  box-shadow: 0 0.33rem 1rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .shadow-color-4, .shadow-color-4-hover:hover {
-  box-shadow: 0 0.625 1.25rem rgba(var(--color-1-rgb, black)), 0 0.625 0.625 rgba(var(--color-1-rgb, black));
+  box-shadow: 0 0.625 1.25rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.625 0.625 color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .shadow-none, .shadow-none_hover:hover {
   box-shadow: none;
 }
 /* Backgrounds with alpha */
 .bga-color-1, .bga-color-1-hover:hover {
-  background-color: rgba(var(--color-1-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
   color: var(--color-1, black);
 }
 .bga-color-2, .bga-color-2-hover:hover {
-  background-color: rgba(var(--color-2-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--color-2, black) 10%, transparent);
   color: var(--color-2, black);
 }
 .bga-info, .bga-info-hover:hover {
-  background-color: rgba(var(--info-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
   color: var(--info, blue);
 }
 .bga-dark, .bga-dark-hover:hover {
-  background-color: rgba(var(--dark-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--dark, darkgray) 10%, transparent);
   color: var(--dark, darkgray);
 }
 .bga-grey, .bga-grey-hover:hover {
-  background-color: rgba(var(--grey-rgb), 0.1);
-  color: var(--grey, grey);
+  background-color: color-mix(in srgb, var(--grey, grey) 10%, transparent);
+  color: var(--grey, black);
 }
 .bga-danger, .bga-danger-hover:hover {
-  background-color: rgba(var(--danger-rgb), 0.1);
-  color: var(--danger, red);
+  background-color: color-mix(in srgb, var(--danger, red) 10%, transparent);
+  color: var(--danger, black);
 }
 .bga-success, .bga-success-hover:hover {
-  background-color: rgba(var(--success-rgb), 0.1);
-  color: var(--success, green);
+  background-color: color-mix(in srgb, var(--success, green) 10%, transparent);
+  color: var(--success, black);
 }
 .bga-warning, .bga-warning-hover:hover {
-  background-color: rgba(var(--warning-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--warning, yellow) 10%, transparent);
   color: var(--warning, black);
 }
 .bga-luxury, .bga-luxury-hover:hover {
-  background-color: rgba(var(--luxury-rgb), 0.1);
+  background-color: color-mix(in srgb, var(--luxury, purple) 10%, transparent);
   color: var(--luxury, black);
 }
 /* Background colors */
@@ -2628,18 +2605,18 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 .border-luxury { border-color: var(--luxury, black); }
 .border-white { border-color: var(--white, white); }
 .border-a-black { border-color: var(--black, black); }
-.border-a-color-1 { border-color: rgba(var(--color-1-rgb), 0.2); }
-.border-a-color-2 { border-color: rgba(var(--color-2-rgb), 0.2); }
-.border-a-info { border-color: rgba(var(--info-rgb), 0.2); }
-.border-a-success { border-color: rgba(var(--success-rgb), 0.2); }
-.border-a-danger { border-color: rgba(var(--danger-rgb), 0.2); }
-.border-a-dark { border-color: rgba(var(--dark-rgb), 0.2); }
-.border-a-grey { border-color: rgba(var(--grey-rgb), 0.2); }
-.border-a-light-grey { border-color: rgba(var(--light-grey-rgb), 0.2); }
-.border-a-warning { border-color: rgba(var(--warning-rgb), 0.2);    }
-.border-a-luxury { border-color: rgba(var(--luxury-rgb), 0.2); }
-.border-a-white { border-color: rgba(var(--white-rgb), 0.2); }
-.border-a-black { border-color: rgba(var(--black-rgb), 0.2); }
+.border-a-color-1 { border-color: color-mix(in srgb, var(--color-1, black) 10%, transparent); }
+.border-a-color-2 { border-color: color-mix(in srgb, var(--color-2, black) 10%, transparent); }
+.border-a-info { border-color: color-mix(in srgb, var(--info, blue) 10%, transparent); }
+.border-a-success { border-color: color-mix(in srgb, var(--success, green) 10%, transparent); }
+.border-a-danger { border-color: color-mix(in srgb, var(--danger, red) 10%, transparent); }
+.border-a-dark { border-color: color-mix(in srgb, var(--dark, darkgray) 10%, transparent); }
+.border-a-grey { border-color: color-mix(in srgb, var(--grey, grey) 10%, transparent); }
+.border-a-light-grey { border-color: color-mix(in srgb, var(--light-grey, grey) 10%, transparent); }
+.border-a-warning { border-color: color-mix(in srgb, var(--warning, black) 10%, transparent); }
+.border-a-luxury { border-color: color-mix(in srgb, var(--luxury, black) 10%, transparent); }
+.border-a-white { border-color: color-mix(in srgb, var(--white, white) 10%, transparent); }
+.border-a-black { border-color: color-mix(in srgb, var(--black, black) 10%, transparent); }
 
 .border-gradient { border-image: linear-gradient(to right, var(--color-1, black), var(--color-2, black)) 1; }
 .border-gradient-info { border-image: linear-gradient(to right, var(--color-1, black), var(--info, blue)) 1; }
