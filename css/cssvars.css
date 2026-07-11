@@ -54,6 +54,10 @@
   --link-hover-color: var(--grey);
   --link-decoration: none;
   --link-hover-decoration: underline;
+
+  --icon-default-size: 4rem;
+  --icon-default-fill: var(--color-1);
+  --icon-default-bg: var(--body-bg);
 }
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
   @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
@@ -680,6 +684,12 @@ pre code {
   box-sizing: border-box;
 }
 /* Icons */
+.icon {
+  width: var(--icon-default-size, 4rem);
+  height: var(--icon-default-size, 4rem);
+  fill: var(--icon-default-fill, black);
+  background-color: var(--icon-default-bg, white);
+}
 .icon-xxs {
   width: 1rem;
   height: 1rem;
@@ -738,18 +748,18 @@ height: 2.5rem;
   fill: var(--grey, #aaa);
 }
 .icon-color-1-bg {
-  background-color: var(--color-1, red);
+  background-color: var(--color-1, black);
   fill: var(--body-bg, white);
 }
 .icon-color-1-fill {
-  fill: var(--color-1, red);
+  fill: var(--color-1, black);
 }
 .icon-color-2-bg {
-  background-color: var(--color-2, red);
+  background-color: var(--color-2, black);
   fill: var(--body-bg, white);
 }
 .icon-color-2-fill {
-  fill: var(--color-2, red);
+  fill: var(--color-2, black);
 }
 .icon-color-white-fill {
   fill: var(--white, white);
