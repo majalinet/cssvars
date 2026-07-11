@@ -58,6 +58,10 @@
   --icon-default-size: 4rem;
   --icon-default-fill: var(--color-1);
   --icon-default-bg: var(--body-bg);
+
+  --image-radius: 0;
+  --image-shadow: none;
+  --image-border-style: none;
 }
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
   @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
@@ -143,7 +147,9 @@ figure {
 }
 img {
   vertical-align: middle;
-  border-style: none;
+  border-style: var(--image-border-style, none);
+  border-radius: var(--image-radius, 0);
+  box-shadow: var(--image-shadow, none);
 }
 svg {
   overflow: hidden;
