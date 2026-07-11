@@ -5,7 +5,8 @@
 * Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE */
 @-ms-viewport { width: device-width; }
-/* Variables*/
+@layer theme, base, layout, components, style, utilities, overrides;
+@layer theme {
 :root {
   --color-1: #083c5c;
   --color-2:#4a4e69;
@@ -86,7 +87,8 @@
   border-radius: var(--default-border-radius);
   box-shadow: var(--box-shadow);
 }
-/* main elements */
+}
+@layer base {
 html {
   width: 100%;
   box-sizing: border-box;
@@ -333,7 +335,8 @@ pre code {
   text-align: center;
   background-color: var(--light-grey);
 }
-/* Containers */
+}
+@layer layout {
 .container, .container-fluid, .container-half-fluid {
   width: 100%;
   padding-right: 1rem;
@@ -653,7 +656,8 @@ pre code {
     max-width: 100%;
   }
 }
-/* Map */
+}
+@layer components {
 .map {
   width: 100%;
   height: auto;
@@ -1916,7 +1920,8 @@ progress {
 .resize-grip:hover {
   background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
 }
-/*-- Utility Classes --*/
+}
+@layer utilities {
 /* Padding and Margin */
 .m0 { margin: 0; }
 .m-1-16 { margin: 0.0625rem; }
@@ -2698,4 +2703,5 @@ box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 @media (min-width: 992px) {
   .desktop-only { display: inline-block !important; }
   .mobile-only { display: none !important; }
+}
 }

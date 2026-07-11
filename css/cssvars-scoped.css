@@ -5,7 +5,8 @@
 * Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE */
 @-ms-viewport { width: device-width; }
-/* Variables*/
+@layer theme, base, layout, components, style, utilities, overrides;
+@layer theme {
 .cssvars {
   --color-1: #083c5c;
   --color-2:#4a4e69;
@@ -86,7 +87,8 @@
   border-radius: var(--default-border-radius);
   box-shadow: var(--box-shadow);
 }
-/* main elements */
+}
+@layer base {
 .cssvars {
   width: 100%;
   box-sizing: border-box;
@@ -333,7 +335,8 @@
   text-align: center;
   background-color: var(--light-grey);
 }
-/* Containers */
+}
+@layer layout {
 .cssvars .container, .cssvars .container-fluid, .cssvars .container-half-fluid {
   width: 100%;
   padding-right: 1rem;
@@ -653,7 +656,8 @@
     max-width: 100%;
   }
 }
-/* Map */
+}
+@layer components {
 .cssvars .map {
   width: 100%;
   height: auto;
@@ -1916,7 +1920,8 @@ left: 105%;
 .cssvars .resize-grip:hover {
   background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
 }
-/*-- Utility Classes --*/
+}
+@layer utilities {
 /* Padding and Margin */
 .cssvars .m0 { margin: 0; }
 .cssvars .m-1-16 { margin: 0.0625rem; }
@@ -2698,4 +2703,5 @@ left: 105%;
 @media (min-width: 992px) {
   .cssvars .desktop-only{    display: inline-block !important;  }
   .cssvars .mobile-only{    display: none;  }
+}
 }

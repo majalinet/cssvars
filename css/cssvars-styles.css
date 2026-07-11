@@ -3,6 +3,7 @@
 Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.
 Art studios, personal brands, underground music, radical startups.
 */
+@layer style {
 .brutal-style {
   --heading-font-weight: 700;
   --body-bg: var(--white);
@@ -39,22 +40,22 @@ Glassmorphism: Best for modern, elegant UIs with frosted-glass visuals.
 Fintech, health tech, luxury apps, personal productivity tools.
 */
 .glass-style {
-  --light-grey: rgba(var(--white-rgb), 0.2);
-  --body-bg: rgba(var(--color-1-rgb), 0.05);
+  --light-grey: color-mix(in srgb, var(--white) 20%, transparent);
+  --body-bg: color-mix(in srgb, var(--color-1) 5%, transparent);
   --body-color: var(--color-1);
   --default-padding: 1.5rem;
   --default-margin: 1rem;
   --default-gap: 1rem;
-  --default-border: 0.0625rem solid rgba(var(--color-1-rgb), 0.2);
+  --default-border: 0.0625rem solid color-mix(in srgb, var(--color-1) 20%, transparent);
   --default-border-radius: 0.5rem;
-  --box-shadow: 0 0.25rem 0.75rem rgba(var(--color-1-rgb), 0.1);
+  --box-shadow: 0 0.25rem 0.75rem color-mix(in srgb, var(--color-1) 10%, transparent);
 }
 
 [data-theme="dark"] .glass-style {
   --body-bg: var(--dark);
   --body-color: var(--light-grey);
-  --default-border: 0.0625rem solid rgba(var(--color-1-rgb), 0.3);
-  --box-shadow: 0 0.25rem 1rem rgba(var(--color-1-rgb), 0.25);
+  --default-border: 0.0625rem solid color-mix(in srgb, var(--color-1) 30%, transparent);
+  --box-shadow: 0 0.25rem 1rem color-mix(in srgb, var(--color-1) 25%, transparent);
 }
 
 /* Retro & Vintage 
@@ -62,8 +63,8 @@ Retro/Vintage: Ideal for nostalgic, playful, or thematic branding
 Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
 */
 .retro-style {
-  --body-bg: rgba(var(--warning-rgb), 0.5);
-  --light-grey: rgba(var(--luxury-rgb), 0.1);
+  --body-bg: color-mix(in srgb, var(--warning) 50%, transparent);
+  --light-grey: color-mix(in srgb, var(--luxury) 10%, transparent);
   --color-1: var(--dark);
   --heading-font-weight: 700;
   --body-color: var(--luxury);
@@ -125,7 +126,7 @@ Nightclubs, gaming platforms, youth fashion, media streaming.
   --body-bg: black;
   --color-1: var(--info);
   --body-color: var(--info);
-  --light-grey: rgba(var(--info-rgb), 0.1);
+  --light-grey: color-mix(in srgb, var(--info) 10%, transparent);
   --heading-font-weight: 700;
   --font-family: "Orbitron", sans-serif;
   --line-height: 1.5;
@@ -141,9 +142,9 @@ Blockchain/crypto apps, game dev studios, hacker culture brands.
 .cyberpunk-style {
 --color-1: var(--luxury);
 --body-bg: var(--black);
---body-color: rgba(var(--luxury-rgb), 0.9);
---light-grey: rgba(var(--luxury-rgb), 0.2);
---dark: rgba(var(--luxury-rgb), 0.7);
+--body-color: color-mix(in srgb, var(--luxury) 90%, transparent);
+--light-grey: color-mix(in srgb, var(--luxury) 20%, transparent);
+--dark: color-mix(in srgb, var(--luxury) 70%, transparent);
 --font-weight: 400;
 --heading-font-weight: 600;
 --font-size-desktop: 1rem;
@@ -173,9 +174,9 @@ Jewellery, fashion houses, high-end services, interior design.
   --body-color: var(--black);
 --font-family: "Garamond", "Times New Roman", serif;  
 --heading-font-weight: 700;
---light-grey: rgba(var(--warning-rgb), 0.1);
---dark: rgba(var(--warning-rgb), 0.7);
---black: rgba(var(--warning-rgb), 0.9);
+--light-grey: color-mix(in srgb, var(--warning) 10%, transparent);
+--dark: color-mix(in srgb, var(--warning) 70%, transparent);
+--black: color-mix(in srgb, var(--warning) 90%, transparent);
 --font-size-desktop: 1.125rem;
 --line-height: 1.6;
 --default-padding: 2rem;
@@ -183,7 +184,7 @@ Jewellery, fashion houses, high-end services, interior design.
 --default-gap: 1.5rem;
 --default-border: 0.0625rem solid var(--);
 --default-border-radius: 1rem;
---box-shadow: 0 0.75rem 1.5rem rgba(var(--warning-rgb), 0.2);
+--box-shadow: 0 0.75rem 1.5rem color-mix(in srgb, var(--warning) 20%, transparent);
 }
 
 /* High Contrast 
@@ -209,7 +210,7 @@ Neumorphism: Use for soft, tactile interfaces—best in moderation.
 IoT dashboards, smart home apps, lifestyle tools (in moderation).
 */
 .neumorphism-style {
-  --color-1: rgba(var(--grey-rgb), 1);
+  --color-1: var(--grey);
   --font-family: "Arial", sans-serif;
   --heading-font-weight: 400;
   --body-bg: var(--light-grey);
@@ -220,8 +221,8 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
   --default-border: none;
   --default-border-radius: 0.5rem;
   --box-shadow: 
-    0.3125rem 0.3125rem 0.75rem rgba(var(--dark-rgb), 0.1),
-    -0.3125rem -0.3125rem 0.75rem rgba(var(--white-rgb), 0.8);
+    0.3125rem 0.3125rem 0.75rem color-mix(in srgb, var(--dark) 10%, transparent),
+    -0.3125rem -0.3125rem 0.75rem color-mix(in srgb, var(--white) 80%, transparent);
 }
 
 
@@ -432,4 +433,4 @@ Health tech, education, fitness tracking apps.
 --default-border-radius: 0.75rem;
 --box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.08);
 }
-
+}
