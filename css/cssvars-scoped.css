@@ -49,6 +49,11 @@
   --display-4-size: clamp(1.85rem, 2rem + 2.25vw, 3.25rem);
   --display-5-size: clamp(1.7rem, 1.75rem + 1.5vw, 2.75rem);
   --display-6-size: clamp(1.6rem, 1.6rem + 1vw, 2.25rem);
+
+  --link-color: var(--color-1);
+  --link-hover-color: var(--grey);
+  --link-decoration: none;
+  --link-hover-decoration: underline;
   }
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
   @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
@@ -122,13 +127,12 @@
   margin-left: 0;
 }
 .cssvars a {
-  color: var(--color-1, black);
-  text-decoration: none;
-  background-color: transparent;
+  color: var(--link-color, black);
+  text-decoration: var(--link-decoration, none);
 }
 .cssvars a:hover {
-  color: var(--grey, grey);
-  text-decoration: underline;
+  color: var(--link-hover-color, grey);
+  text-decoration: var(--link-hover-decoration, underline);
 }
 .cssvars figure {
   margin: 0 0 1rem;
