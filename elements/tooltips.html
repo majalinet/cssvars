@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <meta name="description" content="Cards UI Elements | CSS Vars Framework and UI Kit Free & Open Source. Pure HTML and CSS Framework with 100's of free UI elements and themes." />
+    <meta name="author" content="Kim Majali" />
+    <meta
+      name="copyright"
+      content="MIT license, Europe IT Outsourcing, https://www.europeitoutsourcing.com/"
+    />
+
+    <title>
+      Cards | CSS Vars Framework and UI Kit Free & Open Source
+    </title>
+
+    <!-- Favicons -->
+    <link
+      rel="apple-touch-icon"
+      href="../img/favicons/apple-touch-icon.png"
+      sizes="180x180"
+    />
+    <link
+      rel="icon"
+      href="../img/favicons/favicon-32x32.png"
+      sizes="32x32"
+      type="image/png"
+    />
+    <link
+      rel="icon"
+      href="../img/favicons/favicon-16x16.png"
+      sizes="16x16"
+      type="image/png"
+    />
+    <link rel="manifest" href="../img/favicons/manifest.json" />
+    <link rel="icon" href="favicon.ico" />
+    <meta
+      name="msapplication-config"
+      content="../img/favicons/browserconfig.xml"
+    />
+    <meta name="theme-color" content="#FF530D" />
+
+    <link rel="stylesheet" href="../css/cssvars.css" />
+  </head>
+
+  <body>
+    <div class="main-nav  bordered-bottom container-fluid">
+      <div class="main-menu">
+        <a href="http://agilecss.com/" id="logo" alt="CSS Vars Framework and UI Kit"
+          ><img src="../img/logo.png" class="logo"
+        /></a>
+
+        <label for="toggle-1" class="toggle-menu">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="icon-color-1-fill icon-s"
+            viewbox="0 0 24 24"
+          >
+            <path d="M0 0h24v24H0z" fill="none" />
+            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+          </svg>
+        </label>
+        <input type="checkbox" id="toggle-1" />
+
+        <nav class="nav">
+            <ul>
+            <li><a href="../docs.html">Documentaion</a></li>
+            <li><a href="elements.html">UI Elements</a></li>
+            <li><a href="../sections/sections.html">Sections</a></li>
+            <li><a href="../themes/themes.html">Themes</a></li>
+            <li>
+              <a
+                href="https://github.com/majalinet/Agile-CSS"
+                class="outline-color-1"
+                >Download</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+
+    <header class="promo-box-s bg-light-grey">
+      <div class="container">
+        <h1 class>Cards</h1>
+        <p>Pure HTML CSS elements with CSS Vars framework</p>
+
+        <ol class="breadcrumb">
+                <li class="breadcrumb-item"><a href="http://agilecss.com/">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+              Cards
+          </li>
+        </ol>
+      </div>
+    </header>
+
+<main class="container ">
+        <p>
+        To create a tooltip
+        <ul class="colored-ul">
+            <li>Create a div and the class <b>tooltip</b></li>
+            <li>Inside it create a span and the class <b>tooltip-body</b>
+            <li>Add to the span a class to choose the shape nothing or <b>tooltip-top tooltip-bottom tooltip-right tooltip-left</b>
+            <li>To change the shape add to the span the classes <b>rounded circle top-circle bottom-circle right-circle left-circle</b>
+            <li>To change the size add to the span the classes <b>tooltip2x tooltip3x tooltip4x </b>
+            <li>To change the background color add to the span the classes <b>bg-color-1 bg-color-2 bg-info bg-success bg-black bg-danger bg-dark bg-light-grey</b>
+            <li>To add a border add to the span the classes <b>bg-color-1 bg-color-2 bg-info bg-success bg-black bg-danger bg-dark bg-light-grey</b>
+            <li>To change the text color add to the span the classes <b>outline-color-1 outline-color-2 outline-color-info outline-color-success outline-color-black outline-color-danger</b>
+            <li>To change the size add to the span the classes <b>tooltip2x tooltip3x tooltip4x </b>
+            <li>To add shadow add to the span the classes <b>shadow shadow-1 shadow-3 shadow-4</b>
+        </ul>
+    </p>
+
+
+<h4> Example code</h4>
+<textarea class="w-100 shadow-3 success rounded p-t-2 bg-white" rows="4" spellcheck="false" disabled="">        <div class="tooltip">tooltip-top
+          <span class="tooltip-body tooltip-top bg-color-1 white rounded">Tooltip text</span>
+        </div> </textarea>
+
+<p class="msg bga-color-1 m-t-2">Please hover on the links below to see the designs</p>
+
+<h4 class="m-t-2">Direction</h4>
+    <div class="tooltip">tooltip-top
+        <span class="tooltip-body tooltip-top bg-color-1 white rounded">Tooltip text</span>
+      </div> 
+    <div class="tooltip">tooltip-bottom
+        <span class="tooltip-body tooltip-bottom bg-color-1 white rounded">Tooltip text</span>
+      </div> 
+    <div class="tooltip">tooltip-right
+        <span class="tooltip-body tooltip-right bg-color-1 white rounded">Tooltip text</span>
+      </div> 
+    <div class="tooltip">tooltip-left
+        <span class="tooltip-body tooltip-left bg-color-1 white rounded">Tooltip text</span>
+      </div> 
+
+
+
+   
+<h4 class="m-t-2">Shapes</h4>
+<div class="tooltip">default
+    <span class="tooltip-body tooltip-top bg-color-1 white ">Tooltip text</span>
+  </div> 
+<div class="tooltip">rounded
+    <span class="tooltip-body tooltip-top bg-color-1 white rounded ">Tooltip text</span>
+  </div> 
+<div class="tooltip">circle
+    <span class="tooltip-body tooltip-top bg-color-1 white circle">Tooltip text</span>
+  </div> 
+<div class="tooltip">top-circle
+    <span class="tooltip-body tooltip-top bg-color-1 white top-circle">Tooltip text</span>
+  </div> 
+<div class="tooltip">bottom-circle
+    <span class="tooltip-body tooltip-top bg-color-1 white bottom-circle">Tooltip text</span>
+  </div> 
+  <div class="tooltip">right-circle
+      <span class="tooltip-body tooltip-top bg-color-1 white right-circle">Tooltip text</span>
+    </div> 
+<div class="tooltip">left-circle
+    <span class="tooltip-body tooltip-top bg-color-1 white left-circle">Tooltip text</span>
+  </div> 
+
+
+
+  <h4 class="m-t-2">Shadow</h4>
+  <div class="tooltip">shadow
+      <span class="tooltip-body tooltip-top bg-color-1 white shadow">Tooltip text</span>
+    </div> 
+  <div class="tooltip">shadow-2
+      <span class="tooltip-body tooltip-top bg-color-1 white shadow-2">Tooltip text</span>
+    </div> 
+  <div class="tooltip">shadow-3
+      <span class="tooltip-body tooltip-top bg-color-1 white shadow-3">Tooltip text</span>
+    </div> 
+  <div class="tooltip">shadow-4
+      <span class="tooltip-body tooltip-top bg-color-1 white shadow-4">Tooltip text</span>
+    </div> 
+
+
+
+<h4 class="m-t-2">Sizes</h4>
+<div class="tooltip">Size 1
+    <span class="tooltip-body tooltip-top bg-color-1 white rounded ">Tooltip text</span>
+  </div> 
+<div class="tooltip">tooltip2x
+    <span class="tooltip-body tooltip-top bg-color-1 white rounded tooltip2x">Tooltip text</span>
+  </div> 
+<div class="tooltip">tooltip3x
+    <span class="tooltip-body tooltip-top bg-color-1 white rounded tooltip3x">Tooltip text</span>
+  </div> 
+<div class="tooltip">tooltip4x
+    <span class="tooltip-body tooltip-top bg-color-1 white rounded tooltip4x">Tooltip text</span>
+  </div> 
+
+
+
+
+
+      <h4 class="m-t-2">colors</h4>
+
+    <div class="tooltip">tooltip-top bg-color-2 white
+        <span class="tooltip-body tooltip-top bg-color-2 white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-black white
+        <span class="tooltip-body tooltip-top bg-black white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-info white
+        <span class="tooltip-body tooltip-top bg-info white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-success white
+        <span class="tooltip-body tooltip-top bg-success white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-danger white
+        <span class="tooltip-body tooltip-top bg-danger white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-dark white
+        <span class="tooltip-body tooltip-top bg-dark white rounded">Tooltip text</span>
+    </div> 
+    <div class="tooltip">tooltip-top bg-light-grey black
+        <span class="tooltip-body tooltip-top bg-light-grey black rounded">Tooltip text</span>
+    </div> 
+
+
+
+    <br><br>
+    <h4 class="m-t-2">Outlined Colors
+    </h4>
+        <div class="tooltip">tooltip-top outline-color-1 bg-white
+            <span class="tooltip-body tooltip-top bg-white outline-color-1 color-1 ">Tooltip text</span>
+        </div> 
+        <div class="tooltip">tooltip-top outline-color-2 bg-white
+            <span class="tooltip-body tooltip-top bg-white outline-color-2 color-2 ">Tooltip text</span>
+        </div> 
+        <div class="tooltip">tooltip-top outline-info bg-white
+            <span class="tooltip-body tooltip-top bg-white outline-color-info info ">Tooltip text</span>
+        </div> 
+        <div class="tooltip">tooltip-top outline-success bg-white
+            <span class="tooltip-body tooltip-top bg-white outline-color-success success ">Tooltip text</span>
+        </div> 
+        <div class="tooltip">tooltip-top outline-danger bg-white
+            <span class="tooltip-body tooltip-top bg-white outline-color-danger danger ">Tooltip text</span>
+        </div> 
+
+</main>
+
+    <div class="center p2 color-1 bg-light-grey">
+      <p class="color-1 small">
+        Designed and built with love by Kim Majali, maintained by
+        <a href="https://www.europeitoutsourcing.com/"
+          >Europe IT Outsourcing Company Developers</a
+        >.
+
+        <a href="https://github.com/majalinet/Agile-CSS" target="_blank">
+          <i class="icon-box">
+            <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
+              <path
+                d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"
+              ></path>
+            </svg>
+          </i>
+        </a>
+        <a href="https://www.facebook.com/europeoutsourcing/" target="_blank">
+          <i class="icon-box  hover-shadow">
+            <svg viewbox="0 0 24 24" class="icon-color-1-fill  icon-s">
+              <path
+                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"
+              />
+            </svg>
+          </i>
+        </a>
+      </p>
+    </div>
+  </body>
+</html>

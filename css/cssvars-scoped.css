@@ -434,25 +434,6 @@
   display: flex;
   flex-wrap: wrap;
 }
-/* Gap utility — for flex/grid containers (.row, .d-flex, etc.) */
-.cssvars .gap   { gap: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
-
-.cssvars .child-p > div { padding: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .child-p-2 > div { padding: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .child-p-3 > div { padding: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .child-p-4 > div { padding: clamp(2rem, 3.33vw, 4rem); }
-
-.cssvars .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.cssvars .no-gutters>.col, .cssvars .no-gutters>[class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
 .cssvars .col-1, .cssvars .col-2, .cssvars .col-3, .cssvars .col-4, .cssvars .col-5, .cssvars .col-6, .cssvars .col-7, .cssvars .col-8, .cssvars .col-9, .cssvars .col-10, .cssvars .col-11, .cssvars .col-12, .cssvars .col, .cssvars .col-auto, .cssvars .col-sm-4, .cssvars .col-sm-6, .cssvars .col-sm-8, .cssvars .col-sm-12, .cssvars .col-sm, .cssvars .col-sm-auto, .cssvars .col-md-2, .cssvars .col-md-3, .cssvars .col-md-4, .cssvars .col-md-5, .cssvars .col-md-6, .cssvars .col-md-8, .cssvars .col-md-9, .cssvars .col-md-10, .cssvars .col-md-12, .cssvars .col-md, .cssvars .col-md-auto, .cssvars .col-lg-1, .cssvars .col-lg-2, .cssvars .col-lg-3, .cssvars .col-lg-4, .cssvars .col-lg-5, .cssvars .col-lg-6, .cssvars .col-lg-7, .cssvars .col-lg-8, .cssvars .col-lg-9, .cssvars .col-lg-10, .cssvars .col-lg-11, .cssvars .col-lg-12, .cssvars .col-lg, .cssvars .col-lg-auto, .cssvars .col-xl-1, .cssvars .col-xl-2, .cssvars .col-xl-3, .cssvars .col-xl-4, .cssvars .col-xl-5, .cssvars .col-xl-6, .cssvars .col-xl-7, .cssvars .col-xl-8, .cssvars .col-xl-9, .cssvars .col-xl-10, .cssvars .col-xl-11, .cssvars .col-xl-12, .cssvars .col-xl, .cssvars .col-xl-auto {
   position: relative;
   width: 100%;
@@ -722,6 +703,28 @@
     max-width: 100%;
   }
 }
+  .cssvars .no-gutters {
+  margin-right: 0;
+  margin-left: 0;
+}
+.cssvars .no-gutters>.col, .cssvars .no-gutters>[class*="col-"] {
+  padding-right: 0;
+  padding-left: 0;
+}
+  /* Gap utility — for flex/grid containers (.row, .d-flex, etc.) */
+.cssvars .gap   { gap: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
+
+.cssvars .child-padding > * { padding: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .child-padding-2 * div { padding: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .child-padding-3 * div { padding: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .child-padding-4 * div { padding: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .child-margin > * { margin: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .child-margin-2 * div { margin: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .child-margin-3 * div { margin: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .child-margin-4 * div { margin: clamp(2rem, 3.33vw, 4rem); }
 }
 @layer components {
 .cssvars .map {
@@ -889,7 +892,7 @@ height: 2.5rem;
 }
 /*Quotes */
 .cssvars blockquote {
-  padding: 0.75rem 1.5rem;
+  padding:calc(var(--panel-padding)/2);
   margin: 0 0 1.5rem;
   font-size: 1.1rem;
   font-weight: 400;
@@ -903,9 +906,10 @@ height: 2.5rem;
 /*Pagination */
 .cssvars .pagination {
   display: flex;
-  padding-left: 0;
   list-style: none;
-  border-radius: 0.25rem;
+  padding:var(--control-padding);
+  border-radius:var(--control-radius);
+  box-shadow:var(--control-shadow);
 }
 .cssvars .btn-link, .cssvars .page-link, .cssvars .page-link:focus, .cssvars .page-link:hover {
   color: var(--control-color, var(--color-1));
@@ -917,7 +921,7 @@ height: 2.5rem;
   line-height: var(--line-height, 1.2);
   color: var(--control-color, var(--color-1));
   background-color: var(--control-bg);
-  border: 0.0625rem solid var(--lite-grey, #dee2e6);
+  border: 0.0625rem solid var(--light-grey, #dee2e6);
 }
 .cssvars .page-item.active .page-link, .cssvars .page-link:focus, .cssvars .page-link:hover {
   background-color: var(--control-hover-bg);
@@ -977,7 +981,7 @@ height: 2.5rem;
   text-align: center;
   white-space: nowrap;
   vertical-align: baseline;
-  border-radius: 0.25rem;
+  border-radius: var(--control-radius, 0.25rem);
 }
 /* Alerts & Messages*/
 .cssvars .msg {
@@ -985,10 +989,10 @@ height: 2.5rem;
   border-left: 0.75rem solid rgba(255, 255, 255, 0.5);
   font-size: 0.85rem;
   position: relative;
-  padding: 0.75rem 1.25rem;
+  padding:calc(var(--panel-padding)/4);
   margin-bottom: 1rem;
   border: 0.75rem solid transparent;
-  border-radius: 0.25rem;
+  border-radius:var(--panel-radius);
 }
 /*tables*/
 .cssvars .table {
@@ -1230,9 +1234,11 @@ height: 2.5rem;
 }
 /* Gallery Box*/
 .cssvars .gallery-box {
-  line-height: 1.5rem;
-  margin: 0;
-  padding: 1rem;
+  background:var(--panel-bg);
+  border:var(--panel-border);
+  border-radius:var(--panel-radius);
+  box-shadow:var(--panel-shadow);
+  padding:var(--panel-padding);
 }
 .cssvars .gallery-box img {
   max-width: 100%;
@@ -1292,7 +1298,7 @@ height: 2.5rem;
 .cssvars .light-box-html {
   padding: 2em;
   max-width: 42em;
-  background-color: var(--white, white);
+  background-color: var(--panel-bg, white);
 }
 .cssvars .light-box-figure {
   display: none;
@@ -1494,11 +1500,13 @@ height: 2.5rem;
   padding: var(--input-padding-y) var(--input-padding-x);
   font-size: 1rem;
   line-height: var(--line-height, 1.5);
-  color: var(--dark, rgba(41, 40, 40, 0.707));
+  color:var(--input-color);
   background-color: var(--body-bg, white);
   background-clip: padding-box;
-  border: 0.0625rem solid #ced4da;
   border-radius: 0.25rem;
+  border: var(--input-border);
+  box-shadow: var(--input-shadow);
+  border-radius:var(--input-radius);
 }
 .cssvars [type="date"]::-webkit-inner-spin-button {
   display: none;
@@ -1593,15 +1601,19 @@ height: 2.5rem;
   flex-grow: 1;
   width: 100%;
   display: none;
-  padding: 1rem;
+  background: var(--panel-bg);
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  padding: var(--panel-padding);
+  box-shadow: var(--panel-shadow);
 }
 .cssvars .tabs input[type="radio"] {
   display: none;
 }
 .cssvars .tabs input[type="radio"]:checked+label {
-  background-color: var(--body-bg, white);
-  color: var(--color-1, black);
-  border: 1px solid var(--color-1, black);
+  background: var(--surface-selected);
+  color: var(--control-hover-color);
+  border: var(--control-hover-border);
 }
 .cssvars .tabs input[type="radio"]:checked+label+.tab {
   display: block;
@@ -1636,6 +1648,11 @@ height: 2.5rem;
   animation: 1s fadeInAccordion;
   animation-fill-mode: forwards;
   visibility: hidden;
+  background: var(--panel-bg);
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  padding: var(--panel-padding);
+  box-shadow: var(--panel-shadow);
 }
 .cssvars .accordion input[type="radio"]:checked ~ .accordion-label {
   background-color: var(--surface-selected);
@@ -1696,6 +1713,8 @@ height: 2.5rem;
   background: var(--panel-bg);
   border-radius: var(--panel-radius);
   padding: var(--panel-padding);
+  border: var(--panel-border);
+  box-shadow: var(--panel-shadow);
   height: 50%;
 }
 .cssvars .modal__close {
@@ -1733,12 +1752,14 @@ height: 2.5rem;
 }
 /* Promo Boxes */
 .cssvars .promo-box {
-  margin: 3rem 0;
-  padding: 4rem 3rem;
+  padding:calc(var(--panel-padding) * 2);
+  background:var(--panel-bg);
+  border:var(--panel-border);
+  border-radius:var(--panel-radius);
+  box-shadow:var(--panel-shadow);
 }
 .cssvars .promo-box-s {
-  margin: 1.5rem 0;
-  padding: 2rem 1.5rem;
+  padding: var(--panel-padding);
 }
 /* Main Menu */
 .cssvars .main-menu li {  list-style: none;}
@@ -1874,7 +1895,7 @@ height: 2.5rem;
 /* Breadcrumb */
 .cssvars .breadcrumb {
   display: inline-flex;
-  border-radius: 0.25rem;
+  border-radius:var(--panel-radius);
 }
 .cssvars .breadcrumb li {
   list-style: none;
@@ -1896,12 +1917,14 @@ height: 2.5rem;
   content: " ➔";
 }
 .cssvars .custom-file-upload {
-  border: 0.0625rem solid var(--grey, #ccc);
   display: inline-block;
-  padding: 0.375rem 0.75rem;
   cursor: pointer;
-  color: var(--color-1, black);
-  background-color: transparent;
+  background:var(--control-color);
+  color:var(--control-bg);
+  border:var(--control-border);
+  border-radius:var(--control-radius);
+  padding:var(--control-padding);
+  box-shadow:var(--control-shadow);
 }
 .cssvars .custom-file-upload input{
   display: none;
@@ -1910,9 +1933,10 @@ height: 2.5rem;
   padding: 0;
   margin: 0;
   border: none;
-  border-radius: 0.1875rem;
+  border-radius: var(--control-radius);
   overflow: hidden;
   background-color: var(--body-bg, white);
+  color:var(--control-color);
   display: inline;
   line-height: var(--line-height, 1.2);
 }
@@ -1948,9 +1972,12 @@ border-bottom: 0.0625rem dotted black;
 visibility: hidden;
 width: 7.5rem;
 text-align: center;
-padding: 0.3125rem 0;
 position: absolute;
 z-index: 1;
+background:var(--surface-inverse);
+color:var(--surface-inverse-color);
+border-radius:var(--panel-radius);
+padding:var(--control-padding);
 }
 .cssvars .tooltip2x {
 width: 15rem !important;
@@ -2005,7 +2032,11 @@ left: 105%;
   right: 1rem;
   display: none;
   width: 22rem;
-  background-color: var(--body-bg, white);
+  background:var(--panel-bg);
+  border:var(--panel-border);
+  border-radius:var(--panel-radius);
+  box-shadow:var(--panel-shadow);
+  padding:var(--panel-padding);
 }
 /* Resize */
 .cssvars .resize-grip {
