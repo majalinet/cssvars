@@ -727,6 +727,218 @@
 .cssvars .child-margin-4 * div { margin: clamp(2rem, 3.33vw, 4rem); }
 }
 @layer components {
+  /* Card */
+.cssvars .card {
+  background-color: var(--panel-bg);
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+  padding: var(--panel-padding);
+}
+.cssvars .card-header {
+  padding-bottom: var(--default-padding);
+  margin-bottom: var(--default-padding);
+  border-bottom: 0.0625rem solid var(--light-grey);
+  font-weight: var(--heading-font-weight);
+  color: var(--heading-color);
+}
+.cssvars .card-body { padding: var(--default-padding) 0; }
+.cssvars .card-footer {
+  padding-top: var(--default-padding);
+  margin-top: var(--default-padding);
+  border-top: 0.0625rem solid var(--light-grey);
+}
+.cssvars .card-hover:hover {
+  box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--black) 15%, transparent);
+  transform: translateY(-0.125rem);
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+/* Panel */
+.cssvars .panel {
+  background-color: var(--panel-bg);
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+  padding: var(--panel-padding);
+}
+/* Sidebar — checkbox toggle, no JS */
+.cssvars .sidebar {
+  width: 16rem;
+  background-color: var(--panel-bg);
+  border-right: 0.0625rem solid var(--light-grey);
+  padding: var(--default-padding);
+  height: 100vh;
+  position: fixed;
+  left: 0;
+  top: 0;
+  overflow-y: auto;
+  transition: transform 0.3s ease;
+  z-index: 100;
+}
+.cssvars .sidebar-header {
+  padding: var(--default-padding);
+  margin-bottom: var(--default-margin);
+  border-bottom: 0.0625rem solid var(--light-grey);
+  font-weight: var(--heading-font-weight);
+  font-size: var(--h4-size);
+}
+.cssvars .sidebar-toggle-state { display: none; }
+.cssvars .sidebar-toggle-btn {
+  display: none;
+  cursor: pointer;
+  padding: var(--control-padding);
+}
+.cssvars .main-content { margin-left: 16rem; }
+@media (max-width: 768px) {
+  .cssvars .sidebar { transform: translateX(-100%); padding-top: 3.5rem;}
+  .cssvars .sidebar-toggle-state:checked ~ .sidebar { transform: translateX(0); }
+  .cssvars .sidebar-toggle-btn { 
+    display: inline-block;
+    position: fixed;
+    top: 0.5rem;
+    left: 0.5rem;
+    z-index: 200;
+  }
+  .cssvars .main-content { margin-left: 0; }
+}
+/* Dropdown — checkbox toggle, no JS. Menu reuses .menu / .menu-item */
+.cssvars .dropdown { position: relative; display: inline-block; }
+.cssvars .dropdown-state { display: none; }
+.cssvars .dropdown-toggle { cursor: pointer; }
+.cssvars .dropdown-toggle::after { content: " \25BE"; font-size: 0.75rem; margin-left: 0.5rem; }
+.cssvars .dropdown-menu {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  min-width: 12rem;
+  background-color: var(--panel-bg);
+  border: var(--panel-border);
+  border-radius: var(--panel-radius);
+  box-shadow: var(--panel-shadow);
+  padding: 0.5rem 0;
+  margin-top: 0.25rem;
+  z-index: 100;
+  display: none;
+}
+.cssvars .dropdown-state:checked ~ .dropdown-menu { display: block; }
+.cssvars .dropdown-divider {
+  height: 0;
+  margin: 0.5rem 0;
+  border-top: 0.0625rem solid var(--light-grey);
+}
+.cssvars .dropdown-header {
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: var(--heading-font-weight);
+  color: var(--dark);
+  text-transform: uppercase;
+}
+/* Menu — shared by sidebar nav AND dropdown-menu */
+.cssvars .menu { list-style: none; padding: 0; margin: 0; }
+.cssvars .menu-item { border-bottom: 0.0625rem solid var(--light-grey); }
+.cssvars .menu-item:last-child { border-bottom: none; }
+.cssvars .menu-item a, .cssvars .menu-item label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: var(--control-padding);
+  color: var(--body-color);
+  text-decoration: none;
+  cursor: pointer;
+}
+.cssvars .menu-item a:hover, .cssvars .menu-item label:hover {
+  background-color: var(--surface-hover);
+  color: var(--color-1);
+}
+.cssvars .menu-item.active a {
+  background-color: var(--color-1);
+  color: var(--white);
+}
+.cssvars .menu-item-icon { width: 1.5rem; height: 1.5rem; flex-shrink: 0; }
+.cssvars .menu-item-badge {
+  margin-left: auto;
+  padding: 0.125rem 0.5rem;
+  background-color: var(--color-1);
+  color: var(--white);
+  border-radius: 1rem;
+  font-size: 0.75rem;
+}
+/* Pills */
+.cssvars .pills { display: inline-flex; gap: 0.5rem; flex-wrap: wrap; }
+.cssvars .pill {
+  display: inline-block;
+  padding: 0.375rem 1rem;
+  background-color: var(--light-grey);
+  color: var(--body-color);
+  border-radius: 1.5rem;
+  font-size: 0.875rem;
+  text-decoration: none;
+  cursor: pointer;
+  border: 0.0625rem solid transparent;
+}
+.cssvars .pill:hover { background-color: var(--surface-hover); border-color: var(--color-1); }
+.cssvars .pill.active, .cssvars .pill-color-1 { background-color: var(--color-1); color: var(--white); }
+.cssvars .pill-success { background-color: var(--success); color: var(--white); }
+.cssvars .pill-info    { background-color: var(--info); color: var(--white); }
+.cssvars .pill-warning { background-color: var(--warning); color: var(--white); }
+.cssvars .pill-danger  { background-color: var(--danger); color: var(--white); }
+/* Chips */
+.cssvars .chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  padding: 0.375rem 0.75rem;
+  background-color: var(--light-grey);
+  border-radius: 1rem;
+  font-size: 0.875rem;
+  margin: 0.25rem;
+}
+.cssvars .chip-image { width: 1.5rem; height: 1.5rem; border-radius: 50%; object-fit: cover; }
+.cssvars .chip-close {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+  border-radius: 50%;
+  background-color: var(--grey);
+  color: var(--body-color);
+  cursor: pointer;
+  border: none;
+  font-size: 0.75rem;
+  line-height: 1;
+}
+.cssvars .chip-close:hover { background-color: var(--danger); color: var(--white); }
+.cssvars .chip-color-1 { background-color: var(--color-1); color: var(--white); }
+.cssvars .chip-color-1 .chip-close {
+  background-color: color-mix(in srgb, var(--white) 30%, transparent);
+  color: var(--white);
+}
+.cssvars .chip-color-1 .chip-close:hover {
+  background-color: color-mix(in srgb, var(--white) 50%, transparent);
+}
+/* Footer (component) */
+.cssvars .footer {
+  background-color: var(--light-grey);
+  padding: var(--default-padding) 0;
+  border-top: 0.0625rem solid var(--grey);
+}
+.cssvars .footer-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--default-gap);
+}
+.cssvars .footer-links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.cssvars .footer-links a { color: var(--body-color); text-decoration: none; }
+.cssvars .footer-links a:hover { color: var(--color-1); }
 .cssvars .map {
   width: 100%;
   height: auto;

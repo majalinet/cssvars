@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cards, Panels, Pills, Chips, Dropdowns, Sidebar - CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<!-- Sidebar toggle checkbox: must precede .sidebar as a sibling for :checked ~ to work -->
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-state">
+<label for="sidebar-toggle" class="sidebar-toggle-btn bg-color-1 white">☰</label>
+
+<!-- Sidebar -->
+<aside class="sidebar">
+  <div class="sidebar-header">Dashboard</div>
+  <ul class="menu">
+    <li class="menu-item active">
+      <a href="#">
+        <svg class="menu-item-icon icon-white-fill" viewBox="0 0 24 24">
+          <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+        </svg>
+        Home
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="#">
+        <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+          <path d="M12,12C14.21,12 16,10.21 16,8C16,5.79 14.21,4 12,4C9.79,4 8,5.79 8,8C8,10.21 9.79,12 12,12M12,14C9.33,14 4,15.33 4,18V20H20V18C20,15.33 14.67,14 12,14Z"></path>
+        </svg>
+        Profile
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="#">
+        <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+          <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z"></path>
+        </svg>
+        Messages
+        <span class="menu-item-badge">3</span>
+      </a>
+    </li>
+    <li class="menu-item">
+      <a href="#">
+        <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+          <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5M19.43,12.97C19.47,12.65 19.5,12.33 19.5,12C19.5,11.67 19.47,11.34 19.43,11L21.54,9.37C21.73,9.22 21.78,8.95 21.66,8.73L19.66,5.27C19.54,5.05 19.27,4.96 19.05,5.05L16.56,6.05C16.04,5.66 15.5,5.32 14.87,5.07L14.5,2.42C14.46,2.18 14.25,2 14,2H10C9.75,2 9.54,2.18 9.5,2.42L9.13,5.07C8.5,5.32 7.96,5.66 7.44,6.05L4.95,5.05C4.73,4.96 4.46,5.05 4.34,5.27L2.34,8.73C2.21,8.95 2.27,9.22 2.46,9.37L4.57,11C4.53,11.34 4.5,11.67 4.5,12C4.5,12.33 4.53,12.65 4.57,12.97L2.46,14.63C2.27,14.78 2.21,15.05 2.34,15.27L4.34,18.73C4.46,18.95 4.73,19.03 4.95,18.95L7.44,17.94C7.96,18.34 8.5,18.68 9.13,18.93L9.5,21.58C9.54,21.82 9.75,22 10,22H14C14.25,22 14.46,21.82 14.5,21.58L14.87,18.93C15.5,18.67 16.04,18.34 16.56,17.94L19.05,18.95C19.27,19.03 19.54,18.95 19.66,18.73L21.66,15.27C21.78,15.05 21.73,14.78 21.54,14.63L19.43,12.97Z"></path>
+        </svg>
+        Settings
+      </a>
+    </li>
+  </ul>
+</aside>
+
+<!-- Main Content -->
+<div class="main-content">
+  <div class="container p-v-2">
+    <h1 class="m-b-3">Cards, Panels, Pills, Chips, Dropdowns, Sidebar</h1>
+
+    <!-- Cards -->
+    <section class="m-b-4">
+      <h2>Cards</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-header">Card Title</div>
+            <div class="card-body">
+              <p>Basic card with header, body, and footer sections, built from panel tokens.</p>
+            </div>
+            <div class="card-footer">
+              <button class="button">Action</button>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-header">Another Card</div>
+            <div class="card-body">
+              <p>Cards adapt to different content and use the same shadow/radius tokens as panels.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card card-hover">
+            <div class="card-body">
+              <h5>Simple Card</h5>
+              <p>A card without header or footer, just body content.</p>
+              <a href="#" class="button">Learn More</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Panels -->
+    <section class="m-b-4">
+      <h2>Panels</h2>
+      <div class="row gap-2">
+        <div class="col-md-6">
+
+        </div>
+        <div class="col-md-12">
+          <div class="panel panel-danger">
+            <h5>My Panel</h5>
+            <p>Critical information requiring immediate attention.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Pills -->
+    <section class="m-b-4">
+      <h2>Pills</h2>
+      <div class="pills m-b-2">
+        <span class="pill active">Active</span>
+        <span class="pill">Default</span>
+        <span class="pill pill-color-1">Color 1</span>
+        <span class="pill pill-success">Success</span>
+        <span class="pill pill-info">Info</span>
+        <span class="pill pill-warning">Warning</span>
+        <span class="pill pill-danger">Danger</span>
+      </div>
+      <p class="dark">Rounded, interactive tags for filters, categories, or lightweight navigation.</p>
+    </section>
+
+    <!-- Chips -->
+    <section class="m-b-4">
+      <h2>Chips</h2>
+      <div class="m-b-2">
+        <div class="chip">
+          <span>Basic Chip</span>
+          <button class="chip-close">×</button>
+        </div>
+        <div class="chip">
+          <img src="../img/blocks/worker-1-s.jpg" alt="User" class="chip-image">
+          <span>John Doe</span>
+          <button class="chip-close">×</button>
+        </div>
+        <div class="chip chip-color-1">
+          <span>Color 1 Chip</span>
+          <button class="chip-close">×</button>
+        </div>
+        <div class="chip">
+          <img src="../img/blocks/worker-2-s.jpg" alt="User" class="chip-image">
+          <span>Jane Smith</span>
+        </div>
+        <div class="chip">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xxs">
+            <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M12,6A6,6 0 0,0 6,12A6,6 0 0,0 12,18A6,6 0 0,0 18,12A6,6 0 0,0 12,6Z"></path>
+          </svg>
+          <span>With Icon</span>
+          <button class="chip-close">×</button>
+        </div>
+      </div>
+      <p class="dark">Compact elements for tags or avatars. Note: the close (×) button removes the chip from the DOM — that's a delete action, not a state toggle, so it still needs a small JS listener; everything else on this page is JS-free.</p>
+    </section>
+
+    <!-- Dropdowns — checkbox toggle, no JS -->
+    <section class="m-b-4">
+      <h2>Dropdowns (No JS)</h2>
+      <div class="d-flex gap-2 flex-wrap">
+
+        <div class="dropdown">
+          <input type="checkbox" id="dd-1" class="dropdown-state">
+          <label for="dd-1" class="button dropdown-toggle">Options</label>
+          <ul class="dropdown-menu menu">
+            <li class="menu-item"><label for="dd-1">Action</label></li>
+            <li class="menu-item"><label for="dd-1">Another action</label></li>
+            <li class="menu-item"><label for="dd-1">Something else</label></li>
+            <li class="dropdown-divider"></li>
+            <li class="menu-item"><label for="dd-1">Separated link</label></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dd-2" class="dropdown-state">
+          <label for="dd-2" class="button dropdown-toggle">With Header</label>
+          <ul class="dropdown-menu menu">
+            <li class="dropdown-header">Section 1</li>
+            <li class="menu-item"><label for="dd-2">Item 1</label></li>
+            <li class="menu-item"><label for="dd-2">Item 2</label></li>
+            <li class="dropdown-divider"></li>
+            <li class="dropdown-header">Section 2</li>
+            <li class="menu-item"><label for="dd-2">Item 3</label></li>
+            <li class="menu-item"><label for="dd-2">Item 4</label></li>
+          </ul>
+        </div>
+
+        <div class="dropdown">
+          <input type="checkbox" id="dd-3" class="dropdown-state">
+          <label for="dd-3" class="button dropdown-toggle">Menu</label>
+          <ul class="dropdown-menu menu">
+            <li class="menu-item"><label for="dd-3">Profile</label></li>
+            <li class="menu-item"><label for="dd-3">Settings</label></li>
+            <li class="menu-item"><label for="dd-3">Logout</label></li>
+          </ul>
+        </div>
+
+      </div>
+      <p class="dark m-t-2">Each item's <code>label</code> targets the same checkbox as the toggle, so selecting an item closes the menu — same pattern the accordion uses to reset state without JS. Trade-off: it won't close on an outside click, matching the accordion's existing behavior.</p>
+    </section>
+
+    <!-- Menu Items -->
+    <section class="m-b-4">
+      <h2>Menu Items</h2>
+      <div class="row gap-2">
+        <div class="col-md-6">
+          <ul class="menu shadow-3 rounded">
+            <li class="menu-item active">
+              <a href="#">
+                <svg class="menu-item-icon icon-white-fill" viewBox="0 0 24 24">
+                  <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+                </svg>
+                Home
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+                  <path d="M12,12C14.21,12 16,10.21 16,8C16,5.79 14.21,4 12,4C9.79,4 8,5.79 8,8C8,10.21 9.79,12 12,12M12,14C9.33,14 4,15.33 4,18V20H20V18C20,15.33 14.67,14 12,14Z"></path>
+                </svg>
+                Profile
+                <span class="menu-item-badge">New</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+                  <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4C22,2.89 21.1,2 20,2Z"></path>
+                </svg>
+                Messages
+                <span class="menu-item-badge">3</span>
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#">
+                <svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24">
+                  <path d="M12,15.5A3.5,3.5 0 0,1 8.5,12A3.5,3.5 0 0,1 12,8.5A3.5,3.5 0 0,1 15.5,12A3.5,3.5 0 0,1 12,15.5Z"></path>
+                </svg>
+                Settings
+              </a>
+            </li>
+          </ul>
+        </div>
+        <div class="col-md-6">
+          <h5>Menu with Icons and Badges</h5>
+          <p class="dark">The same <code>.menu</code> / <code>.menu-item</code> classes power both this standalone list and the dropdown menus above — one shared component instead of two parallel ones.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Combined Example -->
+    <section class="m-b-4">
+      <h2>Combined Example</h2>
+      <div class="card">
+        <div class="card-header d-flex justify-content-between align-items-center">
+          <h5 class="m0">User Profile</h5>
+          <div class="dropdown">
+            <input type="checkbox" id="dd-4" class="dropdown-state">
+            <label for="dd-4" class="button button-s dropdown-toggle">Actions</label>
+            <ul class="dropdown-menu menu">
+              <li class="menu-item"><label for="dd-4">Edit Profile</label></li>
+              <li class="menu-item"><label for="dd-4">Change Password</label></li>
+              <li class="dropdown-divider"></li>
+              <li class="menu-item"><label for="dd-4">Logout</label></li>
+            </ul>
+          </div>
+        </div>
+        <div class="card-body">
+          <div class="d-flex align-items-center gap m-b-2">
+            <img src="../img/blocks/worker-3-s.jpg" alt="User" class="circle icon-sm">
+            <div>
+              <h5 class="m0">John Doe</h5>
+              <p class="dark m0">john.doe@example.com</p>
+            </div>
+          </div>
+          <div class="m-b-2">
+            <h6>Tags</h6>
+            <div class="pills">
+              <span class="pill pill-color-1">Developer</span>
+              <span class="pill pill-success">Active</span>
+              <span class="pill">Premium</span>
+            </div>
+          </div>
+          <div>
+            <h6>Skills</h6>
+            <div>
+              <div class="chip"><span>HTML</span><button class="chip-close">×</button></div>
+              <div class="chip"><span>CSS</span><button class="chip-close">×</button></div>
+              <div class="chip"><span>JavaScript</span><button class="chip-close">×</button></div>
+            </div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="panel panel-info">
+            <p class="m0">Last login: July 16, 2026 at 10:30 AM</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-content">
+        <p class="m0">© 2026 Your Company. All rights reserved.</p>
+        <ul class="footer-links">
+          <li><a href="#">Privacy Policy</a></li>
+          <li><a href="#">Terms of Service</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+</div>
+
+<!-- Chip removal is the one interaction that isn't a pure state toggle,
+     so it's the one bit of optional JS on the page. Everything else
+     (sidebar, dropdowns) works with zero script. -->
+<script>
+document.querySelectorAll('.chip-close').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    this.parentElement.remove();
+  });
+});
+</script>
+</body>
+</html>
