@@ -1,7 +1,7 @@
 /* CSS Vars Framework
 * Description: This project has one main purpose to use as fewer resources as possible Most templates are built using Bootstrap, JQuery, Font awesome, and many other resources and that affects the page load speed.
 * Base URI: https://github.com/majalinet/cssvars
-* Version: 2.0
+* Version: 3.0
 * Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE */
 @-ms-viewport { width: device-width; }
@@ -62,7 +62,6 @@
   --image-radius: 0;
   --image-shadow: none;
   --image-border-style: none;
-
   /* Styles variables */
   --default-padding: 0;
   --default-margin: 0;
@@ -70,7 +69,6 @@
   --default-border: none;
   --default-border-radius: 0;
   --box-shadow: none;
-
   /* Surface tokens */
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
@@ -81,14 +79,12 @@
   --surface-active: color-mix(in srgb, var(--color-1) 16%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 12%, transparent);
   --surface-disabled: color-mix(in srgb, var(--grey) 30%, transparent);
-
   /* Panel tokens */
   --panel-bg: var(--surface-raised);
   --panel-border: var(--default-border);
   --panel-radius: var(--default-border-radius);
   --panel-shadow: var(--box-shadow);
   --panel-padding: clamp(0.375rem, 4.39vw - 0.72rem, 2rem);
-
   /* Control tokens */
   --control-bg: var(--color-1);
   --control-color: var(--white);
@@ -106,7 +102,6 @@
   --control-active-color: var(--control-color);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 35%, transparent);
   --control-disabled-opacity: 0.5;
-
   /* Input tokens */
   --input-bg: var(--body-bg);
   --input-color: var(--dark);
@@ -123,7 +118,11 @@
   --input-invalid-color: var(--danger);
   --input-disabled-bg: var(--light-grey);
   --input-disabled-opacity: 0.5;
-  }
+  /* Flow tokens */
+  --content-flow: clamp(0.5rem, 3.33vw, 1rem);
+  --layout-flow:  0;
+  --child-padding: clamp(0.5rem, 3.33vw, 1rem);  /* structural rhythm: sections, cards, major blocks */
+}
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
   @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
 /* @media (prefers-color-scheme:dark){
@@ -174,6 +173,9 @@
   text-align: justify;
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
+}
+.cssvars main  > * + * , .cssvars body > * + * {
+  margin-top: var(--layout-flow, 0);
 }
 .cssvars ol, .cssvars ul, .cssvars dl {
   margin-top: 0;
@@ -703,28 +705,38 @@
     max-width: 100%;
   }
 }
-  .cssvars .no-gutters {
-  margin-right: 0;
-  margin-left: 0;
-}
-.cssvars .no-gutters>.col, .cssvars .no-gutters>[class*="col-"] {
-  padding-right: 0;
-  padding-left: 0;
-}
-  /* Gap utility — for flex/grid containers (.row, .d-flex, etc.) */
-.cssvars .gap   { gap: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .child-padding > * { padding: var(--child-padding, 0); }
+.cssvars .child-padding-1 > * { padding: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .child-padding-2 > * { padding: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .child-padding-3 > * { padding: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .child-padding-4 > * { padding: clamp(2rem, 3.33vw, 4rem); }
+
+/* Gap utility — For Flex/Grid spacing (no edge bleed) */
+.cssvars .gap { gap: clamp(0.5rem, 3.33vw, 1rem); }
 .cssvars .gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
 .cssvars .gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
 .cssvars .gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
 
-.cssvars .child-padding > * { padding: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .child-padding-2 * div { padding: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .child-padding-3 * div { padding: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .child-padding-4 * div { padding: clamp(2rem, 3.33vw, 4rem); }
+/* Non-flex/grid layouts, Nested structures, Overriding defaults, Older browsers (edge bleed absorbed) */
 .cssvars .child-margin > * { margin: clamp(0.5rem, 3.33vw, 1rem); }
-.cssvars .child-margin-2 * div { margin: clamp(1rem, 3.33vw, 2rem); }
-.cssvars .child-margin-3 * div { margin: clamp(1.5rem, 3.33vw, 3rem); }
-.cssvars .child-margin-4 * div { margin: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .child-margin-2 > * { margin: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .child-margin-3 > * { margin: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .child-margin-4 > * { margin: clamp(2rem, 3.33vw, 4rem); }
+
+.cssvars .cluster {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.cssvars .flow-1 > * + * { margin-top: clamp(0.5rem, 3.33vw, 1rem); }
+.cssvars .flow-2 > * + * { margin-top: clamp(1rem, 3.33vw, 2rem); }
+.cssvars .flow-3 > * + * { margin-top: clamp(1.5rem, 3.33vw, 3rem); }
+.cssvars .flow-4 > * + * { margin-top: clamp(2rem, 3.33vw, 4rem); }
+.cssvars .flow > * + * { margin-top: var(--layout-flow, 0); }
+.cssvars article > * + *, .cssvars aside > * + *, .cssvars details > * + * , .cssvars blockquote > * + * {
+  margin-top: var(--content-flow, 0);
+}
 }
 @layer components {
   /* Card */
