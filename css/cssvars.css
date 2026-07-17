@@ -29,14 +29,13 @@
   --col-v-padding: 0;
   --line-height: 1.4;
   --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-  
+  /* Heading variables */
   --heading-font-weight: 500;
   --heading-color: var(--color-1, black);
   --heading-font: var(--font-family, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif');
   --heading-line-height: 1.2;
   --heading-letter-spacing: 0;
   --heading-margin: 0 0 0.5rem 0;
-
   --h1-size: 2.25rem;
   --h2-size: 1.75rem;
   --h3-size: 1.5rem;
@@ -49,19 +48,39 @@
   --display-4-size: clamp(1.85rem, 2rem + 2.25vw, 3.25rem);
   --display-5-size: clamp(1.7rem, 1.75rem + 1.5vw, 2.75rem);
   --display-6-size: clamp(1.6rem, 1.6rem + 1vw, 2.25rem);
-
+  /* Link variables */
   --link-color: var(--color-1);
   --link-hover-color: var(--grey);
   --link-decoration: none;
   --link-hover-decoration: underline;
-
+  /* Icon variables */
   --icon-default-size: 4rem;
   --icon-default-fill: var(--color-1);
   --icon-default-bg: var(--body-bg);
-
+  /* Image variables */
   --image-radius: 0;
   --image-shadow: none;
   --image-border-style: none;
+  /* Backs (m/p)-( /h/r/l)-(1-4) */
+  --space-dense-1: clamp(0.25rem, 2.03vw - 0.26rem, 1rem);
+  --space-dense-2: clamp(0.375rem, 4.39vw - 0.72rem, 2rem);
+  --space-dense-3: clamp(0.5rem, 6.76vw - 1.19rem, 3rem);
+  --space-dense-4: clamp(0.75rem, 8.78vw - 1.45rem, 4rem);
+  /* Backs (m/p)-(v/t/b)-(1-4), gap, flow, panel-padding, child-padding */
+  --space-1: clamp(0.5rem, 3.33vw, 1rem);
+  --space-2: clamp(1rem, 3.33vw, 2rem);
+  --space-3: clamp(1.5rem, 3.33vw, 3rem);
+  --space-4: clamp(2rem, 3.33vw, 4rem);
+  /* Animation */
+  --duration-fast: 0.15s;
+  --duration-base: 0.25s;
+  --duration-slow: 0.4s;
+  --easing: ease;
+  --easing-in-out: ease-in-out;
+  /* Z-index variables */
+  --z-floating: 100;   /* sidebar, dropdown-menu, notification-panel, sticky */
+  --z-overlay: 999;    /* light-box-overlay */
+  --z-modal: 1000;     
   /* Styles variables */
   --default-padding: 0;
   --default-margin: 0;
@@ -69,7 +88,7 @@
   --default-border: none;
   --default-border-radius: 0;
   --box-shadow: none;
-  /* Surface tokens */
+  /* Surface variables */
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
   --surface-overlay: color-mix(in srgb, var(--black) 60%, transparent);
@@ -79,13 +98,13 @@
   --surface-active: color-mix(in srgb, var(--color-1) 16%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 12%, transparent);
   --surface-disabled: color-mix(in srgb, var(--grey) 30%, transparent);
-  /* Panel tokens */
+  /* Panel variables */
   --panel-bg: var(--surface-raised);
   --panel-border: var(--default-border);
   --panel-radius: var(--default-border-radius);
   --panel-shadow: var(--box-shadow);
-  --panel-padding: clamp(0.375rem, 4.39vw - 0.72rem, 2rem);
-  /* Control tokens */
+  --panel-padding: var(--space-dense-2);
+  /* Control variables */
   --control-bg: var(--color-1);
   --control-color: var(--white);
   --control-font-weight: 400;
@@ -102,7 +121,7 @@
   --control-active-color: var(--control-color);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 35%, transparent);
   --control-disabled-opacity: 0.5;
-  /* Input tokens */
+  /* Input variables */
   --input-bg: var(--body-bg);
   --input-color: var(--dark);
   --input-border: 0.125rem solid var(--light-grey);
@@ -118,10 +137,10 @@
   --input-invalid-color: var(--danger);
   --input-disabled-bg: var(--light-grey);
   --input-disabled-opacity: 0.5;
-  /* Flow tokens */
-  --content-flow: clamp(0.5rem, 3.33vw, 1rem);
+  /* Flow variables */
+  --content-flow: var(--space-1);
   --layout-flow:  0;
-  --child-padding: clamp(0.5rem, 3.33vw, 1rem);
+  --child-padding: var(--space-1);
 }
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
   @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
@@ -734,7 +753,7 @@ article > * + *, aside > * + *, details > * + * , blockquote > * + * {
 .card-hover:hover {
   box-shadow: 0 0.5rem 1rem color-mix(in srgb, var(--black) 15%, transparent);
   transform: translateY(-0.125rem);
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
+  transition: box-shadow var(--duration-fast, 0.150s) var(--easing, ease), transform var(--duration-fast, 0.150s) var(--easing, ease);
 }
 /* Panel */
 .panel {
@@ -1198,6 +1217,11 @@ td button {
 .embed-wide-screen::before { padding-top: 56.25%; }
 .embed-standard::before { padding-top: 75%; }
 .embed-square::before { padding-top: 100%; }
+.aspect-auto { aspect-ratio: auto; }
+.aspect-square { aspect-ratio: 1 / 1; }
+.aspect-video { aspect-ratio: 16 / 9; }
+.aspect-4-3 { aspect-ratio: 4 / 3; }
+.aspect-3-2 { aspect-ratio: 3 / 2; }
 /* Forms */
 .form-group {
   margin-bottom: 1rem;
@@ -1230,7 +1254,7 @@ td button {
   box-shadow: var(--input-shadow);
 }
 .form-control-border {
-  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+  transition: border-color var(--duration-fast, 0.150s) var(--easing-in-out, ease-in-out), box-shadow var(--duration-fast, 0.150s) var(--easing-in-out, ease-in-out);
   border: 0.0625rem solid #ced4da;
   box-shadow: none;
 }
@@ -1650,8 +1674,8 @@ progress {
   left: 0;
   top: 0;
   overflow-y: auto;
-  transition: transform 0.3s ease;
-  z-index: 100;
+  transition: transform var(--duration-base, 0.25s) var(--easing, ease);
+  z-index: var(--z-floating, 100);
 }
 .sidebar-header {
   padding: var(--default-padding);
@@ -1675,7 +1699,7 @@ progress {
     position: fixed;
     top: 0.5rem;
     left: 0.5rem;
-    z-index: 200;
+    z-index: var(--z-overlay, 999);
   }
   .main-content { margin-left: 0; }
 }
@@ -1688,7 +1712,7 @@ progress {
   position: fixed;
   top: 0.5rem;
   right: 0.5rem;
-  z-index: 200;
+  z-index: var(--z-overlay, 999);
 }
 .sidebar-right {
   width: 16rem;
@@ -1701,8 +1725,8 @@ progress {
   top: 0;
   overflow-y: auto;
   transform: translateX(100%);
-  transition: transform 0.3s ease;
-  z-index: 150;
+  transition: transform var(--duration-base, 0.250s) var(--easing, ease);
+  z-index: var(--z-overlay, 999);
   box-shadow: var(--panel-shadow);
 }
 .sidebar-right-toggle-state:checked ~ .sidebar-right {
@@ -1724,7 +1748,7 @@ progress {
   box-shadow: var(--panel-shadow);
   padding: 0.5rem 0;
   margin-top: 0.25rem;
-  z-index: 100;
+  z-index: var(--z-floating, 100);
   display: none;
 }
 .dropdown-state:checked ~ .dropdown-menu { display: block; }
@@ -1944,7 +1968,7 @@ progress {
   right: 0;
   bottom: 0;
   left: 0;
-  z-index: 999;
+  z-index: var(--z-overlay, 999);
   justify-content: center;
   align-items: center;
   background-color: rgba(0, 0, 0, 0.9);
@@ -1957,7 +1981,7 @@ progress {
   overflow: auto;
 }
 :target>.light-box-content, .is-active>.light-box-content {
-  animation: 0.4s ease-out 0.2s both;
+  animation: var(--duration-slow, 0.250s) var(--easing-in-out, ease-in-out) 0.2s both;
   animation-name: inherit;
 }
 .light-box-html {
@@ -2179,8 +2203,8 @@ progress {
   left: 0;
   text-align: left;
   background: var(--surface-overlay);
-  transition: opacity 0.25s ease;
-  z-index: 10;
+  transition: opacity var(--duration-base, 0.25s) var(--easing, ease);
+  z-index: var(--z-modal, 1000);
 }
 .modal__bg {
   position: absolute;
@@ -2201,7 +2225,7 @@ progress {
   top: 0;
 }
 .modal__inner {
-  transition: top 0.25s ease;
+  transition: top var(--duration-base, 0.25s) var(--easing, ease);
   position: absolute;
   top: -20%;
   right: 0;
@@ -2252,7 +2276,7 @@ progress {
 }
 /* Notification */
 .notification-panel{
-  z-index: 100;
+  z-index: var(--z-floating, 100);
   position: fixed;
   top:5rem;
   right: 1rem;
@@ -2279,29 +2303,29 @@ progress {
 }
 @layer utilities {
 .child-padding > * { padding: var(--child-padding, 0); }
-.child-padding-1 > * { padding: clamp(0.5rem, 3.33vw, 1rem); }
-.child-padding-2 > * { padding: clamp(1rem, 3.33vw, 2rem); }
-.child-padding-3 > * { padding: clamp(1.5rem, 3.33vw, 3rem); }
-.child-padding-4 > * { padding: clamp(2rem, 3.33vw, 4rem); }
+.child-padding-1 > * { padding: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.child-padding-2 > * { padding: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.child-padding-3 > * { padding: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.child-padding-4 > * { padding: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 /* Gap utility — For Flex/Grid spacing (no edge bleed) */
-.gap { gap: clamp(0.5rem, 3.33vw, 1rem); }
-.gap-2 { gap: clamp(1rem, 3.33vw, 2rem); }
-.gap-3 { gap: clamp(1.5rem, 3.33vw, 3rem); }
-.gap-4 { gap: clamp(2rem, 3.33vw, 4rem); }
+.gap { gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.gap-2 { gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.gap-3 { gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 /* Non-flex/grid layouts, Nested structures, Overriding defaults, Older browsers (edge bleed absorbed) */
-.child-margin > * { margin: clamp(0.5rem, 3.33vw, 1rem); }
-.child-margin-2 > * { margin: clamp(1rem, 3.33vw, 2rem); }
-.child-margin-3 > * { margin: clamp(1.5rem, 3.33vw, 3rem); }
-.child-margin-4 > * { margin: clamp(2rem, 3.33vw, 4rem); }
+.child-margin > * { margin: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.child-margin-2 > * { margin: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.child-margin-3 > * { margin: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.child-margin-4 > * { margin: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 .cluster {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
 }
-.flow-1 > * + * { margin-top: clamp(0.5rem, 3.33vw, 1rem); }
-.flow-2 > * + * { margin-top: clamp(1rem, 3.33vw, 2rem); }
-.flow-3 > * + * { margin-top: clamp(1.5rem, 3.33vw, 3rem); }
-.flow-4 > * + * { margin-top: clamp(2rem, 3.33vw, 4rem); }
+.flow-1 > * + * { margin-top: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.flow-2 > * + * { margin-top: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.flow-3 > * + * { margin-top: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.flow-4 > * + * { margin-top: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 .flow > * + * { margin-top: var(--layout-flow, 0); }
 /* Padding and Margin */
 .m0 { margin: 0; }
@@ -2310,10 +2334,10 @@ progress {
 .m-1-4 { margin: 0.25rem; }
 .m-1-2 { margin: 0.5rem; }
 .m-3-4 { margin: 0.75rem; }
-.m1 { margin: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.m2 { margin: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.m3 { margin: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.m4 { margin: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.m1 { margin: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.m2 { margin: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.m3 { margin: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.m4 { margin: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .m-v-0 { margin-block: 0; }
 .m-v--1-16 { margin-block: 0.0625rem; }
@@ -2321,10 +2345,10 @@ progress {
 .m-v--1-4 { margin-block: 0.25rem; }
 .m-v--1-2 { margin-block: 0.5rem; }
 .m-v--3-4 { margin-block: 0.75rem; }
-.m-v-1 { margin-block: clamp(0.5rem, 3.33vw, 1rem); }
-.m-v-2 { margin-block: clamp(1rem, 3.33vw, 2rem); }
-.m-v-3 { margin-block: clamp(1.5rem, 3.33vw, 3rem); }
-.m-v-4 { margin-block: clamp(2rem, 3.33vw, 4rem); }
+.m-v-1 { margin-block: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.m-v-2 { margin-block: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.m-v-3 { margin-block: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.m-v-4 { margin-block: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 
 .m-h-0 { margin-inline: 0; }
 .m-h--1-16 { margin-inline: 0.0625rem; }
@@ -2332,10 +2356,10 @@ progress {
 .m-h--1-4 { margin-inline: 0.25rem; }
 .m-h--1-2 { margin-inline: 0.5rem; }
 .m-h--3-4 { margin-inline: 0.75rem; }
-.m-h-1 { margin-inline: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.m-h-2 { margin-inline: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.m-h-3 { margin-inline: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.m-h-4 { margin-inline: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.m-h-1 { margin-inline: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.m-h-2 { margin-inline: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.m-h-3 { margin-inline: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.m-h-4 { margin-inline: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .m-r-0 { margin-right: 0; }
 .m-r--1-16 { margin-right: 0.0625rem; }
@@ -2343,10 +2367,10 @@ progress {
 .m-r--1-4 { margin-right: 0.25rem; }
 .m-r--1-2 { margin-right: 0.5rem; }
 .m-r--3-4 { margin-right: 0.75rem; }
-.m-r-1 { margin-right: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.m-r-2 { margin-right: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.m-r-3 { margin-right: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.m-r-4 { margin-right: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.m-r-1 { margin-right: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.m-r-2 { margin-right: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.m-r-3 { margin-right: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.m-r-4 { margin-right: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .m-l-0 { margin-left: 0; }
 .m-l--1-16 { margin-left: 0.0625rem; }
@@ -2354,10 +2378,10 @@ progress {
 .m-l--1-4 { margin-left: 0.25rem; }
 .m-l--1-2 { margin-left: 0.5rem; }
 .m-l--3-4 { margin-left: 0.75rem; }
-.m-l-1 { margin-left: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.m-l-2 { margin-left: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.m-l-3 { margin-left: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.m-l-4 { margin-left: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.m-l-1 { margin-left: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.m-l-2 { margin-left: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.m-l-3 { margin-left: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.m-l-4 { margin-left: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .m-t-0 { margin-top: 0; }
 .m-t--1-16 { margin-top: 0.0625rem; }
@@ -2365,10 +2389,10 @@ progress {
 .m-t--1-4 { margin-top: 0.25rem; }
 .m-t--1-2 { margin-top: 0.5rem; }
 .m-t--3-4 { margin-top: 0.75rem; }
-.m-t-1 { margin-top: clamp(0.5rem, 3.33vw, 1rem); }
-.m-t-2 { margin-top: clamp(1rem, 3.33vw, 2rem); }
-.m-t-3 { margin-top: clamp(1.5rem, 3.33vw, 3rem); }
-.m-t-4 { margin-top: clamp(2rem, 3.33vw, 4rem); }
+.m-t-1 { margin-top: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.m-t-2 { margin-top: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.m-t-3 { margin-top: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.m-t-4 { margin-top: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 
 .m-b-0 { margin-bottom: 0; }
 .m-b--1-16 { margin-bottom: 0.0625rem; }
@@ -2376,10 +2400,10 @@ progress {
 .m-b--1-4 { margin-bottom: 0.25rem; }
 .m-b--1-2 { margin-bottom: 0.5rem; }
 .m-b--3-4 { margin-bottom: 0.75rem; }
-.m-b-1 { margin-bottom: clamp(0.5rem, 3.33vw, 1rem); }
-.m-b-2 { margin-bottom: clamp(1rem, 3.33vw, 2rem); }
-.m-b-3 { margin-bottom: clamp(1.5rem, 3.33vw, 3rem); }
-.m-b-4 { margin-bottom: clamp(2rem, 3.33vw, 4rem); }
+.m-b-1 { margin-bottom: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.m-b-2 { margin-bottom: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.m-b-3 { margin-bottom: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.m-b-4 { margin-bottom: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 .m-auto { margin: auto; }
 .m-h-auto { margin-right: auto; margin-left: auto; }
 .m-v-auto { margin-top: auto; margin-bottom:auto; }
@@ -2390,10 +2414,10 @@ progress {
 .p-1-4 { padding: 0.25rem; }
 .p-1-2 { padding: 0.5rem; }
 .p-3-4 { padding: 0.75rem; }
-.p1 { padding: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.p2 { padding: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.p3 { padding: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.p4 { padding: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.p1 { padding: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.p2 { padding: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.p3 { padding: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.p4 { padding: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .p-v-0 { padding-block: 0; }
 .p-v--1-16 { padding-block: 0.0625rem; }
@@ -2401,10 +2425,10 @@ progress {
 .p-v--1-4 { padding-block: 0.25rem; }
 .p-v--1-2 { padding-block: 0.5rem; }
 .p-v--3-4 { padding-block: 0.75rem; }
-.p-v-1 { padding-block: clamp(0.5rem, 3.33vw, 1rem); }
-.p-v-2 { padding-block: clamp(1rem, 3.33vw, 2rem); }
-.p-v-3 { padding-block: clamp(1.5rem, 3.33vw, 3rem); }
-.p-v-4 { padding-block: clamp(2rem, 3.33vw, 4rem); }
+.p-v-1 { padding-block: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.p-v-2 { padding-block: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.p-v-3 { padding-block: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.p-v-4 { padding-block: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 
 .p-h-0 { padding-inline: 0; }
 .p-h--1-16 { padding-inline: 0.0625rem; }
@@ -2412,10 +2436,10 @@ progress {
 .p-h--1-4 { padding-inline: 0.25rem; }
 .p-h--1-2 { padding-inline: 0.5rem; }
 .p-h--3-4 { padding-inline: 0.75rem; }
-.p-h-1 { padding-inline: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.p-h-2 { padding-inline: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.p-h-3 { padding-inline: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.p-h-4 { padding-inline: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.p-h-1 { padding-inline: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.p-h-2 { padding-inline: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.p-h-3 { padding-inline: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.p-h-4 { padding-inline: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .p-r-0 { padding-right: 0; }
 .p-r--1-16 { padding-right: 0.0625rem; }
@@ -2423,10 +2447,10 @@ progress {
 .p-r--1-4 { padding-right: 0.25rem; }
 .p-r--1-2 { padding-right: 0.5rem; }
 .p-r--3-4 { padding-right: 0.75rem; }
-.p-r-1 { padding-right: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.p-r-2 { padding-right: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.p-r-3 { padding-right: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.p-r-4 { padding-right: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.p-r-1 { padding-right: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.p-r-2 { padding-right: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.p-r-3 { padding-right: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.p-r-4 { padding-right: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .p-l-0 { padding-left: 0; }
 .p-l--1-16 { padding-left: 0.0625rem; }
@@ -2434,10 +2458,10 @@ progress {
 .p-l--1-4 { padding-left: 0.25rem; }
 .p-l--1-2 { padding-left: 0.5rem; }
 .p-l--3-4 { padding-left: 0.75rem; }
-.p-l-1 { padding-left: clamp(0.25rem, 2.03vw - 0.26rem, 1rem); }
-.p-l-2 { padding-left: clamp(0.375rem, 4.39vw - 0.72rem, 2rem); }
-.p-l-3 { padding-left: clamp(0.5rem, 6.76vw - 1.19rem, 3rem); }
-.p-l-4 { padding-left: clamp(0.75rem, 8.78vw - 1.45rem, 4rem); }
+.p-l-1 { padding-left: var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem)); }
+.p-l-2 { padding-left: var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem)); }
+.p-l-3 { padding-left: var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem)); }
+.p-l-4 { padding-left: var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem)); }
 
 .p-t-0 { padding-top: 0; }
 .p-t--1-16 { padding-top: 0.0625rem; }
@@ -2445,10 +2469,10 @@ progress {
 .p-t--1-4 { padding-top: 0.25rem; }
 .p-t--1-2 { padding-top: 0.5rem; }
 .p-t--3-4 { padding-top: 0.75rem; }
-.p-t-1 { padding-top: clamp(0.5rem, 3.33vw, 1rem); }
-.p-t-2 { padding-top: clamp(1rem, 3.33vw, 2rem); }
-.p-t-3 { padding-top: clamp(1.5rem, 3.33vw, 3rem); }
-.p-t-4 { padding-top: clamp(2rem, 3.33vw, 4rem); }
+.p-t-1 { padding-top: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.p-t-2 { padding-top: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.p-t-3 { padding-top: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.p-t-4 { padding-top: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 
 .p-b-0 { padding-bottom: 0; }
 .p-b--1-16 { padding-bottom: 0.0625rem; }
@@ -2456,10 +2480,10 @@ progress {
 .p-b--1-4 { padding-bottom: 0.25rem; }
 .p-b--1-2 { padding-bottom: 0.5rem; }
 .p-b--3-4 { padding-bottom: 0.75rem; }
-.p-b-1 { padding-bottom: clamp(0.5rem, 3.33vw, 1rem); }
-.p-b-2 { padding-bottom: clamp(1rem, 3.33vw, 2rem); }
-.p-b-3 { padding-bottom: clamp(1.5rem, 3.33vw, 3rem); }
-.p-b-4 { padding-bottom: clamp(2rem, 3.33vw, 4rem); }
+.p-b-1 { padding-bottom: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.p-b-2 { padding-bottom: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.p-b-3 { padding-bottom: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.p-b-4 { padding-bottom: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 
 @media (min-width: 992px) {
   .p-d-1 { padding: 1rem; }
@@ -2912,6 +2936,21 @@ progress {
 .align-self-center    { align-self: center; }
 .align-self-baseline  { align-self: baseline; }
 .align-self-stretch   { align-self: stretch; }
+/*Grid Display Utilities */
+.d-grid { display: grid; }
+.d-inline-grid { display: inline-grid; }
+.grid-cols-1 { grid-template-columns: repeat(1, 1fr); }
+.grid-cols-2 { grid-template-columns: repeat(2, 1fr); }
+.grid-cols-3 { grid-template-columns: repeat(3, 1fr); }
+.grid-cols-4 { grid-template-columns: repeat(4, 1fr); }
+.grid-cols-6 { grid-template-columns: repeat(6, 1fr); }
+.grid-cols-12 { grid-template-columns: repeat(12, 1fr); }
+.col-span-1 { grid-column: span 1 / span 1; }
+.col-span-2 { grid-column: span 2 / span 2; }
+.col-span-3 { grid-column: span 3 / span 3; }
+.col-span-4 { grid-column: span 4 / span 4; }
+.col-span-6 { grid-column: span 6 / span 6; }
+.col-span-full { grid-column: 1 / -1; }
 /* float, Overflow and z-index */
 .float-right { float: right; }
 .float-left { float: left; }
