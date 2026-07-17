@@ -3093,4 +3093,71 @@ left: 105%;
   .cssvars .desktop-only{    display: inline-block !important;  }
   .cssvars .mobile-only{    display: none;  }
 }
+/* Screen-reader-only content — visually hidden, still announced */
+.cssvars .sr-only {
+  position: absolute;
+  width: 0.0625rem;
+  height: 0.0625rem;
+  padding: 0;
+  margin: -0.0625rem;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  white-space: nowrap;
+  border: 0;
+}
+/* Skip link — hidden until keyboard-focused, then jumps above content */
+.cssvars .skip-link {
+  position: absolute;
+  top: -3rem;
+  left: 0.5rem;
+  z-index: 1000;
+  padding: var(--control-padding);
+  background-color: var(--control-bg);
+  color: var(--control-color);
+  border-radius: var(--control-radius);
+  text-decoration: none;
+  transition: top 0.2s ease;
+}
+.cssvars .skip-link:focus {
+  top: 0.5rem;
+}
+}
+@layer overrides {
+  /* Universal focus-visible ring — keyboard-only, uses outline (not box-shadow) */
+  .cssvars a:focus-visible, .cssvars button:focus-visible, .cssvars .button:focus-visible,
+  .cssvars input:focus-visible, .cssvars select:focus-visible, .cssvars textarea:focus-visible,
+  .cssvars [tabindex]:focus-visible, .cssvars .menu-item a:focus-visible,
+  .cssvars .menu-item label:focus-visible, .cssvars .pill:focus-visible, .cssvars .dropdown-toggle:focus-visible {
+    outline: 0.1875rem solid var(--color-1);
+    outline-offset: 0.125rem;
+  }
+  /* Mouse/touch clicks never show the ring; keyboard nav always does */
+  .cssvars a:focus:not(:focus-visible),
+  .cssvars button:focus:not(:focus-visible),
+  .cssvars .button:focus:not(:focus-visible),
+  .cssvars [tabindex]:focus:not(:focus-visible) {
+    outline: none;
+  }
+  /* Respect reduced-motion preference across every animation/transition */
+  @media (prefers-reduced-motion: reduce) {
+    .cssvars {
+      --duration-fast: 0s;
+      --duration-base: 0s;
+      --duration-slow: 0s;
+    }
+    [style*="transition"], [style*="animation"] {
+      transition-duration: 0.01ms !important;
+      animation-duration: 0.01ms !important;
+    }
+  }
+  /* Forced-colors mode (Windows High Contrast) — this restores borders so component boundaries stay visible */
+  @media (forced-colors: active) {
+    .cssvars .card, .cssvars .panel, .cssvars .button, .cssvars button, .cssvars .pill, .cssvars .chip,
+    .cssvars .dropdown-menu, .cssvars .modal__inner, .cssvars .accordion-content, .cssvars .tabs .tab {
+      border: 0.0625rem solid CanvasText;
+    }
+    .cssvars .button:focus-visible, .cssvars button:focus-visible, .cssvars a:focus-visible {
+      outline: 0.1875rem solid Highlight;
+    }
+  }
 }
