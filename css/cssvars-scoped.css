@@ -1679,6 +1679,35 @@ left: 105%;
   }
   .cssvars .main-content { margin-left: 0; }
 }
+/* Right Sidebar — closed by default at all breakpoints, checkbox toggle, no JS */
+.cssvars .sidebar-right-toggle-state { display: none; }
+.cssvars .sidebar-right-toggle-btn {
+  display: inline-block;
+  cursor: pointer;
+  padding: var(--control-padding);
+  position: fixed;
+  top: 0.5rem;
+  right: 0.5rem;
+  z-index: 200;
+}
+.cssvars .sidebar-right {
+  width: 16rem;
+  background-color: var(--panel-bg);
+  border-left: 0.0625rem solid var(--light-grey);
+  padding: var(--default-padding);
+  height: 100vh;
+  position: fixed;
+  right: 0;
+  top: 0;
+  overflow-y: auto;
+  transform: translateX(100%);
+  transition: transform 0.3s ease;
+  z-index: 150;
+  box-shadow: var(--panel-shadow);
+}
+.cssvars .sidebar-right-toggle-state:checked ~ .sidebar-right {
+  transform: translateX(0);
+}
 /* Dropdown — checkbox toggle, no JS. Menu reuses .menu / .menu-item */
 .cssvars .dropdown { position: relative; display: inline-block; }
 .cssvars .dropdown-state { display: none; }
@@ -2249,7 +2278,7 @@ left: 105%;
 }
 }
 @layer utilities {
-    .cssvars .child-padding > * { padding: var(--child-padding, 0); }
+.cssvars .child-padding > * { padding: var(--child-padding, 0); }
 .cssvars .child-padding-1 > * { padding: clamp(0.5rem, 3.33vw, 1rem); }
 .cssvars .child-padding-2 > * { padding: clamp(1rem, 3.33vw, 2rem); }
 .cssvars .child-padding-3 > * { padding: clamp(1.5rem, 3.33vw, 3rem); }
@@ -2351,17 +2380,9 @@ left: 105%;
 .cssvars .m-b-2 { margin-bottom: clamp(1rem, 3.33vw, 2rem); }
 .cssvars .m-b-3 { margin-bottom: clamp(1.5rem, 3.33vw, 3rem); }
 .cssvars .m-b-4 { margin-bottom: clamp(2rem, 3.33vw, 4rem); }
-.m-auto {
-  margin: auto;
-}
-.cssvars .m-h-auto {
-  margin-right: auto;
-  margin-left: auto;
-}
-.cssvars .m-v-auto {
-  margin-top: auto;
-  margin-bottom: auto;
-}
+.cssvars .m-auto { margin: auto; }
+.cssvars .m-h-auto { margin-right: auto; margin-left: auto; }
+.cssvars .m-v-auto { margin-top: auto; margin-bottom: auto; }
 /* Padding */
 .cssvars .p0 { padding: 0; }
 .cssvars .p-1-16 { padding: 0.0625rem; }
@@ -2950,9 +2971,7 @@ left: 105%;
 .cssvars .shadow-color-4, .cssvars .shadow-color-4-hover:hover {
   box-shadow: 0 0.625 1.25rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.625 0.625 color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
-.shadow-none, .shadow-none_hover:hover {
-  box-shadow: none;
-}
+.cssvars .shadow-none, .cssvars .shadow-none_hover:hover { box-shadow: none; }
 /* Backgrounds with alpha */
 .cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
   background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
@@ -3023,27 +3042,14 @@ left: 105%;
 .cssvars .border-gradient-black { border-image: linear-gradient(to right, var(--color-1, black), var(--black, black)) 1; }
 .cssvars .border-gradient-white { border-image: linear-gradient(to right, var(--color-1, black), var(--white, white)) 1; }
 /* Brightness utilities */
-.cssvars .brightness-150, .brightness-150-hover:hover {
-  filter: brightness(150%);
-}
-.cssvars .brightness-100, .brightness-100-hover:hover {
-  filter: brightness(100%);
-}
-.cssvars .brightness-90, .brightness-90-hover:hover {
-  filter: brightness(90%);
-}
-.cssvars .brightness-80, .brightness-80-hover:hover {
-  filter: brightness(80%);
-}
-.cssvars .brightness-66, .brightness-66-hover:hover {
-  filter: brightness(66%);
-}
-.cssvars .brightness-33, .brightness-33-hover:hover {
-  filter: brightness(33%);
-}
+.cssvars .brightness-150, .brightness-150-hover:hover { filter: brightness(150%); }
+.cssvars .brightness-100, .brightness-100-hover:hover { filter: brightness(100%); }
+.cssvars .brightness-90, .brightness-90-hover:hover { filter: brightness(90%); }
+.cssvars .brightness-80, .brightness-80-hover:hover { filter: brightness(80%); }
+.cssvars .brightness-66, .brightness-66-hover:hover { filter: brightness(66%); }
+.cssvars .brightness-33, .brightness-33-hover:hover { filter: brightness(33%); }
 .cssvars .desktop-only{  display: none !important;}
 .cssvars .mobile-only{  display: inline-block;}
-
 @media (min-width: 992px) {
   .cssvars .desktop-only{    display: inline-block !important;  }
   .cssvars .mobile-only{    display: none;  }

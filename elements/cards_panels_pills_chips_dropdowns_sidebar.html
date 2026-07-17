@@ -52,6 +52,26 @@
   </ul>
 </aside>
 
+<!-- Right Sidebar toggle checkbox: must precede .sidebar-right as a sibling for :checked ~ to work -->
+<input type="checkbox" id="right-sidebar-toggle" class="sidebar-right-toggle-state">
+<label for="right-sidebar-toggle" class="sidebar-right-toggle-btn white">
+  <svg viewBox="0 0 24 24" class="icon-xs icon-white-color-1">
+    <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
+  </svg>
+</label>
+
+<aside class="sidebar-right">
+  <div class="sidebar-header d-flex justify-content-between align-items-center">
+    Filters
+  </div>
+  <ul class="menu">
+    <li class="menu-item"><a href="#">Price</a></li>
+    <li class="menu-item"><a href="#">Category</a></li>
+    <li class="menu-item"><a href="#">Rating</a></li>
+    <li class="menu-item"><a href="#">Availability</a></li>
+  </ul>
+</aside>
+
 <!-- Main Content -->
 <div class="main-content">
   <div class="container p-v-2">
