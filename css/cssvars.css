@@ -54,9 +54,9 @@
   --link-decoration: none;
   --link-hover-decoration: underline;
   /* Icon variables */
-  --icon-default-size: 4rem;
+  --icon-default-size: 6rem;
   --icon-default-fill: var(--color-1);
-  --icon-default-bg: var(--body-bg);
+  --icon-default-bg: none;
   /* Image variables */
   --image-radius: 0;
   --image-shadow: none;
