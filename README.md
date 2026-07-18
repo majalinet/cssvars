@@ -30,11 +30,20 @@ system, not to replace it with a new one.
 
 ## When CSS Vars Framework is the right choice
 
-
+For projects:
 - Performance-sensitive projects — a single stylesheet and zero JS
 is a real edge for Core Web Vitals, especially on content-heavy sites.
 - Small to medium websites — fast-loading by default, with easy
 theming through CSS variables instead of a design system rebuild.
+- Old, custom-built websites - scoped naming avoids collisions with whatever custom CSS already exists, so you can add or fix sections of an old site without risking the rest of it.
+- Projects that need easy white-labeling — update a handful of
+root variables and every themed surface follows automatically.
+- Static site generators — nothing needs compiling, so the
+stylesheet drops straight into the build output.
+- CMS-based sites — one link tag does the job instead of
+integrating a JS build pipeline into a PHP or CMS template.
+
+For development workflow:
 - Developers who don't want a build pipeline — no npm, PostCSS,
 Tailwind, Vite, or Sass required to ship a page.
 - Designers who want runtime theming — change a variable and the
@@ -42,12 +51,8 @@ whole site updates instantly; no recompiling, no config files.
 - Teams that want both components and utilities — drop in a
 component as-is, or compose a one-off layout from utilities, using
 the same stylesheet either way.
-- Projects that need easy white-labeling — update a handful of
-root variables and every themed surface follows automatically.
-- Static site generators — nothing needs compiling, so the
-stylesheet drops straight into the build output.
-- CMS-based sites — one link tag does the job instead of
-integrating a JS build pipeline into a PHP or CMS template.
+Developers who prefer native CSS — Build with standard HTML and CSS instead of framework-specific syntax or generated class names.
+
 
 ## Simplicity
 One CSS file. No dependencies, no tooling, no installs.
@@ -92,7 +97,7 @@ Built on the platform, not around it
 
 Cascade layers keep specificity predictable, color-mix() handles alpha, and clamp() drives fluid spacing instead of fixed breakpoints.
 
-### Scoped, Not Global
+### Scoped or Global
 Plays well with other frameworks
 
 Use CSS Vars as the whole framework, or scope it alongside an existing codebase without style collisions.
