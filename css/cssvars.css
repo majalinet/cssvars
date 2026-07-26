@@ -5,7 +5,7 @@
 * Copyright 2018-2026 Kim Majali and EITO company https://eito.pro
 * Licensed under MIT https://github.com/majalinet/cssvars/blob/master/LICENSE */
 @-ms-viewport { width: device-width; }
-@layer theme, base, layout, components, components-advanced, style, utilities, utilities-advanced, overrides;
+@layer theme, style, base, layout, components, components-advanced, utilities, utilities-advanced, overrides;
 @layer theme {
 :root {
   --color-1: #000000;
@@ -27,12 +27,13 @@
   --font-size-desktop: 16px;
   --col-h-padding: 0;
   --col-v-padding: 0;
-  --line-height: 1.4;
+  --line-height: 1.5; /* was 1.4 — more comfortable reading rhythm */
   --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --background-image: None;
   /* Heading variables */
-  --heading-font-weight: 500;
-  --heading-color: var(--color-1, black);
-  --heading-font: var(--font-family, 'system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif');
+  --heading-font-weight: 600; /* was 500 — reads more "product," less "document" */
+  --heading-color: var(--color-1);
+  --heading-font: var(--font-family);
   --heading-line-height: 1.2;
   --heading-letter-spacing: 0;
   --heading-margin: 0 0 0.5rem 0;
@@ -67,6 +68,7 @@
   --space-dense-3: clamp(0.5rem, 6.76vw - 1.19rem, 3rem);
   --space-dense-4: clamp(0.75rem, 8.78vw - 1.45rem, 4rem);
   /* Backs (m/p)-(v/t/b)-(1-4), gap, flow, panel-padding, child-padding */
+  --space-1-2: clamp(0.25rem, 3.33vw, 0.5rem);
   --space-1: clamp(0.5rem, 3.33vw, 1rem);
   --space-2: clamp(1rem, 3.33vw, 2rem);
   --space-3: clamp(1.5rem, 3.33vw, 3rem);
@@ -80,14 +82,14 @@
   /* Z-index variables */
   --z-floating: 100;   /* sidebar, dropdown-menu, notification-panel, sticky */
   --z-overlay: 999;    /* light-box-overlay */
-  --z-modal: 1000;     
+  --z-modal: 1000;
   /* Styles variables */
   --default-padding: 0;
   --default-margin: 0;
-  --default-gap: 0;
+  --default-gap: clamp(0.5rem, 3.33vw, 1rem);
   --default-border: none;
-  --default-border-radius: 0;
-  --box-shadow: none;
+  --default-border-radius: 0.5rem; /* was 0 — single source of truth for panel roundness, see below */
+  --box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.08), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.16); /* was none — was a dead token, panels had zero definition */
   /* Surface variables */
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
@@ -110,7 +112,7 @@
   --control-font-weight: 400;
   --control-font-size: 1rem;
   --control-border: none;
-  --control-radius: 0.2rem;
+  --control-radius: calc(var(--default-border-radius) * 0.75); /* was hardcoded 0.2rem — now derives from the same token as panels, was 0.2rem */
   --control-padding: 0.37rem 0.95rem;
   --control-margin: 0.5rem 0.1rem;
   --control-shadow: var(--shadow-style, 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.12), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.24));
@@ -125,7 +127,7 @@
   --input-bg: var(--body-bg);
   --input-color: var(--dark);
   --input-border: 0.125rem solid var(--light-grey);
-  --input-radius: 0.25rem;
+  --input-radius: calc(var(--default-border-radius) * 0.75); /* was hardcoded 0.25rem — now derives from the same token as panels */
   --input-padding-x: 0.35rem;
   --input-padding-y: 0.275rem;
   --input-placeholder: var(--dark);
@@ -139,7 +141,8 @@
   --input-disabled-opacity: 0.5;
   /* Flow variables */
   --content-flow: var(--space-1);
-  --layout-flow:  0;
+  --page-flow:  0;
+  --main-flow: clamp(6rem, 3.33vw, 12rem);
   --child-padding: var(--space-1);
 }
 /* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
@@ -148,22 +151,68 @@
   :root {
   */
 [data-theme="dark"] {
-  --color-1: #969494;
-  --color-2:#7077a3;
-  --dark: #4a4e6d;
-  --grey: #ccc;
-  --white: #000;
-  --black: #fff;
-  --danger: #cc3a3a;
-  --info: #1191b8;
-  --success: #0abfa4;
-  --warning: #bda06a;
-  --luxury:#6a4380;
-  --light-grey: #222536;
-  --body-bg: #1b1d27;
-  --body-color: #c0bebe;
+  --color-1: #f3f4f6;
+  --color-2: #8b92b8;
+  --dark: #9ca3af;
+  --grey: #4b5563;
+  --light-grey: #23262d;
+  --white: #060606;
+  --black: #e0e0e0;
+  --danger: #ef6b73;
+  --info: #4fb7e8;
+  --success: #3dd5b6;
+  --warning: #d9b16f;
+  --luxury: #9d73b8;
+  --body-bg: #121417;
+  --body-color: #e5e7eb;
+  --heading-color: #fafafa;
+  --link-color: var(--color-1);
+  --link-hover-color: #ffffff;
+  --icon-default-fill: var(--color-1);
+  --surface-raised: #1a1d22;
+  --surface-dim: #15181c;
+  --surface-overlay: rgba(0,0,0,.72);
+  --surface-inverse: #f5f5f5;
+  --surface-inverse-color: #111111;
+  --surface-hover: color-mix(in srgb, white 8%, transparent);
+  --surface-active: color-mix(in srgb, white 16%, transparent);
+  --surface-selected: color-mix(in srgb, white 12%, transparent);
+  --surface-disabled: color-mix(in srgb, var(--grey) 35%, transparent);
+  --panel-bg: var(--surface-raised);
+  --panel-border: 0.0625rem solid #2f343d;
+  --panel-shadow: 0 .25rem .75rem rgba(0,0,0,.45);
+  --control-bg: var(--color-1);
+  --control-color: #121417;
+  --control-hover-bg: #ffffff;
+  --control-hover-color: #000000;
+  --control-hover-border: #ffffff;
+  --control-active-bg: #d1d5db;
+  --input-bg: #1a1d22;
+  --input-color: #f3f4f6;
+  --input-border: 0.125rem solid #30343b;
+  --input-placeholder: #9ca3af;
+  --input-hover-border: #6b7280;
+  --input-focus-border: var(--color-1);
+  --input-disabled-bg: #23262d;
+  --box-shadow: 0 .25rem .75rem rgba(0,0,0,.45);
 }
-.styled, .table, .styled-parent > *, body > *, section, article, aside {
+:where(body > *, section, article, aside) {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--box-shadow);
+}
+/* Opt-in "reset box" utility — apply the same zeroed box model to any single element explicitly */
+.styled {
+  padding: var(--default-padding);
+  margin: var(--default-margin);
+  border: var(--default-border);
+  border-radius: var(--default-border-radius);
+  box-shadow: var(--box-shadow);
+}
+/* Opt-in "reset children" utility — same idea, applied to direct children. */
+.reset-children > * {
   padding: var(--default-padding);
   margin: var(--default-margin);
   border: var(--default-border);
@@ -192,9 +241,13 @@ body {
   text-align: justify;
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
+  background-image: var(--background-image, none);
 }
-main  > * + * , body > * + * {
-  margin-top: var(--layout-flow, 0);
+body > * + * {
+  margin-top: var(--page-flow, 0);
+}
+main > * + * {
+  margin-top: var(--main-flow, 0);
 }
 ol, ul, dl {
   margin-top: 0;
@@ -1726,7 +1779,7 @@ progress {
   overflow-y: auto;
   transform: translateX(100%);
   transition: transform var(--duration-base, 0.250s) var(--easing, ease);
-  z-index: var(--z-overlay, 999);
+  z-index: var(--z-floating, 100);
   box-shadow: var(--panel-shadow);
 }
 .sidebar-right-toggle-state:checked ~ .sidebar-right {
@@ -1799,7 +1852,7 @@ progress {
 .pill {
   display: inline-block;
   padding: 0.375rem 1rem;
-  background-color: var(--light-grey);
+  background-color: color-mix(in srgb, var(--color-1) 10%, transparent);
   color: var(--body-color);
   border-radius: 1.5rem;
   font-size: 0.875rem;
@@ -1819,7 +1872,7 @@ progress {
   align-items: center;
   gap: 0.5rem;
   padding: 0.375rem 0.75rem;
-  background-color: var(--light-grey);
+  background-color: color-mix(in srgb, var(--color-1) 7%, transparent);
   border-radius: 1rem;
   font-size: 0.875rem;
   margin: 0.25rem;
@@ -2302,13 +2355,60 @@ progress {
 }
 }
 @layer utilities {
+/* Surface utilities */
+.bg-surface-raised, .bg-surface-raised-hover:hover {
+  background-color: var(--surface-raised, #fff);
+}
+.bg-surface-dim, .bg-surface-dim-hover:hover {
+  background-color: var(--surface-dim, #f6f6f6);
+}
+.bg-surface-overlay {
+  background-color: var(--surface-overlay);
+}
+.bg-surface-inverse {
+  background-color: var(--surface-inverse, #000);
+  color: var(--surface-inverse-color, #fff);
+}
+/* state surfaces — static utilities, not hover-triggered pairs (see note above) */
+.bg-surface-hover    { background-color: var(--surface-hover); }
+.bg-surface-active   { background-color: var(--surface-active); }
+.bg-surface-selected { background-color: var(--surface-selected); }
+.bg-surface-disabled { background-color: var(--surface-disabled); }
+/* Panel utilities */
+.bg-panel     { background-color: var(--panel-bg); }
+.border-panel { border: var(--panel-border); }
+.rounded-panel{ border-radius: var(--panel-radius); }
+.shadow-panel { box-shadow: var(--panel-shadow); }
+.p-panel      { padding: var(--panel-padding); }
+/* Control utilities */
+.bg-control, .bg-control-hover:hover {
+  background-color: var(--control-bg, var(--color-1));
+}
+.color-control  { color: var(--control-color, #fff); }
+.rounded-control{ border-radius: var(--control-radius); }
+.shadow-control { box-shadow: var(--control-shadow); }
+.p-control      { padding: var(--control-padding); }
+/* Input utilities */
+.bg-input     { background-color: var(--input-bg); }
+.color-input  { color: var(--input-color); }
+.border-input { border: var(--input-border); }
+.rounded-input{ border-radius: var(--input-radius); }
+.shadow-input { box-shadow: var(--input-shadow); }
+/* Default style resets, as utilities */
+.p-default     { padding: var(--default-padding); }
+.m-default     { margin: var(--default-margin); }
+.gap-default   { gap: var(--default-gap); }
+.border-default{ border: var(--default-border); }
+.shadow-default{ box-shadow: var(--box-shadow); }
 .child-padding > * { padding: var(--child-padding, 0); }
+.child-padding-1-2 > * { padding: var(--space-1-2, clamp(0.25rem, 3.33vw, 0.5rem)); }
 .child-padding-1 > * { padding: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .child-padding-2 > * { padding: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .child-padding-3 > * { padding: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .child-padding-4 > * { padding: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 /* Gap utility — For Flex/Grid spacing (no edge bleed) */
-.gap { gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.gap { gap: var(--default-gap, 1rem); }
+.gap-1 { gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .gap-2 { gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .gap-3 { gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
@@ -2326,7 +2426,8 @@ progress {
 .flow-2 > * + * { margin-top: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .flow-3 > * + * { margin-top: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .flow-4 > * + * { margin-top: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
-.flow > * + * { margin-top: var(--layout-flow, 0); }
+.page-flow > * + * { margin-top: var(--page-flow, 0); }
+.main-flow > * + * { margin-top: var(--main-flow, clamp(2rem, 3.33vw, 4rem)); }
 /* Padding and Margin */
 .m0 { margin: 0; }
 .m-1-16 { margin: 0.0625rem; }
@@ -2823,7 +2924,7 @@ progress {
 .line-height-2 {  line-height: 2;}
 /* Border */
 .border { border-style: solid; border-width: 0.0625rem; }
-.border-style { border: var(--default-border-radius);}
+.border-style { border: var(--default-border);}
 
 .border-0 { border-width: 0; }
 .border { border-width: 0.0625rem; }
@@ -2976,6 +3077,9 @@ progress {
 .z-3 {z-index: 3;}
 .z-10 {z-index: 10;}
 .z-100 {z-index: 100;}
+.z-floating { z-index: var(--z-floating, 100); }
+.z-overlay { z-index: var(--z-overlay, 999); }
+.z-modal { z-index: var(--z-modal, 1000); }
 }
 @layer utilities-advanced {
 /* Shadows */
@@ -2994,7 +3098,7 @@ progress {
   box-shadow: 0 0.33rem 1rem rgba(0, 0, 0, 0.08);
 }
 .shadow-4, .shadow-4-hover:hover, .hover-shadow:hover {
-  box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625 0.625 rgba(0, 0, 0, 0.22);
+  box-shadow: 0 0.9rem 1.8rem rgba(0, 0, 0, 0.25), 0 0.625rem 0.625rem rgba(0, 0, 0, 0.22);
 }
 .shadow-color, .shadow-color-hover:hover {
   box-shadow: 0 0.0625rem 0.1875rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.0625rem 0.125rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
@@ -3008,9 +3112,9 @@ progress {
   box-shadow: 0 0.33rem 1rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .shadow-color-4, .shadow-color-4-hover:hover {
-  box-shadow: 0 0.625 1.25rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.625 0.625 color-mix(in srgb, var(--color-1, black) 10%, transparent);
+  box-shadow: 0 0.625rem 1.25rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.625rem 0.625rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
-.shadow-none, .shadow-none_hover:hover { box-shadow: none; }
+.shadow-none, .shadow-none-hover:hover { box-shadow: none; }
 /* Backgrounds with alpha */
 .bga-color-1, .bga-color-1-hover:hover {
   background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);

@@ -2,6 +2,7 @@ const styles = ['none', 'brutal-style', 'brutal-lite-style', 'glass-style', 'ret
                 'minimalist-style', 'neon-style', 'cyberpunk-style', 'luxury-style', 'high-contrast-style',
                 'neumorphism-style', 'modern-style', 'playful-style', 'material-style', 'modular-style',
                 'flat-style', 'data-style', 'enterprise-style', 'system-ui-style', 'colorful-dashboard-style',
+                'aurora-style', 'swiss-style'
 ]
 
 function changeStyle(){

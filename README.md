@@ -51,7 +51,7 @@ whole site updates instantly; no recompiling, no config files.
 - Teams that want both components and utilities — drop in a
 component as-is, or compose a one-off layout from utilities, using
 the same stylesheet either way.
-Developers who prefer native CSS — Build with standard HTML and CSS instead of framework-specific syntax or generated class names.
+- Developers who prefer native CSS — Build with standard HTML and CSS instead of framework-specific syntax or generated class names.
 
 
 ## Simplicity
