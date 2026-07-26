@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Styling with Variables — CSS Vars Framework Docs</title>
+<meta name="description" content="How to style CSS Vars Framework sites using its design-token system.">
+<link rel="stylesheet" href="css/cssvars.css">
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-state">
+<label for="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Toggle table of contents">
+  <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</label>
+
+<nav class="sidebar" aria-label="Table of contents">
+  <div class="sidebar-header">On this page</div>
+  <ul class="menu">
+<li class="menu-item"><a href="#1-the-token-model">1. The token model</a></li>
+<li class="menu-item"><a href="#2-how-to-actually-change-something">2. How to actually change something</a></li>
+<li class="menu-item"><a href="#3-the-alpha-convention">3. The alpha convention</a></li>
+<li class="menu-item"><a href="#4-composition-over-duplication">4. Composition over duplication</a></li>
+<li class="menu-item"><a href="#5-cascade-layers-why-order-isnt-cosmetic">5. Cascade layers — why order isn't cosmetic</a></li>
+<li class="menu-item"><a href="#6-utility-classes-the-token-systems-escape-hatch">6. Utility classes — the token system's escape hatch</a></li>
+<li class="menu-item"><a href="#7-quick-reference-token-families-at-a-glance">7. Quick reference — token families at a glance</a></li>
+<li class="menu-item"><a href="#8-rule-of-thumb">8. Rule of thumb</a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu-item"><a href="utility-classes-reference.html">Utility Classes Reference</a></li>
+    <li class="menu-item"><a href="https://github.com/majalinet/cssvars">GitHub repository</a></li>
+  </ul>
+</nav>
+
+<div class="main-content">
+
+<header class="main-nav p1">
+  <div class="main-menu">
+    <a href="index.html" id="logo1"><span class="h4 black bold m-b-0">CSS Vars Framework</span></a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Docs Home</a></li>
+        <li><a href="styling-with-variables.html">Styling with Variables</a></li>
+        <li><a href="utility-classes-reference.html">Utility Classes</a></li>
+        <li><a href="https://github.com/majalinet/cssvars" class="bold">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container p2">
+<article>
+<h1 id="styling-with-variables">Styling with Variables</h1>
+<p>CSS Vars Framework has no config file, no build step, and no JS-driven theme switcher. The entire visual identity of a site — color, spacing, radius, shadow, motion — lives in one place: the custom properties declared in <code>:root</code> inside <code>@layer theme</code>. Every component, every utility class, every control reads from those tokens instead of hardcoding values. Change a token once, and every place that consumes it updates.</p>
+<p>This is the single idea to hold onto: <strong>you don't style elements, you set variables, and the framework styles itself.</strong></p>
+<hr>
+<h2 id="1-the-token-model">1. The token model</h2>
+<p>Tokens are organized into a small number of families. Each family has a job, and — critically — most families don't hold raw values themselves. They hold <em>references</em> to a smaller set of base tokens. This indirection is what makes the framework re-themeable from one edit.</p>
+<h3 id="11-base-tokens-the-only-ones-you-should-normally-hand-edit">1.1 Base tokens (the only ones you should normally hand-edit)</h3>
+<pre><code>--color-1     /* primary brand color */
+--color-2     /* secondary brand color */
+--dark
+--grey
+--light-grey
+--white
+--black
+--danger
+--info
+--success
+--warning
+--luxury
+--body-bg
+--body-color
+--font-family</code></pre>
+<p>Everything else in the framework is built on top of these nine or so values. Rebrand a site by changing <code>--color-1</code> and <code>--color-2</code> in <code>:root</code> — you will almost never need to touch anything downstream.</p>
+<h3 id="12-surface-tokens-derived-not-raw">1.2 Surface tokens — derived, not raw</h3>
+<pre><code>--surface-raised     /* var(--body-bg) */
+--surface-dim        /* var(--light-grey) */
+--surface-overlay    /* color-mix(in srgb, var(--black) 60%, transparent) */
+--surface-inverse    /* var(--black) */
+--surface-hover       /* color-mix(in srgb, var(--color-1) 8%, transparent) */
+--surface-active      /* color-mix(in srgb, var(--color-1) 16%, transparent) */
+--surface-selected    /* color-mix(in srgb, var(--color-1) 12%, transparent) */
+--surface-disabled    /* color-mix(in srgb, var(--grey) 30%, transparent) */</code></pre>
+<p>These describe <em>states</em>, not colors. <code>--surface-hover</code> isn't "light grey" — it's "8% of the brand color mixed into transparent," so hover states automatically stay on-brand no matter what <code>--color-1</code> is set to.</p>
+<p><strong>Where they're used:</strong> <code>--surface-hover</code>/<code>--surface-active</code> feed <code>--control-hover-bg</code>/<code>--control-active-bg</code> (&sect;1.4), which is how every button, pill, and dropdown item gets consistent hover/active feedback without a single hardcoded state color anywhere in the framework. <code>--surface-overlay</code> is what darkens the page behind a modal or light-box.</p>
+<h3 id="13-panel-tokens-what-components-actually-consume">1.3 Panel tokens — what components actually consume</h3>
+<pre><code>--panel-bg        /* var(--surface-raised) */
+--panel-border    /* var(--default-border) */
+--panel-radius    /* var(--default-border-radius) */
+--panel-shadow    /* var(--box-shadow) */
+--panel-padding   /* var(--space-dense-2) */</code></pre>
+<p><strong>Where they're used:</strong> <code>.card</code>, <code>.panel</code>, <code>.modal__inner</code>, <code>.dropdown-menu</code>, <code>.accordion-content</code>, <code>.tabs .tab</code>, and every other "boxy" component read from <code>--panel-*</code>, not from their own hardcoded rules. This is why a <code>.glass</code> modifier works by overriding four variables instead of rewriting five components — see &sect;4. <code>--panel-radius</code> and <code>--panel-shadow</code> in turn trace back to <code>--default-border-radius</code> and <code>--box-shadow</code>, so a single edit to those two structural tokens reshapes every panel-based component at once.</p>
+<h3 id="14-control-input-tokens">1.4 Control &amp; input tokens</h3>
+<pre><code>--control-bg / --control-color / --control-radius / --control-padding
+--control-hover-bg / --control-hover-color / --control-hover-border
+--control-active-bg / --control-active-color
+--control-focus-ring
+--control-disabled-opacity
+
+--input-bg / --input-color / --input-border / --input-radius
+--input-focus-border / --input-focus-shadow
+--input-invalid-border / --input-invalid-color
+--input-disabled-bg / --input-disabled-opacity</code></pre>
+<p><strong>Where they're used:</strong> <code>--control-*</code> drives <code>.button</code>, native <code>button</code>, and <code>.pill</code>; <code>--control-focus-ring</code> combines with <code>--control-shadow</code> on the focus state so focused controls get a visible ring without losing their resting shadow. <code>--input-*</code> drives <code>input</code>, <code>select</code>, and <code>textarea</code>; <code>--input-focus-shadow</code> and <code>--input-invalid-*</code> fire on <code>:focus</code> and <code>:invalid</code>/<code>.is-invalid</code> respectively.</p>
+<p>Buttons, pills, and form fields are two separate token families on purpose — a button and a text input don't share visual language in most designs, even though both are "interactive."</p>
+<h3 id="15-typography-tokens">1.5 Typography tokens</h3>
+<pre><code>--font-family / --font-weight / --line-height
+--heading-font / --heading-font-weight / --heading-color
+--heading-line-height / --heading-letter-spacing / --heading-margin
+--h1-size … --h6-size
+--display-1-size … --display-6-size   /* fluid, via clamp() */
+--link-color / --link-hover-color / --link-decoration / --link-hover-decoration</code></pre>
+<p>Heading sizes are fixed rem values; display sizes are fluid (<code>clamp()</code>-based) for hero copy that needs to scale with viewport width rather than jump at breakpoints.</p>
+<p><strong>Where they're used:</strong> every <code>h1</code>–<code>h6</code> and their <code>.h1</code>–<code>.h6</code> class equivalents read <code>--heading-*</code> for weight, color, line-height, letter-spacing, and margin, and their own <code>--h*-size</code> for font size. <code>.display-1</code>–<code>.display-6</code> read the <code>--display-*-size</code> clamps directly. <code>--link-*</code> applies to every <code>a</code> element and its <code>:hover</code> state — change <code>--link-color</code> once and every text link in every block, card, and footer updates together.</p>
+<h3 id="16-icon-image-tokens">1.6 Icon &amp; image tokens</h3>
+<pre><code>--icon-default-size / --icon-default-fill / --icon-default-bg
+--image-radius / --image-shadow / --image-border-style</code></pre>
+<p><strong>Where they're used:</strong> <code>--icon-default-*</code> sizes and colors any inline SVG icon that doesn't set its own dimensions — this is what lets the same icon markup drop into a hero, a card, or a footer and pick up a consistent size and brand-colored fill. <code>--image-*</code> applies globally to every <code>img</code> element (radius, shadow, border), so a site-wide "give every image rounded corners and a soft shadow" edit is two token changes, not a find-and-replace across every <code>&lt;img&gt;</code> tag.</p>
+<h3 id="17-spacing-tokens">1.7 Spacing tokens</h3>
+<p>Two independent scales, both fluid via <code>clamp()</code>:</p>
+<pre><code>--space-1 … --space-4          /* general vertical rhythm, gaps, flow, child-padding */
+--space-dense-1 … --space-dense-4  /* tighter scale — panel padding and the m1–m4/p1–p4 utilities */</code></pre>
+<p>Plus fixed fractional steps (<code>--space-1-2</code>, and the <code>-1-16</code>/<code>-1-8</code>/<code>-1-4</code>/<code>-1-2</code>/<code>-3-4</code> utility suffixes) for cases that shouldn't scale with viewport — icon gaps, border widths, fine adjustments.</p>
+<p><strong>Where they're used:</strong> <code>--space-1</code>–<code>--space-4</code> back <code>--content-flow</code>, <code>--child-padding</code>, and the <code>.p-t-*</code>/<code>.p-b-*</code>/<code>.child-padding-*</code> utilities. <code>--space-dense-1</code>–<code>--space-dense-4</code> back <code>--panel-padding</code> and the <code>.m1</code>–<code>.m4</code>/<code>.p1</code>–<code>.p4</code>/<code>.m-h-*</code>/<code>.p-h-*</code>/<code>.m-r-*</code>/<code>.p-l-*</code> utility families — this is why panel padding feels tighter than the rhythm between page sections even though both scales are "spacing tokens."</p>
+<h3 id="18-structural-tokens">1.8 Structural tokens</h3>
+<pre><code>--default-padding / --default-margin / --default-gap
+--default-border / --default-border-radius
+--box-shadow
+--z-floating (100) / --z-overlay (999) / --z-modal (1000)
+--duration-fast / --duration-base / --duration-slow / --easing / --easing-in-out</code></pre>
+<p><code>--default-border-radius</code> is the single source of truth for "how rounded is this framework" — panels, controls, and inputs all derive their own radius from it (control and input radii are <code>calc(var(--default-border-radius) * 0.75)</code>, slightly tighter than panels).</p>
+<p><strong>Where the rest are used:</strong></p>
+<ul class="colored-ul">
+<li><code>--default-gap</code> — the <code>gap</code> on flex/grid layout components (e.g. the sidebar/menu row layouts).</li>
+<li><code>--z-floating</code> — sidebars, the dropdown menu, notification panel, and the sticky/toggle button; <code>--z-overlay</code> — the light-box overlay and the modal backdrop; <code>--z-modal</code> — the modal itself, always above its own overlay. Keeping these as tokens (rather than ad-hoc numbers per component) is what guarantees a floating sidebar never accidentally out-stacks a modal.</li>
+<li><code>--duration-fast</code> + <code>--easing</code>/<code>--easing-in-out</code> — box-shadow/transform transitions on hover (cards, icons) and border/shadow transitions on input focus.</li>
+<li><code>--duration-base</code> — sidebar slide transforms, overlay fade-ins, skip-link reveal.</li>
+<li><code>--duration-slow</code> — the notification-panel entrance animation.</li>
+<li>All three durations collapse to <code>0s</code> under <code>@layer overrides</code> when <code>prefers-reduced-motion: reduce</code> is set — this is the one place a token is reassigned conditionally rather than by theme.</li>
+</ul>
+<h3 id="19-flow-tokens-spacing-between-elements-not-around-them">1.9 Flow tokens — spacing <em>between</em> elements, not around them</h3>
+<pre><code>--content-flow: var(--space-1);
+--page-flow:  0;
+--main-flow: clamp(6rem, 3.33vw, 12rem);
+--child-padding: var(--space-1);</code></pre>
+<p>Flow tokens are the framework's answer to "how much space goes between siblings" — deliberately separate from <code>--default-margin</code>/<code>--default-gap</code>, which govern space <em>around</em> a single element. They're consumed via the adjacent-sibling combinator (<code>* + *</code>), so they only ever add space between elements that already have a preceding sibling — the first child in a container never gets an unwanted top margin.</p>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Token</th><th>Applies to</th><th>Selector</th></tr></thead>
+<tbody>
+<tr><td><code>--page-flow</code></td><td>Spacing between direct children of <code>&lt;body&gt;</code> — the outermost, page-level sections (header, hero, footer)</td><td><code>body &gt; * + *</code> and the <code>.flow &gt; * + *</code> utility class</td></tr>
+<tr><td><code>--main-flow</code></td><td>Spacing between direct children of <code>&lt;main&gt;</code> specifically — separated from <code>body</code> because <code>&lt;main&gt;</code>'s own sections (content blocks, article groups) often need a much larger, fluid gap than <code>body</code>'s top-level chrome</td><td><code>main &gt; * + *</code></td></tr>
+<tr><td><code>--content-flow</code></td><td>Prose rhythm — spacing between elements <em>inside</em> a content container</td><td><code>article &gt; * + *, aside &gt; * + *, details &gt; * + *, blockquote &gt; * + *</code></td></tr>
+<tr><td><code>--child-padding</code></td><td>Uniform padding applied to every direct child of a container, via the <code>.child-padding</code> utility class</td><td><code>.child-padding &gt; *</code></td></tr>
+</tbody></table>
+<p><strong>Practical distinction — three levels of rhythm, not two:</strong></p>
+<ul class="colored-ul">
+<li><code>--page-flow</code> (defaults to <code>0</code>) governs the outermost skeleton of the page — the space between <code>&lt;body&gt;</code>'s direct children, typically <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> themselves.</li>
+<li><code>--main-flow</code> (fluid, <code>clamp(6rem, 3.33vw, 12rem)</code>) governs the space between the sections <em>inside</em> <code>&lt;main&gt;</code> — since <code>&lt;main&gt;</code> is where most of a page's actual content sections live, this token defaults to a large, viewport-aware gap rather than <code>0</code>, so stacked sections read as distinct without any per-section margin.</li>
+<li><code>--content-flow</code> (<code>var(--space-1)</code>, small) governs the tightest rhythm — paragraphs, list items, and blockquotes <em>within</em> one of those sections.</li>
+</ul>
+<p>Because <code>--page-flow</code> and <code>--main-flow</code> are separate tokens now, you can keep <code>&lt;body&gt;</code>'s direct children flush (e.g. a full-bleed header with no gap above it) while still getting generous, automatic spacing between the sections inside <code>&lt;main&gt;</code> — previously both were the same token, so you couldn't set one without affecting the other.</p>
+<p><code>--child-padding</code> is different in kind from the three flow tokens above: it's not a "space between" token, it's a "same padding on every child" token, meant for grids of equal-looking items (icon lists, stat blocks) where you don't want to write padding on each child individually — apply <code>.child-padding</code> to the parent and set <code>--child-padding</code> once.</p>
+<hr>
+<h2 id="2-how-to-actually-change-something">2. How to actually change something</h2>
+<h3 id="rebrand-a-whole-site">Rebrand a whole site</h3>
+<pre><code>:root {
+  --color-1: #0b5fff;
+  --color-2: #ff6b35;
+}</code></pre>
+<p>Buttons, links, focus rings, hover surfaces, colored-list bullets, gradients — all update, because they're all built from <code>--color-1</code>/<code>--color-2</code> through the surface and control layers.</p>
+<h3 id="change-the-roundness-of-everything">Change the "roundness" of everything</h3>
+<pre><code>:root {
+  --default-border-radius: 1rem;
+}</code></pre>
+<p>Cards, modals, dropdowns, buttons, and inputs all move together.</p>
+<h3 id="retheme-a-single-component-without-touching-the-css-file">Retheme a single component without touching the CSS file</h3>
+<p>Scope the override to a container in your HTML:</p>
+<pre><code>&lt;div style="--panel-bg: var(--dark); --panel-shadow: none;"&gt;
+  &lt;div class="card"&gt;...&lt;/div&gt;
+&lt;/div&gt;</code></pre>
+<p>This is the intended extension mechanism — override the variable on an ancestor, don't write new selectors.</p>
+<h3 id="dark-mode">Dark mode</h3>
+<p>Handled by attribute, not a duplicate stylesheet:</p>
+<pre><code>&lt;html data-theme="dark"&gt;</code></pre>
+<p><code>[data-theme="dark"]</code> reassigns the base color tokens only (<code>--color-1</code>, <code>--body-bg</code>, <code>--light-grey</code>, etc.) — every downstream token (surfaces, panels, controls) picks up the change automatically because of the indirection described in &sect;1.</p>
+<hr>
+<h2 id="3-the-alpha-convention">3. The alpha convention</h2>
+<p>Any time a color needs transparency, the framework uses:</p>
+<pre><code>color-mix(in srgb, var(--color-1) 10%, transparent)</code></pre>
+<p>never a <code>-rgb</code> companion variable and <code>rgba()</code>. This is a strict, framework-wide rule (<code>.bga-*</code>, <code>.shadow-color-*</code>, <code>.bg-gradient-*</code>, and every <code>--surface-*</code> token follow it). If you're adding a new alpha-based rule, match this pattern — mixed conventions break the "change one token, everything updates" guarantee.</p>
+<hr>
+<h2 id="4-composition-over-duplication">4. Composition over duplication</h2>
+<p>This is the architectural rule that makes the token system worth it: <strong>a modifier class works by overriding tokens on a scope, not by duplicating a component's ruleset.</strong></p>
+<p>Example — glass effect:</p>
+<pre><code>@layer utilities-advanced {
+  .glass {
+    --panel-bg: color-mix(in srgb, var(--white) 20%, transparent);
+    backdrop-filter: blur(12px);
+  }
+}</code></pre>
+<p><code>.card.glass</code>, <code>.modal__inner.glass</code>, <code>.dropdown-menu.glass</code> all get the effect for free, because they all already read <code>--panel-bg</code> — <code>.glass</code> never needed to know these components exist.</p>
+<p>The same pattern applies anywhere you're tempted to write a new selector: ask first whether the value you want to change is already a token consumed by the component, and override the token instead of the component.</p>
+<hr>
+<h2 id="5-cascade-layers-why-order-isnt-cosmetic">5. Cascade layers — why order isn't cosmetic</h2>
+<pre><code>@layer theme, base, layout, components, components-advanced, style, utilities, utilities-advanced, overrides;</code></pre>
+<p>Layers are declared in the order they win — later layers always beat earlier ones, <em>regardless of selector specificity</em>. This is deliberate:</p>
+<ul class="colored-ul">
+<li><code>theme</code> — token declarations only, nothing renders here.</li>
+<li><code>base</code> / <code>layout</code> — resets, typography defaults, grid.</li>
+<li><code>components</code> / <code>components-advanced</code> — cards, modals, dropdowns, etc.</li>
+<li><code>style</code> — theme presets (<code>.brutal-style</code>, <code>.glass-style</code>, <code>.neon-style</code>…) — cosmetic skins.</li>
+<li><code>utilities</code> / <code>utilities-advanced</code> — single-purpose overrides (<code>.p-t-2</code>, <code>.glass</code>, <code>.shadow-color-2</code>).</li>
+<li><code>overrides</code> — accessibility guarantees (focus-visible rings, <code>prefers-reduced-motion</code>, forced-colors mode) that must always win.</li>
+</ul>
+<p>Because utility layers sit after component layers, a utility class will always beat a component's own rule — even a low-specificity one like <code>.p-t-2</code> — without needing <code>!important</code>. This is why new rules should always go in the layer matching their <em>purpose</em>, not wherever seems convenient: putting a utility in <code>components</code> would let a future component rule silently override it.</p>
+<hr>
+<h2 id="6-utility-classes-the-token-systems-escape-hatch">6. Utility classes — the token system's escape hatch</h2>
+<p>Tokens and components cover the <em>default</em> look of a site. Utility classes are how you deviate from that default on a single element, in markup, without writing new CSS. Every utility class in <code>@layer utilities</code> and <code>@layer utilities-advanced</code> does exactly one thing — set one property (or one small tightly-related group, like a shadow's <code>border</code> + <code>box-shadow</code>) — and, because those two layers sit near the end of the cascade order (&sect;5), a utility class always wins over a component's own rule, no matter how specific that rule's selector is.</p>
+<p>That's the whole contract: <strong>components carry structure and token-driven defaults; utilities carry one-off overrides.</strong> If you find yourself reaching for the same utility combination repeatedly on the same kind of element, that's a signal to promote it into a component or a theme preset instead of continuing to hand-stack classes.</p>
+<p>The framework ships roughly 500 utility classes across spacing, sizing, layout, color, borders, shadows, typography, and visibility. They're catalogued in full, by category, in <strong><a href="./utility-classes-reference.html">Utility Classes Reference</a></strong> — this section only covers the two things worth knowing before you open that page:</p>
+<ul class="colored-ul">
+<li><strong>Utilities read tokens wherever a token exists.</strong> <code>.p-t-2</code> doesn't hardcode <code>2rem</code> — it sets <code>padding-top: var(--space-2, ...)</code>. <code>.bga-color-1</code> doesn't hardcode a tint — it reads <code>--color-1</code> through <code>color-mix()</code>. This means the "no custom classes" rule (compose HTML with framework classes plus <code>:root</code> variable overrides, never inline styles or new CSS) holds even at the utility level: change a token, and every utility built on it updates too.</li>
+<li><strong>Two families are the ones you'll reach for daily</strong>: the spacing utilities (<code>.p-*</code>/<code>.m-*</code>, built on <code>--space-dense-*</code> and <code>--space-1</code>–<code>--space-4</code>) and the color/background utilities (<code>.bg-*</code>/<code>.bga-*</code>/<code>.border-*</code>, built on the base color tokens). Everything else — shadows, gradients, sizing, flex/grid helpers, visibility toggles — exists for the cases the component layer doesn't already cover.</li>
+</ul>
+<hr>
+<h2 id="7-quick-reference-token-families-at-a-glance">7. Quick reference — token families at a glance</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Family</th><th>Purpose</th><th>Consumed by</th></tr></thead>
+<tbody>
+<tr><td>Base (<code>--color-1</code>, <code>--body-bg</code>…)</td><td>Brand identity</td><td>Everything, indirectly</td></tr>
+<tr><td>Surface (<code>--surface-*</code>)</td><td>State colors (hover/active/disabled)</td><td>Controls, interactive elements</td></tr>
+<tr><td>Panel (<code>--panel-*</code>)</td><td>"Boxy" component chrome</td><td><code>.card</code>, <code>.panel</code>, <code>.modal__inner</code>, <code>.dropdown-menu</code></td></tr>
+<tr><td>Control (<code>--control-*</code>)</td><td>Buttons, pills</td><td><code>.button</code>, <code>button</code>, <code>.pill</code></td></tr>
+<tr><td>Input (<code>--input-*</code>)</td><td>Form fields</td><td><code>input</code>, <code>select</code>, <code>textarea</code></td></tr>
+<tr><td>Typography (<code>--h*-size</code>, <code>--heading-*</code>, <code>--link-*</code>)</td><td>Text scale and voice</td><td>Headings, <code>.display-*</code>, links</td></tr>
+<tr><td>Icon &amp; image (<code>--icon-default-*</code>, <code>--image-*</code>)</td><td>Inline SVG icons, <code>&lt;img&gt;</code> styling</td><td>Icon markup, every <code>img</code></td></tr>
+<tr><td>Spacing (<code>--space-*</code>, <code>--space-dense-*</code>)</td><td>Rhythm and gaps</td><td>Utilities, flow, panel padding</td></tr>
+<tr><td>Structural (<code>--default-*</code>, <code>--z-*</code>, <code>--duration-*</code>)</td><td>Shared framework constants</td><td>Resets, layering, motion</td></tr>
+<tr><td>Flow (<code>--page-flow</code>, <code>--main-flow</code>, <code>--content-flow</code>, <code>--child-padding</code>)</td><td>Space <em>between</em> siblings, not around elements</td><td><code>body</code> children, <code>main</code> children, prose children, <code>.child-padding</code></td></tr>
+</tbody></table>
+<hr>
+<h2 id="8-rule-of-thumb">8. Rule of thumb</h2>
+<p>Before writing any CSS: <strong>is there already a token for this?</strong> If yes, override it at the narrowest scope that needs it (<code>:root</code> for the whole site, an inline <code>style</code> attribute for one section, a class in <code>utilities-advanced</code> for a reusable modifier). Only write a new selector when the value genuinely isn't token-driven yet — and if that happens often for the same property, that's a signal the framework needs a new token, not a new one-off rule.</p>
+</article>
+</main>
+
+<footer class="container-fluid p2 border-t border-solid border-light-grey">
+  <p class="small">CSS Vars Framework — Copyright 2018–2026 Kim Majali and EITO company. Licensed under
+  <a href="https://github.com/majalinet/cssvars/blob/master/LICENSE">MIT</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>

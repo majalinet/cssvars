@@ -153,3 +153,5 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
 
 ## Docs
 - Read the documentation on our website https://cssvars.com
+- [Styling with Variables](https://github.com/majalinet/cssvars/blob/master/docs/styling-with-variables.md)
+- [Utility Classes Reference](https://github.com/majalinet/cssvars/blob/master/docs/utility-classes-reference.md)

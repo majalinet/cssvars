@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Utility Classes Reference — CSS Vars Framework Docs</title>
+<meta name="description" content="Full reference of CSS Vars Framework's utility classes, organized by category.">
+<link rel="stylesheet" href="css/cssvars.css">
+</head>
+<body>
+
+<input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-state">
+<label for="sidebar-toggle" class="sidebar-toggle-btn" aria-label="Toggle table of contents">
+  <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+</label>
+
+<nav class="sidebar" aria-label="Table of contents">
+  <div class="sidebar-header">On this page</div>
+  <ul class="menu">
+<li class="menu-item"><a href="#1-spacing-margin-padding">1. Spacing (margin &amp; padding)</a></li>
+<li class="menu-item"><a href="#2-sizing">2. Sizing</a></li>
+<li class="menu-item"><a href="#3-layout-flexbox-grid">3. Layout — Flexbox &amp; Grid</a></li>
+<li class="menu-item"><a href="#4-position-offsets">4. Position &amp; offsets</a></li>
+<li class="menu-item"><a href="#5-borders-radius">5. Borders &amp; radius</a></li>
+<li class="menu-item"><a href="#6-color-background-gradients">6. Color, background &amp; gradients</a></li>
+<li class="menu-item"><a href="#7-shadows">7. Shadows</a></li>
+<li class="menu-item"><a href="#8-typography-utilities">8. Typography utilities</a></li>
+<li class="menu-item"><a href="#9-effects-overflow-visibility">9. Effects, overflow &amp; visibility</a></li>
+<li class="menu-item"><a href="#10-rule-of-thumb-for-this-page">10. Rule of thumb for this page</a></li>
+  </ul>
+  <ul class="menu">
+    <li class="menu-item"><a href="styling-with-variables.html">Styling with Variables</a></li>
+    <li class="menu-item"><a href="https://github.com/majalinet/cssvars">GitHub repository</a></li>
+  </ul>
+</nav>
+
+<div class="main-content">
+
+<header class="main-nav p1">
+  <div class="main-menu">
+    <a href="index.html" id="logo1"><span class="h4 black bold m-b-0">CSS Vars Framework</span></a>
+    <nav class="nav">
+      <ul>
+        <li><a href="index.html">Docs Home</a></li>
+        <li><a href="styling-with-variables.html">Styling with Variables</a></li>
+        <li><a href="utility-classes-reference.html">Utility Classes</a></li>
+        <li><a href="https://github.com/majalinet/cssvars" class="bold">GitHub</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main class="container p2">
+<article>
+<h1 id="utility-classes-reference">Utility Classes Reference</h1>
+<p>Companion to <a href="./styling-with-variables.html">Styling with Variables</a>. That doc covers the token system; this one catalogues the ~500 single-purpose classes built on top of it, living in <code>@layer utilities</code> and <code>@layer utilities-advanced</code>.</p>
+<p><strong>How to read this page:</strong> classes are grouped by naming pattern rather than listed one-by-one where a pattern repeats across a numeric scale (e.g. <code>.p-t-1</code>–<code>.p-t-4</code>). Where a class reads a token, the token is named — override the token instead of overriding the class.</p>
+<hr>
+<h2 id="1-spacing-margin-padding">1. Spacing (margin &amp; padding)</h2>
+<p>Two independent numeric scales are used throughout, and the naming tells you which one applies:</p>
+<ul class="colored-ul">
+<li><strong><code>0</code>–<code>4</code> suffix on shorthand classes (<code>.m1</code>–<code>.m4</code>, <code>.p1</code>–<code>.p4</code>)</strong> → dense scale, <code>--space-dense-1</code>–<code>--space-dense-4</code></li>
+<li><strong><code>0</code>–<code>4</code> suffix on directional classes (<code>.m-t-1</code>–<code>.m-t-4</code>, <code>.p-b-1</code>–<code>.p-b-4</code>, etc.)</strong> → regular scale, <code>--space-1</code>–<code>--space-4</code></li>
+<li><strong>Fixed fractional suffixes (<code>-1-16</code>, <code>-1-8</code>, <code>-1-4</code>, <code>-1-2</code>, <code>-3-4</code>)</strong> → fixed rem values that don't scale with viewport (0.0625rem → 0.75rem), for fine adjustments rather than rhythm</li>
+</ul>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><code>.m0</code>–<code>.m4</code> / <code>.p0</code>–<code>.p4</code></td><td>margin / padding, all sides</td><td><code>--space-dense-1</code>–<code>4</code></td></tr>
+<tr><td><code>.m-t-0</code>–<code>4</code> / <code>.p-t-0</code>–<code>4</code></td><td>margin-top / padding-top</td><td><code>--space-1</code>–<code>4</code></td></tr>
+<tr><td><code>.m-b-0</code>–<code>4</code> / <code>.p-b-0</code>–<code>4</code></td><td>margin-bottom / padding-bottom</td><td><code>--space-1</code>–<code>4</code></td></tr>
+<tr><td><code>.m-l-0</code>–<code>4</code> / <code>.p-l-0</code>–<code>4</code></td><td>margin-left / padding-left</td><td>dense scale</td></tr>
+<tr><td><code>.m-r-0</code>–<code>4</code> / <code>.p-r-0</code>–<code>4</code></td><td>margin-right / padding-right</td><td>dense scale</td></tr>
+<tr><td><code>.m-h-0</code>–<code>4</code> / <code>.p-h-0</code>–<code>4</code></td><td>margin-inline / padding-inline (both sides at once)</td><td>dense scale</td></tr>
+<tr><td><code>.m-v-0</code>–<code>4</code> / <code>.p-v-0</code>–<code>4</code></td><td>margin-block / padding-block (top+bottom at once)</td><td>dense scale</td></tr>
+<tr><td><code>.m-1-16</code> … <code>.m-3-4</code> / <code>.p-1-16</code> … <code>.p-3-4</code></td><td>margin / padding, all sides, fixed rem</td><td>fixed values</td></tr>
+<tr><td><code>.m-b--1-16</code> … <code>.m-b--3-4</code> (and <code>-l</code>/<code>-r</code>/<code>-t</code>/<code>-h</code>/<code>-v</code> equivalents)</td><td>directional margin/padding, fixed rem</td><td>fixed values</td></tr>
+<tr><td><code>.m-auto</code> / <code>.m-h-auto</code> / <code>.m-v-auto</code></td><td>margin auto (centering)</td><td>—</td></tr>
+</tbody></table>
+<p><strong>Child &amp; flow utilities</strong> (see also <a href="./styling-with-variables.html#19-flow-tokens-spacing-between-elements-not-around-them">Flow tokens</a>):</p>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th><th>Source</th></tr></thead>
+<tbody>
+<tr><td><code>.flow</code></td><td><code>margin-top</code> on every child after the first</td><td><code>--page-flow</code></td></tr>
+<tr><td><code>.flow-1</code>–<code>.flow-4</code></td><td>same, at a fixed step regardless of <code>--page-flow</code></td><td><code>--space-1</code>–<code>4</code></td></tr>
+<tr><td><code>.child-padding</code></td><td><code>padding</code> on every direct child</td><td><code>--child-padding</code></td></tr>
+<tr><td><code>.child-padding-1</code>–<code>.child-padding-4</code></td><td>same, at a fixed step</td><td><code>--space-1</code>–<code>4</code></td></tr>
+<tr><td><code>.child-margin</code> / <code>.child-margin-2</code>–<code>4</code></td><td><code>margin</code> on every direct child, at a fixed step</td><td><code>--space-1</code>–<code>4</code></td></tr>
+<tr><td><code>.gap</code> / <code>.gap-2</code>–<code>.gap-4</code></td><td>flex/grid <code>gap</code></td><td><code>--default-gap</code> / <code>--space-2</code>–<code>4</code></td></tr>
+</tbody></table>
+<hr>
+<h2 id="2-sizing">2. Sizing</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>.w-25</code> / <code>.w-33</code> / <code>.w-50</code> / <code>.w-66</code> / <code>.w-75</code> / <code>.w-100</code></td><td><code>width</code> as a percentage</td><td>—</td></tr>
+<tr><td><code>.w-25-vw</code> … <code>.w-100-vw</code> (+ <code>-min</code> variants)</td><td><code>width</code> in viewport units, or <code>min-width</code> equivalents</td><td>for full-bleed or viewport-relative elements</td></tr>
+<tr><td><code>.w-1rem</code> … <code>.w-10rem</code></td><td>fixed <code>width</code></td><td>—</td></tr>
+<tr><td><code>.w--1rem</code> … <code>.w--4rem</code></td><td><code>width: calc(100% - Nrem)</code></td><td>the double-dash means <strong>"100% minus"</strong>, not negative</td></tr>
+<tr><td><code>.h-*</code> / <code>.h--*</code></td><td>height equivalents of all the above</td><td>same conventions</td></tr>
+<tr><td><code>.mw-1rem</code> … <code>.mw-10rem</code></td><td><code>max-width</code></td><td>—</td></tr>
+<tr><td><code>.mh-1rem</code> … <code>.mh-10rem</code></td><td><code>max-height</code></td><td>—</td></tr>
+</tbody></table>
+<hr>
+<h2 id="3-layout-flexbox-grid">3. Layout — Flexbox &amp; Grid</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th></tr></thead>
+<tbody>
+<tr><td><code>.d-flex</code> / <code>.d-inline-flex</code> / <code>.d-grid</code> / <code>.d-inline-grid</code> / <code>.d-block</code> / <code>.d-inline</code> / <code>.d-inline-block</code> / <code>.d-none</code> / <code>.d-table</code> / <code>.d-table-cell</code> / <code>.d-table-row</code></td><td><code>display</code></td></tr>
+<tr><td><code>.flex-row</code> / <code>.flex-row-reverse</code> / <code>.flex-column</code> / <code>.flex-column-reverse</code></td><td><code>flex-direction</code></td></tr>
+<tr><td><code>.flex-wrap</code> / <code>.flex-nowrap</code> / <code>.flex-wrap-reverse</code></td><td><code>flex-wrap</code></td></tr>
+<tr><td><code>.flex-fill</code> / <code>.flex-grow-0</code> / <code>.flex-grow-1</code> / <code>.flex-shrink-0</code> / <code>.flex-shrink-1</code></td><td>flex sizing</td></tr>
+<tr><td><code>.justify-content-start</code>–<code>end</code>/<code>center</code>/<code>between</code>/<code>around</code></td><td><code>justify-content</code></td></tr>
+<tr><td><code>.align-items-start</code>–<code>end</code>/<code>center</code>/<code>baseline</code>/<code>stretch</code></td><td><code>align-items</code></td></tr>
+<tr><td><code>.align-content-start</code>–<code>end</code>/<code>center</code>/<code>between</code>/<code>around</code>/<code>stretch</code></td><td><code>align-content</code></td></tr>
+<tr><td><code>.align-self-auto</code>–<code>end</code>/<code>center</code>/<code>baseline</code>/<code>stretch</code></td><td><code>align-self</code></td></tr>
+<tr><td><code>.grid-cols-1</code>/<code>2</code>/<code>3</code>/<code>4</code>/<code>6</code>/<code>12</code></td><td>grid-template-columns (equal-width tracks)</td></tr>
+<tr><td><code>.col-span-1</code>/<code>2</code>/<code>3</code>/<code>4</code>/<code>6</code>/<code>full</code></td><td><code>grid-column: span N</code></td></tr>
+<tr><td><code>.cluster</code></td><td>flex row, wrapped, centered — quick horizontal grouping</td></tr>
+</tbody></table>
+<hr>
+<h2 id="4-position-offsets">4. Position &amp; offsets</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th></tr></thead>
+<tbody>
+<tr><td><code>.position-static</code> / <code>.position-relative</code> / <code>.position-absolute</code> / <code>.position-fixed</code> / <code>.position-sticky</code></td><td><code>position</code></td></tr>
+<tr><td><code>.top-0</code>–<code>4</code> / <code>.bottom-0</code>–<code>4</code> / <code>.left-0</code>–<code>4</code> / <code>.right-0</code>–<code>4</code></td><td>offsets, fixed rem steps</td></tr>
+<tr><td><code>.top-25</code>/<code>50</code>/<code>75</code> / <code>.right-25</code>/<code>50</code>/<code>75</code></td><td>offsets, percentage</td></tr>
+<tr><td><code>.top-25-vh</code>/<code>50-vh</code>/<code>75-vh</code> / <code>.right-25-vw</code>/<code>50-vw</code>/<code>75-vw</code></td><td>offsets, viewport units</td></tr>
+<tr><td><code>.z--1</code> / <code>.z-0</code> / <code>.z-1</code>–<code>.z-3</code> / <code>.z-10</code> / <code>.z-100</code></td><td>ad-hoc <code>z-index</code> steps — for anything <strong>not</strong> already covered by <code>--z-floating</code>/<code>--z-overlay</code>/<code>--z-modal</code> (see <a href="./styling-with-variables.html#18-structural-tokens">Structural tokens</a>)</td></tr>
+</tbody></table>
+<hr>
+<h2 id="5-borders-radius">5. Borders &amp; radius</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>.border</code> / <code>.border-0</code>/<code>2</code>/<code>4</code>/<code>8</code></td><td>all-side border, width steps</td><td>uses <code>--grey</code> by default</td></tr>
+<tr><td><code>.border-t</code>/<code>-b</code>/<code>-l</code>/<code>-r</code>/<code>-h</code>/<code>-v</code> (+ <code>-0</code>/<code>2</code>/<code>4</code>/<code>8</code> width steps)</td><td>directional borders</td><td><code>-h</code> = left+right, <code>-v</code> = top+bottom</td></tr>
+<tr><td><code>.border-solid</code> / <code>.border-dashed</code> / <code>.border-dotted</code> / <code>.border-double</code> / <code>.border-none</code></td><td><code>border-style</code></td></tr>
+<tr><td><code>.border-color-1</code>/<code>2</code> / <code>.border-danger</code>/<code>info</code>/<code>success</code>/<code>warning</code>/<code>dark</code>/<code>grey</code>/<code>light-grey</code>/<code>luxury</code>/<code>black</code>/<code>white</code></td><td>border color, all sides</td><td>token-driven</td></tr>
+<tr><td><code>.border-a-color-1</code> … <code>.border-a-white</code></td><td>same palette, explicit "all sides" variant</td><td>—</td></tr>
+<tr><td><code>.border-gradient</code> / <code>.border-gradient-info</code>/<code>success</code>/<code>danger</code>/<code>warning</code>/<code>luxury</code>/<code>black</code>/<code>white</code></td><td>gradient border (<code>--color-1</code> → named color)</td><td>uses <code>border-image</code>, so it overrides <code>border-style</code></td></tr>
+<tr><td><code>.rounded</code> / <code>.rounded-0</code> / <code>.rounded-1-4</code> / <code>.rounded-1-8</code></td><td><code>border-radius</code>, from none to a fixed rem step</td><td>independent of <code>--default-border-radius</code> — use this when you need a radius that <em>doesn't</em> follow the panel/control radius</td></tr>
+<tr><td><code>.rounded-t</code>/<code>-b</code>/<code>-l</code>/<code>-r</code> (+ <code>-1-4</code>/<code>-1-8</code>)</td><td>radius on two corners only</td><td>for tab-style or attached-edge shapes</td></tr>
+<tr><td><code>.circle</code> / <code>.circle-t</code>/<code>-b</code>/<code>-l</code>/<code>-r</code></td><td><code>border-radius: 50%</code>, or half-pill on one side</td><td>—</td></tr>
+</tbody></table>
+<hr>
+<h2 id="6-color-background-gradients">6. Color, background &amp; gradients</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
+<tbody>
+<tr><td><code>.color-1</code> / <code>.color-2</code> / <code>.danger</code> / <code>.info</code> / <code>.success</code> / <code>.warning</code> / <code>.dark</code> / <code>.grey</code> / <code>.light-grey</code> / <code>.luxury</code> / <code>.black</code> / <code>.white</code></td><td>text <code>color</code></td><td>direct token read, no mixing</td></tr>
+<tr><td><code>.bg-color-1</code>/<code>2</code> / <code>.bg-danger</code>/<code>info</code>/<code>success</code>/<code>warning</code>/<code>dark</code>/<code>grey</code>/<code>light-grey</code>/<code>luxury</code>/<code>black</code>/<code>white</code>/<code>body-bg</code></td><td>solid <code>background-color</code></td><td>—</td></tr>
+<tr><td><code>.bga-color-1</code>/<code>2</code> / <code>.bga-danger</code>/<code>info</code>/<code>success</code>/<code>warning</code>/<code>dark</code>/<code>grey</code>/<code>luxury</code></td><td>tinted background <strong>+</strong> matching text color, via <code>color-mix()</code> at 10%</td><td>the "soft badge" pattern — use this instead of a solid <code>.bg-*</code> when you want a subtle tint, not a solid fill</td></tr>
+<tr><td><code>.bg-gradient</code> / <code>.bg-gradient-info</code>/<code>success</code>/<code>danger</code>/<code>warning</code>/<code>luxury</code>/<code>black</code>/<code>white</code></td><td>linear-gradient background, <code>--color-1</code> → named color</td><td>—</td></tr>
+<tr><td><code>.color-gradient</code> / <code>.color-gradient-hover</code></td><td>gradient applied to text (via background-clip)</td><td>—</td></tr>
+<tr><td><code>.outline-color-1</code>/<code>2</code> / <code>.outline-color-danger</code>/<code>info</code>/<code>success</code>/<code>grey</code>/<code>dark</code>/<code>black</code>/<code>white</code> / <code>.outline-light-grey</code> / <code>.outline-warning</code> / <code>.outline-luxury</code></td><td><code>outline-color</code></td><td>distinct from the automatic focus-visible ring in <code>@layer overrides</code> — use these for a deliberate, always-on outline, not a focus state</td></tr>
+</tbody></table>
+<p><strong>Convention to hold onto:</strong> <code>.bg-*</code> is a flat fill; <code>.bga-*</code> is a tint (10% <code>color-mix()</code>) with color already paired to it. Reach for <code>.bga-*</code> for badges, callouts, and soft highlights — reach for <code>.bg-*</code> for solid blocks and section backgrounds.</p>
+<hr>
+<h2 id="7-shadows">7. Shadows</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th></tr></thead>
+<tbody>
+<tr><td><code>.shadow</code> / <code>.shadow-hover</code> (hover variant)</td><td><code>--control-shadow</code>-style dual shadow</td></tr>
+<tr><td><code>.shadow-1</code>/<code>-1-hover</code></td><td>fixed dual-layer shadow (no border)</td></tr>
+<tr><td><code>.shadow-2</code>/<code>-2-hover</code></td><td>bordered + hard offset shadow</td></tr>
+<tr><td><code>.shadow-3</code>/<code>-3-hover</code></td><td>bordered + soft diffuse shadow</td></tr>
+<tr><td><code>.shadow-4</code>/<code>-4-hover</code> / <code>.hover-shadow</code></td><td>large, dramatic elevation shadow</td></tr>
+<tr><td><code>.shadow-color</code> … <code>.shadow-color-4</code>/<code>-hover</code> variants</td><td>same four levels, tinted with <code>--color-1</code> via <code>color-mix()</code> instead of black</td></tr>
+<tr><td><code>.shadow-none</code>/<code>-hover</code></td><td>removes shadow</td></tr>
+</tbody></table>
+<p>All shadow utilities sit in <code>@layer utilities-advanced</code>, after components — this is what lets <code>.shadow-4</code> override a card's own <code>--panel-shadow</code>-driven shadow without <code>!important</code>.</p>
+<hr>
+<h2 id="8-typography-utilities">8. Typography utilities</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th></tr></thead>
+<tbody>
+<tr><td><code>.bold</code> / <code>.font-weight-200</code>/<code>400</code>/<code>600</code> (aliases: <code>.font-thin</code>/<code>.font-regular</code>/<code>.font-semibold</code>)</td><td><code>font-weight</code></td></tr>
+<tr><td><code>.italic</code> / <code>.underline</code> / <code>.decoration-none</code> / <code>.old-info</code> (strikethrough)</td><td><code>font-style</code> / <code>text-decoration</code></td></tr>
+<tr><td><code>.text-uppercase</code> / <code>.text-lowercase</code> / <code>.text-capitalize</code></td><td><code>text-transform</code></td></tr>
+<tr><td><code>.double</code> (200%) / <code>.large</code> (150%) / <code>.larger</code> (125%) / <code>.small</code> (75%) / <code>.smaller</code> (85%) / <code>.half</code> (50%)</td><td>relative <code>font-size</code> steps</td></tr>
+<tr><td><code>.letter-spacing-0</code>–<code>5</code></td><td><code>letter-spacing</code>, 0 to 0.6rem</td></tr>
+<tr><td><code>.line-height-1</code> / <code>.line-height-17</code> (1.7) / <code>.line-height-2</code></td><td><code>line-height</code></td></tr>
+<tr><td><code>.height-1lines</code> / <code>.height-2lines</code> / <code>.height-3lines</code></td><td>multi-line clamp/truncation to N lines</td></tr>
+<tr><td><code>.justified</code> / <code>.left</code> / <code>.right</code> / <code>.center</code></td><td><code>text-align</code></td></tr>
+<tr><td><code>.hover-grey</code> / <code>.hover-white</code> / <code>.hover-underline</code></td><td>hover-only color/decoration changes for text</td></tr>
+<tr><td><code>.unselectable</code></td><td><code>user-select: none</code></td></tr>
+<tr><td><code>.word-wrap-break</code></td><td>forces long unbreakable strings (URLs, etc.) to wrap</td></tr>
+</tbody></table>
+<hr>
+<h2 id="9-effects-overflow-visibility">9. Effects, overflow &amp; visibility</h2>
+<table class="table table-striped table-cell-border-none">
+<thead><tr><th>Classes</th><th>Sets</th></tr></thead>
+<tbody>
+<tr><td><code>.brightness-33</code>/<code>66</code>/<code>80</code>/<code>90</code>/<code>100</code>/<code>150</code> (+ <code>-hover</code> variants)</td><td><code>filter: brightness()</code></td></tr>
+<tr><td><code>.overflow-hidden</code> / <code>.overflow-visible</code> / <code>.overflow-x-*</code> / <code>.overflow-y-*</code></td><td><code>overflow</code></td></tr>
+<tr><td><code>.clear-fix</code> / <code>.overflow-auto</code></td><td>classic clearfix via <code>overflow: auto</code></td></tr>
+<tr><td><code>.scrollbar-none</code> / <code>.scrollbar-thin</code></td><td><code>scrollbar-width</code></td></tr>
+<tr><td><code>.float-left</code> / <code>.float-right</code> / <code>.float-none</code> / <code>.clear-both</code> / <code>.clear-left</code> / <code>.clear-right</code></td><td>float layout (legacy pattern, prefer flex/grid utilities above)</td></tr>
+<tr><td><code>.desktop-only</code> / <code>.mobile-only</code></td><td>responsive display toggle at the <code>992px</code> breakpoint</td></tr>
+<tr><td><code>.sr-only</code></td><td>visually hidden, still announced to screen readers</td></tr>
+<tr><td><code>.skip-link</code></td><td>keyboard-focus-revealed "skip to content" link, styled from <code>--control-*</code> tokens</td></tr>
+<tr><td><code>.opacity1</code>/<code>07</code>/<code>05</code>/<code>03</code> (+ <code>-hover</code> variants)</td><td><code>opacity</code> steps</td></tr>
+</tbody></table>
+<hr>
+<h2 id="10-rule-of-thumb-for-this-page">10. Rule of thumb for this page</h2>
+<p>If you're stacking more than two or three utility classes on the same element to achieve one repeatable look (a badge, a callout, a card variant), that's the signal to stop and either:</p>
+<ol class="colored-ol">
+<li>check whether a component or theme preset already covers it, or</li>
+<li>propose a new one-line modifier class in <code>utilities-advanced</code> that sets the underlying tokens (the <code>.glass</code> pattern from <a href="./styling-with-variables.html#4-composition-over-duplication">Composition over duplication</a>) rather than continuing to hand-compose utilities in markup.</li>
+</ol>
+</article>
+</main>
+
+<footer class="container-fluid p2 border-t border-solid border-light-grey">
+  <p class="small">CSS Vars Framework — Copyright 2018–2026 Kim Majali and EITO company. Licensed under
+  <a href="https://github.com/majalinet/cssvars/blob/master/LICENSE">MIT</a>.</p>
+</footer>
+
+</div>
+</body>
+</html>
