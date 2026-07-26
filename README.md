@@ -151,4 +151,5 @@ Pre-built dark & light themes and you can enable auto detect theme switcher base
 Built with love to be used. Free framework, UI elements, & themes. Download, use, enjoy & share
 
 
-Read the documentation on our website https://cssvars.com
+## Docs
+- Read the documentation on our website https://cssvars.com
