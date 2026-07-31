@@ -1,7 +1,5 @@
 <!doctype html>
 <html lang="en">
-<!-- <html lang="en" data-theme="dark"> -->
-
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -27,56 +25,100 @@
 
 </head>
 
-<body class="system-ui-style">
+<body class="">
     <div class="main-nav container-fluid nav-top-border-hover">
-        <div class="main-menu">
-            <a href="http://agilecss.com" id="logo" target="_blank" alt="CSS Vars Framework and UI Kit"><img src="img/logo.png"
-                    class="logo"></a>
+    <div class="main-menu">
 
-            <label for="toggle-1" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
-            </label>
-            <input type="checkbox" id="toggle-1">
+        <input type="checkbox" id="toggle-1">
 
+        <a href="http://cssvars.com" id="logo" class="logo" alt="CSS Vars Framework and UI Kit">
+            <img src="img/logo.png" class="h-4rem">
+        </a>
+
+        <div class="nav-panel">
+            <div class="nav-group">
             <nav class="nav">
-                <ul>
-                    <li><a href="docs.html">Documentation</a></li>
-                    <li><a href="elements/elements.html">UI Elements</a></li>
-                    <li><a href="sections/sections.html">Sections</a></li>
-                    <li><a href="themes/themes.html">Themes</a></li>
-                    <li class=" p-h-1">
-                        <select id="styles" class="form-control m-t--1-2" onchange="changeStyle()">
-                            <option value="none">Pick a Style</option>
-                            <option value="system-ui-style">system-ui</option>
-                            <option value="material-style">material</option>
-                            <option value="flat-style">flat</option>
-                            <option value="glass-style">glass</option>
-                            <option value="minimalist-style">minimalist</option>
-                            <option value="modular-style">modular</option>
-                            <option value="enterprise-style">enterprise</option>
-                            <option value="brutal-style">brutal</option>
-                            <option value="brutal-lite-style">brutal-lite</option>
-                            <option value="modern-style">modern</option>
-                            <option value="retro-style">retro</option>
-                            <option value="retro-light-style">retro-light</option>
-                            <option value="neon-style">neon</option>
-                            <option value="cyberpunk-style">cyberpunk</option>
-                            <option value="playful-style">playful</option>
-                            <option value="luxury-style">luxury</option>
-                            <option value="colorful-dashboard-style">colorful-dashboard</option>
-                            <option value="high-contrast-style">high-contrast</option>
-                            <option value="neumorphism-style">neumorphism</option>
-                            <option value="data-style">data</option>
-                        </select>
-                    </li>
-                    <li><a target="_blank" href="https://github.com/majalinet/cssvars" title="GitHub"><svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">                     <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg></a>
-                    </li>
-                </ul>
+                <a href="docs.html">Documentation</a>
+                <a href="elements/elements.html">UI Elements</a>
+                <a href="https://cssvars.com/blocks/">Blocks</a>
+                <a href="themes/themes.html">Themes</a>
+
+                <select id="styles" class="form-control p-h-1 m-t--1-2" onchange="changeStyle()">
+                    <option value="none">Pick a Style</option>
+
+                    <optgroup label="Universal">
+                        <option value="">default</option>
+                        <option value="system-ui-style">system-ui</option>
+                        <option value="minimalist-style">minimalist</option>
+                        <option value="flat-style">flat</option>
+                        <option value="modern-style">modern</option>
+                        <option value="swiss-style">swiss</option>
+                    </optgroup>
+
+                    <optgroup label="Corporate / Professional">
+                        <option value="enterprise-style">enterprise</option>
+                        <option value="high-contrast-style">high-contrast</option>
+                        <option value="monochrome-style">monochrome</option>
+                        <option value="editorial-style">editorial</option>
+                    </optgroup>
+
+                    <optgroup label="Contemporary">
+                        <option value="material-style">material</option>
+                        <option value="glass-style">glass</option>
+                        <option value="neumorphism-style">neumorphism</option>
+                        <option value="modular-style">modular</option>
+                        <option value="colorful-dashboard-style">colorful-dashboard</option>
+                        <option value="data-style">data</option>
+                        <option value="aurora-style">aurora</option>
+                        <option value="pastel-style">pastel</option>
+                    </optgroup>
+
+                    <optgroup label="Bold / Expressive">
+                        <option value="luxury-style">luxury</option>
+                        <option value="brutal-style">brutal</option>
+                        <option value="brutal-lite-style">brutal-lite</option>
+                        <option value="retro-style">retro</option>
+                        <option value="retro-lite-style">retro-lite</option>
+                        <option value="futuristic-style">futuristic</option>
+                        <option value="neon-style">neon</option>
+                        <option value="cyberpunk-style">cyberpunk</option>
+                    </optgroup>
+
+                    <optgroup label="Playful / Niche">
+                        <option value="playful-bubblegum-style">playful-bubblegum</option>
+                        <option value="playful-confetti-style">playful-confetti</option>
+                    </optgroup>
+                </select>
+
+                <a target="_blank" href="https://github.com/majalinet/cssvars" title="GitHub">
+                    <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s">
+                        <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+                    </svg>
+                </a>
+
+                <a href="javascript:void(0)" onclick="switchTheme()" title="Switch theme light/dark">
+                    <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s">
+                        <title>Switch theme light/dark</title>
+                        <path d="M7.5,2C5.71,3.15 4.5,5.18 4.5,7.5C4.5,9.82 5.71,11.85 7.53,13C4.46,13 2,10.54 2,7.5A5.5,5.5 0 0,1 7.5,2M19.07,3.5L20.5,4.93L4.93,20.5L3.5,19.07L19.07,3.5M12.89,5.93L11.41,5L9.97,6L10.39,4.3L9,3.24L10.75,3.12L11.33,1.47L12,3.1L13.73,3.13L12.38,4.26L12.89,5.93M9.59,9.54L8.43,8.81L7.31,9.59L7.65,8.27L6.56,7.44L7.92,7.35L8.37,6.06L8.88,7.33L10.24,7.36L9.19,8.23L9.59,9.54M19,13.5A5.5,5.5 0 0,1 13.5,19C12.28,19 11.15,18.6 10.24,17.93L17.93,10.24C18.6,11.15 19,12.28 19,13.5M14.6,20.08L17.37,18.93L17.13,22.28L14.6,20.08M18.93,17.38L20.08,14.61L22.28,17.15L18.93,17.38M20.08,12.42L18.94,9.64L22.28,9.88L20.08,12.42M9.63,18.93L12.4,20.08L9.87,22.27L9.63,18.93Z"></path>
+                    </svg>
+                </a>
             </nav>
+            </div>
         </div>
+
+        <label for="toggle-1" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none" />
+                <path d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z" />
+            </svg>
+        </label>
+
     </div>
+</div>
 
     <header class="h-75-vh center d-flex flex-column justify-content-center bg-light-grey">
         <div class="container-fluid">
@@ -93,18 +135,20 @@
         </div>
     </header>
 
-    <main>
-        <div class="container m-v-4">
-            <blockquote>
-                <p>CSS Vars gives you a utility-first foundation, a set of ready-made components built on top of it,
-                    and a semantic token layer &mdash; surface, panel, control, and input variables &mdash; that sits
-                    above the raw palette. Change a token, and every card, button, and form field that references it
-                    updates with it. No build step, no config files, just one stylesheet.</p>
-                <footer class="blockquote-footer">CSS Vars creator.</footer>
-            </blockquote>
+    <main class="p-v-2">
+        <div class="container p-t-2">
+            <div class="m-t-2">
+                <blockquote>
+                    <p>CSS Vars gives you a utility-first foundation, a set of ready-made components built on top of it,
+                        and a semantic token layer &mdash; surface, panel, control, and input variables &mdash; that sits
+                        above the raw palette. Change a token, and every card, button, and form field that references it
+                        updates with it. No build step, no config files, just one stylesheet.</p>
+                        <footer class="blockquote-footer">CSS Vars creator.</footer>
+                    </blockquote>
+                </div>
         </div>
 
-        <section class="center row d-flex  justify-content-center m-v-4">
+        <section class="center row d-flex  justify-content-center child-padding-1-2 p-v-2">
 
             <div class="col-12">
                 <h2 class="font-weight-600">Simplicity</h2>
@@ -118,8 +162,8 @@
                             <!-- <path d="M5.25 0.8125c0 -0.414214 -0.33579 -0.75 -0.75 -0.75s-0.75 0.335786 -0.75 0.75v2.71875H3c-0.55228 0 -1 0.44772 -1 1v3C2 9.1881 3.34315 10.5312 5 10.5312h1.25v2.6876c0 0.4142 0.33579 0.75 0.75 0.75s0.75 -0.3358 0.75 -0.75v-2.6876H9c1.6569 0 3 -1.3431 3 -2.99995v-3c0 -0.55228 -0.4477 -1 -1 -1h-0.75V0.8125c0 -0.414214 -0.33579 -0.75 -0.75 -0.75s-0.75 0.335786 -0.75 0.75v2.71875h-3.5V0.8125Z"></path> -->
                             <!-- <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z" /> -->
                         </svg>
-                        <h4 class="center black bold m-v-1">Instant Integration</h4>
-                        <p class="h5 black center">Just link one CSS file</p>
+                        <h4 class="center m-v-1">Instant Integration</h4>
+                        <p class="h5 center">Just link one CSS file</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">No npm install, no bundler config, no build scripts or package.json to maintain &mdash; drop in the stylesheet and start building.</p>
                     </div>
                 </div>
@@ -128,8 +172,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M12,17.56L16.07,16.43L16.62,10.33H9.38L9.2,8.3H16.8L17,6.31H7L7.56,12.32H14.45L14.22,14.9L12,15.5L9.78,14.9L9.64,13.24H7.64L7.93,16.43L12,17.56M4.07,3H19.93L18.5,19.2L12,21L5.5,19.2L4.07,3Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Pure HTML &amp; CSS</h4>
-                        <p class="h5 black center">Every common UI element, no JS required</p>
+                        <h4 class="center m-v-1">Pure HTML &amp; CSS</h4>
+                        <p class="h5 center">Every common UI element, no JS required</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">Menus, tabs, accordions, dropdowns, and modals all run on checkbox and radio toggles, so there's less to load and less to break.</p>
                     </div>
                 </div>
@@ -150,8 +194,8 @@
                         <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z" />
                         <path d="M0 0h24v24H0z" fill="none" />
                 </svg>
-                    <h4 class="center black bold m-v-1">Design Tokens, Not Guesswork</h4>
-                    <p class="h5 black center">One set of variables runs the whole UI</p>
+                    <h4 class="center m-v-1">Design Tokens, Not Guesswork</h4>
+                    <p class="h5 center">One set of variables runs the whole UI</p>
                     <p class="m-t-05 dark font-weight-400 p-h-1">Surface, panel, control, and input tokens sit above the color palette. Change one variable and every card, button, and field that references it follows.</p>
                 </div>
             </div>
@@ -161,8 +205,8 @@
                     <svg class="icon" viewBox="0 0 24 24">
                         <path d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,4V16H8.83L12,19.17L15.17,16H20V4H4M6,7H18V9H6V7M6,11H16V13H6V11Z" />
                     </svg>
-                    <h4 class="center black bold m-v-1">Utility-First Core</h4>
-                    <p class="h5 black center">Every property is a composable class</p>
+                    <h4 class="center m-v-1">Utility-First Core</h4>
+                    <p class="h5 center">Every property is a composable class</p>
                     <p class="m-t-05 dark font-weight-400 p-h-1">Spacing, color, shadow, and layout are all single-purpose classes you combine directly in markup &mdash; no custom CSS to write or maintain.</p>
                 </div>
             </div>
@@ -172,8 +216,8 @@
                     <svg class="icon" viewBox="0 0 24 24">
                         <path d="M4,2H20A2,2 0 0,1 22,4V16A2,2 0 0,1 20,18H16L12,22L8,18H4A2,2 0 0,1 2,16V4A2,2 0 0,1 4,2M4,4V16H8.83L12,19.17L15.17,16H20V4H4M7.5,6A1.5,1.5 0 0,1 9,7.5A1.5,1.5 0 0,1 7.5,9A1.5,1.5 0 0,1 6,7.5A1.5,1.5 0 0,1 7.5,6M6,14L11,9L13,11L18,6V14H6Z" />
                     </svg>
-                    <h4 class="center black bold m-v-1">Component-Ready</h4>
-                    <p class="h5 black center">Cards, panels, dropdowns &amp; menus, built in</p>
+                    <h4 class="center m-v-1">Component-Ready</h4>
+                    <p class="h5 center">Cards, panels, dropdowns &amp; menus, built in</p>
                     <p class="m-t-05 dark font-weight-400 p-h-1">Common patterns &mdash; cards, panels, sidebars, dropdowns, pills, chips &mdash; ship as ready classes, composed from the same utilities, checkbox-driven, no JavaScript required.</p>
                 </div>
             </div>
@@ -192,8 +236,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Modern CSS Under the Hood</h4>
-                        <p class="h5 black center">Built on the platform, not around it</p>
+                        <h4 class="center m-v-1">Modern CSS Under the Hood</h4>
+                        <p class="h5 center">Built on the platform, not around it</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">Cascade layers keep specificity predictable, <code>color-mix()</code> handles alpha, and <code>clamp()</code> drives fluid spacing instead of fixed breakpoints.</p>
                     </div>
                 </div>
@@ -203,8 +247,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M5,15H3V19A2,2 0 0,0 5,21H9V19H5M5,5H9V3H5A2,2 0 0,0 3,5V9H5M19,3H15V5H19V9H21V5A2,2 0 0,0 19,3M19,19H15V21H19A2,2 0 0,0 21,19V15H19M12,8A4,4 0 0,0 8,12A4,4 0 0,0 12,16A4,4 0 0,0 16,12A4,4 0 0,0 12,8M12,14A2,2 0 0,1 10,12A2,2 0 0,1 12,10A2,2 0 0,1 14,12A2,2 0 0,1 12,14Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Scoped or Global</h4>
-                        <p class="h5 black center">Plays well with other frameworks</p>
+                        <h4 class="center m-v-1">Scoped or Global</h4>
+                        <p class="h5 center">Plays well with other frameworks</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">Use CSS Vars as the whole framework, or scope it alongside an existing codebase without style collisions.</p>
                     </div>
                 </div>
@@ -214,8 +258,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M19.5,3.09L20.91,4.5L16.41,9H20V11H13V4H15V7.59L19.5,3.09M20.91,19.5L19.5,20.91L15,16.41V20H13V13H20V15H16.41L20.91,19.5M4.5,3.09L9,7.59V4H11V11H4V9H7.59L3.09,4.5L4.5,3.09M3.09,19.5L7.59,15H4V13H11V20H9V16.41L4.5,20.91L3.09,19.5Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Responsive &amp; Fluid</h4>
-                        <p class="h5 black center">Much more than a fixed grid</p>
+                        <h4 class="center m-v-1">Responsive &amp; Fluid</h4>
+                        <p class="h5 center">Much more than a fixed grid</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">A <code>clamp()</code>-based spacing scale flexes with the viewport, alongside responsive images, galleries, tables, menus, maps, and embeds.</p>
                     </div>
                 </div>
@@ -234,8 +278,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Fast Loading</h4>
-                        <p class="h5 black center">A small stylesheet makes wonders</p>
+                        <h4 class="center m-v-1">Fast Loading</h4>
+                        <p class="h5 center">A small stylesheet makes wonders</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">A compact, minified core &mdash; utilities, components, and tokens included &mdash; keeps first paint quick even on the busiest page.</p>
                     </div>
                 </div>
@@ -246,8 +290,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M17.5,12A1.5,1.5 0 0,1 16,10.5A1.5,1.5 0 0,1 17.5,9A1.5,1.5 0 0,1 19,10.5A1.5,1.5 0 0,1 17.5,12M14.5,8A1.5,1.5 0 0,1 13,6.5A1.5,1.5 0 0,1 14.5,5A1.5,1.5 0 0,1 16,6.5A1.5,1.5 0 0,1 14.5,8M9.5,8A1.5,1.5 0 0,1 8,6.5A1.5,1.5 0 0,1 9.5,5A1.5,1.5 0 0,1 11,6.5A1.5,1.5 0 0,1 9.5,8M6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12M12,3A9,9 0 0,0 3,12A9,9 0 0,0 12,21A1.5,1.5 0 0,0 13.5,19.5C13.5,19.11 13.35,18.76 13.11,18.5C12.88,18.23 12.73,17.88 12.73,17.5A1.5,1.5 0 0,1 14.23,16H16A5,5 0 0,0 21,11C21,6.58 16.97,3 12,3Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Icons Included</h4>
-                        <p class="h5 black center">Advanced styling for SVG icons</p>
+                        <h4 class="center m-v-1">Icons Included</h4>
+                        <p class="h5 center">Advanced styling for SVG icons</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">Fill, size, and background utilities style inline SVG icons directly &mdash; no icon library required, though you're free to use one.</p>
                     </div>
                 </div>
@@ -259,8 +303,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                         <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z"></path>
                         </svg>
-                    <h4 class="center black bold m-v-1">Lightweight</h4>
-                        <p class="h5 black center">14KB gzipped.</p>
+                    <h4 class="center m-v-1">Lightweight</h4>
+                        <p class="h5 center">14KB gzipped.</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">A lightweight, minified core with utilities, components, and design tokens included, no build tools required.</p>
                     </div>
                 </div>
@@ -275,8 +319,8 @@
                         <svg class="icon" viewBox="0 0 24 24">
                             <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z" />
                         </svg>
-                        <h4 class="center black bold m-v-1">Free &amp; Open Source</h4>
-                        <p class="h5 black center">Built with love, meant to be shared</p>
+                        <h4 class="center m-v-1">Free &amp; Open Source</h4>
+                        <p class="h5 center">Built with love, meant to be shared</p>
                         <p class="m-t-05 dark font-weight-400 p-h-1">Framework, components, and theme presets under an MIT license &mdash; download, use, extend, and share freely.</p>
                     </div>
                 </div>
@@ -284,35 +328,35 @@
         </section>
       
 
-        <div class="container m-v-4">
+        <div class="container">
             <div class="row">
                 <div class="col-md-5">
                     <p class="left dark text-uppercase font-weight-600">100+ page templates</p>
                     <h2 class="left dark font-weight-600">Free templates for different topics</h2>
                     <h6 class="left dark font-weight-400 m-t-1">Full page templates built entirely from CSS Vars utilities and components, ready to customize by swapping tokens instead of rewriting markup.</h6>
-                    <a href="https://cssvars.com/free-templates/" class="bold info">Explore Layouts</a>
+                    <a href="https://cssvars.com/free-templates/">Explore Layouts</a>
                 </div>
                 <div class="col-md-7 p-h-1">
-                    <img src="https://cssvars.com/img/cssvars2.png" class="img-responsive">
+                    <img src="https://cssvars.com/../img/cssvars2.png" class="img-responsive">
                 </div>
             </div>
         </div>
 
-        <div class="container m-v-4">
+        <div class="container">
             <div class="row">
                 <div class="col-md-7 p-h-1">
-                    <img src="https://cssvars.com/img/cssvars3.png" class="rounded img-responsive">
+                    <img src="https://cssvars.com/../img/cssvars3.png" class="rounded img-responsive">
                 </div>
                 <div class="col-md-5">
                     <p class="left dark text-uppercase font-weight-600">UI Elements</p>
                     <h2 class="left dark font-weight-600">Build with our elements</h2>
                     <h6 class="left dark font-weight-400 m-t-1">Cards, panels, dropdowns, pills, chips, and dozens more &mdash; free, quality UI elements, fully customizable through CSS variables and battle-tested on real sites.</h6>
-                    <a href="https://cssvars.com/elements/backgrounds/" class="bold info">Explore UI Elements</a>
+                    <a href="https://cssvars.com/elements/backgrounds/">Explore UI Elements</a>
                 </div>
             </div>
         </div>
 
-        <div class="center d-flex flex-column justify-content-center p-v-4">
+        <div class="center d-flex flex-column justify-content-center">
             <div class="container-fluid">
                 <p class="display-5 dark">Build quality responsive websites quickly</p>
                 <p>No JavaScript or other libraries needed &mdash; pure HTML &amp; CSS, styled by variables, to build great websites.</p>

@@ -1433,127 +1433,188 @@ input:focus, select:focus, textarea:focus {
 .promo-box-s {
   padding: var(--panel-padding);
 }
-/* Main Menu */
-.main-menu li {  list-style: none;}
-.main-menu a {  text-decoration: none;}
-.main-menu {
-  width: 100%;
-  margin: 0px auto;
-  position: relative;
-}
+/* ============================================================
+   Main Menu — flexbox
+   MARKUP RULE (important): the toggle <input type="checkbox">
+   must always be the FIRST child inside .main-menu — before the
+   logo, .nav-panel, .nav-actions, or the burger label. Visual
+   position is controlled entirely with `order`, never by moving
+   the checkbox around. Every show/hide rule below is a `~`
+   (general sibling) selector, which only matches elements that
+   come AFTER the checkbox in the markup.
+
+   .main-nav > .main-menu > (
+     input[type=checkbox]        — always first
+     a.logo
+     .nav-panel                  — collapses on mobile
+       nav.nav > a / .dropdown   — links, no <ul>/<li>
+       .nav-actions              — OPTIONAL here: put it inside
+                                    .nav-panel if you want Login/
+                                    Sign-up to collapse WITH the
+                                    menu on mobile
+     .nav-actions                — OR put it here, as a sibling of
+                                    .nav-panel, if you want it to
+                                    stay visible next to the
+                                    burger at every breakpoint
+     .toggle-menu label          — burger
+   )
+
+   Layout variants (left / centered / stacked / grouped-right) are
+   built with existing utility classes (flex-column,
+   justify-content-center, flex-grow-1, gap-*, w-100, row/col-md-*)
+   — no new CSS per variant. .nav-group is the one structural
+   helper, for "grouped right". No JS.
+   ============================================================ */
 .main-nav {
   width: 100%;
-  display: table;
+  position: relative;
+  isolation: isolate;
 }
-.nav, .nav-stable {
-  width: auto;
-  float: right;
-}
-.nav ul, .nav-stable ul {
-  display: table;
-  float: right;
-}
-.nav ul li, .nav-stable ul li {
-  float: left;
-}
-.nav ul li:last-child, .nav-stable ul li:last-child {
-  padding-right: 0;
-}
-.nav ul li a, .nav-stable ul li a {
-  padding: 1rem;
-  display: inline-block;
-}
-.nav ul li:hover, .nav-stable ul li:hover{
-  border-color: var(--white, white);
-}
-.nav-bg-hover ul li a:hover {
-  background-color: var(--color-1, black);
-  color: var(--white, white);
-}
-.nav-top-border-hover ul li a:hover {
-  border-top: 0.125rem solid var(--color-1, black);
-  margin-top:-0.125rem;
-}
-.nav-bottom-border-hover ul li a:hover {
-  border-bottom: 0.125rem solid var(--color-1, black);
-  margin-bottom:-0.125rem;
-}
-.toggle-menu ul {
-  display: table;
-  width: 1.5rem;
-}
-.toggle-menu ul li {
+.main-menu {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
   width: 100%;
-  height: 0.1875rem;
-  background-color: var(--color-1, black);
-  margin-bottom: 0.25rem;
+  gap: var(--default-gap);
+  position: static;
 }
-.toggle-menu ul li:last-child {
-  margin-bottom: 0;
+.main-menu a { text-decoration: none; }
+.main-menu input[type="checkbox"] { display: none; }
+/* Logo — give the brand link class="logo"; order controls position,
+   not DOM position */
+.main-menu > a.logo {
+  order: 1;
+  display: flex;
+  align-items: center;
 }
-.main-menu input[type="checkbox"], .main-menu label {
+/* .nav-panel — desktop: an invisible pass-through so .nav and (if
+   nested) .nav-actions lay out as ordinary flex items of .main-menu.
+   Mobile: becomes the actual collapsible box (see media query). */
+.nav-panel {
+  order: 2;
+  display: contents;
+}
+/* Nav links — direct flex children, no <ul>/<li>. A link can be a
+   plain <a>, or a .dropdown (see components-advanced) for a
+   submenu / mega-menu. */
+.nav, .nav-stable {
+  order: 2;
+  display: flex;
+  align-items: center;
+  flex: 1 1 auto;
+  min-width: 0;
+  gap: var(--space-1-2);
+}
+.nav > a, .nav-stable > a {
+  display: inline-block;
+  padding: 1rem;
+  white-space: nowrap;
+}
+/* Form controls (e.g. a <select> style-picker) dropped directly into
+   the nav shouldn't inherit .form-control's width:100% — that's
+   correct for a form field in a normal block layout, but inside this
+   flex nav it stretches to fill all remaining space. Scoped to .nav
+   so regular forms elsewhere are unaffected. */
+.nav > select, .nav-stable > select,
+.nav-group select {
+  width: auto;
+  flex: 0 0 auto;
+}
+.nav-bg-hover > a:hover {
+  background-color: var(--color-1);
+  color: var(--white);
+}
+.nav-top-border-hover > a:hover {
+  border-top: 0.125rem solid var(--color-1);
+  margin-top: -0.125rem;
+}
+.nav-bottom-border-hover > a:hover {
+  border-bottom: 0.125rem solid var(--color-1);
+  margin-bottom: -0.125rem;
+}
+/* Persistent actions slot (Login / Sign up / CTA). Place it OUTSIDE
+   .nav-panel to keep it always visible, or INSIDE .nav-panel to have
+   it collapse together with the nav links on mobile. */
+.nav-actions {
+  order: 3;
+  display: flex;
+  align-items: center;
+  gap: var(--space-1-2);
+  flex-shrink: 0;
+}
+/* Structural helper for the "grouped right" layout — bundles .nav
+   and .nav-actions into one cluster so a single gap separates the
+   logo from the whole group instead of space-between-ing all three.
+   Nest this INSIDE .nav-panel. */
+.nav-group {
+  order: 2;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+.nav-group .nav, .nav-group .nav-actions {
+  flex: 0 0 auto;
+}
+/* Burger button — hidden on desktop, shown at the mobile breakpoint */
+.toggle-menu {
+  order: 4;
   display: none;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  padding: 0.5rem;
 }
+.toggle-menu .icon-menu-close { display: none; }
+.main-menu input[type="checkbox"]:checked ~ .toggle-menu .icon-menu-open  { display: none; }
+.main-menu input[type="checkbox"]:checked ~ .toggle-menu .icon-menu-close { display: block; }
+/* Mobile: burger appears, .nav-panel becomes a collapsible box —
+   animated with max-height/opacity so it works with zero JavaScript. */
 @media only screen and (max-width: 980px) {
-  .main-nav {
-    padding: 1.25rem 0;
-  }
-  .main-menu input[type="checkbox"] {
+  .toggle-menu { display: flex; }
+  .nav-panel {
+    display: block;
     position: absolute;
-    top: -9999px;
-    left: -9999px;
-    background: none;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    max-height: 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden auto;
+    background-color: var(--panel-bg, var(--body-bg, #fff));
+    border: var(--panel-border, 0.0625rem solid rgba(0, 0, 0, 0.08));
+    border-radius: var(--panel-radius, 0.5rem);
+    box-shadow: var(--panel-shadow, 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16));
+    transition: max-height var(--duration-base, 0.25s) var(--easing, ease),
+                opacity var(--duration-base, 0.25s) var(--easing, ease);
+    z-index: var(--z-floating, 100);
   }
-  .main-menu input[type="checkbox"]:focus {
-    background: none;
+  .main-menu input[type="checkbox"]:checked ~ .nav-panel {
+    max-height: 70vh;
+    opacity: 1;
+    visibility: visible;
   }
-  .main-menu label {
-    float: right;
-    padding: 1.2rem 0;
-    display: inline-block;
-    cursor: pointer;
-  }
-  .main-menu input[type="checkbox"]:checked~nav {
-    display: block;
-  }
-  .nav {
-    display: none;
-    background-color: var(--color-1, black);
+  .nav-panel .nav, .nav-panel .nav-actions, .nav-panel .nav-group {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 0;
     width: 100%;
   }
-  .nav ul {
-    width: auto;
-  }
-  .nav ul li {
-    float: none;
-    padding: 0;
-    width: 100%;
-    display: table;
-  }
-  .nav ul li a {
-    color: var(--white, white);
-    font-size: 1.3rem;
-    padding: .9rem 1.8rem;
+  .nav-panel > a, .nav-panel .nav > a, .nav-panel .nav-actions > a {
     display: block;
-    border-bottom: 0.0625rem solid rgba(225, 225, 225, 0.1);
+    padding: 0.9rem 1.5rem;
+    white-space: normal;
+    color: var(--body-color, #111) !important;
+    background-color: transparent;
+    border-bottom: 0.0625rem solid var(--surface-dim, rgba(0, 0, 0, 0.08));
   }
-}
-@media only screen and (max-width: 360px) {
-  .main-menu label {
-    padding: 0.3125rem 0;
-  }
-  .nav {
-    top: 4rem;
-  }
-}
-@media only screen and (max-width: 1440px) {
-  .main-menu {
-    max-width: 95%;
-  }
-}
-@media only screen and (max-width: 480px) {
-  .main-menu {
-    max-width: 90%;
+  .nav-panel > a:last-child, .nav-panel .nav > a:last-child,
+  .nav-panel .nav-actions > a:last-child {
+    border-bottom: none;
   }
 }
 .menu-bordered li {
@@ -1563,6 +1624,136 @@ input:focus, select:focus, textarea:focus {
 }
 .menu-bordered li a {
   padding: 0.45rem;
+}
+/* ============================================================
+   Nav Mega Menu — a full-width mega-menu panel for the main nav.
+
+   Deliberately uses its OWN classes (.nav-mega / .nav-mega-state /
+   .nav-mega-toggle / .nav-mega-panel) instead of reusing the shared
+   .dropdown / .dropdown-menu / .dropdown-state / .dropdown-toggle
+   component above. That component is used by other menus elsewhere
+   (sidebars, account menus, etc.) — any mobile/hover/width override
+   written against those shared classes would silently change every
+   other dropdown on the site too. These classes touch nothing but
+   this one nav item, so there's no way for it to conflict with
+   anything else. No JS.
+
+   Markup:
+   .nav > .nav-mega
+     input[type=checkbox].nav-mega-state   — first inside .nav-mega
+     label.nav-mega-toggle                 — the nav link itself
+     .nav-mega-panel                       — the full panel
+       .row > .col-md-4 ...                — your existing grid
+
+   Note .nav-mega itself is NOT position:relative — that's
+   deliberate, so .nav-mega-panel's containing block bubbles up to
+   .main-nav (position:relative, full width) instead of this small
+   toggle, letting the panel size and center against the whole
+   header rather than a narrow anchor.
+   ============================================================ */
+.nav-mega {
+  display: inline-flex;
+  align-items: center;
+}
+.nav-mega-state {
+  display: none;
+}
+.nav-mega-toggle {
+  display: inline-block;
+  padding: 1rem;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav-mega-toggle::after {
+  content: " \25BE";
+  font-size: 0.75rem;
+  margin-left: 0.5rem;
+}
+.nav-bg-hover .nav-mega-toggle:hover {
+  background-color: var(--color-1);
+  color: var(--white);
+}
+.nav-top-border-hover .nav-mega-toggle:hover {
+  border-top: 0.125rem solid var(--color-1);
+  margin-top: -0.125rem;
+}
+.nav-bottom-border-hover .nav-mega-toggle:hover {
+  border-bottom: 0.125rem solid var(--color-1);
+  margin-bottom: -0.125rem;
+}
+.nav-mega-panel {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: min(100% - 2rem, 75rem);
+  max-width: 95vw;
+  background-color: var(--panel-bg, var(--body-bg, #fff));
+  border: var(--panel-border, 0.0625rem solid rgba(0, 0, 0, 0.08));
+  border-radius: var(--panel-radius, 0.5rem);
+  box-shadow: var(--panel-shadow, 0 0.5rem 1.5rem rgba(0, 0, 0, 0.16));
+  padding: 2rem;
+  z-index: var(--z-floating, 100);
+}
+.nav-mega-state:checked ~ .nav-mega-panel {
+  display: block;
+}
+/* Opens on hover on desktop too — progressive enhancement on top of
+   the checkbox toggle */
+@media (min-width: 981px) {
+  .nav-mega:hover .nav-mega-panel {
+    display: block;
+  }
+}
+/* Mobile: becomes an inline expanding section within the collapsed
+   .nav-panel instead of a floating panel — an absolute panel sized
+   for desktop would either overflow a narrow screen or float
+   disconnected from its toggle. */
+@media only screen and (max-width: 980px) {
+  .nav-panel .nav-mega {
+    display: block;
+    width: 100%;
+  }
+  .nav-panel .nav-mega-toggle {
+    display: block;
+    width: 100%;
+    padding: 0.9rem 1.5rem;
+    white-space: normal;
+    color: var(--body-color, #111) !important;
+    border-bottom: 0.0625rem solid var(--surface-dim, rgba(0, 0, 0, 0.08));
+  }
+  .nav-panel .nav-mega-toggle::after {
+    float: right;
+  }
+  .nav-panel .nav-mega:last-child .nav-mega-toggle {
+    border-bottom: none;
+  }
+  .nav-panel .nav-mega-panel {
+    position: static;
+    left: auto;
+    transform: none;
+    display: none;
+    width: 100%;
+    max-width: none;
+    margin: 0;
+    padding: 0;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+    background-color: var(--surface-hover, rgba(0, 0, 0, 0.03));
+  }
+  .nav-panel .nav-mega-state:checked ~ .nav-mega-panel {
+    display: block;
+  }
+  .nav-panel .nav-mega-panel .row {
+    width: 100%;
+    margin: 0;
+    padding: 1rem 1.5rem;
+  }
+  .nav-panel .nav-mega-panel .menu-item a {
+    padding-left: 2.5rem;
+  }
 }
 /* Breadcrumb */
 .breadcrumb {
