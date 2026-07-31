@@ -1,9 +1,9 @@
 /* Styles */
+@layer style {
 /* Brutalism (Anti-Design) 
 Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.
 Art studios, personal brands, underground music, radical startups.
 */
-@layer style {
 .brutal-style {
   --heading-font-weight: 700;
   --body-bg: var(--white);

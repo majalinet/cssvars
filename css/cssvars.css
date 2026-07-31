@@ -337,7 +337,15 @@ pre code {
 }
 /* fancy title */
 .fancy-title.title-dotted-border {
-  background: url(../img/fabric-dark.png) center repeat-x;
+    background-image: repeating-linear-gradient(
+    to right,
+    var(--grey) 0,
+    var(--grey) 0.0375rem,
+    transparent 0.0375rem,
+    transparent 0.075rem
+  );
+  background-position: center;
+  background-repeat: repeat-x;
 }
 .title-center {  text-align: center;}
 .fancy-title {
@@ -461,9 +469,6 @@ pre code {
 .opacity07, .opacity07-hover:hover { opacity: 0.7; }
 .opacity05, .opacity05-hover:hover { opacity: 0.5; }
 .opacity03, .opacity03-hover:hover { opacity: 0.3; }
-.heading-box {
-  margin: 2.5rem 0;
-}
 *, *::before, *::after {
   box-sizing: inherit;
 }
@@ -815,23 +820,6 @@ article > * + *, aside > * + *, details > * + * , blockquote > * + * {
   border-radius: var(--panel-radius);
   box-shadow: var(--panel-shadow);
   padding: var(--panel-padding);
-}
-.map {
-  width: 100%;
-  height: auto;
-  position: relative;
-  top: 0;
-  left: 0;
-  pointer-events: none;
-}
-.cont {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  color: var(--white, white);
-  box-sizing: border-box;
 }
 /* Icons */
 .icon {
@@ -1342,11 +1330,6 @@ select.form-control  {
   margin-right: 0.3125rem;
   margin-left: 0;
 }
-input::placeholder, textarea::placeholder {
-  color: var(--dark, grey);
-  font-size: 1rem;
-  opacity: 0.6;
-}
 [type="date"] {
   display: block;
   width: 100%;
@@ -1434,7 +1417,6 @@ input:focus, select:focus, textarea:focus {
   opacity: 0.5;
 }
 .parallax-img {
-  background-image: url("../img/img_parallax.jpg");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
