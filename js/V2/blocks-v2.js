@@ -5,304 +5,167 @@ const blocks = [
     {
         name: "Header",
         items: [
-            {
+            {   
                 title: "Header 1",
-                description: "Simple nav, top-border hover, logo left, links right, burger on mobile",
+                description: "Description for item 1",
                 code: `
-    <div class="main-nav p1">
-        <div class="main-menu nav-top-border-hover">
-            <input type="checkbox" id="toggle-h1">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+        <div class="main-nav p1 nav-top-border-hover">
+        <div class="main-menu">
+            <a href="#" id="logo1">
+                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem">
             </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#services">Services</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
-            </div>
-            <label for="toggle-h1" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
             </label>
+            <input type="checkbox" id="toggle-1">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="bold">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>`
+        </div>`
             },
-            {
+            {   
                 title: "Header 2",
-                description: "Contact info bar above a bottom-border hover nav",
+                description: "Description for item 1",
                 code: `
-    <div class="bga-color-1 p-1-2 row justify-content-end">
-        <span class="small m-r-2">
-            <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
-                <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z">
-                </path>
-            </svg>
-            (123) 456-78-90</span>
-        <span class="small m-r-1">
-            <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
-                <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path>
-            </svg>
-            mail@example.com</span>
+<div class="bga-color-1 p-1-2 row justify-content-end">
+    <span class="small m-r-2">
+    <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+        <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z">
+        </path>
+    </svg>
+      (123) 456-78-90</span>
+    <span class="small m-r-1">
+    <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+        <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path>
+    </svg>
+    mail@example.com</span>
     </div>
-    <div class="main-nav ">
-        <div class="main-menu nav-bottom-border-hover">
-            <input type="checkbox" id="toggle-h2">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+    <div class="main-nav nav-top-border-hover">
+        <div class="main-menu">
+            <a href="#" id="logo1">
+                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem">
             </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#services">Services</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
-            </div>
-            <label for="toggle-h2" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
             </label>
+            <input type="checkbox" id="toggle-1">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="bold">Contact</a></li>
+                </ul>
+            </nav>
         </div>
-    </div>`
+    </div>
+</div>`
             },
-            {
+            {   
                 title: "Header 3",
-                description: "Tinted background bar, background-hover nav links",
+                description: "Description for item 3",
                 code: `
-    <div class="main-nav p1">
-        <div class="main-menu bga-color-1 rounded nav-bg-hover">
-            <input type="checkbox" id="toggle-h3">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+           <div class="main-nav p1">
+        <div class="main-menu  bga-color-1 rounded">
+            <a href="#" id="logo1">
+                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2">
             </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#services">Services</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
-            </div>
-            <label for="toggle-h3" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
             </label>
+            <input type="checkbox" id="toggle-1">
+            <nav class="nav">
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact" class="bold">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>`
             },
-            {
+            {   
                 title: "Header 4",
-                description: "Dark background nav, white links, top-border hover",
+                description: "Description for item 4",
                 code: `
-    <div class="main-nav p1 rounded">
-        <div class="main-menu bg-dark rounded main-nav-white nav-top-border-hover">
-            <input type="checkbox" id="toggle-h4">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+                    <div class="main-nav p1 rounded">
+        <div class="main-menu bg-dark rounded">
+            <a href="#" id="logo1">
+                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2">
             </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <a href="#services">Services</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
-            </div>
-            <label for="toggle-h4" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-white-fill icon-s" viewBox="0 0 24 24">
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
                     <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-white-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
             </label>
+            <input type="checkbox" id="toggle-1">
+            <nav class="nav ">
+                <ul>
+                    <li><a href="#about" class="white">About</a></li>
+                    <li><a href="#portfolio" class="white">Portfolio</a></li>
+                    <li><a href="#services" class="white">Services</a></li>
+                    <li><a href="#gallery" class="white">Gallery</a></li>
+                    <li><a href="#contact" class="white bold">Contact</a></li>
+                </ul>
+            </nav>
         </div>
     </div>`
             },
-            {
+            {   
                 title: "Header 5",
-                description: "Grouped-right layout: logo left, links + persistent Login/Sign Up actions grouped on the right",
+                description: "Description for item 5",
                 code: `
     <div class="main-nav p1 rounded">
-        <div class="main-menu rounded shadow-3">
-            <input type="checkbox" id="toggle-h5">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+        <div class="main-menu rounded row ">
+          <div class="col-2">
+            <a href="#" id="logo1">
+                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2 shadow-3 p0 rounded">
             </a>
-            <div class="nav-panel">
-                <div class="nav-group">
-                    <nav class="nav nav-top-border-hover ">
-                        <a href="#about">About</a>
-                        <a href="#portfolio">Portfolio</a>
-                        <a href="#services">Services</a>
-                        <a href="#gallery">Gallery</a>
-                    </nav>
-                    <div class="nav-actions">
-                        <a href="#login">Login</a>
-                        <a href="#signup" class="button">Sign Up</a>
-                    </div>
-                </div>
+          </div>
+
+
+            <div class="col-10 col-md-6">
+              <label for="toggle-1" class="toggle-menu">
+                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                      <path d="M0 0h24v24H0z" fill="none"></path>
+                      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+              </label>
+              <input type="checkbox" id="toggle-1">
+              <nav class="nav">
+                  <ul class="shadow-3 p0 rounded">
+                      <li><a href="#about" class="">About</a></li>
+                      <li><a href="#portfolio" class="">Portfolio</a></li>
+                      <li><a href="#services" class="">Services</a></li>
+                      <li><a href="#gallery" class="">Gallery</a></li>
+                      <li><a href="#contact" class=" bold">Contact</a></li>
+                  </ul>
+              </nav>
             </div>
-            <label for="toggle-h5" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
-            </label>
-        </div>
-    </div>`
-            },
-            {
-                title: "Header 6",
-                description: "Nav with a dropdown submenu (checkbox toggle, no JS) using the shared .dropdown component",
-                code: `
-    <div class="main-nav p1 nav-top-border-hover">
-        <div class="main-menu">
-            <input type="checkbox" id="toggle-h6">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
-            </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <a href="#portfolio">Portfolio</a>
-                    <div class="dropdown">
-                        <input type="checkbox" id="services-dropdown" class="dropdown-state">
-                        <label for="services-dropdown" class="dropdown-toggle">Services</label>
-                        <ul class="dropdown-menu menu">
-                            <li class="dropdown-header">Our Services</li>
-                            <li class="menu-item">
-                                <a href="#web-design">
-                                    <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
-                                        <path d="M4,2A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H10V20H8V22H16V20H14V18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2H4M4,4H20V14H4V4Z"></path>
-                                    </svg>
-                                    Web Design
-                                </a>
-                            </li>
-                            <li class="menu-item">
-                                <a href="#development">
-                                    <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
-                                        <path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path>
-                                    </svg>
-                                    Development
-                                </a>
-                            </li>
-                            <li class="dropdown-divider"></li>
-                            <li class="menu-item">
-                                <a href="#consulting">
-                                    <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
-                                        <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"></path>
-                                    </svg>
-                                    Consulting
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
+
+            <div class="col-2 col-md-4 col-lg-4">
+              <nav class="nav">
+                  <ul class=" shadow-3 p0 rounded">
+                      <li><a href="#gallery">Login</a></li>
+                      <li><a href="#contact">Sign Up</a></li>
+                  </ul>
+              </nav>
             </div>
-            <label for="toggle-h6" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
-            </label>
-        </div>
-    </div>`
-            },
-            {
-                title: "Header 7",
-                description: "Nav with a full-width mega menu panel using .nav-mega (its own dedicated component, no JS)",
-                code: `
-    <div class="main-nav p1 nav-top-border-hover">
-        <div class="main-menu">
-            <input type="checkbox" id="toggle-h7">
-            <a href="#" class="logo">
-                <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
-            </a>
-            <div class="nav-panel">
-                <nav class="nav justify-content-end">
-                    <a href="#about">About</a>
-                    <div class="nav-mega">
-                        <input type="checkbox" id="products-mega" class="nav-mega-state">
-                        <label for="products-mega" class="nav-mega-toggle">Products</label>
-                        <div class="nav-mega-panel">
-                            <div class="row">
-                                <div class="col-12 col-md-4">
-                                    <p class="bold text-uppercase small color-1">Platform</p>
-                                    <ul class="menu">
-                                        <li class="menu-item"><a href="#analytics">Analytics</a></li>
-                                        <li class="menu-item"><a href="#automation">Automation</a></li>
-                                        <li class="menu-item"><a href="#integrations">Integrations</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <p class="bold text-uppercase small color-1">Solutions</p>
-                                    <ul class="menu">
-                                        <li class="menu-item"><a href="#startups">For Startups</a></li>
-                                        <li class="menu-item"><a href="#enterprise">For Enterprise</a></li>
-                                        <li class="menu-item"><a href="#agencies">For Agencies</a></li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <img src="../img/blocks/worker-1.jpg" alt="Featured" class="w-4rem rounded">
-                                    <p class="bold m-t-1 m-b-0">New: Workflow Builder</p>
-                                    <p class="dark small">Automate repetitive tasks in minutes.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                    <a href="#services">Services</a>
-                    <a href="#gallery">Gallery</a>
-                    <a href="#contact" class="bold">Contact</a>
-                </nav>
-            </div>
-            <label for="toggle-h7" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                </svg>
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
-                </svg>
-            </label>
         </div>
     </div>`
             },
@@ -314,7 +177,7 @@ const blocks = [
             {
                 title: "Hero 1",
                 description: "Description for item 1",
-                code: `<div class="row h-100-vh p2 m-v-auto">
+                code: `<div class="row h-100-vh-min p2 m-v-auto">
   <div class="row m-v-auto">
     <div class="col-md-5 m-v-auto p2">
       <p class="grey text-uppercase bold">Free 30 days trial</p>
@@ -353,7 +216,7 @@ const blocks = [
             {
                 title: "Hero 3",
                 description: "Description for item 3",
-                code: `<div class="row h-100-vh p2 m-v-auto">
+                code: `<div class="row h-100-vh-min p2 m-v-auto">
   <div class="row m-v-auto">
         <div class="col-md-6 p2">
         <img src="../img/blocks/technology.jpg" class="img-responsive rounded">
@@ -446,7 +309,7 @@ const blocks = [
             {
                 title: "Hero 5",
                 description: "Description for item 5",
-                code: `<div class="h-100-vh d-flex flex-column justify-content-center bg-light-grey" style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
+                code: `<div class="h-100-vh-min d-flex flex-column justify-content-center bg-light-grey" style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
     <h1 class="center black font-weight-600 display-3">Welcome to our adventure</h1>
     <h5 class="center black font-weight-400">A place where amazing things get done!</h5>
   <div class="center m-t-2"> 
@@ -491,7 +354,7 @@ const blocks = [
             {
                 title: "Hero 8",
                 description: "Description for item 8",
-                code: `<div class="carousel p0 h-100-vh">
+                code: `<div class="carousel p0 h-100-vh-min">
   <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
   <input type="radio" name="slides" id="radio-2" class="radio-2">
   <input type="radio" name="slides" id="radio-3" class="radio-3">
@@ -813,8 +676,8 @@ const blocks = [
                 title: "Content 5",
                 description: "Description for Content 5",
                 code: `
-<section class="parallax-img m-t-4 h-100-vh m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
-  <div class="h-100-vh d-flex flex-column justify-content-center align-items-center p-v-3">
+<section class="parallax-img m-t-4 h-100-vh-min m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
+  <div class="h-100-vh-min d-flex flex-column justify-content-center align-items-center p-v-3">
     <div class="col-8 shadow-3 p3 rounded bg-white center">
         <svg class="icon-color-1-fill icon-ml" viewBox="0 0 24 24"><path d="M9.983 3v7.391c0 5.704-3.731 9.57-8.983 10.609l-.995-2.151c2.432-.917 3.995-3.638 3.995-5.849h-4v-10h9.983zm14.017 0v7.391c0 5.704-3.748 9.571-9 10.609l-.996-2.151c2.433-.917 3.996-3.638 3.996-5.849h-3.983v-10h9.983z"></path></svg>
         <h3 class="black bold center">We believe that people can be truly happy on the outside only after reaching happiness within.</h3>
@@ -1206,7 +1069,7 @@ const blocks = [
                 title: "List 4",
                 description: "Description for list 4",
                 code: `
-<section class="container-fluid m-p-4 h-100-vh bg-light-grey center d-flex flex-column justify-content-center">
+<section class="container-fluid m-p-4 h-100-vh-min bg-light-grey center d-flex flex-column justify-content-center">
   <h2 class="center black font-weight-600">Our Services</h2>
   <p class="h5 dark">List of awsome Services CSS Vars</p>
   <div class="row justify-content-center">
@@ -2107,13 +1970,13 @@ const blocks = [
                 title: "Testimonial 1",
                 description: "Description for Testimonial 1",
                 code: `
-<section class="parallax-img h-100-vh m-v-2"
+<section class="parallax-img h-100-vh-min m-v-2"
   style="background-image: url('../img/vika/design-company/background-2.jpg');">
   <div class="p-v-4">
     <div class="row">
       <div class="col-md-5"></div>
       <div class="col-md-7">
-        <div class="d-flex flex-column justify-content-center h-100-vh">
+        <div class="d-flex flex-column justify-content-center h-100-vh-min">
           <div class="center">
             <div class="container">
               <h6 class="white bold center text-uppercase">WHAT CLIENTS SAY?</h6>
