@@ -146,136 +146,332 @@
       <div class="col-lg-10 p-d-2">
 
         
+<header class="container p2 m-v-2">
+  <h1 class="black">CSS Vars — Carousel System</h1>
+  <p>A dependency-free, zero-JavaScript carousel system. Everything below runs on
+    <code>:checked</code> state changes and CSS animations only — no scripts, no
+    build step. One stylesheet (<code>cssvars-carousel-final.css</code>) covers
+    every variant on this page.</p>
+
+  <h3 class="black m-t-2">The rule that makes multiple instances safe</h3>
+  <p>Radio button <code>name</code> grouping is global to the whole document, not
+    scoped to whatever container they sit in. Every carousel below uses its own
+    unique prefix on its <code>name</code>/<code>id</code> values (e.g.
+    <code>dots-</code>, <code>xfade-</code>, <code>link-</code>) — that's the only
+    thing you need to change per instance to safely repeat any of these on the
+    same page. Class names (<code>.carousel-fixed</code>, <code>radio-1</code>,
+    etc.) are always safe to reuse as-is.</p>
+</header>
+
+
+<!-- =================================================================
+     1. STATIC — classic dots
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">1. Static — <code>.carousel-fixed</code>, classic dots</h2>
+  <p>Manual click only. Uses a CSS variable + <code>calc()</code> instead of
+    hardcoded per-slide percentages, so supporting more slides is a one-line
+    addition (see the CSS comments) rather than a math redo.</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add:</strong>
+    <ul>
+      <li><code>carousel-fixed</code> → the outer wrapper <code>&lt;div&gt;</code></li>
+      <li><code>slides</code> → the <code>&lt;ul&gt;</code> holding the slides</li>
+      <li><code>slidesNavigation</code> → the <code>&lt;div&gt;</code> wrapping the dot <code>&lt;label&gt;</code>s</li>
+      <li>Everything else (the <code>&lt;li&gt;</code>s, the radios, the labels) needs no class at all — just correct <code>id</code>/<code>for</code>/<code>name</code> pairing.</li>
+    </ul>
+  </div>
+
+  <div class="carousel-fixed" style="height:12rem;">
+    <input type="radio" name="dots-slides" id="dots-radio-1" checked>
+    <input type="radio" name="dots-slides" id="dots-radio-2">
+    <input type="radio" name="dots-slides" id="dots-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-color-1"><h2>Slide 1</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-success"><h2>Slide 2</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-info"><h2>Slide 3</h2></div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="dots-radio-1"></label>
+      <label for="dots-radio-2"></label>
+      <label for="dots-radio-3"></label>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     1b. FLEX-WRAP LINKS — button row + right column
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">1b. Flexible links — <code>.slidesNavigation-flex</code></h2>
+  <p>Each link is a <code>&lt;label&gt;</code> (invisible, just the click target)
+    wrapping a <code>&lt;div&gt;</code> you fully design — any content, any
+    styling. The wrapper itself carries no position, so you place and lay it out
+    however you want with ordinary utility classes.</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add (both examples below):</strong>
+    <ul>
+      <li><code>carousel-fixed</code> → the outer wrapper <code>&lt;div&gt;</code></li>
+      <li><code>slides</code> → the <code>&lt;ul&gt;</code></li>
+      <li><code>slidesNavigation-flex</code> → the <code>&lt;div&gt;</code> wrapping the <code>&lt;label&gt;</code> links, in place of <code>slidesNavigation</code></li>
+      <li>Inside each <code>&lt;label&gt;</code>, the <code>&lt;div&gt;</code> is yours — style it however you want (below it just uses the framework's own <code>button</code> class)</li>
+    </ul>
+  </div>
+
+  <h4 class="black m-t-2">Row of buttons, below the carousel</h4>
+  <div class="carousel-fixed">
+    <input type="radio" name="btnrow-slides" id="btnrow-radio-1" checked>
+    <input type="radio" name="btnrow-slides" id="btnrow-radio-2">
+    <input type="radio" name="btnrow-slides" id="btnrow-radio-3">
+    <ul class="slides" style="height:12rem;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-warning"><h2>Design</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-danger"><h2>Development</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-luxury"><h2>Support</h2></div></li>
+    </ul>
+    <!-- Must stay inside .carousel-fixed (sibling of the radio inputs) —
+         that's what the active-state highlight selector requires. -->
+    <div class="slidesNavigation-flex m-t-1">
+      <label for="btnrow-radio-1"><div class="button m0">Design</div></label>
+      <label for="btnrow-radio-2"><div class="button m0">Development</div></label>
+      <label for="btnrow-radio-3"><div class="button m0">Support</div></label>
+    </div>
+  </div>
+
+  <h4 class="black m-t-2">Column, overlaid on the right — composed from utility classes only</h4>
+  <p><strong>Additional classes on the <code>slidesNavigation-flex</code> wrapper</strong> for this
+    positioning: <code>position-absolute</code>, <code>top-0</code>,
+    <code>bottom-0</code>, <code>right-1</code> (span the full height near the
+    right edge), <code>flex-column</code> + <code>justify-content-center</code>
+    (center the buttons vertically, no transform needed), <code>gap-1</code>,
+    <code>z-floating</code>. All existing cssvars utilities — nothing new to
+    learn.</p>
+  <div class="carousel-fixed" style="height:14rem;">
+    <input type="radio" name="col-slides" id="col-radio-1" checked>
+    <input type="radio" name="col-slides" id="col-radio-2">
+    <input type="radio" name="col-slides" id="col-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-dark"><h2>Overview</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-color-2"><h2>Our Mission</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-success"><h2>Contact</h2></div></li>
+    </ul>
+    <!-- position-absolute + top-0 + bottom-0 + right-1 span the full height
+         near the right edge; flex-column + justify-content-center centers
+         the buttons vertically without needing any transform. -->
+    <div class="slidesNavigation-flex position-absolute top-0 bottom-0 right-1 d-flex flex-column justify-content-center gap-1 z-floating">
+      <label for="col-radio-1"><div class="button m0">Overview</div></label>
+      <label for="col-radio-2"><div class="button m0">Mission</div></label>
+      <label for="col-radio-3"><div class="button m0">Contact</div></label>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     1c. ANIMATIONS — cross-fade / cross-fade + zoom
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">1c. Animations — <code>.carousel-crossfade</code> / <code>.zoom</code></h2>
+  <p>Opt-in add-on classes, same mechanism underneath. Durations ride on
+    <code>--duration-slow</code>/<code>--easing</code>, so
+    <code>prefers-reduced-motion</code> is respected automatically.</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add:</strong>
+    <ul>
+      <li><code>carousel-crossfade</code> → added <em>alongside</em> <code>carousel-fixed</code> on the same wrapper <code>&lt;div&gt;</code> (i.e. <code>class="carousel-fixed carousel-crossfade"</code>)</li>
+      <li><code>zoom</code> → added on top of that, same wrapper, for the Ken Burns version (<code>class="carousel-fixed carousel-crossfade zoom"</code>)</li>
+      <li><code>slide-media</code> → required on the content <code>&lt;div&gt;</code> inside <em>each</em> <code>&lt;li&gt;</code> — this is what the zoom animation actually targets, so captions/text on top of it stay still</li>
+    </ul>
+  </div>
+
+  <h4 class="black m-t-2">Cross-fade — no horizontal movement</h4>
+  <div class="carousel-fixed carousel-crossfade" style="height:12rem;">
+    <input type="radio" name="xfade-slides" id="xfade-radio-1" checked>
+    <input type="radio" name="xfade-slides" id="xfade-radio-2">
+    <input type="radio" name="xfade-slides" id="xfade-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-color-1"><h2>Slide 1</h2></div></li>
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-success"><h2>Slide 2</h2></div></li>
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-info"><h2>Slide 3</h2></div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="xfade-radio-1"></label>
+      <label for="xfade-radio-2"></label>
+      <label for="xfade-radio-3"></label>
+    </div>
+  </div>
+
+  <h4 class="black m-t-2">Cross-fade + Ken Burns zoom</h4>
+  <div class="carousel-fixed carousel-crossfade zoom" style="height:12rem; overflow:hidden;">
+    <input type="radio" name="zoom-slides" id="zoom-radio-1" checked>
+    <input type="radio" name="zoom-slides" id="zoom-radio-2">
+    <input type="radio" name="zoom-slides" id="zoom-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-warning"><h2>Slide 1</h2></div></li>
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-danger"><h2>Slide 2</h2></div></li>
+      <li><div class="slide-media h-100 d-flex align-items-center justify-content-center bga-luxury"><h2>Slide 3</h2></div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="zoom-radio-1"></label>
+      <label for="zoom-radio-2"></label>
+      <label for="zoom-radio-3"></label>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     1d. LINKS INSIDE SLIDES — prev/next + in-slide CTA
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">1d. Links inside slides — prev/next arrows + CTA</h2>
+  <p>A <code>&lt;label for="..."&gt;</code> works anywhere, including inside a
+    slide's own content. Prev/Next needs one pair per slide, each pointing at
+    its actual neighbor (wraparound included) — CSS can't compute
+    "current + 1" dynamically.</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add:</strong>
+    <ul>
+      <li><code>carousel-fixed</code> + <code>slides</code> → same as the base carousel, no change</li>
+      <li><code>slide-prev</code> → on a <code>&lt;label&gt;</code> placed inside a slide's <code>&lt;li&gt;</code>, pointing (<code>for</code>) at the previous slide's radio</li>
+      <li><code>slide-next</code> → same idea, pointing at the next slide's radio</li>
+      <li><code>slide-cta</code> → on any <code>&lt;label&gt;</code> inside a slide's content that should jump to a specific other slide (combine with <code>button</code> for the framework's own button look, as below)</li>
+    </ul>
+  </div>
+
+  <div class="carousel-fixed" style="height:14rem;">
+    <input type="radio" name="pn-slides" id="pn-radio-1" checked>
+    <input type="radio" name="pn-slides" id="pn-radio-2">
+    <input type="radio" name="pn-slides" id="pn-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center bga-color-1">
+          <div class="center">
+            <h2>Design</h2>
+            <label for="pn-radio-3" class="button slide-cta m-t-1">Skip to Support &rarr;</label>
+          </div>
+        </div>
+        <label for="pn-radio-3" class="slide-prev">&larr;</label>
+        <label for="pn-radio-2" class="slide-next">&rarr;</label>
+      </li>
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center bga-success">
+          <h2>Development</h2>
+        </div>
+        <label for="pn-radio-1" class="slide-prev">&larr;</label>
+        <label for="pn-radio-3" class="slide-next">&rarr;</label>
+      </li>
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center bga-info">
+          <h2>Support</h2>
+        </div>
+        <label for="pn-radio-2" class="slide-prev">&larr;</label>
+        <label for="pn-radio-1" class="slide-next">&rarr;</label>
+      </li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     2. AUTOPLAY — hover to pause
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">2. Autoplay — <code>.carousel-autoplay</code></h2>
+  <p>No radios, no clicking — a looping <code>@keyframes</code> animation
+    advances the slides on its own. Hover or focus pauses it (fixed: both
+    the animation-name and play-state now use longhand properties, so the
+    per-count classes can never silently reset play-state back to
+    "running").</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add:</strong>
+    <ul>
+      <li><code>carousel-autoplay</code> → the outer wrapper <code>&lt;div&gt;</code></li>
+      <li><code>slides-4</code> (or <code>slides-6</code>) → same wrapper, alongside <code>carousel-autoplay</code> — picks which pre-built timing/keyframes to use for that slide count</li>
+      <li><code>slides</code> → the <code>&lt;ul&gt;</code>, same as always</li>
+      <li>No radios needed at all for this variant — nothing to click.</li>
+    </ul>
+  </div>
+
+  <div class="carousel-autoplay slides-4" style="height:12rem;">
+    <ul class="slides" style="height:100%;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-warning"><h2>Slide 1</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-danger"><h2>Slide 2</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-luxury"><h2>Slide 3</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-dark"><h2>Slide 4</h2></div></li>
+    </ul>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     3. AUTOPLAY + LINKED DOTS
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">3. Autoplay + clickable dots — <code>.carousel-autoplay-linked</code></h2>
+  <p>Dots track the current slide automatically (synced <code>@keyframes</code>
+    per dot, not <code>:checked</code>). Click one to jump there — the cycle
+    keeps going automatically from that point, rather than freezing.</p>
+
+  <div class="panel p1 m-b-1">
+    <strong>Classes to add:</strong>
+    <ul>
+      <li><code>carousel-autoplay-linked</code> → the outer wrapper <code>&lt;div&gt;</code> (built for 4 slides — see the CSS comments for extending it)</li>
+      <li><code>slides</code> → the <code>&lt;ul&gt;</code></li>
+      <li><code>slidesNavigation</code> → the <code>&lt;div&gt;</code> wrapping the dot <code>&lt;label&gt;</code>s — same class as the classic static dots, no separate name for this variant</li>
+      <li>Radios <em>are</em> needed here (unlike plain autoplay) — they're what a click switches to when jumping to a slide</li>
+    </ul>
+  </div>
+
+  <div class="carousel-autoplay-linked" style="height:12rem;">
+    <input type="radio" name="link-slides" id="link-radio-1">
+    <input type="radio" name="link-slides" id="link-radio-2">
+    <input type="radio" name="link-slides" id="link-radio-3">
+    <input type="radio" name="link-slides" id="link-radio-4">
+    <ul class="slides" style="height:100%;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-color-2"><h2>Slide 1</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-success"><h2>Slide 2</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-info"><h2>Slide 3</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-warning"><h2>Slide 4</h2></div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="link-radio-1"></label>
+      <label for="link-radio-2"></label>
+      <label for="link-radio-3"></label>
+      <label for="link-radio-4"></label>
+    </div>
+  </div>
+</section>
+
+
+<!-- =================================================================
+     REFERENCE
+     ================================================================= -->
+<section class="container p2 m-v-3">
+  <h2 class="black">Reference</h2>
+  <table class="w-100">
+    <thead>
+      <tr><th class="p-h-1">Class</th><th class="p-h-1">What it does</th><th class="p-h-1">Trade-off</th></tr>
+    </thead>
+    <tbody>
+      <tr><td class="p-h-1"><code>.carousel-fixed</code></td><td class="p-h-1">Manual, click-driven</td><td class="p-h-1">No autoplay</td></tr>
+      <tr><td class="p-h-1"><code>.slidesNavigation</code></td><td class="p-h-1">Classic dot links</td><td class="p-h-1">Fixed dot design</td></tr>
+      <tr><td class="p-h-1"><code>.slidesNavigation-flex</code></td><td class="p-h-1">Fully custom div-based links</td><td class="p-h-1">None — most flexible option</td></tr>
+      <tr><td class="p-h-1"><code>.carousel-crossfade</code></td><td class="p-h-1">Fade instead of slide</td><td class="p-h-1">None</td></tr>
+      <tr><td class="p-h-1"><code>.zoom</code></td><td class="p-h-1">Ken Burns zoom (needs <code>.slide-media</code> wrapper)</td><td class="p-h-1">Requires <code>.carousel-crossfade</code></td></tr>
+      <tr><td class="p-h-1"><code>.slide-prev</code> / <code>.slide-next</code></td><td class="p-h-1">Per-slide prev/next arrows</td><td class="p-h-1">One pair per slide, authored manually</td></tr>
+      <tr><td class="p-h-1"><code>.carousel-autoplay</code></td><td class="p-h-1">Automatic, no clicking</td><td class="p-h-1">Can't also click-to-jump</td></tr>
+      <tr><td class="p-h-1"><code>.carousel-autoplay-linked</code></td><td class="p-h-1">Automatic + clickable, resumes on click</td><td class="p-h-1">O(N²) CSS size — best for ≤4-6 slides</td></tr>
+    </tbody>
+  </table>
+</section>
   
         
-<div class="row" id="carousel">
-<br><br>
-<!-- Css Carousel -->
-<div class="carousel carousel-small-img">
-        <h2>Carousel</h2>						
-        <input type="radio" name="slides" id="radio-1" class="radio-1" checked>
-        <input type="radio" name="slides" id="radio-2" class="radio-2" >
-        <input type="radio" name="slides" id="radio-3" class="radio-3" >
-        <input type="radio" name="slides" id="radio-4" class="radio-4" >
-        <ul class="slides">
-             <li class="slide">
-        <p>
-           <q>It was a pleasure to work with him</q> 
-          <span class="author">
-          <img src="https://pbs.twimg.com/profile_images/1832861297/GordonShumway12.jpg" class="w-25">
-                    </span>
-                    <p>John Doe</p>
-        </p>
-       </li>        
-        <li class="slide">
-          <p>
-            <q>This is a very good Company</q> 
-            <span class="author">
-              <img src="https://i.pinimg.com/736x/3f/c5/87/3fc587af121759209c53132a71c03c97--record-player-swing.jpg" class="w-25">
-              
-            </span>
-            <p>Kim Doe</p>
-
-          </p>
-       </li>
-      <li class="slide">
-         <p>
-            <q>This is pretty cool</q> 
-            <span class="author">
-            <img src="https://pbs.twimg.com/profile_images/1832861297/GordonShumway12.jpg" class="w-25">
-            <p>Ann Doe</p>
-            </span>
-         </p>
-      </li>
-      <li class="slide">
-        <p>
-          <q>This is awesome. Only Css you say?</q> 
-          <span class="author">
-            <img src="http://www.claudiobernasconi.ch/wp-content/uploads/2014/03/github_octocat-300x300.jpg" class="w-25">
-            <p>Vika Doe</p>
-          </span>
-        </p>
-       </li>
-        </ul>
-        <div class="slidesNavigation">
-            <label for="radio-1" id="dotForRadio-1"></label>
-            <label for="radio-2" id="dotForRadio-2"></label>
-            <label for="radio-3" id="dotForRadio-3"></label>
-            <label for="radio-4" id="dotForRadio-4"></label>
-        </div>
-</div>		
-
-</div>
-<script src="https://gist.github.com/majalinet/da5a3330787d7e9def723e254d27404f.js"></script>      
-
-<div class="carousel">
-<h2>Carousel content</h2>						
-<input type="radio" name="slides2" id="radio-12" class="radio-1" checked>
-<input type="radio" name="slides2" id="radio-22" class="radio-2">
-<input type="radio" name="slides2" id="radio-32" class="radio-3">
-<input type="radio" name="slides2" id="radio-42" class="radio-1">
-<ul class="slides">
-     <li class="slide">
-        <div class="row">
-
-
-            <div class="col-md-6  col-lg-4">
-                <h5>rounded</h5>
-                <img src="../img/image.png" class="img-responsive rounded" alt="alt text">
-            </div>
-            <div class="col-md-6  col-lg-4">
-                    <h5>circle</h5>
-                    <img src="../img/image.png" class="img-responsive circle" alt="alt text">
-                </div>     
-                <div class="col-md-6  col-lg-4">
-                        <h5>img-thumnail</h5>
-                        <img src="../img/image.png" class="img-responsive img-thumbnail" alt="alt text">
-                    </div>     
-        </div>
-</li>        
-<li class="slide">
-    <div class="row">
-
-
-
-            <div class="col-md-6  col-lg-4">
-                    <h5>img-thumnail</h5>
-                    <img src="../img/image.png" class="img-responsive img-thumbnail" alt="alt text">
-                </div>     
-                    
-                <div class="col-md-6  col-lg-4">
-                        <h5>rounded bordered</h5>
-                <img src="../img/image.png" class="img-responsive rounded bordered" alt="alt text">
-        </div>
-    </div>
-</li>
-<li class="slide">
- <p>
-    <q>This is pretty cool</q> 
-    <span class="author">
-    <img src="https://pbs.twimg.com/profile_images/1832861297/GordonShumway12.jpg">
-    </span>
- </p>
-</li>
-<li class="slide">
-<p>
-  <q>This is awesome. Only Css you say?</q> 
-  <span class="author">
-    <img src="http://www.claudiobernasconi.ch/wp-content/uploads/2014/03/github_octocat-300x300.jpg">
-  </span>
-</p>
-</li>
-</ul>
-<div class="slidesNavigation">
-    <label for="radio-12" id="dotForRadio-12"></label>
-    <label for="radio-22" id="dotForRadio-22"></label>
-    <label for="radio-32" id="dotForRadio-32"></label>
-    <label for="radio-42" id="dotForRadio-42"></label>
-</div>
-</div>		
-
-<script src="https://gist.github.com/majalinet/bf85b837ad933c07aa64258b17b804af.js"></script>
-
 
 
  </div>

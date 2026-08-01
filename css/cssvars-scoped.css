@@ -2097,56 +2097,302 @@ left: 105%;
 .cssvars .footer-links a { color: var(--body-color); text-decoration: none; }
 .cssvars .footer-links a:hover { color: var(--color-1); }
 /*Carousel*/
-.cssvars .carousel {
+.cssvars .carousel-fixed {
   position: relative;
   overflow: hidden;
 }
-.cssvars .carousel .slides {
-  width: 500%;
-  left: 0;
-  padding-left: 0;
-  list-style: none;
-  position: relative;
-  transition: transform 0.5s;
-}
-.cssvars .carousel .slides li {
-  width: 20%;
-  height: 100%;
-  position: relative;
-  float: left;
-}
-.cssvars .carousel .slidesNavigation {
-  display: block;
-  list-style: none;
-  bottom: 1rem;
-  position: absolute;
-  left: 50%;
-  margin-left: -3.25rem;
-}
-.cssvars .carousel input {
+.cssvars .carousel-fixed input[type="radio"] {
   display: none;
 }
-.cssvars .carousel .slidesNavigation label {
-  float: left;
-  margin: 0.375rem;
-  height: 1.25rem;
-  width: 1.25rem;
-  border-radius: 50%;
-  border: solid 0.0625rem var(--grey, #2980b9);
+.cssvars .carousel-fixed .slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  transition: transform var(--duration-slow, 0.4s) var(--easing, ease);
+  transform: translateX(calc(var(--active-slide, 0) * -100%));
 }
-.cssvars .carousel .slidesNavigation label:hover {
+.cssvars .carousel-fixed .slides > li {
+  flex: 0 0 100%;
+  min-width: 100%;
+  position: relative;
+}
+.cssvars .carousel-fixed .slidesNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-floating, 100);
+}
+.cssvars .carousel-fixed .slidesNavigation label {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: solid 0.0625rem var(--dark);
   cursor: pointer;
 }
-.cssvars .radio-1:checked~.slides {transform: translateX(0%);}
-.cssvars .radio-2:checked~.slides {transform: translateX(-20%);}
-.cssvars .radio-3:checked~.slides {transform: translateX(-40%);}
-.cssvars .radio-4:checked~.slides {transform: translateX(-60%);}
-.cssvars .radio-5:checked~.slides {transform: translateX(-80%);}
-
-.cssvars .carousel .radio-1:checked~.slidesNavigation label#dotForRadio-1, .cssvars .carousel .radio-2:checked~.slidesNavigation label#dotForRadio-2, .cssvars .carousel .radio-3:checked~.slidesNavigation label#dotForRadio-3, 
-.cssvars .carousel .radio-4:checked~.slidesNavigation label#dotForRadio-4, .cssvars .carousel .radio-5:checked~.slidesNavigation label#dotForRadio-5 {
+.cssvars .carousel-fixed input:nth-of-type(1):checked  ~ .slides { --active-slide: 0; }
+.cssvars .carousel-fixed input:nth-of-type(2):checked  ~ .slides { --active-slide: 1; }
+.cssvars .carousel-fixed input:nth-of-type(3):checked  ~ .slides { --active-slide: 2; }
+.cssvars .carousel-fixed input:nth-of-type(4):checked  ~ .slides { --active-slide: 3; }
+.cssvars .carousel-fixed input:nth-of-type(5):checked  ~ .slides { --active-slide: 4; }
+.cssvars .carousel-fixed input:nth-of-type(6):checked  ~ .slides { --active-slide: 5; }
+.cssvars .carousel-fixed input:nth-of-type(1):checked  ~ .slidesNavigation label:nth-of-type(1),
+.cssvars .carousel-fixed input:nth-of-type(2):checked  ~ .slidesNavigation label:nth-of-type(2),
+.cssvars .carousel-fixed input:nth-of-type(3):checked  ~ .slidesNavigation label:nth-of-type(3),
+.cssvars .carousel-fixed input:nth-of-type(4):checked  ~ .slidesNavigation label:nth-of-type(4),
+.cssvars .carousel-fixed input:nth-of-type(5):checked  ~ .slidesNavigation label:nth-of-type(5),
+.cssvars .carousel-fixed input:nth-of-type(6):checked  ~ .slidesNavigation label:nth-of-type(6) {
   background: var(--color-1, black);
 }
+.cssvars .slidesNavigation-flex {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+.cssvars .slidesNavigation-flex label {
+  display: block;
+  cursor: pointer;
+}
+.cssvars .carousel-fixed input:nth-of-type(1):checked ~ .slidesNavigation-flex label:nth-of-type(1) > div,
+.cssvars .carousel-fixed input:nth-of-type(2):checked ~ .slidesNavigation-flex label:nth-of-type(2) > div,
+.cssvars .carousel-fixed input:nth-of-type(3):checked ~ .slidesNavigation-flex label:nth-of-type(3) > div,
+.cssvars .carousel-fixed input:nth-of-type(4):checked ~ .slidesNavigation-flex label:nth-of-type(4) > div,
+.cssvars .carousel-fixed input:nth-of-type(5):checked ~ .slidesNavigation-flex label:nth-of-type(5) > div,
+.cssvars .carousel-fixed input:nth-of-type(6):checked ~ .slidesNavigation-flex label:nth-of-type(6) > div {
+  outline: 0.125rem solid var(--color-1, black);
+  outline-offset: 0.125rem;
+}
+.cssvars .carousel-crossfade .slides {
+  display: grid;
+  transform: none;
+}
+.cssvars .carousel-crossfade .slides > li {
+  grid-area: 1 / 1;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity var(--duration-slow, 0.4s) var(--easing, ease);
+}
+.cssvars .carousel-crossfade input:nth-of-type(1):checked  ~ .slides li:nth-of-type(1),
+.cssvars .carousel-crossfade input:nth-of-type(2):checked  ~ .slides li:nth-of-type(2),
+.cssvars .carousel-crossfade input:nth-of-type(3):checked  ~ .slides li:nth-of-type(3),
+.cssvars .carousel-crossfade input:nth-of-type(4):checked  ~ .slides li:nth-of-type(4),
+.cssvars .carousel-crossfade input:nth-of-type(5):checked  ~ .slides li:nth-of-type(5),
+.cssvars .carousel-crossfade input:nth-of-type(6):checked  ~ .slides li:nth-of-type(6) {
+  opacity: 1;
+  z-index: 1;
+}
+.cssvars .zoom.carousel-crossfade .slide-media {
+  animation: carousel-kenburns 6s ease-in-out infinite alternate;
+  animation-play-state: paused;
+}
+@keyframes carousel-kenburns {
+  from { transform: scale(1); }
+  to   { transform: scale(1.08); }
+}
+.cssvars .zoom.carousel-crossfade input:nth-of-type(1):checked  ~ .slides li:nth-of-type(1)  .slide-media,
+.cssvars .zoom.carousel-crossfade input:nth-of-type(2):checked  ~ .slides li:nth-of-type(2)  .slide-media,
+.cssvars .zoom.carousel-crossfade input:nth-of-type(3):checked  ~ .slides li:nth-of-type(3)  .slide-media,
+.cssvars .zoom.carousel-crossfade input:nth-of-type(4):checked  ~ .slides li:nth-of-type(4)  .slide-media,
+.cssvars .zoom.carousel-crossfade input:nth-of-type(5):checked  ~ .slides li:nth-of-type(5)  .slide-media,
+.cssvars .zoom.carousel-crossfade input:nth-of-type(6):checked  ~ .slides li:nth-of-type(6)  .slide-media {
+  animation-play-state: running;
+}
+.cssvars .carousel-fixed .slide-prev,
+.cssvars .carousel-fixed .slide-next {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: var(--z-floating, 100);
+  cursor: pointer;
+  width: 2.5rem;
+  height: 2.5rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--surface-overlay);
+  color: var(--white);
+}
+.cssvars .carousel-fixed .slide-prev { left: 1rem; }
+.cssvars .carousel-fixed .slide-next { right: 1rem; }
+.cssvars .carousel-fixed .slide-prev:hover,
+.cssvars .carousel-fixed .slide-next:hover {
+  background: var(--color-1, black);
+}
+.cssvars .carousel-fixed .slide-cta {
+  cursor: pointer;
+}
+.cssvars .carousel-autoplay {
+  position: relative;
+  overflow: hidden;
+}
+.cssvars .carousel-autoplay .slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation-timing-function: var(--easing-in-out, ease-in-out);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.cssvars .carousel-autoplay .slides > li {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+.cssvars .carousel-autoplay:hover .slides,
+.cssvars .carousel-autoplay:focus-within .slides {
+  animation-play-state: paused;
+}
+.cssvars .carousel-autoplay.slides-4 .slides {
+  animation-name: carousel-autoplay-4;
+  animation-duration: 16s;
+}
+@keyframes carousel-autoplay-4 {
+  0%,   22% { transform: translateX(0%); }
+  25%,  47% { transform: translateX(-100%); }
+  50%,  72% { transform: translateX(-200%); }
+  75%,  97% { transform: translateX(-300%); }
+  100%      { transform: translateX(-300%); }
+}
+.cssvars .carousel-autoplay.slides-6 .slides {
+  animation-name: carousel-autoplay-6;
+  animation-duration: 24s;
+}
+@keyframes carousel-autoplay-6 {
+  0%,    14.6% { transform: translateX(0%); }
+  16.6%, 31.3% { transform: translateX(-100%); }
+  33.3%, 47.9% { transform: translateX(-200%); }
+  50%,   64.6% { transform: translateX(-300%); }
+  66.6%, 81.3% { transform: translateX(-400%); }
+  83.3%, 97.9% { transform: translateX(-500%); }
+  100%         { transform: translateX(-500%); }
+}
+.cssvars .carousel-autoplay-linked {
+  position: relative;
+  overflow: hidden;
+}
+.cssvars .carousel-autoplay-linked input[type="radio"] {
+  display: none;
+}
+.cssvars .carousel-autoplay-linked .slides {
+  display: flex;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  animation-name: carousel-autoplay-4;
+  animation-duration: 16s;
+  animation-timing-function: var(--easing-in-out, ease-in-out);
+  animation-iteration-count: infinite;
+  animation-play-state: running;
+}
+.carousel-autoplay-linked .slides > li {
+  flex: 0 0 100%;
+  min-width: 100%;
+}
+.cssvars .carousel-autoplay-linked:hover .slides,
+.cssvars .carousel-autoplay-linked:hover .slidesNavigation label,
+.cssvars .carousel-autoplay-linked:focus-within .slides,
+.cssvars .carousel-autoplay-linked:focus-within .slidesNavigation label {
+  animation-play-state: paused;
+}
+@keyframes carousel-autoplay-4 {
+  0%,   22% { transform: translateX(0%); }
+  25%,  47% { transform: translateX(-100%); }
+  50%,  72% { transform: translateX(-200%); }
+  75%,  97% { transform: translateX(-300%); }
+  100%      { transform: translateX(-300%); }
+}
+@keyframes carousel-resume-4-1 { /* start at slide 2 */
+  0%,   22% { transform: translateX(-100%); }
+  25%,  47% { transform: translateX(-200%); }
+  50%,  72% { transform: translateX(-300%); }
+  75%,  97% { transform: translateX(0%); }
+  100%      { transform: translateX(0%); }
+}
+@keyframes carousel-resume-4-2 { /* start at slide 3 */
+  0%,   22% { transform: translateX(-200%); }
+  25%,  47% { transform: translateX(-300%); }
+  50%,  72% { transform: translateX(0%); }
+  75%,  97% { transform: translateX(-100%); }
+  100%      { transform: translateX(-100%); }
+}
+@keyframes carousel-resume-4-3 { /* start at slide 4 */
+  0%,   22% { transform: translateX(-300%); }
+  25%,  47% { transform: translateX(0%); }
+  50%,  72% { transform: translateX(-100%); }
+  75%,  97% { transform: translateX(-200%); }
+  100%      { transform: translateX(-200%); }
+}
+.cssvars .carousel-autoplay-linked input:nth-of-type(1):checked ~ .slides { animation-name: carousel-autoplay-4; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(2):checked ~ .slides { animation-name: carousel-resume-4-1; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(3):checked ~ .slides { animation-name: carousel-resume-4-2; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slides { animation-name: carousel-resume-4-3; }
+.cssvars .carousel-autoplay-linked .slidesNavigation {
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  position: absolute;
+  bottom: 1rem;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: var(--z-floating, 100);
+}
+.cssvars .carousel-autoplay-linked .slidesNavigation label {
+  display: block;
+  width: 0.75rem;
+  height: 0.75rem;
+  border-radius: 50%;
+  border: solid 0.0625rem var(--dark);
+  cursor: pointer;
+  animation-duration: 16s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes carousel-dot-phase-0 {
+  0%,   22%  { background: var(--color-1, black); }
+  25%,  100% { background: transparent; }
+}
+@keyframes carousel-dot-phase-1 {
+  0%,   22%  { background: transparent; }
+  25%,  47%  { background: var(--color-1, black); }
+  50%,  100% { background: transparent; }
+}
+@keyframes carousel-dot-phase-2 {
+  0%,   47%  { background: transparent; }
+  50%,  72%  { background: var(--color-1, black); }
+  75%,  100% { background: transparent; }
+}
+@keyframes carousel-dot-phase-3 {
+  0%,   72%  { background: transparent; }
+  75%,  97%  { background: var(--color-1, black); }
+  100%       { background: transparent; }
+}
+.cssvars .carousel-autoplay-linked .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-0; }
+.cssvars .carousel-autoplay-linked .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-1; }
+.cssvars .carousel-autoplay-linked .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-2; }
+.cssvars .carousel-autoplay-linked .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-3; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-0; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-1; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-2; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-3; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-3; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-0; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-1; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-2; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-2; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-3; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-0; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-1; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-1; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-2; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3; }
+.cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-0; }
 /* Gallery Box*/
 .cssvars .gallery-box {
   background:var(--panel-bg);

@@ -491,11 +491,16 @@ const blocks = [
             {
                 title: "Hero 8",
                 description: "Description for item 8",
-                code: `<div class="carousel p0 h-100-vh">
-  <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
-  <input type="radio" name="slides" id="radio-2" class="radio-2">
-  <input type="radio" name="slides" id="radio-3" class="radio-3">
-  <input type="radio" name="slides" id="radio-4" class="radio-4">
+                code: `<!-- Uses carousel-autoplay-linked (see cssvars-carousel-final.css) —
+     built for exactly 4 slides, which this block already has. Advances
+     automatically; dots track the current slide and clicking one jumps
+     there while the cycle keeps going. The "hero8-" prefix on name/id
+     is what lets this coexist with other carousels on the same page. -->
+<div class="carousel-autoplay-linked p0 h-100-vh">
+  <input type="radio" name="hero8-slides" id="hero8-radio-1">
+  <input type="radio" name="hero8-slides" id="hero8-radio-2">
+  <input type="radio" name="hero8-slides" id="hero8-radio-3">
+  <input type="radio" name="hero8-slides" id="hero8-radio-4">
   <ul class="slides" style="height: 100%;">
     <li>
       <div class="h-100 d-flex align-items-center justify-content-center"
@@ -535,10 +540,10 @@ const blocks = [
     </li>
   </ul>
   <div class="slidesNavigation m-v-2">
-    <label for="radio-1" id="dotForRadio-1"></label>
-    <label for="radio-2" id="dotForRadio-2"></label>
-    <label for="radio-3" id="dotForRadio-3"></label>
-    <label for="radio-4" id="dotForRadio-4"></label>
+    <label for="hero8-radio-1"></label>
+    <label for="hero8-radio-2"></label>
+    <label for="hero8-radio-3"></label>
+    <label for="hero8-radio-4"></label>
   </div>
 </div>`
             },
@@ -2122,11 +2127,14 @@ const blocks = [
               <hr class="width-short center w-50">
             </div>
           </div>
-          <div class="row" id="carousel">
-            <div class="carousel carousel-small-img">
-              <input type="radio" name="slides" id="radio-1" class="radio-1" checked="">
-              <input type="radio" name="slides" id="radio-2" class="radio-2">
-              <input type="radio" name="slides" id="radio-3" class="radio-3">
+          <!-- Uses carousel-fixed (see cssvars-carousel-final.css). The
+               "testi1-" prefix on name/id is what lets this coexist with
+               other carousels on the same page. -->
+          <div class="row">
+            <div class="carousel-fixed carousel-small-img">
+              <input type="radio" name="testi1-slides" id="testi1-radio-1" checked="">
+              <input type="radio" name="testi1-slides" id="testi1-radio-2">
+              <input type="radio" name="testi1-slides" id="testi1-radio-3">
               <ul class="slides  ">
                 <li class="slide p-b-4">
                   <p class="white font-weight-400 italic center h6">
@@ -2134,17 +2142,17 @@ const blocks = [
                     quia
                     eaque. Repellendus, vero numquam?"
                   </p>
-                  <p class="center white text-uppercase background-color m0 p0 bold">- STEVE JOBS</p>
-                  <p class="center small dark">Apple Inc.</p>
+                  <p class="center white text-uppercase background-color m0 p0 bold">- ALEX MORGAN</p>
+                  <p class="center small dark">Nimbus Co.</p>
                 </li>
                 <li class="slide p-b-4">
                   <p class="white font-weight-400 italic center h6">
                     "Natus voluptatum enim quod necessitatibus quis expedita harum<br> provident eos
                     obcaecati id culpa corporis molestias."
                   </p>
-                  <p class="center white text-uppercase background-color m0 p0 bold">- COLLIS TA'EED
+                  <p class="center white text-uppercase background-color m0 p0 bold">- JAMIE LEE
                   </p>
-                  <p class="center small dark">Envato Inc.</p>
+                  <p class="center small dark">Brightline Studio</p>
                 </li>
                 <li class="slide p-b-4">
                   <p class="white font-weight-400 italic center h6">
@@ -2157,9 +2165,9 @@ const blocks = [
                 </li>
               </ul>
               <div class="slidesNavigation">
-                <label for="radio-1" id="dotForRadio-1"></label>
-                <label for="radio-2" id="dotForRadio-2"></label>
-                <label for="radio-3" id="dotForRadio-3"></label>
+                <label for="testi1-radio-1"></label>
+                <label for="testi1-radio-2"></label>
+                <label for="testi1-radio-3"></label>
               </div>
             </div>
           </div>
