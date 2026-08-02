@@ -1,0 +1,479 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dashboard Components — CSS Vars Framework</title>
+<link rel="stylesheet" href="cssvars.css">
+</head>
+<body>
+
+<main class="container p-v-3">
+
+  <header class="m-b-4">
+    <p class="small color-1 bold text-uppercase letter-spacing-1 m-b-0">CSS Vars Framework</p>
+    <h1 class="bold m-b-0">Dashboard Components</h1>
+    <p class="grey">Statistic cards, progress cards, chart containers, metric cards, a heatmap grid, property lists, definition lists and key‑value tables — built only with classes already shipped in <code>cssvars.css</code>. No custom CSS, no JS.</p>
+  </header>
+
+  <!-- ============================================================ -->
+  <!-- 1. STATISTIC CARDS                                            -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Statistic Cards</h3>
+
+    <div class="row">
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Total Revenue</p>
+            <div class="circle bga-success p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-success-fill">
+                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">$48,200</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 12.4% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Active Users</p>
+            <div class="circle bga-info p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-info-fill">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">8,942</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 4.1% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Avg. Session</p>
+            <div class="circle bga-warning p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-warning-fill">
+                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">4m 12s</h2>
+          <p class="small danger bold m-t-1 m-b-0">▼ 1.8% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Satisfaction</p>
+            <div class="circle bga-luxury p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-luxury-fill">
+                <path d="M19,1L17.74,3.75L15,5L17.74,6.26L19,9L20.25,6.26L23,5L20.25,3.75M9,4L6.5,9.5L1,12L6.5,14.5L9,20L11.5,14.5L17,12L11.5,9.5M19,15L17.74,17.74L15,19L17.74,20.25L19,23L20.25,20.25L23,19L20.25,17.74"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">96.2%</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 0.6% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-color-1 m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill">
+            <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">128K</p>
+        <p class="dark text-uppercase small">Monthly Visitors</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-success m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-success-fill">
+            <path d="M11.8,10.9C9.53,10.31 8.8,9.7 8.8,8.75C8.8,7.66 9.81,6.9 11.5,6.9C13.28,6.9 13.94,7.75 14,9H16.21C16.14,7.28 15.09,5.7 13,5.19V3H10V5.16C8.06,5.58 6.5,6.84 6.5,8.77C6.5,11.08 8.41,12.23 11.2,12.9C13.7,13.5 14.2,14.38 14.2,15.31C14.2,16 13.71,17.1 11.5,17.1C9.44,17.1 8.63,16.18 8.5,15H6.32C6.44,17.19 8.08,18.42 10,18.83V21H13V18.85C14.95,18.5 16.5,17.35 16.5,15.3C16.5,12.46 14.07,11.5 11.8,10.9Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">$54.2K</p>
+        <p class="dark text-uppercase small">Monthly Revenue</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-info m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-info-fill">
+            <path d="M16,17V19H2V17S2,13 9,13 16,17 16,17M12.5,7.5A3.5,3.5 0 0,0 9,4A3.5,3.5 0 0,0 5.5,7.5A3.5,3.5 0 0,0 9,11A3.5,3.5 0 0,0 12.5,7.5M15.94,13A5.32,5.32 0 0,1 18,17V19H22V17S22,13.37 15.94,13M13,4A3.39,3.39 0 0,0 12.07,4.1A5.5,5.5 0 0,1 12.07,10.9A3.39,3.39 0 0,0 13,11A3.5,3.5 0 0,0 13,4Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">3,481</p>
+        <p class="dark text-uppercase small">Active Users</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-warning m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-warning-fill">
+            <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">99.98%</p>
+        <p class="dark text-uppercase small">Uptime</p>
+      </div>
+    </div>
+  </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 2. PROGRESS CARDS                                             -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Progress Cards</h3>
+
+    <div class="row">
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Storage Used</p>
+            <span class="pill pill-info">62%</span>
+          </div>
+          <progress value="62" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">31 GB of 50 GB used</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Sprint Progress</p>
+            <span class="pill pill-success">84%</span>
+          </div>
+          <progress value="84" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">21 of 25 tasks completed</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Budget Spent</p>
+            <span class="pill pill-danger">93%</span>
+          </div>
+          <progress value="93" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">$9,300 of $10,000 spent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 3. CHARTS CONTAINER (container only — no chart rendering)     -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Charts Container</h3>
+
+    <div class="row">
+      <div class="col-md-8 p1">
+        <div class="card shadow-3">
+          <div class="card-header d-flex justify-content-between align-items-center">
+            <p class="bold m-b-0">Revenue Over Time</p>
+            <div class="pills">
+              <span class="pill pill-color-1">Monthly</span>
+              <span class="pill">Quarterly</span>
+              <span class="pill">Yearly</span>
+            </div>
+          </div>
+          <div class="card-body">
+            <div class="aspect-video bga-grey rounded d-flex align-items-center justify-content-center">
+              <p class="grey small m-b-0">Chart renders here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="card-header">
+            <p class="bold m-b-0">Traffic Sources</p>
+          </div>
+          <div class="card-body">
+            <div class="aspect-square bga-grey rounded d-flex align-items-center justify-content-center">
+              <p class="grey small m-b-0">Chart renders here</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 4. METRIC CARDS                                               -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Metric Cards</h3>
+
+    <div class="row">
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-color-1 p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">New Orders</p>
+              <h3 class="bold m-t-0 m-b-0">1,284</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">+18%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-danger p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Support Tickets</p>
+              <h3 class="bold m-t-0 m-b-0">37</h3>
+            </div>
+          </div>
+          <span class="pill pill-danger">+6%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-success p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Team Growth</p>
+              <h3 class="bold m-t-0 m-b-0">+12</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">+9%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-info p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M19,1L17.74,3.75L15,5L17.74,6.26L19,9L20.25,6.26L23,5L20.25,3.75M9,4L6.5,9.5L1,12L6.5,14.5L9,20L11.5,14.5L17,12L11.5,9.5M19,15L17.74,17.74L15,19L17.74,20.25L19,23L20.25,20.25L23,19L20.25,17.74"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Uptime</p>
+              <h3 class="bold m-t-0 m-b-0">99.98%</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">stable</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 5. HEATMAP GRID                                               -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Heatmap Grid</h3>
+
+    <div class="card shadow-3">
+      <p class="bold m-b-2">Activity — last 7 weeks</p>
+
+      <div class="row gap m-b-1">
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity03"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity05"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+      </div>
+      <div class="row gap m-b-1">
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity05"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity03"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+      </div>
+      <div class="row gap m-b-1">
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity03"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity05"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+      </div>
+      <div class="row gap">
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-light-grey"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity05"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity03"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity1"></div></div>
+        <div class="col p1"><div class="aspect-square rounded bg-color-1 opacity07"></div></div>
+      </div>
+
+      <div class="d-flex align-items-center justify-content-end gap m-t-2">
+        <p class="small grey m-b-0 m-r-0">Less</p>
+        <div class="w-1rem h-1rem rounded bg-light-grey"></div>
+        <div class="w-1rem h-1rem rounded bg-color-1 opacity03"></div>
+        <div class="w-1rem h-1rem rounded bg-color-1 opacity05"></div>
+        <div class="w-1rem h-1rem rounded bg-color-1 opacity07"></div>
+        <div class="w-1rem h-1rem rounded bg-color-1 opacity1"></div>
+        <p class="small grey m-b-0">More</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================ -->
+  <!-- 6. PROPERTY LIST                                              -->
+  <!-- ============================================================ -->
+  <section class="m-b-4">
+    <h3 class="bold border-b p-b-1 m-b-2">Property List</h3>
+
+    <div class="row child-padding-1">
+      <div class="col-md-6 col-lg-4">
+        <div class="card shadow-3">
+          <p class="bold m-b-2">Order #10492</p>
+
+          <div class="d-flex justify-content-between border-b p-v-1">
+            <span class="grey">Status</span>
+            <span class="pill pill-success">Delivered</span>
+          </div>
+          <div class="d-flex justify-content-between border-b p-v-1">
+            <span class="grey">Customer</span>
+            <span class="font-weight-600">Alex Rivera</span>
+          </div>
+          <div class="d-flex justify-content-between border-b p-v-1">
+            <span class="grey">Order Date</span>
+            <span class="font-weight-600">July 12, 2026</span>
+          </div>
+          <div class="d-flex justify-content-between border-b p-v-1">
+            <span class="grey">Payment Method</span>
+            <span class="font-weight-600">Visa •••• 4821</span>
+          </div>
+          <div class="d-flex justify-content-between p-v-1">
+            <span class="grey">Total</span>
+            <span class="bold color-1">$214.50</span>
+          </div>
+        </div>
+      </div>
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-3">
+          <dl class="m-b-0">
+            <dt>API Rate Limit</dt>
+            <dd class="grey">1,000 requests per minute per API key.</dd>
+
+            <dt>Uptime SLA</dt>
+            <dd class="grey">99.9% monthly uptime, credited if breached.</dd>
+
+            <dt>Data Retention</dt>
+            <dd class="grey">Logs retained for 30 days, backups for 1 year.</dd>
+
+            <dt>Support Response</dt>
+            <dd class="grey m-b-0">Priority tickets answered within 4 business hours.</dd>
+          </dl>
+        </div>
+      </div>
+            <div class="col-md-6 col-lg-4">
+        <div class="card shadow-3 overflow-x-auto">
+          <table class="table table-hover w-100">
+            <tbody>
+              <tr>
+                <td class="font-weight-600 grey">Plan</td>
+                <td>Pro (annual)</td>
+              </tr>
+              <tr>
+                <td class="font-weight-600 grey">Seats</td>
+                <td>25 / 50</td>
+              </tr>
+              <tr>
+                <td class="font-weight-600 grey">Region</td>
+                <td>eu-west-1</td>
+              </tr>
+              <tr>
+                <td class="font-weight-600 grey">Renewal Date</td>
+                <td>March 3, 2027</td>
+              </tr>
+              <tr>
+                <td class="font-weight-600 grey">Status</td>
+                <td><span class="pill pill-success">Active</span></td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+<section class="container p-v-2 p-b-4">
+  <h2 class="black font-weight-600">Keyboard Shortcut Cheat Sheet</h2>
+  <p class="dark m-b-2">Keys built with the <code>.badge</code> component on a light-grey background — no dedicated kbd class needed.</p>
+
+  <div class="row">
+    <div class="col-md-6 p1">
+      <div class="panel">
+        <p class="h6 text-uppercase dark bold m-b-1">Navigation</p>
+        <div class="row justify-content-between align-items-center m-b-1">
+          <span>Command palette</span>
+          <span><span class="badge bg-light-grey border black">Ctrl</span> + <span class="badge bg-light-grey border black">K</span></span>
+        </div>
+        <div class="row justify-content-between align-items-center m-b-1">
+          <span>Go to file</span>
+          <span><span class="badge bg-light-grey border black">Ctrl</span> + <span class="badge bg-light-grey border black">P</span></span>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <span>Toggle sidebar</span>
+          <span><span class="badge bg-light-grey border black">Ctrl</span> + <span class="badge bg-light-grey border black">B</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6 p1">
+      <div class="panel">
+        <p class="h6 text-uppercase dark bold m-b-1">Editing</p>
+        <div class="row justify-content-between align-items-center m-b-1">
+          <span>Save</span>
+          <span><span class="badge bg-light-grey border black">Ctrl</span> + <span class="badge bg-light-grey border black">S</span></span>
+        </div>
+        <div class="row justify-content-between align-items-center m-b-1">
+          <span>Duplicate line</span>
+          <span><span class="badge bg-light-grey border black">Shift</span> + <span class="badge bg-light-grey border black">Alt</span> + <span class="badge bg-light-grey border black">↓</span></span>
+        </div>
+        <div class="row justify-content-between align-items-center">
+          <span>Multi-cursor</span>
+          <span><span class="badge bg-light-grey border black">Ctrl</span> + <span class="badge bg-light-grey border black">D</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+</body>
+</html>
