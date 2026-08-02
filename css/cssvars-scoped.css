@@ -29,6 +29,7 @@
   --col-v-padding: 0;
   --line-height: 1.5; /* was 1.4 — more comfortable reading rhythm */
   --font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --font-mono: ui-monospace, SFMono-Regular, "SF Mono", Menlo, Consolas, "Liberation Mono", monospace;
   --background-image: None;
   /* Heading variables */
   --heading-font-weight: 600; /* was 500 — reads more "product," less "document" */
@@ -298,13 +299,6 @@
   line-height: var(--heading-line-height);
   letter-spacing: var(--heading-letter-spacing);
 }
-
-.heading-color { color: var(--heading-color); }
-.heading-font { font-family: var(--heading-font); }
-.heading-font-weight { font-weight: var(--heading-font-weight); }
-.heading-line-height { line-height: var(--heading-line-height); }
-.heading-letter-spacing { letter-spacing: var(--heading-letter-spacing); }
-
 .cssvars h1, .cssvars .h1 {font-size: 2.7rem;}
 .cssvars h2, .cssvars .h2 {font-size: 2.2rem;}
 .cssvars h3, .cssvars .h3 {  font-size: 2rem;}
@@ -325,17 +319,53 @@
   margin-top: 0;
   margin-bottom: 1rem;
 }
-.cssvars pre code {
+.cssvars code, .cssvars .code {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  color: var(--heading-color);
+  background-color: var(--surface-dim);
+  padding: 0.2em 0.4em;
+  border-radius: var(--control-radius);
+  white-space: break-spaces;
+}
+.cssvars pre, .cssvars .code-block {
   display: block;
-  padding: 1rem;
+  font-family: var(--font-mono);
+  background-color: var(--surface-dim);
+  color: var(--heading-color);
+  padding: var(--panel-padding, 1rem);
+  border-radius: var(--panel-radius);
   overflow-x: auto;
+  margin-bottom: 1rem;
+}
+.cssvars pre code, .cssvars .code-block code {
+  background-color: transparent;
+  padding: 0;
+  border-radius: 0;
+  font-size: 0.875em;
+}
+.cssvars kbd, .cssvars .kbd {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+  color: var(--surface-inverse-color);
+  background-color: var(--surface-inverse);
+  padding: 0.15em 0.4em;
+  border-radius: var(--control-radius);
+  box-shadow: inset 0 -0.1em 0 rgba(0,0,0,.25);
+}
+.cssvars samp, .cssvars .samp {
+  font-family: var(--font-mono);
+  font-size: 0.875em;
+}
+.cssvars var, .cssvars .var {
+  font-family: var(--font-mono);
+  font-style: italic;
 }
 .cssvars .par {
   width: 100%;
   height: auto;
   position: relative;
 }
-/* fancy title */
 .cssvars .fancy-title.title-dotted-border {
     background-image: repeating-linear-gradient(
     to right,
@@ -1215,6 +1245,7 @@ height: 2.5rem;
 .cssvars .table-layout-fixed {
   table-layout: fixed;
 }
+.table-numeric td { font-family: var(--font-mono); font-variant-numeric: tabular-nums; }
 /* Images */
 .cssvars .img-responsive {
   max-width: 100%;
@@ -3330,7 +3361,12 @@ left: 105%;
 .cssvars .word-wrap-break {
   word-wrap:break-word;
 }
-
+.cssvars .heading-color { color: var(--heading-color); }
+.cssvars .heading-font { font-family: var(--heading-font); }
+.cssvars .mono-font { font-family: var(--font-mono); }
+.cssvars .heading-font-weight { font-weight: var(--heading-font-weight); }
+.cssvars .heading-line-height { line-height: var(--heading-line-height); }
+.cssvars .heading-letter-spacing { letter-spacing: var(--heading-letter-spacing); }
 .cssvars .old-info {  text-decoration: line-through;}
 .cssvars .overline {  text-decoration: overline;}
 .cssvars .underline {  text-decoration: underline;}
