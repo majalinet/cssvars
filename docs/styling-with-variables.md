@@ -28,6 +28,7 @@ Tokens are organized into a small number of families. Each family has a job, and
 --body-bg
 --body-color
 --font-family
+--font-mono
 ```
 
 Everything else in the framework is built on top of these nine or so values. Rebrand a site by changing `--color-1` and `--color-2` in `:root` — you will almost never need to touch anything downstream.
@@ -83,7 +84,7 @@ Buttons, pills, and form fields are two separate token families on purpose — a
 ### 1.5 Typography tokens
 
 ```css
---font-family / --font-weight / --line-height
+--font-family / --font-mono / --font-weight / --line-height
 --heading-font / --heading-font-weight / --heading-color
 --heading-line-height / --heading-letter-spacing / --heading-margin
 --h1-size … --h6-size
@@ -94,6 +95,8 @@ Buttons, pills, and form fields are two separate token families on purpose — a
 Heading sizes are fixed rem values; display sizes are fluid (`clamp()`-based) for hero copy that needs to scale with viewport width rather than jump at breakpoints.
 
 **Where they're used:** every `h1`–`h6` and their `.h1`–`.h6` class equivalents read `--heading-*` for weight, color, line-height, letter-spacing, and margin, and their own `--h*-size` for font size. `.display-1`–`.display-6` read the `--display-*-size` clamps directly. `--link-*` applies to every `a` element and its `:hover` state — change `--link-color` once and every text link in every block, card, and footer updates together.
+
+**`--font-mono`** is the framework's second font stack, sitting alongside `--font-family` rather than under it — a UI (`ui-sans-serif`…) and a code (`ui-monospace`…) stack are different concerns, so they're two base tokens, not one derived from the other. It's consumed by every element that displays code, technical output, or fixed-width values: `code`/`.code` (inline code), `pre`/`.code-block` (code blocks), `kbd`/`.kbd` (keyboard shortcuts), and `samp`/`.samp` (sample output) all read `var(--font-mono)` directly, plus the `.font-mono` utility (§8 in the [Utility Classes Reference](./utility-classes-reference.md#8-typography-utilities)) for opting any other element in — API keys, order numbers, tabular numeric data. Change `--font-mono` once in `:root` and every one of these updates together, the same single-source-of-truth pattern as `--default-border-radius`.
 
 ### 1.6 Icon & image tokens
 
@@ -273,7 +276,7 @@ The framework ships roughly 500 utility classes across spacing, sizing, layout, 
 | Panel (`--panel-*`) | "Boxy" component chrome | `.card`, `.panel`, `.modal__inner`, `.dropdown-menu` |
 | Control (`--control-*`) | Buttons, pills | `.button`, `button`, `.pill` |
 | Input (`--input-*`) | Form fields | `input`, `select`, `textarea` |
-| Typography (`--h*-size`, `--heading-*`, `--link-*`) | Text scale and voice | Headings, `.display-*`, links |
+| Typography (`--h*-size`, `--heading-*`, `--link-*`, `--font-mono`) | Text scale and voice | Headings, `.display-*`, links, `code`/`.code`, `pre`/`.code-block`, `kbd`/`.kbd`, `samp`/`.samp` |
 | Icon & image (`--icon-default-*`, `--image-*`) | Inline SVG icons, `<img>` styling | Icon markup, every `img` |
 | Spacing (`--space-*`, `--space-dense-*`) | Rhythm and gaps | Utilities, flow, panel padding |
 | Structural (`--default-*`, `--z-*`, `--duration-*`) | Shared framework constants | Resets, layering, motion |

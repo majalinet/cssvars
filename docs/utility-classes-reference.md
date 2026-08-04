@@ -136,6 +136,7 @@ All shadow utilities sit in `@layer utilities-advanced`, after components — th
 | Classes | Sets |
 |---|---|
 | `.bold` / `.font-weight-200`/`400`/`600` (aliases: `.font-thin`/`.font-regular`/`.font-semibold`) | `font-weight` |
+| `.font-mono` | `font-family: var(--font-mono)` — opts any element into the monospace stack (also read directly by `code`/`.code`, `pre`/`.code-block`, `kbd`/`.kbd`, `samp`/`.samp`; see [Typography tokens](./styling-with-variables.md#15-typography-tokens)) |
 | `.italic` / `.underline` / `.decoration-none` / `.old-info` (strikethrough) | `font-style` / `text-decoration` |
 | `.text-uppercase` / `.text-lowercase` / `.text-capitalize` | `text-transform` |
 | `.double` (200%) / `.large` (150%) / `.larger` (125%) / `.small` (75%) / `.smaller` (85%) / `.half` (50%) | relative `font-size` steps |
