@@ -2991,12 +2991,65 @@ left: 105%;
 .cssvars .skeleton-avatar { width: 3rem; height: 3rem; border-radius: 50%; }
 .cssvars .skeleton-thumb { width: 100%; aspect-ratio: 16 / 9; }
 .cssvars .skeleton-button { width: 6rem; height: 2.25rem; border-radius: var(--control-radius); }
+@keyframes skeleton-shimmer {
+  0%   { background-position: 200% 0; }
+  100% { background-position: -200% 0; }
+}
+/* Drawer / Off-canvas */
+.drawer-state { display: none; }
+.drawer-backdrop {
+  position: fixed;
+  inset: 0;
+  display: block;
+  background: var(--surface-overlay);
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity var(--duration-base, 0.25s) var(--easing, ease);
+  z-index: var(--z-modal, 1000);
+}
+.drawer-state:checked ~ .drawer-backdrop { opacity: 1; visibility: visible; }
+.drawer {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  width: 20rem;
+  max-width: 90vw;
+  background: var(--panel-bg);
+  border: var(--panel-border);
+  box-shadow: var(--panel-shadow);
+  padding: var(--panel-padding);
+  z-index: var(--z-modal, 1000);
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-1);
+  transition: transform var(--duration-base, 0.25s) var(--easing, ease);
+}
+.drawer-left { left: 0; transform: translateX(-100%); }
+.drawer-right { right: 0; transform: translateX(100%); }
+.drawer-bottom {
+  left: 0; right: 0; top: auto; bottom: 0;
+  width: auto; max-width: none; max-height: 80vh;
+  transform: translateY(100%);
+}
+.drawer-state:checked ~ .drawer-left,
+.drawer-state:checked ~ .drawer-right { transform: translate(0); }
+.drawer-state:checked ~ .drawer-bottom { transform: translateY(0); }
+.drawer-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: var(--space-1-2);
+  border-bottom: 0.0625rem solid var(--light-grey);
+}
+.drawer-close { cursor: pointer; flex-shrink: 0; }
+.drawer-body { flex: 1; overflow-y: auto; }
+.drawer-footer {
+  padding-top: var(--space-1-2);
+  border-top: 0.0625rem solid var(--light-grey);
+}
 }
 @layer utilities {
-@media (max-width: 768px) {
-  .cssvars .bento { grid-template-columns: repeat(2, 1fr); }
-  .cssvars .bento-3x1, .cssvars .bento-4x1, .cssvars .bento-3x2 { grid-column: span 2; }
-}
 /* Surface utilities */
 .cssvars .bg-surface-raised, .cssvars .bg-surface-raised-hover:hover {
   background-color: var(--surface-raised, #fff);

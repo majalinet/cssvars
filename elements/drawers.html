@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Vars Framework — New Component Showcase</title>
+<!-- Local build during development. Once merged, swap for: -->
+<!-- <link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css"> -->
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<div class="container p2">
+
+
+  <section class="m-b-4">
+    <h2>Drawer / Off-canvas</h2>
+    <p>Drawers, also known as off-canvas panels, are used to display additional content or navigation options without navigating away from the current page.</p>
+    <p class="dark m-b-1">Checkbox-toggle, no JS. Opens from any edge.</p>
+
+
+    <label class="button" for="drawer-filters">Open filters drawer</label>
+    <input type="checkbox" id="drawer-filters" class="drawer-state">
+    <label class="drawer-backdrop" for="drawer-filters"></label>
+    <div class="drawer drawer-right">
+      <div class="drawer-header">
+        <h4>Filters</h4>
+        <label class="drawer-close" for="drawer-filters">
+          <svg class="icon-xs icon-dark-fill" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></svg>
+        </label>
+      </div>
+      <div class="drawer-body child-margin">
+        <div>
+          <h5>Category</h5>
+          <div class="pills">
+            <span class="pill active">All</span>
+            <span class="pill">Apparel</span>
+            <span class="pill">Home</span>
+          </div>
+        </div>
+        <div>
+          <h5>Price</h5>
+          <input type="range">
+        </div>
+      </div>
+      <div class="drawer-footer">
+        <button class="button-w-100">Apply filters</button>
+      </div>
+    </div>
+  </section>
+
+
+
+
+
+
+
+
+
+
+</div>
+
+</body>
+</html>
