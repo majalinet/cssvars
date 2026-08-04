@@ -2861,6 +2861,7 @@ left: 105%;
 .cssvars .resize-grip:hover {
   background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
 }
+/* Bento Grid */
 .cssvars .bento {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2886,6 +2887,11 @@ left: 105%;
   box-shadow: var(--panel-shadow);
   padding: var(--panel-padding);
 }
+@media (max-width: 768px) {
+  .cssvars .bento { grid-template-columns: repeat(2, 1fr); }
+  .cssvars .bento-3x1, .cssvars .bento-4x1, .cssvars .bento-3x2 { grid-column: span 2; }
+}
+/* Stepper */
 .cssvars .stepper { display: flex; list-style: none; padding: 0; margin: 0; width: 100%; }
 .cssvars .stepper-step { flex: 1; position: relative; text-align: center; }
 .cssvars .stepper-step::after {
@@ -2927,6 +2933,36 @@ left: 105%;
 .cssvars .stepper-vertical .stepper-step::after { top: 2rem; left: 1rem; width: 0.125rem; height: 100%; }
 .cssvars .stepper-vertical .stepper-circle { position: absolute; left: 0; top: 0; }
 .cssvars .stepper-vertical .stepper-label { margin-top: 0; }
+/* File Tree */
+.cssvars .file-tree, .cssvars .file-tree ul { list-style: none; margin: 0; padding: 0; }
+.cssvars .file-tree ul { padding-left: 1.25rem; }
+.cssvars .file-tree-toggle { display: none; }
+.cssvars .file-tree-folder {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: var(--control-radius);
+  cursor: pointer;
+}
+.cssvars .file-tree-folder:hover { background: var(--surface-hover); }
+.cssvars .file-tree-file {
+  display: flex;
+  align-items: center;
+  gap: 0.4rem;
+  padding: 0.3rem 0.4rem;
+  border-radius: var(--control-radius);
+}
+.cssvars .file-tree-file:hover { background: var(--surface-hover); }
+.cssvars .file-tree-chevron {
+  width: 1rem;
+  height: 1rem;
+  flex-shrink: 0;
+  transition: transform var(--duration-fast, 0.15s) var(--easing, ease);
+}
+.cssvars .file-tree-toggle:checked + .cssvars .file-tree-folder .file-tree-chevron { transform: rotate(90deg); }
+.cssvars .file-tree-children { display: none; }
+.cssvars .file-tree-toggle:checked ~ .file-tree-children { display: block; }
 }
 @layer utilities {
 @media (max-width: 768px) {
