@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vertical Tabs — CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="container m-t-4 m-v-4">
+  <section class="m-v-4">
+    <h2>Vertical Tabs</h2>
+    <p class="dark m-v-1">A flex row split into two children: <code>.tabs-vertical-nav</code>
+      (a flex column that shrinks to fit its widest label — no fixed width) and
+      <code>.tabs-vertical-content</code> (<code>flex: 1</code>, takes the rest). Panels are
+      matched to their radio by id using <code>:has()</code>, since the nav and the content pane
+      are no longer direct siblings the way <code>.tabs</code>' horizontal version relies on.</p>
+
+    <div class="tabs-vertical card shadow-3 panel-padding gap-2">
+      <div class="tabs-vertical-nav gap-1">
+        <input type="radio" name="v-tabs" id="v-tab1" checked>
+        <label for="v-tab1" class="p-control">
+          <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+          Design Tokens
+        </label>
+        <input type="radio" name="v-tabs" id="v-tab2">
+        <label for="v-tab2" class="p-control">
+          <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.44.17-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.21.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.25.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.21.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+          Cascade Layers
+        </label>
+        <input type="radio" name="v-tabs" id="v-tab3">
+        <label for="v-tab3" class="p-control">
+          <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M3 3h18v18H3V3zm2 2v14h14V5H5zm2 2h4v4H7V7zm6 0h4v2h-4V7zm0 4h4v2h-4v-2zM7 13h10v4H7v-4z"/></svg>
+          Utility Classes
+        </label>
+        <input type="radio" name="v-tabs" id="v-tab4">
+        <label for="v-tab4" class="p-control">
+          <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          Extras
+        </label>
+      </div>
+
+      <div class="tabs-vertical-content">
+        <div id="v-panel1" class="tab-panel">
+          <h4>Design Tokens</h4>
+          <p class="dark">Every color, spacing value, radius, and shadow in the framework is a
+            CSS custom property in <code>:root</code>. Change <code>--default-border-radius</code>
+            once and every panel, control, and input picks it up through <code>calc()</code>.</p>
+        </div>
+        <div id="v-panel2" class="tab-panel">
+          <h4>Cascade Layers</h4>
+          <p class="dark">The stylesheet is organized into named <code>@layer</code> blocks —
+            <code>theme, style, base, layout, components, components-advanced, utilities,
+            utilities-advanced, overrides</code> — so your own overrides always win without
+            needing <code>!important</code> or specificity hacks.</p>
+        </div>
+        <div id="v-panel3" class="tab-panel">
+          <h4>Utility Classes</h4>
+          <p class="dark">Roughly 500 single-purpose utility classes cover spacing, flex, grid,
+            color, shadow, and typography — enough to build most sections, like the two on this
+            page, without writing a single custom rule.</p>
+        </div>
+        <div id="v-panel4" class="tab-panel">
+          <h4>Trade-offs</h4>
+          <p class="dark">No build step means no purge/tree-shaking — you ship the whole
+            stylesheet. And the accessibility layer is still in progress, so accessibility-critical
+            projects should wait for that to land before adopting the framework wholesale.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+</body>
+</html>

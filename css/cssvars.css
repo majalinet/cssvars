@@ -2695,6 +2695,64 @@ progress {
     opacity: 1;
   }
 }
+  .tabs-vertical {
+    display: flex;
+    align-items: flex-start;
+  }
+  .tabs-vertical input[type="radio"] {
+    display: none;
+  }
+  .tabs-vertical-nav {
+    display: flex;
+    flex-direction: column;
+    flex-shrink: 0;
+  }
+  .tabs-vertical-nav label {
+    display: flex;
+    align-items: center;
+    gap: 0.75rem;
+    cursor: pointer;
+    white-space: nowrap;
+    border-radius: var(--control-radius);
+  }
+  .tabs-vertical-nav label:hover {
+    background: var(--surface-hover);
+  }
+  .tabs-vertical-content {
+    flex: 1 1 0%;
+    min-width: 0;
+  }
+  .tabs-vertical-content .tab-panel {
+    display: none;
+  }
+  .tabs-vertical:has(#v-tab1:checked) #v-panel1,
+  .tabs-vertical:has(#v-tab2:checked) #v-panel2,
+  .tabs-vertical:has(#v-tab3:checked) #v-panel3,
+  .tabs-vertical:has(#v-tab4:checked) #v-panel4,
+  .tabs-vertical:has(#v-tab5:checked) #v-panel5,
+  .tabs-vertical:has(#v-tab6:checked) #v-panel6 {
+    display: block;
+  }
+  .tabs-vertical:has(#v-tab1:checked) label[for="v-tab1"],
+  .tabs-vertical:has(#v-tab2:checked) label[for="v-tab2"],
+  .tabs-vertical:has(#v-tab3:checked) label[for="v-tab3"],
+  .tabs-vertical:has(#v-tab4:checked) label[for="v-tab4"],
+  .tabs-vertical:has(#v-tab5:checked) label[for="v-tab5"],
+  .tabs-vertical:has(#v-tab6:checked) label[for="v-tab6"] {
+    background: var(--surface-selected);
+    color: var(--body-color);
+    font-weight: 600;
+  }
+  @media (max-width: 45em) {
+    .tabs-vertical {
+      flex-direction: column;
+    }
+    .tabs-vertical-nav {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 100%;
+    }
+  }
 /* Modal */
 .modal {
   opacity: 0;

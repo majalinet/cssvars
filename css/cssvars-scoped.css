@@ -2695,6 +2695,64 @@ left: 105%;
     opacity: 1;
   }
 }
+.cssvars .tabs-vertical {
+  display: flex;
+  align-items: flex-start;
+}
+.cssvars .tabs-vertical input[type="radio"] {
+  display: none;
+}
+.cssvars .tabs-vertical-nav {
+  display: flex;
+  flex-direction: column;
+  flex-shrink: 0;
+}
+.cssvars .tabs-vertical-nav label {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  white-space: nowrap;
+  border-radius: var(--control-radius);
+}
+.cssvars .tabs-vertical-nav label:hover {
+  background: var(--surface-hover);
+}
+.cssvars .tabs-vertical-content {
+  flex: 1 1 0%;
+  min-width: 0;
+}
+.cssvars .tabs-vertical-content .tab-panel {
+  display: none;
+}
+.cssvars .tabs-vertical:has(#v-tab1:checked) #v-panel1,
+.cssvars .tabs-vertical:has(#v-tab2:checked) #v-panel2,
+.cssvars .tabs-vertical:has(#v-tab3:checked) #v-panel3,
+.cssvars .tabs-vertical:has(#v-tab4:checked) #v-panel4,
+.cssvars .tabs-vertical:has(#v-tab5:checked) #v-panel5,
+.cssvars .tabs-vertical:has(#v-tab6:checked) #v-panel6 {
+  display: block;
+}
+.cssvars .tabs-vertical:has(#v-tab1:checked) label[for="v-tab1"],
+.cssvars .tabs-vertical:has(#v-tab2:checked) label[for="v-tab2"],
+.cssvars .tabs-vertical:has(#v-tab3:checked) label[for="v-tab3"],
+.cssvars .tabs-vertical:has(#v-tab4:checked) label[for="v-tab4"],
+.cssvars .tabs-vertical:has(#v-tab5:checked) label[for="v-tab5"],
+.cssvars .tabs-vertical:has(#v-tab6:checked) label[for="v-tab6"] {
+  background: var(--surface-selected);
+  color: var(--body-color);
+  font-weight: 600;
+}
+@media (max-width: 45em) {
+  .cssvars .tabs-vertical {
+    flex-direction: column;
+  }
+  .cssvars .tabs-vertical-nav {
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+}
 /* Modal */
 .cssvars .modal {
   opacity: 0;

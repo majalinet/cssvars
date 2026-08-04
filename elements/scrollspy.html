@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scrollspy — CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="container m-t-4 m-v-4">
+
+
+  <section class="m-v-4">
+    <h4>Scrollspy - JS required</h4>
+    <p class="dark m-v-1">A sticky <code>.menu</code> tracks scroll position with an
+      <code>IntersectionObserver</code> and toggles <code>.active</code> on the matching
+      <code>.menu-item</code>. No new CSS at all.</p>
+
+    <div class="row">
+      <!-- Sticky spy nav -->
+      <div class="col-3">
+        <nav class="position-sticky top-2">
+          <ul class="menu card shadow-3" data-scrollspy>
+            <li class="menu-item">
+              <a href="#spy-overview">
+                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M3 13h8V3H3v10zm0 8h8v-6H3v6zm10 0h8V11h-8v10zm0-18v6h8V3h-8z"/></svg>
+                Overview
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#spy-install">
+                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M5 20h14v-2H5v2zM19 9h-4V3H9v6H5l7 7 7-7z"/></svg>
+                Installation
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#spy-usage">
+                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8l-6-6zm2 16H8v-2h8v2zm0-4H8v-2h8v2zm-3-5V3.5L18.5 9H13z"/></svg>
+                Usage
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#spy-options">
+                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M19.14 12.94c.04-.3.06-.61.06-.94 0-.32-.02-.64-.07-.94l2.03-1.58a.49.49 0 00.12-.61l-1.92-3.32a.488.488 0 00-.59-.22l-2.39.96c-.5-.38-1.03-.7-1.62-.94l-.36-2.54a.484.484 0 00-.48-.41h-3.84c-.24 0-.44.17-.48.41l-.36 2.54c-.59.24-1.13.57-1.62.94l-2.39-.96a.49.49 0 00-.59.22L2.74 8.87c-.12.21-.08.47.12.61l2.03 1.58c-.05.3-.09.63-.09.94s.02.64.07.94l-2.03 1.58a.49.49 0 00-.12.61l1.92 3.32c.12.21.37.29.59.22l2.39-.96c.5.38 1.03.7 1.62.94l.36 2.54c.05.24.25.41.48.41h3.84c.24 0 .44-.17.48-.41l.36-2.54c.59-.24 1.13-.56 1.62-.94l2.39.96c.22.08.47 0 .59-.22l1.92-3.32c.12-.21.07-.47-.12-.61l-2.01-1.58zM12 15.6c-1.98 0-3.6-1.62-3.6-3.6s1.62-3.6 3.6-3.6 3.6 1.62 3.6 3.6-1.62 3.6-3.6 3.6z"/></svg>
+                Options
+              </a>
+            </li>
+            <li class="menu-item">
+              <a href="#spy-accessibility">
+                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill"><path d="M12 2a2 2 0 012 2 2 2 0 01-2 2 2 2 0 01-2-2 2 2 0 012-2m9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/></svg>
+                Accessibility
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+
+      <!-- Spied content -->
+      <div class="col-9">
+        <div id="spy-overview" class="card panel-padding m-v-1">
+          <h3>Overview</h3>
+          <p class="dark">Scrollspy watches a set of sections and highlights the nav link for
+            whichever one is currently in view. It's the pattern used in most documentation
+            sites — this one sits on top of components you already have: <code>.menu</code>,
+            <code>.menu-item</code>, and the <code>.menu-item.active</code> state.</p>
+        </div>
+        <div id="spy-install" class="card panel-padding m-v-1">
+          <h3>Installation</h3>
+          <p class="dark">Nothing to install beyond <code>cssvars.css</code>. Drop the scrollspy
+            script (bottom of this page) in before <code>&lt;/body&gt;</code>. No build step,
+            no dependency — same philosophy as the rest of the framework.</p>
+        </div>
+        <div id="spy-usage" class="card panel-padding m-v-1">
+          <h3>Usage</h3>
+          <p class="dark">Add <code>data-scrollspy</code> to a <code>.menu</code> whose
+            <code>.menu-item a</code> links point to section IDs on the page
+            (<code>href="#section-id"</code>). The script finds the matching sections
+            automatically — no extra markup on the sections themselves.</p>
+        </div>
+        <div id="spy-options" class="card panel-padding m-v-1">
+          <h3>Options</h3>
+          <p class="dark">The observer's <code>rootMargin</code> controls when a section
+            "counts" as active (default triggers a bit before it hits the top of the
+            viewport, so the highlight feels responsive rather than late). This is a single
+            constant at the top of the script.</p>
+        </div>
+        <div id="spy-accessibility" class="card panel-padding m-v-1">
+          <h3>Accessibility</h3>
+          <p class="dark">The active link also gets <code>aria-current="location"</code> in
+            addition to the <code>.active</code> class, so the current section is announced
+            to assistive tech, not just shown visually.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <hr class="m-v-4">
+
+</div>
+
+<script>
+/*
+ * Scrollspy — vanilla JS
+ * Reuses the existing `.active` state already defined for `.menu-item.active a`.
+ * Usage: <ul class="menu" data-scrollspy> ... <li class="menu-item"><a href="#id">...</a></li> ... </ul>
+ */
+(function () {
+  var SCROLLSPY_ROOT_MARGIN = "-10% 0px -70% 0px";
+
+  document.querySelectorAll("[data-scrollspy]").forEach(function (nav) {
+    var links = Array.from(nav.querySelectorAll(".menu-item a"));
+    var sections = links
+      .map(function (link) {
+        var id = link.getAttribute("href");
+        return id && id.charAt(0) === "#" ? document.querySelector(id) : null;
+      })
+      .filter(Boolean);
+
+    if (!sections.length) return;
+
+    function setActive(id) {
+      links.forEach(function (link) {
+        var item = link.closest(".menu-item");
+        var isActive = link.getAttribute("href") === "#" + id;
+        item.classList.toggle("active", isActive);
+        if (isActive) {
+          link.setAttribute("aria-current", "location");
+        } else {
+          link.removeAttribute("aria-current");
+        }
+      });
+    }
+
+    var observer = new IntersectionObserver(
+      function (entries) {
+        entries.forEach(function (entry) {
+          if (entry.isIntersecting) {
+            setActive(entry.target.id);
+          }
+        });
+      },
+      { rootMargin: SCROLLSPY_ROOT_MARGIN, threshold: 0 }
+    );
+
+    sections.forEach(function (section) {
+      observer.observe(section);
+    });
+
+    links.forEach(function (link) {
+      link.addEventListener("click", function (e) {
+        var id = link.getAttribute("href").slice(1);
+        var target = document.getElementById(id);
+        if (target) {
+          e.preventDefault();
+          setActive(id);
+          target.scrollIntoView({ behavior: "smooth", block: "start" });
+          history.pushState(null, "", "#" + id);
+        }
+      });
+    });
+  });
+})();
+</script>
+
+</body>
+</html>
