@@ -5,9 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Cards, Panels, Pills, Chips, Dropdowns, Sidebar - CSS Vars Framework</title>
 <link rel="stylesheet" href="../css/cssvars.css">
+<!-- <link rel="stylesheet" href="../css/cssvars-scoped.css"> -->
+<link rel="stylesheet" href="../css/cssvars-styles.css">
+<script src="../js/cssvars-styles-switchers.js"></script>
 </head>
-<body>
 
+
+<body class="retro-style" data-theme=""> 
 <!-- Sidebar toggle checkbox: must precede .sidebar as a sibling for :checked ~ to work -->
 <input type="checkbox" id="sidebar-toggle" class="sidebar-toggle-state">
 <label for="sidebar-toggle" class="sidebar-toggle-btn bg-color-1 white">☰</label>
@@ -49,13 +53,69 @@
         Settings
       </a>
     </li>
-  </ul>
+
+                      <li class=" p-h-1">
+
+
+
+  <select id="styles" class="form-control m-t--1-2" onchange="changeStyle()">
+  <option value="none">Pick a Style</option>
+
+  <optgroup label="Universal">
+    <option value="">default</option>
+    <option value="system-ui-style">system-ui</option>
+    <option value="minimalist-style">minimalist</option>
+    <option value="flat-style">flat</option>
+    <option value="modern-style">modern</option>
+    <option value="swiss-style">swiss</option>
+  </optgroup>
+
+  <optgroup label="Corporate / Professional">
+    <option value="enterprise-style">enterprise</option>
+    <option value="high-contrast-style">high-contrast</option>
+    <option value="monochrome-style">monochrome</option>
+    <option value="editorial-style">editorial</option>
+  </optgroup>
+
+  <optgroup label="Contemporary">
+    <option value="material-style">material</option>
+    <option value="glass-style">glass</option>
+    <option value="neumorphism-style">neumorphism</option>
+    <option value="modular-style">modular</option>
+    <option value="colorful-dashboard-style">colorful-dashboard</option>
+    <option value="data-style">data</option>
+    <option value="aurora-style">aurora</option>
+    <option value="pastel-style">pastel</option>
+  </optgroup>
+
+  <optgroup label="Bold / Expressive">
+    <option value="luxury-style">luxury</option>
+    <option value="brutal-style">brutal</option>
+    <option value="brutal-lite-style">brutal-lite</option>
+    <option value="retro-style">retro</option>
+    <option value="retro-lite-style">retro-lite</option>
+    <option value="futuristic-style">futuristic</option>
+    <option value="neon-style">neon</option>
+    <option value="cyberpunk-style">cyberpunk</option>
+  </optgroup>
+
+  <optgroup label="Playful / Niche">
+    <option value="playful-bubblegum-style">playful-bubblegum</option>
+    <option value="playful-confetti-style">playful-confetti</option>
+  </optgroup>
+</select>
+
+
+
+
+                    </li>
+                      </ul>
 </aside>
 
 <!-- Right Sidebar toggle checkbox: must precede .sidebar-right as a sibling for :checked ~ to work -->
 <input type="checkbox" id="right-sidebar-toggle" class="sidebar-right-toggle-state">
-<label for="right-sidebar-toggle" class="sidebar-right-toggle-btn white">
-  <svg viewBox="0 0 24 24" class="icon-xs icon-white-color-1">
+<label for="right-sidebar-toggle" class="sidebar-right-toggle-btn white body-bg">
+  <svg viewBox="0 0 24 24" class="icon icon-xs">
     <path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path>
   </svg>
 </label>
@@ -73,14 +133,14 @@
 </aside>
 
 <!-- Main Content -->
-<div class="main-content">
-  <div class="container p-v-2">
-    <h1 class="m-b-3">Cards, Panels, Pills, Chips, Dropdowns, Sidebar</h1>
+<main class="main-content ">
+  <div class="container p-v-2 main-flow child-padding">
+    <h1 class="p0">Cards, Panels, Pills, Chips, Dropdowns, Sidebar</h1>
 
     <!-- Cards -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Cards</h2>
-      <div class="row">
+      <div class="row child-padding-1-2">
         <div class="col-md-4">
           <div class="card card-hover">
             <div class="card-header">Card Title</div>
@@ -113,7 +173,7 @@
     </section>
 
     <!-- Panels -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Panels</h2>
       <div class="row gap-2">
         <div class="col-md-6">
@@ -129,7 +189,7 @@
     </section>
 
     <!-- Pills -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Pills</h2>
       <div class="pills m-b-2">
         <span class="pill active">Active</span>
@@ -144,7 +204,7 @@
     </section>
 
     <!-- Chips -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Chips</h2>
       <div class="m-b-2">
         <div class="chip">
@@ -176,7 +236,7 @@
     </section>
 
     <!-- Dropdowns — checkbox toggle, no JS -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Dropdowns (No JS)</h2>
       <div class="d-flex gap-2 flex-wrap">
 
@@ -221,7 +281,7 @@
     </section>
 
     <!-- Menu Items -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Menu Items</h2>
       <div class="row gap-2">
         <div class="col-md-6">
@@ -270,7 +330,7 @@
     </section>
 
     <!-- Combined Example -->
-    <section class="m-b-4">
+    <section class="">
       <h2>Combined Example</h2>
       <div class="card">
         <div class="card-header d-flex justify-content-between align-items-center">
@@ -319,6 +379,139 @@
       </div>
     </section>
 
+    <section class="">
+      <h2>Tables</h2>
+      <table class="table table-striped">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+
+      
+      <table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+<ul class="pagination border-0 border-none shadow-none">
+          <li class="page-item disabled">
+            <a class="page-link" href="#">«</a>
+          </li>
+          <li class="page-item active">
+            <a class="page-link" href="#">1</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">2</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">3</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">4</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">5</a>
+          </li>
+          <li class="page-item">
+            <a class="page-link" href="#">»</a>
+          </li>
+        </ul>
+
+    </section>
+
+
+    <section>
+<h2>Form</h2>
+<form class="p1">
+          <div class="form-row">
+            <div class="form-group col-md-6">
+              <input type="email" class="form-control" id="inputEmail4" placeholder="Email">
+            </div>
+            <div class="form-group col-md-6">
+              <input type="password" class="form-control" id="inputPassword4" placeholder="Password">
+            </div>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+          </div>
+          <div class="form-row">
+            <div class="form-group col-md-7">
+              <input type="text" class="form-control" id="inputCity" placeholder="City">
+
+            </div>
+            <div class="form-group col-md-3">
+              <select id="inputState" class="form-control" placeholder="State">
+                <option selected="" disabled="">Choose state</option>
+                <option>State 1</option>
+              </select>
+            </div>
+            <div class="form-group col-md-2">
+              <input type="text" class="form-control" id="inputZip" placeholder="Zip">
+            </div>
+          </div>
+
+
+          <div class="form-group">
+            <textarea class="form-control" rows="5" id="comment" placeholder="Comments"></textarea>
+          </div>
+          <div class="form-group">
+            <div class="form-check">
+              <input class="form-check-input" type="checkbox" id="gridCheck">
+              <label class="form-check-label" for="gridCheck">
+                Check me out
+              </label>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-primary">Sign in</button>
+        </form>
+
+
+    </section>
   </div>
 
   <!-- Footer -->
