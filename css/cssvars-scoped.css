@@ -2976,6 +2976,21 @@ left: 105%;
 .cssvars .empty-state-icon { width: 4rem; height: 4rem; fill: var(--grey); }
 .cssvars .empty-state-title { color: var(--heading-color); font-weight: var(--heading-font-weight); font-size: var(--h4-size); }
 .cssvars .empty-state-actions { display: flex; gap: var(--space-1-2); margin-top: var(--space-1-2); }
+/* Skeleton Loader */
+.cssvars .skeleton {
+  display: block;
+  background: linear-gradient(90deg, var(--surface-dim) 25%, var(--surface-hover) 50%, var(--surface-dim) 75%);
+  background-size: 200% 100%;
+  border-radius: var(--panel-radius);
+  animation: skeleton-shimmer 1.4s ease-in-out infinite;
+}
+.cssvars .skeleton-text { height: 0.9em; border-radius: 0.25rem; margin-bottom: 0.5em; }
+.cssvars .skeleton-text-sm { width: 40%; }
+.cssvars .skeleton-text-md { width: 65%; }
+.cssvars .skeleton-text-lg { width: 90%; }
+.cssvars .skeleton-avatar { width: 3rem; height: 3rem; border-radius: 50%; }
+.cssvars .skeleton-thumb { width: 100%; aspect-ratio: 16 / 9; }
+.cssvars .skeleton-button { width: 6rem; height: 2.25rem; border-radius: var(--control-radius); }
 }
 @layer utilities {
 @media (max-width: 768px) {
