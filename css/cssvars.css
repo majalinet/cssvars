@@ -2963,6 +2963,19 @@ progress {
 .file-tree-toggle:checked + .file-tree-folder .file-tree-chevron { transform: rotate(90deg); }
 .file-tree-children { display: none; }
 .file-tree-toggle:checked ~ .file-tree-children { display: block; }
+/* Empty State */
+.empty-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: var(--space-1-2);
+  padding: var(--space-4) var(--space-2);
+  color: var(--dark);
+}
+.empty-state-icon { width: 4rem; height: 4rem; fill: var(--grey); }
+.empty-state-title { color: var(--heading-color); font-weight: var(--heading-font-weight); font-size: var(--h4-size); }
+.empty-state-actions { display: flex; gap: var(--space-1-2); margin-top: var(--space-1-2); }
 }
 @layer utilities {
 /* Surface utilities */
