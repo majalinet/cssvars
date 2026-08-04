@@ -2890,6 +2890,47 @@ progress {
   .bento { grid-template-columns: repeat(2, 1fr); }
   .bento-3x1, .bento-4x1, .bento-3x2 { grid-column: span 2; }
 }
+.stepper { display: flex; list-style: none; padding: 0; margin: 0; width: 100%; }
+.stepper-step { flex: 1; position: relative; text-align: center; }
+.stepper-step::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  width: 100%;
+  height: 0.125rem;
+  background: var(--light-grey);
+  z-index: 0;
+}
+.stepper-step:last-child::after { display: none; }
+.stepper-step.is-complete::after { background: var(--color-1); }
+.stepper-circle {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--surface-dim);
+  color: var(--dark);
+  font-weight: 600;
+  border: 0.125rem solid var(--light-grey);
+}
+.stepper-step.is-active .stepper-circle,
+.stepper-step.is-complete .stepper-circle {
+  background: var(--color-1);
+  color: var(--white);
+  border-color: var(--color-1);
+}
+.stepper-label { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: var(--dark); }
+.stepper-step.is-active .stepper-label { color: var(--heading-color); font-weight: 600; }
+.stepper-vertical { display: flex; flex-direction: column; }
+.stepper-vertical .stepper-step { flex: none; text-align: left; padding-left: 2.75rem; padding-bottom: var(--space-2); }
+.stepper-vertical .stepper-step::after { top: 2rem; left: 1rem; width: 0.125rem; height: 100%; }
+.stepper-vertical .stepper-circle { position: absolute; left: 0; top: 0; }
+.stepper-vertical .stepper-label { margin-top: 0; }
 }
 @layer utilities {
 /* Surface utilities */

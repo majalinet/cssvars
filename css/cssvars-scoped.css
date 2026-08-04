@@ -2861,8 +2861,6 @@ left: 105%;
 .cssvars .resize-grip:hover {
   background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
 }
-}
-@layer utilities {
 .cssvars .bento {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -2888,6 +2886,49 @@ left: 105%;
   box-shadow: var(--panel-shadow);
   padding: var(--panel-padding);
 }
+.cssvars .stepper { display: flex; list-style: none; padding: 0; margin: 0; width: 100%; }
+.cssvars .stepper-step { flex: 1; position: relative; text-align: center; }
+.cssvars .stepper-step::after {
+  content: "";
+  position: absolute;
+  top: 1rem;
+  left: 50%;
+  width: 100%;
+  height: 0.125rem;
+  background: var(--light-grey);
+  z-index: 0;
+}
+.cssvars .stepper-step:last-child::after { display: none; }
+.cssvars .stepper-step.is-complete::after { background: var(--color-1); }
+.cssvars .stepper-circle {
+  position: relative;
+  z-index: 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background: var(--surface-dim);
+  color: var(--dark);
+  font-weight: 600;
+  border: 0.125rem solid var(--light-grey);
+}
+.cssvars .stepper-step.is-active .stepper-circle,
+.cssvars .stepper-step.is-complete .stepper-circle {
+  background: var(--color-1);
+  color: var(--white);
+  border-color: var(--color-1);
+}
+.cssvars .stepper-label { display: block; margin-top: 0.5rem; font-size: 0.85rem; color: var(--dark); }
+.cssvars .stepper-step.is-active .stepper-label { color: var(--heading-color); font-weight: 600; }
+.cssvars .stepper-vertical { display: flex; flex-direction: column; }
+.cssvars .stepper-vertical .stepper-step { flex: none; text-align: left; padding-left: 2.75rem; padding-bottom: var(--space-2); }
+.cssvars .stepper-vertical .stepper-step::after { top: 2rem; left: 1rem; width: 0.125rem; height: 100%; }
+.cssvars .stepper-vertical .stepper-circle { position: absolute; left: 0; top: 0; }
+.cssvars .stepper-vertical .stepper-label { margin-top: 0; }
+}
+@layer utilities {
 @media (max-width: 768px) {
   .cssvars .bento { grid-template-columns: repeat(2, 1fr); }
   .cssvars .bento-3x1, .cssvars .bento-4x1, .cssvars .bento-3x2 { grid-column: span 2; }
