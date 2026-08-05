@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kanban Board — CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<section id="kanban" class="m-b-4">
+  <h2>Kanban Board</h2>
+  <div class="msg bga-info small">Horizontally scrolling <code>.d-flex.overflow-x-auto</code> of columns; each card is a plain <code>.card.card-hover</code>. Column width (18rem) has no matching size utility (the largest is <code>.w-10rem</code>), so it's the one inline <code>min-width</code> declaration.</div>
+
+  <div class="d-flex gap-2 overflow-x-auto p-b-1">
+    <div class="flex-shrink-0" style="min-width:18rem;">
+      <p class="bold m-b-1">Backlog <span class="badge bga-grey">3</span></p>
+      <div class="d-flex flex-column gap-1">
+        <div class="card card-hover">
+          <p class="m-b--1-2">Bento grid layout presets</p>
+          <div class="d-flex gap-1"><span class="pill pill-info small">design</span></div>
+        </div>
+        <div class="card card-hover">
+          <p class="m-b--1-2">Avatar group component</p>
+          <div class="d-flex gap-1"><span class="pill small">component</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-0" style="min-width:18rem;">
+      <p class="bold m-b-1">In Progress <span class="badge bga-warning">2</span></p>
+      <div class="d-flex flex-column gap-1">
+        <div class="card card-hover border-l-4 border-solid border-warning">
+          <p class="m-b--1-2">Accessibility layer</p>
+          <div class="d-flex gap-1 align-items-center" style="justify-content:space-between;">
+            <span class="pill pill-warning small">a11y</span>
+            <span class="circle bg-color-1 white bold small d-flex align-items-center" style="width:1.5rem;height:1.5rem;justify-content:center;">KM</span>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex-shrink-0" style="min-width:18rem;">
+      <p class="bold m-b-1">Done <span class="badge bga-success">1</span></p>
+      <div class="d-flex flex-column gap-1">
+        <div class="card card-hover opacity07">
+          <p class="m-b--1-2 old-info">Landing page shipped</p>
+          <div class="d-flex gap-1"><span class="pill pill-success small">shipped</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+</body>
+</html>
