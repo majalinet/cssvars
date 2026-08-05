@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Activity Timeline — CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+<style>
+
+</style>
+</head>
+<body>
+
+<div class="container m-t-4 m-v-4">
+<section id="timeline" class="m-b-4">
+  <h2>Activity Timeline</h2>
+  <div class="msg bga-info small">Each row is a flex item: an icon circle (<code>.circle</code> + <code>.icon-*-bg</code>) followed by a <code>.card</code>. The connecting line is a single <code>border-l</code> on the icon column — no new CSS.</div>
+
+  <div class="d-flex flex-column" style="max-width:32rem;">
+    <div class="d-flex gap-2">
+      <div class="d-flex flex-column align-items-center" style="width:2.5rem;">
+        <span class="circle bg-success white d-flex align-items-center" style="width:2.5rem;height:2.5rem;justify-content:center;flex-shrink:0;">
+          <svg class="icon-xs icon-white-fill" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6l-2-2-9 9-3-3z"/></svg>
+        </span>
+        <span class="border-l border-solid border-success flex-fill" style="width:0;"></span>
+      </div>
+      <div class="card flex-fill m-b-1">
+        <p class="m-b--1-2 bold">Release published</p>
+        <p class="dark small m0">v3.0 shipped with the new border-radius token cascade.</p>
+        <p class="smaller opacity05 m-t--1-2 m0">2 hours ago</p>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <div class="d-flex flex-column align-items-center" style="width:2.5rem;">
+        <span class="circle bg-success white d-flex align-items-center" style="width:2.5rem;height:2.5rem;justify-content:center;flex-shrink:0;">
+          <svg class="icon-xs icon-white-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg>
+        </span>
+        <span class="border-l border-solid border-light-grey flex-fill" style="width:0;"></span>
+      </div>
+      <div class="card flex-fill m-b-1">
+        <p class="m-b--1-2 bold">Docs updated</p>
+        <p class="dark small m0">utility-classes-reference.md expanded with flow tokens.</p>
+        <p class="smaller opacity05 m-t--1-2 m0">Yesterday</p>
+      </div>
+    </div>
+    <div class="d-flex gap-2">
+      <div class="d-flex flex-column align-items-center" style="width:2.5rem;">
+        <span class="circle bg-color-1 white d-flex align-items-center" style="width:2.5rem;height:2.5rem;justify-content:center;flex-shrink:0;">
+          <svg class="icon-xs icon-white-fill" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3L21.5 9l-4.9 4.4L18 20l-6-3.6L6 20l1.4-6.6L2.5 9l6.6-.7z"/></svg>
+        </span>
+      </div>
+      <div class="card flex-fill">
+        <p class="m-b--1-2 bold">Repo starred 4,200 times</p>
+        <p class="dark small m0">Milestone reached on GitHub.</p>
+        <p class="smaller opacity05 m-t--1-2 m0">3 days ago</p>
+      </div>
+    </div>
+  </div>
+</section>
+</div>
+</body>
+</html>
