@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Vars — Advanced Components (1–5)</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+
+
+<main class="main-content p2">
+
+<header class="m-b-2">
+  <h2>Advanced UI Components</h2>
+  <h3>Context Menu, Popover, Hover Card, Command Bar, Spotlight</h3>
+  <p class="dark">Five interaction patterns built entirely from <code>cssvars.css</code> — no custom CSS rules, no JavaScript. Every open/close/hover state is driven by native HTML (<code>&lt;details&gt;</code>, <code>:checked</code>, <code>:hover</code>) or the browser's own <code>resize</code> behavior.</p>
+</header>
+
+<!-- ============================================================ -->
+<!-- 1. CONTEXT MENU -->
+<!-- ============================================================ -->
+<section id="context-menu" class="m-b-4">
+  <h2>1. Context Menu</h2>
+  <div class="msg bga-info small">Built on the existing <code>.dropdown-state</code> checkbox + <code>.dropdown-menu</code> pair. A real OS-style right-click menu that appears at the cursor needs JS to read the click coordinates — this version trades that for a visible trigger (the kebab icon), which keeps it fully CSS-only and works on touch devices too.</div>
+
+  <div class="panel" style="max-width:26rem;">
+    <div class="d-flex align-items-center gap-1" style="justify-content:space-between;">
+      <div class="d-flex align-items-center gap-1">
+        <svg class="icon-xs icon-color-2-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg>
+        <span>Quarterly-Report.pdf</span>
+      </div>
+      <div class="dropdown">
+        <input type="checkbox" id="ctx1" class="dropdown-state">
+        <label for="ctx1" class="dropdown-toggle p-1-2 rounded" style="cursor:pointer;">
+        </label>
+        <div class="dropdown-menu right-0" style="left:auto;">
+          <ul class="menu">
+            <li class="menu-item"><label for="ctx1"><svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6l-2-2-9 9-3-3z"/></svg> Open</label></li>
+            <li class="menu-item"><label for="ctx1"><svg class="menu-item-icon icon-dark-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg> Rename</label></li>
+            <li class="menu-item"><label for="ctx1"><svg class="menu-item-icon icon-dark-fill" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Move to…</label></li>
+          </ul>
+          <div class="dropdown-divider"></div>
+          <ul class="menu">
+            <li class="menu-item"><label for="ctx1" class="danger"><svg class="menu-item-icon icon-danger-fill" viewBox="0 0 24 24"><rect x="11" y="4" width="2" height="16" transform="rotate(45 12 12)"/><rect x="11" y="4" width="2" height="16" transform="rotate(-45 12 12)"/></svg> Delete</label></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 2. CONTEXTUAL POPOVER -->
+<!-- ============================================================ -->
+<section id="popover" class="m-b-4">
+  <h2>2. Contextual Popover</h2>
+  <div class="msg bga-info small">Same <code>.dropdown-state</code> / <code>.dropdown-menu</code> mechanism as the context menu, but the panel holds rich content (heading, text, actions) instead of a <code>.menu</code> list — this is really the same primitive with different contents.</div>
+
+  <div class="dropdown">
+    <input type="checkbox" id="pop1" class="dropdown-state">
+    <label for="pop1" class="dropdown-toggle button">Assign owner</label>
+    <div class="dropdown-menu p1" style="width:18rem;">
+      <p class="bold m-b--1-2">Assign this task</p>
+      <p class="dark small m-b-1">Choose a teammate to take ownership. They'll be notified immediately.</p>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search people…">
+      </div>
+      <div class="d-flex gap-1" style="justify-content:flex-end;">
+        <label for="pop1" class="button bga-grey small">Cancel</label>
+        <label for="pop1" class="button small">Assign</label>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 3. HOVER CARD -->
+<!-- ============================================================ -->
+<section id="hover-card" class="m-b-4">
+  <h2>3. Hover Card</h2>
+  <div class="msg bga-info small">Pure <code>.tooltip</code> / <code>.tooltip-body</code> — the framework already reveals <code>.tooltip-body</code> on <code>:hover</code>. Widening it with <code>.tooltip3x</code> and filling it with real content turns the tooltip primitive into a hover card, zero new CSS.</div>
+
+  <p>Reviewed by
+    <span class="tooltip" style="border-bottom:none;">
+      <strong class="color-1" style="cursor:pointer;">@kim.majali</strong>
+      <span class="tooltip-body tooltip3x tooltip-bottom left">
+        <span class="d-flex gap-1 align-items-center m-b-1">
+          <span class="d-flex align-items-center circle bg-color-1 white bold" style="width:2.5rem;height:2.5rem;justify-content:center;flex-shrink:0;">KM</span>
+          <span>
+            <span class="d-block bold">Kim Majali</span>
+            <span class="d-block smaller opacity07">Creator, CSS Vars Framework</span>
+          </span>
+        </span>
+        <span class="d-block small m-b-1">Building dependency-free, zero-JS CSS tooling. 500+ utility classes, one stylesheet.</span>
+        <span class="d-flex gap-2 small">
+          <span><strong>128</strong> repos</span>
+          <span><strong>4.2k</strong> stars</span>
+        </span>
+      </span>
+    </span>
+    on Jul 29.
+  </p>
+</section>
+
+<!-- ============================================================ -->
+<!-- 4. COMMAND BAR -->
+<!-- ============================================================ -->
+<section id="command-bar" class="m-b-4">
+  <h2>4. Command Bar</h2>
+  <div class="msg bga-info small">Reuses <code>.modal-state</code> / <code>.modal</code> / <code>.modal__inner</code>. Without JS the list can't live-filter as you type, so it's presented as a grouped, always-visible command list — a real "type to filter" experience is the one honest JS trade-off in this set.</div>
+
+  <label for="cmdbar-modal" class="button">⌘K &nbsp; Open command bar</label>
+  <input type="checkbox" id="cmdbar-modal" class="modal-state">
+  <div class="modal">
+    <label for="cmdbar-modal" class="modal__bg"></label>
+    <div class="modal__inner" style="max-width:34rem;top:8%;height:auto;max-height:70%;">
+      <div class="form-group m-b-1">
+        <input type="text" class="form-control" placeholder="Type a command or search…" autofocus>
+      </div>
+      <p class="smaller dark text-uppercase letter-spacing-1 m-b--1-2">Suggested</p>
+      <ul class="menu m-b-1">
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg> Create new document <span class="menu-item-badge bga-grey">⌘N</span></a></li>
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> Open project <span class="menu-item-badge bga-grey">⌘O</span></a></li>
+      </ul>
+      <p class="smaller dark text-uppercase letter-spacing-1 m-b--1-2">Navigation</p>
+      <ul class="menu">
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-dark-fill" viewBox="0 0 24 24"><path d="M4 5a1 1 0 011-1h1V3h2v1h8V3h2v1h1a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1zm2 5v9h12v-9z"/></svg> Go to Calendar</a></li>
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-dark-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 2a8 8 0 110 16 8 8 0 010-16z"/><rect x="11" y="6" width="2" height="7"/><rect x="12" y="11" width="6" height="2"/></svg> Go to Scheduler</a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 5. SPOTLIGHT SEARCH -->
+<!-- ============================================================ -->
+<section id="spotlight" class="m-b-4">
+  <h2>5. Spotlight Search</h2>
+  <div class="msg bga-info small">A full-screen variant of the same <code>.modal</code> primitive used for the Command Bar — larger input, centered higher on screen, results grouped by type.</div>
+
+  <label for="spotlight-modal" class="button">Open Spotlight</label>
+  <input type="checkbox" id="spotlight-modal" class="modal-state">
+  <div class="modal">
+    <label for="spotlight-modal" class="modal__bg"></label>
+    <div class="modal__inner" style="max-width:38rem;top:6%;height:auto;max-height:60%;">
+      <div class="d-flex align-items-center gap-1 border-b border-solid border-light-grey p-b-1 m-b-1">
+        <svg class="icon-sm icon-dark-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 3a7 7 0 104.9 12.02l5.04 5.04 1.41-1.41-5.04-5.04A7 7 0 0010 3zm0 2a5 5 0 110 10 5 5 0 010-10z"/></svg>
+        <input type="text" class="form-control border-none shadow-none button-m" style="box-shadow:none;" placeholder="Search everything…" autofocus>
+      </div>
+      <ul class="menu">
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg> Styling with Variables <span class="menu-item-badge bga-grey">doc</span></a></li>
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-color-1-fill" viewBox="0 0 24 24"><rect x="6" y="2" width="12" height="20" rx="1.5"/><rect x="8.5" y="6.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="10.5" width="7" height="1.4" fill="var(--panel-bg)"/><rect x="8.5" y="14.5" width="4.5" height="1.4" fill="var(--panel-bg)"/></svg> Utility Classes Reference <span class="menu-item-badge bga-grey">doc</span></a></li>
+        <li class="menu-item"><a href="#"><svg class="menu-item-icon icon-info-fill" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg> cssvars-philosophy.md <span class="menu-item-badge bga-grey">file</span></a></li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+</body>
+</html>
