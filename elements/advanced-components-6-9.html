@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>CSS Vars — Advanced Components (6–10)</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+
+
+<main class="main-content p2">
+<div class="container-fluid">
+
+<header class="m-b-2">
+  <h1>Advanced UI Components — Part 2</h1>
+  <p class="dark">Built entirely from <code>cssvars.css</code> — no custom CSS rules, no JavaScript. Every open/close/hover state is driven by native HTML (<code>:checked</code>, <code>:hover</code>) or the browser's own <code>resize</code> behavior.</p>
+</header>
+
+<!-- ============================================================ -->
+<!-- 6. DOCK -->
+<!-- ============================================================ -->
+<section id="dock" class="m-b-4">
+  <h2>6. Dock</h2>
+  <div class="msg bga-info small">There's no scale/magnify utility in the framework, so lift is done with the existing <code>.card-hover</code> (translateY + shadow) rather than inventing a transform:scale rule.</div>
+
+  <div class="d-flex gap-1 panel" style="width:fit-content;margin:0 auto;">
+    <div class="icon-box card card-hover" style="cursor:pointer;"><svg class="icon-sm icon-color-1-fill" viewBox="0 0 24 24"><path d="M3 6a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></svg></div>
+    <div class="icon-box card card-hover" style="cursor:pointer;"><svg class="icon-sm icon-info-fill" viewBox="0 0 24 24"><path fill-rule="evenodd" d="M10 3a7 7 0 104.9 12.02l5.04 5.04 1.41-1.41-5.04-5.04A7 7 0 0010 3zm0 2a5 5 0 110 10 5 5 0 010-10z"/></svg></div>
+    <div class="icon-box card card-hover" style="cursor:pointer;"><svg class="icon-sm icon-success-fill" viewBox="0 0 24 24"><path d="M4 12l5 5L20 6l-2-2-9 9-3-3z"/></svg></div>
+    <div class="icon-box card card-hover" style="cursor:pointer;"><svg class="icon-sm icon-warning-fill" viewBox="0 0 24 24"><path d="M12 2l2.9 6.3L21.5 9l-4.9 4.4L18 20l-6-3.6L6 20l1.4-6.6L2.5 9l6.6-.7z"/></svg></div>
+    <div class="icon-box card card-hover" style="cursor:pointer;"><svg class="icon-sm icon-danger-fill" viewBox="0 0 24 24"><path d="M4 5a1 1 0 011-1h1V3h2v1h8V3h2v1h1a1 1 0 011 1v14a1 1 0 01-1 1H5a1 1 0 01-1-1zm2 5v9h12v-9z"/></svg></div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 7. RESIZABLE PANELS -->
+<!-- ============================================================ -->
+<section id="resizable" class="m-b-4">
+  <h2>7. Resizable Panels</h2>
+  <div class="msg bga-info small">Real drag-resize needs pointer-tracking JS. The zero-JS route: the browser's native <code>resize</code> property gives an actual draggable grip for free — set on a panel with <code>overflow:auto</code>. <code>resize</code> has no framework class equivalent, so it's the one inline declaration here.</div>
+
+  <div class="d-flex gap-1">
+    <div class="panel overflow-auto" style="resize:horizontal;width:16rem;min-width:10rem;max-width:30rem;height:12rem;">
+      <p class="bold">Panel A</p>
+      <p class="dark small">Drag the bottom-right corner to resize — that's the browser's native <code>resize</code> handle, no script involved.</p>
+    </div>
+    <div class="panel overflow-auto flex-fill" style="height:12rem;">
+      <p class="bold">Panel B</p>
+      <p class="dark small">Fills remaining space via <code>.flex-fill</code>.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 8. SPLIT PANE -->
+<!-- ============================================================ -->
+<section id="split-pane" class="m-b-4">
+  <h2>8. Split Pane</h2>
+  <div class="msg bga-info small">Same native-<code>resize</code> trick applied to a sidebar/content layout, with the existing <code>.resize-grip</code> class kept as a visual divider (hover highlight only — a functional drag on the grip itself would need JS, whereas the pane's own <code>resize</code> handle is free).</div>
+
+  <div class="d-flex panel p0 overflow-hidden" style="height:14rem;">
+    <div class="overflow-auto p1" style="resize:horizontal;width:12rem;min-width:8rem;max-width:20rem;background-color:var(--surface-dim);position:relative;">
+      <p class="bold small text-uppercase letter-spacing-1">Explorer</p>
+      <ul class="menu">
+        <li class="menu-item"><label>index.html</label></li>
+        <li class="menu-item"><label>cssvars.css</label></li>
+        <li class="menu-item"><label>blocks.js</label></li>
+      </ul>
+      <div class="resize-grip"></div>
+    </div>
+    <div class="overflow-auto p1 flex-fill">
+      <p class="bold">index.html</p>
+      <p class="dark small">Editor content goes here.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================ -->
+<!-- 10. DATA GRID -->
+<!-- ============================================================ -->
+<section id="data-grid" class="m-b-4">
+  <h2>9. Data Grid</h2>
+  <div class="msg bga-info small">Standard <code>.table</code> stack (<code>.table-striped</code>, <code>.table-hover</code>, <code>.table-bordered</code>) inside an <code>.overflow-auto</code> wrapper, header pinned with <code>.position-sticky.top-0</code>. Sort arrows are shown for affordance; actual sorting logic is a JS concern outside CSS's reach.</div>
+
+  <div class="panel p0 overflow-auto" style="max-height:16rem;">
+    <table class="table table-striped table-hover table-cell-border-none">
+      <thead class="position-sticky top-0 bg-body-bg">
+        <tr>
+          <th><input type="checkbox" class="styled-checkbox"></th>
+          <th>Task <svg class="icon-xxs icon-dark-fill" viewBox="0 0 24 24"><path d="M5 8l7 8 7-8z"/></svg></th>
+          <th>Owner</th>
+          <th>Status</th>
+          <th>Priority</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td><input type="checkbox" class="styled-checkbox"></td>
+          <td>Ship accessibility layer</td>
+          <td>Kim</td>
+          <td><span class="badge bga-warning">In progress</span></td>
+          <td><span class="badge bga-danger">High</span></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="styled-checkbox"></td>
+          <td>Write scheduler docs</td>
+          <td>Kim</td>
+          <td><span class="badge bga-info">Review</span></td>
+          <td><span class="badge bga-grey">Medium</span></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="styled-checkbox"></td>
+          <td>Publish landing page</td>
+          <td>Kim</td>
+          <td><span class="badge bga-success">Done</span></td>
+          <td><span class="badge bga-grey">Low</span></td>
+        </tr>
+        <tr>
+          <td><input type="checkbox" class="styled-checkbox"></td>
+          <td>Bento grid presets</td>
+          <td>Kim</td>
+          <td><span class="badge bga-grey">Backlog</span></td>
+          <td><span class="badge bga-grey">Low</span></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</section>
+
+</div>
+</main>
+
+</body>
+</html>
