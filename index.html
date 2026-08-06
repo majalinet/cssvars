@@ -32,16 +32,24 @@
         <input type="checkbox" id="toggle-1">
 
         <a href="http://cssvars.com" id="logo" class="logo" alt="CSS Vars Framework and UI Kit">
-            <img src="img/logo.png" class="h-4rem">
+            <!-- <img src="img/logo.png" class="h-4rem"> -->
+                                 <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+  <rect x="2" y="2" width="96" height="96" rx="6" ry="6" fill="var(--color-1)"/>
+  <text x="50" y="58" text-anchor="middle"
+        font-family="'Courier New', Courier, monospace"
+        font-weight="700"
+        font-size="42"
+        fill="var(--white)">{C}</text>
+</svg>
         </a>
 
         <div class="nav-panel">
             <div class="nav-group">
             <nav class="nav">
-                <a href="docs.html">Documentation</a>
-                <a href="elements/elements.html">UI Elements</a>
+                <a href="https://cssvars.com/docs/quick-start/">Documentation</a>
+                <a href="https://cssvars.com/elements/cards/">UI Elements</a>
                 <a href="https://cssvars.com/blocks/">Blocks</a>
-                <a href="themes/themes.html">Themes</a>
+                <a href="https://cssvars.com/free-templates/">Templates</a>
 
                 <select id="styles" class="form-control p-h-1 m-t--1-2" onchange="changeStyle()">
                     <option value="none">Pick a Style</option>
@@ -133,7 +141,36 @@
                 <a href="docs.html" class="button button-lg d-inline- bg-dark">Learn more</a>
             </div>
         </div>
+
+
+
     </header>
+                    <section class="row m-t-6 justify-content-center">
+  <div class="col-md-3 p1">
+    <div class="bga-grey p-1-2 center">
+      <h1 class="center bold display-5 dark">0</h1>
+      <p class="dark center font-weight-600">Dependencies &amp; build tools</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="bga-grey p-1-2 center">
+      <h1 class="center bold display-5 dark">14KB</h1>
+      <p class="dark center font-weight-600">Gzipped, entire framework</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="bga-grey p-1-2 center">
+      <h1 class="center bold display-5 dark">670+</h1>
+      <p class="dark center font-weight-600">Utility classes</p>
+    </div>
+  </div>
+  <div class="col-md-3 p1">
+    <div class="bga-grey p-1-2 center">
+      <h1 class="center bold display-5 dark">120+</h1>
+      <p class="dark center font-weight-600">Design tokens</p>
+    </div>
+  </div>
+</section>
 
     <main class="p-v-2">
         <div class="container p-t-2">
@@ -148,25 +185,42 @@
                 </div>
         </div>
 
+
+
         <section class="center row d-flex  justify-content-center child-padding-1-2 p-v-2">
 
             <div class="col-12">
                 <h2 class="font-weight-600">Simplicity</h2>
                 <p>One CSS file. No dependencies, no tooling, no installs.</p>
             </div>
+            
 
-                <div class="col-md-4">
-                    <div class="card">
-                        <svg class="icon" viewBox="0 0 24 24">
-                            <path d="M16,8V3c0-0.552-0.448-1-1-1s-1,0.448-1,1v5h-4V3c0-0.552-0.448-1-1-1S8,2.448,8,3v5H5v4c0,2.791,1.637,5.193,4,6.317V22h6    v-3.683c2.363-1.124,4-3.527,4-6.317V8H16z"/>
-                            <!-- <path d="M5.25 0.8125c0 -0.414214 -0.33579 -0.75 -0.75 -0.75s-0.75 0.335786 -0.75 0.75v2.71875H3c-0.55228 0 -1 0.44772 -1 1v3C2 9.1881 3.34315 10.5312 5 10.5312h1.25v2.6876c0 0.4142 0.33579 0.75 0.75 0.75s0.75 -0.3358 0.75 -0.75v-2.6876H9c1.6569 0 3 -1.3431 3 -2.99995v-3c0 -0.55228 -0.4477 -1 -1 -1h-0.75V0.8125c0 -0.414214 -0.33579 -0.75 -0.75 -0.75s-0.75 0.335786 -0.75 0.75v2.71875h-3.5V0.8125Z"></path> -->
-                            <!-- <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z" /> -->
-                        </svg>
-                        <h4 class="center m-v-1">Instant Integration</h4>
-                        <p class="h5 center">Just link one CSS file</p>
-                        <p class="m-t-05 dark font-weight-400 p-h-1">No npm install, no bundler config, no build scripts or package.json to maintain &mdash; drop in the stylesheet and start building.</p>
-                    </div>
-                </div>
+
+
+<div class="col-md-4">
+    <div class="card">
+        <svg class="icon" viewBox="0 0 24 24">
+                <path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path>
+        </svg>
+        <h4 class="center m-v-1">No Build Tools</h4>
+        <p class="h5 center">No compiling, no bundling</p>
+        <p class="m-t-05 dark font-weight-400 p-h-1">No webpack, no Vite, no PostCSS pipeline, no watch tasks — nothing to configure or run before you can use the framework.</p>
+    </div>
+</div>
+
+<div class="col-md-4">
+    <div class="card">
+        <svg class="icon" viewBox="0 0 24 24">
+                        <path d="M11 21h-1l1-7H7.5c-.58 0-.57-.32-.38-.66.19-.34.05-.08.07-.12C8.48 10.94 10.42 7.54 13 3h1l-1 7h3.5c.49 0 .56.33.47.51l-.07.15C12.96 17.55 11 21 11 21z" />
+
+        </svg>
+        <h4 class="center m-v-1">Zero Dependencies</h4>
+        <p class="h5 center">Nothing else to install</p>
+        <p class="m-t-05 dark font-weight-400 p-h-1">No npm packages, no external libraries, no version conflicts to manage — the stylesheet stands entirely on its own.</p>
+    </div>
+</div>
+
+
                 <div class="col-md-4">
                     <div class="card">
                         <svg class="icon" viewBox="0 0 24 24">
@@ -218,7 +272,7 @@
                     </svg>
                     <h4 class="center m-v-1">Component-Ready</h4>
                     <p class="h5 center">Cards, panels, dropdowns &amp; menus, built in</p>
-                    <p class="m-t-05 dark font-weight-400 p-h-1">Common patterns &mdash; cards, panels, sidebars, dropdowns, pills, chips &mdash; ship as ready classes, composed from the same utilities, checkbox-driven, no JavaScript required.</p>
+                    <p class="m-t-05 dark font-weight-400 p-h-1">Common patterns, cards, panels, sidebars, dropdowns, pills as ready classes, composed from the same utilities, checkbox-driven, no JavaScript required.</p>
                 </div>
             </div>
 
@@ -249,7 +303,7 @@
                         </svg>
                         <h4 class="center m-v-1">Scoped or Global</h4>
                         <p class="h5 center">Plays well with other frameworks</p>
-                        <p class="m-t-05 dark font-weight-400 p-h-1">Use CSS Vars as the whole framework, or scope it alongside an existing codebase without style collisions.</p>
+                        <p class="m-t-05 dark font-weight-400 p-h-1">Use CSS Vars as the whole framework, or scope it alongside an existing codebase without style collisions or digging into the old CSS.</p>
                     </div>
                 </div>
 
@@ -305,7 +359,7 @@
                         </svg>
                     <h4 class="center m-v-1">Lightweight</h4>
                         <p class="h5 center">14KB gzipped.</p>
-                        <p class="m-t-05 dark font-weight-400 p-h-1">A lightweight, minified core with utilities, components, and design tokens included, no build tools required.</p>
+                        <p class="m-t-05 dark font-weight-400 p-h-1">A single minified stylesheet with every utility, component, and design token included. Covers 99% of websites and apps' needs.</p>
                     </div>
                 </div>
 
@@ -328,33 +382,572 @@
         </section>
       
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-5">
-                    <p class="left dark text-uppercase font-weight-600">100+ page templates</p>
-                    <h2 class="left dark font-weight-600">Free templates for different topics</h2>
-                    <h6 class="left dark font-weight-400 m-t-1">Full page templates built entirely from CSS Vars utilities and components, ready to customize by swapping tokens instead of rewriting markup.</h6>
-                    <a href="https://cssvars.com/free-templates/">Explore Layouts</a>
-                </div>
-                <div class="col-md-7 p-h-1">
-                    <img src="https://cssvars.com/../img/cssvars2.png" class="img-responsive">
-                </div>
-            </div>
+        <!-- ============================================================
+     SECTION: Variables
+     ============================================================ -->
+<section class="container p2" id="variables">
+  <div class="row">
+    <div class="col-md-6 m-v-auto">
+      <h2 class="black bold">Everything starts with variables</h2>
+      <p class="dark m-t-1">CSS Vars Framework has no config file and no build step. Color, spacing, radius,
+        shadow and motion all live in custom properties declared once in <code>:root</code>. Every component
+        and utility class reads from those tokens instead of hardcoding values — change a token, and every
+        place that consumes it updates automatically.</p>
+      <div class="row m-t-2">
+        <div class="col-4">
+          <p class="black bold h4 m0">9</p>
+          <p class="dark small m0">Base tokens</p>
+        </div>
+        <div class="col-4">
+          <p class="black bold h4 m0">1</p>
+          <p class="dark small m0">Stylesheet</p>
+        </div>
+        <div class="col-4">
+          <p class="black bold h4 m0">0</p>
+          <p class="dark small m0">Build steps</p>
+        </div>
+      </div>
+      <a href="https://cssvars.com/docs/quick-start/" target="_blank" rel="noopener noreferrer" class="color-1 bold m-t-1 d-block">Read the docs &rarr;</a>
+    </div>
+    <div class="col-md-6 m-v-auto p2">
+      <div class="card shadow-4 p2">
+        <p class="small dark left m0">:root {</p>
+        <p class="small left m0 p-l-2">--color-1: <span class="color-1 bold">#3b82f6</span>;</p>
+        <p class="small left m0 p-l-2">--default-border-radius: 0.5rem;</p>
+        <p class="small left m0 p-l-2">--space-1: clamp(1rem, 2vw, 2rem);</p>
+        <p class="small left m0 p-l-2">--box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,.12);</p>
+        <p class="small dark left m0">}</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION: Utility Classes
+     ============================================================ -->
+<section class="container p2" id="utility-classes">
+  <div class="row child-padding-1-2">
+    <div class="col-md-6">
+      <h2 class="black bold">Utility classes</h2>
+      <p class="dark m-t-1">Around 500 single-purpose classes for one-off overrides, no new CSS required.
+        Utilities read a token wherever one exists, so overriding <code>--space-2</code> also updates every
+        <code>.p-t-2</code> / <code>.m-t-2</code> already on the page.</p>
+      <ul class="m-t-2 no-indent-ul">
+        <li class="dark m-t-05"><span class="black bold">Spacing</span> — margin & padding, two fluid scales</li>
+        <li class="dark m-t-05"><span class="black bold">Sizing</span> — width/height in %, vw, rem, "100% minus N"</li>
+        <li class="dark m-t-05"><span class="black bold">Layout</span> — flexbox, grid, position & offsets</li>
+        <li class="dark m-t-05"><span class="black bold">Borders & radius</span> — width, style, color, gradient</li>
+        <li class="dark m-t-05"><span class="black bold">Color & background</span> — solid, tinted, gradient</li>
+        <li class="dark m-t-05"><span class="black bold">Shadows</span> — four levels, plain or color-tinted</li>
+        <li class="dark m-t-05"><span class="black bold">Typography</span> — weight, case, spacing, line-height</li>
+        <li class="dark m-t-05"><span class="black bold">Effects & visibility</span> — brightness, overflow, opacity</li>
+      </ul>
+      <a href="https://cssvars.com/docs/quick-start/" target="_blank" rel="noopener noreferrer" class="color-1 bold m-t-1 d-block">Full reference &rarr;</a>
+    </div>
+    <div class="col-md-6">
+      <div class="row m-t-1">
+        <div class="col-6 p-1-2">
+          <div class="bga-color-1 rounded p1 center small">.bga-color-1</div>
+        </div>
+        <div class="col-6 p-1-2">
+          <div class="bg-gradient-info white rounded p1 center small">.bg-gradient-info</div>
+        </div>
+        <div class="col-6 p-1-2">
+          <div class="bg-success white rounded p1 center small">.bg-success</div>
+        </div>
+        <div class="col-6 p-1-2">
+          <div class="bg-danger white rounded p1 center small">.bg-danger</div>
         </div>
 
-        <div class="container">
-            <div class="row">
-                <div class="col-md-7 p-h-1">
-                    <img src="https://cssvars.com/../img/cssvars3.png" class="rounded img-responsive">
-                </div>
-                <div class="col-md-5">
-                    <p class="left dark text-uppercase font-weight-600">UI Elements</p>
-                    <h2 class="left dark font-weight-600">Build with our elements</h2>
-                    <h6 class="left dark font-weight-400 m-t-1">Cards, panels, dropdowns, pills, chips, and dozens more &mdash; free, quality UI elements, fully customizable through CSS variables and battle-tested on real sites.</h6>
-                    <a href="https://cssvars.com/elements/backgrounds/">Explore UI Elements</a>
-                </div>
-            </div>
+        <div class="col-6 p-1-2">
+<div class="col border border-a-info info border-4 border-dashed p1 bga-info">border-dashed</div>  
+      </div>
+        <div class="col-6 p-1-2">
+          <div class="bg-color-1 white p1 opacity03 opacity1-hover">.bg-color-1 opacity03</div>
         </div>
+        <div class="col-6 p-1-2">
+          <div class="border-gradient-info border-solid border-4 rounded p1 center small bg-white">.border-gradient-info</div>
+        </div>
+        <div class="col-6 p-1-2">
+          <div class="shadow-color-3 rounded p1 center small bg-white">.shadow-color-3</div>
+        </div>
+      </div>
+      <div class="m-1-2 row gap-1 child-padding-1-2">
+  <p class="bg-success white">bg-success</p>
+  <p class="bg-info white">bg-info</p>
+  <p class="bg-warning white">bg-warning</p>
+  <p class="bg-luxury white">bg-luxury</p>
+  <p class="bg-danger with d-inline-block white">bg-danger</p>
+  <p class="bg-grey black d-inline-block white">bg-grey</p>
+  <p class="bg-dark d-inline-block white">bg-dark</p>
+  <p class="bga-color-1">bga-color-1</p>
+  <p class="bga-color-2">bga-color-2</p>
+  <p class="bga-danger">bga-danger</p>
+  <p class="bga-success">bga-color-success</p>
+  <p class="bga-info">bga-color-info</p>
+  <p class="bga-warning">bga-warning</p>
+  <p class="bga-luxury">bga-luxury</p>
+
+    </div>
+
+
+</div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION: Elements
+     ============================================================ -->
+<section class="container p2 bg-light-grey" id="elements">
+  <div class="row child-padding-1-2">
+    <div class="col-md-6">
+      <h2 class="black bold">Elements</h2>
+      <p class="dark m-t-1">Every native or composed piece of UI the framework styles by default, all driven
+        by the same panel, control and surface tokens.</p>
+      <ul class="m-t-2 no-indent-ul">
+        <li class="dark m-t-05"><span class="black bold">Buttons & controls</span> — button, pill, chip</li>
+        <li class="dark m-t-05"><span class="black bold">Cards & panels</span> — card, panel, promo box</li>
+        <li class="dark m-t-05"><span class="black bold">Forms</span> — inputs, checkboxes, ratings, file upload</li>
+        <li class="dark m-t-05"><span class="black bold">Navigation</span> — breadcrumb, dropdown, sidebar, mega menu</li>
+        <li class="dark m-t-05"><span class="black bold">Disclosure</span> — tabs, accordion, tooltip</li>
+        <li class="dark m-t-05"><span class="black bold">Feedback</span> — badge, message, table</li>
+        <li class="dark m-t-05"><span class="black bold">Media</span> — carousel, gallery, masonry, light-box</li>
+        <li class="dark m-t-05"><span class="black bold">Overlays</span> — modal</li>
+      </ul>
+      <a href="https://cssvars.com/elements/cards/" target="_blank" rel="noopener noreferrer" class="color-1 bold m-t-1 d-block">Browse elements &rarr;</a>
+    </div>
+    <div class="col-md-6">
+
+      <div class="tabs m-t-1">
+
+            <input type="radio" name="elements-tabs" id="tab-alerts" checked>
+        <label for="tab-alerts" >Alerts</label>
+        <div class="tab">
+          <div class="msg bga-success success">
+            <p class="m0 dark">Success — your changes have been saved.</p>
+          </div>
+          <div class="msg bga-danger danger">
+            <p class="m0 dark">Error — something went wrong.</p>
+          </div>
+          <div class="msg bga-warning warning">
+            <p class="m0 dark">Warning — double-check your input.</p>
+          </div>
+          <div class="msg bga-info info">
+            <p class="m0 dark">Info — a new version is available.</p>
+          </div>
+        </div>
+
+        <input type="radio" name="elements-tabs" id="tab-icons" >
+        <label for="tab-icons" >Icons</label>
+        <div class="tab">
+          <div class="row">
+            <div class="col-3 center">
+              <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m">
+                <path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center">
+              <svg viewBox="0 0 24 24" class="icon-success-fill icon-m">
+                <path d="M19 8l-4 4h3c0 3.31-2.69 6-6 6-1.01 0-1.97-.25-2.8-.7l-1.46 1.46C8.97 19.54 10.43 20 12 20c4.42 0 8-3.58 8-8h3l-4-4zM6 12c0-3.31 2.69-6 6-6 1.01 0 1.97.25 2.8.7l1.46-1.46C15.03 4.46 13.57 4 12 4c-4.42 0-8 3.58-8 8H1l4 4 4-4H6z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center">
+              <svg viewBox="0 0 24 24" class="icon-danger-fill icon-m">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center">
+              <svg viewBox="0 0 24 24" class="icon-info-fill icon-m">
+                <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center m-t-1">
+              <svg viewBox="0 0 24 24" class="icon-warning-fill icon-m">
+                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center m-t-1">
+              <svg viewBox="0 0 24 24" class="icon-luxury-fill icon-m">
+                <path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center m-t-1">
+              <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-m">
+                <path d="M6,2A2,2 0 0,0 4,4V20A2,2 0 0,0 6,22H18A2,2 0 0,0 20,20V8L14,2H6M6,4H13V9H18V20H6V4M8,12V14H16V12H8M8,16V18H13V16H8Z"></path>
+              </svg>
+            </div>
+            <div class="col-3 center m-t-1">
+              <svg viewBox="0 0 24 24" class="icon-dark-fill icon-m">
+                <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+              </svg>
+            </div>
+          </div>
+        </div>
+
+        <input type="radio" name="elements-tabs" id="tab-buttons">
+        <label for="tab-buttons" >Buttons &amp; Badges</label>
+        <div class="tab">
+          <div>
+            <button class="button">Button</button>
+            <button class="button color-1 outline-color-1 bg-white">Outline</button>
+          </div>
+          <div class="m-t-1">
+            <span class="badge bg-info white">Info</span>
+            <span class="badge bg-success white">Success</span>
+            <span class="badge bg-danger white">Danger</span>
+            <span class="badge bg-warning black">Warning</span>
+          </div>
+          <div class="m-t-1">
+            <span class="pill">Pill</span>
+            <span class="pill pill-color-1">Brand</span>
+            <span class="pill pill-success">Success</span>
+            <span class="pill pill-info">Info</span>
+            <span class="pill pill-warning">Warning</span>
+            <span class="pill pill-danger">Danger</span>
+            <span class="chip chip-color-1">Chip</span>
+          </div>
+        </div>
+
+
+
+        <input type="radio" name="elements-tabs" id="tab-tooltip">
+        <label for="tab-tooltip" >Tooltip</label>
+        <div class="tab">
+          <p class="dark">Hover the highlighted terms:
+            <span class="tooltip color-1 bold">CSS Vars
+              <span class="tooltip-body tooltip-bottom">A zero-JS, single-stylesheet framework</span>
+            </span>
+            and
+            <span class="tooltip color-1 bold">tokens
+              <span class="tooltip-body tooltip-top">Custom properties declared once in :root</span>
+            </span>.
+          </p>
+
+          <div class="dropdown">
+    <input type="checkbox" id="pop1" class="dropdown-state">
+    <label for="pop1" class="dropdown-toggle button">Assign owner</label>
+    <div class="dropdown-menu p1" style="width:18rem;">
+      <p class="bold m-b--1-2">Assign this task</p>
+      <p class="dark small m-b-1">Choose a teammate to take ownership. They'll be notified immediately.</p>
+      <div class="form-group">
+        <input type="text" class="form-control" placeholder="Search people…">
+      </div>
+      <div class="d-flex gap-1" style="justify-content:flex-end;">
+        <label for="pop1" class="button bga-grey small">Cancel</label>
+        <label for="pop1" class="button small">Assign</label>
+      </div>
+    </div>
+  </div>
+
+<p>Reviewed by
+    <span class="tooltip" style="border-bottom:none;">
+      <strong class="color-1" style="cursor:pointer;">@kim.majali</strong>
+      <span class="tooltip-body tooltip3x tooltip-bottom left">
+        <span class="d-flex gap-1 align-items-center m-b-1">
+          <span class="d-flex align-items-center circle bg-color-1 white bold" style="width:2.5rem;height:2.5rem;justify-content:center;flex-shrink:0;">KM</span>
+          <span>
+            <span class="d-block bold">Kim Majali</span>
+            <span class="d-block smaller opacity07">Creator, CSS Vars Framework</span>
+          </span>
+        </span>
+        <span class="d-block small m-b-1">Building dependency-free, zero-JS CSS tooling. 500+ utility classes, one stylesheet.</span>
+        <span class="d-flex gap-2 small">
+          <span><strong>128</strong> repos</span>
+          <span><strong>4.2k</strong> stars</span>
+        </span>
+      </span>
+    </span>
+    on Jul 29.
+  </p>
+
+  
+        </div>
+
+        <input type="radio" name="elements-tabs" id="tab-tables">
+        <label for="tab-tables" >Tables</label>
+        <div class="tab">
+<table class="table table-cell-separate table-cell-border-none table-dark-header">
+          <thead>
+              <tr>
+                  <th>Firstname</th>
+                  <th>Lastname</th>
+                  <th>Email</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td>John</td>
+                  <td>Doe</td>
+                  <td>john@example.com</td>
+              </tr>
+              <tr>
+                  <td>Kim</td>
+                  <td>Doe</td>
+                  <td>Kim@example.com</td>
+              </tr>
+              <tr>
+                  <td>Dan</td>
+                  <td>Doe</td>
+                  <td>dan@example.com</td>
+              </tr>
+          </tbody>
+      </table>
+        </div>
+
+        <input type="radio" name="elements-tabs" id="tab-forms">
+        <label for="tab-forms" >Forms</label>
+        <div class="tab">
+          <div class="form-group">
+            <input type="text" class="form-control" placeholder="Your name">
+          </div>
+          <div class="form-group">
+            <select class="form-control">
+              <option>Choose a plan</option>
+              <option>Starter</option>
+              <option>Team</option>
+              <option>Enterprise</option>
+            </select>
+          </div>
+          <label class="form-check-inline dark">
+            <input type="checkbox" class="styled-checkbox"> Subscribe to updates
+          </label>
+<button type="submit" class="btn btn-primary">Submit</button>
+        </div>
+
+        <input type="radio" name="elements-tabs" id="tab-carousel">
+        <label for="tab-carousel" >Carousel</label>
+        <div class="tab">
+<div class="carousel-fixed" style="height:12rem;">
+    <input type="radio" name="dots-slides" id="dots-radio-1" checked="">
+    <input type="radio" name="dots-slides" id="dots-radio-2">
+    <input type="radio" name="dots-slides" id="dots-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-color-1"><h2>Slide 1</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-success"><h2>Slide 2</h2></div></li>
+      <li><div class="h-100 d-flex align-items-center justify-content-center bga-info"><h2>Slide 3</h2></div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="dots-radio-1"></label>
+      <label for="dots-radio-2"></label>
+      <label for="dots-radio-3"></label>
+    </div>
+  </div>
+        </div>
+
+        <input type="radio" name="elements-tabs" id="bento-gallery">
+        <label for="bento-gallery" >Bento Grid</label>
+        <div class="tab">
+<div class="bento">
+      <div class="bento-item bento-2x2 bg-surface-dim">
+        <h3>Fast by default</h3>
+        <p>No build step, no bundler, no runtime JS to ship.</p>
+      </div>
+      <div class="bento-item bento-2x1">
+        <h4>Themeable</h4>
+        <p>Every value flows from <code>:root</code>.</p>
+      </div>
+      <div class="bento-item bento-1x1">
+        <h4>~500</h4>
+        <p>utility classes</p>
+      </div>
+      <div class="bento-item bento-1x1">
+        <h4>0KB</h4>
+        <p>JavaScript</p>
+      </div>
+      <div class="bento-item bento-4x1 bg-surface-dim">
+        <h4>Open source on GitHub</h4>
+      </div>
+    </div>
+        </div>
+        <input type="radio" name="elements-tabs" id="tab-gallery">
+        <label for="tab-gallery" >Gallery Box</label>
+        <div class="tab">
+<div id="gallery-box-photo-container" class="gallery-box-photo-container rounded shadow-3">
+    <img id="main-image" src="https://cssvars.com/wp-content/themes/AgileCSS/images/store/product-11.jpeg"><br>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/store/product-11.jpeg" onclick="document.getElementById('main-image').src='http://cssvars.com/wp-content/themes/AgileCSS/images/store/product-11.jpeg'">
+    </div>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/store/product-12.jpeg" onclick="document.getElementById('main-image').src='http://cssvars.com/wp-content/themes/AgileCSS/images//store/product-12.jpeg'">
+    </div>
+    <div class="gallery-box-thumbnail-image shadow">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/store/product-13.jpeg" onclick="document.getElementById('main-image').src='http://cssvars.com/wp-content/themes/AgileCSS/images/store/product-13.jpeg'">
+    </div>
+</div>
+        </div>
+
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION: Styles
+     ============================================================ -->
+<section class="container p2" id="styles">
+  <h2 class="black bold center">Styles</h2>
+  <p class="dark center m-t-1">26 ready-made style presets, layered on top of the same components and
+    tokens — swap the whole visual identity of a page, or just one section, by adding one class.</p>
+
+  <div class="row m-t-4">
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="modern-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Modern</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Colour blocks, clean lines, subtle shadows</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="editorial-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Editorial</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Blogs, magazines, long-form reading</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="glass-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Glass</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Frosted-glass fintech & health-tech UIs</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="pastel-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Pastel</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Wellness, education & family-friendly apps</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="brutal-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Brutal</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Bold, disruptive, anti-design</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="luxury-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Luxury</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Premium brands, dramatic experiences</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="neon-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Neon</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">Nightclubs, gaming, media streaming</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-3 col-6 p-1-2">
+      <div class="futuristic-style p1 rounded" style="background-color: var(--body-bg);">
+        <div class="card center">
+          <p class="bold m0" style="color: var(--heading-color);">Futuristic</p>
+          <p class="small m-t-05 m0" style="color: var(--body-color);">AI, dev tools, crypto, startups</p>
+          <button class="button button-s m-t-1">Button</button>
+        </div>
+      </div>
+    </div>
+    <p class="col-12 center m-t-2">
+  <a href="https://cssvars.com/docs/styles/" target="_blank" rel="noopener noreferrer" class="color-1 bold">Browse all styles &rarr;</a>
+</p>
+
+
+  </div>
+</section>
+
+<!-- ============================================================
+     SECTION: Blocks
+     ============================================================ -->
+<section class="container p2 bg-light-grey" id="blocks">
+  <h2 class="black bold center">Blocks</h2>
+  <p class="dark center m-t-1">Ready-made HTML sections, organized by category — copy one in, then customize
+    with existing classes. No new CSS to write.</p>
+
+  <div class="pills center m-t-2">
+    <span class="pill">Header</span>
+    <span class="pill">Hero</span>
+    <span class="pill">Breadcrumb</span>
+    <span class="pill">Content</span>
+    <span class="pill">List</span>
+    <span class="pill">Feature</span>
+    <span class="pill">CTA</span>
+    <span class="pill">Contact</span>
+    <span class="pill">Footer</span>
+    <span class="pill">Blog</span>
+    <span class="pill">E-commerce</span>
+    <span class="pill">Gallery</span>
+    <span class="pill">Navigation</span>
+    <span class="pill">Step</span>
+    <span class="pill">Team</span>
+    <span class="pill">Pricing</span>
+    <span class="pill">Product</span>
+    <span class="pill">Testimonial</span>
+    <span class="pill">Video</span>
+    <span class="pill">Statistic</span>
+    <span class="pill">Portfolio</span>
+  </div>
+
+  <p class="center m-t-2">
+    <a href="https://cssvars.com/blocks/" target="_blank" rel="noopener noreferrer" class="color-1 bold">Browse all blocks &rarr;</a>
+  </p>
+</section>
+
+<!-- ============================================================
+     SECTION: Templates
+     ============================================================ -->
+<section class="container p2" id="templates">
+  <h2 class="black bold center">Templates</h2>
+  <p class="dark center m-t-1">Full look-and-feel swaps driven by <code>data-theme</code> and a handful of
+    base color tokens — enough coverage, out of the box, to build every page a website typically needs.</p>
+
+  <div class="pills center m-t-2">
+    <span class="pill">Home</span>
+    <span class="pill">About</span>
+    <span class="pill">Services</span>
+    <span class="pill">Pricing</span>
+    <span class="pill">Blog</span>
+    <span class="pill">Blog Post</span>
+    <span class="pill">Portfolio</span>
+    <span class="pill">Team</span>
+    <span class="pill">Testimonials</span>
+    <span class="pill">FAQ</span>
+    <span class="pill">Contact</span>
+    <span class="pill">Login / Sign up</span>
+    <span class="pill">Product</span>
+    <span class="pill">Cart / Checkout</span>
+    <span class="pill">Dashboard</span>
+    <span class="pill">404</span>
+  </div>
+
+  <p class="center m-t-2">
+    <a href="https://cssvars.com/free-templates/" target="_blank" rel="noopener noreferrer" class="color-1 bold">See free templates &rarr;</a>
+  </p>
+</section>
+
+
 
         <div class="center d-flex flex-column justify-content-center">
             <div class="container-fluid">
@@ -370,6 +963,9 @@
         </div>
 
     </main>
+
+
+    
 
     <div class="center p2 color-1 bg-light-grey">
         <p class="color-1 small">

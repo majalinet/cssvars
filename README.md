@@ -57,10 +57,15 @@ the same stylesheet either way.
 ## Simplicity
 One CSS file. No dependencies, no tooling, no installs.
 
-### Instant Integration: 
-Just link one CSS file
+### No Build Tools: 
+No compiling, no bundling
 
-No npm install, no bundler config, no build scripts or package.json to maintain — drop in the stylesheet and start building.
+No webpack, no Vite, no PostCSS pipeline, no watch tasks — nothing to configure or run before you can use the framework.
+
+### Zero Dependencies: 
+Nothing else to install
+
+No npm packages, no external libraries, no version conflicts to manage — the stylesheet stands entirely on its own.
 
 ### Pure HTML & CSS
 Every common UI element, no JS required
@@ -125,15 +130,7 @@ Fill, size, and background utilities style inline SVG icons directly — no icon
 ### Lightweight
 14KB gzipped.
 
-A lightweight, minified core with utilities, components, and design tokens included, no build tools required.
-
-
-
-
-
-
-
-
+A single minified stylesheet with every utility, component, and design token included. Covers 99% of websites and apps' needs.
 
 
 ## Extras
