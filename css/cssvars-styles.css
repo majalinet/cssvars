@@ -1,4 +1,3 @@
-/* Styles */
 @layer style {
 /* Brutalism (Anti-Design) 
 Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.
@@ -9,7 +8,7 @@ Art studios, personal brands, underground music, radical startups.
   --body-bg: var(--white);
   --body-color: var(--dark);
   --default-padding: 0.5rem;
-  --default-margin: 0.5rem;
+  --default-margin: 0.5rem 0;
   --default-gap: 0.5rem;
   --default-border: 0.125rem solid var(--dark);
   --default-border-radius: 0;
@@ -21,7 +20,6 @@ Art studios, personal brands, underground music, radical startups.
   --success: #198754;
   --warning: #ffc107;
   --luxury: #6f42c1;
-
   --control-border: 2px solid var(--black);
   --panel-bg: var(--body-bg);
   --input-border: 2px solid var(--black);
@@ -114,11 +112,11 @@ Glassmorphism: Best for modern, elegant UIs with frosted-glass visuals.
 Fintech, health tech, luxury apps, personal productivity tools.
 */
 .glass-style {
-  --background-image: url('../img/glass/glass-bga1.png'); background-size: cover; background-position: center;
+  --background-image: url('https://cssvars.com/img/styles/glass-bga1.png'); background-size: cover; background-position: center;
   --color-1: #6d5dfc;
   --color-2: #46c2ff;
   --dark: #33354a;
-  --grey: color-mix(in srgb, var(--white) 40%, transparent);
+  --grey: color-mix(in srgb, var(--black) 70%, transparent);
   --light-grey: color-mix(in srgb, var(--white) 15%, transparent);
   --white: #ffffff;
   --black: #10111f;
@@ -148,7 +146,7 @@ Fintech, health tech, luxury apps, personal productivity tools.
 }
 
 [data-theme="dark"].glass-style {
-  --background-image: url('../img/glass/glass-bga1-dark.png'); background-size: cover; background-position: center;
+  --background-image: url('https://cssvars.com/img/styles/glass-bga1-dark.png'); background-size: cover; background-position: center;
   --light-grey: color-mix(in srgb, var(--white) 15%, transparent);
   --dark: #8e91b1;
   --heading-color: color-mix(in srgb, white 95%, var(--color-1));
@@ -173,8 +171,9 @@ Fintech, health tech, luxury apps, personal productivity tools.
   --input-hover-border: color-mix(in srgb, white 40%, transparent);
   --input-focus-border: var(--color-2);
   --input-focus-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--color-2) 30%, transparent);
-    --input-bg: color-mix(in srgb, var(--black) 85%, transparent);
-
+  --grey: color-mix(in srgb, var(--white) 70%, transparent);
+  --black: #ffffff;
+  --input-bg: black;
 }
 
 /* Retro & Vintage 
@@ -185,7 +184,7 @@ Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
   --color-1: #c1440e;
   --color-2: #2e4052;
   --dark: #4a3a2c;
-  --grey: #b8a98d;
+  --grey: #756b59;
   --light-grey: #f0e4cf;
   --white: #fdf6e3;
   --black: #2b1e12;
@@ -248,7 +247,7 @@ Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
 }
 .retro-lite-style{
   --color-1: #7c5b3d;
-  --grey: #d7c8aa;
+  --grey: #a19680;
   --light-grey: #fff8ef;
   --body-bg: #fffdf5;
   --body-color: #5d4631;
@@ -305,7 +304,7 @@ Tech startups, SaaS platforms, portfolios, architects, wellness brands.
   --color-1: #111111;
   --color-2: #555555;
   --dark: #444444;
-  --grey: #d8d8d8;
+  --grey: #888;
   --light-grey: #f7f7f7;
   --white: #ffffff;
   --black: #111111;
@@ -341,7 +340,7 @@ Tech startups, SaaS platforms, portfolios, architects, wellness brands.
  --color-1: #f5f5f5;
   --color-2: #a3a3a3;
   --dark: #b5b5b5;
-  --grey: #3a3a3a;
+  --grey: #aaa;
   --light-grey: #1c1c1c;
   --white: #161616;
   --black: #f5f5f5;
@@ -416,6 +415,9 @@ Nightclubs, gaming platforms, youth fashion, media streaming.
   --input-focus-shadow: 0 0 0.6rem color-mix(in srgb, var(--color-2) 60%, transparent);
   --heading-color:var(--color-1, pink);
   --icon-default-fill: var(--color-1, pink);
+  --surface-dim: color-mix(in srgb, var(--color-1) 30%, transparent);
+  --white: color-mix(in srgb, var(--white) 50%, transparent);
+  --black: color-mix(in srgb, var(--color-1) 90%, transparent);
 }
 
 /* Cyberpunk 
@@ -457,6 +459,9 @@ Blockchain/crypto apps, game dev studios, hacker culture brands.
   --control-hover-bg: var(--color-2);
   --control-hover-color: var(--body-bg);
   --control-hover-border: var(--color-1);
+  --surface-dim: color-mix(in srgb, var(--color-1) 30%, transparent);
+  --white: color-mix(in srgb, var(--white) 50%, transparent);
+  --black: color-mix(in srgb, var(--color-1) 90%, transparent);
 }
 
 /* Luxury / Maximalism / Elegant - Focus: rich tones, refined edges, stylish typography 
@@ -501,43 +506,32 @@ Jewellery, fashion houses, high-end services, interior design.
 [data-theme="dark"].luxury-style {
   --body-bg: #151312;
   --body-color: #e8e2d7;
-
   --white: #1f1b18;
   --black: #f6f2eb;
-
   --color-1: #d8b46a;
   --light-grey: color-mix(in srgb, var(--body-bg) 82%, var(--color-1));
   --dark: color-mix(in srgb, var(--black) 88%, var(--color-1));
-
   --heading-color: #f3ead8;
-
   --panel-bg: color-mix(in srgb, var(--body-bg) 90%, var(--white));
   --panel-border: .0625rem solid color-mix(in srgb, var(--color-1) 18%, var(--light-grey));
-
   --default-border: .0625rem solid color-mix(in srgb, var(--color-1) 20%, var(--light-grey));
-
   --control-bg: var(--color-1);
   --control-color: #181512;
   --control-border: .0625rem solid color-mix(in srgb, var(--color-1) 40%, var(--black));
-
   --input-bg: color-mix(in srgb, var(--body-bg) 92%, var(--white));
   --input-color: var(--body-color);
   --input-border: .0625rem solid color-mix(in srgb, var(--color-1) 18%, var(--light-grey));
   --input-hover-border: color-mix(in srgb, var(--color-1) 45%, var(--black));
   --input-focus-border: var(--color-1);
   --input-focus-shadow: 0 0 0 .2rem color-mix(in srgb, var(--color-1) 25%, transparent);
-
   --link-color: #e2c27f;
   --link-hover-color: #f1d899;
-
   --icon-default-fill: var(--color-1);
-
   --surface-overlay: color-mix(in srgb, black 70%, transparent);
   --surface-inverse: #f3ead8;
   --surface-inverse-color: #1b1816;
   --surface-hover: color-mix(in srgb, var(--color-1) 12%, transparent);
   --surface-active: color-mix(in srgb, var(--color-1) 20%, transparent);
-
   --box-shadow:
     0 .25rem .75rem rgba(0, 0, 0, .35),
     0 1rem 2.5rem rgba(0, 0, 0, .55);
@@ -613,46 +607,34 @@ Government sites, accessibility-first platforms, education.
   --dark: #e5e5e5;
   --grey: #9a9a9a;
   --light-grey: #1f1f1f;
-
   --body-bg: #000000;
   --body-color: #ffffff;
-
   --heading-color: #ffffff;
   --link-color: #ffffff;
   --link-hover-color: #cfcfcf;
-
   --surface-hover: #2b2b2b;
   --surface-active: #404040;
   --surface-selected: #555555;
   --surface-disabled: #1a1a1a;
-
   --panel-bg: #000000;
   --panel-border: 3px solid #ffffff;
-
   --control-bg: #ffffff;
   --control-color: #000000;
   --control-border: 3px solid #ffffff;
-
   --control-hover-bg: #000000;
   --control-hover-color: #ffffff;
   --control-hover-border: 3px solid #ffffff;
-
   --control-active-bg: #2a2a2a;
   --control-active-color: #ffffff;
-
   --control-focus-ring: 0 0 0 4px #000000, 0 0 0 7px #ffffff;
-
   --input-bg: #000000;
   --input-color: #ffffff;
   --input-border: 3px solid #ffffff;
-
   --input-hover-border: #ffffff;
   --input-focus-border: #ffffff;
   --input-focus-shadow: 0 0 0 4px #000000, 0 0 0 7px #ffffff;
-
   --input-placeholder: #b5b5b5;
   --input-disabled-bg: #1a1a1a;
-
   --default-border: 2px solid #ffffff;
 }
 
@@ -663,7 +645,6 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
 .neumorphism-style {
   --neu-tint: color-mix(in srgb, var(--color-1) 6%, white);
   --neu-tint-deep: color-mix(in srgb, var(--color-1) 10%, white);
-
   --body-bg: var(--neu-tint);
   --body-color: color-mix(in srgb, var(--color-1) 80%, black);
   --panel-bg: var(--neu-tint);
@@ -671,14 +652,11 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
   --control-color: color-mix(in srgb, var(--color-1) 80%, black);
   --light-grey: color-mix(in srgb, var(--color-1) 8%, white);
   --dark: color-mix(in srgb, var(--color-1) 50%, white);
-
   --neu-shadow-light: color-mix(in srgb, white 85%, transparent);
   --neu-shadow-dark: color-mix(in srgb, var(--color-1) 25%, transparent);
-
   --panel-border: none;
   --panel-radius: 1.25rem;
   --panel-shadow: 0.5rem 0.5rem 1rem var(--neu-shadow-dark), -0.5rem -0.5rem 1rem var(--neu-shadow-light);
-
   --control-border: none;
   --control-radius: 1rem;
   --control-shadow: 0.375rem 0.375rem 0.75rem var(--neu-shadow-dark), -0.375rem -0.375rem 0.75rem var(--neu-shadow-light);
@@ -687,113 +665,17 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
   --control-active-bg: var(--neu-tint-deep);
   --control-active-color: var(--color-1);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 20%, transparent);
-
   --input-bg: var(--neu-tint);
   --input-color: color-mix(in srgb, var(--color-1) 80%, black);
   --input-border: none;
   --input-radius: 1rem;
   --input-shadow: inset 0.25rem 0.25rem 0.5rem var(--neu-shadow-dark), inset -0.25rem -0.25rem 0.5rem var(--neu-shadow-light);
   --input-focus-shadow: inset 0.25rem 0.25rem 0.5rem var(--neu-shadow-dark), inset -0.25rem -0.25rem 0.5rem var(--neu-shadow-light), 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 20%, transparent);
-
   --icon-default-fill: var(--color-1);
-
-
-
-
-/*   
-   --neu-base:       color-mix(in srgb, var(--color-1) 8%, white);
-  --neu-base-rgb:                     235, 235, 240;
-
-  --body-bg:        var(--neu-base);
-  --panel-bg:       var(--neu-base);
-  --surface-raised: var(--neu-base);
-  --surface-dim:    color-mix(in srgb, var(--color-1) 4%, white);
-  --light-grey:     color-mix(in srgb, var(--color-1) 12%, white); 
-
-  --body-color:     color-mix(in srgb, var(--color-1) 75%, black);
-  --heading-color:  color-mix(in srgb, var(--color-1) 90%, black);
-  --heading-font-weight: 500;
-  --font-family:    "Nunito", "Segoe UI", system-ui, sans-serif;
-
-  --neu-light: color-mix(in srgb, white 100%, transparent);
-  --neu-dark:  color-mix(in srgb, var(--color-1) 18%, transparent);
-
-  --panel-border: none;
-  --panel-radius: 1.25rem;
-  --panel-padding: 1.5rem;
-  --panel-shadow:
-     0.4rem  0.4rem  0.8rem var(--neu-dark),
-    -0.4rem -0.4rem  0.8rem var(--neu-light);
-  --control-bg:     var(--neu-base);
-  --control-color:  color-mix(in srgb, var(--color-1) 85%, black);
-  --control-border: none;
-  --control-radius: 0.875rem;
-  --control-shadow:
-     0.3rem  0.3rem  0.6rem var(--neu-dark),
-    -0.3rem -0.3rem  0.6rem var(--neu-light);
-  --input-bg:     var(--neu-base);
-  --input-color:  var(--body-color);
-  --input-border: none;
-  --input-radius: 0.75rem;
-  --input-shadow:
-    inset  0.2rem  0.2rem  0.4rem var(--neu-dark),
-    inset -0.2rem -0.2rem  0.4rem var(--neu-light);
-  --input-placeholder: color-mix(in srgb, var(--color-1) 45%, white);
-
-  --duration-base: 0.25s;
-  --easing: cubic-bezier(0.4, 0, 0.2, 1);
-}
-.neumorphism-style .card-hover:hover,
-.neumorphism-style .button:hover {
-  --panel-shadow:
-     0.55rem  0.55rem  1.1rem var(--neu-dark),
-    -0.55rem -0.55rem  1.1rem var(--neu-light);
-  transform: translateY(-2px);
-  transition: transform var(--duration-base) var(--easing),
-              box-shadow var(--duration-base) var(--easing);
-}
-.neumorphism-style .button:active,
-.neumorphism-style .pill:active {
-  --control-shadow:
-    inset  0.25rem  0.25rem  0.5rem var(--neu-dark),
-    inset -0.25rem -0.25rem  0.5rem var(--neu-light);
-  transform: translateY(0);
-}
-
-.neumorphism-style .button:focus-visible,
-.neumorphism-style .form-control:focus-visible {
-  outline: 0.15rem solid color-mix(in srgb, var(--color-1) 60%, transparent);
-  outline-offset: 0.25rem;
-}
-
-[data-theme="dark"].neumorphism-style {
-  --neu-base:    color-mix(in srgb, var(--color-1) 15%, #1a1a1f);
-  --body-bg:     var(--neu-base);
-  --panel-bg:    var(--neu-base);
-  --body-color:  color-mix(in srgb, white 85%, var(--color-1));
-  --heading-color: white;
-  --light-grey:  color-mix(in srgb, var(--color-1) 25%, #1a1a1f);
-
-  --neu-light: color-mix(in srgb, white 8%, transparent);
-  --neu-dark:  rgba(0, 0, 0, 0.55);
-
-  --panel-shadow:
-     0.4rem  0.4rem  0.8rem var(--neu-dark),
-    -0.4rem -0.4rem  0.8rem var(--neu-light);
-
-  --control-shadow:
-     0.3rem  0.3rem  0.6rem var(--neu-dark),
-    -0.3rem -0.3rem  0.6rem var(--neu-light);
-
-  --input-shadow:
-    inset  0.2rem  0.2rem  0.4rem var(--neu-dark),
-    inset -0.2rem -0.2rem  0.4rem var(--neu-light); */
-
 }
 [data-theme="dark"].neumorphism-style {
   --neu-tint: color-mix(in srgb, var(--color-1) 15%, #1e1e24);
   --neu-tint-deep: color-mix(in srgb, var(--color-1) 22%, #1e1e24);
-
   --body-bg: var(--neu-tint);
   --body-color: color-mix(in srgb, white 85%, var(--color-1));
   --panel-bg: var(--neu-tint);
@@ -801,23 +683,20 @@ IoT dashboards, smart home apps, lifestyle tools (in moderation).
   --control-color: color-mix(in srgb, white 85%, var(--color-1));
   --light-grey: color-mix(in srgb, var(--color-1) 25%, #1e1e24);
   --dark: color-mix(in srgb, var(--color-1) 70%, black);
-
   --neu-shadow-light: color-mix(in srgb, white 8%, transparent);
   --neu-shadow-dark: color-mix(in srgb, black 55%, transparent);
-
   --panel-shadow: 0.5rem 0.5rem 1rem var(--neu-shadow-dark), -0.5rem -0.5rem 1rem var(--neu-shadow-light);
-
   --control-shadow: 0.375rem 0.375rem 0.75rem var(--neu-shadow-dark), -0.375rem -0.375rem 0.75rem var(--neu-shadow-light);
   --control-hover-bg: var(--neu-tint-deep);
   --control-hover-color: var(--color-1);
   --control-active-bg: var(--neu-tint-deep);
   --control-active-color: var(--color-1);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 30%, transparent);
-
   --input-bg: var(--neu-tint);
   --input-color: color-mix(in srgb, white 85%, var(--color-1));
   --input-shadow: inset 0.25rem 0.25rem 0.5rem var(--neu-shadow-dark), inset -0.25rem -0.25rem 0.5rem var(--neu-shadow-light);
   --input-focus-shadow: inset 0.25rem 0.25rem 0.5rem var(--neu-shadow-dark), inset -0.25rem -0.25rem 0.5rem var(--neu-shadow-light), 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 30%, transparent);
+  --grey: color-mix(in srgb, var(--color-1) 55%, #1e1e24);
 }
 
 /* Modern / Flat UI - Focus: colour blocks, clean lines, subtle shadows
@@ -825,180 +704,117 @@ Flat 2.0: Use for clean, intuitive UIs with subtle depth cues.
 Fintech apps, e-commerce admin, task managers.
 */
 .modern-style {
-  /* Colors */
   --color-1: #2563eb;
   --color-1: #06b6d4;
   --color-1: #6366f1;
-
   --color-2: #10b981;
   --dark: #1e293b;
   --grey: #64748b;
   --white: #ffffff;
   --black: #020617;
   --light-grey: #f8fafc;
-
-  /* Body */
   --body-bg: #f8fafc;
   --body-color: var(--dark);
-
-  /* Typography */
   --font-weight: 400;
   --line-height: 1.65;
-
   --heading-font-weight: 700;
   --heading-color: var(--dark);
   --heading-letter-spacing: -0.02em;
-
-  /* Surfaces */
   --surface-raised: #ffffff;
   --surface-hover: color-mix(in srgb, var(--color-1) 6%, white);
   --surface-active: color-mix(in srgb, var(--color-1) 12%, white);
   --surface-selected: color-mix(in srgb, var(--color-1) 10%, white);
-
-  /* Panels */
   --panel-bg: rgba(255,255,255,.95);
   --panel-border: 1px solid color-mix(in srgb, var(--grey) 18%, white);
   --panel-radius: 0.875rem;
   --panel-shadow:
       0 1px 2px rgba(15,23,42,.04),
       0 8px 30px rgba(15,23,42,.08);
-
-  /* Controls */
   --control-bg: var(--color-1);
   --control-color: var(--white);
   --control-border: 1px solid transparent;
   --control-radius: 0.75rem;
-
   --control-shadow:
       0 1px 2px rgba(15,23,42,.08),
       0 4px 12px rgba(37,99,235,.18);
-
   --control-hover-bg:
       color-mix(in srgb, var(--color-1) 92%, black);
-
   --control-hover-color: var(--white);
-
   --control-active-bg:
       color-mix(in srgb, var(--color-1) 80%, black);
-
   --control-focus-ring:
       0 0 0 .25rem color-mix(in srgb, var(--color-1) 22%, transparent);
-
-  /* Inputs */
   --input-bg: #ffffff;
   --input-color: var(--dark);
-
   --input-border:
       1px solid color-mix(in srgb, var(--grey) 20%, white);
-
   --input-radius: 0.75rem;
-
   --input-shadow:
       inset 0 1px 2px rgba(15,23,42,.03);
-
   --input-hover-border:
       color-mix(in srgb, var(--color-1) 30%, white);
-
   --input-focus-border: var(--color-1);
-
   --input-focus-shadow:
       0 0 0 .25rem color-mix(in srgb, var(--color-1) 18%, transparent);
-
-  /* Images */
   --image-radius: 0.75rem;
-
-  /* Links */
   --link-color: var(--color-1);
   --link-hover-color: color-mix(in srgb, var(--color-1) 80%, black);
-
-  /* Default styling */
   --default-border-radius: 0.875rem;
 }
 [data-theme="dark"].modern-style {
-  /* Colors */
-  --color-1: #818cf8;      /* lightened indigo for contrast on dark bg */
-  --color-2: #34d399;      /* lightened emerald to match */
-  --dark: #e2e8f0;         /* now the light text color, since --dark drives body/heading color */
+  --color-1: #818cf8;
+  --color-2: #34d399;
+  --dark: #e2e8f0;
   --grey: #94a3b8;
   --white: #ffffff;
   --black: #020617;
-  --light-grey: #1e293b;   /* dark "surface" equivalent of light-grey */
-
-  /* Body */
+  --light-grey: #1e293b;
   --body-bg: #0f172a;
   --body-color: var(--dark);
-
-  /* Typography */
   --font-weight: 400;
   --line-height: 1.65;
-
   --heading-font-weight: 700;
   --heading-color: var(--dark);
   --heading-letter-spacing: -0.02em;
-
-  /* Surfaces */
   --surface-raised: #1e293b;
   --surface-hover: color-mix(in srgb, var(--color-1) 14%, var(--surface-raised));
   --surface-active: color-mix(in srgb, var(--color-1) 22%, var(--surface-raised));
   --surface-selected: color-mix(in srgb, var(--color-1) 18%, var(--surface-raised));
-
-  /* Panels */
   --panel-bg: color-mix(in srgb, var(--surface-raised) 95%, transparent);
   --panel-border: 1px solid color-mix(in srgb, var(--white) 12%, transparent);
   --panel-radius: 0.875rem;
   --panel-shadow:
       0 1px 2px rgba(0,0,0,.45),
       0 8px 30px rgba(0,0,0,.55);
-
-  /* Controls */
   --control-bg: var(--color-1);
-  --control-color: var(--black);   /* dark text reads better on the lightened accent */
+  --control-color: var(--black);
   --control-border: 1px solid transparent;
   --control-radius: 0.75rem;
-
   --control-shadow:
       0 1px 2px rgba(0,0,0,.35),
       0 4px 12px color-mix(in srgb, var(--color-1) 30%, transparent);
-
   --control-hover-bg:
       color-mix(in srgb, var(--color-1) 88%, white);
-
   --control-hover-color: var(--black);
-
   --control-active-bg:
       color-mix(in srgb, var(--color-1) 75%, black);
-
   --control-focus-ring:
       0 0 0 .25rem color-mix(in srgb, var(--color-1) 30%, transparent);
-
-  /* Inputs */
   --input-bg: #172033;
   --input-color: var(--dark);
-
   --input-border:
       1px solid color-mix(in srgb, var(--white) 15%, transparent);
-
   --input-radius: 0.75rem;
-
   --input-shadow:
       inset 0 1px 2px rgba(0,0,0,.35);
-
   --input-hover-border:
       color-mix(in srgb, var(--color-1) 40%, white);
-
   --input-focus-border: var(--color-1);
-
   --input-focus-shadow:
       0 0 0 .25rem color-mix(in srgb, var(--color-1) 25%, transparent);
-
-  /* Images */
   --image-radius: 0.75rem;
-
-  /* Links */
   --link-color: var(--color-1);
   --link-hover-color: color-mix(in srgb, var(--color-1) 80%, white);
-
-  /* Default styling */
   --default-border-radius: 0.875rem;
 }
 
@@ -1013,33 +829,27 @@ Playful SaaS/consumer apps, Board game / indie game studios, Summer camps, dayca
   --color-1: #ff5c8a;
   --color-2: #ffc93c;
   --dark: #4a3f6b;
-  --grey: #cbb8e8;
+  --grey: #8974a7;
   --light-grey: #fff2e0;
   --white: #ffffff;
   --black: #2e2148;
   --body-bg: #fff2e0;
   --body-color: #2e2148;
-
   --font-family: "Comic Sans MS", ui-rounded, "Segoe UI", sans-serif;
   --heading-font: var(--font-family);
   --heading-font-weight: 800;
-
   --icon-default-fill: var(--color-1);
   --image-radius: 1.5rem;
-
   --default-border: 0.125rem solid var(--black);
   --default-border-radius: 1.5rem;
   --box-shadow: 0.2rem 0.2rem 0 var(--black);
-
   --surface-raised: var(--white);
   --surface-hover: color-mix(in srgb, var(--color-1) 10%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 16%, transparent);
-
   --panel-bg: var(--white);
   --panel-border: 0.125rem solid var(--black);
   --panel-radius: 1.5rem;
   --panel-shadow: 0.2rem 0.2rem 0 var(--black);
-
   --control-bg: var(--color-1);
   --control-color: var(--white);
   --control-font-weight: 800;
@@ -1049,12 +859,10 @@ Playful SaaS/consumer apps, Board game / indie game studios, Summer camps, dayca
   --control-hover-bg: var(--color-2);
   --control-hover-color: var(--black);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 35%, transparent);
-
   --input-bg: var(--white);
   --input-border: 0.125rem solid var(--black);
   --input-radius: 1.25rem;
   --input-focus-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 25%, transparent);
-
   --duration-fast: 0.2s;
   --duration-base: 0.35s;
   --easing: cubic-bezier(0.34, 1.56, 0.64, 1);
@@ -1077,7 +885,7 @@ Content creators / influencer, Cafés & brunch spots, Parenting & baby brands */
   --color-1: #ff5f7e;
   --color-2: #7c4dff;
   --dark: #6b5b73;
-  --grey: #ffd4dc;
+  --grey: #cd9ca5;
   --light-grey: #fff7fa;
   --white: #ffffff;
   --black: #333333;
@@ -1124,43 +932,32 @@ Content creators / influencer, Cafés & brunch spots, Parenting & baby brands */
 [data-theme="dark"].playful-confetti-style {
   --color-1: #ff7fa6;
   --color-2: #9b7dff;
-
   --dark: #d6cde8;
   --grey: #4b4258;
   --light-grey: #2a2434;
-
   --white: #1c1723;
   --black: #f8f5ff;
-
   --body-bg: #18131f;
   --body-color: #f2edf8;
-
   --heading-color: #ffffff;
-
   --link-color: #ff9db9;
   --link-hover-color: #c7b3ff;
-
   --icon-default-fill: var(--color-1);
-
   --surface-raised: #231d2d;
   --surface-overlay: color-mix(in srgb, #000 70%, transparent);
   --surface-inverse: #f8f5ff;
   --surface-inverse-color: #18131f;
-
   --surface-hover: color-mix(in srgb, var(--color-1) 18%, #231d2d);
   --surface-active: color-mix(in srgb, var(--color-2) 22%, #231d2d);
   --surface-selected: color-mix(in srgb, var(--color-1) 25%, #231d2d);
-
   --panel-bg: #231d2d;
   --panel-border: 0.125rem solid #40364d;
   --panel-shadow: 0 0.5rem 1.25rem color-mix(in srgb, var(--color-1) 18%, transparent);
-
   --control-bg: var(--color-1);
   --control-color: #ffffff;
   --control-hover-bg: var(--color-2);
   --control-hover-color: #ffffff;
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 40%, transparent);
-
   --input-bg: #2b2436;
   --input-color: #f2edf8;
   --input-border: 0.125rem solid #514664;
@@ -1168,7 +965,6 @@ Content creators / influencer, Cafés & brunch spots, Parenting & baby brands */
   --input-hover-border: var(--color-1);
   --input-focus-border: var(--color-1);
   --input-focus-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 35%, transparent);
-
   --box-shadow: 0 0.5rem 1.125rem color-mix(in srgb, var(--color-1) 16%, transparent);
 }
 
@@ -1216,26 +1012,20 @@ SaaS platforms, productivity tools, fintech apps, government portals, and educat
   --light-grey: #2b2930;
   --white: #121212;
   --black: #f5eff7;
-
   --body-bg: #121212;
   --body-color: #e6e1e5;
-
   --panel-bg: #1e1e1e;
-
   --control-bg: var(--color-1);
   --control-color: #1a1325;
   --control-hover-bg: #d0bcff;
-
   --input-bg: #242428;
   --input-color: #e6e1e5;
   --input-border: 0.0625rem solid #4a4458;
   --input-focus-border: var(--color-1);
-
   --heading-color: #f5eff7;
   --link-color: #d0bcff;
   --link-hover-color: #03dac6;
   --icon-default-fill: var(--color-1);
-
   --surface-overlay: color-mix(in srgb, #000 70%, transparent);
   --surface-inverse: #f5eff7;
   --surface-inverse-color: #121212;
@@ -1243,15 +1033,12 @@ SaaS platforms, productivity tools, fintech apps, government portals, and educat
   --surface-active: color-mix(in srgb, var(--color-1) 24%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 20%, transparent);
   --surface-disabled: color-mix(in srgb, var(--grey) 35%, transparent);
-
   --box-shadow:
     0 0.0625rem 0.1875rem color-mix(in srgb, #000 60%, transparent),
     0 0.25rem 0.75rem color-mix(in srgb, #000 50%, transparent);
-
   --panel-shadow:
     0 0.125rem 0.5rem color-mix(in srgb, #000 60%, transparent),
     0 0.0625rem 0.1875rem color-mix(in srgb, #000 40%, transparent);
-
   --control-shadow:
     0 0.125rem 0.375rem color-mix(in srgb, #000 60%, transparent),
     0 0.0625rem 0.125rem color-mix(in srgb, #000 45%, transparent);
@@ -1265,7 +1052,7 @@ CRMs, HR systems, ERP tools, SaaS dashboards.
 */
 .modular-style {
   --color-1: #2563eb;
-  --grey: #dbe3ef;
+  --grey: #858c94;
   --light-grey: #f8fafc;
   --body-bg: #f8fafc;
   --body-color: #1e293b;
@@ -1290,7 +1077,7 @@ CRMs, HR systems, ERP tools, SaaS dashboards.
 }
 [data-theme="dark"].modular-style {
   --color-1: #3b82f6;
-  --grey: #334155;
+  --grey: #556e90;
   --light-grey: #1e293b;
   --body-bg: #0f172a;
   --body-color: #e2e8f0;
@@ -1315,7 +1102,7 @@ Fintech apps, e-commerce admin, task managers.
   --color-1: #4d7cfe;
   --color-2: #66d9b5;
   --dark: #5a6472;
-  --grey: #d3d9e0;
+  --grey: #999;
   --light-grey: #f5f7fa;
   --white: #ffffff;
   --black: #22282f;
@@ -1345,7 +1132,7 @@ Fintech apps, e-commerce admin, task managers.
    --color-1: #6690ff;
   --color-2: #5cd6ae;
   --dark: #aab2c0;
-  --grey: #3a4250;
+  --grey: #999;
   --light-grey: #1e242d;
   --white: #1a1f28;
   --black: #f3f5f8;
@@ -1407,21 +1194,16 @@ Analytics platforms, BI tools, performance monitoring.
   --color-2: #3b82f6;
   --grey: #64748b;
   --light-grey: #1e293b;
-
   --body-bg: #0f172a;
   --body-color: #dbe7f3;
-
   --heading-color: #f8fafc;
   --link-color: #5eead4;
   --link-hover-color: #99f6e4;
-
   --icon-default-fill: #2dd4bf;
-
   --surface-raised: #162033;
   --panel-bg: #162033;
   --panel-border: 1px solid #2b3b54;
   --panel-shadow: 0 8px 24px rgba(0, 0, 0, .35);
-
   --surface-overlay: rgba(0, 0, 0, .7);
   --surface-inverse: #f8fafc;
   --surface-inverse-color: #0f172a;
@@ -1429,10 +1211,8 @@ Analytics platforms, BI tools, performance monitoring.
   --surface-active: rgba(20, 184, 166, .20);
   --surface-selected: rgba(20, 184, 166, .18);
   --surface-disabled: rgba(100, 116, 139, .20);
-
   --default-border: 1px solid #2b3b54;
   --box-shadow: 0 8px 24px rgba(0, 0, 0, .35);
-
   --control-bg: #14b8a6;
   --control-color: #082f2d;
   --control-hover-bg: #5eead4;
@@ -1440,7 +1220,6 @@ Analytics platforms, BI tools, performance monitoring.
   --control-active-bg: #0d9488;
   --control-active-color: #ffffff;
   --control-focus-ring: 0 0 0 .1875rem rgba(20, 184, 166, .35);
-
   --input-bg: #0b1220;
   --input-color: #e2e8f0;
   --input-border: 1px solid #334155;
@@ -1450,7 +1229,6 @@ Analytics platforms, BI tools, performance monitoring.
   --input-placeholder: #94a3b8;
   --input-shadow: none;
   --input-disabled-bg: #1e293b;
-
   --image-shadow: 0 8px 24px rgba(0, 0, 0, .35);
 }
 
@@ -1523,7 +1301,7 @@ Developer tools, code platforms, internal IT tools.
   --color-1: #000000d8;
   --color-2: #4a4e69;
   --dark: #6e6e73;
-  --grey: #d1d1d6;
+  --grey: #919191;
   --light-grey: #f2f2f7;
   --white: #ffffff;
   --black: #1c1c1e;
@@ -1547,16 +1325,17 @@ Developer tools, code platforms, internal IT tools.
   --input-radius: 0.5rem;
 }
 [data-theme="dark"].system-ui-style {
-  --color-1: #0a84ff;        /* iOS systemBlue, dark-mode variant — brighter for contrast on black */
-  --color-2: #7d81a3;        /* lightened from #4a4e69 so it reads against dark surfaces */
-  --dark: #98989d;           /* iOS secondaryLabel (dark mode) */
-  --grey: #38383a;           /* iOS separator (dark mode) — used for input borders */
-  --light-grey: #2c2c2e;     /* iOS tertiarySystemBackground — panel border / subtle divider */
-  --white: #1c1c1e;          /* swapped: now the elevated card/panel surface, not literal white */
-  --black: #f2f2f7;          /* swapped: now the primary label/text color, not literal black */
-  --body-bg: #000000;        /* iOS systemBackground (dark) — true black */
+  --color-1: #0a84ff;
+  --color-2: #7d81a3;
+  --dark: #98989d;
+  --grey: #38383a;
+  --light-grey: #2c2c2e;
+  --white: #1c1c1e;
+  --black: #f2f2f7;
+  --body-bg: #000000;
   --body-color: #f2f2f7;
   --control-color: #ffffff;
+  --grey: #c1c1c1;
 }
 
 /* .colorful-dashboard-style — Colorful Dashboard
@@ -1575,7 +1354,6 @@ Health tech, education, fitness tracking apps.
   --heading-font-weight: 700;
   --icon-default-fill: #6366f1;
   --image-radius: 12px;
-  /* --image-shadow: 0 6px 18px rgba(99,102,241,.15); */
   --default-border: 1px solid #e5e7eb;
   --default-border-radius: 12px;
   --box-shadow: 0 6px 18px rgba(0,0,0,.08);
@@ -1593,54 +1371,40 @@ Health tech, education, fitness tracking apps.
 [data-theme="dark"].colorful-dashboard-style {
   --color-1: #818cf8;
   --color-2: #f472b6;
-
   --success: #4ade80;
   --warning: #fbbf24;
   --info: #22d3ee;
-
   --body-bg: #0f172a;
   --body-color: #e5e7eb;
-
   --font-family: Inter, sans-serif;
   --heading-font-weight: 700;
-
   --icon-default-fill: var(--color-1);
-
   --image-radius: 12px;
-  /* --image-shadow: 0 8px 24px rgba(0,0,0,.45); */
-
   --default-border: 1px solid #334155;
   --default-border-radius: 12px;
-
   --box-shadow: 0 10px 30px rgba(0,0,0,.45);
-
   --surface-raised: #1e293b;
   --surface-dim: #111827;
   --surface-hover: color-mix(in srgb, var(--color-1) 16%, transparent);
   --surface-active: color-mix(in srgb, var(--color-1) 24%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 20%, transparent);
-
   --panel-bg: #1e293b;
   --panel-border: 1px solid #334155;
   --panel-radius: 12px;
   --panel-shadow: 0 10px 30px rgba(0,0,0,.45);
-
   --control-bg: var(--color-1);
   --control-color: #ffffff;
   --control-hover-bg: #6366f1;
   --control-hover-color: #ffffff;
   --control-active-bg: #4f46e5;
-
   --input-bg: #0f172a;
   --input-color: #e5e7eb;
   --input-border: 1px solid #475569;
   --input-hover-border: #64748b;
   --input-focus-border: var(--color-1);
   --input-placeholder: #94a3b8;
-
   --input-radius: 10px;
 }
-
 /* AURORA
 Best for AI, SaaS, creative tools, dashboards, and modern startups. It delivers a futuristic, vibrant, 
 and premium look with soft glowing colors inspired by the northern lights.*/
@@ -1648,7 +1412,7 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --color-1: #6d5dfc;
   --color-2: #ff6ec7;
   --dark: #2b2250;
-  --grey: #cfc9e8;
+  --grey: #5f5958;
   --white: #ffffff;
   --black: #1a1533;
   --danger: #f87171;
@@ -1660,24 +1424,19 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --body-bg: #fbfaff;
   --body-color: var(--dark);
   --font-weight: 400;
-
   --font-family: "Poppins", "Helvetica Neue", sans-serif;
   --heading-font-weight: 700;
   --heading-color: var(--dark);
   --line-height: 1.6;
-
   --link-color: var(--dark);
   --link-hover-color: var(--color-2);
   --link-hover-decoration: none;
-
   --icon-default-fill: var(--luxury);
-
   --default-padding: 1rem;
   --default-gap: 1.25rem;
   --default-border: none;
   --default-border-radius: 1.5rem;
   --box-shadow: 0 1.5rem 3rem color-mix(in srgb, var(--luxury) 30%, transparent);
-
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
   --surface-inverse: var(--dark);
@@ -1686,13 +1445,11 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --surface-active: color-mix(in srgb, var(--color-1) 18%, transparent);
   --surface-selected: color-mix(in srgb, var(--luxury) 14%, transparent);
   --surface-disabled: color-mix(in srgb, var(--grey) 35%, transparent);
-
   --panel-bg: var(--surface-raised);
   --panel-border: 0.0625rem solid color-mix(in srgb, var(--luxury) 25%, transparent);
   --panel-radius: 1.5rem;
   --panel-shadow: 0 1rem 2.5rem color-mix(in srgb, var(--luxury) 30%, transparent);
   --panel-padding: var(--space-dense-2);
-
   --control-bg: var(--luxury);
   --control-color: var(--white);
   --control-radius: 2rem;
@@ -1703,7 +1460,6 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --control-active-bg: color-mix(in srgb, var(--luxury) 65%, var(--color-2) 35%);
   --control-active-color: var(--white);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 30%, transparent);
-
   --input-bg: var(--white);
   --input-color: var(--dark);
   --input-border: 0.0625rem solid var(--grey);
@@ -1714,28 +1470,13 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --input-focus-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 30%, transparent);
 }
 
-/* [data-theme="dark"].aurora-style {
-  --body-bg: #150f28;
-  --body-color: #e8e3ff;
-  --heading-color: #f4f0ff;
-  --light-grey: color-mix(in srgb, var(--luxury) 18%, #150f28);
-  --dark: #b9aeee;
-  --grey: color-mix(in srgb, var(--luxury) 30%, #150f28);
-  --surface-raised: #1e1638;
-  --surface-dim: color-mix(in srgb, var(--luxury) 15%, #150f28);
-  --panel-bg: var(--surface-raised);
-  --panel-border: 0.0625rem solid color-mix(in srgb, var(--luxury) 40%, transparent);
-  --input-bg: #1e1638;
-  --input-border: 0.0625rem solid color-mix(in srgb, var(--luxury) 35%, transparent);
-} */
-
 [data-theme="dark"].aurora-style {
   --color-1: #8f7bff;
   --color-2: #ff7ecf;
   --dark: #ece7ff;
   --grey: #6a5f99;
-  --white: #ffffff;
-  --black: #0f0b24;
+  --black: #ffffff;
+  --white: #1a1533;
   --danger: #fb8a8a;
   --info: #5ecbfa;
   --success: #4ee6ab;
@@ -1745,18 +1486,14 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --body-bg: #150f2e;
   --body-color: var(--dark);
   --font-weight: 400;
-
   --font-family: "Poppins", "Helvetica Neue", sans-serif;
   --heading-font-weight: 700;
   --heading-color: var(--dark);
   --line-height: 1.6;
-
   --link-color: var(--dark);
   --link-hover-color: var(--color-2);
   --link-hover-decoration: none;
-
   --icon-default-fill: var(--luxury);
-
   --default-padding: 1rem;
   --default-gap: 1.25rem;
   --default-border: none;
@@ -1769,12 +1506,10 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --surface-active: color-mix(in srgb, var(--color-1) 22%, transparent);
   --surface-selected: color-mix(in srgb, var(--luxury) 18%, transparent);
   --surface-disabled: color-mix(in srgb, var(--grey) 30%, transparent);
-
   --panel-bg: var(--surface-raised);
   --panel-border: 0.0625rem solid color-mix(in srgb, var(--luxury) 35%, transparent);
   --panel-radius: 1.5rem;
   --panel-padding: var(--space-dense-2);
-
   --control-bg: var(--luxury);
   --control-color: var(--white);
   --control-radius: 2rem;
@@ -1784,7 +1519,6 @@ and premium look with soft glowing colors inspired by the northern lights.*/
   --control-active-bg: color-mix(in srgb, var(--luxury) 65%, var(--color-2) 35%);
   --control-active-color: var(--white);
   --control-focus-ring: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 40%, transparent);
-
   --input-bg: #201a3d;
   --input-color: var(--dark);
   --input-border: 0.0625rem solid var(--grey);
@@ -1825,38 +1559,31 @@ and premium look with soft glowing colors inspired by the northern lights.*/
 [data-theme="dark"].swiss-style {
   --color-1: #e31b23;
   --color-2: #f2f2f2;
-
   --body-bg: #0f0f10;
   --body-color: #e8e8e8;
-
   --heading-color: #ffffff;
   --heading-font-weight: 700;
   --heading-letter-spacing: -0.02em;
-
   --panel-bg: #161616;
   --panel-border: 0.0625rem solid #f2f2f2;
   --panel-radius: 0;
   --panel-shadow: none;
   --panel-padding: var(--space-2);
-
   --control-bg: #f2f2f2;
   --control-color: #111111;
   --control-radius: 0;
   --control-shadow: none;
-
   --control-hover-bg: #e31b23;
   --control-hover-color: #ffffff;
-
   --box-shadow: none;
   --default-border-radius: 0;
-
   --link-color: #ff5b5b;
   --link-hover-color: #ffffff;
   --dark: #b8b8b8;
   --grey: #6b6b6b;
   --light-grey: #2a2a2a;
-  --white: #ffffff;
-  --black: #000000;
+  --black: #ffffff;
+  --white:  #000000;
   --surface-raised: #161616;
   --surface-dim: #1d1d1d;
   --surface-hover: color-mix(in srgb, var(--color-1) 14%, transparent);
@@ -1881,32 +1608,23 @@ and premium look with soft glowing colors inspired by the northern lights.*/
 .editorial-style {
   --color-1: #8b5e3c;
   --color-2: #d4a373;
-
   --dark: #2b2b2b;
   --grey: #7b7b7b;
   --light-grey: #f7f3ec;
   --white: #fffdf8;
   --black: #1f1f1f;
-
   --body-bg: var(--white);
   --body-color: var(--black);
-
   --panel-bg: #ffffff;
   --panel-color: var(--black);
-
   --control-bg: var(--color-1);
   --control-color: white;
-
   --input-bg: white;
   --input-color: var(--black);
-
   --border-color: #e7dfd4;
   --default-border: 0.0625rem solid var(--border-color);
-
   --default-border-radius: 0.5rem;
-
   --box-shadow: 0 .3rem 1rem rgb(0 0 0 / .05);
-
   --font-family: Georgia, "Times New Roman", serif;
   --line-height: 1.8;
 }
@@ -1914,51 +1632,39 @@ and premium look with soft glowing colors inspired by the northern lights.*/
 [data-theme="dark"].editorial-style {
   --color-1: #c89a73;
   --color-2: #e2b98f;
-
   --dark: #d2c7bb;
   --grey: #9d9288;
   --light-grey: #24201c;
   --white: #181512;
   --black: #f2ece4;
-
   --body-bg: #161311;
   --body-color: #e6ddd3;
-
   --heading-color: #f6efe8;
-
   --panel-bg: #211c18;
   --panel-color: #ece3d9;
-
   --control-bg: var(--color-1);
   --control-color: #181311;
   --control-hover-bg: color-mix(in srgb, var(--color-1) 88%, white);
   --control-hover-color: #111;
   --control-active-bg: var(--color-2);
   --control-active-color: #111;
-
   --input-bg: #29231f;
   --input-color: #ece3d9;
   --input-placeholder: #9d9288;
-
   --border-color: #3b332d;
   --default-border: 0.0625rem solid var(--border-color);
   --panel-border: var(--default-border);
-
   --surface-raised: var(--panel-bg);
   --surface-dim: #1b1714;
   --surface-overlay: rgb(0 0 0 / 70%);
   --surface-hover: color-mix(in srgb, var(--color-1) 12%, transparent);
   --surface-active: color-mix(in srgb, var(--color-1) 20%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-1) 16%, transparent);
-
   --link-color: #dfb488;
   --link-hover-color: #f2cfaa;
-
   --box-shadow: 0 .5rem 1.5rem rgb(0 0 0 / .35);
   --panel-shadow: var(--box-shadow);
-
   --icon-default-fill: var(--color-2);
-
   --input-border: 0.0625rem solid var(--border-color);
   --input-hover-border: var(--color-2);
   --input-focus-border: var(--color-1);
@@ -1993,31 +1699,24 @@ Best for wellness, education, healthcare, lifestyle brands, and family-friendly 
 [data-theme="dark"].pastel-style {
   --color-1: #cba9de;
   --color-2: #9ddbd3;
-
   --body-bg: #1d1a21;
   --body-color: #e5dde9;
-
   --heading-color: #f1e7f7;
   --heading-font-weight: 600;
-
   --surface-raised: color-mix(in srgb, var(--color-1) 12%, #2a2430);
   --panel-bg: var(--surface-raised);
   --panel-border: 0.0625rem solid color-mix(in srgb, var(--color-1) 28%, transparent);
   --panel-radius: 1.25rem;
   --panel-shadow: 0 0.75rem 2rem color-mix(in srgb, black 60%, transparent);
   --panel-padding: var(--space-2);
-
   --control-bg: var(--color-1);
   --control-color: #1d1a21;
   --control-radius: 1.5rem;
   --control-shadow: 0 0.375rem 1rem color-mix(in srgb, var(--color-1) 20%, transparent);
   --control-hover-bg: color-mix(in srgb, var(--color-1) 85%, white);
-
   --light-grey: #322b39;
-
   --link-color: #d9bdf1;
   --link-hover-color: #ace7de;
-
   --surface-dim: #17151b;
   --surface-overlay: color-mix(in srgb, black 70%, transparent);
   --surface-inverse: #f6f1f8;
@@ -2026,7 +1725,6 @@ Best for wellness, education, healthcare, lifestyle brands, and family-friendly 
   --surface-active: color-mix(in srgb, var(--color-1) 20%, transparent);
   --surface-selected: color-mix(in srgb, var(--color-2) 18%, transparent);
   --surface-disabled: color-mix(in srgb, #777 35%, transparent);
-
   --input-bg: #28232d;
   --input-color: #f1eaf5;
   --input-border: 0.125rem solid #40364a;
@@ -2034,7 +1732,6 @@ Best for wellness, education, healthcare, lifestyle brands, and family-friendly 
   --input-hover-border: var(--color-1);
   --input-focus-border: var(--color-2);
   --input-shadow: 0 0.25rem 0.75rem color-mix(in srgb, black 35%, transparent);
-
   --success: #7fd7b4;
   --info: #86c8ff;
   --warning: #f5d08a;
@@ -2110,7 +1807,6 @@ Best for AI, technology, cybersecurity, developer tools, crypto, and startup lan
   --heading-letter-spacing: 0.05em;
   --dark: #9fb4bb;
   --light-grey: #10131c;
-
   --black: #ffffff;
   --white: #05070d;
   --success: #00ffb2;
@@ -2118,13 +1814,11 @@ Best for AI, technology, cybersecurity, developer tools, crypto, and startup lan
   --danger: #ff3366;
   --warning: #ffb800;
   --luxury: #c77dff;
-
   --panel-bg: #0b0e17;
   --panel-border: 0.0625rem solid color-mix(in srgb, var(--color-1) 40%, transparent);
   --panel-radius: 0.5rem;
   --panel-shadow: 0 0 1rem color-mix(in srgb, var(--color-1) 35%, transparent);
   --panel-padding: var(--space-2);
-
   --control-bg: var(--color-1);
   --control-color: #05070d;
   --control-radius: 0.25rem;
@@ -2137,11 +1831,9 @@ Best for AI, technology, cybersecurity, developer tools, crypto, and startup lan
   --input-placeholder: color-mix(in srgb, var(--body-color) 60%, transparent);
   --input-focus-border: var(--color-1);
   --input-focus-shadow: 0 0 0 0.1875rem color-mix(in srgb, var(--color-1) 25%, transparent);
-
   --link-color: var(--color-1);
   --link-hover-color: var(--color-2);
   --icon-default-fill: var(--color-1);
+  --surface-dim: #25272d;
 }
-
 }
-
