@@ -384,7 +384,7 @@ Nightclubs, gaming platforms, youth fashion, media streaming.
   --dark: #f87cad;
   --grey: #565676;
   --light-grey: #1c1c30;
-  --white: #f5f5ff;
+  --white: #895e82;
   --black: #0a0a14;
   --body-bg: #0a0a14;
   --body-color: #eaeaff;
@@ -400,7 +400,8 @@ Nightclubs, gaming platforms, youth fashion, media streaming.
   --panel-radius: 0.75rem;
   --panel-shadow: 0 0 1rem color-mix(in srgb, var(--color-2) 35%, transparent);
   --control-bg: var(--color-1);
-  --control-color: var(--black);
+  --control-color: var(--white);
+  --control-hover-color: var(--white);
   --control-font-weight: 700;
   --control-border: 0.0625rem solid var(--color-1);
   --control-radius: 0.5rem;
