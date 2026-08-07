@@ -1500,6 +1500,7 @@ height: 2.5rem;
   width: 100%;
   position: relative;
   isolation: isolate;
+  z-index: var(--z-floating, 100);  
 }
 .cssvars .main-menu {
   display: flex;
@@ -3780,6 +3781,17 @@ left: 105%;
 .cssvars .z-floating { z-index: var(--z-floating, 100); }
 .cssvars .z-overlay { z-index: var(--z-overlay, 999); }
 .cssvars .z-modal { z-index: var(--z-modal, 1000); }
+/* 1. Property axis — sets transition-property + a DEFAULT duration/easing */
+.cssvars .transition-none { transition-property: none; }
+.cssvars .transition { transition-property: all; transition-duration: var(--duration-base, 0.25s); transition-timing-function: var(--easing, ease); }
+.cssvars .transition-opacity { transition-property: opacity; transition-duration: var(--duration-base, 0.25s); transition-timing-function: var(--easing, ease); }
+.cssvars .transition-transform { transition-property: transform; transition-duration: var(--duration-base, 0.25s); transition-timing-function: var(--easing, ease); }
+.cssvars .transition-colors { transition-property: color, background-color, border-color; transition-duration: var(--duration-base, 0.25s); transition-timing-function: var(--easing-in-out, ease-in-out); }
+.cssvars .transition-shadow { transition-property: box-shadow; transition-duration: var(--duration-base, 0.25s); transition-timing-function: var(--easing-in-out, ease-in-out); }
+/* 2. Duration axis — declared AFTER */
+.cssvars .transition-fast { transition-duration: var(--duration-fast, 0.15s); }
+.cssvars .transition-slow { transition-duration: var(--duration-slow, 0.4s); }
+.cssvars .ease-in-out { transition-timing-function: var(--easing-in-out, ease-in-out); }
 }
 @layer utilities-advanced {
 /* Shadows */
