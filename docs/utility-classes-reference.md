@@ -136,7 +136,6 @@ All shadow utilities sit in `@layer utilities-advanced`, after components — th
 | Classes | Sets |
 |---|---|
 | `.bold` / `.font-weight-200`/`400`/`600` (aliases: `.font-thin`/`.font-regular`/`.font-semibold`) | `font-weight` |
-| `.font-mono` | `font-family: var(--font-mono)` — opts any element into the monospace stack (also read directly by `code`/`.code`, `pre`/`.code-block`, `kbd`/`.kbd`, `samp`/`.samp`; see [Typography tokens](./styling-with-variables.md#15-typography-tokens)) |
 | `.italic` / `.underline` / `.decoration-none` / `.old-info` (strikethrough) | `font-style` / `text-decoration` |
 | `.text-uppercase` / `.text-lowercase` / `.text-capitalize` | `text-transform` |
 | `.double` (200%) / `.large` (150%) / `.larger` (125%) / `.small` (75%) / `.smaller` (85%) / `.half` (50%) | relative `font-size` steps |
@@ -166,7 +165,27 @@ All shadow utilities sit in `@layer utilities-advanced`, after components — th
 
 ---
 
-## 10. Rule of thumb for this page
+## 10. Transitions
+
+Two independent axes, meant to be combined on the same element: a **property** class picks what animates and supplies a default duration/easing, and an optional **duration** or **easing** class overrides just that piece. Declare the duration/easing override *after* the property class in your class list order in the stylesheet cascade won't care, but it keeps intent readable.
+
+| Classes | Sets | Notes |
+|---|---|---|
+| `.transition-none` | `transition-property: none` | explicitly opts out — useful for undoing `.transition` inherited from a component |
+| `.transition` | `transition-property: all`, duration `--duration-base` (0.25s), easing `--easing` (ease) | broadest option; prefer a specific `.transition-*` below when you know what's animating, since `all` is more expensive to compute |
+| `.transition-opacity` | `transition-property: opacity`, duration `--duration-base`, easing `--easing` | — |
+| `.transition-transform` | `transition-property: transform`, duration `--duration-base`, easing `--easing` | — |
+| `.transition-colors` | `transition-property: color, background-color, border-color`, duration `--duration-base`, easing `--easing-in-out` | the hover/state-change workhorse — pairs with `.bg-*`, `.color-*`, `.border-color-*` |
+| `.transition-shadow` | `transition-property: box-shadow`, duration `--duration-base`, easing `--easing-in-out` | pairs with `.shadow-*-hover` variants |
+| `.transition-fast` | overrides duration to `--duration-fast` (0.15s) | duration-only — combine with a property class above, e.g. `.transition-colors.transition-fast` |
+| `.transition-slow` | overrides duration to `--duration-slow` (0.4s) | duration-only, same combination rule |
+| `.ease-in-out` | overrides timing function to `--easing-in-out` (ease-in-out) | easing-only override, for use with `.transition`/`.transition-opacity`/`.transition-transform`, which default to the linear-ish `--easing` rather than `--easing-in-out` |
+
+**Convention to hold onto:** the five `.transition*` property classes are self-sufficient — each already sets a duration and easing, so `.transition-colors` alone is a complete, working transition. `.transition-fast`, `.transition-slow`, and `.ease-in-out` do nothing on their own; they only make sense stacked on top of a property class to adjust its timing.
+
+---
+
+## 11. Rule of thumb for this page
 
 If you're stacking more than two or three utility classes on the same element to achieve one repeatable look (a badge, a callout, a card variant), that's the signal to stop and either:
 
