@@ -104,7 +104,7 @@
         
 
         <div class="m--v-4">
-            <p>There are three ways to use icons in your project:</p>
+            <p>There are four ways to use icons in your project:</p>
             <h4>Way 1: Use the SVG code</h4>
             <p>
             ✅ No additional libraries, dependencies, or 100s of KB to add, and the icon and styles are simple to modify in the HTML.<br>
@@ -124,10 +124,42 @@
                 </li> 
             </ul>
             <script src="https://gist.github.com/majalinet/0a2dc5344f10262b2293f2027d61dcff.js"></script>
-            <div class="m4"></div>
 
 
-            <h4>Way 2: Save the SVG code in a file</h4>
+
+            <div class="m-v-4"></div>
+            <h4>Way 2: Define the SVG code in the page or in a JS file</h4>
+            ✅ No additional libraries, dependencies, or 100s of KB to add, code clarity<br>
+            ✅ Code clarity and reusability<br>
+            🏆 Best for: Web sites or apps when using many icons, and in js file if on multiple pages
+
+                <p>
+                If you want a clean way just like in popular icons libraries, you can define the icons you need, then use them with use
+
+               <script src="https://gist.github.com/majalinet/ced96c5a7f8c76149ac948a368896b60.js"></script>
+                
+             <p class="p-v-1">
+                <b>Adding to a JS File (Optional)</b><br>
+                If you want to use the icons in multiple pages and you do not want to define them on every page, you can define them in a JS file and include it in your pages, then use them with use 
+             </p>
+             <script src="https://gist.github.com/majalinet/16a9982552e3f15d23c7739694fabf5f.js"></script>
+
+            <p class="p-v-1">
+                Load the JS file in your page once
+                <pre><code>&lt;body&gt;
+    &lt;script src=&quot;icons.js&quot;&gt;&lt;/script&gt;
+
+    &lt;svg class=&quot;icon-s icon-dark-fill&quot;&gt;&lt;use href=&quot;#i-home&quot;&gt;&lt;/use&gt;&lt;/svg&gt;</code></pre>
+            </p>
+            
+
+            <div class="m-v-4"></div>
+
+
+            
+
+
+            <h4>Way 3: Save the SVG code in a file</h4>
             <p>
             ✅ No additional libraries, dependencies, or 100s of KB to add, code clarity<br>
             💢 Cannot edit or change styles and the icon in the html, you need to edit the SVG file<br>
@@ -135,14 +167,15 @@
             </p>
             <p>The same steps in way 1 apply here, but you need to save the SVG code in a file with the .svg extension.</p>
             <script src="https://gist.github.com/majalinet/f77edd0919995347ff0d2bed9d935e74.js"></script>
-            <div class="m4"></div>
+            <div class="m-v-4"></div>
 
 
 
-            <h4>Way 3: Use popular CSS libraries</h4>
+            <h4>Way 4: Use popular CSS libraries</h4>
             <p>
             ✅ Code clarity, the icon and styles are simple to modify in the HTML.<br>
             💢 Additional libraries, dependencies, and 100s of KB to add<br>
+            💢 Additional cost might apply<br>
             🏆 Best for: Web apps that need 100's of icons, not recommended for websites
             </p>
             <ul class="colored-ul">       
@@ -158,8 +191,8 @@
 
             <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" />
             <i class="fa-2xl fa-solid fa-map color-1"></i>
-            <div class="m4"></div>
-</div>
+            <div class="m-v-4"></div>
+            </div>
 
             <div class="m-v-2">
                 <h5 class="m-t-4">Default icon style</h5>
