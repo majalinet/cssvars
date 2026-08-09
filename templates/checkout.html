@@ -4,438 +4,366 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="page descrpition">
+    <meta name="description" content="Secure checkout page">
     <meta name="author" content="Kim Majali">
-    <meta name="copyright" content="MIT license, Europe IT Outsourcing, https://www.europeitoutsourcing.com/">
-
+    <meta name="copyright" content="MIT license">
 
     <title>Checkout - CSS Vars Free HTML Template</title>
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="icon" href="favicon.ico">
-    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#FF530D">
-
-    <link rel="stylesheet" href="../css/cssvars.css">
+    <link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
 </head>
 
-
-
-
-
 <body>
-    <header>
-        <div class="main-nav bordered-top">
-            <div class="main-menu">
-                    <a href="#"  >                            
-                            <svg alt="Agile Logo" class="icon-color-1-fill  icon-ml" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30.17 37.71"><defs><style>.cls-2{font-size:34px;fill:#fff;font-family:Montserrat-Thin, Montserrat;letter-spacing:0.01em;}</style></defs><title>Agile logo</title><g ><g ><rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12"/><text class="cls-2" transform="translate(3.33 28.9)">A</text></g></g></svg>
-                        </a>
 
-                <label for="toggle-1" class="toggle-menu">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
+    <!-- ============ HEADER ============ -->
+    <header>
+        <div class="main-nav p1">
+            <div class="main-menu shadow-1">
+                <input type="checkbox" id="toggle-h1">
+                <a href="#" class="logo">
+                    <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+                </a>
+                <div class="nav-panel">
+                    <div class="nav-group">
+                        <nav class="nav nav-top-border-hover">
+                            <a href="#">Shop</a>
+                            <a href="#">Cart</a>
+                            <a href="#" class="bold">Checkout</a>
+                        </nav>
+                        <div class="nav-actions m-1-2">
+                            <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill">
+                                <path
+                                    d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z">
+                                </path>
+                            </svg>
+                            <span class="small bold">Secure Checkout</span>
+                        </div>
+                    </div>
+                </div>
+                <label for="toggle-h1" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
                         <path d="M0 0h24v24H0z" fill="none"></path>
                         <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
                     </svg>
-
-
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                    </svg>
                 </label>
-                <input type="checkbox" id="toggle-1">
-
-                        <nav class="nav">
-                    <ul>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#portfolio">Portfolio</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#gallery">Gallery</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </nav>
             </div>
-
         </div>
     </header>
 
+    <!-- ============ PAGE TITLE / BREADCRUMB ============ -->
     <div class="promo-box-s bg-light-grey">
         <div class="container">
-            <h1 class="">Checkout</h1>
-
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item"><a href="#">Shop</a></li>
-                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
-            </ol>
+            <h1 class="m-b--1-2">Checkout</h1>
+            <nav aria-label="breadcrumb">
+                <ol class="breadcrumb p0">
+                    <li class="breadcrumb-item"><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg></a></li>
+                    <li class="breadcrumb-item"><a href="#">Shop</a></li>
+                    <li class="breadcrumb-item bold" aria-current="page">Checkout</li>
+                </ol>
+            </nav>
         </div>
     </div>
 
-    <div class="row container m-v-2">
-        <div class="row container m0 p0">
-            <div class="col-md-6 m0 p0 w-100">
-                <div class="outline-color-1 rounded center p1 m-v-1 m-h-4">
-                    <p class="black m0 p0 small">Returning customer? <a href="#">Click here to login</a></p>
+    <div class="container m-v-2">
+
+        <!-- ============ CHECKOUT PROGRESS STEPPER ============ -->
+        <ul class="stepper m-v-2">
+            <li class="stepper-step is-complete">
+                <span class="stepper-circle">
+                    <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg>
+                </span>
+                <span class="stepper-label">Cart</span>
+            </li>
+            <li class="stepper-step is-complete">
+                <span class="stepper-circle">
+                    <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg>
+                </span>
+                <span class="stepper-label">Information</span>
+            </li>
+            <li class="stepper-step is-active">
+                <span class="stepper-circle">3</span>
+                <span class="stepper-label">Payment</span>
+            </li>
+            <li class="stepper-step">
+                <span class="stepper-circle">4</span>
+                <span class="stepper-label">Confirmation</span>
+            </li>
+        </ul>
+
+        <!-- ============ RETURNING CUSTOMER / COUPON PANELS ============ -->
+        <div class="row m-b-2">
+            <div class="col-md-6 p-1-2">
+                <div class="outline-color-1 rounded p1 d-flex align-items-center justify-content-between">
+                    <p class="m0 small">Returning customer? <a href="#" class="bold">Click here to login</a></p>
+                    <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"></path></svg>
                 </div>
             </div>
-
-            <div class="col-md-6 m0 p0">
-                <div class="outline-color-1 rounded center  m-v-1 p1 m-h-4">
-                    <p class="black m0 p0 small">Have a coupon? <a href="#">Click here to enter your code</a></p>
+            <div class="col-md-6 p-1-2">
+                <div class="outline-color-1 rounded p1 d-flex align-items-center justify-content-between">
+                    <p class="m0 small">Have a coupon? <a href="#" class="bold">Click here to enter your code</a></p>
+                    <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M20,6H16V4A2,2 0 0,0 14,2H10A2,2 0 0,0 8,4V6H4A2,2 0 0,0 2,8V19A2,2 0 0,0 4,21H20A2,2 0 0,0 22,19V8A2,2 0 0,0 20,6M10,4H14V6H10V4M20,19H4V8H20V19Z"></path></svg>
                 </div>
             </div>
         </div>
 
         <div class="row">
-            <div class="col-md-6">
 
-                <h4 class="m-v-3">Billing Address</h4>
-                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Unde, vel odio non dicta provident sint ex
-                    autem mollitia dolorem illum repellat ipsum aliquid illo similique sapiente fugiat minus ratione.
-                </p>
+            <!-- ============ BILLING / SHIPPING FORMS ============ -->
+            <div class="col-md-7 p-1-2">
 
+                <h4 class="m-b-1">Billing Address</h4>
 
-                <div class="row m-v-1">
-                    <div class="col-md-6">
+                <div class="row">
+                    <div class="col-md-6 p-1-2">
                         <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Name:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="emailHelp">
+                            <label for="billFirst" class="font-weight-400">Name</label>
+                            <input type="text" class="form-control" id="billFirst">
                         </div>
                     </div>
-
-                    <div class="col-md-6">
+                    <div class="col-md-6 p-1-2">
                         <div class="form-group">
-                            <label for="exampleInputEmail1" class="font-weight-400">Last name:</label>
-                            <input type="text" class="form-control" id="exampleInputLastName1" aria-describedby="emailHelp">
+                            <label for="billLast" class="font-weight-400">Last name</label>
+                            <input type="text" class="form-control" id="billLast">
                         </div>
                     </div>
                 </div>
 
-                <div class="row m-v-1">
-                    <div class="col-md-12">
+                <div class="row">
+                    <div class="col-md-12 p-1-2">
                         <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Company name:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName11" aria-describedby="emailHelp">
+                            <label for="billCompany" class="font-weight-400">Company name (optional)</label>
+                            <input type="text" class="form-control" id="billCompany">
                         </div>
-
                         <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Address:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="emailHelp">
-                            <input type="text" class="form-control m-v-1" id="exampleInputFirstName2" aria-describedby="emailHelp">
+                            <label for="billAddress1" class="font-weight-400">Address</label>
+                            <input type="text" class="form-control m-b--1-2" id="billAddress1" placeholder="Street address">
+                            <input type="text" class="form-control" id="billAddress2" placeholder="Apartment, suite, etc. (optional)">
                         </div>
-
                         <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">City / Town:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName3" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-
-                    <div class="row m-v-1">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="font-weight-400">Email address:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="font-weight-400">Phone:</label>
-                                <input type="tel" class="form-control" id="exampleInputLastName3" aria-describedby="emailHelp">
-                            </div>
+                            <label for="billCity" class="font-weight-400">City / Town</label>
+                            <input type="text" class="form-control" id="billCity">
                         </div>
                     </div>
                 </div>
+
+                <div class="row">
+                    <div class="col-md-6 p-1-2">
+                        <div class="form-group">
+                            <label for="billEmail" class="font-weight-400">Email address</label>
+                            <input type="email" class="form-control" id="billEmail">
+                        </div>
+                    </div>
+                    <div class="col-md-6 p-1-2">
+                        <div class="form-group">
+                            <label for="billPhone" class="font-weight-400">Phone</label>
+                            <input type="tel" class="form-control" id="billPhone">
+                        </div>
+                    </div>
+                </div>
+
+                <hr class="m-v-2">
+
+                <h4 class="m-b-1">Shipping Address</h4>
+
+                <label class="d-flex align-items-center gap-1 m-b-1">
+                    <input type="checkbox" id="sameAsBilling" checked>
+                    <span class="small">Same as billing address</span>
+                </label>
+
+                <div class="row">
+                    <div class="col-md-12 p-1-2">
+                        <div class="form-group">
+                            <label for="shipNotes" class="font-weight-400">Order notes (optional)</label>
+                            <textarea class="form-control" rows="4" id="shipNotes" placeholder="Notes about your order, e.g. special notes for delivery"></textarea>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
+            <!-- ============ ORDER SUMMARY ============ -->
+            <div class="col-md-5 p-1-2">
 
-            <div class="col-md-6">
+                <div class="card">
+                    <h5 class="card-header m0">Your Order</h5>
 
-                <h4 class="m-v-3">Shipping Address</h4>
-                <div class="row m-v-1">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Name:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName4" aria-describedby="emailHelp">
+                    <table class="table table-hover">
+                        <thead>
+                            <tr>
+                                <th></th>
+                                <th>Product</th>
+                                <th>Qty</th>
+                                <th>Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><img src="https://picsum.photos/seed/dress21/80/80" class="img-responsive rounded" alt="Red mini smock dress"></td>
+                                <td><p class="m0 small font-weight-400">Red mini smock dress</p></td>
+                                <td><p class="m0 center">2</p></td>
+                                <td><p class="m0 right">£84.00</p></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/seed/boots21/80/80" class="img-responsive rounded" alt="Leather lace up boots"></td>
+                                <td><p class="m0 small font-weight-400">Leather lace up boots</p></td>
+                                <td><p class="m0 center">1</p></td>
+                                <td><p class="m0 right">£80.00</p></td>
+                            </tr>
+                            <tr>
+                                <td><img src="https://picsum.photos/seed/maxi21/80/80" class="img-responsive rounded" alt="Embroidered maxi dress"></td>
+                                <td><p class="m0 small font-weight-400">Embroidered maxi, blouson sleeve</p></td>
+                                <td><p class="m0 center">3</p></td>
+                                <td><p class="m0 right">£243.00</p></td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                    <div class="card-footer">
+                        <div class="d-flex justify-content-between m-b--1-2">
+                            <p class="m0 dark">Subtotal</p>
+                            <p class="m0">£407.00</p>
                         </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="font-weight-400">Last name:</label>
-                            <input type="text" class="form-control" id="exampleInputLastName5" aria-describedby="emailHelp">
+                        <div class="d-flex justify-content-between m-b--1-2">
+                            <p class="m0 dark">Shipping</p>
+                            <p class="m0">£10.05</p>
+                        </div>
+                        <hr class="m-v-1">
+                        <div class="d-flex justify-content-between">
+                            <p class="m0 bold h5">Total</p>
+                            <p class="m0 bold h5 color-1">£417.05</p>
                         </div>
                     </div>
                 </div>
 
-                <div class="row m-v-1">
-                    <div class="col-md-12">
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Company name:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName6" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Address:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName7" aria-describedby="emailHelp">
-                            <input type="text" class="form-control m-v-1" id="exampleInputFirstName8" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">City / Town:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName9" aria-describedby="emailHelp">
-                        </div>
-                        <div class="form-group">
-                            <label for="exampleselectServices1" class="font-weight-400">Notes*</label>
-                            <textarea class="form-control" rows="5" id="comment"></textarea>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-        </div>
-
-        <div class="row container m-v-2">
-            <div class="col-md-6 p2">
-                <h6 class="font-weight-400">Your Orders</h6>
-                <div class="row auto-overflow-x">
-                    <div class="col-md-12">
-                        <table class="table table-hover m-v-2">
-                            <thead>
-                                <tr>
-                                    <th></th>
-                                    <th>
-                                        <p class="m-h-2">Product</p>
-                                    </th>
-                                    <th>
-                                        <p class="m-h-2">Quantity</p>
-                                    </th>
-                                    <th>
-                                        <p class="m-h-2">Total</p>
-                                    </th>
-                                </tr>
-                            </thead>
-                            <tbody>
-                                <tr>
-                                    <td>
-                                        <img src="../img/vika/cart1.jpg" class="img-responsive hover-shadow m-h-1 m-v-1">
-                                    </td>
-
-                                    <td>
-                                        <p class="m1 small font-weight-400 center">Red mini smock dress</p>
-                                    </td>
-                                    <td>
-                                        <p class="m1 center">1x2</p>
-                                    </td>
-
-                                    <td>
-                                        <p class="m1 center">£84.00</p>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td>
-                                        <img src="../img/vika/cart2.jpg" class="img-responsive hover-shadow m-h-1 m-v-1">
-                                    </td>
-                                    <td>
-                                        <p class="m1 small font-weight-400 center">Leather lace up boots</p>
-                                    </td>
-
-                                    <td>
-                                        <div class="m1 center">1x1</div>
-                                    </td>
-                                    <td>
-                                        <p class="m1 center">£80.00</p>
-                                    </td>
-                                </tr>
-                                <tr>
-
-                                    <td><img src="../img/vika/cart3.jpg" class="img-responsive hover-shadow m-h-1 m-v-1"></td>
-                                    <td>
-                                        <p class="m1 small font-weight-400 center">Embroidered maxi with blouson sleeve</p>
-                                    </td>
-                                    <td>
-                                        <p class="m1 center">1x3</p>
-                                    </td>
-
-                                    <td>
-                                        <p class="m1 center">£243.00</p>
-                                    </td>
-                                </tr>
-                            </tbody>
-                        </table>
-                    </div>
-                </div>
-            </div>
-
-            <div class="col-md-6 p2">
-                <h6 class="font-weight-400">Cart Totals</h6>
-
-                <table class="table table-hover m-v-2">
-                    <tbody>
-                        <tr>
-                            <td>Cart Subtotal:</td>
-                            <td>£404.00</td>
-                        </tr>
-                        <tr>
-                            <td>Shipping:</td>
-                            <td>£10.05</td>
-                        </tr>
-                        <tr>
-                            <td>Total:</td>
-                            <td>
-                                <p class="font-weight-400 left h4">£414.05</p>
-                            </td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h6 class="font-weight-400 m-t-2">Payment Method</h6>
 
                 <div class="accordion">
-                    <div class="accordionBlock">
-                        <input type="radio" name="accordionTitle" id="accordionTitle1" checked="">
-                        <label for="accordionTitle1"><svg xmlns="http://www.w3.org/2000/svg" class="icon-xs" viewbox="0 0 512 512">
-                                <path fill="white" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path>
-                            </svg> Direct Bank Transfer</label>
-                        <div class="accordionContent">
-                            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                                velit
-                                aliquet.
-                            </p>
-                        </div>
-                    </div>
-                    <div class="accordionBlock">
-                        <input type="radio" name="accordionTitle" id="accordionTitle2">
-                        <label for="accordionTitle2"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                data-prefix="far" data-icon="check-circle" class="icon-xs" role="img" viewbox="0 0 512 512">
-                                <path fill="white" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path>
-                            </svg> Cheque Payment</label>
-                        <div class="accordionContent">
-                            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                                velit
-                                aliquet.
-                            </p>
-                        </div>
-                    </div>
-
-
-                    <div class="accordionBlock">
-                        <input type="radio" name="accordionTitle" id="accordionTitle3">
-                        <label for="accordionTitle3"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true"
-                                data-prefix="far" data-icon="check-circle" class="icon-xs" role="img" viewbox="0 0 512 512">
-                                <path fill="white" d="M256 8C119.033 8 8 119.033 8 256s111.033 248 248 248 248-111.033 248-248S392.967 8 256 8zm0 48c110.532 0 200 89.451 200 200 0 110.532-89.451 200-200 200-110.532 0-200-89.451-200-200 0-110.532 89.451-200 200-200m140.204 130.267l-22.536-22.718c-4.667-4.705-12.265-4.736-16.97-.068L215.346 303.697l-59.792-60.277c-4.667-4.705-12.265-4.736-16.97-.069l-22.719 22.536c-4.705 4.667-4.736 12.265-.068 16.971l90.781 91.516c4.667 4.705 12.265 4.736 16.97.068l172.589-171.204c4.704-4.668 4.734-12.266.067-16.971z"></path>
-                            </svg> Paypal
+                    <div class="accordion-block">
+                        <input type="radio" name="paymentMethod" id="paymentTitle1" checked>
+                        <label for="paymentTitle1" class="accordion-label w-100 d-flex align-items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M20,8H4V6H20M20,18H4V12H20M20,4H4C2.89,4 2,4.89 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.89 21.1,4 20,4Z"></path>
+                            </svg>
+                            Direct Bank Transfer
                         </label>
-                        <div class="accordionContent">
-                            <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                                velit
-                                aliquet.
-                            </p>
+                        <div class="accordion-content">
+                            <p class="m0 small">Make your payment directly into our bank account. Your order won't ship until the funds have cleared.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="radio" name="paymentMethod" id="paymentTitle2">
+                        <label for="paymentTitle2" class="accordion-label w-100 d-flex align-items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M2,17H14V19H2V17M16.75,18L13,14.25L14.41,12.84L16.75,15.18L21.59,10.34L23,11.75L16.75,18M2,11H22V13H2V11M2,5H22V7H2V5Z"></path>
+                            </svg>
+                            Cheque Payment
+                        </label>
+                        <div class="accordion-content">
+                            <p class="m0 small">Send a cheque to our office address. Orders are processed once payment is received.</p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="radio" name="paymentMethod" id="paymentTitle3">
+                        <label for="paymentTitle3" class="accordion-label w-100 d-flex align-items-center gap-1">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs" viewBox="0 0 24 24">
+                                <path fill="currentColor" d="M7.076,21.337H2.47a0.641,0.641,0,0,1-0.633-0.74L4.944,3.72A0.965,0.965,0,0,1,5.9,2.907H12.5a4.526,4.526,0,0,1,4.751,4.352,4.343,4.343,0,0,1-.055.727c-0.663,3.383-2.9,4.554-5.744,4.554H10.185a0.8,0.8,0,0,0-.79.679L8.5,17.6H8.489l-0.6,3.11A0.641,0.641,0,0,1,7.076,21.337Z"></path>
+                            </svg>
+                            PayPal
+                        </label>
+                        <div class="accordion-content">
+                            <p class="m0 small">Pay via PayPal; you can pay with your credit card if you don't have a PayPal account.</p>
                         </div>
                     </div>
                 </div>
-                <button class="float-right m-v-2">Place Order</button>
+
+                <button class="w-100 m-t-2 bg-color-1">Place Order &nbsp; £417.05</button>
+                <p class="center small dark m-t-1">
+                    <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill d-inline"><path d="M12,17A2,2 0 0,0 14,15C14,13.89 13.1,13 12,13A2,2 0 0,0 10,15A2,2 0 0,0 12,17M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6A2,2 0 0,1 4,20V10C4,8.89 4.9,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6V8H18M12,3A3,3 0 0,0 9,6V8H15V6A3,3 0 0,0 12,3Z"></path></svg>
+                    Your payment information is processed securely
+                </p>
+
             </div>
         </div>
     </div>
 
-
-
-
-
- 
-
-
-    <div class="row m0 m-v-05">
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Money Back Guarentee </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            100% moneyback guarentee in all orders
-                        </p>
-                    </div>
+    <!-- ============ TRUST BADGES ============ -->
+    <div class="row m0 m-v-2">
+        <div class="col-md-4 p-1-2">
+            <div class="row p-v-2 bg-dark rounded justify-content-center">
+                <div class="m-b--1-2">
+                    <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                        <path fill="#fff"
+                            d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z">
+                        </path>
+                    </svg>
                 </div>
-            </a>
+                <div class="d-inline">
+                    <p class="bold h6 white p-h-1 m0 left">Money Back Guarantee</p>
+                    <p class="light-grey p-h-1 m0 left">100% money-back guarantee on all orders</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Online Support 24/7
-                        </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            Need assistance with our products
-                        </p>
-                    </div>
+        <div class="col-md-4 p-1-2">
+            <div class="row p-v-2 bg-dark rounded justify-content-center">
+                <div class="m-b--1-2">
+                    <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                        <path fill="#fff"
+                            d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z">
+                        </path>
+                    </svg>
                 </div>
-            </a>
+                <div class="d-inline">
+                    <p class="bold h6 white p-h-1 m0 left">Online Support 24/7</p>
+                    <p class="light-grey p-h-1 m0 left">Need assistance with our products</p>
+                </div>
+            </div>
         </div>
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Free Shipping &amp; Free Returns </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            Free shipping on all orders over $99 </p>
-                    </div>
+        <div class="col-md-4 p-1-2">
+            <div class="row p-v-2 bg-dark rounded justify-content-center">
+                <div class="m-b--1-2">
+                    <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
+                        <path fill="#fff"
+                            d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z">
+                        </path>
+                    </svg>
                 </div>
-            </a>
+                <div class="d-inline">
+                    <p class="bold h6 white p-h-1 m0 left">Free Shipping &amp; Returns</p>
+                    <p class="light-grey p-h-1 m0 left">Free shipping on all orders over $99</p>
+                </div>
+            </div>
         </div>
     </div>
+
+    <!-- ============ FOOTER ============ -->
     <footer class="bg-dark p2 line-height-17">
-        <div class="container-fluid row grey">
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <p class="white text-uppercase bold">SUBSCRIBE NEWSLETTER</p>
+        <div class="container-fluid row">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <p class="white text-uppercase bold">Subscribe to our Newsletter</p>
                 <p class="light-grey font-weight-400">
-                    Get all the latest information on Events, Sales and Offers.
-                    Sign up for newsletter today.
+                    Get all the latest information on events, sales and offers. Sign up for our newsletter today.
                 </p>
             </div>
 
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <div class="row m-v-2">
-                    <div class="col-9 p0 m0">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="row m-v-1 gap-1">
+                    <div class="col-9 p0">
                         <div class="form-group">
-                            <input type="email" class="form-control" id="inputCity" placeholder="Email Address">
+                            <input type="email" class="form-control" id="footerEmail" placeholder="Email address">
                         </div>
                     </div>
-                    <div class="col-3 p0 left">
-                        <button class="m0 hover-shadow img-responsive"
-                            style="padding: 0.6rem 1rem 0.6rem 1rem; background-color: black;">Subscribe</button>
+                    <div class="col-2 p0">
+                        <button class="m0 hover-shadow bg-color-1">Subscribe</button>
                     </div>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <div class="center m-v-2">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="center m-v-1">
                     <i class="icon-box hover-grey">
                         <svg viewBox="0 0 24 24" class="icon-s">
                             <path fill="#fff"
@@ -443,24 +371,13 @@
                             </path>
                         </svg>
                     </i>
-
                     <i class="icon-box hover-grey">
-                        <svg viewBox="0 0 512 512" class="icon-s">
-                            <path fill="#fff" id="Twitter__x28_alt_x29_"
-                                d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
-                                                                        c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
-                                                                        c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
-                                                                        c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
-                                                                        C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
-                                                                        c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
-                                                                        c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
-                                                                        c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
-                                                                        c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
-                                                                        C414.973,206.142,393.023,203.486,381.384,198.639z">
+                        <svg viewBox="0 0 24 24" class="icon-s">
+                            <path fill="#fff"
+                                d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z">
                             </path>
                         </svg>
                     </i>
-
                     <i class="icon-box hover-grey">
                         <svg viewBox="0 0 24 24" class="icon-s">
                             <path fill="#fff"
@@ -471,88 +388,58 @@
                 </div>
             </div>
         </div>
-        <div class="container-fluid row grey">
-            <div class="col-md-6 col-lg-3 grey p-v-1">
-                <p class="white text-uppercase bold">contact information</p>
+
+        <hr class="m-v-1">
+
+        <div class="container-fluid row">
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">Contact Information</p>
                 <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">address:</p>
-                    <p class="grey left m0 smallere font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Address</p>
+                    <p class="grey left m0 font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
                 </div>
                 <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">phone:</p>
-                    <p class="grey left m0 smallere font-weight-400">+380 96 926 5003</p>
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Phone</p>
+                    <p class="grey left m0 font-weight-400">+380 96 926 5003</p>
                 </div>
                 <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">EMAIL:</p>
-                    <p class="greyleft m0 smallere font-weight-400" style="word-wrap: break-word;">
-                        info@europeitoutsourcing.com
-                    </p>
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Email</p>
+                    <p class="grey left m0 font-weight-400">info@europeitoutsourcing.com</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-9 grey">
-                <div class="row">
-                    <div class="col-md-6 col-lg-4 grey p-v-1">
-                        <p class="white text-uppercase bold">my account</p>
-                        <div class="row">
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">About us</a>
-                                    </li>
-                                    <li><a href="#" class="grey m0">Contact us</a></li>
-                                    <li><a href="#" class="grey m0">My account</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">Orders history</a></li>
-                                    <li><a href="#" class="grey m0">Advanced search</a>
-                                    </li>
-                                    <li><a href="#" class="grey m0">Login</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
 
-                    <div class="col-md-6 col-lg-5 grey p-v-1">
-                        <p class="white text-uppercase bold">main features</p>
-                        <div class="row">
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">Pure HTML CSS</a>
-                                    </li>
-                                    <li><a href="#" class="grey m0">Fast Loading</a></li>
-                                    <li><a href="#" class="grey m0">Extendable with Variables</a></li>
-                                </ul>
-                            </div>
-                            <div class="col-6">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">Responsive &amp; Mobile first</a></li>
-                                    <li><a href="#" class="grey m0">100's of Free UI Elements</a>
-                                    </li>
-                                    <li><a href="#" class="grey m0">Free &amp; Open Source</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">My Account</p>
+                <ul class="no-indent-ul line-height-2 smaller">
+                    <li><a href="#" class="grey m0">About us</a></li>
+                    <li><a href="#" class="grey m0">Contact us</a></li>
+                    <li><a href="#" class="grey m0">My account</a></li>
+                    <li><a href="#" class="grey m0">Order history</a></li>
+                    <li><a href="#" class="grey m0">Login</a></li>
+                </ul>
+            </div>
 
-                    <div class="col-md-6 col-lg-3 grey p-v-1">
-                        <p class="white text-uppercase bold">working hours</p>
-                        <p class="grey font-weight-400">
-                            Mon - Fri / 8:00AM - 5:00PM
-                        </p>
-                    </div>
-                </div>
-                <hr class="m0">
-                <div class="row p-v-1">
-                    <div class="col-md-4 white center">
-                    </div>
-                    <div class="col-md-8 lg-order-first">
-                        <p class="center grey left m-v-1 smaller"> © Copyright 2018. All Rights Reserved Europe IT
-                            Outsourcing
-                            Company.
-                        </p>
-                    </div>
-                </div>
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">Main Features</p>
+                <ul class="no-indent-ul line-height-2 smaller">
+                    <li><a href="#" class="grey m0">Pure HTML &amp; CSS</a></li>
+                    <li><a href="#" class="grey m0">Fast loading</a></li>
+                    <li><a href="#" class="grey m0">Responsive &amp; mobile-first</a></li>
+                    <li><a href="#" class="grey m0">Free &amp; open source</a></li>
+                </ul>
+            </div>
+
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">Working Hours</p>
+                <p class="grey font-weight-400">Mon - Fri / 8:00AM - 5:00PM</p>
+            </div>
+        </div>
+
+        <hr class="m-v-1">
+
+        <div class="container-fluid row">
+            <div class="col-md-12">
+                <p class="center grey m-v-1 smaller">© Copyright 2026. All Rights Reserved Europe IT Outsourcing Company.</p>
             </div>
         </div>
     </footer>

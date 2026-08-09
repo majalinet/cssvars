@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Signal — Modern Grid Blog</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<!-- Header -->
+    <div class="main-nav container-fluid nav-top-border-hover">
+        <div class="main-menu">
+            <input type="checkbox" id="toggle-1">
+            <a href="https://cssvars.com" id="logo" class="logo" alt="CSS Vars Framework and UI Kit">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                    <rect x="2" y="2" width="96" height="96" rx="6" ry="6" fill="var(--color-1)"></rect>
+                    <text x="50" y="58" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+                        font-weight="700" font-size="42" fill="var(--white)">{C}</text>
+                </svg>
+            </a>
+            <div class="nav-panel">
+                <div class="nav-group">
+                    <nav class="nav">
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact" class="bold">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s"
+                    viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s"
+                    viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                    </path>
+                </svg>
+            </label>
+        </div>
+    </div>
+
+<!-- Full-bleed cover hero -->
+<div class="h-100-vh d-flex flex-column justify-content-center bg-light-grey"
+  style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
+  <h1 class="center black font-weight-600 display-3">Signal</h1>
+  <h5 class="center black font-weight-400">Product notes, engineering deep-dives and the occasional
+    war story.</h5>
+  <div class="center m-t-2">
+    <a href="#" class="button button-lg bg-black white" target="_blank">Read Latest</a>
+    <a href="#" class="button button-lg black outline-black bg-white">All Categories</a>
+  </div>
+</div>
+
+<!-- Card grid -->
+<section class="container p-v-4">
+  <h4 class="black bold center">Latest Articles</h4>
+  <hr class="width-short center w-50 m-b-3">
+
+  <div class="d-grid grid-cols-3 gap-2">
+    <div class="card card-hover">
+      <img src="../img/blocks/work-1.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Engineering</p>
+        <h5 class="black bold m-t-1">Quality Web Design Principles To Follow in 2026</h5>
+        <p class="dark font-weight-400 small">Seven principles that separate a page that merely
+          loads from one that actually converts.</p>
+      </div>
+      <div class="card-footer small dark">5 min read · Oct 4, 2026</div>
+    </div>
+
+    <div class="card card-hover">
+      <img src="../img/blocks/work-10.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Product</p>
+        <h5 class="black bold m-t-1">Masking, Effects &amp; Patterns in Adobe Illustrator</h5>
+        <p class="dark font-weight-400 small">A hands-on look at building reusable pattern
+          libraries without leaving the artboard.</p>
+      </div>
+      <div class="card-footer small dark">4 min read · Sep 7, 2026</div>
+    </div>
+
+    <div class="card card-hover">
+      <img src="../img/blocks/work-2.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Culture</p>
+        <h5 class="black bold m-t-1">How We Run Weekly Retros Without Dreading Them</h5>
+        <p class="dark font-weight-400 small">The format we landed on after two years of
+          trial, error and mildly awkward silences.</p>
+      </div>
+      <div class="card-footer small dark">6 min read · Sep 4, 2026</div>
+    </div>
+
+    <div class="card card-hover">
+      <img src="../img/blocks/technology.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Engineering</p>
+        <h5 class="black bold m-t-1">Why Zero-JS Frameworks Are Having a Moment</h5>
+        <p class="dark font-weight-400 small">Checkbox toggles, @layer, color-mix — modern CSS
+          quietly replaced a lot of what we used to reach for JS to do.</p>
+      </div>
+      <div class="card-footer small dark">7 min read · Aug 22, 2026</div>
+    </div>
+
+    <div class="card card-hover">
+      <img src="../img/blocks/work-4.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Product</p>
+        <h5 class="black bold m-t-1">How to Attract a Customer with a Marketing Model AIDA?</h5>
+        <p class="dark font-weight-400 small">A practical breakdown of Attention, Interest,
+          Desire and Action, with real campaign examples.</p>
+      </div>
+      <div class="card-footer small dark">5 min read · Mar 2, 2026</div>
+    </div>
+
+    <div class="card card-hover">
+      <img src="../img/blocks/work-5.jpg" class="img-responsive rounded-t">
+      <div class="card-body">
+        <p class="badge bga-success text-uppercase small">Culture</p>
+        <h5 class="black bold m-t-1">10 Tips on How to Make Your Content Better</h5>
+        <p class="dark font-weight-400 small">Small edits compound. Ten changes that quietly
+          raise the quality of everything you publish.</p>
+      </div>
+      <div class="card-footer small dark">4 min read · Mar 13, 2026</div>
+    </div>
+  </div>
+
+  <!-- Pagination -->
+  <div class="row justify-content-center m-t-3">
+    <ul class="pagination">
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">Next</a></li>
+    </ul>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="container-fluid row">
+  <div class="col-md-6 col-lg-3 p2">
+    <a href="#">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="icon-m m-b-2" alt="Signal Logo">
+    </a>
+    <p class="smaller">Signal covers product, engineering and the culture of building software
+      teams that last.</p>
+    <p class="small">© Copyright 2026. All rights reserved. <a href="#">Terms</a>.</p>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Sections</p>
+    <ul class="no-indent-ul">
+      <li><a href="#">Product</a></li>
+      <li><a href="#">Engineering</a></li>
+      <li><a href="#">Culture</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Company</p>
+    <ul class="no-indent-ul">
+      <li><a href="#">About</a></li>
+      <li><a href="#">Careers</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Subscribe</p>
+    <form class="row">
+      <input type="email" class="form-control" placeholder="Enter your email">
+      <button type="submit" class="button w-100 m-t-1">Subscribe</button>
+    </form>
+  </div>
+</footer>
+
+</body>
+</html>

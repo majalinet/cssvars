@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>10 Tips on How to Make Your Content Better — Sidebar Layout</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+    <div class="main-nav container-fluid nav-top-border-hover">
+        <div class="main-menu">
+            <input type="checkbox" id="toggle-1">
+            <a href="https://cssvars.com" id="logo" class="logo" alt="CSS Vars Framework and UI Kit">
+                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+                    <rect x="2" y="2" width="96" height="96" rx="6" ry="6" fill="var(--color-1)"></rect>
+                    <text x="50" y="58" text-anchor="middle" font-family="'Courier New', Courier, monospace"
+                        font-weight="700" font-size="42" fill="var(--white)">{C}</text>
+                </svg>
+            </a>
+            <div class="nav-panel">
+                <div class="nav-group">
+                    <nav class="nav">
+                        <a href="#about">About</a>
+                        <a href="#portfolio">Portfolio</a>
+                        <a href="#services">Services</a>
+                        <a href="#gallery">Gallery</a>
+                        <a href="#contact" class="bold">Contact</a>
+                    </nav>
+                </div>
+            </div>
+            <label for="toggle-1" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s"
+                    viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                </svg>
+                <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s"
+                    viewBox="0 0 24 24">
+                    <path d="M0 0h24v24H0z" fill="none"></path>
+                    <path
+                        d="M19 6.41L17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z">
+                    </path>
+                </svg>
+            </label>
+        </div>
+    </div>
+
+<article class="bg-light-grey p-v-4">
+  <div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <p class="dark small m0">Blog / Startups</p>
+        <h1 class="black bold left m-t-1">10 Tips on How to Make Your Content Better</h1>
+        <div class="d-flex align-items-center gap-1 m-t-1">
+          <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-s" alt="Author">
+          <p class="dark small m0">By James Carter · 13 March, 2026 · 8 min read</p>
+        </div>
+
+        <img src="../img/blocks/laptop.jpg" class="img-responsive rounded m-t-2" alt="Content strategy workspace">
+
+        <div class="bg-white p2 m-t-2">
+          <h4 id="planning" class="black bold left">Start with a Content Plan</h4>
+          <p class="line-height-17 dark m-t-1">Publishing without a plan is the fastest way to burn out an editorial team. Map topics to funnel stages before a single word is written.</p>
+
+          <h4 id="research" class="black bold left m-t-3">Research Before You Write</h4>
+          <p class="line-height-17 dark m-t-1">Every well-performing post starts as a question your audience is already asking. Search intent, not inspiration, should drive the outline.</p>
+          <ul class="dark line-height-17">
+            <li>Mine your support inbox for recurring questions</li>
+            <li>Check competitor content for coverage gaps</li>
+            <li>Validate demand with basic keyword volume</li>
+          </ul>
+
+          <h4 id="structure" class="black bold left m-t-3">Structure for Skimmers</h4>
+          <p class="line-height-17 dark m-t-1">Most readers scan before they commit. Descriptive subheadings and short paragraphs do more for retention than clever prose.</p>
+
+          <blockquote class="m-t-2">
+            <p>"Good structure is invisible — readers only notice it when it's missing."</p>
+            <span class="blockquote-footer">James Carter, Content Lead</span>
+          </blockquote>
+
+          <h4 id="edit" class="black bold left m-t-3">Edit Ruthlessly</h4>
+          <p class="line-height-17 dark m-t-1">A first draft is a starting position, not a finished asset. Cut every sentence that doesn't earn its place.</p>
+        </div>
+
+        <div class="pills m-t-2">
+          <a href="#" class="pill pill-color-1">Content Strategy</a>
+          <a href="#" class="pill">Editing</a>
+          <a href="#" class="pill">SEO</a>
+        </div>
+      </div>
+
+      <!-- sticky sidebar -->
+      <div class="col-md-4">
+        <div class="position-sticky top-0">
+
+          <div class="card m-t-1">
+            <p class="black bold m0 m-b-1">On This Page</p>
+            <ul class="menu">
+              <li class="menu-item"><a href="#planning">Start with a Content Plan</a></li>
+              <li class="menu-item"><a href="#research">Research Before You Write</a></li>
+              <li class="menu-item"><a href="#structure">Structure for Skimmers</a></li>
+              <li class="menu-item"><a href="#edit">Edit Ruthlessly</a></li>
+            </ul>
+          </div>
+
+          <div class="card m-t-2 center">
+            <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-lg m-auto" alt="James Carter">
+            <p class="black bold m-t-1 m0">James Carter</p>
+            <p class="dark small m0">Content Lead</p>
+            <p class="dark small line-height-17 m-t-1">Writes about editorial workflows, SEO, and building content teams that scale.</p>
+            <a href="#" class="button button-s bg-black text-uppercase small p-v-1 p-h-2 m-t-1">Follow</a>
+          </div>
+
+          <div class="card m-t-2">
+            <p class="black bold m0 m-b-1">Related Posts</p>
+            <div class="menu">
+              <a href="#" class="d-flex align-items-center gap-1 p-v-1">
+                <img src="../img/blocks/work-1.jpg" class="img-responsive rounded icon-lg" alt="Related post">
+                <span class="small dark">How to Attract a Customer with AIDA</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-1 p-v-1">
+                <img src="../img/blocks/work-10.jpg" class="img-responsive rounded icon-lg" alt="Related post">
+                <span class="small dark">Masking, Effects &amp; Patterns</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+
+
+<!-- ============================================================ -->
+<!-- DESIGN 3 — MAGAZINE HERO (full-bleed image + overlay title) -->
+<!-- ============================================================ -->
+
+<footer class="bg-light-grey">
+  <div class="row container p-v-3">
+    <div class="col-md-6 col-lg-3">
+      <p class="black bold h6 m-v--1-2">Company</p>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="about.html">About</a></li>
+        <li class="m-v--1-2"><a href="contact.html">Contact</a></li>
+        <li class="m-v--1-2"><a href="#">Careers</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <p class="black bold h6 m-v--1-2">Blog</p>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="blog-post-1-classic-editorial.html">Marketing</a></li>
+        <li class="m-v--1-2"><a href="blog-post-2-sidebar-layout.html">Content Strategy</a></li>
+        <li class="m-v--1-2"><a href="blog-post-3-magazine-hero.html">Web Design</a></li>
+        <li class="m-v--1-2"><a href="blog-post-4-minimal-dark.html">Illustration</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <p class="black bold h6 m-v--1-2">Resources</p>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="#">Documentation</a></li>
+        <li class="m-v--1-2"><a href="#">Components</a></li>
+        <li class="m-v--1-2"><a href="#">Newsletter</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <p class="black bold h6 m-v--1-2">Legal</p>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="#">Privacy Policy</a></li>
+        <li class="m-v--1-2"><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row justify-content-between align-items-center container p-v-1 m0" style="border-top: 0.0625rem solid var(--grey);">
+    <p class="small dark m0">&copy; 2026 CSS Vars Framework. All rights reserved.</p>
+    <div class="d-flex gap-1">
+      <a href="#"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M17,2H7A5,5 0 0,0 2,7V17A5,5 0 0,0 7,22H17A5,5 0 0,0 22,17V7A5,5 0 0,0 17,2M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.5,6.5A1,1 0 0,0 16.5,7.5A1,1 0 0,0 17.5,8.5A1,1 0 0,0 18.5,7.5A1,1 0 0,0 17.5,6.5Z"></path></svg></a>
+      <a href="#"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
+      <a href="#"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg></a>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

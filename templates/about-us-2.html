@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Us — Startup | CSS Vars</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (Header 5 — grouped right w/ actions) ============ -->
+<div class="main-nav p1 rounded">
+    <div class="main-menu rounded shadow-3">
+        <input type="checkbox" id="toggle-h5">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <div class="nav-group">
+                <nav class="nav nav-top-border-hover">
+                    <a href="#story">Our Story</a>
+                    <a href="#how">How We Work</a>
+                    <a href="#customers">Customers</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="#login">Login</a>
+                    <a href="#start" class="button">Get Started</a>
+                </div>
+            </div>
+        </div>
+        <label for="toggle-h5" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ SPLIT HERO ============ -->
+<section class="row" id="story" style="min-height: 65vh;">
+    <div class="col-md-6 d-flex flex-column justify-content-center p2">
+        <p class="color-1 bold text-uppercase small m0">Our Story</p>
+        <h1 class="black display-2 font-weight-600 m-t-1">We started with one frustration: bloated CSS.</h1>
+        <p class="dark h6 m-t-2">CSS Vars began as a side project to prove a full design system could live in
+            a single stylesheet. Today it powers real client platforms — no build step required.</p>
+        <div class="m-t-2">
+            <a href="#how" class="button button-lg bg-black rounded">How We Work</a>
+        </div>
+    </div>
+    <div class="col-md-6 p0">
+        <img src="../img/blocks/technology.jpg" alt="Our workspace" class="img-responsive h-100">
+    </div>
+</section>
+
+<!-- ============ HOW WE WORK (Steps 2) ============ -->
+<section class="container m-t-4" id="how">
+  <div class="row">
+    <div class="col-md-6">
+      <img src="../img/blocks/laptop.jpg" class="img-responsive rounded">
+    </div>
+    <div class="col-md-6">
+      <h1 class="black bold left display-3 m-t-4 m-l-3">How we build<br> the framework</h1>
+      <div class="row align-items-center m-b-1 m-t-2">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-4 bold">1</div>
+        <p class="m-l-1 h6 dark">Audit the existing stylesheet before adding anything new.</p>
+      </div>
+      <div class="row align-items-center m-b-1">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-4 bold">2</div>
+        <p class="m-l-1 h6 dark">Compose from existing primitives instead of writing new classes.</p>
+      </div>
+      <div class="row align-items-center m-b-1">
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-4 bold">3</div>
+        <p class="m-l-1 h6 dark">Test against real client builds before anything ships.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIALS (Testimonial 5) ============ -->
+<section class="m-v-4" id="customers">
+  <h1 class="black bold center m-t-4">Teams building with us</h1>
+  <p class="center dark h6">A few of the platforms running on CSS Vars.</p>
+  <div class="row container justify-content-center">
+    <div class="col-md-4">
+      <div class="black center p2">
+        <img src="../img/blocks/worker-1-s.jpg" class="img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"Zero JavaScript and it still handles our whole nav and
+          checkout flow. That surprised us."</p>
+        <p class="black bold">Acquittify<br><span class="dark">Legal Tech Platform</span></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="black center p2">
+        <img src="../img/blocks/worker-2-s.jpg" class="img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"One CSS file, no build pipeline. Our whole team can edit
+          the site without touching a compiler."</p>
+        <p class="black bold">Safe Harbor Group<br><span class="dark">Healthcare Compliance</span></p>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="black center p2">
+        <img src="../img/blocks/worker-3-s.jpg" class="img-responsive icon-ml circle">
+        <p class="dark font-weight-400 h6 m-t-1">"The token system means design changes propagate instantly
+          across the whole site."</p>
+        <p class="black bold">Internal Team<br><span class="dark">CSS Vars Docs</span></p>
+      </div>
+    </div>
+    <hr class="col-12">
+  </div>
+</section>
+
+<!-- ============ CTA (CTA 1) ============ -->
+<section id="start">
+  <div class="container m-t-4 p-v-4 m-v-4">
+    <h2 class="center black font-weight-600">Ready to try CSS Vars?</h2>
+    <p class="center">Link one stylesheet and see how far a single file can take you.</p>
+    <div class="center">
+      <a href="#" class="button button-lg bg-black m-t-2 rounded">Start Building Free</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER (Footer 1) ============ -->
+<footer class="center p2 color-1 bg-light-grey m-t-4">
+  <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/cssvars-logo-with-text.png" class="h-4rem">
+  <p class="color-1 smaller">
+    Built with love by the CSS Vars team and contributors.
+    <a href="https://github.com/majalinet/cssvars" target="_blank" rel="noopener noreferrer">
+      <i class="icon-box">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s">
+          <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+        </svg>
+      </i>
+    </a>
+  </p>
+</footer>
+
+</body>
+</html>

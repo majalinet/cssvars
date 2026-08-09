@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — Editorial | Kim Majali</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (Header 2 — contact bar + bottom-border nav) ============ -->
+<div class="bga-color-1 p-1-2 row justify-content-end">
+    <span class="small m-r-2">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path>
+        </svg>
+        (123) 456-78-90</span>
+    <span class="small m-r-1">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+            <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path>
+        </svg>
+        hello@cssvars.com</span>
+</div>
+<div class="main-nav">
+    <div class="main-menu nav-bottom-border-hover">
+        <input type="checkbox" id="toggle-h2">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="index.html">Home</a>
+                <a href="#story">Story</a>
+                <a href="#now">Now</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h2" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ EDITORIAL STATEMENT ============ -->
+<section class="container m-t-4 center">
+    <p class="color-1 bold text-uppercase small">About Me</p>
+    <h1 class="black display-1 font-weight-600 m-t-1">I write CSS so other<br>people don't have to fight it.</h1>
+    <p class="dark h5 font-thin m-t-2 w-75 center">Kim Majali, creator of the CSS Vars Framework — a
+        single-stylesheet system built for developers who want speed without a build pipeline.</p>
+</section>
+
+<!-- ============ ALTERNATING CONTENT ============ -->
+<section class="container m-t-4" id="story">
+    <div class="row align-items-center">
+        <div class="col-md-6 p-h-3">
+            <img src="../img/blocks/worker-3.jpg" class="img-responsive rounded">
+        </div>
+        <div class="col-md-6 p-h-3">
+            <h5 class="left display-5 black"><strong>Where</strong> it started</h5>
+            <hr class="m0 left width-short m-v-2">
+            <p class="m-v-2 dark">I spent years shipping projects on top of frameworks that shipped ten times
+                more CSS than any single page ever used. CSS Vars started as a personal experiment to see how
+                much could be done with custom properties alone — no preprocessor, no bundler.</p>
+        </div>
+    </div>
+    <div class="row align-items-center m-t-4">
+        <div class="col-md-6 p-h-3">
+            <img src="../img/blocks/worker-4.jpg" class="img-responsive rounded">
+        </div>
+        <div class="col-md-6 p-h-3">
+            <h5 class="left display-5 black"><strong>Where</strong> it's going</h5>
+            <hr class="m0 left width-short m-v-2">
+            <p class="m-v-2 dark">Today the framework powers real client work — from legal-tech platforms to
+                healthcare compliance sites — and I'm building out the accessibility layer and a Claude Skill
+                for developer adoption next.</p>
+        </div>
+    </div>
+</section>
+
+<!-- ============ BIO CARD (single, from Team pattern) ============ -->
+<section class="row container m-t-4 justify-content-center" id="now">
+  <div class="col-md-6 row p-1-2">
+    <img src="../img/blocks/worker-1.jpg" alt="Kim Majali" class="col-12 img-responsive rounded-t">
+    <div class="p-t-1 bg-white shadow-3 p-1-2">
+      <p class="h6 bold black text-uppercase m0">Kim Majali</p>
+      <p class="color-2 italic">Creator, CSS Vars Framework</p>
+      <p class="dark">Currently building the accessibility layer, a `.section` utility system, and exploring
+        Claude Skills as a distribution path for developers.</p>
+      <div class="row">
+        <a href="https://github.com/majalinet/cssvars" target="_blank">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#contact">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path>
+            </svg>
+          </i>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER (Footer 2) ============ -->
+<footer class="p-v-1 row container m-t-4" id="contact">
+  <div class="col-md-6">
+    <p class="center small black left m-v-1"> © Copyright 2026. Kim Majali. All Rights Reserved.
+      <span class="smaller"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></span>
+    </p>
+  </div>
+  <div class="col-md-6 right">
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+      </svg>
+    </i>
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+      </svg>
+    </i>
+  </div>
+</footer>
+
+</body>
+</html>

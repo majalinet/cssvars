@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>About Me — My Journey | Kim Majali</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (Header 6 — dropdown submenu) ============ -->
+<div class="main-nav p1 nav-top-border-hover">
+    <div class="main-menu">
+        <input type="checkbox" id="toggle-h6">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#journey">Journey</a>
+                <div class="dropdown">
+                    <input type="checkbox" id="focus-dropdown" class="dropdown-state">
+                    <label for="focus-dropdown" class="dropdown-toggle">Focus Areas</label>
+                    <ul class="dropdown-menu menu">
+                        <li class="dropdown-header">What I Work On</li>
+                        <li class="menu-item">
+                            <a href="#values">
+                                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                    <path d="M4,2A2,2 0 0,0 2,4V16A2,2 0 0,0 4,18H10V20H8V22H16V20H14V18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2H4M4,4H20V14H4V4Z"></path>
+                                </svg>
+                                Framework Design
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="#values">
+                                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                    <path d="M14.6,16.6L19.2,12L14.6,7.4L16,6L22,12L16,18L14.6,16.6M9.4,16.6L4.8,12L9.4,7.4L8,6L2,12L8,18L9.4,16.6Z"></path>
+                                </svg>
+                                Client Builds
+                            </a>
+                        </li>
+                        <li class="dropdown-divider"></li>
+                        <li class="menu-item">
+                            <a href="#values">
+                                <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                    <path d="M12,3C7.58,3 4,4.79 4,7C4,9.21 7.58,11 12,11C16.42,11 20,9.21 20,7C20,4.79 16.42,3 12,3M4,9V12C4,14.21 7.58,16 12,16C16.42,16 20,14.21 20,12V9C20,11.21 16.42,13 12,13C7.58,13 4,11.21 4,9M4,14V17C4,19.21 7.58,21 12,21C16.42,21 20,19.21 20,17V14C20,16.21 16.42,18 12,18C7.58,18 4,16.21 4,14Z"></path>
+                                </svg>
+                                Documentation
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <a href="#stats">By The Numbers</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h6" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ HEADLINE ============ -->
+<section class="container m-t-4 center p-v-1">
+    <p class="color-1 bold text-uppercase small">My Journey</p>
+    <h1 class="black display-3 font-weight-600 m-v-1">From broken floats to<br>a framework people rely on</h1>
+</section>
+
+<!-- ============ MILESTONE TIMELINE (Steps 1 pattern, repeated) ============ -->
+<section class="container bg-white rounded m-t-4" id="journey">
+  <div class="row m-t-2">
+    <div class="col-md-6 p-v-2">
+      <img src="https://cdn.pixabay.com/photo/2024/11/10/12/33/businessman-9187765_640.jpg" class="img-responsive m-l-2">
+      <h2 class="left black m-t-2 font-weight-600 m-l-2">Milestones that shaped<br> the framework</h2>
+      <p class="dark m-t-1 m-l-2 h6">Every version came out of a real project problem, not a whiteboard idea.</p>
+    </div>
+    <div class="col-md-6">
+      <h3 class="black bold left m-t-4 m-l-3">2016 — First Line of CSS</h3>
+      <p class="dark font-weight-400 left m-v-2 m-l-3">Started experimenting with custom properties instead of
+        Sass variables on a client project.</p>
+      <hr class="col-9">
+      <h3 class="black bold left m-l-3">2021 — CSS Vars v1</h3>
+      <p class="dark font-weight-400 left m-v-2 m-l-3">Packaged the token system and utility classes into a
+        single open-source stylesheet.</p>
+      <hr class="col-9">
+      <h3 class="black bold left m-l-3">2026 — 90+ Blocks &amp; Growing</h3>
+      <p class="dark font-weight-400 left m-v-2 m-l-3">Rebuilt navigation and carousel systems, expanded the
+        block library, and started work on the accessibility layer.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS (Statistics 3, parallax) ============ -->
+<section class="parallax-img m-t-4" style="background-image: url('../img/blocks/design-8.jpg'); min-height: 400px;" id="stats">
+  <div class="row m-h-4">
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">10+</h1>
+        <h6 class="white m-t-1 text-uppercase">Years Building</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">90+</h1>
+        <h6 class="white m-t-1 text-uppercase">Blocks Shipped</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">3</h1>
+        <h6 class="white m-t-1 text-uppercase">Client Platforms</h6>
+      </div>
+    </div>
+    <div class="col-md-3 m-v-4 p1">
+      <div class="promo-box-s outline-white rounded center">
+        <h1 class="white display-2">0</h1>
+        <h6 class="white m-t-1 text-uppercase">JS Dependencies</h6>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ VALUES (FAQ-style accordion pattern reused as principles) ============ -->
+<section class="container m-t-4" id="values">
+  <h2 class="black bold center">What I Value</h2>
+  <div class="row m-t-2">
+    <div class="col-md-4 p1">
+      <h5 class="black bold">Read before writing</h5>
+      <p class="dark">Every session starts with auditing the existing framework before adding a single new
+        class.</p>
+    </div>
+    <div class="col-md-4 p1">
+      <h5 class="black bold">No shorthand traps</h5>
+      <p class="dark">Composable utilities need longhand axes — shorthand properties reset everything they
+        touch.</p>
+    </div>
+    <div class="col-md-4 p1">
+      <h5 class="black bold">One source of truth</h5>
+      <p class="dark">Every value cascades from root tokens. No hardcoded numbers where a variable already
+        exists.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA ============ -->
+<section id="contact">
+  <div class="container m-t-4 p-v-4 m-v-4">
+    <h2 class="center black font-weight-600">Curious where the framework goes next?</h2>
+    <p class="center">Follow along or get in touch about a project.</p>
+    <div class="center">
+      <a href="mailto:hello@cssvars.com" class="button button-lg bg-black m-t-2 rounded">Get In Touch</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER (Footer 3) ============ -->
+<footer class="border-t border-light-grey d-block">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Site</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="index.html">Home</a></li>
+        <li class="m-h-1"><a href="#journey">Journey</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Focus</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#values">Values</a></li>
+        <li class="m-h-1"><a href="#stats">By the Numbers</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Connect</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#contact">Contact</a></li>
+        <li class="m-h-1"><a href="https://github.com/majalinet/cssvars" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Legal</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Privacy Policy</a></li>
+        <li class="m-h-1"><a href="#">Terms of Use</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="p-v-1 small row border-t border-light-grey m-t-2 container">
+    <p class="color-1">
+      <a href="index.html" id="logo" target="_blank" rel="noopener noreferrer">
+        <img class="icon-xs" src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png">
+      </a>
+      © Copyright 2026. Kim Majali. All rights reserved.
+    </p>
+  </div>
+</footer>
+
+</body>
+</html>

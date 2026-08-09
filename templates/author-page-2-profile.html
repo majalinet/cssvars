@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kim Majali — Author Profile | CSS Vars Framework</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (Header 1 — simple, top-border hover) ============ -->
+<div class="main-nav p1">
+    <div class="main-menu nav-top-border-hover">
+        <input type="checkbox" id="toggle-h2a">
+        <a href="#" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Authors</a>
+                <a href="#">Docs</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h2a" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ CENTERED PROFILE HERO (Hero 2 pattern, adapted) ============ -->
+<section class="row h-75-vh">
+  <div class="m-auto">
+    <div class="p1 m-auto center">
+      <img src="../img/blocks/worker-1-s.jpg" class="circle icon-lg shadow-3" alt="Kim Majali">
+    </div>
+    <div class="m-v-auto center">
+      <p class="color-1 text-uppercase bold small m0">Author Profile</p>
+      <h1 class="black bold h2">Kim Majali</h1>
+      <p class="dark font-weight-400 m-v-1">Frontend Architect &amp; Creator of CSS Vars Framework<br>
+        Building single-stylesheet, zero-JavaScript UI systems since 2014.</p>
+      <div class="m-v-1">
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="-7 0 32 32" class="icon-xs icon-black-fill">
+              <path d="M16.844 9.156l-6.375 7.875 6.938 8.563h-2.906l-5.469-6.781-5.5 6.781h-2.906l6.969-8.563-6.375-7.875h2.906l4.906 6.063 4.875-6.063h2.938z"></path>
+            </svg>
+          </i>
+        </a>
+      </div>
+      <div>
+        <a href="#articles" class="button button-lg" target="_blank">Follow</a>
+        <a href="#" class="button button-lg color-1 outline-color-1 bg-white">View Articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE BADGES ============ -->
+<section class="container p-v-2 center">
+  <span class="badge larger bga-success m-1-4">CSS Custom Properties</span>
+  <span class="badge larger bga-success m-1-4">color-mix()</span>
+  <span class="badge larger bga-success m-1-4">Fluid Design</span>
+  <span class="badge larger bga-success m-1-4">Zero-JS Components</span>
+  <span class="badge larger bga-success m-1-4">Design Systems</span>
+</section>
+
+<!-- ============ STATS BAND (Statistics 4 pattern) ============ -->
+<section class="h-25 d-flex m-t-4 flex-column bg-gradient-black">
+  <div class="row m-h-3 m-v-2 p0">
+    <div class="col-md-4">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white font-weight-600">128</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Articles &amp; guides<br> published on the blog.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p-1-2">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white font-weight-600">12</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Years designing<br> for the browser.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p-1-2">
+      <div class="row m-t-2">
+        <div class="col-2">
+          <h1 class="white font-weight-600">54K</h1>
+        </div>
+        <div class="col-10 left p-h-1">
+          <p class="m-t--1-2 white p0 dark font-weight-400">Developers following<br> Kim's work.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RECENT ARTICLES (Blog cards) ============ -->
+<section class="row container m-v-4" id="articles">
+  <div class="col-12">
+    <h4 class="black bold center text-uppercase m-t-2">Recent Articles</h4>
+    <p class="dark center display-6 font-thin">The latest from Kim's notebook</p>
+    <hr class="width-short center w-50">
+  </div>
+  <div class="col-md-4 p1">
+    <a href="#">
+      <img src="../img/blocks/work-8.jpg" alt="alttext" class="img-responsive">
+    </a>
+    <section>
+      <div class="p1">
+        <a href="#" class="bold black p0 h6">Tokens All the Way Down</a>
+        <p class="line-height-17 dark font-weight-400 m-v-1">Single source-of-truth root variables
+          cascading through control.</p>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-4 p1">
+    <a href="#">
+      <img src="../img/blocks/work-10.jpg" alt="alttext" class="img-responsive">
+    </a>
+    <section>
+      <div class="p1">
+        <a href="#" class="bold black p0 h6">Composable Transition Utilities</a>
+        <p class="line-height-17 dark font-weight-400 m-v-1">Why shorthand properties break utility
+          composition, and how longhand axes fix it.</p>
+      </div>
+    </section>
+  </div>
+  <div class="col-md-4 p1">
+    <a href="#">
+      <img src="../img/blocks/work-11.jpg" alt="alttext" class="img-responsive">
+    </a>
+    <section>
+      <div class="p1">
+        <a href="#" class="bold black p0 h6">Accessible Toggles With Checkboxes</a>
+        <p class="line-height-17 dark font-weight-400 m-v-1">Zero-JS navigation, tabs, and modals
+          using the checkbox-hack, done right.</p>
+      </div>
+    </section>
+  </div>
+</section>
+
+<!-- ============ CTA (CTA 2 pattern) ============ -->
+<section class="p-v-4">
+  <div class="d-flex bg-color-1 m-v-4 flex-column">
+    <h1 class="center white font-weight-600 m-t-4">Never miss an article</h1>
+    <p class="h6 center white m-t-1">One thoughtful email a month. No build tools required to read it.</p>
+    <div class="center m-b-4">
+      <a href="#" class="button button-lg bg-white color-1 m-1-2 rounded">Subscribe</a>
+      <a href="#" class="button button-lg outline-white white m-1-2 rounded">View All Posts</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER (Footer 2) ============ -->
+<footer class="p-v-1 row container">
+  <div class="col-md-6">
+    <p class="center small black left m-v-1"> © Copyright 2026. CSS Vars Framework. All rights reserved.
+      <span class="smaller"><a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a></span>
+    </p>
+  </div>
+  <div class="col-md-6 right">
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+      </svg>
+    </i>
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+      </svg>
+    </i>
+  </div>
+</footer>
+
+</body>
+</html>

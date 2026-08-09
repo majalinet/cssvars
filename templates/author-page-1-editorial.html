@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Kim Majali — Author | CSS Vars Framework</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (Header 3 — tinted bg-color-1, background-hover nav) ============ -->
+<div class="main-nav p1">
+    <div class="main-menu bga-color-1 rounded nav-bg-hover">
+        <input type="checkbox" id="toggle-h1">
+        <a href="#" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#">Home</a>
+                <a href="#">Blog</a>
+                <a href="#">Authors</a>
+                <a href="#">Docs</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h1" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ BREADCRUMB (Breadcrumb 2) ============ -->
+<div class="container">
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb shadow-3 p-1-8">
+    <li><a href="#"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg> Home</a></li>
+    <li><a href="#">Authors</a></li>
+    <li class="bold" aria-current="page">Kim Majali</li>
+  </ol>
+</nav>
+</div>
+
+<!-- ============ AUTHOR BIO HERO (adapted from Content 3 two-column pattern) ============ -->
+<section class="bg-light-grey p-v-4">
+  <div class="container row p-v-1">
+    <div class="col-md-4 p1 center">
+      <img src="../img/blocks/worker-1.jpg" alt="Kim Majali" class="img-responsive rounded shadow-3">
+    </div>
+    <div class="col-md-8 p-h-3">
+      <p class="badge larger bga-color-1 white text-uppercase font-weight-600 d-inline">Framework Author</p>
+      <h1 class="black bold m-t-1">Kim Majali</h1>
+      <p class="color-1 italic h6">Frontend Architect &amp; Creator of CSS Vars Framework</p>
+      <hr class="m0 width-short m-v-2">
+      <p class="dark line-height-17 m-v-1">
+        Kim writes about dependency-free, zero-JavaScript CSS architecture — from
+        <code>@layer</code> cascade design to fluid <code>clamp()</code> typography. Twelve
+        years building for the web taught one lesson above the rest: the browser already
+        ships most of what a framework needs to do.
+      </p>
+      <div class="row m-v-2">
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="-7 0 32 32" class="icon-xs icon-black-fill">
+              <path d="M16.844 9.156l-6.375 7.875 6.938 8.563h-2.906l-5.469-6.781-5.5 6.781h-2.906l6.969-8.563-6.375-7.875h2.906l4.906 6.063 4.875-6.063h2.938z"></path>
+            </svg>
+          </i>
+        </a>
+      </div>
+      <a href="#articles" class="button bg-black">Read the articles</a>
+      <a href="#" class="button color-1 outline-color-1 bg-white">Contact</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STATS ROW (Statistics 2 pattern) ============ -->
+<section class="row m-t-4 justify-content-center">
+  <div class="col-md-3">
+    <div class="p-v-3 bga-grey center">
+      <h1 class="bold display-2 dark p-h-1">128</h1>
+      <p class="dark font-weight-600">Articles Published</p>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="p-v-3 bga-grey center">
+      <h1 class="bold display-2 dark p-h-1">54K</h1>
+      <p class="dark font-weight-600">Developers Reached</p>
+    </div>
+  </div>
+  <div class="col-md-3">
+    <div class="p-v-3 bga-grey center">
+      <h1 class="bold display-2 dark p-h-1">12</h1>
+      <p class="dark font-weight-600">Years in Frontend</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERTISE TAGS ============ -->
+<section class="container p-v-3 center">
+  <h5 class="black bold text-uppercase">Writes About</h5>
+  <hr class="width-short center w-50 m-v-1">
+  <div class="m-v-1">
+    <span class="badge larger bga-success m-1-4">CSS Architecture</span>
+    <span class="badge larger bga-success m-1-4">@layer Cascade</span>
+    <span class="badge larger bga-success m-1-4">Zero-JS UI</span>
+    <span class="badge larger bga-success m-1-4">Fluid Typography</span>
+    <span class="badge larger bga-success m-1-4">Design Tokens</span>
+    <span class="badge larger bga-success m-1-4">Accessibility</span>
+  </div>
+</section>
+
+<!-- ============ ARTICLES BY AUTHOR (Blog 1 pattern) ============ -->
+<section class="bg-light-grey p-v-3" id="articles">
+  <div class="container p-v-1">
+    <h4 class="black bold center">Latest Articles</h4>
+    <p class="text-uppercase dark center">BY KIM MAJALI</p>
+  </div>
+  <div class="row container">
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-1.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller">jul-14-2026</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">architecture</p>
+          <a href="#" class="bold black text-uppercase p0">Why @layer Should Own Your Cascade</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">A practical walkthrough of layered
+            specificity and why it kills utility class collisions for good.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-10.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller">jun-30-2026</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">components</p>
+          <a href="#" class="bold black text-uppercase p0">Checkbox Toggles Without a Line of JS</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Building accessible nav panels,
+            tabs, and modals with nothing but the cascade.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="#">
+        <img src="../img/blocks/work-2.jpg" alt="alttext" class="img-responsive">
+      </a>
+      <div class="row justify-content-end p-h-1">
+        <span class="p-h-1 small bg-black p-1-2">
+          <p class="font-weight-400 m0 white text-uppercase smaller">jun-12-2026</p>
+        </span>
+      </div>
+      <div class="bg-white">
+        <div class="p-h-2 p-v-2">
+          <p class="text-uppercase dark small m0 p0">responsive</p>
+          <a href="#" class="bold black text-uppercase p0">clamp() Is the Only Media Query You Need</a>
+          <p class="line-height-17 dark font-weight-400 m-v-1">Fluid spacing and type scales that
+            respond to the viewport without a single breakpoint.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row justify-content-center m-v-2">
+    <a href="#" class="button bg-black text-uppercase bold small p-v-1 p-h-2">view all articles</a>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL (Testimonial 3 pattern) ============ -->
+<section class="p-v-4 bg-color-1">
+  <div>
+    <h4 class="center bold white">What Peers Say</h4>
+    <hr class="width-short center">
+  </div>
+  <div class="row container">
+    <div class="col-md-6 p2">
+      <p class="bold white">Sasha Lin <br>⭐⭐⭐⭐⭐</p>
+      <p class="m0 light-grey">Kim's writing is the reason our team dropped a build step entirely.
+        Every article ships a working demo you can copy straight into production.</p>
+    </div>
+    <div class="col-md-6 p2">
+      <p class="bold white">Devon Reyes <br>⭐⭐⭐⭐⭐</p>
+      <p class="m0 light-grey">Clear, opinionated, and grounded in real project constraints — not
+        just theory. The @layer series changed how our whole team writes CSS.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CTA — NEWSLETTER (CTA 1 pattern) ============ -->
+<section>
+  <div class="container m-t-4 p-v-4 m-v-4">
+    <h2 class="center black font-weight-600">Get new articles from Kim</h2>
+    <p class="center">One email a month. No spam, no build tools, just CSS.</p>
+    <div class="center">
+      <a href="#" class="button button-lg bg-black m-t-2 rounded">Subscribe</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER (Footer 3) ============ -->
+<footer class="outline-light-grey d-block">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Framework</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Documentation</a></li>
+        <li class="m-h-1"><a href="#">Utility Classes</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Blog</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Latest Posts</a></li>
+        <li class="m-h-1"><a href="#">Authors</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Community</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">GitHub</a></li>
+        <li class="m-h-1"><a href="#">Discussions</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Support</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">F.A.Q</a></li>
+        <li class="m-h-1"><a href="#">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="p-v-1 small row outline-light-grey m-t-2">
+      <p class="color-1">
+        <a href="#" id="logo" target="_blank" rel="noopener noreferrer">
+          <img class="icon-xs" src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png">
+        </a>
+        © Copyright 2026. CSS Vars Framework. All rights reserved.
+        <a href="#">Terms</a>. <a href="#">Privacy</a></p>
+      <p>
+        <i><a href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+            <path d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+          </svg>
+        </a></i>
+        <i><a href="#" target="_blank" rel="noopener noreferrer">
+          <svg viewBox="0 0 24 24" class="hover-shadow icon-ssm icon-box icon-color-1-fill">
+            <path d="M7.8,2H16.2C19.4,2 22,4.6 22,7.8V16.2A5.8,5.8 0 0,1 16.2,22H7.8C4.6,22 2,19.4 2,16.2V7.8A5.8,5.8 0 0,1 7.8,2M7.6,4A3.6,3.6 0 0,0 4,7.6V16.4C4,18.39 5.61,20 7.6,20H16.4A3.6,3.6 0 0,0 20,16.4V7.6C20,5.61 18.39,4 16.4,4H7.6M17.25,5.5A1.25,1.25 0 0,1 18.5,6.75A1.25,1.25 0 0,1 17.25,8A1.25,1.25 0 0,1 16,6.75A1.25,1.25 0 0,1 17.25,5.5M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9Z"></path>
+          </svg>
+        </a></i>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
