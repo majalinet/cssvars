@@ -25,7 +25,22 @@ Two independent numeric scales are used throughout, and the naming tells you whi
 | `.m-v-0`–`4` / `.p-v-0`–`4` | margin-block / padding-block (top+bottom at once) | dense scale |
 | `.m-1-16` … `.m-3-4` / `.p-1-16` … `.p-3-4` | margin / padding, all sides, fixed rem | fixed values |
 | `.m-b--1-16` … `.m-b--3-4` (and `-l`/`-r`/`-t`/`-h`/`-v` equivalents) | directional margin/padding, fixed rem | fixed values |
-| `.m-auto` / `.m-h-auto` / `.m-v-auto` | margin auto (centering) | — |
+| `.m-auto` / `.m-h-auto` / `.m-v-auto` | margin auto, all/inline/block sides | — |
+| `.m-t-auto` / `.m-b-auto` / `.m-l-auto` / `.m-r-auto` | margin auto, one side only | — the "push to the edge" trick for a single flex/grid item, without a wrapper |
+
+**Negative margins** — leading-dash prefix, distinct from the double-dash fraction syntax above (`.m-t--1-4` is a *positive* fixed value; `.-m-t-1` is *negative*):
+
+| Classes | Sets | Source |
+|---|---|---|
+| `.-m-1`–`.-m-4` | negative margin, all sides | `--space-dense-1`–`4` |
+| `.-m-v-1`–`.-m-v-4` | negative `margin-block` (top+bottom) | `--space-1`–`4` |
+| `.-m-h-1`–`.-m-h-4` | negative `margin-inline` (left+right) | `--space-dense-1`–`4` |
+| `.-m-t-1`–`.-m-t-4` | negative `margin-top` | `--space-1`–`4` |
+| `.-m-b-1`–`.-m-b-4` | negative `margin-bottom` | `--space-1`–`4` |
+| `.-m-l-1`–`.-m-l-4` | negative `margin-left` | `--space-dense-1`–`4` |
+| `.-m-r-1`–`.-m-r-4` | negative `margin-right` | `--space-dense-1`–`4` |
+
+Use these for intentional overlap — a card pulled up over a hero image, a badge offset past its container's edge.
 
 **Child & flow utilities** (see also [Flow tokens](./styling-with-variables.md#19-flow-tokens--spacing-between-elements-not-around-them)):
 
@@ -36,7 +51,11 @@ Two independent numeric scales are used throughout, and the naming tells you whi
 | `.child-padding` | `padding` on every direct child | `--child-padding` |
 | `.child-padding-1`–`.child-padding-4` | same, at a fixed step | `--space-1`–`4` |
 | `.child-margin` / `.child-margin-2`–`4` | `margin` on every direct child, at a fixed step | `--space-1`–`4` |
-| `.gap` / `.gap-2`–`.gap-4` | flex/grid `gap` | `--default-gap` / `--space-2`–`4` |
+| `.gap` / `.gap-2`–`.gap-4` | flex/grid `gap`, both axes at once | `--default-gap` / `--space-2`–`4` |
+| `.gap-v-1`–`.gap-v-4` | `row-gap` only (vertical gap between rows) | `--space-1`–`4` |
+| `.gap-h-1`–`.gap-h-4` | `column-gap` only (horizontal gap between columns) | `--space-1`–`4` |
+
+**Note:** on the `.row`/`.col-*` flex grid, gap classes only take effect on children that also have `flex-shrink: 1` and `min-width: 0` — the grid defaults to `flex-shrink: 0` and `min-width: auto`, so gap alone can cause overflow.
 
 ---
 
@@ -68,7 +87,19 @@ Two independent numeric scales are used throughout, and the naming tells you whi
 | `.align-self-auto`–`end`/`center`/`baseline`/`stretch` | `align-self` |
 | `.grid-cols-1`/`2`/`3`/`4`/`6`/`12` | grid-template-columns (equal-width tracks) |
 | `.col-span-1`/`2`/`3`/`4`/`6`/`full` | `grid-column: span N` |
-| `.cluster` | flex row, wrapped, centered — quick horizontal grouping | 
+| `.cluster` | flex row, wrapped, centered — quick horizontal grouping (`@layer layout`, so utilities can override it) |
+
+**Flexbox layout helpers** — one-line shorthand for the most common flex arrangements, each already sets `display: flex` and `gap: var(--default-gap, 1rem)`:
+
+| Classes | Sets |
+|---|---|
+| `.centered-row` | row, centered on both axes (`justify-content` + `align-items: center`) |
+| `.centered-col` | column, centered on both axes |
+| `.between-row` | row, `justify-content: space-between`, items vertically centered |
+| `.between-col` | column, `justify-content: space-between` |
+| `.stack` | column, `align-items: stretch` — full-width stacked children with even gap |
+| `.center-overlay` | `position: absolute; inset: 0`, contents centered both axes — for placing content over a positioned parent (image caption, video play button) |
+| `.grid-center` | `display: grid; place-items: center` — grid equivalent of `.centered-row`/`.centered-col` for single-child centering |
 
 ---
 
@@ -185,7 +216,25 @@ Two independent axes, meant to be combined on the same element: a **property** c
 
 ---
 
-## 11. Rule of thumb for this page
+## 11. Image utilities
+
+Shape, frame, filter, and shadow classes — most commonly stacked together on `<img>`, but not image-exclusive; `.rounded`, `.circle`, and the shadow classes work on any element (cards, avatars, buttons).
+
+| Classes | Sets | Notes |
+|---|---|---|
+| `.rounded` / `.rounded-0` / `.rounded-1-4` / `.rounded-1-8` | `border-radius`, none → fixed rem step | independent of `--default-border-radius` |
+| `.rounded-t`/`-b`/`-l`/`-r` (+ `-1-4`/`-1-8`) | radius on two corners only | tab-style or attached-edge shapes |
+| `.circle` / `.circle-t`/`-b`/`-l`/`-r` | `border-radius: 50%`, or half-pill on one side | for avatars, icon badges |
+| `.img-thumbnail` | padding + light border + subtle background tint + rounded corners, `max-width: 100%` | the "framed photo" look — pairs well with `.rounded` or `.circle` on top |
+| `.brightness-33`/`66`/`80`/`90`/`100`/`150` (+ `-hover` variants) | `filter: brightness()` | darken/brighten on hover for image links, gallery tiles |
+| `.opacity1`/`07`/`05`/`03` (+ `-hover` variants) | `opacity` steps (100%/70%/50%/30%) | fade an image in/out, disabled-looking states |
+| `.shadow` / `.shadow-1`–`.shadow-4` (+ `-hover` variants) | elevation shadow, see [§7 Shadows](#7-shadows) for the full breakdown | lift an image off the page |
+
+**Common stack for a framed photo:** `.img-thumbnail.rounded.shadow-2` — border, padding, radius, and a bordered hard-offset shadow in one go. For a circular avatar with a soft shadow on hover: `.circle.shadow-3-hover`.
+
+---
+
+## 12. Rule of thumb for this page
 
 If you're stacking more than two or three utility classes on the same element to achieve one repeatable look (a badge, a callout, a card variant), that's the signal to stop and either:
 
