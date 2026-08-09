@@ -3108,6 +3108,14 @@ left: 105%;
 .cssvars .gap-3 { gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .cssvars .gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 .cssvars .gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
+.cssvars .gap-v-1 { row-gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.cssvars .gap-v-2 { row-gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.cssvars .gap-v-3 { row-gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.cssvars .gap-v-4 { row-gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
+.cssvars .gap-h-1 { column-gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
+.cssvars .gap-h-2 { column-gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
+.cssvars .gap-h-3 { column-gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
+.cssvars .gap-h-4 { column-gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 /* Non-flex/grid layouts, Nested structures, Overriding defaults, Older browsers (edge bleed absorbed) */
 .cssvars .child-margin > * { margin: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .cssvars .child-margin-2 > * { margin: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
@@ -3248,6 +3256,39 @@ left: 105%;
 .cssvars .m-auto { margin: auto; }
 .cssvars .m-h-auto { margin-right: auto; margin-left: auto; }
 .cssvars .m-v-auto { margin-top: auto; margin-bottom: auto; }
+.cssvars .m-t-auto { margin-top: auto; }
+.cssvars .m-b-auto { margin-bottom: auto; }
+.cssvars .m-l-auto { margin-left: auto; }
+.cssvars .m-r-auto { margin-right: auto; }
+
+.cssvars .-m-1 { margin: calc(-1 * var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem))); }
+.cssvars .-m-2 { margin: calc(-1 * var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem))); }
+.cssvars .-m-3 { margin: calc(-1 * var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem))); }
+.cssvars .-m-4 { margin: calc(-1 * var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem))); }
+.cssvars .-m-v-1 { margin-block: calc(-1 * var(--space-1, clamp(0.5rem, 3.33vw, 1rem))); }
+.cssvars .-m-v-2 { margin-block: calc(-1 * var(--space-2, clamp(1rem, 3.33vw, 2rem))); }
+.cssvars .-m-v-3 { margin-block: calc(-1 * var(--space-3, clamp(1.5rem, 3.33vw, 3rem))); }
+.cssvars .-m-v-4 { margin-block: calc(-1 * var(--space-4, clamp(2rem, 3.33vw, 4rem))); }
+.cssvars .-m-h-1 { margin-inline: calc(-1 * var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem))); }
+.cssvars .-m-h-2 { margin-inline: calc(-1 * var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem))); }
+.cssvars .-m-h-3 { margin-inline: calc(-1 * var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem))); }
+.cssvars .-m-h-4 { margin-inline: calc(-1 * var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem))); }
+.cssvars .-m-t-1 { margin-top: calc(-1 * var(--space-1, clamp(0.5rem, 3.33vw, 1rem))); }
+.cssvars .-m-t-2 { margin-top: calc(-1 * var(--space-2, clamp(1rem, 3.33vw, 2rem))); }
+.cssvars .-m-t-3 { margin-top: calc(-1 * var(--space-3, clamp(1.5rem, 3.33vw, 3rem))); }
+.cssvars .-m-t-4 { margin-top: calc(-1 * var(--space-4, clamp(2rem, 3.33vw, 4rem))); }
+.cssvars .-m-b-1 { margin-bottom: calc(-1 * var(--space-1, clamp(0.5rem, 3.33vw, 1rem))); }
+.cssvars .-m-b-2 { margin-bottom: calc(-1 * var(--space-2, clamp(1rem, 3.33vw, 2rem))); }
+.cssvars .-m-b-3 { margin-bottom: calc(-1 * var(--space-3, clamp(1.5rem, 3.33vw, 3rem))); }
+.cssvars .-m-b-4 { margin-bottom: calc(-1 * var(--space-4, clamp(2rem, 3.33vw, 4rem))); }
+.cssvars .-m-l-1 { margin-left: calc(-1 * var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem))); }
+.cssvars .-m-l-2 { margin-left: calc(-1 * var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem))); }
+.cssvars .-m-l-3 { margin-left: calc(-1 * var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem))); }
+.cssvars .-m-l-4 { margin-left: calc(-1 * var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem))); }
+.cssvars .-m-r-1 { margin-right: calc(-1 * var(--space-dense-1, clamp(0.25rem, 2.03vw - 0.26rem, 1rem))); }
+.cssvars .-m-r-2 { margin-right: calc(-1 * var(--space-dense-2, clamp(0.375rem, 4.39vw - 0.72rem, 2rem))); }
+.cssvars .-m-r-3 { margin-right: calc(-1 * var(--space-dense-3, clamp(0.5rem, 6.76vw - 1.19rem, 3rem))); }
+.cssvars .-m-r-4 { margin-right: calc(-1 * var(--space-dense-4, clamp(0.75rem, 8.78vw - 1.45rem, 4rem))); }
 /* Padding */
 .cssvars .p0 { padding: 0; }
 .cssvars .p-1-16 { padding: 0.0625rem; }

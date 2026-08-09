@@ -150,11 +150,8 @@
         <ul class="colored-ul">
           <li><a href="#introduction">Introduction</a></li>
           <li><a href="#quick-start">Quick Start</a></li>
-          <li><a href="#theming">Theming</a></li>
           <li><a href="#styles">Styles</a></li>
           <li><a href="#marginAndPadding">Margin and Padding</a></li>
-          <li><a href="#grid">Grid</a></li>
-          <li><a href="#layouts">Layouts</a></li>
           <li><a href="#typography">Typography</a></li>
 
           <li><a href="#positions">Positions and Displays</a></li>
@@ -409,409 +406,8 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
         <p>Use this code to start a page from scarch</p>
         <script src="https://gist.github.com/majalinet/5420cdb44f72b2faa6ac87cfddb82c44.js"></script>
       </div>
-      <div class="m-v-4">
-        <h3 id="theming">Theming</h3>
-        <p>CSS Vars Framework comes a basic set of CSS variables:</p>
-        <script src="https://gist.github.com/majalinet/3bdbfb7596c9138e2959adb42a72b806.js"></script>
-        <h5>Colors</h5>
-        <p>
-          Change the colors variables to match your brand color, color-1 is
-          the primary color. You might need to add the class <b>white</b> to make the text in white color
-        </p>
-        <div class="row">
-          <div class="col bg-color-1 white m1 p2">bg-color-1</div>
-          <div class="col bg-color-2 white m1 p2">bg-color-2</div>
-          <div class="col bg-color-gradient white m1 p2">bg-color-gradient</div>
-
-          <div class="col bg-danger white m1 p2">bg-danger</div>
-        </div>
-        <div class="row">
-          <div class="col bg-success white m1 p2">bg-success</div>
-          <div class="col bg-info white m1 p2">bg-info</div>
-          <div class="col bg-grey m1 p2">bg-grey</div>
-          <div class="col bg-dark white m1 p2">bg-dark</div>
-        </div>
-
-        <div>
-
-          <div class="row">
-            <div class="col bga-color-1 m1 p2">bga-color-1</div>
-            <div class="col bga-color-2 m1 p2">bga-color-2</div>
-            <div class="col bg-light-grey m1 p2">bg-light-grey</div>
-            <div class="col bga-danger m1 p2">bga-danger</div>
-          </div>
-
-          <div class="row">
-            <div class="col bga-success m1 p2 ">bga-success</div>
-            <div class="col bga-info m1 p2">bga-info</div>
-            <div class="col bga-grey m1 p2">bga-grey</div>
-            <div class="col bga-dark m1 p2">bga-dark</div>
-          </div>
-
-          <h5 class="m-t-2">Background Colors on Hover</h5>
-          Background Color:</span> <b>bg-color-1-hover bg-color-2-hover bg-black-hover bg-white-hover bg-dark-hover
-            bg-danger-hover bg-success-hover bg-info-hover</b><br>
-          Color & Background Color:</span> <b>bga-color-1-hover bga-color-2-hover bga-black-hover bga-white-hover
-            bga-dark-hover bga-danger-hover bga-success-hover bga-info-hover</b>
-
-          <h5 class="m-t-2">Contextual Text</h5>
-
-          <p>
-            Use the contextual text classes to provide "meaning through
-            colors":
-          </p>
 
 
-
-          <p>
-            You can color texts using the ready classes
-            <b>color-1, color-2, info, success, danger, dark, black, white</b>
-          </p>
-          <p class="color-1">color-1 This text is important.</p>
-          <p class="color-2">color-2 This text is important.</p>
-          <p class="success">success This text indicates success.</p>
-          <p class="info">info This text represents some information.</p>
-          <p class="danger">danger This text represents danger.</p>
-          <p class="color-gradient">color-2 This text is important.</p>
-          <p class="dark">dark This text represents normal text.</p><br>
-          <h5>Contextual text classes on hover</h5>
-          <p>You can add color-hover classes to change the color on hover, try hovering on the classes below<br>
-            <b class="color-1-hover">color-1-hover</b>
-            <b class="color-2-hover">color-2-hover</b>
-            <b class="success-hover">success-hover</b>
-            <b class="info-hover">info-hover</b>
-            <b class="danger-hover">danger-hover</b>
-            <b class="dark-hover">dark-hover</b>
-            <b class="white-hover">white-hover</b>
-            <b class="color-gradient-hover">color-gradient-hover</b></p>
-          <div class="m-v-2">
-            <h5 class="m-t-2">Sizes</h5>
-            <ul class="colored-ul">
-              <li>
-                Changing the values of <b>--font-size-mobile</b> and
-                <b>--font-size-desktop</b> will change the font sizes of all
-                text elements.
-              </li>
-              <li>That also will change margin and padding values.</li>
-              <li>
-                Changing the values of <b>--fontweight</b> will set font
-                weight of most of text elements.
-              </li>
-              <li>
-                Changing the values of <b>--fontweight-heading</b> will set
-                default font weight of h1-h6 elements and classes.
-              </li>
-            </ul>
-          </div>
-
-
-          <div id="styles" class="m-t-4">
-          <h3>Styles</h3>
-          <p>
-            Themes handle your brand's core colors and fonts. Styles, however, offer a broader design application, allowing you to choose from over 20 well-known web design aesthetics such as minimalist, modern, material, flat, brutal, glass, retro, neon, cyberpunk, luxury, playful, modular, and system-ui.
-          </p>
-
-          <h6>How to use styles</h6>
-          <p>
-            To apply a style, simply add <b>the style class code to your body element</b>. For example, to apply the <b>brutalism</b> style, add the class <b>brutalism-style</b> to your element.
-
-          </p>
-          <p>
-            <b>Copy the class code</b> from the styles file <a href="https://github.com/majalinet/cssvars/blob/master/css/cssvars-styles.css">CSSvars styles</a> file and add it to your CSS file, or your HTML code if you use CDN, you can also link to the file if you want to use multiple styles.
-          </p>
-          <ul class="colored-ul">
-            <li class="m-b-1"><b>Brutalism (Anti-Design)</b><br>
-            Brutalism: Use for bold, disruptive designs that reject traditional aesthetics.<br>
-            Art studios, personal brands, underground music, radical startups.
-          </li>
-            <li class="m-b-1"><b>Glassmorphism</b><br>
-            Glassmorphism: Best for modern, elegant UIs with frosted-glass visuals.<br>
-            Fintech, health tech, luxury apps, personal productivity tools.
-          </li>
-            <li class="m-b-1"><b>Retro & Vintage</b><br>
-            Retro/Vintage: Ideal for nostalgic, playful, or thematic branding.<br>
-            Coffee shops, vintage clothing, lifestyle blogs, creative agencies.
-          </li>
-            <li class="m-b-1"><b>Minimalist</b><br>
-            Minimalist: Perfect for clean, distraction-free content or portfolios.<br>
-            Tech startups, SaaS platforms, portfolios, architects, wellness brands.
-          </li>
-
-            <li class="m-b-1"><b>Neon</b><br>
-            Neon: Use in high-energy or futuristic entertainment/tech projects.<br>
-            Nightclubs, gaming platforms, youth fashion, media streaming.
-          </li>
-
-
-            <li class="m-b-1"><b>Cyberpunk</b><br>
-            Cyberpunk: Great for edgy, tech-heavy or sci-fi-inspired UIs.<br>
-            Blockchain/crypto apps, game dev studios, hacker culture brands.
-              </li>
-
-
-
-
-
-
-            <li class="m-b-1"><b>High Contrast</b><br>
-            High Contrast: Essential for accessibility or information-heavy UIs.<br>
-            Government sites, accessibility-first platforms, education.
-              </li>
-
-            <li class="m-b-1"><b>Luxury</b><br>
-            Luxury: Use for high-end brands needing elegance and sophistication.<br>
-            Luxury goods, high-end services, fashion, jewelry.
-              </li>
-
-              <li class="m-b-1"><b>Neumorphism (Soft UI)</b><br>
-              Neumorphism: Use for soft, tactile interfaces—best in moderation.<br>
-              IoT dashboards, smart home apps, lifestyle tools (in moderation).
-              </li>
-
-              <li class="m-b-1"><b>Modern / Flat UI</b><br>
-              Flat 2.0: Use for clean, intuitive UIs with subtle depth cues.<br>
-              Fintech apps, e-commerce admin, task managers.
-              </li>
-
-              <li class="m-b-1"><b>Playful / Creative</b><br>
-              Best for fun, friendly, and energetic interfaces with expressive visuals and lively colours.<br>
-              Kids’ apps, creative studios, learning platforms, lifestyle blogs, and quirky e-commerce brands.
-              </li>
-
-              <li class="m-b-1"><b>Material Design</b><br>
-              Ideal for clean, structured, and responsive interfaces based on Google’s design principles.<br>
-              SaaS platforms, productivity tools, fintech apps, government portals, and educational platforms.
-              </li>
-
-              <li class="m-b-1"><b>Modular / Card-Based UI</b><br>
-              Dashboard/Modular: Ideal for admin panels with widget/card layouts.<br>
-              CRMs, HR systems, ERP tools, SaaS dashboards.
-              </li>
-
-              <li class="m-b-1"><b>Flat 2.0</b><br>
-              Data-Driven: Best for analytics-heavy or chart-rich dashboards.<br>
-              Fintech apps, e-commerce admin, task managers.
-              </li>
-
-              <li class="m-b-1"><b>Data-Driven / Analytical</b><br>
-              Data-Driven: Best for analytics-heavy or chart-rich dashboards.<br>
-              Analytics platforms, BI tools, performance monitoring.
-              </li>
-
-              <li class="m-b-1"><b>Enterprise / Functional</b><br>
-              Enterprise: Built for dense data tables and power-user workflows.<br>
-              B2B SaaS, legal/accounting tools, logistics & finance software.
-              </li>
-
-              <li class="m-b-1"><b>System UI (OS-Like UI)</b><br>
-              System UI: Mimics desktop apps; great for dev tools or OS-like apps.<br>
-              Developer tools, code platforms, internal IT tools.
-              </li>
-
-              <li class="m-b-1"><b>Colorful Dashboard</b><br>
-              Colorful Dashboard: Use to bring energy to user dashboards and KPIs.<br>
-              Health tech, education, fitness tracking apps.
-              </li>
-
-</ul>
-            
-        </div>
-  
-
-
-          <div class="m-t-4">
-            <h3 id="marginAndPadding">Margin and Padding</h3>
-            <p>
-              Add margin and padding classes to set the required space between
-              elements, please note that numbers are referring to rem which is
-              the default font size.
-            </p>
-            <ul class="colored-ul">
-              <li><b>Formula:</b> We use <b>{p/m} {/-v-/-h-/-t-/-b-/-l-/-r-} {value}</b></li>
-              <li><b>Orientation:</b> -v- vertical, -h- horizontal, -t- top, -b- bottom, -l- left, -r- right</li>
-              <li><b>Values:</b> 0, 1, 2, 3, 4 are spacing values by rem, -1-16, -1-8, -1-4, -1-2, -3-4 is 1 rem divided by the value</li>
-              <li><b>Notes:</b><ul class="colored-ul">
-
-                <li><b>(two dashes) m-t-1</b> instead of mt-1, this increases readability, scalability, and the ease of maintenance.</li>
-                <li><b>(v/h) m-v-1</b> instead of (x/y) my-1, It mirrors CSS's logical properties, ensures adaptability. It's more future-proof, internationally friendly, and semantically clearer!</li>
-              </ul>
-              </li>
-            </ul>
-            <h6>Margin</h6>
-            <ul class="colored-ul">
-              <li>
-                Add the classes <b>m0, m-1-16(1/16 rem), m-1-8, .m-1-4, .m-1-2, .m-3-4, m1(1rem), m2, m3, m4</b> to increase or remove margin
-              </li>
-              <li>
-                Add the classes <b>m-v-0, m-v--1-16, m-v--1-8, .m-v--1-4, .m-v--1-2, .m-v--3-4, m-v-1, m-v-2, m-v-3, m-v-4</b> to increase top and bottom margin
-              </li>
-              <li>
-                Add the classes <b>m-h-0, m-h--1-16, m-h--1-8, .m-h--1-4, .m-h--1-2, .m-h--3-4, m-h-1, m-h-2, m-h-3, m-h-4</b> to increase left and right margin
-              </li>
-              <li>
-                Add the classes <b>m-t-0, m-t--1-16, m-t--1-8, .m-t--1-4, .m-t--1-2, .m-t--3-4, m-t-1, m-t-2, m-t-3, m-t-4</b> to increase top margin only
-              </li>
-              <li>
-                Add the classes <b>m-b-0, m-b--1-16, m-b--1-8, .m-b--1-4, .m-b--1-2, .m-b--3-4, m-b-1, m-b-2, m-b-3, m-b-4</b> to increase bottom margin only
-              </li>
-              <li>
-                Add the classes <b>m-d-1, m-d-2</b> to increase margin on desktop devices only
-              </li>
-              <li>Add the classes <b>m-auto, m-h-auto, m-v-auto</b> for auto margin and centreing contents</li>
-            </ul>
-            <h6>Padding</h6>
-            <ul class="colored-ul">
-              <li>
-                Add the classes <b>p0, p-1-16(1/16 rem), p-1-8, .p-1-4, .p-1-2, .p-3-4, p1(1rem), p2, p3, p4</b> to
-                increase or remove padding
-              </li>
-              <li>
-                Add the classes <b>p-v-0, p-v--1-16, p-v--1-8, .p-v--1-4, .p-v--1-2, .p-v--3-4, p-v-1, p-v-2, p-v-3, p-v-4</b> to
-                increase top and bottom padding
-              </li>
-              <li>
-                Add the classes <b>p-h-0, p-h--1-16, p-h--1-8, .p-h--1-4, .p-h--1-2, .p-h--3-4, p-h-1, p-h-2, p-h-3, p-h-4</b> to increase left and right padding
-              </li>
-              <li>
-                Add the classes <b>p-t-0, p-t--1-16, p-t--1-8, .p-t--1-4, .p-t--1-2, .p-t--3-4, p-t-1, p-t-2, p-t-3, p-t-4</b> to increase top padding only
-              </li>
-              <li>
-                Add the classes <b>p-b-0, p-b--1-16, p-b--1-8, .p-b--1-4, .p-b--1-2, .p-b--3-4, p-b-1, p-b-2, p-b-3, p-b-4</b> to increase bottom padding only
-              </li>
-              <li>
-                Add the classes <b>p-d-1, p-d-2</b> to increase
-                padding on desktop devices only
-              </li>
-            </ul>
-          </div>
-        </div>
-
-      </div>
-      <div class="m-v-4">
-        <h3 id="grid">Grid</h3>
-        <p>
-          CSS Vars Framework has mobile-first flexbox grid, twelve column
-          system.
-        </p>
-        <ul class="colored-ul">
-          <li class="text-lowercase">
-            Create a div and add the class <b>row</b>.
-          </li>
-          <li>
-            Inside this div, create divisions and add the class <b>col</b>
-          </li>
-        </ul>
-
-        <div class="row m-v-1">
-          <div class="col outline-color-1">1 of 2 <b>.col</b></div>
-          <div class="col outline-color-1">2 of 2 <b>.col</b></div>
-        </div>
-        <script src="https://gist.github.com/majalinet/fc7935b863c6771c139f46c804a81003.js"></script>
-
-        <h5>Setting columns width</h5>
-        <p>add <b>col-</b> with a number from 1 to 12 to set the size</p>
-        <div class="row m-v-1">
-          <div class="col-8 outline-color-1">1 of 2 <b>.col-8</b></div>
-          <div class="col-4 outline-color-1">2 of 2 <b>.col-4</b></div>
-        </div>
-        <script src="https://gist.github.com/majalinet/05aff8ac35f77665fb0306cb3c727367.js"></script>
-
-        <h5>Setting columns different width for different devices</h5>
-        <p>
-          Use <b>col-sm- col-md- col-lg- col-xl-</b> with any number from 1 to
-        </p>
-
-        The sum in each row must be 12,
-        <ul class="colored-ul">
-          <li><b>-12</b> will make a single column</li>
-          <li><b> -6 -6</b> a rwo of two equal columns</li>
-          <li><b>-3 -6 -3</b> a row of three columns not equal in size</li>
-        </ul>
-
-        <p>
-          <b>Example:</b><br />
-          <b>col-sm-12</b> shows a full width column on small devices,
-          <b>col-md-6</b> shows 2 columns on tablets, <b>col-lg-3</b> shows 4
-          columns on desktop<br />
-          Please, resize the window to see the chanages on all devices.
-        </p>
-        <div class="row m-v-1">
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-        </div>
-        <script src="https://gist.github.com/majalinet/74601b3161989c79bfc186f160468a41.js"></script>
-
-        <h5>Gap</h5>
-        <p>Add classes <b>gap, gap-2, gap-3, gap-4</b> to set the gap between columns, remember that gap adds margin so the sum of the columns in a row must be less than 12 to avoid wrapping
-        </p>
-       <div class="row m-v-1 gap">
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-        </div>
-
-        <h5>child-p</h5>
-        <p>Add classes <b>child-p, child-p-2, child-p-3, child-p-4</b> to set padding on child elements
-        </p>
-       <div class="row m-v-1 child-p">
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            1 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            2 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            3 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-          <div class="col-sm-12 col-md-6 col-lg-3 outline-color-1">
-            4 of 4 <b>col-sm-12 col-md-6 col-lg-4</b>
-          </div>
-        </div>
-
-        <h5>Reorder columns on different devices</h5>
-        <p>
-          In smoe cases we need to show a column first on large devices but
-          last on small devices or visa versa
-        </p>
-
-        <ul class="colored-ul">
-          <li>
-            <b>lg-order-first</b> will show a column first on large devices
-          </li>
-          <li>
-            <b>lg-order-last</b> will show a column last on large devices
-          </li>
-        </ul>
-
-        <div class="row m-v-1">
-          <div class="col-sm-12 col-lg-8 outline-color-1">
-            1 of 2 <b>col-sm-12 col-lg-8</b>
-          </div>
-          <div class="col-sm-12 col-lg-4 outline-color-1 lg-order-first">
-            1 of 2 <b>first on large devices 2nd on small devices</b>
-          </div>
-        </div>
-        <script src="https://gist.github.com/majalinet/547aa2cac7d87581baed06f9642cc1b3.js"></script>
-      </div>
       <div class="m-v-2">
         <h3>Relative Width and Height</h3>
         <ul class="colored-ul">
@@ -820,18 +416,6 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
         </ul>
         <div class="msg bga-color-1"><b>Note</b> these classes could be applied to any element</div>
 
-      </div>
-      <div class="m-t-4">
-        <h3 id="layouts">Layouts</h3>
-        <ul class="colored-ul">
-          <li>Add the class <b>container</b> to get boxed division</li>
-          <li>Add the class <b>container-fluid</b> to get a wide division</li>
-          <li>Add the class <b>container-half-fluid</b> to get a wide division but on screens bigger than 1200px
-            max-width will be 85%</li>
-          <li>Add <b>no classes</b> to get full width division</li>
-        </ul>
-        <p>Use the code below to get a page layout suits your needs</p>
-        <script src="https://gist.github.com/majalinet/93e3bcd8ccb818d286a45f8e71fa24cd.js"></script>
       </div>
       <div class="m-v-4">
         <h3 id="typography">Typography</h3>
@@ -1280,127 +864,157 @@ Built with love to be used. Free framework, UI elements, & themes. Download, use
         </div>
       </div>
 
-      <div class="m-v-4">
-        <h3 id="positions">Positions and Displays</h3>
-        <h5>Positions CSS Classes</h5>
-        <p>
-          Add these classes to change div position
-          <b>position-static, position-fixed, position-absolute,
-            position-relative, position-sticky</b><br>
-          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank">What are CSS
-            Positions?</a>
-        </p>
-        <ul class="colored-ul">
-          <li>
-            To make fixed elements to the top of page add the classes
-            <b>position-fixed top-0, top-1, top-2, top-3, top-4</b>
-          </li>
-          <li>
-            To make fixed elements to the bottom of page add the classes
-            <b>position-fixed bottom-0, bottom-1, bottom-2, bottom-3, bottom-4</b>
-          </li>
-          <li>
-            To make fixed elements to the right of page add the
-            classes <b>position-fixed right-0, right-1, right-2, right-3, right-4</b>
-          </li>
-          <li>
-            To make fixed elements to the left of page add the
-            classes <b>position-fixed left-0, left-1, left-2, left-3, left-4</b>
-          </li>
-          <li>For relative location to the parent element use the class <b>top-25, top-50, top-75, right-25, right-50, right-75</b></li>
-          <li>For relative location to the viewport use the class <b>top-25-vh, top-50-vh, top-75-vh, right-25-vw, right-50-vw, right-75-vw</b></li>
-          <li>
-            To make fixed elements (sticky) inside a div
-            <b>position-sticky</b>
-          </li>
-        </ul>
-        <div class="m-t-4">
-          <h5>Display CSS Classes</h5>
-          <p>
-            Add these classes to change div Display
-            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex,
-              d-inline-flex</b><br>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display
-              types?</a>
-          </p>
-        </div>
+<div>
+  <h5>Position Classes</h5>
+  <p>
+    Add these classes to change an element's position:
+    <b>position-static, position-fixed, position-absolute,
+      position-relative, position-sticky</b><br>
+    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/position" target="_blank" rel="noopener noreferrer">What are CSS
+      Positions?</a>
+  </p>
+  <ul class="colored-ul">
+    <li>
+      To fix elements to the top of the page, add
+      <b>position-fixed top-0, top-1, top-2, top-3, top-4</b>
+    </li>
+    <li>
+      To fix elements to the bottom of the page, add
+      <b>position-fixed bottom-0, bottom-1, bottom-2, bottom-3, bottom-4</b>
+    </li>
+    <li>
+      To fix elements to the right of the page, add
+      <b>position-fixed right-0, right-1, right-2, right-3, right-4</b>
+    </li>
+    <li>
+      To fix elements to the left of the page, add
+      <b>position-fixed left-0, left-1, left-2, left-3, left-4</b>
+    </li>
+    <li>For relative placement inside the parent element, use <b>top-25, top-50, top-75, right-25, right-50, right-75</b></li>
+    <li>For placement relative to the viewport, use <b>top-25-vh, top-50-vh, top-75-vh, right-25-vw, right-50-vw, right-75-vw</b></li>
+    <li>
+      To make an element stick inside its scrolling container, use
+      <b>position-sticky</b> (combine with a <b>top-*</b> offset)
+    </li>
+  </ul>
 
+  <div class="m-t-4">
+    <h5>Display Classes</h5>
+    <p>
+      Add these classes to change an element's display type:
+      <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex,
+        d-inline-flex, d-grid, d-inline-grid</b><br>
+      <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank" rel="noopener noreferrer">What are CSS display
+        types?</a>
+    </p>
+    <ul class="colored-ul">
+      <li><b>d-grid</b> and <b>d-inline-grid</b> pair with the <a href="#grid-columns">Grid Column Classes</a> below to build CSS grid layouts</li>
+      <li>To hide content visually but keep it available to screen readers, use <b>sr-only</b> instead of <b>d-none</b> (which removes it entirely, including from assistive tech)</li>
+    </ul>
+  </div>
 
-        <div class="m-t-4">
-          <h5>Mobile or Desktop Only Classes</h5>
-          <p>Sometimes we want to show an element only on mobile devices or on desktop devices but not on both, add the
-            classes
-            <b>mobile-only</b> or <b>desktop-only</b></p>
-        </div>
+  <div class="m-t-4">
+    <h5>Mobile or Desktop Only Classes</h5>
+    <p>Sometimes you want to show an element only on mobile or only on desktop, not both. Add the class
+      <b>mobile-only</b> or <b>desktop-only</b></p>
+  </div>
 
+  <div class="m-t-4">
+    <h5>Float and Clear Classes</h5>
+    <ul class="colored-ul">
+      <li>To apply or remove float, add <b>float-right, float-left, float-none</b></li>
+      <li>To clear a float, add <b>clear-both, clear-right, clear-left</b></li>
+      <li>To contain a floated element taller than its container, add <b>clear-fix</b> to the container</li>
+    </ul>
+  </div>
 
-        <div class="m-t-4">
-          <h5>Float and Clear Classes</h5>
-          <ul class="colored-ul">
-            <li>To apply or remove float add the classes <b>float-right float-left float-none</b></li>
-            <li>You can also clear float using the classes <b>clear-both clear-right clear-left</b></li>
-            <li>You can fix float using the class <b>clear-fix</b> If the floated element is taller than the element
-              containing it</li>
-          </ul>
-        </div>
+  <div class="m-t-4">
+    <h5>Overflow &amp; Scroll Classes</h5>
+    <ul class="colored-ul">
+      <li>To apply overflow on both axes, add <b>overflow-hidden, overflow-visible</b></li>
+      <li>To apply overflow on the x-axis, add <b>overflow-x-auto, overflow-x-scroll, overflow-x-hidden</b></li>
+      <li>To apply overflow on the y-axis, add <b>overflow-y-auto, overflow-y-scroll, overflow-y-hidden</b></li>
+      <li>To style the scrollbar itself, add <b>scrollbar-none, scrollbar-thin</b></li>
+    </ul>
+  </div>
 
+  <div class="m-t-4">
+    <h5>Z-index Classes</h5>
+    <p>Add these classes to control an element's stacking order:</p>
+    <ul class="colored-ul">
+      <li>Numeric scale: <b>z--1, z-0, z-1, z-2, z-3, z-10, z-100</b></li>
+      <li>Semantic tokens (used internally by dropdowns, sidebars, light-boxes, and modals — reuse them instead of guessing a number): <b>z-floating</b> (100), <b>z-overlay</b> (999), <b>z-modal</b> (1000)</li>
+    </ul>
+  </div>
 
-        <div class="m-t-4">
-          <h5>Overflow & Scroll Classes</h5>
-          <ul class="colored-ul">
-            <li>To apply overflow on both sides add the classes <b>overflow-hidden, overflow-visible, </b></li>
-            <li>To apply overflow on the x-axis using the classes <b>overflow-x-auto, overflow-x-scroll, overflow-x-hidden</b></li>
-            <li>To apply overflow on the y-axis using the classes <b>overflow-y-auto, overflow-y-scroll, overflow-y-hidden</b></li>
-            <li>You can style the scroll using the class <b>scrollbar-none, scrollbar-thin</b></li>
-          </ul>
-        </div>
+  <div class="m-t-4">
+    <h5>Flex Classes</h5>
+    <p>
+      Add these classes to control the behavior of a flex container and its children.
+    </p>
+    <ul class="colored-ul">
+      <li>
+        <b>Container direction</b>: <b>flex-row, flex-column, flex-row-reverse, flex-column-reverse,
+          flex-wrap, flex-nowrap,
+          flex-wrap-reverse, flex-fill</b> (<b>flex-nowrap</b> goes on the container, not the children)
+      </li>
+      <li>
+        <b>Justify content horizontally</b>: <b>justify-content-start, justify-content-end,
+          justify-content-center, justify-content-between,
+          justify-content-around</b>
+      </li>
+      <li>
+        <b>Align items on the cross axis</b>: <b>align-items-start,
+          align-items-end, align-items-center,
+          align-items-baseline, align-items-stretch</b>
+      </li>
+      <li>
+        <b>Align content (multi-line containers)</b>: <b>align-content-start, align-content-end,
+          align-content-center,
+          align-content-between, align-content-around, align-content-stretch</b>
+      </li>
+      <li>
+        <b>Align self (individual item)</b>: <b>align-self-auto, align-self-start,
+          align-self-end,
+          align-self-center, align-self-baseline, align-self-stretch</b>
+      </li>
+      <li>
+        <b>Grow / shrink individual items</b>: <b>flex-grow-0, flex-grow-1, flex-shrink-0, flex-shrink-1</b>
+      </li>
+    </ul>
+  </div>
 
+  <div class="m-t-4">
+    <h5>Gap Classes</h5>
+    <p>Add these classes to a <b>d-flex</b> or <b>d-grid</b> container to space its children without margins:
+      <b>gap, gap-1, gap-2, gap-3, gap-4, gap-default</b></p>
+    <ul class="colored-ul">
+      <li>Note: inside the <b>.row / .col-*</b> flex grid, children default to <b>flex-shrink: 0</b> and <b>min-width: auto</b>, so adding a <b>gap-*</b> class alone can cause overflow. Use the framework's <b>col-gap</b> opt-in class, which pairs <b>flex-shrink-1</b> with <b>min-width: 0</b> on the children.</li>
+    </ul>
+  </div>
 
-        <div class="m-t-4">
-          <h5>Z-index Classes</h5>
-          <p>Add these classes to change the z-index of an element, use the classes: <b>z--1, z-0, z-1, z-2, z-3, z-10, z-100</b></p>
-        </div>
+  <div class="m-t-4" id="grid-columns">
+    <h5>Grid Column Classes</h5>
+    <p>Pair with <b>d-grid</b> or <b>d-inline-grid</b> to lay children out on an even column grid:
+      <b>grid-cols-1, grid-cols-2, grid-cols-3, grid-cols-4, grid-cols-6, grid-cols-12</b></p>
+    <ul class="colored-ul">
+      <li>Combine with a <b>gap-*</b> class for spacing between grid cells</li>
+    </ul>
+  </div>
 
+  <div class="m-t-4">
+    <h5>Aspect Ratio Classes</h5>
+    <p>Add these classes to constrain an element (commonly an image or media wrapper) to a fixed ratio:
+      <b>aspect-auto, aspect-square, aspect-video, aspect-4-3, aspect-3-2</b></p>
+    <ul class="colored-ul">
+      <li><b>aspect-square</b> — 1:1</li>
+      <li><b>aspect-video</b> — 16:9</li>
+      <li><b>aspect-4-3</b> — 4:3</li>
+      <li><b>aspect-3-2</b> — 3:2</li>
+    </ul>
+  </div>
+</div>
 
-        <div class="m-v-4">
-          <h5>Flex CSS Classes</h5>
-          <p>
-            Add these classes to change flex div behaviour
-            <b>d-none, d-inline, d-inline-block, d-block, d-table, d-table-row, d-table-cell, d-flex,
-              d-inline-flex</b><br>
-            <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/display" target="_blank">What are CSS display
-              types?</a>
-          </p>
-          <ul class="colored-ul">
-            <li>
-              <b>Container Behaviour</b> add these classes <b>flex-row, flex-column, flex-row-reverse,
-                flex-column-revers,
-                flex-wrap, flex-nowrap,
-                flex-wrap-reverse, flex-fill</b>
-            </li>
-            <li>
-              <b>Justify contents horizantaly</b> add these classes <b>justify-content-start, justify-content-end,
-                justify-content-center, justify-content-between,
-                justify-content-around</b>
-            </li>
-            <li>
-              <b>Align items verticaly (horizantaly if flex-colomn)</b> add these classes <b>align-items-start,
-                align-items-end, align-items-center,
-                align-items-baseline, align-items-stretch, align-items-stretch</b>
-            </li>
-            <li>
-              <b>Align content verticaly (of item)</b> add these classes <b>align-content-start, align-content-end,
-                align-content-center,
-                align-content-between, align-content-around, align-content-stretch</b>
-            <li>
-              <b>Align self verticaly (of item)</b> add these classes <b>align-self-auto, align-self-start,
-                align-self-end,
-                align-self-center, align-self-baseline, align-self-stretch</b>
-            </li>
-            </li>
-          </ul>
-        </div>
-      </div>
 
 
 
