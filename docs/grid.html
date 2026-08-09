@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Grid — CSS Vars Framework</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+/* Demo-only helpers (not framework classes) — just to make the
+   column boxes visible on the page. */
+.demo-box, .demo-box-alt  {
+  background-color: var(--color-1);
+  color: var(--white, #fff);
+  border-radius: var(--control-radius, 0.25rem);
+  padding: var(--space-1, 1rem);
+  min-width: 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.demo-box-alt { background-color: var(--color-2); }
+.demo-frame {
+  border: var(--default-border);
+  border-style: dashed;
+}
+</style>
+</head>
+<body>
+
+<div class="container p-t-4 p-b-4">
+
+  <div>
+    <h1>Grid</h1>
+    <p>
+      CSS Vars Framework has a mobile-first flexbox grid, twelve column
+      system.
+    </p>
+
+    <h5>Equal-width columns</h5>
+    <ul class="colored-ul">
+      <li>Create a div and add the class <b>row</b>.</li>
+      <li>Inside this div, create divisions and add the class <b>col</b> —
+        each one takes an equal share of the row automatically, however many
+        you add.</li>
+    </ul>
+
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col demo-box">1 of 3 <b>.col</b></div>
+      <div class="col demo-box-alt">2 of 3 <b>.col</b></div>
+      <div class="col demo-box">3 of 3 <b>.col</b></div>
+    </div>
+
+    <div class="msg bga-color-1"><b>Note</b> <code>.col</code> with no number
+      always splits the row evenly between however many columns you add — add
+      a fourth <code>.col</code> and all four become 25% wide automatically.</div>
+
+    <h5 class="m-t-4">Content-sized column</h5>
+    <p>Add the class <b>col-auto</b> instead of <b>col</b> when a column
+      should only be as wide as its content — the remaining <b>.col</b>
+      siblings share whatever space is left.</p>
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col-auto demo-box">col-auto</div>
+      <div class="col demo-box-alt">.col — takes the rest of the row</div>
+    </div>
+
+    <h5 class="m-t-4">Setting columns width</h5>
+    <p>add <b>col-</b> with a number from 1 to 12 to set the size</p>
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col-8 demo-box">1 of 2 <b>.col-8</b></div>
+      <div class="col-4 demo-box-alt">2 of 2 <b>.col-4</b></div>
+    </div>
+
+    <h5 class="m-t-4">Setting columns different width for different devices</h5>
+    <p>
+      Use <b>col-sm- col-md- col-lg- col-xl-</b> with any number from 1 to 12
+    </p>
+
+    The sum in each row must be 12,
+    <ul class="colored-ul">
+      <li><b>-12</b> will make a single column</li>
+      <li><b> -6 -6</b> a row of two equal columns</li>
+      <li><b>-3 -6 -3</b> a row of three columns not equal in size</li>
+    </ul>
+
+    <p>
+      <b>Example:</b><br />
+      <b>col-sm-12</b> shows a full width column on small devices,
+      <b>col-md-6</b> shows 2 columns on tablets, <b>col-lg-3</b> shows 4
+      columns on desktop<br />
+      Please, resize the window to see the changes on all devices.
+    </p>
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        1 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        2 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        3 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        4 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+    </div>
+
+    <div class="msg bga-color-1"><b>Note</b> not every step from 1–12 exists
+      at every breakpoint. <b>col-sm-</b> only has 4, 6, 8, and 12. <b>col-md-</b>
+      has every step except 1 and 11. <b>col-lg-</b> and <b>col-xl-</b> have
+      the full 1–12 range. Stick to <b>col-lg-</b>/<b>col-xl-</b> if you need
+      an exact fraction like a third or a fifth.</div>
+
+    <h5 class="m-t-4">Nesting columns</h5>
+    <p>Start a new <b>row</b> inside any <b>col</b> to build a sub-grid —
+      the nested row's own 12 columns are relative to the width of the
+      column it's inside, not the page.</p>
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col-lg-8 demo-box">
+        col-lg-8
+        <div class="row m-v-1 ">
+          <div class="col-6 demo-box-alt">nested col-6</div>
+          <div class="col-6 demo-box-alt">nested col-6</div>
+        </div>
+      </div>
+      <div class="col-lg-4 demo-box-alt">col-lg-4</div>
+    </div>
+
+    <h5 class="m-t-4">Reorder columns on different devices</h5>
+    <p>
+      In some cases we need to show a column first on large devices but
+      last on small devices or visa versa
+    </p>
+
+    <ul class="colored-ul">
+      <li>
+        <b>lg-order-first</b> will show a column first on large devices
+      </li>
+      <li>
+        <b>lg-order-last</b> will show a column last on large devices
+      </li>
+    </ul>
+
+    <div class="row m-v-1  demo-frame p2 rounded">
+      <div class="col-sm-12 col-lg-8 demo-box">
+        1 of 2 <b>col-sm-12 col-lg-8</b>
+      </div>
+      <div class="col-sm-12 col-lg-4 demo-box-alt lg-order-first">
+        1 of 2 <b>first on large devices 2nd on small devices</b>
+      </div>
+    </div>
+
+    <div class="msg bga-color-1"><b>Note</b> <code>lg-order-first</code> and
+      <code>lg-order-last</code> are the only reorder classes in the
+      framework — there's no <code>sm-order-*</code>, <code>md-order-*</code>,
+      or <code>xl-order-*</code> equivalent. Reordering only kicks in at the
+      <b>992px</b> breakpoint and up.</div>
+  </div>
+
+  <div class="m-t-4">
+    <h5>Relative Width and Height</h5>
+    <ul class="colored-ul">
+      <li>Add the class <b>w-25 w-50 w-75 w-100</b> to set the width of any div based on the user view</li>
+      <li>Add the class <b>h-25 h-50 h-75 h-100</b> to set the height of any div based on the user view</li>
+    </ul>
+    <div class="msg bga-color-1"><b>Note</b> these classes could be applied to any element</div>
+  </div>
+
+  <div>
+    <h5>Gap</h5>
+    <p>Add classes <b>gap, gap-1, gap-2, gap-3, gap-4</b> to set the gap between columns, remember that gap adds space in addition to each column's own width, so the sum of the columns in a row must be less than 12 to avoid wrapping
+    </p>
+    <div class="row m-v-1 gap demo-frame p2 rounded">
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        1 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        2 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        3 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        4 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+    </div>
+
+
+
+<p class="msg bga-color-1 p1">
+  You can also use <b>flex-nowrap</b> to prevent wrapping of columns in a row, which is useful when you want to create a horizontal scrollable area with multiple columns.
+</p>
+        <div class="row m-v-1 gap demo-frame p2 rounded flex-nowrap">
+      <div class="col-6 demo-box">
+        1 of 2 <b>col-6</b>
+      </div>
+      <div class="col-6 demo-box-alt">
+        2 of 2 <b>col-6</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-t-4">
+    <h5>Child padding</h5>
+    <p>Add classes <b>child-padding, child-padding-1, child-padding-2, child-padding-3, child-padding-4</b> to the <b>row</b> to set padding on every column inside it, instead of adding padding to each column one by one
+    </p>
+    <div class="row m-v-1 child-padding-2 demo-frame rounded">
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        1 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        2 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box">
+        3 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+      <div class="col-sm-12 col-md-6 col-lg-3 demo-box-alt">
+        4 of 4 <b>col-sm-12 col-md-6 col-lg-3</b>
+      </div>
+    </div>
+  </div>
+
+  <div class="m-t-4">
+    <h5>Wrapping the grid</h5>
+    <p>A <b>row</b> should sit inside a container so it has a page-width to
+      divide up — use <b>container</b> for a boxed, max-width page,
+      <b>container-fluid</b> for edge-to-edge, or <b>container-half-fluid</b>
+      for full width that caps at 85% on very large screens.</p>
+  </div>
+
+</div>
+
+</body>
+</html>
