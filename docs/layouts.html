@@ -1,0 +1,546 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Layout Utilities — CSS Vars Framework</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+/* ============================================================
+   Flexbox layout utility classes, in @layer utilities so they
+   behave exactly as they would when defined in cssvars.css.
+   ============================================================ */
+@layer utilities {
+  .centered-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: var(--default-gap, 1rem);
+  }
+  .centered-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: var(--default-gap, 1rem);
+  }
+  .between-row {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: var(--default-gap, 1rem);
+  }
+  .between-col {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: var(--default-gap, 1rem);
+  }
+  .stack {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    gap: var(--default-gap, 1rem);
+  }
+  .center-overlay {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .grid-center {
+    display: grid;
+    place-items: center;
+  }
+}
+/* Demo-only helpers (not framework classes) — just to make the
+   swatch boxes visible on the page. Kept separate from the utility
+   layer above. */
+.demo-box {
+  background-color: var(--color-1);
+  color: var(--white, #fff);
+  border-radius: var(--control-radius, 0.25rem);
+  padding: var(--space-1, 1rem);
+  min-width: 3rem;
+  text-align: center;
+  font-size: 0.85rem;
+}
+.demo-box-alt { background-color: var(--color-2); }
+.demo-frame {
+  border: var(--default-border);
+  border-style: dashed;
+}
+</style>
+</head>
+<body>
+
+<div class="container p-t-4 p-b-4">
+
+  <header class="p-b-4">
+    <h1>Layout Utilities</h1>
+    <p class="large">Everything on this page is about arranging elements on the page —
+      containers that set page width, the responsive grid, flexbox layout helpers, and
+      the spacing/flow system that supports them. All classes are pulled straight from
+      <code>cssvars.css</code>.</p>
+    <div class="msg bg-light-grey p2 rounded m-t-2">
+      <strong>Doc note:</strong> two classes from the source doc aren't in the current
+      stylesheet — <code>.container-narrow</code> isn't defined (only <code>.container</code>,
+      <code>.container-fluid</code>, <code>.container-half-fluid</code> exist), and bare
+      <code>.flow</code> / <code>--layout-flow</code> doesn't exist either — the real
+      equivalent is <code>.page-flow</code>, which reads <code>--page-flow</code>. Demoed
+      below using what's actually in the file.
+    </div>
+  </header>
+
+  <!-- ============================================================
+       SECTION 1: Containers & Grid
+       ============================================================ -->
+  <header class="p-t-2 p-b-2">
+    <h1>1. Containers &amp; Grid</h1>
+    <p class="large">The foundation — page-width containers and the 12-column responsive
+      grid everything else sits inside.</p>
+  </header>
+
+  <!-- ============================================================
+       Containers
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Containers</h2>
+      <p class="small"><code>.container</code> / <code>.container-fluid</code> /
+        <code>.container-half-fluid</code></p>
+      <p class="smaller color-1">Commonly used in: <code>.container</code> — marketing pages, blog posts; <code>.container-fluid</code> — dashboards, admin panels, full-bleed sections; <code>.container-half-fluid</code> — galleries or kanban boards that need breathing room on large monitors.</p>
+    </div>
+    <div class="card-body stack">
+      <div class="container demo-frame p2 rounded"><div class="demo-box">.container — boxed, max-width steps up at each breakpoint</div></div>
+      <div class="container-fluid demo-frame p2 rounded"><div class="demo-box demo-box-alt">.container-fluid — full width</div></div>
+      <div class="container-half-fluid demo-frame p2 rounded"><div class="demo-box">.container-half-fluid — full width, caps at 85% above 1200px</div></div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Page layout template — main/side grid
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Page layout — main + side</h2>
+      <p class="small"><code>.row</code> with <code>.col-md-12 .col-lg-8 .col-xl-8</code> /
+        <code>.col-md-12 .col-lg-4 .col-xl-4</code></p>
+      <p class="smaller color-1">Commonly used in: blog post + related-links sidebar, documentation pages, dashboard main content next to a filters panel, e-commerce category page with filters and product grid.</p>
+    </div>
+    <div class="card-body">
+      <div class="container-fluid demo-frame p2 rounded">
+        <header class="row demo-box p1 m-b-1">header</header>
+        <div class="row">
+          <main class="col-md-12 col-lg-8 col-xl-8 demo-box demo-box-alt">Main col-8
+            <div class="row">
+              <div class="col-6 demo-box p1 m-t-1">Nested col-6</div>
+              <div class="col-6 demo-box p1 m-t-1 demo-box-alt border-color-1 border-solid">Nested col-6</div>
+            </div>
+
+          </main>
+          <aside class="col-md-12 col-lg-4 col-xl-4 demo-box p1">Side col-4</aside>
+        </div>
+        <footer class="row demo-box p1 m-t-1">Footer</footer>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Responsive columns — col-12 / col-md-6 / col-lg-3
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Responsive columns — <code>.col-12 .col-md-6 .col-lg-3</code></h2>
+      <p class="small">Stack width classes on one element to change it at each breakpoint.
+        Read them as "this wide, until a wider breakpoint kicks in": <code>.col-12</code> is
+        the mobile default (full width), <code>.col-md-6</code> takes over at
+        <strong>768px</strong> and up, and <code>.col-lg-3</code> takes over at
+        <strong>992px</strong> and up — whichever breakpoint matches the current screen
+        width wins.</p>
+      <p class="smaller color-1">Commonly used in: product grids, blog/article card grids, team-member grids, feature grids — anything that should read as 1 column on mobile, 2 on tablet, 4 on desktop.</p>
+    </div>
+    <div class="card-body">
+      <div class="row">
+        <div class="col-12 col-md-6 col-lg-3 demo-box p1">Card 1</div>
+        <div class="col-12 col-md-6 col-lg-3 demo-box demo-box-alt p1">Card 2</div>
+        <div class="col-12 col-md-6 col-lg-3 demo-box p1">Card 3</div>
+        <div class="col-12 col-md-6 col-lg-3 demo-box demo-box-alt p1">Card 4</div>
+      </div>
+      <p class="smaller m-t-2">Resize the browser window to see it change — below
+        <strong>768px</strong> each card is full width (1 per row); from <strong>768px</strong>
+        to <strong>991px</strong> they pair up (2 per row); at <strong>992px</strong> and above
+        all four sit in one row (4 per row).</p>
+      <table class="table m-t-2">
+        <thead>
+          <tr><th>Screen width</th><th>Active class</th><th>Card width</th><th>Cards per row</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>&lt; 768px (mobile)</td><td><code>.col-12</code></td><td>100%</td><td>1</td></tr>
+          <tr><td>768px – 991px (tablet)</td><td><code>.col-md-6</code></td><td>50%</td><td>2</td></tr>
+          <tr><td>&ge; 992px (desktop)</td><td><code>.col-lg-3</code></td><td>25%</td><td>4</td></tr>
+        </tbody>
+      </table>
+
+      <div class="msg bg-light-grey p2 rounded m-t-2">
+        <p class="small bold m-b-1">Full list of responsive column classes in <code>cssvars.css</code></p>
+        <p class="smaller">Mix any of these on one element — same pattern as the demo above, just more width choices per breakpoint.</p>
+        <ul class="small">
+          <li><strong>No prefix</strong> — always active, every screen size: <code>.col-1</code> through <code>.col-12</code>, plus <code>.col</code> and <code>.col-auto</code></li>
+          <li><strong>.col-sm-*</strong> — kicks in at <strong>576px</strong>: <code>.col-sm</code>, <code>.col-sm-auto</code>, <code>.col-sm-4</code>, <code>.col-sm-6</code>, <code>.col-sm-8</code>, <code>.col-sm-12</code></li>
+          <li><strong>.col-md-*</strong> — kicks in at <strong>768px</strong>: <code>.col-md</code>, <code>.col-md-auto</code>, <code>.col-md-2</code>, <code>.col-md-3</code>, <code>.col-md-4</code>, <code>.col-md-5</code>, <code>.col-md-6</code>, <code>.col-md-7</code>, <code>.col-md-8</code>, <code>.col-md-9</code>, <code>.col-md-10</code>, <code>.col-md-12</code></li>
+          <li><strong>.col-lg-*</strong> — kicks in at <strong>992px</strong>: <code>.col-lg</code>, <code>.col-lg-auto</code>, <code>.col-lg-1</code> through <code>.col-lg-12</code> (full range)</li>
+          <li><strong>.col-xl-*</strong> — kicks in at <strong>1200px</strong>: <code>.col-xl</code>, <code>.col-xl-auto</code>, <code>.col-xl-1</code> through <code>.col-xl-12</code> (full range)</li>
+        </ul>
+        <p class="smaller color-1 m-t-1">Gaps to know: <code>.col-sm-*</code> only offers 4 / 6 / 8 / 12 (no 1‑3, 5, 7, 9‑11). <code>.col-md-*</code> offers every step except <code>.col-md-1</code> and <code>.col-md-11</code>. Only <code>.col-lg-*</code> and <code>.col-xl-*</code> have the complete 1–12 range.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 2: Flexbox Layout Helpers
+       ============================================================ -->
+  <header class="p-t-2 p-b-2">
+    <h1>2. Flexbox Layout Helpers</h1>
+    <p class="large">One-line flex patterns for arranging a handful of elements without
+      reaching for the grid — centering, spacing, and stacking shorthands used throughout
+      the framework.</p>
+  </header>
+
+  <!-- ============================================================
+       Cluster
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.cluster</h2>
+      <p class="small">Horizontal flex layout, wraps automatically, vertically centered by
+        default — button groups, tags, chips.</p>
+      <p class="smaller color-1">Commonly used in: tag/chip lists, filter pills, social icon rows, skill badges, button toolbars that need to wrap on small screens.</p>
+    </div>
+    <div class="card-body">
+      <div class="cluster gap-1 demo-frame p2 rounded">
+        <span class="badge bg-color-1 color-control">Design</span>
+        <span class="badge bg-color-2 color-control">CSS</span>
+        <span class="badge bg-light-grey color-1">Utilities</span>
+        <span class="badge bg-color-1 color-control">Framework</span>
+        <span class="badge bg-color-2 color-control">No JS</span>
+        <span class="badge bg-light-grey color-1">Zero Build</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .centered-row
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.centered-row</h2>
+      <p class="small">Flex row, centered on both axes, with default gap.</p>
+      <p class="smaller color-1">Commonly used in: hero banners, empty-state screens, icon-plus-label buttons, centered search bars, loading spinners.</p>
+    </div>
+    <div class="card-body">
+      <div class="centered-row demo-frame p2 rounded">
+        <div class="demo-box">One</div>
+        <div class="demo-box demo-box-alt">Two</div>
+        <div class="demo-box">Three</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .centered-col
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.centered-col</h2>
+      <p class="small">Flex column, centered on both axes, with default gap.</p>
+      <p class="smaller color-1">Commonly used in: empty states, 404 pages, modal/dialog content, onboarding screens, vertically centered hero copy.</p>
+    </div>
+    <div class="card-body">
+      <div class="centered-col demo-frame p2 rounded ">
+        <div class="demo-box">One</div>
+        <div class="demo-box demo-box-alt">Two</div>
+        <div class="demo-box">Three</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .between-row
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.between-row</h2>
+      <p class="small">Row, space-between, vertically centered — the toolbar / card-header pattern.</p>
+      <p class="smaller color-1">Commonly used in: navbars, card headers, list rows with trailing actions, table header rows, price-plus-CTA rows.</p>
+    </div>
+    <div class="card-body">
+      <div class="between-row demo-frame p2 rounded">
+        <span class="bold">Order #4521</span>
+        <span class="badge bg-color-1 color-control">Shipped</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .between-col
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.between-col</h2>
+      <p class="small">Column, space-between — pins a footer to the bottom of a fixed-height box.</p>
+      <p class="smaller color-1">Commonly used in: pricing cards, equal-height card grids, sidebar panels with a pinned bottom action.</p>
+    </div>
+    <div class="card-body">
+      <div class="between-col demo-frame p2 rounded h-10rem">
+        <div>
+          <h3>Plan: Growth</h3>
+          <p class="small">Billed monthly, cancel anytime.</p>
+        </div>
+        <button class="button-w-100">Choose plan</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .stack
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.stack</h2>
+      <p class="small">Flex-gap vertical stack, full-width children — distinct from <code>.flow</code>,
+        which uses margin instead of gap.</p>
+      <p class="smaller color-1">Commonly used in: forms, settings panels, filter panels, sidebar nav lists, card bodies with several full-width elements.</p>
+    </div>
+    <div class="card-body">
+      <div class="stack demo-frame p2 rounded">
+        <input class="form-control" type="text" placeholder="Full name">
+        <input class="form-control" type="email" placeholder="Email address">
+        <button class="button-w-100">Submit</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .center-overlay
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.center-overlay</h2>
+      <p class="small">Centers content over the nearest <code>position-relative</code> ancestor —
+        loading states, empty states — without dedicated modal markup.</p>
+      <p class="smaller color-1">Commonly used in: image/video loading spinners, play-button overlays on thumbnails, "no results" states over charts, hover overlays.</p>
+    </div>
+    <div class="card-body">
+      <div class="position-relative demo-frame rounded h-10rem overflow-hidden">
+        <img src="https://picsum.photos/seed/cssvars-overlay/600/300" class="w-100 h-100" style="object-fit:cover;" alt="Placeholder background">
+        <div class="center-overlay">
+          <div class="demo-box bg-color-2">Loading…</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       .grid-center
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.grid-center</h2>
+      <p class="small">Grid alternative to <code>.centered-col</code> — one-line single-child
+        centering, e.g. an icon inside a badge.</p>
+      <p class="smaller color-1">Commonly used in: avatar/icon badges, circular icon buttons, notification dots, single-stat dashboard tiles.</p>
+    </div>
+    <div class="card-body">
+      <div class="centered-row">
+        <div class="grid-center bg-color-1 rounded" style="width:4rem; height:4rem;">
+          <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill">
+            <title>check</title>
+            <path d="M21,7L9,19L3.5,13.5L4.91,12.09L9,16.17L19.59,5.59L21,7Z" />
+          </svg>
+        </div>
+        <div class="grid-center bg-color-2 rounded" style="width:4rem; height:4rem;">
+          <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill">
+            <title>star</title>
+            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+          </svg>
+        </div>
+        <div class="grid-center bg-light-grey rounded" style="width:4rem; height:4rem;">
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill">
+            <title>user</title>
+            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z" />
+          </svg>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       SECTION 3: Spacing & Flow
+       ============================================================ -->
+  <header class="p-t-2 p-b-2">
+    <h1>3. Spacing &amp; Flow</h1>
+    <p class="large">The system that controls space <em>between</em> the elements laid out
+      above — gap, child-padding, child-margin, and automatic flow spacing.</p>
+  </header>
+
+  <!-- ============================================================
+       Gap
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Gap utilities</h2>
+      <p class="small"><code>.gap</code> / <code>.gap-1</code>–<code>.gap-4</code> — Flexbox/Grid
+        <code>gap</code>, no outer edge spacing</p>
+      <p class="smaller color-1">Commonly used in: card grids, button groups, form rows, icon lists — anywhere the container is already flex or grid.</p>
+    </div>
+    <div class="card-body stack">
+      <div class="between-row gap-1 demo-frame p2 rounded">
+        <div class="demo-box">gap-1</div><div class="demo-box">gap-1</div><div class="demo-box">gap-1</div>
+      </div>
+      <div class="between-row gap-4 demo-frame p2 rounded">
+        <div class="demo-box demo-box-alt">gap-4</div><div class="demo-box demo-box-alt">gap-4</div><div class="demo-box demo-box-alt">gap-4</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Child Padding
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Child padding</h2>
+      <p class="small"><code>.child-padding</code> / <code>-1</code> / <code>-2</code> /
+        <code>-3</code> / <code>-4</code> — padding applied to every direct child</p>
+      <p class="smaller color-1">Commonly used in: pricing-table cells, dashboard widget grids, feature-comparison grids, image galleries needing uniform inner spacing.</p>
+    </div>
+    <div class="card-body">
+      <div class="child-padding-3 between-row demo-frame rounded">
+        <div class="demo-box">Child</div>
+        <div class="demo-box demo-box-alt">Child</div>
+        <div class="demo-box">Child</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Child Margin
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Child margin</h2>
+      <p class="small"><code>.child-margin</code> / <code>-2</code> / <code>-3</code> /
+        <code>-4</code> — margin on every direct child, for non-flex/grid layouts</p>
+      <p class="smaller color-1">Commonly used in: legacy or non-flex block layouts, CMS/WYSIWYG content areas, tag clouds without a flex parent, sidebar widget stacks.</p>
+    </div>
+    <div class="card-body">
+      <div class="child-margin-2 demo-frame p1 rounded">
+        <span class="demo-box" style="display:inline-block;">Block</span><span class="demo-box demo-box-alt" style="display:inline-block;">Block</span><span class="demo-box" style="display:inline-block;">Block</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Flow utilities — fixed steps
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Flow utilities — fixed steps</h2>
+      <p class="small"><code>.flow-1</code>–<code>.flow-4</code> — vertical spacing between
+        adjacent children only, at a fixed <code>--space-*</code> step, none before the
+        first or after the last child.</p>
+      <p class="smaller color-1">Commonly used in: article bodies, comment threads, timeline entries, changelog lists, FAQ answers.</p>
+    </div>
+    <div class="card-body">
+      <div class="flow-2 demo-frame p2 rounded">
+        <div class="demo-box">First child</div>
+        <div class="demo-box demo-box-alt">Second child — spaced above</div>
+        <div class="demo-box">Third child — spaced above</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Flow utilities — page-flow & main-flow
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>.page-flow &amp; .main-flow</h2>
+      <p class="small">Same adjacent-sibling pattern as the fixed steps above, but each
+        reads a different token for a different scope of the page:</p>
+      <ul class="small">
+        <li><code>.page-flow</code> reads <code>--page-flow</code> (defaults to <code>0</code>)
+          — spacing between an element's direct children at the outermost, page-skeleton
+          level. Applied automatically to <code>body &gt; * + *</code>, so
+          <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, and <code>&lt;footer&gt;</code>
+          get it with no class needed.</li>
+        <li><code>.main-flow</code> reads <code>--main-flow</code> (defaults to
+          <code>clamp(6rem, 3.33vw, 12rem)</code>) — a larger, fluid gap for the content
+          sections inside <code>&lt;main&gt;</code>. Applied automatically to
+          <code>main &gt; * + *</code>.</li>
+      </ul>
+      <p class="smaller color-1">Commonly used in: <code>--page-flow</code> — spacing between top-level page chrome (header/main/footer); <code>--main-flow</code> — spacing between stacked content sections inside the main content area, so sections read as visually distinct without per-section margins.</p>
+    </div>
+    <div class="card-body stack">
+      <div>
+        <p class="smaller bold m-b-1">.page-flow <span class="color-1">— <code>--page-flow</code> set to <code>1rem</code> here for the demo (defaults to <code>0</code>)</span></p>
+        <div class="page-flow demo-frame p2 rounded" style="--page-flow: 1rem;">
+          <div class="demo-box">First child</div>
+          <div class="demo-box demo-box-alt">Second child — spaced above</div>
+          <div class="demo-box">Third child — spaced above</div>
+        </div>
+      </div>
+      <div>
+        <p class="smaller bold m-b-1">.main-flow <span class="color-1">— <code>--main-flow</code> set to <code>2rem</code> here for the demo (defaults to a much larger fluid clamp)</span></p>
+        <div class="main-flow demo-frame p2 rounded" style="--main-flow: 2rem;">
+          <div class="demo-box">First child</div>
+          <div class="demo-box demo-box-alt">Second child — spaced above</div>
+          <div class="demo-box">Third child — spaced above</div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <table class="table">
+        <thead>
+          <tr><th>Token</th><th>Default value</th><th>Scope</th><th>Utility class</th><th>Automatic on</th></tr>
+        </thead>
+        <tbody>
+          <tr><td><code>--page-flow</code></td><td><code>0</code></td><td>Page skeleton</td><td><code>.page-flow</code></td><td><code>body &gt; * + *</code></td></tr>
+          <tr><td><code>--main-flow</code></td><td><code>clamp(6rem, 3.33vw, 12rem)</code></td><td>Sections inside <code>&lt;main&gt;</code></td><td><code>.main-flow</code></td><td><code>main &gt; * + *</code></td></tr>
+          <tr><td><code>--content-flow</code></td><td><code>var(--space-1)</code></td><td>Prose inside a content container</td><td>— (automatic only)</td><td><code>article/aside/details/blockquote &gt; * + *</code></td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- ============================================================
+       Content Flow
+       ============================================================ -->
+  <section class="card m-b-4">
+    <div class="card-header">
+      <h2>Content flow</h2>
+      <p class="small"><code>article</code>, <code>aside</code>, <code>details</code>, and
+        <code>blockquote</code> automatically use <code>--content-flow</code> — no utility
+        class needed.</p>
+      <p class="smaller color-1">Commonly used in: blog posts, documentation pages, terms/privacy pages, any long-form article typography.</p>
+    </div>
+    <div class="card-body">
+      <article class="demo-frame p2 rounded">
+        <h3>Automatic spacing</h3>
+        <p>This paragraph, the heading above, and the list below all get consistent
+          top spacing automatically, driven by <code>--content-flow</code>.</p>
+        <ul>
+          <li>No <code>.flow</code> class needed</li>
+          <li>Works because the element is an <code>article</code></li>
+        </ul>
+      </article>
+    </div>
+  </section>
+
+</div>
+
+</body>
+</html>

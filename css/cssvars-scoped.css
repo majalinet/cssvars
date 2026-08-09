@@ -3118,6 +3118,50 @@ left: 105%;
   flex-wrap: wrap;
   align-items: center;
 }
+.cssvars .centered-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: var(--default-gap, 1rem);
+}
+.cssvars .centered-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: var(--default-gap, 1rem);
+}
+.cssvars .between-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--default-gap, 1rem);
+}
+.cssvars .between-col {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--default-gap, 1rem);
+}
+.cssvars .stack {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  gap: var(--default-gap, 1rem);
+}
+.cssvars .center-overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.cssvars .grid-center {
+  display: grid;
+  place-items: center;
+}
 .cssvars .flow-1 > * + * { margin-top: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .cssvars .flow-2 > * + * { margin-top: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .cssvars .flow-3 > * + * { margin-top: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
