@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Classic Accordion | CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="main-nav p1">
+    <div class="main-menu nav-top-border-hover">
+        <input type="checkbox" id="toggle-h1">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="CSS Vars Framework logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#docs">Docs</a>
+                <a href="#components">Components</a>
+                <a href="#showcase">Showcase</a>
+                <a href="faq-classic.html" class="bold color-1">FAQ</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h1" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ BREADCRUMB ============ -->
+<nav aria-label="breadcrumb" class="p-t-1">
+  <ol class="breadcrumb p-1-8 container">
+    <li class="breadcrumb-item"><a href="index.html"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg> Home</a></li>
+    <li class="breadcrumb-item bold" aria-current="page">FAQ</li>
+  </ol>
+</nav>
+
+<!-- ============ PAGE HEADER / HERO ============ -->
+<div class="row h-50-vh-min m-v-auto bga-color-1 rounded">
+  <div class="row m-v-auto container">
+    <div class="col-md-7 m-v-auto p2">
+      <p class="grey text-uppercase bold">Support Center</p>
+      <h1 class="black bold">Frequently Asked<br> Questions</h1>
+      <p class="dark font-weight-400 m-v-1">Everything you need to know about installing, styling, and shipping
+        pages with CSS Vars Framework — no build step, no JavaScript, just CSS custom properties.</p>
+    </div>
+    <div class="col-md-5 m-v-auto p2">
+      <img src="https://picsum.photos/seed/cssvars-faq-1/700/500" class="img-responsive rounded shadow-3" alt="Developer working on CSS code">
+    </div>
+  </div>
+</div>
+
+<!-- ============ FAQ ACCORDION (single open, radio-based) ============ -->
+<section class="container m-v-4 p2">
+  <h3 class="center bold black">General questions</h3>
+  <hr class="width-short center w-50">
+  <p class="center font-weight-400 p-h-4 m-h-4">Can't find the answer you're looking for? Reach out to our
+    community on GitHub or send us a message below.</p>
+
+  <div class="accordion m-t-2">
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle1" checked>
+      <label for="accordionTitle1" class="accordion-label d-flex justify-content-between align-items-center">
+        Do I need a build step or bundler to use CSS Vars Framework?
+        <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+      </label>
+      <div class="accordion-content">
+        No. The framework ships as a single stylesheet, <code>cssvars.css</code>. Link it from the CDN and start
+        writing HTML — there's no npm install, no config file, and no compile step required.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle2">
+      <label for="accordionTitle2" class="accordion-label d-flex justify-content-between align-items-center">
+        How do I change the color theme?
+        <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+      </label>
+      <div class="accordion-content">
+        Every color, spacing, and typography value is exposed as a CSS custom property in <code>:root</code>.
+        Override <code>--color-1</code>, <code>--color-2</code>, and the rest directly in your own stylesheet —
+        no JavaScript theme switcher needed.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle3">
+      <label for="accordionTitle3" class="accordion-label d-flex justify-content-between align-items-center">
+        Does the framework use any JavaScript?
+        <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+      </label>
+      <div class="accordion-content">
+        Zero JavaScript. Interactive components like this accordion, toggles, tabs, and menus are built with the
+        CSS checkbox and radio toggle pattern, so everything works with pure CSS.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle4">
+      <label for="accordionTitle4" class="accordion-label d-flex justify-content-between align-items-center">
+        Is CSS Vars Framework a good fit for my project?
+        <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+      </label>
+      <div class="accordion-content">
+        It's built for static and server-rendered sites, marketing pages, and small teams who want fast iteration
+        without a build pipeline. If your project already relies on a heavy component library, a bundler-based
+        framework like Bootstrap or Tailwind may fit better.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="accordionTitle" id="accordionTitle5">
+      <label for="accordionTitle5" class="accordion-label d-flex justify-content-between align-items-center">
+        Where do I download the stylesheet?
+        <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+      </label>
+      <div class="accordion-content">
+        Link it directly from <code>https://cdn.cssvars.com/cssvars.css</code>, or clone the source from the
+        GitHub repository if you'd like to customize the framework itself.
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ STILL HAVE QUESTIONS CTA ============ -->
+<section class="p-v-4">
+  <div class="d-flex bg-color-1 m-v-4 flex-column rounded">
+    <h1 class="center white font-weight-600 m-t-4">Still have questions?</h1>
+    <p class="h6 center white m-t-1">Our community and maintainers are happy to help on GitHub.</p>
+    <div class="center m-b-4">
+      <a href="https://github.com/majalinet/cssvars" target="_blank" class="button button-lg bg-white color-1 m-1-2 rounded">Ask on GitHub</a>
+      <a href="#contact" class="button button-lg outline-white white m-1-2 rounded">Contact Us</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t d-block">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Framework</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#docs">Documentation</a></li>
+        <li class="m-h-1"><a href="#components">Components</a></li>
+        <li class="m-h-1"><a href="#showcase">Showcase</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Resources</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="https://github.com/majalinet/cssvars" target="_blank">GitHub Repo</a></li>
+        <li class="m-h-1"><a href="https://cdn.cssvars.com/cssvars.css" target="_blank">CDN Link</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Support</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="faq-classic.html">F.A.Q</a></li>
+        <li class="m-h-1"><a href="#contact">Contact us</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Explore other FAQ designs</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="faq-categories.html">Categorized</a></li>
+        <li class="m-h-1"><a href="faq-search.html">Search & 2-column</a></li>
+        <li class="m-h-1"><a href="faq-cards.html">Card grid</a></li>
+      </ul>
+    </div>
+    <div class="p-v-1 small row border-t m-t-2">
+      <p class="color-1">
+        <a href="index.html">
+          <img class="icon-xs" src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" alt="logo">
+        </a>
+        © 2026 CSS Vars Framework. All rights reserved. <a href="#terms">Terms</a>.
+        <a href="#privacy">Privacy</a>
+      </p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

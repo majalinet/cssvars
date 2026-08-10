@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Browse by Category | CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (contact bar + bottom-border nav) ============ -->
+<div class="bga-color-1 p-1-2 row justify-content-end">
+    <span class="small m-r-2">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z">
+            </path>
+        </svg>
+        (123) 456-78-90</span>
+    <span class="small m-r-1">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill">
+            <path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path>
+        </svg>
+        support@cssvars.com</span>
+</div>
+<div class="main-nav">
+    <div class="main-menu nav-bottom-border-hover">
+        <input type="checkbox" id="toggle-h2">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem" alt="CSS Vars Framework logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#docs">Docs</a>
+                <a href="#components">Components</a>
+                <a href="#showcase">Showcase</a>
+                <a href="faq-categories.html" class="bold">FAQ</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h2" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ PAGE TITLE ============ -->
+<section class="container center m-v-3">
+  <p class="grey text-uppercase bold m-t-2">Help Center</p>
+  <h1 class="black bold">Browse the FAQ by category</h1>
+  <p class="dark font-weight-400 p-h-4 m-h-4">Jump straight to the topic you need — installation, theming,
+    components, or licensing.</p>
+</section>
+
+<!-- ============ CATEGORY TABS (vertical, sidebar navigation) ============ -->
+<section class="container m-v-4 p1">
+  <div class="tabs-vertical">
+    <input type="radio" name="v-tabs" id="v-tab1" checked>
+    <input type="radio" name="v-tabs" id="v-tab2">
+    <input type="radio" name="v-tabs" id="v-tab3">
+    <input type="radio" name="v-tabs" id="v-tab4">
+
+    <div class="tabs-vertical-nav p2 bg-light-grey rounded">
+      <label for="v-tab1" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"></path></svg>
+        Getting Started
+      </label>
+      <label for="v-tab2" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"></path></svg>
+        Theming &amp; Variables
+      </label>
+      <label for="v-tab3" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M22,21H2V19H22V21M13.5,8H10.5L4,15H8L14.5,8H13.5M20,15L15,10L20,5L21.5,6.5L18,10L21.5,13.5L20,15Z"></path></svg>
+        Components
+      </label>
+      <label for="v-tab4" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11C15.4,11 16,11.6 16,12.3V15.7C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.3C8,11.6 8.6,11 9.2,11V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,10V11H13.5V10C13.5,8.7 12.8,8.2 12,8.2Z"></path></svg>
+        Licensing &amp; Support
+      </label>
+    </div>
+
+    <div class="tabs-vertical-content p2">
+
+      <!-- Panel 1: Getting Started -->
+      <div id="v-panel1" class="tab-panel">
+        <h3 class="black m-b-1">Getting Started</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="gs1" checked>
+            <label for="gs1" class="accordion-label bg-white border-b p1">How do I install CSS Vars Framework?</label>
+            <div class="accordion-content">
+              Add one line to your <code>&lt;head&gt;</code>: <code>&lt;link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css"&gt;</code>.
+              That's the entire setup — no package manager required.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="gs2">
+            <label for="gs2" class="accordion-label bg-white border-b p1">Can I use it with a static site generator?</label>
+            <div class="accordion-content">
+              Yes. Since it's a single CSS file, it works with any static-site generator, server-rendered
+              framework, or plain HTML page.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="gs3">
+            <label for="gs3" class="accordion-label bg-white border-b p1">Is there a starter template?</label>
+            <div class="accordion-content">
+              The GitHub repository includes demo pages you can copy as a starting point for layouts, navigation,
+              and common components.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Theming -->
+      <div id="v-panel2" class="tab-panel">
+        <h3 class="black m-b-1">Theming &amp; Variables</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="th1" checked>
+            <label for="th1" class="accordion-label bg-white border-b p1">Where are the design tokens defined?</label>
+            <div class="accordion-content">
+              All tokens — colors, spacing, radii, shadows — live as CSS custom properties inside <code>:root</code>
+              at the top of <code>cssvars.css</code>.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="th2">
+            <label for="th2" class="accordion-label bg-white border-b p1">How do I build a dark mode?</label>
+            <div class="accordion-content">
+              Override the token values inside a <code>prefers-color-scheme: dark</code> media query or a class on
+              <code>&lt;html&gt;</code>. No JavaScript theme switcher is required.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="th3">
+            <label for="th3" class="accordion-label bg-white border-b p1">Does the layout scale fluidly across screen sizes?</label>
+            <div class="accordion-content">
+              Yes — spacing and typography tokens use <code>clamp()</code> so type and rhythm scale smoothly with
+              the viewport instead of jumping at fixed breakpoints.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: Components -->
+      <div id="v-panel3" class="tab-panel">
+        <h3 class="black m-b-1">Components</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="cp1" checked>
+            <label for="cp1" class="accordion-label bg-white border-b p1">How do toggles and accordions work without JS?</label>
+            <div class="accordion-content">
+              Interactive components use the CSS checkbox/radio toggle pattern: a hidden input drives visibility
+              through the <code>:checked</code> selector and adjacent-sibling combinators.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="cp2">
+            <label for="cp2" class="accordion-label bg-white border-b p1">Can I combine gap utilities with the grid?</label>
+            <div class="accordion-content">
+              Add the opt-in <code>.col-gap</code> class to your <code>.row</code> to enable gap support in the
+              flex-based grid columns.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="cp3">
+            <label for="cp3" class="accordion-label bg-white border-b p1">Where can I browse all available blocks?</label>
+            <div class="accordion-content">
+              The block library ships as named HTML snippets you can copy directly into your project and
+              customize with utility classes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 4: Licensing -->
+      <div id="v-panel4" class="tab-panel">
+        <h3 class="black m-b-1">Licensing &amp; Support</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="li1" checked>
+            <label for="li1" class="accordion-label bg-white border-b p1">Is CSS Vars Framework free to use?</label>
+            <div class="accordion-content">
+              Yes, it's open source and free for personal and commercial projects. See the license file in the
+              GitHub repository for full terms.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="li2">
+            <label for="li2" class="accordion-label bg-white border-b p1">How do I report a bug or request a feature?</label>
+            <div class="accordion-content">
+              Open an issue on the GitHub repository with a short reproduction — the maintainers review issues
+              regularly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="container-fluid row">
+  <div class="col-md-6 col-lg-3 p2">
+    <a href="index.html">
+      <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="icon-m m-b-2" alt="CSS Vars Framework logo"></a>
+    <p class="smaller">CSS Vars Framework is a dependency-free, zero-JavaScript, single-stylesheet CSS
+      framework built on modern CSS features for static and server-rendered sites.</p>
+    <p class="small">© 2026 CSS Vars Framework. All rights reserved. <a href="#terms">Terms</a>.
+      <a href="#privacy">Privacy</a></p>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Categories</p>
+    <ul class="no-indent-ul">
+      <li class="m-h-1"><label for="v-tab1">Getting Started</label></li>
+      <li class="m-h-1"><label for="v-tab2">Theming &amp; Variables</label></li>
+      <li class="m-h-1"><label for="v-tab3">Components</label></li>
+      <li class="m-h-1"><label for="v-tab4">Licensing &amp; Support</label></li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Other FAQ layouts</p>
+    <ul class="no-indent-ul">
+      <li class="m-h-1"><a href="faq-classic.html">Classic accordion</a></li>
+      <li class="m-h-1"><a href="faq-search.html">Search &amp; 2-column</a></li>
+      <li class="m-h-1"><a href="faq-cards.html">Card grid</a></li>
+    </ul>
+  </div>
+  <div class="col-md-6 col-lg-3 p2">
+    <p class="h4 black">Connect</p>
+    <a href="https://github.com/majalinet/cssvars" target="_blank" rel="noopener noreferrer">
+      <i class="icon-box hover-shadow">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s">
+          <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+          </path>
+        </svg>
+      </i>
+    </a>
+  </div>
+</footer>
+
+</body>
+</html>

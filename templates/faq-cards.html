@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Visual Card Grid | CSS Vars Framework</title>
+<link rel="stylesheet" href="../css/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (grouped-right, login/signup) ============ -->
+<div class="main-nav p1 rounded">
+    <div class="main-menu rounded shadow-3">
+        <input type="checkbox" id="toggle-h5">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="CSS Vars Framework logo">
+        </a>
+        <div class="nav-panel">
+            <div class="nav-group">
+                <nav class="nav nav-top-border-hover">
+                    <a href="#docs">Docs</a>
+                    <a href="#components">Components</a>
+                    <a href="faq-cards.html" class="bold">FAQ</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="https://github.com/majalinet/cssvars" target="_blank">GitHub</a>
+                    <a href="#contact" class="button">Contact Us</a>
+                </div>
+            </div>
+        </div>
+        <label for="toggle-h5" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ IMAGE HERO ============ -->
+<div class="row m-v-auto">
+  <div class="col-md-12 p0">
+    <img src="https://picsum.photos/seed/cssvars-faq-4/1600/500" class="img-responsive w-100" alt="Team collaborating on code">
+  </div>
+</div>
+<section class="container center m-v-3">
+  <p class="grey text-uppercase bold m-t-2">Knowledge Base</p>
+  <h1 class="black bold">Everything about CSS Vars Framework</h1>
+  <p class="dark font-weight-400 p-h-4 m-h-4">Pick a category below to jump to the questions people ask most.</p>
+</section>
+
+<!-- ============ CATEGORY CARD GRID ============ -->
+<section class="container row m-v-2">
+  <div class="col-md-6 col-lg-3 p1">
+    <div class="card card-hover center">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+            <path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"></path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="bold">Getting Started</h5>
+      <p class="dark smaller">Installation, first page, and CDN setup.</p>
+      <a href="#getting-started" class="small bold color-1">View questions →</a>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 p1">
+    <div class="card card-hover center">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+            <path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"></path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="bold">Theming</h5>
+      <p class="dark smaller">Custom properties, colors, and dark mode.</p>
+      <a href="#theming" class="small bold color-1">View questions →</a>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 p1">
+    <div class="card card-hover center">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+            <path d="M22,21H2V19H22V21M13.5,8H10.5L4,15H8L14.5,8H13.5M20,15L15,10L20,5L21.5,6.5L18,10L21.5,13.5L20,15Z"></path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="bold">Components</h5>
+      <p class="dark smaller">Accordions, tabs, menus, and the grid.</p>
+      <a href="#components-faq" class="small bold color-1">View questions →</a>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-3 p1">
+    <div class="card card-hover center">
+      <div class="d-flex justify-content-center m1">
+        <i class="icon-box">
+          <svg class="icon-color-1-fill icon-m" viewBox="0 0 24 24">
+            <path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"></path>
+          </svg>
+        </i>
+      </div>
+      <h5 class="bold">Licensing &amp; Support</h5>
+      <p class="dark smaller">Usage rights, issues, and contributing.</p>
+      <a href="#support" class="small bold color-1">View questions →</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ DETAIL (underline accordion, grouped under card anchors) ============ -->
+<section class="container m-v-4 p2">
+  <div id="getting-started">
+    <h3 class="black m-b-1">Getting Started</h3>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="cardAcc" id="cardAcc1" checked>
+        <label for="cardAcc1" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+          What's the fastest way to try the framework?
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+        </label>
+        <div class="accordion-content">
+          Link <code>https://cdn.cssvars.com/cssvars.css</code> in your HTML <code>&lt;head&gt;</code> and start
+          adding classes — there's nothing to install or build.
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="cardAcc" id="cardAcc2">
+        <label for="cardAcc2" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+          Do I need Node.js or npm?
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+        </label>
+        <div class="accordion-content">
+          No. The framework is distributed as a single CSS file, so no package manager or build tooling is
+          required to use it.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="theming" class="m-t-4">
+    <h3 class="black m-b-1">Theming</h3>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="cardAcc" id="cardAcc3">
+        <label for="cardAcc3" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+          Can I rebrand the whole site by editing a few variables?
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+        </label>
+        <div class="accordion-content">
+          Yes — override <code>--color-1</code>, <code>--color-2</code>, and the other root tokens in your own
+          stylesheet loaded after <code>cssvars.css</code>.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="components-faq" class="m-t-4">
+    <h3 class="black m-b-1">Components</h3>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="cardAcc" id="cardAcc4">
+        <label for="cardAcc4" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+          How do checkbox/radio toggle components work?
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+        </label>
+        <div class="accordion-content">
+          A hidden checkbox or radio input drives the <code>:checked</code> state, and sibling selectors reveal or
+          style the connected content — the same pattern powering this accordion.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="support" class="m-t-4">
+    <h3 class="black m-b-1">Licensing &amp; Support</h3>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="cardAcc" id="cardAcc5">
+        <label for="cardAcc5" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+          Is the framework free for commercial projects?
+          <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.59L12,13.17L16.59,8.59L18,10L12,16L6,10L7.41,8.59Z"></path></svg>
+        </label>
+        <div class="accordion-content">
+          Yes, it's open source and free to use — check the license in the GitHub repository for full details.
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ TESTIMONIAL-STYLE "STILL NEED HELP" CTA ============ -->
+<section class="container m-v-4 p2 center">
+  <p class="h3">❝</p>
+  <p class="m0 p-h-4 m-h-4 center">The FAQ pages made it so easy to find the exact answer I needed — from
+    installation to theming, everything was one click away.</p>
+  <div class="row m-v-2 justify-content-center">
+    <div class="col-3 p-h-2">
+      <img src="https://picsum.photos/seed/cssvars-user-1/100/100" class="circle icon-m" alt="Developer avatar">
+    </div>
+    <div class="col-9 p-v-1">
+      <span class="font-weight-400 m-l-1">Alex Rivera, Frontend Developer<br></span>
+    </div>
+  </div>
+  <a href="#contact" class="button button-lg bg-black m-t-2 rounded">Still need help? Contact us</a>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="p-v-1 row container">
+  <div class="col-md-6">
+    <p class="center small black left m-v-1"> © 2026 CSS Vars Framework. All Rights Reserved.
+      <span class="smaller"><a href="#privacy">Privacy Policy</a> | <a href="#terms">Terms of Use</a> |
+        <a href="faq-classic.html">Classic FAQ</a> | <a href="faq-categories.html">Categorized FAQ</a> |
+        <a href="faq-search.html">Search FAQ</a></span>
+    </p>
+  </div>
+  <div class="col-md-6 right">
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225"
+          d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+      </svg>
+    </i>
+    <i class="icon-box hover-grey">
+      <svg viewBox="0 0 24 24" class="icon-xs">
+        <path fill="#222225"
+          d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
+        </path>
+      </svg>
+    </i>
+  </div>
+</footer>
+
+</body>
+</html>

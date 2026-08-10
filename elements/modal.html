@@ -357,10 +357,10 @@
   </section>
 
   <!-- ============================================================ -->
-  <!-- GOTCHAS -->
+  <!-- Notes -->
   <!-- ============================================================ -->
   <section class="panel p2 m-b-2">
-    <h2 class="bold">Gotchas</h2>
+    <h2 class="bold">Notes</h2>
     <ul>
       <li class="m-b-1"><strong>Sibling order matters.</strong> <code>.modal-state:checked + .modal</code> is an adjacent-sibling selector, so the checkbox must come directly before the <code>.modal</code> element — nothing (not even a comment-adjacent wrapper) can sit between them.</li>
       <li class="m-b-1"><strong>Every trigger is a <code>&lt;label for="..."&gt;</code>, not a button with an <code>onclick</code>.</strong> Open triggers, the background, the close X, and in-body "Cancel"/"Done" controls are all labels pointing at the same checkbox id.</li>

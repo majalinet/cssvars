@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FAQ — Search Help Center | CSS Vars Framework</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER (tinted bg, bg-hover nav) ============ -->
+<div class="main-nav p1">
+    <div class="main-menu bga-color-1 rounded nav-bg-hover">
+        <input type="checkbox" id="toggle-h3">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="CSS Vars Framework logo">
+        </a>
+        <div class="nav-panel">
+            <nav class="nav justify-content-end">
+                <a href="#docs">Docs</a>
+                <a href="#components">Components</a>
+                <a href="#showcase">Showcase</a>
+                <a href="faq-search.html" class="bold">FAQ</a>
+                <a href="#contact" class="bold">Contact</a>
+            </nav>
+        </div>
+        <label for="toggle-h3" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
+
+<!-- ============ SEARCH HERO ============ -->
+<div class="row h-50-vh-min p2 m-v-auto">
+  <div class="row m-v-auto container center">
+    <div class="col-md-12 p2">
+      <p class="grey text-uppercase bold">Help Center</p>
+      <h1 class="black bold">How can we help you?</h1>
+      <p class="dark font-weight-400 m-v-1">Search the knowledge base or browse popular topics below.</p>
+
+      <div class="row justify-content-center align-items-center m-t-2">
+        <div class="col-md-6 p-1-2">
+          <input type="search" class="form-control" placeholder="Search for a question, e.g. &quot;dark mode&quot;">
+        </div>
+        <div class="col-md-2 p-1-2">
+          <button type="submit" class="button w-100 bg-black">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg>
+            Search
+          </button>
+        </div>
+      </div>
+
+      <div class="m-t-2">
+        <span class="chip chip-color-1">Installation</span>
+        <span class="chip chip-color-1">Theming</span>
+        <span class="chip chip-color-1">Grid &amp; Layout</span>
+        <span class="chip chip-color-1">Accessibility</span>
+        <span class="chip chip-color-1">Licensing</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ TWO-COLUMN FAQ LIST ============ -->
+<section class="container row m-v-2">
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">What browsers does CSS Vars Framework support?</h4>
+    <p>
+      The framework relies on modern CSS features — <code>clamp()</code>, <code>color-mix()</code>,
+      <code>@layer</code>, and the <code>:checked</code> toggle pattern — so it targets current evergreen browsers.
+      Older browsers without support for these features will see a simplified, unstyled layout rather than a
+      broken one.
+    </p>
+
+    <h4 class="black m-t-4">How is CSS Vars Framework different from Bootstrap or Tailwind?</h4>
+    <p>
+      There's no build step and no configuration file — everything is controlled through CSS custom properties in
+      <code>:root</code>. It's a fluid, viewport-responsive alternative best suited for static and
+      server-rendered sites, marketing pages, and small teams who want to iterate quickly without a compiler.
+    </p>
+
+    <h4 class="black m-t-4">Can I mix utility classes with my own custom CSS?</h4>
+    <p>
+      Yes. Utility classes live in their own <code>@layer</code>, declared after layout and component layers, so
+      your own stylesheet can safely override framework defaults when needed.
+    </p>
+  </div>
+
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">Why isn't the gap utility working on my grid row?</h4>
+    <p>
+      The <code>.row</code>/<code>.col-*</code> flex grid uses <code>flex-shrink: 0</code> by default. Add the
+      opt-in <code>.col-gap</code> class to the row, which sets <code>flex-shrink: 1</code> and
+      <code>min-width: 0</code> together on the children — both are required, and either alone will fail silently.
+    </p>
+
+    <h4 class="black m-t-4">How do I build accessible toggles and menus?</h4>
+    <p>
+      Interactive patterns use native form controls (checkboxes and radios) paired with <code>&lt;label&gt;</code>
+      elements, which keeps them keyboard- and screen-reader-friendly out of the box. Accessibility improvements
+      remain an active area of ongoing work.
+    </p>
+
+    <h4 class="black m-t-4">Where do I report drift between the docs and the stylesheet?</h4>
+    <p>
+      Open an issue on GitHub. Documentation and block-library drift is tracked and audited regularly against the
+      current <code>cssvars.css</code> source.
+    </p>
+  </div>
+</section>
+
+<!-- ============ CONTACT CTA ============ -->
+<section class="h-100 d-flex flex-column m-v-2" id="contacts">
+  <div class="container m-v-2">
+    <h4 class="black bold center text-uppercase">Didn't find your answer?</h4>
+    <p class="dark center display-6">Send us a message and the maintainers will get back to you.</p>
+    <hr class="width-short center">
+  </div>
+  <div class="row container">
+    <div class="col-md-6 p1 m-auto">
+      <div class="row">
+        <div class="col-md-6 p-1-8">
+          <div class="form-group">
+            <label for="faqName" class="bold">NAME*</label>
+            <input type="text" class="form-control" id="faqName">
+          </div>
+        </div>
+        <div class="col-md-6 p-1-8">
+          <div class="form-group">
+            <label for="faqEmail" class="bold">EMAIL*</label>
+            <input type="email" class="form-control" id="faqEmail">
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 p-1-8">
+          <div class="form-group">
+            <label for="faqMessage" class="bold">MESSAGE*</label>
+            <textarea class="form-control" rows="4" id="faqMessage"></textarea>
+          </div>
+        </div>
+      </div>
+      <button type="submit" class="button bg-color-2 text-uppercase">send message</button>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer class="center p2 color-1 bg-light-grey m-t-4">
+  <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/cssvars-logo-with-text.png" class="h-4rem" alt="CSS Vars Framework">
+  <p class="color-1 smaller">
+    Built with love by Kim Majali and contributors.
+    <a href="https://github.com/majalinet/cssvars" target="_blank">
+      <i class="icon-box">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill  icon-s">
+          <path
+            d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z">
+          </path>
+        </svg>
+      </i>
+    </a>
+  </p>
+  <p class="smaller m-t-1">
+    <a href="faq-classic.html" class="m-h-1">Classic accordion</a> |
+    <a href="faq-categories.html" class="m-h-1">Categorized</a> |
+    <a href="faq-cards.html" class="m-h-1">Card grid</a>
+  </p>
+</footer>
+
+</body>
+</html>
