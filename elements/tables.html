@@ -18,72 +18,11 @@
     <title>
       Tables | CSS Vars Framework and UI Kit Free & Open Source
     </title>
-
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="../img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="../img/favicons/manifest.json" />
-    <link rel="icon" href="favicon.ico" />
-    <meta
-      name="msapplication-config"
-      content="../img/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#FF530D" />
-
     <link rel="stylesheet" href="../css/cssvars.css" />
   </head>
 
   <body class="system-ui-style">
-    <div class="main-nav bordered-bottom container-fluid">
-      <div class="main-menu">
-        <a href="http://agilecss.com/" id="logo" alt="CSS Vars Framework and UI Kit"
-          ><img src="../img/logo.png" class="logo"
-        /></a>
 
-        <label for="toggle-1" class="toggle-menu">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon-color-1-fill icon-s"
-            viewbox="0 0 24 24"
-          >
-            <path d="M0 0h24v24H0z" fill="none" />
-            <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-          </svg>
-        </label>
-        <input type="checkbox" id="toggle-1" />
-
-        <nav class="nav">
-          <ul>
-            <li><a href="../docs.html">Documentaion</a></li>
-            <li><a href="elements.html">UI Elements</a></li>
-            <li><a href="../sections/sections.html">Sections</a></li>
-            <li><a href="../themes/themes.html">Themes</a></li>
-            <li>
-              <a
-                href="https://github.com/majalinet/Agile-CSS"
-                class="outline-color-1"
-                >Download</a
-              >
-            </li>
-          </ul>
-        </nav>
-      </div>
-    </div>
 
     <header class="promo-box-s bg-light-grey">
       <div class="container">
@@ -145,934 +84,318 @@
           
         </div>
       </div>
-      <div class="col-lg-10 p-d-2">
-        <div>
-          <div>
+<div class="container main-flow col-lg-10">
 
-            <h2>Default Table</h2>
-          <p>Add to the table element the class <b>table</b> to get the default style table</p>
+  <div class="">
 
-      <div class="auto-overflow-x">
-<table id="tables" class="table">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h1>Tables</h1>
+    <p>Build tables with the <b>table</b> class, then layer on modifiers for stripes, hover states, borders, cell spacing, dark or color-1 accents, sizing, sticky headers, and scroll affordances — no custom CSS required.</p>
+
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Default Table</h2>
+    <p>Add the class <b>table</b> to the table element to get the default style.</p>
+    <div class="overflow-x-auto">
+      <table class="table">
+        <thead>
+          <tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-
-
-      <h2 class="m-t-8">Striped Table</h2>
-      <p>Add the classes <b>table table-striped</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-striped">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Striped Table</h2>
+    <p>Add the classes <b>table table-striped</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-striped">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-      <h5 class="m-t-4">Striped Table Color-1</h5>
-      <p>Add the classes <b>table table-striped-color-1</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-striped-color-1">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Striped Table Color-1</h5>
+    <p>Add the classes <b>table table-striped-color-1</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-striped-color-1">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-
-
-
-      <h2 class="m-t-8">Hover Table</h2>
-      <p>Add the classes <b>table table-hover</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-hover">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Hover Table</h2>
+    <p>Add the classes <b>table table-hover</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-hover">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-      <h5 class="m-t-4">Hover Table Color-1</h5>
-      <p>Add the classes <b>table table-hover-color-1</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-hover-color-1">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Hover Table Color-1</h5>
+    <p>Add the classes <b>table table-hover-color-1</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-hover-color-1">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-      
-
-
-
-      <h2 class="m-t-8">Bordered Table</h2>
-      <p>Add the classes <b>table table-bordered</b></p>
-
-      <div class="auto-overflow-x">
-<table class="table table-bordered">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Bordered Table</h2>
+    <p>Add the classes <b>table table-bordered</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-bordered">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-      <h5 class="m-t-4">Bordered Table Color 1</h5>
-      <p>Add the classes <b>table table-bordered-color-1</b></p>
-
-      <div class="auto-overflow-x">
-<table class="table table-bordered-color-1">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Bordered Table Color-1</h5>
+    <p>Add the classes <b>table table-bordered-color-1</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-bordered-color-1">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-
-
-
-      <h2 class="m-t-8">Striped Table no cell borders</h2>
-      <p>Add the classes <b>table table-striped table-cell-border-none</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-striped table-cell-border-none">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Cell Separate Table</h2>
+    <p>Add the class <b>table table-cell-separate</b> (or <b>table-cell-separate-color-1</b>), optionally with <b>table-cell-border-none</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-cell-separate table-cell-border-none">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-      <h5 class="m-t-4">Striped Table Color-1 no cell borders</h5>
-      <p>Add the class <b>table table-striped-color-1 table-cell-border-none</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-striped-color-1 table-cell-border-none">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Cell Separate Color-1, No Cell Borders</h5>
+    <div class="overflow-x-auto">
+      <table class="table table-cell-separate-color-1 table-cell-border-none">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-
-
-
-      <h2 class="m-t-8">Cell Separate Table</h2>
-      <h5 >Striped Table Color-1 cell separate</h5>
-      <p>Add the class <b>table table-cell-separate</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Dark Header / Footer / First &amp; Last Column</h2>
+    <p>Combine <b>table-dark-header</b>, <b>table-dark-footer</b>, <b>table-dark-1st-col</b>, <b>table-dark-last-col</b> — or the <b>table-color-1-*</b> equivalents for an accent tint.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-cell-separate table-cell-border-none table-dark-header table-dark-footer">
+        <thead><tr><th>Month</th><th>Leads</th><th>Sales</th></tr></thead>
+        <tbody>
+          <tr><td>January</td><td>100</td><td>50</td></tr>
+          <tr><td>February</td><td>200</td><td>100</td></tr>
+        </tbody>
+        <tfoot><tr><td>Sum</td><td>300</td><td>150</td></tr></tfoot>
       </table>
-</div>
+    </div>
 
-
-      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
-      <p>Add the class <b>table table-cell-separate table-cell-border-none</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate table-cell-border-none ">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Color-1 Header / Footer</h5>
+    <div class="overflow-x-auto">
+      <table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header table-color-1-footer">
+        <thead><tr><th>Month</th><th>Leads</th><th>Sales</th></tr></thead>
+        <tbody>
+          <tr><td>January</td><td>100</td><td>50</td></tr>
+          <tr><td>February</td><td>200</td><td>100</td></tr>
+        </tbody>
+        <tfoot><tr><td>Sum</td><td>300</td><td>150</td></tr></tfoot>
       </table>
-</div>
+    </div>
 
-
-      <h5 class="m-t-4">Striped Table Color-1 cell separate</h5>
-      <p>Add the class <b>table table-cell-separate</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Table Height</h2>
+    <p>Add <b>table-compact</b>, or <b>table-large-2x</b> through <b>table-large-5x</b>, to control row height.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-compact table-striped">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th><th>City</th><th>Country</th><th>Age</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td><td>Montreal</td><td>Canada</td><td>30</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td><td>Kharkov</td><td>Ukraine</td><td>25</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
-      <p>Add the class <b>table table-cell-separate table-cell-border-none</b></p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1 table-cell-border-none">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <h5 class="m-t-4">Table Large 2x, with Fixed Cell Height</h5>
+    <p>For fixed-height cells with independent scrolling, wrap the cell content in a <b>div</b> using <b>mh-1rem</b> through <b>mh-10rem</b>, plus <b>overflow-y-auto</b>, <b>overflow-y-scroll</b>, or <b>overflow-hidden</b>.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-large-2x table-bordered">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th><th>City</th><th>Country</th><th>Age</th></tr></thead>
+        <tbody>
+          <tr>
+            <td><div class="mh-3rem overflow-y-auto">John<br>2nd line<br>3rd line</div></td>
+            <td><div class="mh-3rem overflow-y-auto">Doe</div></td>
+            <td><div class="mh-3rem overflow-y-auto">john@example.com</div></td>
+            <td><div class="mh-3rem overflow-y-auto">Montreal</div></td>
+            <td><div class="mh-3rem overflow-y-auto">Canada</div></td>
+            <td><div class="mh-3rem overflow-y-auto">30</div></td>
+          </tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
-
-
-
-      <h2 class="m-t-8">Dark Header</h2>
-      <h5>Striped Table Color-1 cell separate border none, dark head</h5>
-      <p>Add the class <b>table-dark-header</b> to the table</p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate table-cell-border-none table-dark-header">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Responsive &amp; Fixed-Layout Table</h2>
+    <p>Wrap the table in a <b>div</b> with <b>overflow-x-auto</b> so wide tables scroll horizontally on small screens instead of breaking layout. Add <b>table-layout-fixed</b> plus <b>table-td-w-5rem</b> / <b>table-td-w-10rem</b> / <b>table-td-w-15rem</b> for predictable column widths.</p>
+    <div class="overflow-x-auto">
+      <table class="table table-layout-fixed table-td-w-15rem table-bordered">
+        <thead><tr><th>Firstname</th><th>Lastname</th><th>Email</th><th>City</th><th>Country</th><th>Age</th></tr></thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td><td>Montreal</td><td>Canada</td><td>30</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td><td>Kharkov</td><td>Ukraine</td><td>25</td></tr>
+        </tbody>
       </table>
-</div>
+    </div>
 
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Sticky Table Header</h2>
+    <p>Give the container a bounded height with <b>overflow-y-auto</b>, then add <b>position-sticky top-0 z-2</b> to the header cells. Because <b>table-dark-header</b> / <b>table-color-1-header</b> already paint an opaque background on <b>th</b>, the header stays legible as rows scroll beneath it. For an un-tinted header, pair <b>position-sticky top-0 z-2</b> with <b>bg-panel</b> so the sticky cells don't turn transparent over the scrolling body.</p>
 
-      <h5 class="m-t-4">Striped Table Color-1 cell separate border none</h5>
-      <p>Add the class <b>table-color-1-header</b> to the table</p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header">
-          <thead>
-              <tr>
-                  <th>Firstname</th>
-                  <th>Lastname</th>
-                  <th>Email</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>John</td>
-                  <td>Doe</td>
-                  <td>john@example.com</td>
-              </tr>
-              <tr>
-                  <td>Kim</td>
-                  <td>Doe</td>
-                  <td>Kim@example.com</td>
-              </tr>
-              <tr>
-                  <td>Dan</td>
-                  <td>Doe</td>
-                  <td>dan@example.com</td>
-              </tr>
-          </tbody>
-      </table>
-</div>
-
-
-
-
-
-      <h2 class="m-t-8">Dark Footer</h2>
-      <h5">Footer Dark Table</h5>
-      <p>Create a tfoot element and add the class <b>table-dark-footer</b> to the table</p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate table-cell-border-none table-dark-header table-dark-footer">
-          <thead>
-              <tr>
-                  <th>Month</th>
-                  <th>Leads</th>
-                  <th>Sales</th>
-              </tr>
-          </thead>
-          <tbody>
-              <tr>
-                  <td>January</td>
-                  <td>100</td>
-                  <td>50</td>
-              </tr>
-              <tr>
-                  <td>February</td>
-                  <td>200</td>
-                  <td>100</td>
-              </tr>
-            </tbody>
-            <tfoot>
-              <tr>
-                  <td>Sum</td>
-                  <td>300</td>
-                  <td>150</td>
-              </tr>
-            </tfoot>
-      </table>
-</div>
-
-
-      <h5 class="m-t-4">Footer Color 1 Table</h5>
-      <p>Create a tfoot element and add the class <b>table-color-1-footer</b> to the table</p>
-      <div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-header table-color-1-footer">
+    <h5 class="m-t-4">Sticky Dark Header</h5>
+    <div class="h-25-vh overflow-y-auto overflow-x-auto position-relative rounded-style shadow-input p-1-2">
+      <table class="table table-cell-separate table-cell-border-none table-dark-header">
         <thead>
           <tr>
-              <th>Month</th>
-              <th>Leads</th>
-              <th>Sales</th>
+            <th class="position-sticky top-0 z-2">Month</th>
+            <th class="position-sticky top-0 z-2">Leads</th>
+            <th class="position-sticky top-0 z-2">Sales</th>
           </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>January</td>
-              <td>100</td>
-              <td>50</td>
-          </tr>
-          <tr>
-              <td>February</td>
-              <td>200</td>
-              <td>100</td>
-          </tr>
+        </thead>
+        <tbody>
+          <tr><td>January</td><td>120</td><td>60</td></tr>
+          <tr><td>February</td><td>180</td><td>90</td></tr>
+          <tr><td>March</td><td>200</td><td>110</td></tr>
+          <tr><td>April</td><td>160</td><td>80</td></tr>
+          <tr><td>May</td><td>220</td><td>120</td></tr>
+          <tr><td>June</td><td>240</td><td>130</td></tr>
+          <tr><td>July</td><td>210</td><td>100</td></tr>
+          <tr><td>August</td><td>230</td><td>115</td></tr>
+          <tr><td>September</td><td>190</td><td>95</td></tr>
+          <tr><td>October</td><td>250</td><td>135</td></tr>
+          <tr><td>November</td><td>260</td><td>140</td></tr>
+          <tr><td>December</td><td>300</td><td>160</td></tr>
         </tbody>
-        <tfoot>
+      </table>
+    </div>
+
+    <h5 class="m-t-4">Sticky Neutral Header (Color-1 accent text)</h5>
+    <div class="h-25-vh overflow-y-auto overflow-x-auto position-relative rounded-style shadow-input p-1-2">
+      <table class="table table-striped">
+        <thead>
           <tr>
-              <td>Sum</td>
-              <td>300</td>
-              <td>150</td>
+            <th class="position-sticky top-0 z-2 bg-panel">Firstname</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Lastname</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Email</th>
           </tr>
-        </tfoot>
-  </table>
-</div>
-
-
-
-
-  <h2 class="m-t-8">Dark 1st Column</h2>
-  <h5">1st Column Dark Table</h5>
-  <p>Add the class <b>table-dark-1st-col</b> to the table</p>
-  <div class="auto-overflow-x">
-<table class="table table-cell-separate table-cell-border-none table-dark-1st-col">
-      <tbody>
-        <tr>
-            <td>Month</td>
-            <td>January</td>
-            <td>February</td>
-            <td>March</td>
-          </tr>
-          <tr>
-            <td>Leads</td>
-            <td>200</td>
-            <td>100</td>
-            <td>100</td>
-          </tr>
+        </thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td></tr>
+          <tr><td>Dan</td><td>Doe</td><td>dan@example.com</td></tr>
+          <tr><td>Alex</td><td>Reyes</td><td>alex@example.com</td></tr>
+          <tr><td>Priya</td><td>Shah</td><td>priya@example.com</td></tr>
+          <tr><td>Marco</td><td>Rossi</td><td>marco@example.com</td></tr>
+          <tr><td>Nina</td><td>Petrov</td><td>nina@example.com</td></tr>
+          <tr><td>Sam</td><td>Lee</td><td>sam@example.com</td></tr>
+          <tr><td>Grace</td><td>Okafor</td><td>grace@example.com</td></tr>
+          <tr><td>Leo</td><td>Fischer</td><td>leo@example.com</td></tr>
         </tbody>
-        <tfoot>
+      </table>
+    </div>
+
+    <!-- ============================================================ -->
+    <h2 class="m-t-4">Floating Scroll Buttons — All Directions</h2>
+    <p>For tables too wide and too tall to see at a glance, anchor circular <b>button</b> controls to the corners of a <b>position-relative</b> wrapper with <b>position-absolute</b> plus <b>top-1</b>, <b>bottom-1</b>, <b>left-1</b>, or <b>right-1</b>. Each button calls the container's native <code>scrollTo</code> — no framework JavaScript required, this is a page-level enhancement.</p>
+
+    <div id="scrollDemo" class="h-25-vh overflow-y-auto overflow-x-auto position-relative rounded-style shadow-input p-1-2">
+
+      <button type="button" class="circle w-3rem h-3rem p-1-2 d-flex align-items-center justify-content-center position-absolute top-1 right-1 z-3 bg-color-1 shadow"
+              onclick="document.getElementById('scrollDemo').scrollTo({top:0, behavior:'smooth'})" aria-label="Scroll to top">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><polygon points="12,7 19,15 5,15"/></svg>
+      </button>
+
+      <button type="button" class="circle w-3rem h-3rem p-1-2 d-flex align-items-center justify-content-center position-absolute bottom-1 right-1 z-3 bg-color-1 shadow"
+              onclick="var e=document.getElementById('scrollDemo'); e.scrollTo({top:e.scrollHeight, behavior:'smooth'})" aria-label="Scroll to bottom">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><polygon points="12,17 19,9 5,9"/></svg>
+      </button>
+
+      <button type="button" class="circle w-3rem h-3rem p-1-2 d-flex align-items-center justify-content-center position-absolute top-1 left-1 z-3 bg-color-2 shadow"
+              onclick="document.getElementById('scrollDemo').scrollTo({left:0, behavior:'smooth'})" aria-label="Scroll to left edge">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><polygon points="17,5 9,12 17,19"/></svg>
+      </button>
+
+      <button type="button" class="circle w-3rem h-3rem p-1-2 d-flex align-items-center justify-content-center position-absolute bottom-1 left-1 z-3 bg-color-2 shadow"
+              onclick="var e=document.getElementById('scrollDemo'); e.scrollTo({left:e.scrollWidth, behavior:'smooth'})" aria-label="Scroll to right edge">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><polygon points="7,5 15,12 7,19"/></svg>
+      </button>
+
+      <table class="table table-layout-fixed table-td-w-15rem table-cell-separate table-cell-border-none">
+        <thead>
           <tr>
-            <td>Sales</td>
-              <td>100</td>
-              <td>50</td>
-              <td>50</td>
+            <th class="position-sticky top-0 z-2 bg-panel">Firstname</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Lastname</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Email</th>
+            <th class="position-sticky top-0 z-2 bg-panel">City</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Country</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Age</th>
+            <th class="position-sticky top-0 z-2 bg-panel">Role</th>
           </tr>
-        </tfoot>
-  </table>
-</div>
-
-
-  <h5 class="m-t-4">1st Column Color 1 Table</h5>
-  <p>Add the class <b>table-color-1-1st-col</b> to the table</p>
-  <div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-1st-col">
-    <tbody>
-      <tr>
-          <td>Month</td>
-          <td>January</td>
-          <td>February</td>
-          <td>March</td>
-        </tr>
-        <tr>
-          <td>Leads</td>
-          <td>200</td>
-          <td>100</td>
-          <td>100</td>
-        </tr>
-      </tbody>
-      <tfoot>
-        <tr>
-          <td>Sales</td>
-            <td>100</td>
-            <td>50</td>
-            <td>50</td>
-        </tr>
-      </tfoot>
-</table>
-</div>
-
-
-
-
-<h2 class="m-t-8">Dark Last Column</h2>
-<h5">Last Column Dark Table</h5>
-<p>Add the class <b>table-dark-last-col</b> to the table</p>
-<div class="auto-overflow-x">
-<table class="table table-cell-separate table-cell-border-none table-dark-1st-col table-dark-last-col">
-    <tbody>
-      <tr>
-        <td>Month</td>
-        <td>January</td>
-        <td>February</td>
-        <td>Total</td>
-      </tr>
-      <tr>
-        <td>Leads</td>
-        <td>200</td>
-        <td>100</td>
-        <td>300</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Sales</td>
-          <td>100</td>
-          <td>50</td>
-          <td>150</td>
-      </tr>
-    </tfoot>
-</table>
-</div>
-
-
-<h5 class="m-t-4">Last Column Color 1 Table</h5>
-<p>Add the class <b>table-color-1-last-col</b> to the table</p>
-<div class="auto-overflow-x">
-<table class="table table-cell-separate-color-1 table-cell-border-none table-color-1-1st-col table-color-1-last-col">
-  <tbody>
-    <tr>
-        <td>Month</td>
-        <td>January</td>
-        <td>February</td>
-        <td>Total</td>
-      </tr>
-      <tr>
-        <td>Leads</td>
-        <td>200</td>
-        <td>100</td>
-        <td>300</td>
-      </tr>
-    </tbody>
-    <tfoot>
-      <tr>
-        <td>Sales</td>
-          <td>100</td>
-          <td>50</td>
-          <td>150</td>
-      </tr>
-    </tfoot>
-</table>
-</div>
-
-
-
-<h2 class="m-t-8">Table Height</h2>
-<p>Add to the tables any of the classes <b>table-compact</b> <b>table-large-2x</b> <b>table-large-3x</b> <b>table-large-4x</b> <b>table-large-5x</b> </p>
-<p>Add the class <b>table-compact</b> to the table</p>
-<h5>Table compact</h5>
-<div class="auto-overflow-x">
-<table class="table table-compact table-striped">
-  <thead>
-      <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-          <th>City</th>
-          <th>Country</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>John</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-          <td>Montreal</td>
-          <td>Canada</td>
-          <td>30</td>
-      </tr>
-      <tr>
-          <td>Kim</td>
-          <td>Doe</td>
-          <td>Kim@example.com</td>
-          <td>Kharkov</td>
-          <td>Ukraine</td>
-          <td>25</td>
-      </tr>
-  </tbody>
-</table>
-</div>
-
-
-
-<h5 class="m-t-4">Table Large 2x</h5>
-<p>Add the class <b>table-large-2x</b> to the table</p>
-<div class="auto-overflow-x">
-<table class="table table-large-2x table-bordered">
-  <thead>
-      <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-          <th>City</th>
-          <th>Country</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>John<br>2nd line</td>
-          <td>Doe</td>
-          <td>john@example.com</td>
-          <td>Montreal</td>
-          <td>Canada</td>
-          <td>30</td>
-      </tr>
-      <tr>
-          <td>Kim</td>
-          <td>Doe</td>
-          <td>Kim@example.com</td>
-          <td>Kharkov</td>
-          <td>Ukraine</td>
-          <td>25</td>
-      </tr>
-  </tbody>
-</table>
-</div>
-
-
-<h5 class="m-t-4">Table Large 3x</h5>
-<p>Add the class <b>table-large-3x</b> to the table</p>
-<div class="auto-overflow-x">
-<table class="table table-large-3x table-bordered">
-  <thead>
-      <tr>
-          <th>First name</th>
-          <th>Last name</th>
-          <th>Email</th>
-          <th>City</th>
-          <th>Country</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-        <td>John<br>2nd line<br>3rd line</td>
-        <td>Doe</td>
-          <td>john@example.com</td>
-          <td>Montreal</td>
-          <td>Canada</td>
-          <td>30</td>
-      </tr>
-      <tr>
-          <td>Kim</td>
-          <td>Doe</td>
-          <td>Kim@example.com</td>
-          <td>Kharkov</td>
-          <td>Ukraine</td>
-          <td>25</td>
-      </tr>
-  </tbody>
-</table>
-</div>
-
-
-<h5 class="m-t-4">Table Fixed Cell Height</h5>
-<p>Inside each cell add div with classes from <b>.mh-1rem</b> to <b>mh-10rem</b><br>
-  and based on your need add <b>overflow-y-scroll</b> or <b>overflow-y-auto</b> or <b>overflow-hidden</b></p>
-<div class="auto-overflow-x">
-<table class="table table-large-2x table-bordered">
-  <thead>
-      <tr>
-          <th>Firstname</th>
-          <th>Lastname</th>
-          <th>Email</th>
-          <th>City</th>
-          <th>Country</th>
-          <th>Age</th>
-      </tr>
-  </thead>
-  <tbody>
-      <tr>
-          <td>
-            <div class="mh-3rem overflow-y-auto">John<br>2nd line<br>3rd line<br></div>
-          </td>
-          <td>
-            <div class="mh-3rem overflow-y-auto">Doe</div>
-          </td>
-          <td>
-            <div class="mh-3rem overflow-y-auto">john@example.com</div>
-          </td>
-          <td>
-            <div class="mh-3rem overflow-y-auto">Montreal</div>
-          </td>
-          <td>
-            <div class="mh-3rem overflow-y-auto">Canada</div>
-          </td>
-          <td>
-            <div class="mh-3rem overflow-y-auto">30</div>
-          </td>
-      </tr>
-  </tbody>
-</table>
-</div>
-
-
-  <h2 class="m-t-8">Responsive Table</h2>
-  <p>Add the class <b>auto-overflow-x</b> to a div and put the table inside it</p>
-  <div class="auto-overflow-x div-wide-table">
-    <table class="table table-layout-fixed">
-      <thead>
-          <tr>
-              <th>Firstname</th>
-              <th>Lastname</th>
-              <th>Email</th>
-              <th>City</th>
-              <th>Country</th>
-              <th>Age</th>
-          </tr>
-      </thead>
-      <tbody>
-          <tr>
-              <td>John</td>
-              <td>Doe</td>
-              <td>john@example.com</td>
-              <td>Montreal</td>
-              <td>Canada</td>
-              <td>30</td>
-          </tr>
-          <tr>
-              <td>Kim</td>
-              <td>Doe</td>
-              <td>Kim@example.com</td>
-              <td>Kharkov</td>
-              <td>Ukraine</td>
-              <td>25</td>
-          </tr>
-      </tbody>
-  </table>
-</div>
-
-
-<h2 class="m-t-8">Fixed Layout Table</h2>
-<p>Add the class <b>table-layout-fixed</b> and one of these clases <b>table-td-w-5rem table-td-w-10rem table-td-w-15rem</b></p>
-<div class="auto-overflow-x div-wide-table">
-  <table class="table table-layout-fixed table-td-w-15rem">
-    <thead>
-        <tr>
-            <th>Firstname</th>
-            <th>Lastname</th>
-            <th>Email</th>
-            <th>City</th>
-            <th>Country</th>
-            <th>Age</th>
-        </tr>
-    </thead>
-    <tbody>
-        <tr>
-            <td>John</td>
-            <td>Doe</td>
-            <td>john@example.com</td>
-            <td>Montreal</td>
-            <td>Canada</td>
-            <td>30</td>
-        </tr>
-        <tr>
-            <td>Kim</td>
-            <td>Doe</td>
-            <td>Kim@example.com</td>
-            <td>Kharkov</td>
-            <td>Ukraine</td>
-            <td>25</td>
-        </tr>
-    </tbody>
-</table>
-</div>
+        </thead>
+        <tbody>
+          <tr><td>John</td><td>Doe</td><td>john@example.com</td><td>Montreal</td><td>Canada</td><td>30</td><td>Engineer</td></tr>
+          <tr><td>Kim</td><td>Doe</td><td>kim@example.com</td><td>Kharkov</td><td>Ukraine</td><td>25</td><td>Designer</td></tr>
+          <tr><td>Alex</td><td>Reyes</td><td>alex@example.com</td><td>Austin</td><td>USA</td><td>34</td><td>PM</td></tr>
+          <tr><td>Priya</td><td>Shah</td><td>priya@example.com</td><td>Pune</td><td>India</td><td>28</td><td>Analyst</td></tr>
+          <tr><td>Marco</td><td>Rossi</td><td>marco@example.com</td><td>Milan</td><td>Italy</td><td>41</td><td>Sales</td></tr>
+          <tr><td>Nina</td><td>Petrov</td><td>nina@example.com</td><td>Sofia</td><td>Bulgaria</td><td>29</td><td>Support</td></tr>
+          <tr><td>Sam</td><td>Lee</td><td>sam@example.com</td><td>Busan</td><td>South Korea</td><td>37</td><td>Engineer</td></tr>
+          <tr><td>Grace</td><td>Okafor</td><td>grace@example.com</td><td>Lagos</td><td>Nigeria</td><td>26</td><td>Marketing</td></tr>
+          <tr><td>Leo</td><td>Fischer</td><td>leo@example.com</td><td>Vienna</td><td>Austria</td><td>33</td><td>QA</td></tr>
+          <tr><td>Ravi</td><td>Kumar</td><td>ravi@example.com</td><td>Chennai</td><td>India</td><td>31</td><td>Engineer</td></tr>
+          <tr><td>Elena</td><td>Popescu</td><td>elena@example.com</td><td>Bucharest</td><td>Romania</td><td>27</td><td>Designer</td></tr>
+          <tr><td>Yuki</td><td>Tanaka</td><td>yuki@example.com</td><td>Osaka</td><td>Japan</td><td>35</td><td>PM</td></tr>
+        </tbody>
+      </table>
+    </div>
 
   </div>
-  
-</div>
-
 
 </div>
     </main>
