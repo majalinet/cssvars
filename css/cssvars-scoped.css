@@ -548,269 +548,75 @@
   width: 100%;
   padding: var(--col-v-padding, 0) var(--col-h-padding, 0);
 }
-.cssvars .col {
-  flex-basis: 0;
-  flex-grow: 1;
-  max-width: 100%;
-}
-.cssvars .col-auto {
-  flex: 0 0 auto;
-  width: auto;
-  max-width: 100%;
-}
-.cssvars .col-1 {
-  flex: 0 0 8.333333%;
-  max-width: 8.333333%;
-}
-.cssvars .col-2 {
-  flex: 0 0 16.666667%;
-  max-width: 16.666667%;
-}
-.cssvars .col-3 {
-  flex: 0 0 25%;
-  max-width: 25%;
-}
-.cssvars .col-4 {
-  flex: 0 0 33.333333%;
-  max-width: 33.333333%;
-}
-.cssvars .col-5 {
-  flex: 0 0 41.666667%;
-  max-width: 41.666667%;
-}
-.cssvars .col-6 {
-  flex: 0 0 50%;
-  max-width: 50%;
-}
-.cssvars .col-7 {
-  flex: 0 0 58.333333%;
-  max-width: 58.333333%;
-}
-.cssvars .col-8 {
-  flex: 0 0 66.666667%;
-  max-width: 66.666667%;
-}
-.cssvars .col-9 {
-  flex: 0 0 75%;
-  max-width: 75%;
-}
-.cssvars .col-10 {
-  flex: 0 0 83.333333%;
-  max-width: 83.333333%;
-}
-.cssvars .col-11 {
-  flex: 0 0 91.666667%;
-  max-width: 91.666667%;
-}
-.cssvars .col-12 {
-  flex: 0 0 100%;
-  max-width: 100%;
-}
+  .cssvars .col { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  .cssvars .col-auto { flex: 0 0 auto; width: auto; max-width: 100%; }
+  .cssvars .col-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .cssvars .col-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .cssvars .col-3 { flex: 0 0 25%; max-width: 25%; }
+  .cssvars .col-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .cssvars .col-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .cssvars .col-6 { flex: 0 0 50%; max-width: 50%; }
+  .cssvars .col-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .cssvars .col-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .cssvars .col-9 { flex: 0 0 75%; max-width: 75%; }
+  .cssvars .col-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .cssvars .col-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .cssvars .col-12 { flex: 0 0 100%; max-width: 100%; }
 @media (min-width: 576px) {
-  .cssvars .col-sm {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .cssvars .col-sm-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .cssvars .col-sm-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-  .cssvars .col-sm-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .cssvars .col-sm-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-  }
-  .cssvars .col-sm-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+  .cssvars .col-sm { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  .cssvars .col-sm-auto { flex: 0 0 auto; width: auto; max-width: 100%; }
+  .cssvars .col-sm-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .cssvars .col-sm-6 { flex: 0 0 50%; max-width: 50%; }
+  .cssvars .col-sm-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .cssvars .col-sm-12 { flex: 0 0 100%; max-width: 100%; }
 }
 @media (min-width: 768px) {
-  .cssvars .col-md {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .cssvars .col-md-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .cssvars .col-md-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-  }
-  .cssvars .col-md-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .cssvars .col-md-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-  .cssvars .col-md-5 {
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-  }
-  .cssvars .col-md-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .cssvars .col-md-7 {
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-  }
-  .cssvars .col-md-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-  }
-  .cssvars .col-md-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .cssvars .col-md-10 {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-  }
-  .cssvars .col-md-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+  .cssvars .col-md { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  .cssvars .col-md-auto { flex: 0 0 auto; width: auto; max-width: 100%; }
+  .cssvars .col-md-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .cssvars .col-md-3 { flex: 0 0 25%; max-width: 25%; }
+  .cssvars .col-md-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .cssvars .col-md-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .cssvars .col-md-6 { flex: 0 0 50%; max-width: 50%; }
+  .cssvars .col-md-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .cssvars .col-md-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .cssvars .col-md-9 { flex: 0 0 75%; max-width: 75%; }
+  .cssvars .col-md-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .cssvars .col-md-12 { flex: 0 0 100%; max-width: 100%; }
 }
 @media (min-width: 992px) {
-  .cssvars .col-lg {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .cssvars .col-lg-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .cssvars .col-lg-1 {
-    flex: 0 0 8.333333%;
-    max-width: 8.333333%;
-  }
-  .cssvars .col-lg-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-  }
-  .cssvars .col-lg-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .cssvars .col-lg-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-  .cssvars .col-lg-5 {
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-  }
-  .cssvars .col-lg-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .cssvars .col-lg-7 {
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-  }
-  .cssvars .col-lg-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-  }
-  .cssvars .col-lg-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .cssvars .col-lg-10 {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-  }
-  .cssvars .col-lg-11 {
-    flex: 0 0 91.666667%;
-    max-width: 91.666667%;
-  }
-  .cssvars .col-lg-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
-  .cssvars .lg-order-first {
-    order: -1;
-  }
-  .cssvars .lg-order-last {
-    order: 13;
-  }
+  .cssvars .col-lg { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  .cssvars .col-lg-auto { flex: 0 0 auto; width: auto; max-width: 100%; }
+  .cssvars .col-lg-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .cssvars .col-lg-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .cssvars .col-lg-3 { flex: 0 0 25%; max-width: 25%; }
+  .cssvars .col-lg-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .cssvars .col-lg-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .cssvars .col-lg-6 { flex: 0 0 50%; max-width: 50%; }
+  .cssvars .col-lg-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .cssvars .col-lg-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .cssvars .col-lg-9 { flex: 0 0 75%; max-width: 75%; }
+  .cssvars .col-lg-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .cssvars .col-lg-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .cssvars .col-lg-12 { flex: 0 0 100%; max-width: 100%; }
+  .cssvars .lg-order-first { order: -1; }
+  .cssvars .lg-order-last { order: 13; }
 }
 @media (min-width: 1200px) {
-  .cssvars .col-xl {
-    flex-basis: 0;
-    flex-grow: 1;
-    max-width: 100%;
-  }
-  .cssvars .col-xl-auto {
-    flex: 0 0 auto;
-    width: auto;
-    max-width: 100%;
-  }
-  .cssvars .col-xl-1 {
-    flex: 0 0 8.333333%;
-    max-width: 8.333333%;
-  }
-  .cssvars .col-xl-2 {
-    flex: 0 0 16.666667%;
-    max-width: 16.666667%;
-  }
-  .cssvars .col-xl-3 {
-    flex: 0 0 25%;
-    max-width: 25%;
-  }
-  .cssvars .col-xl-4 {
-    flex: 0 0 33.333333%;
-    max-width: 33.333333%;
-  }
-  .cssvars .col-xl-5 {
-    flex: 0 0 41.666667%;
-    max-width: 41.666667%;
-  }
-  .cssvars .col-xl-6 {
-    flex: 0 0 50%;
-    max-width: 50%;
-  }
-  .cssvars .col-xl-7 {
-    flex: 0 0 58.333333%;
-    max-width: 58.333333%;
-  }
-  .cssvars .col-xl-8 {
-    flex: 0 0 66.666667%;
-    max-width: 66.666667%;
-  }
-  .cssvars .col-xl-9 {
-    flex: 0 0 75%;
-    max-width: 75%;
-  }
-  .cssvars .col-xl-10 {
-    flex: 0 0 83.333333%;
-    max-width: 83.333333%;
-  }
-  .cssvars .col-xl-11 {
-    flex: 0 0 91.666667%;
-    max-width: 91.666667%;
-  }
-  .cssvars .col-xl-12 {
-    flex: 0 0 100%;
-    max-width: 100%;
-  }
+  .cssvars .col-xl { flex-basis: 0; flex-grow: 1; max-width: 100%; }
+  .cssvars .col-xl-auto { flex: 0 0 auto; width: auto; max-width: 100%; }
+  .cssvars .col-xl-1 { flex: 0 0 8.333333%; max-width: 8.333333%; }
+  .cssvars .col-xl-2 { flex: 0 0 16.666667%; max-width: 16.666667%; }
+  .cssvars .col-xl-3 { flex: 0 0 25%; max-width: 25%; }
+  .cssvars .col-xl-4 { flex: 0 0 33.333333%; max-width: 33.333333%; }
+  .cssvars .col-xl-5 { flex: 0 0 41.666667%; max-width: 41.666667%; }
+  .cssvars .col-xl-6 { flex: 0 0 50%; max-width: 50%; }
+  .cssvars .col-xl-7 { flex: 0 0 58.333333%; max-width: 58.333333%; }
+  .cssvars .col-xl-8 { flex: 0 0 66.666667%; max-width: 66.666667%; }
+  .cssvars .col-xl-9 { flex: 0 0 75%; max-width: 75%; }
+  .cssvars .col-xl-10 { flex: 0 0 83.333333%; max-width: 83.333333%; }
+  .cssvars .col-xl-11 { flex: 0 0 91.666667%; max-width: 91.666667%; }
+  .cssvars .col-xl-12 { flex: 0 0 100%; max-width: 100%; }
 }
 .cssvars article > * + *, .cssvars aside > * + *, .cssvars details > * + * , .cssvars blockquote > * + * {
   margin-top: var(--content-flow, 0);
@@ -3179,7 +2985,6 @@ left: 105%;
 /* Default style resets, as utilities */
 .cssvars .p-default     { padding: var(--default-padding); }
 .cssvars .m-default     { margin: var(--default-margin); }
-.cssvars .gap-default   { gap: var(--default-gap); }
 .cssvars .border-default{ border: var(--default-border); }
 .cssvars .shadow-default{ box-shadow: var(--box-shadow); }
 .cssvars .child-padding > * { padding: var(--child-padding, 0); }
@@ -3189,11 +2994,18 @@ left: 105%;
 .cssvars .child-padding-3 > * { padding: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .cssvars .child-padding-4 > * { padding: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 /* Gap utility — For Flex/Grid spacing (no edge bleed) */
+.cssvars .gap { gap: var(--default-gap, 1rem); }
 .cssvars .gap-1 { gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .cssvars .gap-2 { gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .cssvars .gap-3 { gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
 .cssvars .gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
-.cssvars .gap-4 { gap: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
+/* Grid gutters — replaces native `gap` for horizontal spacing only, .col-* widths never overflow */
+.cssvars .row.gap, .cssvars .row.gap-1, .cssvars .row.gap-2, .cssvars .row.gap-3, .cssvars .row.gap-4 { column-gap: 0; }
+.cssvars .row.gap {--col-h-padding: calc(var(--default-gap, 1rem) / 2); }
+.cssvars .row.gap-1 { --col-h-padding: calc(var(--space-1) / 2); }
+.cssvars .row.gap-2 { --col-h-padding: calc(var(--space-2) / 2); }
+.cssvars .row.gap-3 { --col-h-padding: calc(var(--space-3) / 2); }
+.cssvars .row.gap-4 { --col-h-padding: calc(var(--space-4) / 2); }
 .cssvars .gap-v-1 { row-gap: var(--space-1, clamp(0.5rem, 3.33vw, 1rem)); }
 .cssvars .gap-v-2 { row-gap: var(--space-2, clamp(1rem, 3.33vw, 2rem)); }
 .cssvars .gap-v-3 { row-gap: var(--space-3, clamp(1.5rem, 3.33vw, 3rem)); }
