@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -63,6 +63,7 @@
 <li><strong><code>0</code>–<code>4</code> suffix on directional classes (<code>.m-t-1</code>–<code>.m-t-4</code>, <code>.p-b-1</code>–<code>.p-b-4</code>, etc.)</strong> → regular scale, <code>--space-1</code>–<code>--space-4</code></li>
 <li><strong>Fixed fractional suffixes (<code>-1-16</code>, <code>-1-8</code>, <code>-1-4</code>, <code>-1-2</code>, <code>-3-4</code>)</strong> → fixed rem values that don't scale with viewport (0.0625rem → 0.75rem), for fine adjustments rather than rhythm</li>
 </ul>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th><th>Source</th></tr></thead>
 <tbody>
@@ -77,7 +78,9 @@
 <tr><td><code>.m-b--1-16</code> … <code>.m-b--3-4</code> (and <code>-l</code>/<code>-r</code>/<code>-t</code>/<code>-h</code>/<code>-v</code> equivalents)</td><td>directional margin/padding, fixed rem</td><td>fixed values</td></tr>
 <tr><td><code>.m-auto</code> / <code>.m-h-auto</code> / <code>.m-v-auto</code></td><td>margin auto (centering)</td><td>—</td></tr>
 </tbody></table>
+</div>
 <p><strong>Child &amp; flow utilities</strong> (see also <a href="./styling-with-variables.html#19-flow-tokens-spacing-between-elements-not-around-them">Flow tokens</a>):</p>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th><th>Source</th></tr></thead>
 <tbody>
@@ -88,8 +91,10 @@
 <tr><td><code>.child-margin</code> / <code>.child-margin-2</code>–<code>4</code></td><td><code>margin</code> on every direct child, at a fixed step</td><td><code>--space-1</code>–<code>4</code></td></tr>
 <tr><td><code>.gap</code> / <code>.gap-2</code>–<code>.gap-4</code></td><td>flex/grid <code>gap</code></td><td><code>--default-gap</code> / <code>--space-2</code>–<code>4</code></td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="2-sizing">2. Sizing</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
 <tbody>
@@ -101,8 +106,10 @@
 <tr><td><code>.mw-1rem</code> … <code>.mw-10rem</code></td><td><code>max-width</code></td><td>—</td></tr>
 <tr><td><code>.mh-1rem</code> … <code>.mh-10rem</code></td><td><code>max-height</code></td><td>—</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="3-layout-flexbox-grid">3. Layout — Flexbox &amp; Grid</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th></tr></thead>
 <tbody>
@@ -118,8 +125,10 @@
 <tr><td><code>.col-span-1</code>/<code>2</code>/<code>3</code>/<code>4</code>/<code>6</code>/<code>full</code></td><td><code>grid-column: span N</code></td></tr>
 <tr><td><code>.cluster</code></td><td>flex row, wrapped, centered — quick horizontal grouping</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="4-position-offsets">4. Position &amp; offsets</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th></tr></thead>
 <tbody>
@@ -129,8 +138,10 @@
 <tr><td><code>.top-25-vh</code>/<code>50-vh</code>/<code>75-vh</code> / <code>.right-25-vw</code>/<code>50-vw</code>/<code>75-vw</code></td><td>offsets, viewport units</td></tr>
 <tr><td><code>.z--1</code> / <code>.z-0</code> / <code>.z-1</code>–<code>.z-3</code> / <code>.z-10</code> / <code>.z-100</code></td><td>ad-hoc <code>z-index</code> steps — for anything <strong>not</strong> already covered by <code>--z-floating</code>/<code>--z-overlay</code>/<code>--z-modal</code> (see <a href="./styling-with-variables.html#18-structural-tokens">Structural tokens</a>)</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="5-borders-radius">5. Borders &amp; radius</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
 <tbody>
@@ -144,8 +155,10 @@
 <tr><td><code>.rounded-t</code>/<code>-b</code>/<code>-l</code>/<code>-r</code> (+ <code>-1-4</code>/<code>-1-8</code>)</td><td>radius on two corners only</td><td>for tab-style or attached-edge shapes</td></tr>
 <tr><td><code>.circle</code> / <code>.circle-t</code>/<code>-b</code>/<code>-l</code>/<code>-r</code></td><td><code>border-radius: 50%</code>, or half-pill on one side</td><td>—</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="6-color-background-gradients">6. Color, background &amp; gradients</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th><th>Notes</th></tr></thead>
 <tbody>
@@ -156,9 +169,11 @@
 <tr><td><code>.color-gradient</code> / <code>.color-gradient-hover</code></td><td>gradient applied to text (via background-clip)</td><td>—</td></tr>
 <tr><td><code>.outline-color-1</code>/<code>2</code> / <code>.outline-color-danger</code>/<code>info</code>/<code>success</code>/<code>grey</code>/<code>dark</code>/<code>black</code>/<code>white</code> / <code>.outline-light-grey</code> / <code>.outline-warning</code> / <code>.outline-luxury</code></td><td><code>outline-color</code></td><td>distinct from the automatic focus-visible ring in <code>@layer overrides</code> — use these for a deliberate, always-on outline, not a focus state</td></tr>
 </tbody></table>
+</div>
 <p><strong>Convention to hold onto:</strong> <code>.bg-*</code> is a flat fill; <code>.bga-*</code> is a tint (10% <code>color-mix()</code>) with color already paired to it. Reach for <code>.bga-*</code> for badges, callouts, and soft highlights — reach for <code>.bg-*</code> for solid blocks and section backgrounds.</p>
 <hr>
 <h2 id="7-shadows">7. Shadows</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th></tr></thead>
 <tbody>
@@ -170,9 +185,11 @@
 <tr><td><code>.shadow-color</code> … <code>.shadow-color-4</code>/<code>-hover</code> variants</td><td>same four levels, tinted with <code>--color-1</code> via <code>color-mix()</code> instead of black</td></tr>
 <tr><td><code>.shadow-none</code>/<code>-hover</code></td><td>removes shadow</td></tr>
 </tbody></table>
+</div>
 <p>All shadow utilities sit in <code>@layer utilities-advanced</code>, after components — this is what lets <code>.shadow-4</code> override a card's own <code>--panel-shadow</code>-driven shadow without <code>!important</code>.</p>
 <hr>
 <h2 id="8-typography-utilities">8. Typography utilities</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th></tr></thead>
 <tbody>
@@ -188,8 +205,10 @@
 <tr><td><code>.unselectable</code></td><td><code>user-select: none</code></td></tr>
 <tr><td><code>.word-wrap-break</code></td><td>forces long unbreakable strings (URLs, etc.) to wrap</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="9-effects-overflow-visibility">9. Effects, overflow &amp; visibility</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Classes</th><th>Sets</th></tr></thead>
 <tbody>
@@ -203,6 +222,7 @@
 <tr><td><code>.skip-link</code></td><td>keyboard-focus-revealed "skip to content" link, styled from <code>--control-*</code> tokens</td></tr>
 <tr><td><code>.opacity1</code>/<code>07</code>/<code>05</code>/<code>03</code> (+ <code>-hover</code> variants)</td><td><code>opacity</code> steps</td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="10-rule-of-thumb-for-this-page">10. Rule of thumb for this page</h2>
 <p>If you're stacking more than two or three utility classes on the same element to achieve one repeatable look (a badge, a callout, a card variant), that's the signal to stop and either:</p>

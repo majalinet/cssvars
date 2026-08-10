@@ -122,43 +122,241 @@
       <div class="col-lg-10 p-d-2">
  
 
-    <div class="container">
-        <h2>Accordion</h2>
+  
+  <div class="container m-t-4 m-v-4">
 
-   
-                <script src="https://gist.github.com/majalinet/1c46217d837835bf54f0820b8154fa86.js"></script>
 
-  <div class="accordion">
-    <div class="accordion-block">
-      <input type="radio" name="accordionTitle" id="accordionTitle1">
-      <label for="accordionTitle1" class="accordion-label">Lorem ipsum dolor sit amet, consectetur
-        adipisicing?</label>
-      <div class="accordion-content">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
-        and scrambled it to make a type specimen book.
+  <!-- ============================================================ -->
+  <!-- ACCORDION                                                     -->
+  <!-- ============================================================ -->
+  <section class="m-v-4">
+    <h2>Accordion Labels</h2>
+
+    <h3 class="m-t-3">0. Default — stock <code>.accordion</code></h3>
+    <p class="dark m-v-1">No modifier class, no added CSS.</p>
+    <div class="accordion">
+      <div class="accordion-block">
+        <input type="radio" name="da" id="da1" >
+        <label for="da1" class="accordion-label">What is CSS Vars Framework?</label>
+        <div class="accordion-content">
+          <p class="dark">Solid <code>--control-bg</code> fill on the label, same as
+            buttons — this is the baseline every variant below is compared against.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="da" id="da2">
+        <label for="da2" class="accordion-label">Does it need JavaScript?</label>
+        <div class="accordion-content">
+          <p class="dark">No — this is the same checkbox/radio pattern used
+            throughout.</p>
+        </div>
       </div>
     </div>
-    <div class="accordion-block">
-      <input type="radio" name="accordionTitle" id="accordionTitle2">
-      <label for="accordionTitle2" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipisicing
-        elit?</label>
-      <div class="accordion-content">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
-        industry's standard dummy text ever since the 1500s, when an unknown printer
-      </div>
-    </div>
-    <div class="accordion-block">
-      <input type="radio" name="accordionTitle" id="accordionTitle3">
-      <label for="accordionTitle3" class="accordion-label">Lorem ipsum dolor sit amet, consectetur
-        adipisicing?</label>
-      <div class="accordion-content">
-        Lorem Ipsum is simply dummy text of the printing and typesetting industry.
-      </div>
-    </div>
-  </div>
 
-</div>
+    <h3 class="m-t-3">1. Underline — thin rule that thickens when open</h3>
+    <p class="dark m-v-1"><code>.accordion-underline</code> only. Rest state gets a
+      thin <code>--light-grey</code> underline; the open item's underline thickens and
+      switches to <code>--color-1</code>.</p>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="fa" id="fa1">
+        <label for="fa1" class="accordion-label bg-body-bg">What is CSS Vars Framework?</label>
+        <div class="accordion-content">
+          <p class="dark">A dependency-free, single-stylesheet CSS framework driven
+            entirely by custom properties — no build step, no config file.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="fa" id="fa2">
+        <label for="fa2" class="accordion-label bg-body-bg">dddDoes it need JavaScript?</label>
+        <div class="accordion-content">
+          <p class="dark">No — tabs, accordions, dropdowns, and sidebars all use the
+            checkbox/radio toggle pattern. The underline is just a
+            <code>box-shadow</code>, which lets it grow without shifting layout.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="fa" id="fa3">
+        <label for="fa3" class="accordion-label  bg-body-bg">Can I theme it?</label>
+        <div class="accordion-content">
+          <p class="dark">Yes — every color, spacing, and radius value is a token in
+            <code>:root</code>, including a full <code>[data-theme="dark"]</code>
+            override.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="m-t-3">1b. Underline + chevron — same rule, with a rotating indicator</h3>
+    <p class="dark m-v-1"><code>.accordion-underline</code> plus the label flexed
+      <code>justify-content-between</code> so the chevron sits flush right. Underline
+      thickens and the chevron rotates 180° together on open — same
+      <code>.accordion-chevron</code> rule from the top of this page, no new CSS.</p>
+    <div class="accordion accordion-underline">
+      <div class="accordion-block">
+        <input type="radio" name="ua" id="ua1">
+        <label for="ua1" class="accordion-label d-flex justify-content-between align-items-center  bg-body-bg">
+          What is CSS Vars Framework?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">A dependency-free, single-stylesheet CSS framework driven
+            entirely by custom properties — no build step, no config file.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="ua" id="ua2">
+        <label for="ua2" class="accordion-label d-flex justify-content-between align-items-center  bg-body-bg">
+          Does it need JavaScript?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">No — tabs, accordions, dropdowns, and sidebars all use the
+            checkbox/radio toggle pattern.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="ua" id="ua3">
+        <label for="ua3" class="accordion-label d-flex justify-content-between align-items-center  bg-body-bg">
+          Can I theme it?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">Yes — every color, spacing, and radius value is a token in
+            <code>:root</code>, including a full <code>[data-theme="dark"]</code>
+            override.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="m-t-3">1c. Closable — click an open item to close it (opt-in)</h3>
+    <p class="dark m-v-1">By default, radio-based accordion items can't be closed by
+      clicking them again — that's native radio behavior, not a framework bug. To
+      opt in to closable items, do two things: add <code>.accordion-closable</code>
+      to the <code>.accordion</code> container, and change each item's input from
+      <code>type="radio"</code> to <code>type="checkbox"</code>. No JavaScript, no
+      edits to <code>cssvars.css</code> — the two rules live in this page's own
+      <code>&lt;style&gt;</code> block and simply mirror the framework's existing
+      radio rules for the checkbox case. Trade-off: since checkboxes don't enforce
+      mutual exclusivity the way same-named radios do, more than one item can be
+      open at once.</p>
+    <div class="accordion accordion-closable">
+      <div class="accordion-block">
+        <input type="checkbox" name="cl1" id="cl1">
+        <label for="cl1" class="accordion-label d-flex justify-content-between align-items-center">
+          What is CSS Vars Framework?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">A dependency-free, single-stylesheet CSS framework driven
+            entirely by custom properties — no build step, no config file.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="checkbox" name="cl2" id="cl2">
+        <label for="cl2" class="accordion-label d-flex justify-content-between align-items-center">
+          Does it need JavaScript?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">No — tabs, accordions, dropdowns, and sidebars all use the
+            checkbox/radio toggle pattern.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="checkbox" name="cl3" id="cl3">
+        <label for="cl3" class="accordion-label d-flex justify-content-between align-items-center">
+          Can I theme it?
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">Yes — every color, spacing, and radius value is a token in
+            <code>:root</code>, including a full <code>[data-theme="dark"]</code>
+            override.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="m-t-3">2. Card — each item is its own elevated panel</h3>
+    <p class="dark m-v-1">No new CSS at all — just the existing <code>card</code>,
+      <code>shadow-3</code>, <code>rounded</code>, <code>overflow-hidden</code>, and
+      spacing utilities on the stock markup.</p>
+    <div class="accordion">
+      <div class="accordion-block   rounded overflow-hidden">
+        <input type="radio" name="ca" id="ca1">
+        <label for="ca1" class="accordion-label d-flex justify-content-between align-items-center bg-white">
+          Getting started
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">Link <code>cssvars.css</code> from the CDN and start writing
+            markup — the whole point is skipping a build step.</p>
+        </div>
+      </div>
+      <div class="accordion-block   rounded overflow-hidden">
+        <input type="radio" name="ca" id="ca2">
+        <label for="ca2" class="accordion-label d-flex justify-content-between align-items-center bg-white">
+          Customizing tokens
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">Override any <code>--variable</code> in your own
+            <code>:root</code> block after the framework import — the cascade layers
+            make sure it wins.</p>
+        </div>
+      </div>
+    </div>
+
+    <h3 class="m-t-3">3. Icon-badge — a colored icon marks each item</h3>
+    <p class="dark m-v-1">Reuses <code>.icon-box</code>, <code>.circle</code>, and the
+      <code>bga-*</code> alpha-background utilities already in the framework —
+      no new CSS beyond the shared chevron rule.</p>
+    <div class="accordion">
+      <div class="accordion-block">
+        <input type="radio" name="ia" id="ia1">
+        <label for="ia1" class="accordion-label d-flex align-items-center gap-1 bg-white">
+          <i class="icon-box circle bga-color-1 w-2rem h-2rem d-flex align-items-center justify-content-center">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+          </i>
+          <span class="flex-fill">Installation</span>
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">One <code>&lt;link&gt;</code> tag, nothing to install.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="ia" id="ia2">
+        <label for="ia2" class="accordion-label d-flex align-items-center gap-1 bg-white">
+          <i class="icon-box circle bga-success w-2rem h-2rem d-flex align-items-center justify-content-center">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M9 16.2L4.8 12l-1.4 1.4L9 19 21 7l-1.4-1.4z"/></svg>
+          </i>
+          <span class="flex-fill">Browser support</span>
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">Every feature used — <code>clamp()</code>,
+            <code>color-mix()</code>, <code>@layer</code> — is supported in current
+            evergreen browsers.</p>
+        </div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" name="ia" id="ia3">
+        <label for="ia3" class="accordion-label d-flex align-items-center gap-1 bg-white">
+          <i class="icon-box circle bga-warning w-2rem h-2rem d-flex align-items-center justify-content-center">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M1 21h22L12 2 1 21zm12-3h-2v-2h2v2zm0-4h-2v-4h2v4z"/></svg>
+          </i>
+          <span class="flex-fill">Known limitations</span>
+          <svg viewBox="0 0 24 24" class="accordion-chevron icon-xs icon-color-1-fill"><path d="M7 10l5 5 5-5z"/></svg>
+        </label>
+        <div class="accordion-content">
+          <p class="dark">The accessibility layer is still in progress — see the
+            philosophy doc for current recommendations.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+</div>      
 
 
  </div>

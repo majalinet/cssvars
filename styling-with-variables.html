@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -145,6 +145,7 @@
 --main-flow: clamp(6rem, 3.33vw, 12rem);
 --child-padding: var(--space-1);</code></pre>
 <p>Flow tokens are the framework's answer to "how much space goes between siblings" — deliberately separate from <code>--default-margin</code>/<code>--default-gap</code>, which govern space <em>around</em> a single element. They're consumed via the adjacent-sibling combinator (<code>* + *</code>), so they only ever add space between elements that already have a preceding sibling — the first child in a container never gets an unwanted top margin.</p>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Token</th><th>Applies to</th><th>Selector</th></tr></thead>
 <tbody>
@@ -153,6 +154,7 @@
 <tr><td><code>--content-flow</code></td><td>Prose rhythm — spacing between elements <em>inside</em> a content container</td><td><code>article &gt; * + *, aside &gt; * + *, details &gt; * + *, blockquote &gt; * + *</code></td></tr>
 <tr><td><code>--child-padding</code></td><td>Uniform padding applied to every direct child of a container, via the <code>.child-padding</code> utility class</td><td><code>.child-padding &gt; *</code></td></tr>
 </tbody></table>
+</div>
 <p><strong>Practical distinction — three levels of rhythm, not two:</strong></p>
 <ul class="colored-ul">
 <li><code>--page-flow</code> (defaults to <code>0</code>) governs the outermost skeleton of the page — the space between <code>&lt;body&gt;</code>'s direct children, typically <code>&lt;header&gt;</code>, <code>&lt;main&gt;</code>, <code>&lt;footer&gt;</code> themselves.</li>
@@ -225,6 +227,7 @@
 </ul>
 <hr>
 <h2 id="7-quick-reference-token-families-at-a-glance">7. Quick reference — token families at a glance</h2>
+<div class="auto-overflow-x">
 <table class="table table-striped table-cell-border-none">
 <thead><tr><th>Family</th><th>Purpose</th><th>Consumed by</th></tr></thead>
 <tbody>
@@ -239,6 +242,7 @@
 <tr><td>Structural (<code>--default-*</code>, <code>--z-*</code>, <code>--duration-*</code>)</td><td>Shared framework constants</td><td>Resets, layering, motion</td></tr>
 <tr><td>Flow (<code>--page-flow</code>, <code>--main-flow</code>, <code>--content-flow</code>, <code>--child-padding</code>)</td><td>Space <em>between</em> siblings, not around elements</td><td><code>body</code> children, <code>main</code> children, prose children, <code>.child-padding</code></td></tr>
 </tbody></table>
+</div>
 <hr>
 <h2 id="8-rule-of-thumb">8. Rule of thumb</h2>
 <p>Before writing any CSS: <strong>is there already a token for this?</strong> If yes, override it at the narrowest scope that needs it (<code>:root</code> for the whole site, an inline <code>style</code> attribute for one section, a class in <code>utilities-advanced</code> for a reusable modifier). Only write a new selector when the value genuinely isn't token-driven yet — and if that happens often for the same property, that's a signal the framework needs a new token, not a new one-off rule.</p>

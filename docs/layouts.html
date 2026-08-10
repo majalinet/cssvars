@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -174,7 +174,8 @@
         <strong>768px</strong> each card is full width (1 per row); from <strong>768px</strong>
         to <strong>991px</strong> they pair up (2 per row); at <strong>992px</strong> and above
         all four sit in one row (4 per row).</p>
-      <table class="table m-t-2">
+      <div class="auto-overflow-x">
+<table class="table m-t-2">
         <thead>
           <tr><th>Screen width</th><th>Active class</th><th>Card width</th><th>Cards per row</th></tr>
         </thead>
@@ -184,6 +185,7 @@
           <tr><td>&ge; 992px (desktop)</td><td><code>.col-lg-3</code></td><td>25%</td><td>4</td></tr>
         </tbody>
       </table>
+</div>
 
       <div class="msg bg-light-grey p2 rounded m-t-2">
         <p class="small bold m-b-1">Full list of responsive column classes in <code>cssvars.css</code></p>
@@ -503,7 +505,8 @@
       </div>
     </div>
     <div class="card-body">
-      <table class="table">
+      <div class="auto-overflow-x">
+<table class="table">
         <thead>
           <tr><th>Token</th><th>Default value</th><th>Scope</th><th>Utility class</th><th>Automatic on</th></tr>
         </thead>
@@ -513,6 +516,7 @@
           <tr><td><code>--content-flow</code></td><td><code>var(--space-1)</code></td><td>Prose inside a content container</td><td>— (automatic only)</td><td><code>article/aside/details/blockquote &gt; * + *</code></td></tr>
         </tbody>
       </table>
+</div>
     </div>
   </section>
 

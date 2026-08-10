@@ -17,31 +17,7 @@
       Tabs | CSS Vars Framework and UI Kit Free & Open Source
     </title>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="../img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="../img/favicons/manifest.json" />
-    <link rel="icon" href="favicon.ico" />
-    <meta
-      name="msapplication-config"
-      content="../img/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#FF530D" />
+   
 
     <link rel="stylesheet" href="../css/cssvars.css" />
   </head>
@@ -146,38 +122,206 @@
       <div class="col-lg-10 p-d-2">
 
 
-    <div class="container" id="tabs">
-        <h2>Tabs</h2>
-        <div class="tabscontainer">
-            <div class="tabs">
-                <input type="radio" name="tabs" id="tabone" checked="checked">
-                <label for="tabone" class-="white">Tab One</label>
-                <div class="tab">
-                    <h4>Tab One Content</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                        laboris nisi ut aliquip ex ea commodo consequat.</p>
-                </div>
+<main class="container p2">
 
-                <input type="radio" name="tabs" id="tabtwo">
-                <label for="tabtwo">Tab Two</label>
-                <div class="tab">
-                    <h4>Tab Two Content</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut
-                        labore et dolore magna aliqua.</p>
-                </div>
+  <h2 class="m-t-4 m-b-2">Tab Styles — CSS Vars Framework</h2>
 
-                <input type="radio" name="tabs" id="tabthree">
-                <label for="tabthree">Tab Three</label>
-                <div class="tab">
-                    <h4>Tab Three Content</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                </div>
-            </div>
-        </div>
-
-        <script src="https://gist.github.com/majalinet/420de0755556d8ded09f72d41edf0061.js"></script>
+  <!-- 1. Default -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs — Default</h6>
+    <div class="tabs">
+      <input type="radio" name="td" id="td-1" checked>
+      <label for="td-1">Overview</label>
+      <div class="tab">
+        <h5>Overview</h5>
+        <p>The default <code>.tabs</code> style — driven entirely by <code>--control-*</code> and <code>--panel-*</code> tokens.</p>
+      </div>
+      <input type="radio" name="td" id="td-2">
+      <label for="td-2">Features</label>
+      <div class="tab">
+        <h5>Features</h5>
+        <p>Out-of-the-box behaviour with no extra classes. Panel background, border, radius, padding and shadow all follow their token defaults.</p>
+      </div>
+      <input type="radio" name="td" id="td-3">
+      <label for="td-3">Pricing</label>
+      <div class="tab">
+        <h5>Pricing</h5>
+        <p>Adapts automatically to your theme — change <code>--color-1</code> at the root and everything updates.</p>
+      </div>
     </div>
+  </section>
+
+  <!-- 2. Underline -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs.tabs-underline — Underline</h6>
+    <div class="tabs tabs-underline">
+      <input type="radio" name="tu" id="tu-1" checked>
+      <label for="tu-1">Overview</label>
+      <div class="tab">
+        <h5>Overview</h5>
+        <p>Only a bottom border marks the active tab. Zero chrome on the labels — ideal for dashboards and data-heavy UIs.</p>
+      </div>
+      <input type="radio" name="tu" id="tu-2">
+      <label for="tu-2">Features</label>
+      <div class="tab">
+        <h5>Features</h5>
+        <p>The panel is fully transparent — content flows directly onto the page surface.</p>
+      </div>
+      <input type="radio" name="tu" id="tu-3">
+      <label for="tu-3">Pricing</label>
+      <div class="tab">
+        <h5>Pricing</h5>
+        <p>Overrides <code>--control-bg</code>, <code>--control-border</code> and <code>--control-shadow</code> to transparent/none, then adds a single bottom-border accent on the active label.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3. Boxed -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs.tabs-boxed — Bordered Box</h6>
+    <div class="tabs tabs-boxed">
+      <input type="radio" name="tb" id="tb-1" checked>
+      <label for="tb-1">Description</label>
+      <div class="tab">
+        <h5>Product Description</h5>
+        <p>The classic browser-tab pattern. The active label merges into the panel by matching <code>--body-bg</code> and hiding its bottom border.</p>
+      </div>
+      <input type="radio" name="tb" id="tb-2">
+      <label for="tb-2">Specifications</label>
+      <div class="tab">
+        <h5>Specifications</h5>
+        <p>A negative margin on labels pulls them down to overlap the panel's top border — creating the open-bottom illusion.</p>
+      </div>
+      <input type="radio" name="tb" id="tb-3">
+      <label for="tb-3">Reviews</label>
+      <div class="tab">
+        <h5>Reviews</h5>
+        <p>The panel uses <code>border-radius: 0 0.25rem 0.25rem 0.25rem</code> so its top-left corner aligns flush with the first tab label.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4. Pill via token override -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs — Pill (token override)</h6>
+    <div class="tabs" style="--control-radius: 9999px; --control-padding: 0.4rem 1.2rem; --control-shadow: none; gap: 0.4rem;">
+      <input type="radio" name="tpill" id="tpill-1" checked>
+      <label for="tpill-1">All</label>
+      <div class="tab p1">
+        <h5>All items</h5>
+        <p>Pill shape via <code>style="--control-radius: 9999px"</code> on the container. No new classes — just an inline token override.</p>
+      </div>
+      <input type="radio" name="tpill" id="tpill-2">
+      <label for="tpill-2">Active</label>
+      <div class="tab p1">
+        <h5>Active items</h5>
+        <p>Works on any background. Combine with <code>.bg-light-grey</code> or <code>.bg-color-1</code> on the wrapper for contrast.</p>
+      </div>
+      <input type="radio" name="tpill" id="tpill-3">
+      <label for="tpill-3">Archived</label>
+      <div class="tab p1">
+        <h5>Archived items</h5>
+        <p>All other tokens remain at their defaults — only the radius changes.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5. Vertical -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs-vertical — Vertical Sidebar</h6>
+    <div class="tabs-vertical">
+      <input type="radio" name="tv" id="v-tab1" checked>
+      <input type="radio" name="tv" id="v-tab2">
+      <input type="radio" name="tv" id="v-tab3">
+      <nav class="tabs-vertical-nav p-1-2">
+        <label for="v-tab1" class="p-3-4">Profile</label>
+        <label for="v-tab2" class="p-3-4">Security</label>
+        <label for="v-tab3" class="p-3-4">Notifications</label>
+      </nav>
+      <div class="tabs-vertical-content border-l border-solid border-grey p2">
+        <div class="tab-panel" id="v-panel1">
+          <h5>Profile Settings</h5>
+          <p>Vertical tabs using <code>.tabs-vertical</code>, <code>.tabs-vertical-nav</code> and <code>.tabs-vertical-content</code> — all existing framework classes. Collapses to horizontal on narrow viewports.</p>
+        </div>
+        <div class="tab-panel" id="v-panel2">
+          <h5>Security Settings</h5>
+          <p>The active label is driven by <code>:has()</code> — no JavaScript needed. Scales to many tabs without wrapping.</p>
+        </div>
+        <div class="tab-panel" id="v-panel3">
+          <h5>Notification Preferences</h5>
+          <p>The <code>border-l border-solid border-grey</code> classes on the content area provide the sidebar separator.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6. Ghost / Outline -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs — Ghost / Outline (token override)</h6>
+    <div class="tabs" style="
+      --control-bg: transparent;
+      --control-color: var(--color-1);
+      --control-border: 0.125rem solid var(--color-1);
+      --control-shadow: none;
+      --control-padding: 0.45rem 1.1rem;
+      gap: 0.4rem;
+    ">
+      <input type="radio" name="tg" id="tg-1" checked>
+      <label for="tg-1">HTML</label>
+      <div class="tab p1">
+        <h5>HTML</h5>
+        <p>Ghost tabs via inline token overrides — <code>--control-bg: transparent</code> and <code>--control-border: 0.125rem solid var(--color-1)</code>. No new class needed.</p>
+      </div>
+      <input type="radio" name="tg" id="tg-2">
+      <label for="tg-2">CSS</label>
+      <div class="tab p1">
+        <h5>CSS</h5>
+        <p>The active state fills via <code>--surface-selected</code> — the same token the default tabs use, so it stays on-brand automatically.</p>
+      </div>
+      <input type="radio" name="tg" id="tg-3">
+      <label for="tg-3">JavaScript</label>
+      <div class="tab p1">
+        <h5>JavaScript</h5>
+        <p>Pairs well with ghost/outline buttons from the same framework for a visually consistent UI.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7. Floating Cards -->
+  <section class="m-v-3">
+    <h6 class="msg bga-color-1 m-b-2 p-v--1-2">.tabs — Floating Cards (token override)</h6>
+    <div class="bg-light-grey p2 rounded-1-4">
+      <div class="tabs" style="
+        --control-bg: var(--body-bg);
+        --control-color: var(--dark);
+        --control-border: 0.0625rem solid transparent;
+        --control-radius: 0.35rem;
+        --control-shadow: 0 0.0625rem 0.1875rem rgba(0,0,0,0.12), 0 0.0625rem 0.125rem rgba(0,0,0,0.24);
+        --control-padding: 0.5rem 1.1rem;
+        gap: 0.5rem;
+      ">
+        <input type="radio" name="tfc" id="tfc-1" checked>
+        <label for="tfc-1">Summary</label>
+        <div class="tab p1">
+          <h5>Summary</h5>
+          <p><code>--control-bg: var(--body-bg)</code> gives each label a white card surface; <code>--control-shadow</code> lifts it off the tinted background. No new CSS.</p>
+        </div>
+        <input type="radio" name="tfc" id="tfc-2">
+        <label for="tfc-2">Details</label>
+        <div class="tab p1">
+          <h5>Details</h5>
+          <p>Works best on a tinted container — use <code>.bg-light-grey</code> or a custom surface colour on the wrapper element.</p>
+        </div>
+        <input type="radio" name="tfc" id="tfc-3">
+        <label for="tfc-3">History</label>
+        <div class="tab p1">
+          <h5>History</h5>
+          <p>The active state uses <code>--surface-selected</code> — a light tint of <code>--color-1</code> — reading as a gentle highlight against the plain card labels.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
       
 
 

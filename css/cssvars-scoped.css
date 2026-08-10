@@ -2646,6 +2646,56 @@ left: 105%;
 .cssvars .tabs input[type="radio"]:checked+label+.tab {
   display: block;
 }
+.cssvars .tabs-underline {
+  --control-bg: transparent;
+  --control-color: var(--dark);
+  --control-border: none;
+  --control-shadow: none;
+  --control-radius: 0;
+  --control-margin: 0;
+  --control-padding: 0.6rem 1.2rem;
+  border-bottom: 0.125rem solid var(--grey);
+}
+.cssvars .tabs-underline > label {
+  margin-bottom: -0.125rem;
+}
+.cssvars .tabs-underline input[type="radio"]:checked + label {
+  background: transparent;
+  color: var(--color-1);
+  border: none;
+  border-bottom: 0.2rem solid var(--color-1);
+  font-weight: 600;
+}
+.cssvars .tabs-underline .tab {
+  background: transparent;
+  border: none;
+  box-shadow: none;
+  border-radius: 0;
+  padding: 1.2rem 0.25rem;
+}
+.cssvars .tabs-boxed {
+  --control-bg: transparent;
+  --control-color: var(--dark);
+  --control-border: 0.0625rem solid transparent;
+  --control-shadow: none;
+  --control-radius: 0.25rem 0.25rem 0 0;
+  --control-margin: 0 0 -0.0625rem 0;
+  --control-padding: 0.55rem 1.1rem;
+}
+.cssvars .tabs-boxed input[type="radio"]:checked + label {
+  background: var(--body-bg);
+  color: var(--color-1);
+  border: 0.0625rem solid var(--grey);
+  border-bottom-color: var(--body-bg);
+  font-weight: 600;
+}
+.cssvars .tabs-boxed .tab {
+  border: 0.0625rem solid var(--grey);
+  border-radius: 0 0.25rem 0.25rem 0.25rem;
+  background: var(--body-bg);
+  box-shadow: none;
+  padding: 1.2rem;
+}
 @media (max-width: 45em) {
   .cssvars .tabs .tab, .cssvars .tabs label {
     order: initial;
@@ -2657,7 +2707,7 @@ left: 105%;
   }
 }
 /* Accordion */
-.accordion {
+.cssvars .accordion {
   width: 100%;
   margin: auto;
 }
@@ -2686,6 +2736,42 @@ left: 105%;
   background-color: var(--surface-selected);
   color: var(--body-color, black);
   font-weight: 600;
+}
+.cssvars .accordion-closable input[type="checkbox"] { display: none; }
+.cssvars .accordion-closable input[type="checkbox"] ~ .accordion-content { display: none; }
+.cssvars .accordion-closable input[type="checkbox"]:checked ~ .accordion-content { display: block; }
+.cssvars .accordion-closable input[type="checkbox"]:checked ~ .accordion-label {
+  background-color: var(--surface-selected);
+  color: var(--body-color, black);
+  font-weight: 600;
+}
+.cssvars .accordion-chevron {
+  transition: transform var(--duration-base) var(--easing);
+  flex-shrink: 0;
+}
+.cssvars .accordion input:checked ~ .accordion-label .accordion-chevron {
+  transform: rotate(180deg);
+}
+.cssvars .accordion-underline .accordion-block {
+  margin-bottom: 0;
+}
+.cssvars .accordion-underline .accordion-label {
+  background: transparent;
+  border-radius: 0;
+  color: var(--body-color);
+  box-shadow: inset 0 -0.125rem 0 var(--light-grey);
+  transition: box-shadow var(--duration-base) var(--easing);
+}
+.cssvars .accordion-underline .accordion-content {
+  background: transparent;
+  box-shadow: none;
+  border-radius: 0;
+}
+.cssvars .accordion-underline input:checked ~ .accordion-label {
+  box-shadow: inset 0 -0.25rem 0 var(--color-1);
+}
+.cssvars .accordion-label.bg-white {
+  color: var(--body-color);
 }
 @keyframes fadeInAccordion {
   0% {
