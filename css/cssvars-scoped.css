@@ -2887,7 +2887,7 @@ left: 105%;
   padding: var(--panel-padding);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
-  height: 50%;
+  min-height: 50%;
 }
 .cssvars .modal__close {
   position: absolute;
@@ -2906,7 +2906,7 @@ left: 105%;
   display: block;
   transform: rotate(45deg);
   left: 50%;
-  margin: -0.1875rem 0 0 -10.0625rem;
+  margin: -0.1875rem 0 0 -0.0625rem;
   top: 0;
 }
 .cssvars .modal__close:hover:after, .cssvars .modal__close:hover:before {

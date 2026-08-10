@@ -2887,7 +2887,7 @@ progress {
   padding: var(--panel-padding);
   border: var(--panel-border);
   box-shadow: var(--panel-shadow);
-  height: 50%;
+  height: 50vh;
 }
 .modal__close {
   position: absolute;
@@ -2906,7 +2906,7 @@ progress {
   display: block;
   transform: rotate(45deg);
   left: 50%;
-  margin: -0.1875rem 0 0 -10.0625rem;
+  margin: -0.1875rem 0 0 -0.0625rem;
   top: 0;
 }
 .modal__close:hover:after, .modal__close:hover:before {
