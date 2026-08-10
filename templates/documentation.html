@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentation — Orbit Analytics</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<a href="#main" class="skip-link">Skip to content</a>
+
+<!-- ============ HEADER ============ -->
+<div class="main-nav p1 nav-top-border-hover">
+  <div class="main-menu shadow-3 rounded">
+    <input type="checkbox" id="toggle-nav">
+    <a href="index.html" class="logo bold h5 black">
+      <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs">
+        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,7V13L16.2,16.2L17,14.9L12.5,12.2V7H11Z"></path>
+      </svg>
+      Orbit
+    </a>
+    <div class="nav-panel">
+      <div class="nav-group">
+        <nav class="nav">
+          <a href="case-studies.html">Case Studies</a>
+          <a href="documentation.html" class="bold">Documentation</a>
+          <a href="support.html">Support</a>
+          <a href="contact.html">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#login">Log in</a>
+          <a href="contact.html" class="button">Get a Demo</a>
+        </div>
+      </div>
+    </div>
+    <label for="toggle-nav" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+      </svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+        <path d="M0 0h24v24H0z" fill="none"></path>
+        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+      </svg>
+    </label>
+  </div>
+</div>
+
+<!-- ============ MOBILE SIDEBAR TOGGLE ============ -->
+<input type="checkbox" id="docs-sidebar-toggle" class="sidebar-toggle-state">
+<label for="docs-sidebar-toggle" class="sidebar-toggle-btn button bg-black">
+  <svg viewBox="0 0 24 24" class="icon-white-fill icon-xs">
+    <path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"></path>
+  </svg>
+</label>
+
+<!-- ============ DOCS SIDEBAR ============ -->
+<aside class="sidebar">
+  <div class="sidebar-header">Documentation</div>
+  <nav class="menu">
+    <p class="bold small text-uppercase color-1 p-h-1 m-t-1">Getting Started</p>
+    <ul class="no-indent-ul">
+      <li class="menu-item"><a href="#introduction" class="bold">Introduction</a></li>
+      <li class="menu-item"><a href="#installation">Installation</a></li>
+      <li class="menu-item"><a href="#quick-start">Quick Start</a></li>
+    </ul>
+    <p class="bold small text-uppercase color-1 p-h-1 m-t-2">Core Concepts</p>
+    <ul class="no-indent-ul">
+      <li class="menu-item"><a href="#events">Events</a></li>
+      <li class="menu-item"><a href="#dashboards">Dashboards</a></li>
+      <li class="menu-item"><a href="#workspaces">Workspaces</a></li>
+    </ul>
+    <p class="bold small text-uppercase color-1 p-h-1 m-t-2">API Reference</p>
+    <ul class="no-indent-ul">
+      <li class="menu-item"><a href="#api-auth">Authentication</a></li>
+      <li class="menu-item"><a href="#api-track">Track events</a></li>
+      <li class="menu-item"><a href="#api-params">Parameters</a></li>
+    </ul>
+    <p class="bold small text-uppercase color-1 p-h-1 m-t-2">Help</p>
+    <ul class="no-indent-ul">
+      <li class="menu-item"><a href="support.html">Support center</a></li>
+      <li class="menu-item"><a href="contact.html">Contact us</a></li>
+    </ul>
+  </nav>
+</aside>
+
+<!-- ============ MAIN DOCS CONTENT ============ -->
+<main id="main" class="main-content p2">
+
+  <!-- Breadcrumb -->
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb p0">
+      <li class="breadcrumb-item"><a href="index.html"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs"><title>home</title><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z" /></svg></a></li>
+      <li class="breadcrumb-item"><a href="documentation.html">Documentation</a></li>
+      <li class="breadcrumb-item bold" aria-current="page">Quick Start</li>
+    </ol>
+  </nav>
+
+  <div class="row m-t-1">
+    <div class="col-md-9">
+
+      <!-- ===== Introduction ===== -->
+      <section id="introduction">
+        <span class="badge bga-color-1">Guide</span>
+        <h1 class="black bold m-t-1">Quick Start</h1>
+        <p class="dark h6 font-weight-400 m-t-1">Get your first events flowing into Orbit and your first dashboard
+          live in under ten minutes.</p>
+
+        <div class="msg bga-info m-t-2">
+          <p class="bold m0">Before you begin</p>
+          <p class="small m0">You'll need an Orbit account and a workspace API key. Grab yours from
+            <code>Settings → API Keys</code> once you're signed in.</p>
+        </div>
+      </section>
+
+      <!-- ===== Installation ===== -->
+      <section id="installation" class="m-t-4">
+        <h2 class="black font-weight-600">Installation</h2>
+        <p class="dark m-t-1">Choose the method that matches your stack. All three send events to the same
+          ingestion endpoint.</p>
+
+        <div class="tabs m-t-2">
+          <input type="radio" name="install-tabs" id="tab-npm" checked>
+          <label for="tab-npm" class="button-s">npm</label>
+          <div class="tab">
+            <pre class="code-block"><code>npm install @orbit/sdk</code></pre>
+            <pre class="code-block"><code>import { Orbit } from "@orbit/sdk";
+
+const orbit = new Orbit("YOUR_API_KEY");
+orbit.track("signup_completed", { plan: "pro" });</code></pre>
+          </div>
+
+          <input type="radio" name="install-tabs" id="tab-script">
+          <label for="tab-script" class="button-s">Script tag</label>
+          <div class="tab">
+            <pre class="code-block"><code>&lt;script src="https://cdn.orbit.example/orbit.min.js"&gt;&lt;/script&gt;
+&lt;script&gt;
+  Orbit.init("YOUR_API_KEY");
+  Orbit.track("signup_completed", { plan: "pro" });
+&lt;/script&gt;</code></pre>
+          </div>
+
+          <input type="radio" name="install-tabs" id="tab-curl">
+          <label for="tab-curl" class="button-s">cURL</label>
+          <div class="tab">
+            <pre class="code-block"><code>curl -X POST https://api.orbit.example/v1/track \
+  -H "Authorization: Bearer YOUR_API_KEY" \
+  -H "Content-Type: application/json" \
+  -d '{"event":"signup_completed","properties":{"plan":"pro"}}'</code></pre>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== Quick Start Steps ===== -->
+      <section id="quick-start" class="m-t-4">
+        <h2 class="black font-weight-600">Send your first event</h2>
+        <ol class="m-t-1">
+          <li class="dark m-v--1-2">Install the SDK using one of the methods above.</li>
+          <li class="dark m-v--1-2">Initialize Orbit with your workspace API key.</li>
+          <li class="dark m-v--1-2">Call <code>orbit.track()</code> from any user action you want to measure.</li>
+          <li class="dark m-v--1-2">Open your workspace — events typically appear within a few seconds.</li>
+        </ol>
+
+        <div class="msg bga-success m-t-2">
+          <p class="bold m0">Tip</p>
+          <p class="small m0">Use <kbd>orbit.identify()</kbd> before <kbd>orbit.track()</kbd> to attach events to a
+            known user instead of an anonymous session.</p>
+        </div>
+      </section>
+
+      <!-- ===== Events ===== -->
+      <section id="events" class="m-t-4">
+        <h2 class="black font-weight-600">Events</h2>
+        <p class="dark m-t-1">Every action you track is an event with a name and a set of properties. Property
+          types are inferred automatically and can be changed later from workspace settings.</p>
+        <pre class="code-block m-t-1"><code>orbit.track("checkout_completed", {
+  amount: 89.99,
+  currency: "USD",
+  items: 3
+});</code></pre>
+      </section>
+
+      <!-- ===== API Reference table ===== -->
+      <section id="api-params" class="m-t-4">
+        <h2 class="black font-weight-600">track() parameters</h2>
+        <table class="table table-bordered table-striped m-t-1">
+          <thead>
+            <tr>
+              <th>Parameter</th>
+              <th>Type</th>
+              <th>Required</th>
+              <th>Description</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><code>event</code></td>
+              <td>string</td>
+              <td><span class="pill pill-danger small">Yes</span></td>
+              <td>Name of the event, e.g. <code>checkout_completed</code>.</td>
+            </tr>
+            <tr>
+              <td><code>properties</code></td>
+              <td>object</td>
+              <td><span class="pill small">No</span></td>
+              <td>Key-value pairs describing the event.</td>
+            </tr>
+            <tr>
+              <td><code>timestamp</code></td>
+              <td>ISO 8601 string</td>
+              <td><span class="pill small">No</span></td>
+              <td>Defaults to the time the SDK sends the event.</td>
+            </tr>
+            <tr>
+              <td><code>userId</code></td>
+              <td>string</td>
+              <td><span class="pill small">No</span></td>
+              <td>Overrides the identified user for this event only.</td>
+            </tr>
+          </tbody>
+        </table>
+      </section>
+
+      <!-- ===== Warning callout ===== -->
+      <section id="api-auth" class="m-t-4">
+        <h2 class="black font-weight-600">Authentication</h2>
+        <p class="dark m-t-1">Server-side calls use a secret key. Never expose a secret key in client-side code —
+          use a public write-only key for browser and mobile SDKs instead.</p>
+        <div class="msg bga-danger m-t-2">
+          <p class="bold m0">Warning</p>
+          <p class="small m0">Secret keys have full read/write access to your workspace. Rotate a key immediately
+            from <em>Settings → API Keys</em> if it's ever committed to a public repository.</p>
+        </div>
+      </section>
+
+      <!-- ===== FAQ accordion ===== -->
+      <section id="api-track" class="m-t-4">
+        <h2 class="black font-weight-600">Common questions</h2>
+        <div class="accordion m-t-1">
+          <div class="accordion-block">
+            <input type="radio" name="docsFaq" id="docsFaq1" checked>
+            <label for="docsFaq1" class="accordion-label">Is there a rate limit on the track endpoint?</label>
+            <div class="accordion-content">
+              Yes — 5,000 requests per second per workspace on paid plans, 200 per second on the free tier. Batch
+              multiple events into a single request to stay well under either limit.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="docsFaq" id="docsFaq2">
+            <label for="docsFaq2" class="accordion-label">How long is event data retained?</label>
+            <div class="accordion-content">
+              Raw events are retained for 13 months on paid plans and 30 days on the free tier. Aggregated
+              dashboard data has no expiration.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="docsFaq" id="docsFaq3">
+            <label for="docsFaq3" class="accordion-label">Can I backfill historical events?</label>
+            <div class="accordion-content">
+              Yes, set an explicit <kbd>timestamp</kbd> on each event. Backfilled events are processed asynchronously
+              and may take up to an hour to appear in dashboards.
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Next steps -->
+      <section class="m-t-4 p-v-2">
+        <div class="row shadow-2 rounded p2">
+          <div class="col-md-8">
+            <h4 class="black bold">Ready to see it in your workspace?</h4>
+            <p class="dark">Explore a live sample dataset with no setup required.</p>
+          </div>
+          <div class="col-md-4 d-flex align-items-center justify-content-center">
+            <a href="contact.html" class="button bg-black rounded w-100">Get a demo</a>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- ===== On-this-page mini nav ===== -->
+    <div class="col-md-3">
+      <div class="position-sticky p1">
+        <p class="bold small text-uppercase dark">On this page</p>
+        <ul class="no-indent-ul small">
+          <li class="m-v--1-2"><a href="#introduction" class="dark">Introduction</a></li>
+          <li class="m-v--1-2"><a href="#installation" class="dark">Installation</a></li>
+          <li class="m-v--1-2"><a href="#quick-start" class="dark">Quick Start</a></li>
+          <li class="m-v--1-2"><a href="#events" class="dark">Events</a></li>
+          <li class="m-v--1-2"><a href="#api-params" class="dark">Parameters</a></li>
+          <li class="m-v--1-2"><a href="#api-auth" class="dark">Authentication</a></li>
+          <li class="m-v--1-2"><a href="#api-track" class="dark">FAQ</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ FOOTER (inside main-content so it respects sidebar margin) ============ -->
+  <footer class="row bg-light-grey rounded m-t-4">
+    <div class="col-md-6 col-lg-3 p2">
+      <a href="index.html" class="logo bold h5 black">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M12,4A8,8 0 0,1 20,12A8,8 0 0,1 12,20A8,8 0 0,1 4,12A8,8 0 0,1 12,4M11,7V13L16.2,16.2L17,14.9L12.5,12.2V7H11Z"></path>
+        </svg>
+        Orbit
+      </a>
+      <p class="smaller dark m-t-1">Orbit turns product and business events into dashboards your whole company
+        actually opens.</p>
+      <p class="small dark">© 2026 Orbit Analytics, Inc.</p>
+    </div>
+    <div class="col-md-6 col-lg-3 p2">
+      <h5 class="h6 m-v--1-2 font-weight-600 black">Product</h5>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="documentation.html" class="dark">Documentation</a></li>
+        <li class="m-v--1-2"><a href="case-studies.html" class="dark">Case Studies</a></li>
+        <li class="m-v--1-2"><a href="#pricing" class="dark">Pricing</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3 p2">
+      <h5 class="h6 m-v--1-2 font-weight-600 black">Company</h5>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="#about" class="dark">About</a></li>
+        <li class="m-v--1-2"><a href="contact.html" class="dark">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3 p2">
+      <h5 class="h6 m-v--1-2 font-weight-600 black">Support</h5>
+      <ul class="no-indent-ul">
+        <li class="m-v--1-2"><a href="support.html" class="dark">Help Center</a></li>
+        <li class="m-v--1-2"><a href="support.html#faq" class="dark">FAQ</a></li>
+      </ul>
+    </div>
+  </footer>
+
+</main>
+
+</body>
+</html>
