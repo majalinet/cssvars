@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign In — Lorem Ipsum</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+<div class="container d-flex flex-column align-items-center justify-content-center" style="min-height:100vh;">
+
+  <div style="max-width:22rem; width:100%;">
+
+    <div class="center m-b-4">
+      <span class="h4" style="font-weight:600;">Lorem&nbsp;Ipsum</span>
+    </div>
+
+    <h1 class="h4 center m-b-4">Sign in to continue</h1>
+
+    <div class="tabs tabs-underline">
+
+      <input type="radio" name="loginMode" id="modePassword" checked>
+      <label for="modePassword">Password</label>
+      <div class="tab p-t-2">
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email address">
+          </div>
+          <div class="form-group">
+            <input type="password" class="form-control" placeholder="Password">
+          </div>
+          <div class="right m-b-3">
+            <a href="#" class="small color-1">Forgot password?</a>
+          </div>
+          <button type="submit" class="button button-w-100 bg-color-1" style="color:var(--white);">Sign in</button>
+        </form>
+      </div>
+
+      <input type="radio" name="loginMode" id="modeMagic">
+      <label for="modeMagic">Magic link</label>
+      <div class="tab p-t-2 center">
+        <div class="m-b-3">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-m icon-color-1-fill"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm0 2.2V17h16V8.2l-7.4 5.13a1 1 0 0 1-1.2 0L4 8.2zm.9-.2 7.1 4.92L19.1 8H4.9z"/></svg>
+        </div>
+        <p class="grey small m-b-3">Enter your email and we'll send you a one-time link &mdash; no password needed.</p>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" placeholder="Email address">
+          </div>
+          <button type="submit" class="button button-w-100 bg-color-1" style="color:var(--white);">Email me a link</button>
+        </form>
+      </div>
+
+    </div>
+
+    <p class="center small grey m-t-4">
+      New here? <a href="#" class="color-1" style="font-weight:600;">Create an account</a>
+    </p>
+
+  </div>
+
+</div>
+</body>
+</html>

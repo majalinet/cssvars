@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Account Recovery — Lorem Ipsum</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body class="bg-light-grey">
+<div class="container d-flex flex-column align-items-center justify-content-center" style="min-height:100vh; padding-top:3rem; padding-bottom:3rem;">
+
+  <div style="max-width:32rem; width:100%;">
+
+    <div class="center m-b-4">
+      <span class="icon-box bg-warning circle" style="width:3.5rem;height:3.5rem;display:inline-flex;align-items:center;justify-content:center;">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-sm icon-white-fill"><path d="M12 2a10 10 0 1 0 0 20 10 10 0 0 0 0-20zm.1 15.5h-2v-2h2v2zM12.8 13.1c-.5.3-.6.5-.6 1.1h-2v-.4c0-1 .4-1.7 1.2-2.2l.9-.6c.5-.3.8-.6.8-1.2 0-.7-.6-1.1-1.4-1.1-.9 0-1.5.5-1.6 1.4H8.3c.1-1.9 1.6-3.1 3.5-3.1 2 0 3.4 1.1 3.4 2.8 0 1.1-.5 1.8-1.4 2.3l-1 .6z"/></svg>
+      </span>
+      <h1 class="h3 m-t-3 m-b-1">Can't log in?</h1>
+      <p class="grey">Tell us your email and we'll help you get back into your account.</p>
+    </div>
+
+    <div class="card shadow-2">
+      <form>
+        <div class="form-group">
+          <label class="small grey m-b--1-4" style="display:block;">Email address</label>
+          <input type="email" class="form-control" placeholder="you@loremipsum.com">
+        </div>
+
+        <div class="form-group">
+          <label class="small grey m-b--1-2" style="display:block;">What's the issue?</label>
+
+          <div class="d-flex align-items-center gap-2 m-b--1-2">
+            <input type="radio" name="issue" id="issueForgot" class="styled-checkbox" checked>
+            <label for="issueForgot" class="small grey">I forgot my password</label>
+          </div>
+          <div class="d-flex align-items-center gap-2 m-b--1-2">
+            <input type="radio" name="issue" id="issue2fa" class="styled-checkbox">
+            <label for="issue2fa" class="small grey">I lost access to my 2FA device</label>
+          </div>
+          <div class="d-flex align-items-center gap-2 m-b--1-2">
+            <input type="radio" name="issue" id="issueEmail" class="styled-checkbox">
+            <label for="issueEmail" class="small grey">I no longer have this email</label>
+          </div>
+          <div class="d-flex align-items-center gap-2">
+            <input type="radio" name="issue" id="issueOther" class="styled-checkbox">
+            <label for="issueOther" class="small grey">Something else</label>
+          </div>
+        </div>
+
+        <button type="submit" class="button button-w-100 bg-color-1 m-t-2" style="color:var(--white);">
+          Send recovery instructions
+        </button>
+      </form>
+    </div>
+
+    <h2 class="h5 m-t-4 m-b-2">Frequently asked questions</h2>
+    <div class="accordion accordion-underline">
+      
+    <div class="accordion-block">
+      <input type="radio" name="recoveryFaq" id="faq1" checked>
+      <label for="faq1" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+        <span>I no longer have access to my email</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-grey-fill accordion-chevron"><path d="M15 5 8 12l7 7 1.4-1.4L10.8 12l5.6-5.6z"/></svg>
+      </label>
+      <div class="accordion-content small grey">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Contact support with a copy of your ID and we'll help you regain access within one business day.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="recoveryFaq" id="faq2">
+      <label for="faq2" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+        <span>I'm not receiving the reset email</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-grey-fill accordion-chevron"><path d="M15 5 8 12l7 7 1.4-1.4L10.8 12l5.6-5.6z"/></svg>
+      </label>
+      <div class="accordion-content small grey">
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Check your spam folder, add us to your contacts, and try again after a few minutes.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="recoveryFaq" id="faq3">
+      <label for="faq3" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+        <span>My two-factor device was lost or stolen</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-grey-fill accordion-chevron"><path d="M15 5 8 12l7 7 1.4-1.4L10.8 12l5.6-5.6z"/></svg>
+      </label>
+      <div class="accordion-content small grey">
+        Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. Use one of your saved backup codes, or verify your identity manually with our team.
+      </div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" name="recoveryFaq" id="faq4">
+      <label for="faq4" class="accordion-label bg-white d-flex justify-content-between align-items-center">
+        <span>My account was suspended</span>
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-grey-fill accordion-chevron"><path d="M15 5 8 12l7 7 1.4-1.4L10.8 12l5.6-5.6z"/></svg>
+      </label>
+      <div class="accordion-content small grey">
+        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+      </div>
+    </div>
+    </div>
+
+    <div class="msg border-info bg-surface-raised m-t-3">
+      <div class="d-flex align-items-start gap-2">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-s icon-info-fill"><path d="M4 6h16a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V7a1 1 0 0 1 1-1zm0 2.2V17h16V8.2l-7.4 5.13a1 1 0 0 1-1.2 0L4 8.2zm.9-.2 7.1 4.92L19.1 8H4.9z"/></svg>
+        <span class="small grey">Still stuck? <a href="#" class="color-1">Contact our support team</a> and we'll respond within 24 hours.</span>
+      </div>
+    </div>
+
+    <p class="center small grey m-t-3">
+      <a href="#" class="grey d-flex align-items-center justify-content-center gap-2" style="text-decoration:none;">
+        <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg" class="icon-xxs icon-grey-fill"><path d="M11 5l1.4 1.4L7.8 11H20v2H7.8l4.6 4.6L11 19l-7-7z"/></svg> Back to sign in
+      </a>
+    </p>
+
+  </div>
+
+</div>
+</body>
+</html>
