@@ -21,52 +21,49 @@
     <meta name="theme-color" content="#FF530D">
 
     <link rel="stylesheet" href="../css/cssvars.css">
-    <style>
-        .main-nav{
-            background-color: rgba(var(--grey-rgb), 0.1);
-        }
-          .nav ul li a{
-    text-transform: uppercase;
-    font-weight: 600;
-    color:white;
-  }
-    </style>
 </head>
 
 <body>
 
-    <div class="h-75 d-flex flex-column bg-light-grey" style="background-image: url('../img/education-1.jpg'); background-size: cover; height: 800px;" id="home">
+    <div class="h-75 d-flex flex-column bg-light-grey rounded-0" style="background-image: url('../img/education-1.jpg'); background-size: cover; height: 800px;" id="home">
 
-        <div class="main-nav container-fluid p-v-05">
-          <div class="main-menu">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon-white-fill icon-m" viewBox="0 0 24 24">
-                <path d="M12,11A1,1 0 0,1 13,12A1,1 0 0,1 12,13A1,1 0 0,1 11,12A1,1 0 0,1 12,11M4.22,4.22C5.65,2.79 8.75,3.43 12,5.56C15.25,3.43 18.35,2.79 19.78,4.22C21.21,5.65 20.57,8.75 18.44,12C20.57,15.25 21.21,18.35 19.78,19.78C18.35,21.21 15.25,20.57 12,18.44C8.75,20.57 5.65,21.21 4.22,19.78C2.79,18.35 3.43,15.25 5.56,12C3.43,8.75 2.79,5.65 4.22,4.22M15.54,8.46C16.15,9.08 16.71,9.71 17.23,10.34C18.61,8.21 19.11,6.38 18.36,5.64C17.62,4.89 15.79,5.39 13.66,6.77C14.29,7.29 14.92,7.85 15.54,8.46M8.46,15.54C7.85,14.92 7.29,14.29 6.77,13.66C5.39,15.79 4.89,17.62 5.64,18.36C6.38,19.11 8.21,18.61 10.34,17.23C9.71,16.71 9.08,16.15 8.46,15.54M5.64,5.64C4.89,6.38 5.39,8.21 6.77,10.34C7.29,9.71 7.85,9.08 8.46,8.46C9.08,7.85 9.71,7.29 10.34,6.77C8.21,5.39 6.38,4.89 5.64,5.64M9.88,14.12C10.58,14.82 11.3,15.46 12,16.03C12.7,15.46 13.42,14.82 14.12,14.12C14.82,13.42 15.46,12.7 16.03,12C15.46,11.3 14.82,10.58 14.12,9.88C13.42,9.18 12.7,8.54 12,7.97C11.3,8.54 10.58,9.18 9.88,9.88C9.18,10.58 8.54,11.3 7.97,12C8.54,12.7 9.18,13.42 9.88,14.12M18.36,18.36C19.11,17.62 18.61,15.79 17.23,13.66C16.71,14.29 16.15,14.92 15.54,15.54C14.92,16.15 14.29,16.71 13.66,17.23C15.79,18.61 17.62,19.11 18.36,18.36Z"></path>
-            </svg>
-              <label for="toggle-1" class="toggle-menu">
-                  <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewBox="0 0 24 24">
-                      <path d="M0 0h24v24H0z" fill="none"></path>
-                      <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
-        
-        
-              </label>
-              <input type="checkbox" id="toggle-1">
-        
-              <nav class="nav">
-                  <ul>
-                      <li><a href="#home">Home</a></li>
-                      <li><a href="#meetings">Meetings</a></li>
-                      <li><a href="#apply">Apply Now</a></li>
-                      <li><a href="#courses">Courses</a></li>
-                      <li><a href="#contact">Contact us</a></li>
-                  </ul>
-              </nav>
-          </div>
+
+
+        <div class="main-nav container-fluid p-v-1">
+    <div class="main-menu rounded-0 ">
+        <input type="checkbox" id="toggle-h5">
+        <a href="index.html" class="logo">
+            <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+        </a>
+        <div class="nav-panel">
+            <div class="nav-group">
+                <nav class="nav nav-top-border-hover">
+                    <a href="#about" class="white">About</a>
+                    <a href="#portfolio" class="white">Meetings</a>
+                    <a href="#testimonial" class="white">Courses</a>
+                </nav>
+                <div class="nav-actions">
+                    <a href="#contact" class="white">Contact</a>
+                </div>
+            </div>
         </div>
+        <label for="toggle-h5" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
+    </div>
+</div>
         <h4 class="left white font-weight-600 m-l-3 m-t-4 text-uppercase">Hello students</h4>
         <h1 class="left m-l-3 bold display-2 white">Welcome to Education</h1>
         <p class="left m-l-3 white m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore<br> magna aliqua.</p>
         <div class="col-2 m-l-2">
-        <button class="button bg-danger p-h-1  p-v-05 m-t-2 left white rounded text-uppercase">Join us now!</button>
+        <button class="button bg-danger p-h-1  p-v-1 m-t-2 left white rounded text-uppercase">Join us now!</button>
         </div>
         
         <div class="row  justify-content-center">
@@ -108,23 +105,23 @@
         </div>
       </div>  
       
-      <div class="container m-t-6">
+      <div class="container m-t-4">
         <h4 class="center black font-weight-600 text-uppercase">Upcoming meetings</h4>
         <hr>
         <div class="row">
             <div class="col-md-4">
-                <div class="shadow-color-3 m05 p1 rounded">
+                <div class="shadow-color-3 m1 p1 rounded">
                     <div class="p-v-1">
                         <h5 class="center black bold">Meetings categories</h5>
                         <hr class="m-v-1">
                         <p class="dark font-weight-600 m-l-2">Iaculis nunc sed augue lacus</p>
-                        <div class="m-t-05"></div>
+                        <div class="m-t-1"></div>
                        
                         <p class="dark font-weight-600 m-l-2">Interdum velit euismod</p>
-                        <div class="m-t-05"></div>
+                        <div class="m-t-1"></div>
                         
                         <p class="dark font-weight-600 m-l-2">Volutpat odio facilisis mauris</p>
-                        <div class="m-t-05"></div>
+                        <div class="m-t-1"></div>
                         
                         <p class="dark font-weight-600 m-l-2">Lectus vestibulum mattis</p>
                         <hr>
@@ -134,15 +131,15 @@
                 </div>
             </div>
             <div class="col-md-4">
-                <div class="shadow-color-3 m05 rounded">
+                <div class="shadow-color-3 m1 rounded">
                    
                         <img src="../img/vika/landing-pages/technology-2.jpg" class="img-responsive">
                        <div class="row">
                         <div class="col-md-2">
-                            <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">05</span></p>
+                            <p class="danger text-uppercase font-weight-600 m-t-1 h6">nov<br><span class="black bold h6">05</span></p>
                            
                         </div>
-                        <div class="col-md-10 m-t-05">
+                        <div class="col-md-10 m-t-1">
                             <h6 class="left font-weight-600">New Lecturers Meetings</h6>
                             <p class="dark left">Sit amet consectetur adipiscing elit.</p>
 
@@ -150,15 +147,15 @@
                        </div>
               
                 </div> 
-                <div class="shadow-color-3 m05 m-t-2 rounded">
+                <div class="shadow-color-3 m1 m-t-2 rounded">
                    
                     <img src="../img/vika/landing-pages/proposals.jpg" class="img-responsive">
                    <div class="row">
                     <div class="col-md-2">
-                        <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">05</span></p>
+                        <p class="danger text-uppercase font-weight-600 m-t-1 h6">nov<br><span class="black bold h6">05</span></p>
                        
                     </div>
-                    <div class="col-md-10 m-t-05">
+                    <div class="col-md-10 m-t-1">
                         <h6 class="left font-weight-600">Education Conference</h6>
                         <p class="dark left">Dictumst vestibulum rhoncus est pellentesque.</p>
 
@@ -168,15 +165,15 @@
             </div> 
             </div>
             <div class="col-md-4">
-                <div class="shadow-color-3 m05  rounded">
+                <div class="shadow-color-3 m1  rounded">
                     <img src="../img/vika/landing-pages/work-at-home.jpg" class="img-responsive">
                     
                         <div class="row">
                             <div class="col-md-2">
-                                <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">26</span></p>
+                                <p class="danger text-uppercase font-weight-600 m-t-1 h6">nov<br><span class="black bold h6">26</span></p>
                                
                             </div>
-                            <div class="col-md-10 m-t-05">
+                            <div class="col-md-10 m-t-1">
                                 <h6 class="left font-weight-600">Online Teaching</h6>
                                 <p class="dark left">Sed augue lacus viverra vitae congue eu consequat ac. </p>
     
@@ -184,15 +181,15 @@
                            </div>
                  
                 </div> 
-                <div class="shadow-color-3 m05 m-t-2 rounded">
+                <div class="shadow-color-3 m1 m-t-2 rounded">
                    
                     <img src="../img/vika/landing-pages/template-2.jpg" class="img-responsive">
                    <div class="row">
                     <div class="col-md-2">
-                        <p class="danger text-uppercase font-weight-600 m-t-05 h6">nov<br><span class="black bold h6">30</span></p>
+                        <p class="danger text-uppercase font-weight-600 m-t-1 h6">nov<br><span class="black bold h6">30</span></p>
                        
                     </div>
-                    <div class="col-md-10 m-t-05">
+                    <div class="col-md-10 m-t-1">
                         <h6 class="left font-weight-600">Student Training Meetup</h6>
                         <p class="dark left">Sed vulputate odio ut enim blandit volutpat.</p>
 
@@ -204,48 +201,47 @@
         </div>
       </div>  
       <div class="parallax-img m-t-4" style="background-image: url('../img/vika/design-company/parallax.jpg'); height: 700px;">
-        <div class="row m-h-7">
+        <div class="row m-h-4">
             <div class="col-md-6">
-            <div class="p-v-1 container m-t-6 bga-grey">
+            <div class="p-v-1 container m-t-4 bga-grey">
             <h5 class="white font-weight-600 text-uppercase left m-l-2">Apply for bachelor degree</h5>
             <p class="grey left m-v-1 m-l-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Sit amet volutpat consequat mauris nunc congue nisi<br> vitae suscipit.</p>
-            <button class="button bg-danger p-h-1  p-v-05  left white rounded text-uppercase m-l-2">Join us now!</button>
+            <button class="button bg-danger p-h-1  p-v-1  left white rounded text-uppercase m-l-2">Join us now!</button>
                     </div>     
                     <div class="p-v-1 container m-t-2 bga-grey">
                         <h5 class="white font-weight-600 text-uppercase left m-l-2">Apply for bachelor degree</h5>
                         <p class="grey left m-v-1 m-l-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.<br> Sit amet volutpat consequat mauris nunc congue nisi<br> vitae suscipit.</p>
-                        <button class="button bg-warning p-h-1  p-v-05  left white rounded text-uppercase m-l-2">Join us now!</button>
+                        <button class="button bg-warning p-h-1  p-v-1  left white rounded text-uppercase m-l-2">Join us now!</button>
                                 </div>     
              
             </div>
             <div class="col-md-6">
-            <div class="shadow-color-3 bg-white m-t-6 m05">
+            <div class="shadow-color-3 bg-white m-t-4 m1">
              <h5 class="warning m-v-2 bold center">About Edu Meeting HTML Template</h5>
              <p class="dark p-h-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Sit amet volutpat consequat mauris nunc congue nisi vitae suscipit. In est ante in nibh mauris.</p>
               <hr class="col-9"> 
               <h5 class="black center font-weight-600">HTML CSS Bootstrap Layout</h5>
-              <p class="dark p-h-4 m-t-05">Natoque penatibus et magnis dis. Habitant morbi tristique senectus et netus et malesuada fames ac. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. </p>
+              <p class="dark p-h-4 m-t-1">Natoque penatibus et magnis dis. Habitant morbi tristique senectus et netus et malesuada fames ac. Donec ac odio tempor orci dapibus ultrices in iaculis nunc. </p>
             <hr class="col-9">
             <h5 class="black center font-weight-600">Please tell your friends</h5>
-            <p class="dark p-h-4 m-t-05">Gravida quis blandit turpis cursus in hac habitasse platea. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. </p>
+            <p class="dark p-h-4 m-t-1">Gravida quis blandit turpis cursus in hac habitasse platea. Aliquet bibendum enim facilisis gravida neque convallis a cras semper. </p>
             </div>
       </div>
         </div> 
         </div>
-    </div>    
     <div class="container m-v-4">
         <h4 class="black left font-weight-600 text-uppercase m-l-2">Our popular courses</h4>
         <hr>
         <div class="row m-t-2">
             <div class="col-md-3">
               
-                    <div class="shadow-color-3 m05 rounded">
+                    <div class="shadow-color-3 m1 rounded">
                        
                             <img src="../img/vika/landing-pages/technology-2.jpg" class="img-responsive">
                                
                           
                             
-                                <h6 class="center black font-weight-600 m-t-05">Lorem ipsum dolor sit amet consectetur elit</h6>
+                                <h6 class="center black font-weight-600 m-t-1">Lorem ipsum dolor sit amet consectetur elit</h6>
                                 <hr>
                               <div class="row">
                                 <div class="col-md-8">
@@ -275,13 +271,13 @@
             </div>
             <div class="col-md-3">
               
-                <div class="shadow-color-3 m05 rounded">
+                <div class="shadow-color-3 m1 rounded">
                    
                         <img src="../img/vika/landing-pages/template-2.jpg" class="img-responsive">
                            
                       
                         
-                            <h6 class="center black font-weight-600 m-t-05">Lorem ipsum dolor sit amet consectetur elit</h6>
+                            <h6 class="center black font-weight-600 m-t-1">Lorem ipsum dolor sit amet consectetur elit</h6>
                             <hr>
                           <div class="row">
                             <div class="col-md-8">
@@ -306,13 +302,13 @@
         </div>
         <div class="col-md-3">
               
-            <div class="shadow-color-3 m05 rounded">
+            <div class="shadow-color-3 m1 rounded">
                
                     <img src="../img/vika/landing-pages/template-4.jpg" class="img-responsive">
                        
                   
                     
-                        <h6 class="center black font-weight-600 m-t-05">Lorem ipsum dolor sit amet consectetur elit</h6>
+                        <h6 class="center black font-weight-600 m-t-1">Lorem ipsum dolor sit amet consectetur elit</h6>
                         <hr>
                       <div class="row">
                         <div class="col-md-8">
@@ -342,13 +338,13 @@
     </div>
     <div class="col-md-3">
               
-        <div class="shadow-color-3 m05 rounded">
+        <div class="shadow-color-3 m1 rounded">
            
                 <img src="../img/vika/landing-pages/template-6.jpg" class="img-responsive">
                    
               
                 
-                    <h6 class="center black font-weight-600 m-t-05">Lorem ipsum dolor sit amet consectetur elit</h6>
+                    <h6 class="center black font-weight-600 m-t-1">Lorem ipsum dolor sit amet consectetur elit</h6>
                     <hr>
                   <div class="row">
                     <div class="col-md-8">
@@ -407,14 +403,16 @@
         </div>
         </div>
     </div>
-    <div class="col-md-6 m-t-6">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/GtH4z-7ixPI" title="YouTube video player" frameborder="0" class="embed-responsive-item rounded" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    <div class="col-md-6 m-t-4">
+        <div class="embed embed-wide-screen rounded">
+            <iframe src="https://www.youtube.com/embed/GtH4z-7ixPI" title="YouTube video player" frameborder="0" class="embed-item" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
     </div>
     </div>
     </div>
     <div class="container">
         <div class="row">
-            <div class="col-md-8 m-t-6">
+            <div class="col-md-8 m-t-4">
                 <h4 class="black left bold text-uppercase">Let's get in touch</h4>
                 <hr>
                 <form>
@@ -432,12 +430,12 @@
                     <div class="form-group">
                       <textarea class="form-control" rows="5" id="comment" placeholder="Your message"></textarea>
                     </div>
-                    <button type="submit" class="btn btn-primary bg-danger">Send message now</button>        
+                    <button type="submit" class="button bg-danger">Send message now</button>        
                     
                   </form>
                   </div>
           
-            <div class="col-md-4 m-t-6">
+            <div class="col-md-4 m-t-4">
                 <div class="bg-danger rounded p-v-1">
                     <h5 class="white bold  center">Phone Number</h5>
                     <h6 class="font-weight-600 white center">123 456 789 10</h6>
@@ -455,7 +453,7 @@
         </div>
     </div>
 
-    <div class="center p2 color-1 m-t-6 bg-light-grey">
+    <div class="center p2 color-1 m-t-4 bg-light-grey">
         <p class="black font-weight-400"> © Copyright 2023. All Rights Reserved Europe IT Outsourcing Company.</p>
     </div>
 </body>
