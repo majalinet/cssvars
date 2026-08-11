@@ -1,175 +1,174 @@
-﻿<!doctype html>
+<!doctype html>
 <html lang="en">
 
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
     <title>Shopping Cart With JS Calculator - CSS Vars Free HTML Template</title>
-    <link rel="stylesheet" href="../css/cssvars.css">
+    <link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
 </head>
 
 <body>
+
     <header>
-    <div class="main-nav nav-bottom-border-hover bordered-bottom">
-        <div class="main-menu">
-            <a href="http://agilecss.com"  >                            
-                <svg alt="Agile Logo" class="icon-color-1-fill  icon-m" xmlns="http://www.w3.org/2000/svg" viewbox="0 0 30.17 37.71"><defs><style>.cls-2{font-size:34px;fill:#fff;font-family:Montserrat-Thin, Montserrat;letter-spacing:0.01em;}</style></defs><title>Agile logo</title><g ><g ><rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12"/><text class="cls-2" transform="translate(3.33 28.9)">A</text></g></g></svg>
-            </a>            <label for="toggle-1" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" />
-                </svg>
-            </label>
-            <input type="checkbox" id="toggle-1" />
-            <nav class="nav">
-                <ul>
-                    <li><a href="Products.html">Browse</a></li>
-                    <li><a href="add-activity.html">Search</a></li>
-                    <li><a href="signup.html">Sign up</a></li>
-                    <li><a href="login.html">Log in</a></li>
-                </ul>
-            </nav>
+        <div class="main-nav p1 nav-top-border-hover">
+            <div class="main-menu">
+                <input type="checkbox" id="toggle-1">
+
+                <a href="#" class="logo">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-m d-inline" viewBox="0 0 24 24">
+                        <path d="M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.59 17.3,11.97L20.88,5.5C20.96,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18Z"></path>
+                    </svg>
+                    <span class="bold h6 d-inline m0">Vika Store</span>
+                </a>
+
+                <div class="nav-panel">
+                    <nav class="nav">
+                        <a href="Products.html">Home</a>
+
+                        <div class="dropdown">
+                            <input type="checkbox" id="shop-dropdown" class="dropdown-state">
+                            <label for="shop-dropdown" class="dropdown-toggle">Shop</label>
+                            <ul class="dropdown-menu menu">
+                                <li class="dropdown-header">Categories</li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                            <path d="M12,2C6.5,2 2,6.5 2,12S6.5,22 12,22 22,17.5 22,12 17.5,2 12,2M12,20C7.59,20 4,16.41 4,12S7.59,4 12,4 20,7.59 20,12 16.41,20 12,20M12.5,7H11V13L16.2,16.2L17,14.9L12.5,12.2V7Z"></path>
+                                        </svg>
+                                        New Arrivals
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                            <path d="M21.9,19.7L20.6,21L14,14.4C13.4,14.8 12.7,15 12,15A3,3 0 0,1 9,12A3,3 0 0,1 12,9C13.7,9 15,10.3 15,12C15,12.7 14.8,13.4 14.4,14L15.8,15.4L21.9,19.7M12,3C17.5,3 22,7.5 22,13C22,13.7 21.9,14.4 21.7,15L20.2,13.5C20.2,13.3 20.2,13.2 20.2,13C20.2,8.6 16.6,5 12.2,5C7.8,5 4.2,8.6 4.2,13C4.2,17.4 7.8,21 12.2,21C13.4,21 14.6,20.7 15.6,20.2L17,21.6C15.5,22.5 13.8,23 12,23C6.5,23 2,18.5 2,13C2,7.5 6.5,3 12,3Z"></path>
+                                        </svg>
+                                        Women
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                            <path d="M21.75,7.65C21.42,7.65 21.08,7.53 20.8,7.28L18.11,4.87L16.28,6.89L18.97,9.3C19.55,9.83 19.6,10.73 19.08,11.31C18.55,11.9 17.65,11.95 17.06,11.42L16.62,11L15.24,15.11L18.72,19.87C19.19,20.5 19.05,21.4 18.42,21.87C17.79,22.33 16.9,22.19 16.43,21.56L13.28,17.25L10.13,21.56C9.67,22.19 8.77,22.33 8.14,21.87C7.5,21.4 7.37,20.5 7.83,19.87L11.31,15.11L9.94,11L9.5,11.42C8.9,11.95 8,11.9 7.48,11.31C6.95,10.73 7,9.83 7.59,9.3L10.27,6.89L8.44,4.87L5.75,7.28C5.2,7.78 4.34,7.73 3.84,7.17C3.34,6.62 3.39,5.76 3.94,5.26L7.15,2.38C7.9,1.71 8.97,1.63 9.79,2.13C10.27,1.44 11.08,1 12,1C12.92,1 13.73,1.44 14.21,2.13C15.03,1.63 16.1,1.71 16.85,2.38L20.06,5.26C20.61,5.76 20.66,6.62 20.16,7.17C19.9,7.5 19.53,7.65 19.16,7.65C19,7.65 19,7.65 21.75,7.65Z"></path>
+                                        </svg>
+                                        Men
+                                    </a>
+                                </li>
+                                <li class="dropdown-divider"></li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                            <path d="M12,2A2,2 0 0,1 14,4C14,4.74 13.6,5.39 13,5.73V7H14A7,7 0 0,1 21,14H22A1,1 0 0,1 23,15V18A1,1 0 0,1 22,19H21V20A2,2 0 0,1 19,22H5A2,2 0 0,1 3,20V19H2A1,1 0 0,1 1,18V15A1,1 0 0,1 2,14H3A7,7 0 0,1 10,7H11V5.73C10.4,5.39 10,4.74 10,4A2,2 0 0,1 12,2M7.5,13A2.5,2.5 0 0,0 5,15.5A2.5,2.5 0 0,0 7.5,18A2.5,2.5 0 0,0 10,15.5A2.5,2.5 0 0,0 7.5,13M16.5,13A2.5,2.5 0 0,0 14,15.5A2.5,2.5 0 0,0 16.5,18A2.5,2.5 0 0,0 19,15.5A2.5,2.5 0 0,0 16.5,13Z"></path>
+                                        </svg>
+                                        Kids
+                                    </a>
+                                </li>
+                                <li class="menu-item">
+                                    <a href="#">
+                                        <svg viewBox="0 0 24 24" class="menu-item-icon icon-color-1-fill">
+                                            <path d="M7,7H17A5,5 0 0,1 22,12A5,5 0 0,1 17,17H7A5,5 0 0,1 2,12A5,5 0 0,1 7,7M7,9A3,3 0 0,0 4,12A3,3 0 0,0 7,15A3,3 0 0,0 10,12A3,3 0 0,0 7,9Z"></path>
+                                        </svg>
+                                        Accessories
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <a href="add-activity.html">Deals</a>
+                        <a href="#contact">Contact</a>
+                    </nav>
+                </div>
+
+                <div class="nav-actions">
+                    <a href="#" aria-label="Search">
+                        <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill d-inline">
+                            <path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path>
+                        </svg>
+                    </a>
+                    <a href="login.html" aria-label="Account">
+                        <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill d-inline">
+                            <path d="M12,4A4,4 0 0,1 16,8A4,4 0 0,1 12,12A4,4 0 0,1 8,8A4,4 0 0,1 12,4M12,14C16.42,14 20,15.79 20,18V20H4V18C4,15.79 7.58,14 12,14Z"></path>
+                        </svg>
+                    </a>
+                    <a href="#cart-totals" class="position-relative" aria-label="Cart">
+                        <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill d-inline">
+                            <path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.59 17.3,11.97L20.88,5.5C20.96,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path>
+                        </svg>
+                        <span class="badge bga-danger position-absolute top-0 right-0 white">2</span>
+                    </a>
+                    <a href="signup.html" class="button">Sign up</a>
+                </div>
+
+                <label for="toggle-1" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                    </svg>
+                </label>
+            </div>
         </div>
-    </div>
-</header>
+    </header>
+
     <div class="promo-box-s bg-light-grey">
         <div class="container">
             <h1>Book Activity</h1>
-            <ol class="breadcrumb">
-                <li class="breadcrumb-item"><a href="#">Home</a></li>
-                <li class="breadcrumb-item">Book Now</li>
+            <ol class="breadcrumb p0">
+                <li class="breadcrumb-item">
+                    <a href="#">
+                        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-xs d-inline"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path></svg>
+                        Home
+                    </a>
+                </li>
+                <li class="breadcrumb-item"><a href="#">Book Now</a></li>
+                <li class="breadcrumb-item bold" aria-current="page">Cart</li>
             </ol>
         </div>
     </div>
 
-    
-
-
-
-    <div class="row container m-v-2 ">
-        <div class="col-md-12 services-ul m-v-1">
+    <div class="container m-v-2">
+        <div class="card">
             <div class="row">
-                <div class="col-md-12 p0">
-                    <div class="row p1">
-                        <div class="col-md-3">
-                            <img src="../img/vika/shop4.jpg" class="img-responsive d-inline-block" alt="alt text">
-                        </div>
-                        <div class="col-md-9">
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <h6 class="d-inline-block"><a href="#" class="dark" >NEMO QUAERAT NAM BEATAE
-                                            IUSTO MINIMA VEL</a></h6>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12">
-                                    <div class="row d-flex align-items-baseline">
-                                        <div class="col-2">
-                                            <span class="badge bga-color-1">New</span>
-                                        </div>
-                                        <div class="col-5 small">
-                                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs d-inline"
-                                                viewbox="0 0 512 512">
-                                                <path fill="currentColor"
-                                                    d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z" />
-                                            </svg>
-                                            <p class="d-inline small">01 Jan / 19:00 - 23:00</p>
-                                        </div>
-                                        <div class="col-5">
-                                            <a href="#">
-                                                <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs d-inline"
-                                                    viewbox="0 0 24 24">
-                                                    <path
-                                                        d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z">
-                                                    </path>
-                                                </svg>
-                                                <p class="d-inline small">Kharkov, Ukraine</p>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="col-md-12 p-v-1">
-                                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem,
-                                        dolorem
-                                        animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur
-                                        voluptate rerum
-                                        molestiae eaque possimus exercitationem eligendi fuga.</p>
-                                </div>
-                            </div>
-                        </div>
+                <div class="col-md-3 p-1-2">
+                    <img src="https://picsum.photos/seed/vikashop4/500/500" class="img-responsive rounded" alt="Adult Boots">
+                </div>
+                <div class="col-md-9 p-1-2">
+                    <div class="d-flex align-items-center gap-2 m-v-1">
+                        <span class="badge bga-color-1 white">New</span>
+                        <span class="small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-color-1-fill d-inline" viewBox="0 0 512 512">
+                                <path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path>
+                            </svg>
+                            01 Jan / 19:00 - 23:00
+                        </span>
+                        <a href="#" class="small">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-xs icon-color-1-fill d-inline" viewBox="0 0 24 24">
+                                <path d="M12 2C8.13 2 5 5.13 5 9c0 4.17 4.42 9.92 6.24 12.11.4.48 1.13.48 1.53 0C14.58 18.92 19 13.17 19 9c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"></path>
+                            </svg>
+                            Kharkov, Ukraine
+                        </a>
                     </div>
+
+                    <h6 class="m0"><a href="#" class="dark">Nemo Quaerat Nam Beatae Iusto Minima Vel</a></h6>
+
+                    <p class="p-v-1">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ratione, voluptatem,
+                        dolorem animi nisi autem blanditiis enim culpa reiciendis et explicabo tenetur
+                        voluptate rerum molestiae eaque possimus exercitationem eligendi fuga.</p>
                 </div>
             </div>
-
-    </div>
-
-
-        <!-- <div class="col-md-5 m-v-2 ">
-
-            <div >
-
-                <h4 class="">Billing Address</h4>
-
-
-                <div class="row m-v-1">
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Name:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName1" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-
-                    <div class="col-md-6">
-                        <div class="form-group">
-                            <label for="exampleInputEmail1" class="font-weight-400">Last name:</label>
-                            <input type="text" class="form-control" id="exampleInputLastName1" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-                </div>
-
-                <div class="row m-v-1">
-                    <div class="col-md-12">
-
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">Address:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName" aria-describedby="emailHelp">
-                        </div>
-
-                        <div class="form-group">
-                            <label for="exampleInputName1" class="font-weight-400">City / Town:</label>
-                            <input type="text" class="form-control" id="exampleInputFirstName3" aria-describedby="emailHelp">
-                        </div>
-                    </div>
-
-                    <div class="row m-v-1">
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="font-weight-400">Email address:</label>
-                                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-
-                        <div class="col-md-6">
-                            <div class="form-group">
-                                <label for="exampleInputEmail1" class="font-weight-400">Phone:</label>
-                                <input type="tel" class="form-control" id="exampleInputLastName3" aria-describedby="emailHelp">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div> -->
-
+        </div>
     </div>
 
     <div class="row container m-v-2">
-        <div class="col-md-6 p2">
-            <h6 class="font-weight-400">Your Orders</h6>
-            <div class="row auto-overflow-x">
-                <div class="col-md-12">
-                    <table class="table table-hover m-v-2">
+        <div class="col-md-6 p1">
+            <div class="card">
+                <h6 class="font-weight-400">Your Orders</h6>
+                <div class="overflow-x-auto">
+                    <table class="table table-hover m-v-1">
                         <thead>
                             <tr>
                                 <th></th>
@@ -187,55 +186,51 @@
                         <tbody>
                             <tr>
                                 <td>
-                                    <img src="../img/vika/shop4.jpg" class="img-responsive hover-shadow m-h-1 m-v-1">
+                                    <img src="https://picsum.photos/seed/vikashop4/120/120" class="img-responsive rounded hover-shadow m-h-1 m-v-1">
                                 </td>
-
                                 <td>
                                     <p class="m1 small font-weight-400 center">Adult Boots</p>
                                 </td>
                                 <td>
                                     <div class="form-group">
                                         <input type="number" id="item1-quantity" name="item1value" min="0" max="500" class="form-control" value="2" onchange="cartSum();">
-                                        <input type="number" id="item1-price" name="item1price"class="d-none" value="50">
+                                        <input type="number" id="item1-price" name="item1price" class="d-none" value="50">
                                     </div>
                                 </td>
-
                                 <td>
                                     <p class="m1 center">£<span id="item1-total">100</span></p>
                                 </td>
                             </tr>
                             <tr>
-
                                 <td>
-                                    <img src="../img/vika/shop5.jpg" class="img-responsive hover-shadow m-h-1 m-v-1">
+                                    <img src="https://picsum.photos/seed/vikashop5/120/120" class="img-responsive rounded hover-shadow m-h-1 m-v-1">
                                 </td>
                                 <td>
                                     <p class="m1 small font-weight-400 center">Child Dress</p>
                                 </td>
-
                                 <td>
                                     <div class="form-group">
                                         <input type="number" id="item2-quantity" name="item2value" min="0" max="500" class="form-control" value="0" onchange="cartSum();">
-                                        <input type="number" id="item2-price" name="item2price"class="d-none" value="30">
+                                        <input type="number" id="item2-price" name="item2price" class="d-none" value="30">
                                     </div>
                                 </td>
-
                                 <td>
                                     <p class="m1 center">£<span id="item2-total">0</span></p>
                                 </td>
+                            </tr>
                             <tr>
-
-                                <td><img src="../img/vika/shop3.jpg" class="img-responsive hover-shadow m-h-1 m-v-1"></td>
+                                <td>
+                                    <img src="https://picsum.photos/seed/vikashop3/120/120" class="img-responsive rounded hover-shadow m-h-1 m-v-1">
+                                </td>
                                 <td>
                                     <p class="m1 small font-weight-400 center">Small Jacket</p>
                                 </td>
                                 <td>
                                     <div class="form-group">
                                         <input type="number" id="item3-quantity" name="item3value" min="0" max="500" class="form-control" value="0" onchange="cartSum();">
-                                        <input type="number" id="item3-price" name="item3price"class="d-none" value="40">
+                                        <input type="number" id="item3-price" name="item3price" class="d-none" value="40">
                                     </div>
                                 </td>
-
                                 <td>
                                     <p class="m1 center">£<span id="item3-total">0</span></p>
                                 </td>
@@ -269,273 +264,208 @@
             }
         </script>
 
-        <div class="col-md-6 p2">
-            <h6 class="font-weight-400">Cart Totals</h6>
+        <div class="col-md-6 p1" id="cart-totals">
+            <div class="card">
+                <h6 class="font-weight-400">Cart Totals</h6>
 
-            <div class="auto-overflow-x">
-<table class="table table-hover m-v-2">
-                <tbody>
-                    <tr>
-                        <td>Cart Subtotal:</td>
-                        <td>£<span id="cart-sub-total">100</span></td>
-                    </tr>
-                    <tr>
-                        <td>Shipping:</td>
-                        <td>£10</td>
-                    </tr>
-                    <tr>
-                        <td>Total:</td>
-                            <td>£<span id="cart-total">110</span></td>
-                    </tr>
-                </tbody>
-            </table>
-</div>
-
-            <div class="accordion">
-                <div class="accordionBlock">
-                    <input type="radio" name="accordionTitle" id="accordionTitle1" checked="">
-                    <label for="accordionTitle1">Direct Bank Transfer</label>
-                    <div class="accordionContent">
-                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                            velit
-                            aliquet.
-                        </p>
-                    </div>
-                </div>
-                <div class="accordionBlock">
-                    <input type="radio" name="accordionTitle" id="accordionTitle2">
-                    <label for="accordionTitle2"> Cheque Payment</label>
-                    <div class="accordionContent">
-                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                            velit
-                            aliquet.
-                        </p>
-                    </div>
+                <div class="overflow-x-auto">
+                    <table class="table table-hover m-v-1">
+                        <tbody>
+                            <tr>
+                                <td>Cart Subtotal:</td>
+                                <td>£<span id="cart-sub-total">100</span></td>
+                            </tr>
+                            <tr>
+                                <td>Shipping:</td>
+                                <td>£10</td>
+                            </tr>
+                            <tr>
+                                <td class="bold">Total:</td>
+                                <td class="bold">£<span id="cart-total">110</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
 
-
-                <div class="accordionBlock">
-                    <input type="radio" name="accordionTitle" id="accordionTitle3">
-                    <label for="accordionTitle3"> Paypal
-                    </label>
-                    <div class="accordionContent">
-                        <p>Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
-                            ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
-                            velit
-                            aliquet.
-                        </p>
+                <div class="accordion m-v-1">
+                    <div class="accordion-block">
+                        <input type="radio" name="accordionTitle" id="accordionTitle1" checked>
+                        <label for="accordionTitle1" class="accordion-label">Direct Bank Transfer</label>
+                        <div class="accordion-content">
+                            <p class="m0">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
+                                velit aliquet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="radio" name="accordionTitle" id="accordionTitle2">
+                        <label for="accordionTitle2" class="accordion-label">Cheque Payment</label>
+                        <div class="accordion-content">
+                            <p class="m0">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
+                                velit aliquet.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="radio" name="accordionTitle" id="accordionTitle3">
+                        <label for="accordionTitle3" class="accordion-label">Paypal</label>
+                        <div class="accordion-content">
+                            <p class="m0">Donec sed odio dui. Nulla vitae elit libero, a pharetra augue. Nullam id dolor id nibh
+                                ultricies vehicula ut id elit. Integer posuere erat a ante venenatis dapibus posuere
+                                velit aliquet.
+                            </p>
+                        </div>
                     </div>
                 </div>
+
+                <button class="float-right m-v-1 bga-color-1 white">Place Order</button>
             </div>
-            <button class="float-right m-v-2 ">Place Order</button>
         </div>
     </div>
 
-    <div class="row m0 m-v-05">
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Money Back Guarentee </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            100% moneyback guarentee in all orders
-                        </p>
-                    </div>
-                </div>
+    <div class="row container m-v-2 gap-2">
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Money Back Guarantee</p>
+                <p class="grey m0 small">100% moneyback guarantee on all orders</p>
             </a>
         </div>
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Online Support 24/7
-                        </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            Need assistance with our products
-                        </p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Online Support 24/7</p>
+                <p class="grey m0 small">Need assistance with our products</p>
             </a>
         </div>
-        <div class="col-md-4 p05">
-            <a href="#" style="text-decoration: none;">
-                <div class="row p-v-3 bg-dark justify-content-center">
-                    <div class="m-v-05">
-                        <svg viewBox="0 0 24 24" class="d-inline icon-s img-responsive">
-                            <path fill="#fff"
-                                d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z">
-                            </path>
-                        </svg>
-                    </div>
-                    <div class="d-inline">
-                        <p class="bold h6 white p-h-1 m0 left">
-                            Free Shipping &amp; Free Returns </p>
-                        <p class="light-grey p-h-1 m0 left">
-                            Free shipping on all orders over $99 </p>
-                    </div>
-                </div>
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Free Shipping &amp; Returns</p>
+                <p class="grey m0 small">Free shipping on all orders over $99</p>
             </a>
         </div>
     </div>
-    <footer class="bg-dark p2 line-height-17">
-        <div class="container-fluid row grey">
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <p class="white text-uppercase bold">SUBSCRIBE NEWSLETTER</p>
+
+    <footer class="bg-dark p2 line-height-17 m-t-4 rounded-0">
+        <div class="row container-fluid child-padding-1">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <p class="white text-uppercase bold">Subscribe Newsletter</p>
                 <p class="light-grey font-weight-400">
                     Get all the latest information on Events, Sales and Offers.
                     Sign up for newsletter today.
                 </p>
             </div>
 
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <div class="row m-v-2">
-                    <div class="col-9 p0 m0">
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="inputCity" placeholder="Email Address">
-                        </div>
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="d-flex gap-1 m-v-2">
+                    <div class="form-group flex-grow-1 m0">
+                        <input type="email" class="form-control" id="inputSubscribeEmail" placeholder="Email Address">
                     </div>
-                    <div class="col-3 p0 left">
-                        <button class="m0 hover-shadow img-responsive"
-                            style="padding: 0.6rem 1rem 0.6rem 1rem; background-color: black;">Subscribe</button>
-                    </div>
+                    <button class="m0 hover-shadow bga-color-1 white">Subscribe</button>
                 </div>
             </div>
 
-            <div class="col-md-6 col-lg-4 grey p-v-1">
-                <div class="center m-v-2">
-                    <i class="icon-box hover-grey">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="d-flex gap-1 justify-content-center m-v-2">
+                    <a href="#"><i class="icon-box hover-grey">
                         <svg viewBox="0 0 24 24" class="icon-s">
-                            <path fill="#fff"
-                                d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z">
-                            </path>
+                            <path fill="#fff" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
                         </svg>
-                    </i>
-
-                    <i class="icon-box hover-grey">
+                    </i></a>
+                    <a href="#"><i class="icon-box hover-grey">
                         <svg viewBox="0 0 512 512" class="icon-s">
-                            <path fill="#fff" id="Twitter__x28_alt_x29_"
-                                d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876
-                                                                        c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404
-                                                                        c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067
-                                                                        c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769
-                                                                        C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192
-                                                                        c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178
-                                                                        c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947
-                                                                        c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828
-                                                                        c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39
-                                                                        C414.973,206.142,393.023,203.486,381.384,198.639z">
-                            </path>
+                            <path fill="#fff" d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39C414.973,206.142,393.023,203.486,381.384,198.639z"></path>
                         </svg>
-                    </i>
-
-                    <i class="icon-box hover-grey">
+                    </i></a>
+                    <a href="#"><i class="icon-box hover-grey">
                         <svg viewBox="0 0 24 24" class="icon-s">
-                            <path fill="#fff"
-                                d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z">
-                            </path>
+                            <path fill="#fff" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
                         </svg>
-                    </i>
+                    </i></a>
                 </div>
             </div>
         </div>
-        <div class="container-fluid row grey">
-            <div class="col-md-6 col-lg-3 grey p-v-1">
-                <p class="white text-uppercase bold">contact information</p>
-                <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">address:</p>
-                    <p class="grey left m0 smallere font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
+
+        <div class="row container-fluid">
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">Contact Information</p>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Address:</p>
+                    <p class="grey left m0 smaller font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
                 </div>
-                <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">phone:</p>
-                    <p class="grey left m0 smallere font-weight-400">+380 96 926 5003</p>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Phone:</p>
+                    <p class="grey left m0 smaller font-weight-400">+380 96 926 5003</p>
                 </div>
-                <div class="smaller m-v-1">
-                    <p class="white text-uppercase font-weight-400 m0 smaller">EMAIL:</p>
-                    <p class="greyleft m0 smallere font-weight-400" style="word-wrap: break-word;">
-                        info@europeitoutsourcing.com
-                    </p>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Email:</p>
+                    <p class="grey left m0 smaller font-weight-400">info@europeitoutsourcing.com</p>
                 </div>
             </div>
-            <div class="col-md-6 col-lg-9 grey">
+
+            <div class="col-md-6 col-lg-9">
                 <div class="row">
-                    <div class="col-md-6 col-lg-4 grey p-v-1">
-                        <p class="white text-uppercase bold">my account</p>
+                    <div class="col-md-6 col-lg-4 p-v-1">
+                        <p class="white text-uppercase bold">My Account</p>
                         <div class="row">
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">About us</a>
-                                    </li>
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">About us</a></li>
                                     <li><a href="#" class="grey m0">Contact us</a></li>
                                     <li><a href="#" class="grey m0">My account</a></li>
                                 </ul>
                             </div>
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
                                     <li><a href="#" class="grey m0">Orders history</a></li>
-                                    <li><a href="#" class="grey m0">Advanced search</a>
-                                    </li>
+                                    <li><a href="#" class="grey m0">Advanced search</a></li>
                                     <li><a href="#" class="grey m0">Login</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-5 grey p-v-1">
-                        <p class="white text-uppercase bold">main features</p>
+                    <div class="col-md-6 col-lg-5 p-v-1">
+                        <p class="white text-uppercase bold">Main Features</p>
                         <div class="row">
-                            <div class="col-6 p0">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
-                                    <li><a href="#" class="grey m0">Pure HTML CSS</a>
-                                    </li>
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Pure HTML CSS</a></li>
                                     <li><a href="#" class="grey m0">Fast Loading</a></li>
                                     <li><a href="#" class="grey m0">Extendable with Variables</a></li>
                                 </ul>
                             </div>
                             <div class="col-6">
-                                <ul style="list-style-type:none" class="p0 line-height-2 smaller">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
                                     <li><a href="#" class="grey m0">Responsive &amp; Mobile first</a></li>
-                                    <li><a href="#" class="grey m0">100's of Free UI Elements</a>
-                                    </li>
+                                    <li><a href="#" class="grey m0">100's of Free UI Elements</a></li>
                                     <li><a href="#" class="grey m0">Free &amp; Open Source</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
 
-                    <div class="col-md-6 col-lg-3 grey p-v-1">
-                        <p class="white text-uppercase bold">working hours</p>
-                        <p class="grey font-weight-400">
-                            Mon - Fri / 8:00AM - 5:00PM
-                        </p>
+                    <div class="col-md-6 col-lg-3 p-v-1">
+                        <p class="white text-uppercase bold">Working Hours</p>
+                        <p class="grey font-weight-400">Mon - Fri / 8:00AM - 5:00PM</p>
                     </div>
                 </div>
+
                 <hr class="m0">
+
                 <div class="row p-v-1">
-                    <div class="col-md-4 white center">
-                    </div>
-                    <div class="col-md-8 lg-order-first">
-                        <p class="center grey left m-v-1 smaller"> © Copyright 2018. All Rights Reserved Europe IT
-                            Outsourcing
-                            Company.
-                        </p>
+                    <div class="col-md-12">
+                        <p class="grey left m-v-1 smaller">© Copyright 2026. All Rights Reserved Europe IT
+                            Outsourcing Company.</p>
                     </div>
                 </div>
             </div>
