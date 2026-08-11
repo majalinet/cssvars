@@ -11,15 +11,6 @@
 
     <title>Landing Page - CSS Vars Free HTML Template</title>
 
-    <!-- Favicons -->
-    <link rel="apple-touch-icon" href="img/favicons/apple-touch-icon.png" sizes="180x180">
-    <link rel="icon" href="img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
-    <link rel="icon" href="img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
-    <link rel="manifest" href="img/favicons/manifest.json">
-    <link rel="icon" href="favicon.ico">
-    <meta name="msapplication-config" content="img/favicons/browserconfig.xml">
-    <meta name="theme-color" content="#FF530D">
-
     <link rel="stylesheet" href="../css/cssvars.css">
 
     <style>
@@ -32,77 +23,40 @@
 </head>
 
 <body>
-    <div class="position-absolute w-100 top-0 left-0 opasity05">
-        <div class="row">
-            <div class="col-md-8 p0 m0">
-                <div class="main-nav container p0">
-                    <div class="main-menu m0">
-                        <a href="#" target="_blank">
-                            <svg alt="Agile Logo" class="icon-color-1-fill icon-m m05"
-                                xmlns="http://www.w3.org/2000/svg" viewBox="0 0 30.17 37.71">
-                                <defs>
-                                    <style>
-                                        .cls-2 {
-                                            font-size: 34px;
-                                            fill: #fff;
-                                            font-family: Montserrat-Thin, Montserrat;
-                                            letter-spacing: 0.01em;
-                                        }
-                                    </style>
-                                </defs>
-                                <title>Agile logo</title>
-                                <g>
-                                    <g>
-                                        <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12">
-                                        </rect>
-                                        <text class="cls-2" transform="translate(3.33 28.9)">A</text>
-                                    </g>
-                                </g>
-                            </svg>
-                        </a>
-
-                        <label for="toggle-1" class="toggle-menu">
-                            <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-2-fill icon-s"
-                                viewBox="0 0 24 24">
-                                <path d="M0 0h24v24H0z" fill="none"></path>
-                                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
-                            </svg>
-                        </label>
-                        <input type="checkbox" id="toggle-1">
-
-                        <nav class="m-v-05">
-                            <ul class="m0 p0 font-weight-200 text-uppercase">
-                                <li><a href="#home" class="white smaller">home</a></li>
-                                <li><a href="#pages" class="white smaller">pages</a></li>
-                                <li><a href="#portfolio" class="white smaller">portfolio</a></li>
-                                <li><a href="#blog" class="white smaller">blog</a></li>
-                                <li><a href="#shop" class="white smaller">shop</a></li>
-                                <li><a href="#elements" class="white smaller">elements</a></li>
-                            </ul>
+    <div class="position-fixed w-100-vw top-0 left-0  shadow-none">
+        <div class="main-nav container">
+            <div class="main-menu rounded-0 ">
+                <input type="checkbox" id="toggle-h5">
+                <a href="index.html" class="logo">
+                    <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+                </a>
+                <div class="nav-panel">
+                    <div class="nav-group">
+                        <nav class="nav nav-top-border-hover">
+                                    <a href="#pages" class="white">pages</a>
+                                    <a href="#portfolio" class="white">portfolio</a>
+                                    <a href="#blog" class="white">blog</a>
+                                    <a href="#shop" class="white">shop</a>
+                                    <a href="#elements" class="white">elements</a>
                         </nav>
+    
                     </div>
                 </div>
-            </div>
-            <div class="col-md-3 right p-v-1 d-inline">
-                <a href="#">
-                    <svg viewBox="0 0 24 24" class="img-responsive icon-s">
-                        <path fill="#ccc"
-                            d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
-                        </path>
+                <label for="toggle-h5" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
                     </svg>
-                </a>
-                <a href="#">
-                    <svg viewBox="0 0 24 24" class="img-responsive icon-s">
-                        <path fill="#ccc"
-                            d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z">
-                        </path>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
                     </svg>
-                </a>
+                </label>
             </div>
         </div>
     </div>
 
-    <div class="h-100 parallax-img p0" style="background-image: url('../img/vika/landing-pages/technology-2.jpg'); ">
+    <div class="h-100-vh rounded-0 parallax-img p0" style="background-image: url('../img/vika/landing-pages/technology-2.jpg'); ">
         <div class="container p-v-2">
             <div class="p-v-4 m-v-4">
                 <h1 class="p0 white center display-1 topmargin">Inspirational &<br> Innovative Technology</h1>
@@ -119,7 +73,7 @@
 
         </div>
     </div>
-    <div class="parallax-img p0 h-100"
+    <div class="parallax-img p0 h-100-vh rounded-0"
         style="background-image: url('../img/vika/landing-pages/blue-sky.jpg'); height: 500px; background-size: cover;">
         <div class="container p-v-5">
             <div class="row p-v-4">
@@ -145,7 +99,7 @@
 
         </div>
     </div>
-    <div class="parallax-img p0 h-100 w-100"
+    <div class="parallax-img p0 h-100-vh rounded-0 w-100"
         style="background-image: url('../img/vika/landing-pages/sky.jpg'); background-size: cover;">
         <div class="container p-v-4">
             <div class="row center">
@@ -234,7 +188,7 @@
             </div>
         </div>
     </div>
-    <div class="p0 parallax-img h-100" style="background-image: url('../img/vika/shop/tech.jpg');">
+    <div class="p0 parallax-img h-100-vh rounded-0" style="background-image: url('../img/vika/shop/tech.jpg');">
         <div class="row container p-v-7">
             <div class="col-md-7">
             </div>
@@ -253,7 +207,7 @@
             </div>
         </div>
     </div>
-    <div class="p0 parallax-img h-100" style="background-image: url('../img/vika/landing-pages/girl.jpg');">
+    <div class="p0 parallax-img h-100-vh rounded-0" style="background-image: url('../img/vika/landing-pages/girl.jpg');">
         <div class="container p-v-4">
             <div class="row m-v-4">
                 <div class="col-md-7 p-v-4 dark">
@@ -278,7 +232,7 @@
             </div>
         </div>
     </div>
-    <div class="p-v-3 parallax-img h-100" style="background-image: url('../img/vika/landing-pages/smartphone.jpg');">
+    <div class="p-v-3 parallax-img h-100-vh rounded-0" style="background-image: url('../img/vika/landing-pages/smartphone.jpg');">
         <div class="container p-v-4">
             <div class="row">
                 <div class="col-md-3">
