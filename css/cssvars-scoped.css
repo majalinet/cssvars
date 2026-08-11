@@ -3301,7 +3301,9 @@ left: 105%;
 .cssvars .top-25 { top: 25%; }
 .cssvars .right-25 { right: 25%; }
 .cssvars .top-50 { top: 50%; }
+.cssvars .bottom-50 { bottom: 50%; }
 .cssvars .right-50 { right: 50%; }
+.cssvars .left-50 { left: 50%; }
 .cssvars .top-75 { top: 75%; }
 .cssvars .right-75 { right: 75%; }
 .cssvars .top-25-vh { top: 25vh; }
@@ -3310,6 +3312,14 @@ left: 105%;
 .cssvars .right-50-vw { right: 50vw; }
 .cssvars .top-75-vh { top: 75vh; }
 .cssvars .right-75-vw { right: 75vw; }
+/* Override components defaults */
+.cssvars .top-auto    { top: auto; }
+.cssvars .right-auto  { right: auto; }
+.cssvars .bottom-auto { bottom: auto; }
+.cssvars .left-auto   { left: auto; }
+.cssvars .translate-x--50 { transform: translateX(-50%); }
+.cssvars .translate-y--50 { transform: translateY(-50%); }
+.cssvars .translate-xy--50 { transform: translate(-50%, -50%); }
 /* Background colors */
 .cssvars .bg-color-1, .cssvars .bg-color-1-hover:hover {
   background-color: var(--color-1, black);

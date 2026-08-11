@@ -3301,7 +3301,9 @@ progress {
 .top-25 { top: 25%; }
 .right-25 { right: 25%; }
 .top-50 { top: 50%; }
+.bottom-50 { bottom: 50%; }
 .right-50 { right: 50%; }
+.left-50   { left: 50%; }
 .top-75 { top: 75%; }
 .right-75 { right: 75%; }
 .top-25-vh { top: 25vh; }
@@ -3310,6 +3312,14 @@ progress {
 .right-50-vw { right: 50vw; }
 .top-75-vh { top: 75vh; }
 .right-75-vw { right: 75vw; }
+/* Override components defaults */
+.top-auto    { top: auto; }
+.right-auto  { right: auto; }
+.bottom-auto { bottom: auto; }
+.left-auto   { left: auto; }
+.translate-x--50 { transform: translateX(-50%); }
+.translate-y--50 { transform: translateY(-50%); }
+.translate-xy--50 { transform: translate(-50%, -50%); }
 /* Background colors */
 .bg-color-1, .bg-color-1-hover:hover {
   background-color: var(--color-1, black);
