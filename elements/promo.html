@@ -114,136 +114,232 @@
     </div>
     <div class="col-lg-10 p-d-2">
 
-      <div id="promo">
+<div class="p-v-4 p-h-2">
+
+  <h1 class="center m-b-1">Promo Box Designs</h1>
+  <p class="center dark m-b-4">Six variations built only from existing <code>.promo-box</code> / <code>.promo-box-s</code> classes plus framework utilities.</p>
+
+  <div class="row gap-4">
+
+    <!-- 1. Classic — baseline promo-box with icon, heading, text, button -->
+    <div class="col-md-4 p1">
+      <div class="promo-box center">
+        <i class="icon-box circle bg-color-1">
+          <svg class="icon-m icon-white-fill" viewBox="0 0 24 24">
+            <path d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"></path>
+          </svg>
+        </i>
+        <h5 class="m-t-2 m-b-1 text-uppercase bold">Classic</h5>
+        <p class="dark m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam.</p>
+        <button type="button" class="button bg-color-1 white">Learn More</button>
+      </div>
+    </div>
+
+    <!-- 2. Accent Border — left accent border composition, safe shadow -->
+    <div class="col-md-4 p1">
+      <div class="promo-box border-solid border-0 border-l-4 border-color-2 shadow-4">
+        <i class="icon-box">
+          <svg class="icon-m icon-color-2-fill" viewBox="0 0 24 24">
+            <path d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15V18H12V15H11M13,15V18H14V15H13M15,15V18H16V15H15Z"></path>
+          </svg>
+        </i>
+        <h5 class="m-t-2 m-b-1 text-uppercase bold">Accent Border</h5>
+        <p class="dark m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam.</p>
+        <a href="#" class="btn-link color-2 bold">Read the docs &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 3. Gradient CTA — luxury gradient background, white text -->
+    <div class="col-md-4 p1">
+      <div class="promo-box bg-gradient-luxury white center shadow-3">
+        <i class="icon-box circle bg-white">
+          <svg class="icon-m icon-color-1-fill" viewBox="0 0 24 24">
+            <path d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"></path>
+          </svg>
+        </i>
+        <h5 class="m-t-2 m-b-1 text-uppercase bold white">Gradient CTA</h5>
+        <p class="white m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam.</p>
+        <button type="button" class="button bg-white color-1">Get Started</button>
+      </div>
+    </div>
+
+    <!-- 4. Outline Ghost — transparent, for use over dark/parallax backgrounds -->
+    <div class="col-md-4 p1">
+      <div class="promo-box-s outline-color-1 rounded center bg-white">
+        <i class="icon-box circle bg-color-2">
+          <svg class="icon-m icon-white-fill" viewBox="0 0 24 24">
+            <path d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"></path>
+          </svg>
+        </i>
+        <h5 class="m-t-2 m-b-1 text-uppercase bold">Outline Ghost</h5>
+        <p class="dark m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <a href="#" class="btn-link color-1 bold">Discover &rarr;</a>
+      </div>
+    </div>
+
+    <!-- 5. Dark Inverse — surface-inverse background, white text -->
+    <div class="col-md-4 p1">
+      <div class="promo-box bg-dark white center">
+        <i class="icon-box circle bg-color-2">
+          <svg class="icon-m icon-white-fill" viewBox="0 0 24 24">
+            <path d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15V18H12V15H11M13,15V18H14V15H13M15,15V18H16V15H15Z"></path>
+          </svg>
+        </i>
+        <h5 class="m-t-2 m-b-1 text-uppercase bold white">Dark Inverse</h5>
+        <p class="white m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam.</p>
+        <button type="button" class="button bg-color-2 white">Explore</button>
+      </div>
+    </div>
+
+    <!-- 6. Compact Stat — dense promo-box-s for numeric callouts -->
+    <div class="col-md-4 p1">
+      <div class="promo-box-s bg-white rounded shadow center">
+        <h1 class="display-2 color-1 bold m-b-0">98%</h1>
+        <h6 class="dark text-uppercase m-t-1">Client Satisfaction</h6>
+      </div>
+    </div>
+
+  </div>
+
+</div>
 
 
-        <div class="container">
-          <h2>Promo Boxes</h2>
 
-          <div class="promo-box outline-color-1 color-1 rounded center">
-            <p class="display-4">Get the ultimate guide for free <span class="button button-lg">Download Now</span></p>
+<div class="p-v-4 p-h-2">
+
+  <h1 class="center m-b-1">Promo Box Designs — Full Length</h1>
+  <p class="center dark m-b-4">Six full-width variations, each built from <code>.promo-box</code> / <code>.promo-box-s</code> plus existing utilities.</p>
+
+  <!-- 1. Newsletter / Signup Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box">
+        <div class="row align-items-center">
+          <div class="col-md-6">
+            <h3 class="m-b-1 bold">Get product updates in your inbox</h3>
+            <p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam, no spam, unsubscribe anytime.</p>
           </div>
-
-          <div class="promo-box outline-color-grey rounded center">
-            <p class="display-4 black">Get the ultimate guide for free <span class="button button-lg">Download
-                Now</span></p>
+          <div class="col-md-6">
+            <form class="row gap-2">
+              <input type="email" class="form-control" placeholder="Enter your email">
+              <button type="submit" class="button bg-color-1 white">Subscribe</button>
+            </form>
           </div>
-          <div class="promo-box shadow center bga-color-1">
-            <p class="display-4 black">Get the ultimate guide for free <span class="button button-lg">Download
-                Now</span></p>
-          </div>
-          <div class="promo-box outline-color-grey shadow-3 center">
-            <p class="display-4 black">Get the ultimate guide for free <span class="button button-lg">Download
-                Now</span></p>
-          </div>
-
-          <div class="promo-box bg-color-1 rounded center">
-            <p class="display-4 white">Get the ultimate guide for free <span
-                class="button outline-color-1 button-lg  bg-white color-1">Download
-                Now</span></p>
-          </div>
-
-          <div class="promo-box bg-dark rounded center">
-            <p class="display-4 white">Get the ultimate guide for free <span class="button button-lg">Download
-                Now</span></p>
-          </div>
-
-          <div class="promo-box bg-color-gradient rounded center">
-            <p class="display-4 white">Get the ultimate guide for free <span
-                class="button outline-color-1 button-lg bg-white color-1">Download
-                Now</span></p>
-          </div>
-        </div>
-
-        <div class="promo-box bg-color-1 center ">
-          <p class="display-4 white">Get the ultimate guide for free <span
-              class="button outline-color-1 button-lg bg-white color-1">Download
-              Now</span></p>
-        </div>
-
-        <div class="promo-box bg-dark center">
-          <p class="display-4 white">Get the ultimate guide for free <span
-              class="button button-lg bg-white black">Download Now</span></p>
-        </div>
-
-        <div class="promo-box bg-color-gradient center">
-          <p class="display-4 white">Get the ultimate guide for free <span
-              class="button outline-color-1 button-lg bg-white color-1">Download
-              Now</span></p>
-        </div>
-
-        <div class="container row">
-          <div class="col-md-4">
-            <div class="promo-box outline-color-1 rounded center color-1">
-              <p class="display-4">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box bg-dark rounded center white">
-              <p class="display-4">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box bg-color-gradient rounded center white">
-              <p class="display-4">Get the ultimate guide for free <span
-                  class="button bg-white color-1 button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-
-        </div>
-
-        <div class="container row">
-          <div class="col-md-4">
-            <div class="promo-box-s outline-color-1 rounded center color-1">
-              <p class="display-5">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box-s bg-dark rounded center white">
-              <p class="display-5">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box-s bg-color-1 rounded center white">
-              <p class="display-5">Get the ultimate guide for free <span
-                  class="button outline-color-1 button-lg bg-white color-1 m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-
-        </div>
-
-
-        <div class="container row">
-          <div class="col-md-4">
-            <div class="promo-box-s outline-color-1  shadow-3 center color-1">
-              <p class="display-5">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box-s bg-dark shadow center white">
-              <p class="display-5">Get the ultimate guide for free <span class="button button-lg m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-          <div class="col-md-4">
-            <div class="promo-box-s bg-color-1 shadow-2 center white">
-              <p class="display-5">Get the ultimate guide for free <span
-                  class="button outline-color-1 button-lg bg-white color-1 m-t-2">Download
-                  Now</span></p>
-            </div>
-          </div>
-
         </div>
       </div>
+    </div>
+  </div>
 
-      <script src="https://gist.github.com/majalinet/81fbf7397d858d024a6f7f873ab33281.js"></script>
+  <!-- 2. Testimonial Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box bg-white shadow-4">
+        <div class="row align-items-center gap-3">
+          <div class="col-md-2 center">
+            <img src="https://picsum.photos/seed/promo-avatar1/120/120" class="circle icon-lg">
+          </div>
+          <div class="col-md-10">
+            <div class="d-flex gap-1 m-b-1">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.63L12,2L9.19,8.63L2,9.24L7.45,13.97L5.82,21L12,17.27Z"></path></svg>
+            </div>
+            <p class="italic dark m-b-1">"Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam, sed quibusdam voluptates iure natus."</p>
+            <h6 class="bold m0">Jane Cooper</h6>
+            <p class="smaller dark m0">Product Manager, Acme Co.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 3. Feature Checklist Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box bg-panel">
+        <div class="row align-items-center">
+          <div class="col-md-4">
+            <h3 class="m-b-1 bold">Everything included</h3>
+            <p class="dark m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam voluptates.</p>
+            <button type="button" class="button bg-color-1 white">Compare Plans</button>
+          </div>
+          <div class="col-md-8">
+            <ul class="no-indent-ul">
+              <li class="d-flex align-items-center gap-2 m-b-1">
+                <svg viewBox="0 0 24 24" class="icon-sm icon-success-fill"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"></path></svg>
+                <span class="dark">Unlimited projects and workspaces</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 m-b-1">
+                <svg viewBox="0 0 24 24" class="icon-sm icon-success-fill"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"></path></svg>
+                <span class="dark">Priority customer support</span>
+              </li>
+              <li class="d-flex align-items-center gap-2 m-b-1">
+                <svg viewBox="0 0 24 24" class="icon-sm icon-success-fill"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"></path></svg>
+                <span class="dark">Advanced analytics dashboard</span>
+              </li>
+              <li class="d-flex align-items-center gap-2">
+                <svg viewBox="0 0 24 24" class="icon-sm icon-success-fill"><path d="M12,2C6.48,2 2,6.48 2,12C2,17.52 6.48,22 12,22C17.52,22 22,17.52 22,12C22,6.48 17.52,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z"></path></svg>
+                <span class="dark">API access and integrations</span>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 4. Alert / Announcement Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box-s bg-info white rounded">
+        <div class="d-flex align-items-center justify-content-between gap-2">
+          <div class="d-flex align-items-center gap-2">
+            <svg viewBox="0 0 24 24" class="icon-m icon-white-fill"><path d="M11,9H13V7H11M12,20C7.59,20 4,16.41 4,12C4,7.59 7.59,4 12,4C16.41,4 20,7.59 20,12C20,16.41 16.41,20 12,20M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,17H13V11H11V17Z"></path></svg>
+            <span class="white bold">Scheduled maintenance on Saturday, 12am&ndash;4am UTC. Some features may be unavailable.</span>
+          </div>
+          <a href="#" class="btn-link white bold text-uppercase">Details</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 5. Split Media Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box p0 shadow-4 rounded overflow-hidden">
+        <div class="row align-items-center">
+          <div class="col-md-6 p0">
+            <img src="https://picsum.photos/seed/promo-media1/700/450" class="w-100 h-100 rounded-l">
+          </div>
+          <div class="col-md-6 p2">
+            <h3 class="m-b-1 bold">Built for growing teams</h3>
+            <p class="dark m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae ad ipsam voluptates iure natus.</p>
+            <div class="d-flex gap-2">
+              <button type="button" class="button bg-color-1 white">Start Free Trial</button>
+              <a href="#" class="btn-link color-1 bold">Watch Demo &rarr;</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 6. Urgency / Limited-Time Promo -->
+  <div class="row m-b-4">
+    <div class="col-md-12">
+      <div class="promo-box bg-gradient-black white center">
+        <span class="badge bg-danger white text-uppercase m-b-2">Limited Time</span>
+        <h2 class="m-b-1 bold white">Save 30% on annual plans</h2>
+        <p class="white m-b-2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Offer ends this Friday at midnight.</p>
+        <button type="button" class="button bg-white color-1 bold">Claim Discount</button>
+      </div>
+    </div>
+  </div>
+
+</div>
+
 
 
     </div>
