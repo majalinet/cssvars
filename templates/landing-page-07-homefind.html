@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>HomeFind — Find a place that feels right</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body style="--color-1:#166534; --color-2:#78716c;">
+
+<header class="main-nav bg-body-bg shadow p-v-1">
+  <div class="container">
+    <div class="main-menu">
+      <input type="checkbox" id="nav-toggle">
+      <a href="#" class="logo">
+        <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill"><path d="M10,20V14H14V20H19V12H22L12,3L2,12H5V20H10Z"></path></svg>
+        <span class="bold h5 m-l--1-2 color-1">HomeFind</span>
+      </a>
+      <div class="nav-panel">
+        <nav class="nav">
+          <a href="#listings" class="dark">Listings</a>
+          <a href="#sell" class="dark">Sell your home</a>
+          <a href="#agents" class="dark">Agents</a>
+          <a href="#faq" class="dark">FAQ</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#" class="dark">Sign in</a>
+          <a href="#" class="button">List a property</a>
+        </div>
+      </div>
+      <label for="nav-toggle" class="toggle-menu">
+        <svg class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path></svg>
+        <svg class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+      </label>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<section class="p-v-4" style="background-image:linear-gradient(color-mix(in srgb, var(--black) 45%, transparent), color-mix(in srgb, var(--black) 45%, transparent)), url('https://picsum.photos/seed/homefind-hero/1800/900'); background-size:cover; background-position:center;">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 center">
+        <h1 class="display-1 bold white">A home that feels like you.</h1>
+        <p class="lead white m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Search thousands of listings updated in real time.</p>
+      </div>
+    </div>
+    <div class="card shadow-4 m-t-2 m-h-auto" style="max-width:56rem;">
+      <div class="row gap-1 align-items-center">
+        <div class="col-md-4">
+          <input type="text" class="form-control form-control-border" placeholder="City, neighborhood, or ZIP">
+        </div>
+        <div class="col-md-3">
+          <select class="form-control form-control-border">
+            <option>Any type</option>
+            <option>House</option>
+            <option>Condo</option>
+            <option>Townhome</option>
+          </select>
+        </div>
+        <div class="col-md-3">
+          <select class="form-control form-control-border">
+            <option>Any price</option>
+            <option>Under $300k</option>
+            <option>$300k–$600k</option>
+            <option>$600k+</option>
+          </select>
+        </div>
+        <div class="col-md-2">
+          <a href="#" class="button w-100">Search</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-v-3 bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center gap-2 center">
+      <div class="col-md-3">
+        <p class="display-4 bold color-1 m0">48,000+</p>
+        <p class="dark m0">Active listings</p>
+      </div>
+      <div class="col-md-3">
+        <p class="display-4 bold color-1 m0">21 days</p>
+        <p class="dark m0">Average time to offer</p>
+      </div>
+      <div class="col-md-3">
+        <p class="display-4 bold color-1 m0">3,200</p>
+        <p class="dark m0">Verified agents</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="listings" class="p-v-4">
+  <div class="container">
+    <div class="between-row">
+      <h2 class="display-6 bold m0">Featured listings</h2>
+      <a href="#" class="color-1 bold">View all listings →</a>
+    </div>
+    <div class="row gap-2 m-t-2">
+      <div class="col-md-4">
+        <div class="card card-hover h-100 p0">
+          <img src="https://picsum.photos/seed/homefind-1/500/380" class="img-responsive rounded-t" alt="Modern house exterior">
+          <div class="p1">
+            <p class="bold h5 color-1 m0">$675,000</p>
+            <p class="dark m0">4 bed · 3 bath · 2,400 sqft</p>
+            <p class="dark small m0">142 Maple Ridge, Portland</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hover h-100 p0">
+          <img src="https://picsum.photos/seed/homefind-2/500/380" class="img-responsive rounded-t" alt="Downtown condo building">
+          <div class="p1">
+            <p class="bold h5 color-1 m0">$389,000</p>
+            <p class="dark m0">2 bed · 2 bath · 1,150 sqft</p>
+            <p class="dark small m0">88 Harbor View, Seattle</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card card-hover h-100 p0">
+          <img src="https://picsum.photos/seed/homefind-3/500/380" class="img-responsive rounded-t" alt="Suburban family home">
+          <div class="p1">
+            <p class="bold h5 color-1 m0">$824,500</p>
+            <p class="dark m0">5 bed · 4 bath · 3,100 sqft</p>
+            <p class="dark small m0">27 Willowbrook Ln, Austin</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="sell" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <div class="row align-items-center gap-3">
+      <div class="col-md-6">
+        <span class="badge bga-color-1">Sell with confidence</span>
+        <h2 class="display-5 bold m-t--1-2">Know what your home is worth in minutes</h2>
+        <p class="dark m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <ul class="no-indent-ul stack gap-1 m-t-1">
+          <li>Free instant home valuation</li>
+          <li>Matched with a top local agent</li>
+          <li>List in as little as 48 hours</li>
+        </ul>
+        <a href="#" class="button m-t-1">Get my home value</a>
+      </div>
+      <div class="col-md-6">
+        <img src="https://picsum.photos/seed/homefind-sell/900/700" class="img-responsive rounded shadow-4" alt="Real estate agent with clients">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="agents" class="p-v-4">
+  <div class="container">
+    <h2 class="display-6 bold center">Top-rated local agents</h2>
+    <div class="row gap-2 m-t-3">
+      <div class="col-md-4">
+        <div class="panel center h-100">
+          <img src="https://picsum.photos/seed/homefind-agent1/300/300" class="circle w-6rem h-6rem m-h-auto" alt="Agent portrait">
+          <p class="bold m-t-1 m0">Grace Whitmore</p>
+          <p class="dark small m0">Portland, OR · 4.9 ★</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel center h-100">
+          <img src="https://picsum.photos/seed/homefind-agent2/300/300" class="circle w-6rem h-6rem m-h-auto" alt="Agent portrait">
+          <p class="bold m-t-1 m0">Marcus Delgado</p>
+          <p class="dark small m0">Austin, TX · 4.8 ★</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="panel center h-100">
+          <img src="https://picsum.photos/seed/homefind-agent3/300/300" class="circle w-6rem h-6rem m-h-auto" alt="Agent portrait">
+          <p class="bold m-t-1 m0">Sofia Chen</p>
+          <p class="dark small m0">Seattle, WA · 5.0 ★</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="faq" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="display-6 bold center m-b-2">Common questions</h2>
+        <div class="accordion">
+          <div class="accordion-block">
+            <input type="radio" name="hfaq" id="hfaq1" checked>
+            <label for="hfaq1" class="accordion-label between-row">
+              <span class="bold">Is browsing listings free?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="hfaq" id="hfaq2">
+            <label for="hfaq2" class="accordion-label between-row">
+              <span class="bold">How accurate is the home value estimate?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="hfaq" id="hfaq3">
+            <label for="hfaq3" class="accordion-label between-row">
+              <span class="bold">Can I message agents directly?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="p-v-4 bg-color-1">
+  <div class="container center">
+    <h2 class="display-5 bold white">Start your search today</h2>
+    <p class="white lead m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <a href="#" class="button button-lg bg-white color-1 m-t-1">Browse listings</a>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer p-v-2 m-t-0">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <p class="bold h5 color-1 m0">HomeFind</p>
+        <p class="dark small m0">© 2026 HomeFind Realty Group.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
