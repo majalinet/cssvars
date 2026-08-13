@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lorem Ipsum — Restaurant Home</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+
+:root{
+  --color-1:#b8863b;
+  --color-2:#241b14;
+  --body-bg:#fffaf3;
+  --body-color:#241b14;
+  --heading-font:Georgia, 'Times New Roman', serif;
+  --surface-raised: var(--body-bg);
+}
+
+</style>
+</head>
+<body>
+
+<header class="position-absolute top-0 left-0 w-100" style="z-index:10;">
+  <div class="container">
+    <nav class="main-nav">
+      <div class="main-menu p-v-2">
+        <input type="checkbox" id="nav-toggle-4">
+        <a href="#" class="logo h3 m-b-0 white">Lorem</a>
+        <div class="nav-panel">
+          <nav class="nav">
+            <a href="#menu" class="white">Menu</a>
+            <a href="#about" class="white">Our story</a>
+            <a href="#gallery" class="white">Gallery</a>
+          </nav>
+          <div class="nav-actions">
+            <a href="#reserve" class="button outline-color-white white rounded-0">Reserve a table</a>
+          </div>
+        </div>
+        <label for="nav-toggle-4" class="toggle-menu">
+          <span class="icon-menu-open"><svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"/></svg></span>
+          <span class="icon-menu-close"><svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"/></svg></span>
+        </label>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<section class="position-relative" style="height:85vh;min-height:34rem;">
+  <img src="https://picsum.photos/seed/restauranthero1/1600/1000" class="position-absolute top-0 left-0 w-100 h-100" style="object-fit:cover;" alt="Lorem ipsum dining room">
+  <div class="position-absolute top-0 left-0 w-100 h-100 bg-black opacity05"></div>
+  <div class="position-relative h-100 grid-center">
+    <div class="center container">
+      <span class="white small text-uppercase" style="letter-spacing:.2em;">Est. lorem ipsum</span>
+      <h1 class="display-1 white m-v-2">Dolor Sit Amet</h1>
+      <p class="white lead m-b-3" style="opacity:.85;">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+      <a href="#reserve" class="button button-lg bg-color-1 white rounded-0">Reserve a table</a>
+    </div>
+  </div>
+</section>
+
+<section id="about" class="p-v-4">
+  <div class="container">
+    <div class="row align-items-center gap-4">
+      <div class="col-12 col-md-6">
+        <img src="https://picsum.photos/seed/restaurantchef1/800/900" class="img-responsive rounded" alt="Lorem ipsum chef">
+      </div>
+      <div class="col-12 col-md-6">
+        <span class="small color-1 text-uppercase">Our story</span>
+        <h2 class="display-4 m-t-1 m-b-2">Lorem ipsum dolor sit amet consectetur</h2>
+        <p class="grey m-b-2">Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam.</p>
+        <p class="grey">Quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat duis aute irure dolor.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="menu" class="p-v-4 bg-color-2">
+  <div class="container">
+    <div class="center m-b-4">
+      <span class="small color-1 text-uppercase">Signature dishes</span>
+      <h2 class="display-4 white m-t-1">From the kitchen</h2>
+    </div>
+    <div class="row">
+      <div class="col-12 col-md-6">
+        <div class="white">
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Lorem ipsum dolor</p>
+        <p class="small grey m-b-0">Sit amet consectetur adipiscing elit sed do</p>
+      </div>
+      <p class="color-1 m-b-0">$24</p>
+    </div>
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Eiusmod tempor</p>
+        <p class="small grey m-b-0">Incididunt ut labore et dolore magna aliqua</p>
+      </div>
+      <p class="color-1 m-b-0">$28</p>
+    </div>
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Ut enim minim</p>
+        <p class="small grey m-b-0">Veniam quis nostrud exercitation ullamco</p>
+      </div>
+      <p class="color-1 m-b-0">$32</p>
+    </div>
+        </div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="white">
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Laboris nisi aliquip</p>
+        <p class="small grey m-b-0">Ex ea commodo consequat duis aute irure</p>
+      </div>
+      <p class="color-1 m-b-0">$26</p>
+    </div>
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Dolor reprehenderit</p>
+        <p class="small grey m-b-0">In voluptate velit esse cillum dolore eu</p>
+      </div>
+      <p class="color-1 m-b-0">$30</p>
+    </div>
+          <div class="between-row m-b-2" style="align-items:flex-start;">
+      <div>
+        <p class="h5 m-b-0">Fugiat nulla pariatur</p>
+        <p class="small grey m-b-0">Excepteur sint occaecat cupidatat non</p>
+      </div>
+      <p class="color-1 m-b-0">$22</p>
+    </div>
+        </div>
+      </div>
+    </div>
+    <div class="center m-t-4">
+      <a href="#" class="button outline-color-white white rounded-0">View full menu</a>
+    </div>
+  </div>
+</section>
+
+<section id="gallery" class="p-v-2">
+  <div class="row" style="margin:0;">
+    <div class="col-6 col-md-3" style="padding:0;"><img src="https://picsum.photos/seed/rg1/500/500" class="img-responsive" alt="Lorem gallery"></div>
+    <div class="col-6 col-md-3" style="padding:0;"><img src="https://picsum.photos/seed/rg2/500/500" class="img-responsive" alt="Lorem gallery"></div>
+    <div class="col-6 col-md-3" style="padding:0;"><img src="https://picsum.photos/seed/rg3/500/500" class="img-responsive" alt="Lorem gallery"></div>
+    <div class="col-6 col-md-3" style="padding:0;"><img src="https://picsum.photos/seed/rg4/500/500" class="img-responsive" alt="Lorem gallery"></div>
+  </div>
+</section>
+
+<section id="reserve" class="p-v-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-7">
+        <div class="panel p-v-3">
+          <h2 class="display-6 center m-b-3">Reserve a table</h2>
+          <div class="row">
+            <div class="col-12 col-md-6 m-b-2">
+              <label class="small grey">Date</label>
+              <input type="date" class="form-control">
+            </div>
+            <div class="col-12 col-md-6 m-b-2">
+              <label class="small grey">Guests</label>
+              <select class="form-control">
+                <option>2 guests</option>
+                <option>4 guests</option>
+                <option>6 guests</option>
+              </select>
+            </div>
+            <div class="col-12 m-b-2">
+              <label class="small grey">Name</label>
+              <input type="text" class="form-control" placeholder="Lorem Ipsum">
+            </div>
+          </div>
+          <button class="button w-100 bg-color-1 white rounded-0 m-t-1">Confirm reservation</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer class="p-v-4 bg-color-2">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 m-b-3">
+        <p class="h4 white">Lorem</p>
+        <div class="cluster gap-1 m-t-2">
+          <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,2C8.13,2 5,5.13 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9C19,5.13 15.87,2 12,2M12,11.5C10.62,11.5 9.5,10.38 9.5,9C9.5,7.62 10.62,6.5 12,6.5C13.38,6.5 14.5,7.62 14.5,9C14.5,10.38 13.38,11.5 12,11.5Z"/></svg><p class="small light-grey m-b-0" style="opacity:.75;">123 Lorem Street, Ipsum City</p>
+        </div>
+        <div class="cluster gap-1 m-t-1">
+          <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5C20.55,15.5 21,15.95 21,16.5V20C21,20.55 20.55,21 20,21C10.61,21 3,13.39 3,4C3,3.45 3.45,3 4,3H7.5C8.05,3 8.5,3.45 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"/></svg><p class="small light-grey m-b-0" style="opacity:.75;">(555) 010-0100</p>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 m-b-3">
+        <p class="small text-uppercase color-1 m-b-2">Hours</p>
+        <p class="small light-grey m-b-0" style="opacity:.75;">Mon–Fri 11am–10pm</p>
+        <p class="small light-grey m-b-0" style="opacity:.75;">Sat–Sun 9am–11pm</p>
+      </div>
+      <div class="col-6 col-md-4 m-b-3">
+        <p class="small text-uppercase color-1 m-b-2">Follow</p>
+        <div class="stack gap-1">
+          <a href="#" class="small light-grey" style="opacity:.75;">Instagram</a>
+          <a href="#" class="small light-grey" style="opacity:.75;">Facebook</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+</html>

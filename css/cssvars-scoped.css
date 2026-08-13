@@ -239,7 +239,6 @@
   font-size: 1rem;
   font-weight: var(--font-weight, 400);
   line-height: var(--line-height, 1.5);
-  text-align: justify;
   background-color: var(--body-bg, white);
   color: var(--body-color, black);
   background-image: var(--background-image, none);
