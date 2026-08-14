@@ -62,6 +62,8 @@ These describe *states*, not colors. `--surface-hover` isn't "light grey" — it
 
 **Where they're used:** `.card`, `.panel`, `.modal__inner`, `.dropdown-menu`, `.accordion-content`, `.tabs .tab`, and every other "boxy" component read from `--panel-*`, not from their own hardcoded rules. This is why a `.glass` modifier works by overriding four variables instead of rewriting five components — see §4. `--panel-radius` and `--panel-shadow` in turn trace back to `--default-border-radius` and `--box-shadow`, so a single edit to those two structural tokens reshapes every panel-based component at once.
 
+Don't confuse `--panel-*` with `--page-box-*` (§1.9) — they look similar but style different things. `--panel-*` is for actual components (cards, dropdowns, modals). `--page-box-*` is for the generic `body > *` / `section` / `article` / `aside` default. The two are intentionally independent: editing one never touches the other.
+
 ### 1.4 Control & input tokens
 
 ```css
@@ -140,7 +142,51 @@ Plus fixed fractional steps (`--space-1-2`, and the `-1-16`/`-1-8`/`-1-4`/`-1-2`
 - `--duration-slow` — the notification-panel entrance animation.
 - All three durations collapse to `0s` under `@layer overrides` when `prefers-reduced-motion: reduce` is set — this is the one place a token is reassigned conditionally rather than by theme.
 
-### 1.9 Flow tokens — spacing *between* elements, not around them
+### 1.9 Page-box tokens — the global section/article/aside default
+
+```css
+--page-box-padding   /* var(--default-padding) */
+--page-box-border    /* none */
+--page-box-radius    /* 0 */
+--page-box-shadow    /* none */
+```
+
+**Where they're used:** consumed by exactly one rule —
+
+```css
+:where(body > *, section, article, aside) {
+  padding: var(--page-box-padding);
+  border: var(--page-box-border);
+  border-radius: var(--page-box-radius);
+  box-shadow: var(--page-box-shadow);
+}
+```
+
+— which reaches every direct child of `<body>` plus any `section`, `article`, or `aside` anywhere in the document, at any depth. At rest, all four tokens are neutral (`none`/`0`), so sections render completely unstyled until a style preset opts in.
+
+This family is deliberately independent from both `--panel-*` (§1.3) and the base `--default-*` tokens (§1.8) — that wasn't always true. Earlier, this rule read `--default-border` / `--default-border-radius` / `--box-shadow` directly, the same tokens `--panel-*` derives from, so a single edit to "how rounded is this framework" silently reshaped cards *and* raw sections together, with no way to separate the two. `--page-box-*` breaks that coupling: editing `--default-border-radius` now only affects `.card`/`.panel`/controls/inputs, never generic sections, and vice versa.
+
+Style presets that want the "pervasive boxed" look — `.brutal-style`, `.retro-style`, `.neon-style`, `.playful-bubblegum-style`, `.glass-style`, and others where every section reads as its own bordered/shadowed block — opt in explicitly, usually by aliasing to values the preset already defines for `--default-*`:
+
+```css
+.brutal-style {
+  --default-border: 0.125rem solid var(--dark);
+  --default-border-radius: 0;
+  --box-shadow: 0.5rem 0.5rem 0 var(--dark);
+
+  --page-box-border: var(--default-border);
+  --page-box-radius: var(--default-border-radius);
+  --page-box-shadow: var(--box-shadow);
+}
+```
+
+Presets that don't set `--page-box-*` (clean/enterprise/minimal-leaning styles like `.enterprise-style`, `.system-ui-style`, `.swiss-style`) leave sections unstyled and rely entirely on `.card`/`.panel` for boxed content — which is the more common pattern for that kind of visual language.
+
+`--page-box-padding` is the one token in this family with a live fallback (`var(--default-padding)`) rather than a literal `0` — a preset that sets `--default-padding` for its overall rhythm gets matching section padding automatically, without a separate declaration, unless it deliberately wants the two to diverge.
+
+**Margin was intentionally left out of this rule.** Spacing *between* `body`/`section`/`article`/`aside` elements is owned entirely by the flow tokens below (§1.10) — mixing a flat `margin` into the same rule that flow tokens also target caused the two systems to fight over the same property, and broke the "first child never gets an unwanted top margin" guarantee that flow tokens are built around.
+
+### 1.10 Flow tokens — spacing *between* elements, not around them
 
 ```css
 --content-flow: var(--space-1);
@@ -280,6 +326,7 @@ The framework ships roughly 500 utility classes across spacing, sizing, layout, 
 | Icon & image (`--icon-default-*`, `--image-*`) | Inline SVG icons, `<img>` styling | Icon markup, every `img` |
 | Spacing (`--space-*`, `--space-dense-*`) | Rhythm and gaps | Utilities, flow, panel padding |
 | Structural (`--default-*`, `--z-*`, `--duration-*`) | Shared framework constants | Resets, layering, motion |
+| Page-box (`--page-box-*`) | Opt-in default box styling for raw sections | `body > *`, `section`, `article`, `aside` |
 | Flow (`--page-flow`, `--main-flow`, `--content-flow`, `--child-padding`) | Space *between* siblings, not around elements | `body` children, `main` children, prose children, `.child-padding` |
 
 ---

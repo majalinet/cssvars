@@ -89,8 +89,13 @@
   --default-margin: 0;
   --default-gap: clamp(0.5rem, 3.33vw, 1rem);
   --default-border: none;
-  --default-border-radius: 0;
+  --default-border-radius: 0.5rem;
   --box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.08), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.16);
+  /* Page box variables - apply to body > *, section, article, aside */
+  --page-box-padding: var(--default-padding);
+  --page-box-border: none;
+  --page-box-radius: 0;
+  --page-box-shadow: none;
   /* Surface variables */
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
@@ -197,12 +202,11 @@
   --input-disabled-bg: #23262d;
   --box-shadow: 0 .25rem .75rem rgba(0,0,0,.45);
 }
-:where(.cssvars > *, section, article, aside) {
-  padding: var(--default-padding);
-  margin: var(--default-margin);
-  border: var(--default-border);
-  border-radius: var(--default-border-radius);
-  box-shadow: var(--box-shadow);
+:where(.cssvars > section, .cssvars > article, .cssvars > aside) {
+  padding: var(--page-box-padding);
+  border: var(--page-box-border);
+  border-radius: var(--page-box-radius);
+  box-shadow: var(--page-box-shadow);
 }
 /* Opt-in "reset box" utility — apply the same zeroed box model to any single element explicitly */
 .cssvars .styled {
