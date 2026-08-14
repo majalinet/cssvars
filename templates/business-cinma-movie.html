@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nightfall Horizon — Lumière Cinemas</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>:root{--color-1:#e50914;--color-2:#141414;--heading-font-weight:700;}</style>
+</head>
+<body class="bg-black">
+
+<!-- Header -->
+<div class="main-nav p1 bg-black">
+  <div class="main-menu nav-bottom-border-hover">
+    <input type="checkbox" id="toggle-main">
+    <a href="index.html" class="logo"><span class="white bold h4">🎬 LUMIÈRE</span></a>
+    <div class="nav-panel">
+      <div class="nav-group">
+        <nav class="nav">
+          <a href="index.html" class="white">Now Showing</a>
+          <a href="movie.html" class="white bold">Coming Soon</a>
+          <a href="index.html#cinemas" class="white">Cinemas</a>
+          <a href="index.html#promos" class="white">Promotions</a>
+          <a href="index.html#contact" class="white">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#booking" class="button bg-color-1 white">Book Tickets</a>
+        </div>
+      </div>
+    </div>
+    <label for="toggle-main" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-white-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-white-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container p-v-1">
+  <ul class="breadcrumb">
+    <li><a href="index.html" class="light-grey">Home</a></li>
+    <li><a href="#" class="white">Nightfall Horizon</a></li>
+  </ul>
+</div>
+
+<!-- Movie hero -->
+<section class="container m-v-2">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://picsum.photos/seed/movie-1/500/700" class="img-responsive rounded shadow-4" alt="Nightfall Horizon poster">
+    </div>
+    <div class="col-md-8 p-l-2">
+      <p class="d-inline bg-color-1 white p-1-4 rounded small text-uppercase bold">Now Playing</p>
+      <h1 class="white bold display-3 m-t-1">Nightfall Horizon</h1>
+      <p class="light-grey h6 m-t-1">Sci-Fi &middot; Action &middot; 2h 18m &middot; Rated PG-13</p>
+      <p class="warning m-t-1">⭐⭐⭐⭐⭐ <span class="light-grey small">4.8 / 5 from 2,140 viewers</span></p>
+      <p class="light-grey m-t-2">A stranded pilot must outrun an alien intelligence spreading across a dying colony ship before it reaches Earth. Directed by Elena Voss, starring Priya Anand and Tomas Rourke, Nightfall Horizon is a claustrophobic, visually stunning descent into deep-space survival.</p>
+      <div class="row m-t-2">
+        <div class="col-md-4"><p class="light-grey small m0">Director</p><p class="white bold m0">Elena Voss</p></div>
+        <div class="col-md-4"><p class="light-grey small m0">Cast</p><p class="white bold m0">P. Anand, T. Rourke</p></div>
+        <div class="col-md-4"><p class="light-grey small m0">Release</p><p class="white bold m0">Aug 14, 2026</p></div>
+      </div>
+      <div class="m-t-2">
+        <a href="#booking" class="button button-lg bg-color-1 white">Book Tickets</a>
+        <a href="#trailer" class="button button-lg outline-white white bg-black">▶ Watch Trailer</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Trailer -->
+<section class="container m-v-4" id="trailer">
+  <div class="embed embed-wide-screen rounded">
+    <iframe class="embed-item" src="https://www.youtube.com/embed/dQw4w9WgXcQ"></iframe>
+  </div>
+</section>
+
+<!-- Showtimes / Booking -->
+<section class="bg-color-2 p-v-4" id="booking">
+  <div class="container">
+    <h3 class="white bold center">Select a Showtime</h3>
+    <p class="light-grey center">Downtown — Screen 3 — Dolby Atmos</p>
+
+    <div class="tabs m-t-2">
+      <input type="radio" name="daytabs" id="day1" checked>
+      <label for="day1" class="button outline-white white">Today</label>
+      <div class="tab bg-black rounded p2">
+        <div class="row">
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">1:00 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 bg-color-1 white">4:15 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">7:30 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">10:45 PM</a></div>
+        </div>
+      </div>
+      <input type="radio" name="daytabs" id="day2">
+      <label for="day2" class="button outline-white white">Tomorrow</label>
+      <div class="tab bg-black rounded p2">
+        <div class="row">
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">12:30 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">3:45 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">7:00 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">10:15 PM</a></div>
+        </div>
+      </div>
+      <input type="radio" name="daytabs" id="day3">
+      <label for="day3" class="button outline-white white">Sat</label>
+      <div class="tab bg-black rounded p2">
+        <div class="row">
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">11:45 AM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">3:00 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">6:30 PM</a></div>
+          <div class="col-3 p-1-2"><a href="#" class="button w-100 outline-white white">9:45 PM</a></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row m-t-2 justify-content-center">
+      <div class="col-md-3 p-1-2"><label class="white small">Adult tickets</label><input type="number" class="form-control" value="2"></div>
+      <div class="col-md-3 p-1-2"><label class="white small">Child tickets</label><input type="number" class="form-control" value="0"></div>
+      <div class="col-md-3 p-1-2 m-v-auto"><a href="#" class="button w-100 bg-color-1 white">Confirm Seats — $28.00</a></div>
+    </div>
+  </div>
+</section>
+
+<!-- Similar movies -->
+<section class="container m-v-4">
+  <h3 class="white bold center">You Might Also Like</h3>
+  <div class="row m-t-2">
+    <div class="col-md-3 p1">
+      <a href="#">
+        <img src="https://picsum.photos/seed/movie-2/400/560" class="img-responsive rounded-t">
+        <div class="p1"><p class="white bold m0">Crimson Alley</p><p class="light-grey small m0">Thriller</p></div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="#">
+        <img src="https://picsum.photos/seed/movie-3/400/560" class="img-responsive rounded-t">
+        <div class="p1"><p class="white bold m0">Paper Lanterns</p><p class="light-grey small m0">Drama</p></div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="#">
+        <img src="https://picsum.photos/seed/movie-4/400/560" class="img-responsive rounded-t">
+        <div class="p1"><p class="white bold m0">The Last Arcade</p><p class="light-grey small m0">Comedy</p></div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="#">
+        <img src="https://picsum.photos/seed/movie-5/400/560" class="img-responsive rounded-t">
+        <div class="p1"><p class="white bold m0">Glasswing</p><p class="light-grey small m0">Sci-Fi</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-color-2 p-v-2">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <span class="white bold h5">🎬 LUMIÈRE</span>
+      <p class="light-grey small m-t-1">Six screens of premium cinema, downtown since 2009.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Explore</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="index.html" class="light-grey">Now Showing</a></li>
+        <li class="m-h-1"><a href="movie.html" class="light-grey">Coming Soon</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Cinemas</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#" class="light-grey">Downtown</a></li>
+        <li class="m-h-1"><a href="#" class="light-grey">Riverside Mall</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Contact</h5>
+      <p class="light-grey small">210 Marquee Ave, Suite 4<br>(212) 555-0134</p>
+    </div>
+  </div>
+  <div class="container p-v-1 small">
+    <p class="light-grey">© 2026 Lumière Cinemas. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

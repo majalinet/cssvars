@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Dr. Sana Malik — Harborview Clinic</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>:root{--color-1:#0abfa4;--color-2:#1191b8;}</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="main-nav p1">
+  <div class="main-menu nav-top-border-hover">
+    <input type="checkbox" id="toggle-main">
+    <a href="index.html" class="logo"><span class="color-1 bold h4">✚ Harborview Clinic</span></a>
+    <div class="nav-panel">
+      <div class="nav-group">
+        <nav class="nav justify-content-end">
+          <a href="index.html">Home</a>
+          <a href="index.html#services">Services</a>
+          <a href="index.html#doctors" class="bold">Doctors</a>
+          <a href="index.html#contact">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#appointment" class="button bg-color-1 white">Book Appointment</a>
+        </div>
+      </div>
+    </div>
+    <label for="toggle-main" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Breadcrumb -->
+<div class="container p-v-1">
+  <ul class="breadcrumb">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="index.html#doctors">Doctors</a></li>
+    <li><a href="#">Dr. Sana Malik</a></li>
+  </ul>
+</div>
+
+<!-- Doctor profile -->
+<section class="container m-v-2">
+  <div class="row">
+    <div class="col-md-4">
+      <img src="https://picsum.photos/seed/doctor-1/500/560" class="img-responsive rounded shadow-4">
+    </div>
+    <div class="col-md-8 p-l-2">
+      <p class="badge bg-color-1 white">Family Medicine</p>
+      <h1 class="black bold display-3 m-t-1">Dr. Sana Malik, MD</h1>
+      <p class="dark h6">Board-certified Family Physician · 12 years of practice</p>
+      <p class="dark m-t-2">Dr. Malik focuses on whole-family preventive care, chronic condition management, and building long-term relationships with her patients. She completed her residency at UCSF and is fluent in English, Urdu, and Hindi.</p>
+      <div class="row m-t-2">
+        <div class="col-md-4"><p class="dark small m0">Education</p><p class="black bold m0">UCSF School of Medicine</p></div>
+        <div class="col-md-4"><p class="dark small m0">Languages</p><p class="black bold m0">EN, UR, HI</p></div>
+        <div class="col-md-4"><p class="dark small m0">Rating</p><p class="black bold m0">⭐⭐⭐⭐⭐ 4.9</p></div>
+      </div>
+      <div class="m-t-2">
+        <a href="#appointment" class="button button-lg bg-color-1 white">Book with Dr. Malik</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Availability -->
+<section class="bga-color-1 p-v-4">
+  <div class="container">
+    <h3 class="black bold center">Weekly Availability</h3>
+    <div class="row m-t-2">
+      <div class="col-md-2 center p1"><p class="black bold m0">Mon</p><p class="dark small">9am–4pm</p></div>
+      <div class="col-md-2 center p1"><p class="black bold m0">Tue</p><p class="dark small">9am–4pm</p></div>
+      <div class="col-md-2 center p1"><p class="black bold m0">Wed</p><p class="dark small">Off</p></div>
+      <div class="col-md-2 center p1"><p class="black bold m0">Thu</p><p class="dark small">11am–6pm</p></div>
+      <div class="col-md-2 center p1"><p class="black bold m0">Fri</p><p class="dark small">9am–2pm</p></div>
+      <div class="col-md-2 center p1"><p class="black bold m0">Sat</p><p class="dark small">Off</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Booking form -->
+<section class="container m-v-4" id="appointment">
+  <div class="row gap">
+    <div class="col-md-6">
+      <h2 class="black bold">Book an Appointment</h2>
+      <form class="m-t-1">
+        <input type="text" class="form-control m-b-1" placeholder="Full name">
+        <div class="row">
+          <div class="col-md-6 p-1-2"><input type="date" class="form-control"></div>
+          <div class="col-md-6 p-1-2"><input type="time" class="form-control"></div>
+        </div>
+        <input type="tel" class="form-control m-t-1 m-b-1" placeholder="Phone">
+        <textarea class="form-control m-b-1" rows="3" placeholder="Reason for visit"></textarea>
+        <button class="button button-lg bg-color-1 white w-100">Confirm Appointment</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <div class="row">
+        <div class="col-md-6 p1">
+          <div class="outline-color-1 black rounded p2 center">
+            <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M12,2C8.13,2 5,5.13 5,9C5,14.25 12,22 12,22C12,22 19,14.25 19,9C19,5.13 15.87,2 12,2M12,11.5A2.5,2.5 0 0,1 9.5,9A2.5,2.5 0 0,1 12,6.5A2.5,2.5 0 0,1 14.5,9A2.5,2.5 0 0,1 12,11.5Z"></path></svg>
+            <p class="black bold m-t-1 small">400 Harbor Blvd<br>San Francisco, CA</p>
+          </div>
+        </div>
+        <div class="col-md-6 p1">
+          <div class="outline-color-1 black rounded p2 center">
+            <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg>
+            <p class="black bold m-t-1 small">(415) 555-0192</p>
+          </div>
+        </div>
+      </div>
+      <img src="https://picsum.photos/seed/clinic-room/700/380" class="img-responsive rounded shadow-3 m-t-1">
+    </div>
+  </div>
+</section>
+
+<!-- Similar doctors -->
+<section class="container m-v-4">
+  <h3 class="black bold center">Other Specialists</h3>
+  <div class="row m-t-2">
+    <div class="col-md-4 p1">
+      <a href="doctor.html">
+        <img src="https://picsum.photos/seed/doctor-2/400/380" class="img-responsive rounded-t">
+        <div class="p1 center"><p class="black bold m0">Dr. Owen Blake</p><p class="dark small m0">Pediatrics</p></div>
+      </a>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="doctor.html">
+        <img src="https://picsum.photos/seed/doctor-3/400/380" class="img-responsive rounded-t">
+        <div class="p1 center"><p class="black bold m0">Dr. Elena Petrova</p><p class="dark small m0">Cardiology</p></div>
+      </a>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="doctor.html">
+        <img src="https://picsum.photos/seed/doctor-4/400/380" class="img-responsive rounded-t">
+        <div class="p1 center"><p class="black bold m0">Dr. Marcus Lee</p><p class="dark small m0">Dermatology</p></div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-light-grey p-v-4">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <span class="color-1 bold h5">✚ Harborview Clinic</span>
+      <p class="dark small m-t-1">Trusted family and specialty care since 1994.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Departments</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="index.html#services">Family Medicine</a></li>
+        <li class="m-h-1"><a href="index.html#services">Cardiology</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Patients</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#appointment">Book Appointment</a></li>
+        <li class="m-h-1"><a href="index.html#doctors">Find a Doctor</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Contact</h5>
+      <p class="dark small">400 Harbor Blvd, San Francisco, CA<br>(415) 555-0192</p>
+    </div>
+  </div>
+  <div class="container p-v-1 small">
+    <p class="dark">© 2026 Harborview Clinic. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

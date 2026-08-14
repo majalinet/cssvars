@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meridian Properties — Homes &amp; Real Estate</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>:root{--color-1:#4b2f5a;--color-2:#bda06a;}</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="main-nav p1 rounded">
+  <div class="main-menu rounded shadow-3">
+    <input type="checkbox" id="toggle-main">
+    <a href="index.html" class="logo"><span class="color-1 bold h4">⌂ MERIDIAN</span></a>
+    <div class="nav-panel">
+      <div class="nav-group">
+        <nav class="nav nav-top-border-hover">
+          <a href="index.html" class="bold">Home</a>
+          <a href="#listings">Listings</a>
+          <a href="#agents">Agents</a>
+          <a href="property-single.html">Property</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="#contact" class="button bg-color-1 white">Talk to an Agent</a>
+        </div>
+      </div>
+    </div>
+    <label for="toggle-main" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="h-75-vh d-flex flex-column justify-content-center" style="background-image:linear-gradient(0deg, rgba(20,10,25,.6), rgba(20,10,25,.15)), url('https://picsum.photos/seed/estate-hero/1600/900'); background-size:cover; background-position:center;">
+  <div class="container center">
+    <h1 class="white bold display-2">Find your next address.</h1>
+    <p class="white h6 font-weight-400 m-t-1">Curated homes, condos, and investment properties.</p>
+  </div>
+  <div class="container m-t-2">
+    <div class="row justify-content-center bg-white p1 rounded shadow-4 cluster">
+      <div class="col-md-4 p-1-2"><input type="text" class="form-control" placeholder="City or neighborhood"></div>
+      <div class="col-md-3 p-1-2">
+        <select class="form-control"><option>Any type</option><option>House</option><option>Condo</option><option>Townhome</option></select>
+      </div>
+      <div class="col-md-3 p-1-2"><input type="text" class="form-control" placeholder="Max price"></div>
+      <div class="col-md-2 p-1-2"><button class="button w-100 bg-color-1 white">Search</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Listings -->
+<section class="container m-v-4" id="listings">
+  <h2 class="black center bold">Featured Listings</h2>
+  <div class="row m-t-2">
+    <div class="col-md-4 p1">
+      <a href="property-single.html" class="card shadow-3 rounded">
+        <img src="https://picsum.photos/seed/property-1/500/340" class="img-responsive rounded-t">
+        <div class="p1">
+          <p class="badge bg-color-1 white">For Sale</p>
+          <p class="black bold h5 m-t--1-2">Modern Hillside Villa</p>
+          <p class="dark small">4 bd · 3 ba · 2,800 sqft · Pacific Heights</p>
+          <p class="color-1 bold h5">$2,450,000</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="property-single.html" class="card shadow-3 rounded">
+        <img src="https://picsum.photos/seed/property-2/500/340" class="img-responsive rounded-t">
+        <div class="p1">
+          <p class="badge bg-color-1 white">For Sale</p>
+          <p class="black bold h5 m-t--1-2">Downtown Loft Residence</p>
+          <p class="dark small">2 bd · 2 ba · 1,350 sqft · SoMa</p>
+          <p class="color-1 bold h5">$980,000</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-4 p1">
+      <a href="property-single.html" class="card shadow-3 rounded">
+        <img src="https://picsum.photos/seed/property-3/500/340" class="img-responsive rounded-t">
+        <div class="p1">
+          <p class="badge bg-color-1 white">New</p>
+          <p class="black bold h5 m-t--1-2">Craftsman Family Home</p>
+          <p class="dark small">5 bd · 4 ba · 3,200 sqft · Noe Valley</p>
+          <p class="color-1 bold h5">$3,100,000</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="row m-t-2 justify-content-center">
+  <div class="col-md-3"><div class="p-v-2 bga-color-1 center"><h1 class="bold display-2 color-1">1,240+</h1><p class="dark font-weight-600">Homes Sold</p></div></div>
+  <div class="col-md-3"><div class="p-v-2 bga-color-1 center"><h1 class="bold display-2 color-1">22</h1><p class="dark font-weight-600">Neighborhoods Covered</p></div></div>
+  <div class="col-md-3"><div class="p-v-2 bga-color-1 center"><h1 class="bold display-2 color-1">15 yrs</h1><p class="dark font-weight-600">Avg. Agent Experience</p></div></div>
+</section>
+
+<!-- Agents -->
+<section class="container m-v-4" id="agents">
+  <h2 class="black center bold">Meet Our Agents</h2>
+  <div class="row m-t-2">
+    <div class="col-md-3 center p1">
+      <img src="https://picsum.photos/seed/agent-1/300/300" class="circle icon-lg shadow-3">
+      <p class="black bold m-t-1 m0">Nadia Farah</p>
+      <p class="dark small m0">Senior Agent, Uptown</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <img src="https://picsum.photos/seed/agent-2/300/300" class="circle icon-lg shadow-3">
+      <p class="black bold m-t-1 m0">Chris Alvarado</p>
+      <p class="dark small m0">Luxury Homes Specialist</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <img src="https://picsum.photos/seed/agent-3/300/300" class="circle icon-lg shadow-3">
+      <p class="black bold m-t-1 m0">Yuki Sato</p>
+      <p class="dark small m0">First-Time Buyers</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <img src="https://picsum.photos/seed/agent-4/300/300" class="circle icon-lg shadow-3">
+      <p class="black bold m-t-1 m0">Ben Osei</p>
+      <p class="dark small m0">Investment Properties</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="p-v-4 bg-color-1">
+  <div class="container">
+    <h4 class="center bold white">Client Stories</h4>
+    <hr class="width-short center">
+    <div class="row m-t-2">
+      <div class="col-md-6 p2">
+        <p class="bold white">Meg &amp; Alan T. <br>⭐⭐⭐⭐⭐</p>
+        <p class="m0 light-grey">Nadia found us three off-market listings we never would have seen. Closed in under a month.</p>
+      </div>
+      <div class="col-md-6 p2">
+        <p class="bold white">Farid I. <br>⭐⭐⭐⭐⭐</p>
+        <p class="m0 light-grey">Straightforward negotiation and no pressure. Exactly what we needed as first-time buyers.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section class="container m-v-4" id="contact">
+  <div class="row gap">
+    <div class="col-md-6">
+      <h2 class="black bold">Talk to an Agent</h2>
+      <p class="dark">Tell us what you're looking for and we'll match you with the right specialist.</p>
+      <form class="m-t-1">
+        <input type="text" class="form-control m-b-1" placeholder="Full name">
+        <input type="email" class="form-control m-b-1" placeholder="Email">
+        <input type="text" class="form-control m-b-1" placeholder="Neighborhood of interest">
+        <button class="button button-lg bg-color-1 white w-100">Request a Call</button>
+      </form>
+    </div>
+    <div class="col-md-6">
+      <img src="https://picsum.photos/seed/estate-contact/700/500" class="img-responsive rounded shadow-3">
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="d-block">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <span class="color-1 bold h5">⌂ MERIDIAN</span>
+      <p class="dark small m-t-1">Real estate, done thoughtfully, since 2011.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Explore</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#listings">Listings</a></li>
+        <li class="m-h-1"><a href="#agents">Agents</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Resources</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Buying Guide</a></li>
+        <li class="m-h-1"><a href="#">Selling Guide</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Contact</h5>
+      <p class="dark small">120 Market St, San Francisco, CA<br>hello@meridianproperties.com</p>
+    </div>
+  </div>
+  <div class="container p-v-1 small">
+    <p class="dark">© 2026 Meridian Properties. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>

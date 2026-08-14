@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Lumière Cinemas — Now Showing</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>:root{--color-1:#e50914;--color-2:#141414;--heading-font-weight:700;}</style>
+</head>
+<body class="bg-black">
+
+<!-- Header -->
+<div class="bga-color-1 p-1-2 row justify-content-end">
+  <span class="small m-r-2">
+    <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg>
+    (212) 555-0134</span>
+  <span class="small m-r-1">
+    <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M4,4H20A2,2 0 0,1 22,6V18A2,2 0 0,1 20,20H4C2.89,20 2,19.1 2,18V6C2,4.89 2.89,4 4,4M12,11L20,6H4L12,11M4,18H20V8.37L12,13.36L4,8.37V18Z"></path></svg>
+    hello@lumiere-cinemas.com</span>
+</div>
+<div class="main-nav p1 bg-black">
+  <div class="main-menu nav-bottom-border-hover">
+    <input type="checkbox" id="toggle-main">
+    <a href="index.html" class="logo">
+      <span class="white bold h4">🎬 LUMIÈRE</span>
+    </a>
+    <div class="nav-panel">
+      <div class="nav-group">
+        <nav class="nav">
+          <a href="index.html" class="white bold">Now Showing</a>
+          <a href="movie.html" class="white">Coming Soon</a>
+          <a href="#cinemas" class="white">Cinemas</a>
+          <a href="#promos" class="white">Promotions</a>
+          <a href="#contact" class="white">Contact</a>
+        </nav>
+        <div class="nav-actions">
+          <a href="movie.html" class="button bg-color-1 white">Book Tickets</a>
+        </div>
+      </div>
+    </div>
+    <label for="toggle-main" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-white-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-white-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="h-75-vh d-flex flex-column justify-content-center" style="background-image:linear-gradient(0deg, rgba(0,0,0,.85), rgba(0,0,0,.35)), url('https://picsum.photos/seed/cinema-hero/1600/900'); background-size:cover; background-position:center;">
+  <div class="container">
+    <p class="d-inline bg-color-1 white p-1-4 rounded small text-uppercase bold">Now Playing</p>
+    <h1 class="white bold display-2 m-t-1">Nightfall Horizon</h1>
+    <p class="white h6 font-weight-400 m-t-1">Sci-Fi &middot; Action &middot; 2h 18m &middot; Rated PG-13</p>
+    <p class="light-grey m-t-1" style="max-width:40rem;">A stranded pilot must outrun an alien intelligence spreading across a dying colony ship before it reaches Earth.</p>
+    <div class="m-t-2">
+      <a href="movie.html" class="button button-lg bg-color-1 white">Get Tickets</a>
+      <a href="#trailer" class="button button-lg outline-white white bg-black">▶ Watch Trailer</a>
+    </div>
+  </div>
+</div>
+
+<!-- Now showing grid -->
+<section class="container m-v-4" id="now-showing">
+  <h2 class="white center bold">Now Showing</h2>
+  <p class="center light-grey">Grab your popcorn — these are playing today</p>
+  <div class="row m-t-2">
+    <div class="col-md-3 p1">
+      <a href="movie.html">
+        <img src="https://picsum.photos/seed/movie-1/400/560" class="img-responsive rounded-t" alt="Nightfall Horizon poster">
+        <div class="p1">
+          <p class="white bold m0">Nightfall Horizon</p>
+          <p class="light-grey small m0">Sci-Fi &middot; 2h 18m</p>
+          <p class="warning small m0">⭐⭐⭐⭐⭐ 4.8</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="movie.html">
+        <img src="https://picsum.photos/seed/movie-2/400/560" class="img-responsive rounded-t" alt="Crimson Alley poster">
+        <div class="p1">
+          <p class="white bold m0">Crimson Alley</p>
+          <p class="light-grey small m0">Thriller &middot; 1h 54m</p>
+          <p class="warning small m0">⭐⭐⭐⭐ 4.3</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="movie.html">
+        <img src="https://picsum.photos/seed/movie-3/400/560" class="img-responsive rounded-t" alt="Paper Lanterns poster">
+        <div class="p1">
+          <p class="white bold m0">Paper Lanterns</p>
+          <p class="light-grey small m0">Drama &middot; 2h 05m</p>
+          <p class="warning small m0">⭐⭐⭐⭐⭐ 4.9</p>
+        </div>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="movie.html">
+        <img src="https://picsum.photos/seed/movie-4/400/560" class="img-responsive rounded-t" alt="The Last Arcade poster">
+        <div class="p1">
+          <p class="white bold m0">The Last Arcade</p>
+          <p class="light-grey small m0">Comedy &middot; 1h 42m</p>
+          <p class="warning small m0">⭐⭐⭐⭐ 4.1</p>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- Coming soon strip -->
+<section class="bg-color-2 p-v-4" id="promos">
+  <div class="container">
+    <h2 class="white center bold">Coming Soon</h2>
+    <div class="flex-gallery-container m-t-2">
+      <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/soon-1/400/500"></div>
+      <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/soon-2/400/500"></div>
+      <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/soon-3/400/500"></div>
+      <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/soon-4/400/500"></div>
+      <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/soon-5/400/500"></div>
+    </div>
+  </div>
+</section>
+
+<!-- Why us -->
+<section class="container m-v-4">
+  <div class="row justify-content-center">
+    <div class="col-md-3 center p1">
+      <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-ml"><path d="M4,6H20V16H4M20,18A2,2 0 0,0 22,16V6C22,4.89 21.1,4 20,4H4C2.89,4 2,4.89 2,6V16A2,2 0 0,0 4,18H0V20H24V18H20Z"></path></svg>
+      <h5 class="white bold center m-t-1">IMAX &amp; Dolby Atmos</h5>
+      <p class="light-grey center small">Immersive screens across every one of our locations.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-ml"><path d="M12,17A2,2 0 0,1 10,15C10,13.89 10.9,13 12,13A2,2 0 0,1 14,15A2,2 0 0,1 12,17M18,20V10H6V20H18M18,8A2,2 0 0,1 20,10V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V10C4,8.89 4.89,8 6,8H7V6A5,5 0 0,1 12,1A5,5 0 0,1 17,6H15.9C15.9,4.29 14.5,3 12,3C9.5,3 8.1,4.29 8.1,6V8H18Z"></path></svg>
+      <h5 class="white bold center m-t-1">Secure Booking</h5>
+      <p class="light-grey center small">Reserve seats in advance, skip the box office line.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-ml"><path d="M12,3C7.79,3 4.19,5.86 3.09,9.77C3.03,10 3,10.24 3,10.5C3,12 4,13.31 5.5,13.68C6.32,13.89 7,14.57 7,15.5V17A2,2 0 0,0 9,19H10V21A1,1 0 0,0 11,22H13A1,1 0 0,0 14,21V19H15A2,2 0 0,0 17,17V15.5C17,14.57 17.68,13.89 18.5,13.68C20,13.31 21,12 21,10.5C21,10.24 20.97,10 20.91,9.77C19.81,5.86 16.21,3 12,3Z"></path></svg>
+      <h5 class="white bold center m-t-1">Snack Combos</h5>
+      <p class="light-grey center small">Order popcorn &amp; drinks ahead for pickup at the counter.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="p-v-4 bg-color-2">
+  <div class="container">
+    <h4 class="center bold white">What Movie-goers Say</h4>
+    <hr class="width-short center">
+    <div class="row m-t-2">
+      <div class="col-md-4 center p1">
+        <div class="center shadow-3 rounded p1">
+          <p class="white font-weight-600">"Best sound system in the city. Nightfall Horizon felt like sitting inside the ship."</p>
+          <p class="warning small m0">⭐⭐⭐⭐⭐</p>
+          <p class="light-grey small m-t-1">Marcus R.</p>
+        </div>
+      </div>
+      <div class="col-md-4 center p1">
+        <div class="center shadow-3 rounded p1">
+          <p class="white font-weight-600">"Booking online saved us so much time on a Friday night."</p>
+          <p class="warning small m0">⭐⭐⭐⭐⭐</p>
+          <p class="light-grey small m-t-1">Dana K.</p>
+        </div>
+      </div>
+      <div class="col-md-4 center p1">
+        <div class="center shadow-3 rounded p1">
+          <p class="white font-weight-600">"Comfortable recliners and the combo deals are worth it."</p>
+          <p class="warning small m0">⭐⭐⭐⭐</p>
+          <p class="light-grey small m-t-1">Priya S.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="p-v-4">
+  <div class="container center">
+    <h2 class="white bold">Never miss a premiere</h2>
+    <p class="light-grey">Join our list for early-access screenings and member-only discounts.</p>
+    <div class="row justify-content-center m-t-2">
+      <div class="col-md-4 p-1-2">
+        <input type="email" class="form-control" placeholder="Enter your email">
+      </div>
+      <div class="col-md-2 p-1-2">
+        <button class="button bg-color-1 white w-100">Subscribe</button>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="bg-color-2 p-v-2" id="contact">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <span class="white bold h5">🎬 LUMIÈRE</span>
+      <p class="light-grey small m-t-1">Six screens of premium cinema, downtown since 2009.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Explore</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="index.html" class="light-grey">Now Showing</a></li>
+        <li class="m-h-1"><a href="movie.html" class="light-grey">Coming Soon</a></li>
+        <li class="m-h-1"><a href="#promos" class="light-grey">Promotions</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Cinemas</h5>
+      <ul class="no-indent-ul" id="cinemas">
+        <li class="m-h-1"><a href="#" class="light-grey">Downtown</a></li>
+        <li class="m-h-1"><a href="#" class="light-grey">Riverside Mall</a></li>
+        <li class="m-h-1"><a href="#" class="light-grey">Northgate</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 white font-weight-600">Contact</h5>
+      <p class="light-grey small">210 Marquee Ave, Suite 4<br>(212) 555-0134<br>hello@lumiere-cinemas.com</p>
+    </div>
+  </div>
+  <div class="container p-v-1 small row m-t-1">
+    <p class="light-grey">© 2026 Lumière Cinemas. All rights reserved. <a href="#" class="light-grey">Terms</a> · <a href="#" class="light-grey">Privacy</a></p>
+  </div>
+</footer>
+
+</body>
+</html>

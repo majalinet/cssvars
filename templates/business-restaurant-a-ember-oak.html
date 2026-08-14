@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ember & Oak</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+:root {
+  --color-1: #c9782f;
+  --color-2: #0f0f0f;
+  --body-bg: #12100e;
+  --body-color: #e9e4dd;
+  --heading-color: #f4ede3;
+}
+</style>
+</head>
+<body>
+
+    <div class="main-nav bg-black">
+        <div class="main-menu nav-top-border-hover">
+            <input type="checkbox" id="nav-ember">
+            <a href="#" class="logo bold display-6 heading-font">Ember<span class="color-1"> & Oak</span></a>
+            <div class="nav-panel">
+                <nav class="nav justify-content-end align-items-center">
+                    <a href="#menu">Menu</a>
+                    <a href="#story">Story</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#reserve">Reservations</a>
+                    <a href="#reserve" class="button bg-color-1 white m-l-1">Reserve</a>
+                </nav>
+            </div>
+            <label for="nav-ember" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-open icon-color-1-fill icon-s"><path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-close icon-color-1-fill icon-s"><path d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4L10.6 12L5 17.6L6.4 19L12 13.4L17.6 19L19 17.6L13.4 12Z"></path></svg>
+            </label>
+        </div>
+    </div>
+    <section class="position-relative overflow-hidden">
+        <img src="https://picsum.photos/seed/ember-hero/1600/900" class="img-responsive w-100" style="height:70vh;object-fit:cover;" alt="Ember and Oak">
+        <div class="position-absolute top-0 left-0 w-100 h-100 bg-black opacity07"></div>
+        <div class="position-absolute top-0 left-0 w-100 h-100 d-flex align-items-center">
+            <div class="container center">
+                <p class="color-1 letter-spacing-4 text-uppercase small m-b-1">Wood-Fire Kitchen</p>
+                <h1 class="display-1 heading-font white m-b-2">Ember &amp; Oak</h1>
+                <p class="lead m-b-3" style="max-width:34rem;margin:0 auto;color:#d8cfc2;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <a href="#reserve" class="button bg-color-1 white button-lg">Reserve a Table</a>
+            </div>
+        </div>
+    </section>
+    <section id="story" class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-6">
+                <img src="https://picsum.photos/seed/ember-chef/700/800" class="img-responsive w-100 rounded" style="height:26rem;object-fit:cover;" alt="Chef">
+            </div>
+            <div class="col-6">
+                <p class="color-1 letter-spacing-2 text-uppercase small m-b-1">Our Story</p>
+                <h2 class="display-3 heading-font m-b-2">Cooked over open flame, always</h2>
+                <p class="m-b-2" style="color:#c9c1b6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="row gap-2">
+                    <div class="col-6">
+                        <p class="display-5 heading-font color-1 m-b-0">15</p>
+                        <p class="small" style="color:#a89f92;">Years of fire-cooking</p>
+                    </div>
+                    <div class="col-6">
+                        <p class="display-5 heading-font color-1 m-b-0">100%</p>
+                        <p class="small" style="color:#a89f92;">Local sourcing</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="menu" class="p-v-4" style="background:#1a1714;">
+        <div class="container">
+            <p class="color-1 letter-spacing-2 text-uppercase small m-b-1 center">Menu</p>
+            <h2 class="display-3 heading-font white center m-b-4">Tonight&#39;s Selection</h2>
+            <div class="row gap-3">
+                <div class="col-6">
+                    <p class="bold larger color-1 border-b p-b-1 m-b-2">Starters</p>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Charred Octopus</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$19</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Wood-Roasted Beets</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$14</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Smoked Burrata</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$16</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="bold larger color-1 border-b p-b-1 m-b-2">Mains</p>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Oak-Grilled Ribeye</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$48</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Ember Roast Chicken</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$32</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0" style="color:#f4ede3;">Charcoal Salmon</p>
+                            <p class="small" style="color:#a89f92;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0">$36</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center m-t-3">
+                <a href="#" class="button border-a-color-1 color-1">View Full Menu &amp; Wine List</a>
+            </div>
+        </div>
+    </section>
+    <section id="gallery" class="container p-v-4">
+        <div class="masonry-container masonry-container-2col gap-1">
+            <div class="masonry-large masonry-gallery-img overflow-hidden rounded">
+                <img src="https://picsum.photos/seed/ember-g1/600/600" alt="Dish">
+            </div>
+            <div class="masonry-medium masonry-gallery-img overflow-hidden rounded">
+                <img src="https://picsum.photos/seed/ember-g2/600/600" alt="Dish">
+            </div>
+            <div class="masonry-medium masonry-gallery-img overflow-hidden rounded">
+                <img src="https://picsum.photos/seed/ember-g3/600/600" alt="Dish">
+            </div>
+            <div class="masonry-small masonry-gallery-img overflow-hidden rounded">
+                <img src="https://picsum.photos/seed/ember-g4/600/600" alt="Dish">
+            </div>
+            <div class="masonry-small masonry-gallery-img overflow-hidden rounded">
+                <img src="https://picsum.photos/seed/ember-g5/600/600" alt="Dish">
+            </div>
+        </div>
+    </section>
+    <section id="reserve" class="p-v-4" style="background:#1a1714;">
+        <div class="container">
+            <div class="panel p2 border-a-color-1" style="background:#12100e;">
+                <h3 class="heading-font white m-b-2">Reserve a table</h3>
+                <div class="row gap-2">
+                    <div class="col-3">
+                        <input type="date" class="form-control w-100" placeholder="Date">
+                    </div>
+                    <div class="col-3">
+                        <select class="form-control w-100">
+                            <option>7:00 PM</option>
+                            <option>7:30 PM</option>
+                            <option>8:00 PM</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <select class="form-control w-100">
+                            <option>2 Guests</option>
+                            <option>4 Guests</option>
+                            <option>6 Guests</option>
+                        </select>
+                    </div>
+                    <div class="col-3">
+                        <button class="button button-w-100 bg-color-1 white">Reserve</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer p-t-4 p-b-2 m-t-4">
+        <div class="container">
+            <div class="row gap-3 m-b-3">
+                <div class="col-3">
+                    <p class="bold display-6 heading-font m-b-1">Ember<span class="color-1"> & Oak</span></p>
+                    <p class="grey small">Cooked over open flame, always.</p>
+                    <div class="cluster gap-1 m-t-1"><a href="#" class="pill small">Facebook</a> <a href="#" class="pill small">Instagram</a> <a href="#" class="pill small">Twitter</a></div>
+                </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Visit</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#menu" class="grey">Menu</a></li>
+                <li class="m-b-1"><a href="#gallery" class="grey">Gallery</a></li>
+                <li class="m-b-1"><a href="#reserve" class="grey">Reservations</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Restaurant</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#story" class="grey">Our Story</a></li>
+                <li class="m-b-1"><a href="#" class="grey">Private Events</a></li>
+                <li class="m-b-1"><a href="#" class="grey">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Contact</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#" class="grey">(212) 555-0188</a></li>
+                <li class="m-b-1"><a href="#" class="grey">hello@emberoak.example</a></li>
+                <li class="m-b-1"><a href="#" class="grey">88 Kiln St, Brooklyn</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-content border-t p-t-2">
+                <p class="small grey">© 2026 Ember & Oak. Lorem ipsum dolor sit amet.</p>
+                <ul class="footer-links small">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aurelia Hotel & Spa</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+:root {
+  --color-1: #b08d57;
+  --color-2: #14181f;
+}
+</style>
+</head>
+<body>
+
+    <div class="main-nav ">
+        <div class="main-menu nav-top-border-hover">
+            <input type="checkbox" id="nav-aurel">
+            <a href="#" class="logo bold display-6 heading-font">Aurel<span class="color-1">ia</span></a>
+            <div class="nav-panel">
+                <nav class="nav justify-content-end align-items-center">
+                    <a href="#rooms">Rooms</a>
+                    <a href="#spa">Spa</a>
+                    <a href="#dining">Dining</a>
+                    <a href="#gallery">Gallery</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#book" class="button bg-color-1 white m-l-1">Book a Stay</a>
+                </nav>
+            </div>
+            <label for="nav-aurel" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-open icon-color-1-fill icon-s"><path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-close icon-color-1-fill icon-s"><path d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4L10.6 12L5 17.6L6.4 19L12 13.4L17.6 19L19 17.6L13.4 12Z"></path></svg>
+            </label>
+        </div>
+    </div>
+    <section class="position-relative overflow-hidden" style="height:100vh; background-image:url('https://picsum.photos/seed/aurelia-hero/1600/1000'); background-size:cover; background-position:center;">
+        <div class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity07"></div>
+        <div class="position-absolute top-0 left-0 w-100 h-100 d-flex align-items-center">
+            <div class="container">
+                <p class="pill bg-color-1 white m-b-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xxs icon-white-fill"><path d="M12 2L14.6 8.6L21.8 9.2L16.3 13.9L18 21L12 17.1L6 21L7.7 13.9L2.2 9.2L9.4 8.6Z"></path></svg> Five-Star Retreat</p>
+                <h1 class="display-1 white heading-font m-b-2">Aurelia Hotel &amp; Spa</h1>
+                <p class="lead white m-b-3" style="max-width:38rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class="cluster gap-1">
+                    <a href="#rooms" class="button bg-color-1 white button-lg">Explore Rooms</a>
+                    <a href="#book" class="button border-a-white white button-lg"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M7 2V4H17V2H19V4H21V21H3V4H5V2H7ZM5 9V19H19V9H5ZM7 11H11V15H7V11Z"></path></svg> Check Availability</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-6">
+                <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Welcome</p>
+                <h2 class="display-3 heading-font m-b-2">A quiet luxury above the coastline</h2>
+                <p class="grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="row gap-2">
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">48</p>
+                        <p class="small grey">Suites &amp; Villas</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">12</p>
+                        <p class="small grey">Years of Service</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">4.9</p>
+                        <p class="small grey">Guest Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bento gap-1">
+                    <div class="bento-item bento-2x2 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-1/700/700" class="img-responsive w-100 h-100" alt="Suite">
+                    </div>
+                    <div class="bento-item bento-2x1 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-2/700/320" class="img-responsive w-100 h-100 p0 m0" alt="Pool">
+                    </div>
+                    <div class="bento-item bento-2x1 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-3/700/320" class="img-responsive w-100 h-100" alt="Spa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="rooms" class="bg-light-grey p-v-4">
+        <div class="container">
+            <div class="between-row m-b-3 align-items-end">
+                <div>
+                    <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Accommodations</p>
+                    <h2 class="display-3 heading-font">Rooms &amp; Suites</h2>
+                </div>
+                <a href="#" class="btn-link color-1 bold">View all rooms <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+            <div class="row gap-2">
+                <div class="col-4">
+                    <div class="card card-hover overflow-hidden p0">
+                        <img src="https://picsum.photos/seed/aurelia-r1/600/420" class="img-responsive w-100" style="height:14rem;object-fit:cover;" alt="Garden Suite">
+                        <div class="card-body p1">
+                            <div class="between-row">
+                                <p class="bold larger m-b-0">Garden Suite</p>
+                                <p class="color-1 bold m-b-0">$320<span class="grey small">/night</span></p>
+                            </div>
+                            <p class="small grey m-t-1 m-b-2">32 m² · Garden view · King bed</p>
+                            <a href="#book" class="button button-w-100 border-a-color-1">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-hover overflow-hidden p0">
+                        <img src="https://picsum.photos/seed/aurelia-r2/600/420" class="img-responsive w-100" style="height:14rem;object-fit:cover;" alt="Ocean Villa">
+                        <div class="card-body p1">
+                            <div class="between-row">
+                                <p class="bold larger m-b-0">Ocean Villa</p>
+                                <p class="color-1 bold m-b-0">$480<span class="grey small">/night</span></p>
+                            </div>
+                            <p class="small grey m-t-1 m-b-2">54 m² · Ocean view · Private pool</p>
+                            <a href="#book" class="button button-w-100 border-a-color-1">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card card-hover overflow-hidden p0">
+                        <img src="https://picsum.photos/seed/aurelia-r3/600/420" class="img-responsive w-100" style="height:14rem;object-fit:cover;" alt="Grand Penthouse">
+                        <div class="card-body p1">
+                            <div class="between-row">
+                                <p class="bold larger m-b-0">Grand Penthouse</p>
+                                <p class="color-1 bold m-b-0">$890<span class="grey small">/night</span></p>
+                            </div>
+                            <p class="small grey m-t-1 m-b-2">110 m² · Panoramic view · Terrace</p>
+                            <a href="#book" class="button button-w-100 border-a-color-1">Reserve</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="spa" class="container p-v-4">
+        <div class="row gap-4 align-items-center flex-row-reverse">
+            <div class="col-6">
+                <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Wellness</p>
+                <h2 class="display-3 heading-font m-b-2">Spa &amp; Wellness Sanctuary</h2>
+                <p class="grey m-b-3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class="stack gap-2">
+                    <div class="cluster gap-1 align-items-center">
+                        <span class="icon-box bg-color-1 rounded circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M12 2C12 6 9 7.5 9 11C9 13.2 10.3 15 12 15C13.7 15 15 13.2 15 11C15 7.5 12 6 12 2ZM6 10C6 13 7 15 9.5 16.5C7.8 17.3 6 19 6 21H18C18 19 16.2 17.3 14.5 16.5C17 15 18 13 18 10C16 12 14.5 13 12 13C9.5 13 8 12 6 10Z"></path></svg></span>
+                        <span>Aromatherapy Massage</span>
+                    </div>
+                    <div class="cluster gap-1 align-items-center">
+                        <span class="icon-box bg-color-1 rounded circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M12 2C12 6 9 6.5 9 10C9 12 10.3 13 12 13C13.7 13 15 12 15 10C15 8.5 14 8 14 6C16 7 18 9.5 18 13C18 17 15.3 20 12 20C8.7 20 6 17 6 13C6 9 9 7 12 2Z"></path></svg></span>
+                        <span>Rooftop Sauna</span>
+                    </div>
+                    <div class="cluster gap-1 align-items-center">
+                        <span class="icon-box bg-color-1 rounded circle"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M17 2C10 2 4 8 4 15C4 18 6 20 9 20C16 20 22 14 22 7C22 5 21 3 19 3C13 3 8 8 8 13C8 12 12 6 17 2Z"></path></svg></span>
+                        <span>Private Wellness Suites</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <img src="https://picsum.photos/seed/aurelia-spa/800/600" class="img-responsive w-100 rounded shadow-2" alt="Spa">
+            </div>
+        </div>
+    </section>
+    <section id="dining" class="bg-color-2 p-v-4 h-100-vh-min">
+        <div class="container m-t-2">
+            <div class="center m-b-3" style="max-width:36rem;margin-left:auto;margin-right:auto;">
+                <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Dining</p>
+                <h2 class="display-4 heading-font white">An unforgettable table</h2>
+                <p class="light-grey m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+            <div class="row gap-2">
+                <div class="col-4">
+                    <div class="panel p1 bg-black border-a-color-1">
+                        <img src="https://picsum.photos/seed/aurelia-d1/500/300" class="img-responsive w-100 rounded m-b-1" style="height:10rem;object-fit:cover;" alt="The Veranda">
+                        <p class="bold larger white m-b-0">The Veranda</p>
+                        <p class="grey small">Coastal fine dining, open-air terrace.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="panel p1 bg-black border-a-color-1">
+                        <img src="https://picsum.photos/seed/aurelia-d2/500/300" class="img-responsive w-100 rounded m-b-1" style="height:10rem;object-fit:cover;" alt="Ember Bar">
+                        <p class="bold larger white m-b-0">Ember Bar</p>
+                        <p class="grey small">Craft cocktails and small plates.</p>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="panel p1 bg-black border-a-color-1">
+                        <img src="https://picsum.photos/seed/aurelia-d3/500/300" class="img-responsive w-100 rounded m-b-1" style="height:10rem;object-fit:cover;" alt="Private Cellar">
+                        <p class="bold larger white m-b-0">Private Cellar</p>
+                        <p class="grey small">Curated tastings for intimate groups.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container p-v-4 center">
+        <div style="max-width:40rem;margin:0 auto;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><path d="M7 7C4.8 7 3 8.8 3 11C3 13.1 4.6 14.8 6.6 15C6.1 16.5 5 17.6 3.5 18L4 20C7.3 19.3 9.5 16.5 9.5 12.5V11C9.5 8.8 8.5 7 7 7ZM17 7C14.8 7 13 8.8 13 11C13 13.1 14.6 14.8 16.6 15C16.1 16.5 15 17.6 13.5 18L14 20C17.3 19.3 19.5 16.5 19.5 12.5V11C19.5 8.8 18.5 7 17 7Z"></path></svg>
+            <p class="lead m-v-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="bold">Isabelle Marchetti</p>
+            <p class="grey small">Return guest, 6 stays</p>
+            <div class="color-1 display-6">
+                ★ ★ ★ ★ ★
+            </div>
+        </div>
+    </section>
+    <section id="book" class="container p-b-4">
+        <div class="panel p2 bg-gradient-luxury">
+            <div class="row gap-2 align-items-end">
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Check in</label>
+                    <input type="date" class="form-control w-100">
+                </div>
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Check out</label>
+                    <input type="date" class="form-control w-100">
+                </div>
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Guests</label>
+                    <select class="form-control w-100">
+                        <option>2 Adults</option>
+                        <option>2 Adults, 1 Child</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <button class="button button-w-100 bg-color-1 white">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer p-t-4 p-b-2 m-t-4">
+        <div class="container">
+            <div class="row gap-3 m-b-3">
+                <div class="col-3">
+                    <p class="bold display-6 heading-font m-b-1">Aurel<span class="color-1">ia</span></p>
+                    <p class="grey small">A quiet luxury retreat on the coast.</p>
+                    <div class="cluster gap-1 m-t-1"><a href="#" class="pill small">Facebook</a> <a href="#" class="pill small">Instagram</a> <a href="#" class="pill small">Twitter</a></div>
+                </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Explore</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#rooms" class="grey">Rooms</a></li>
+                <li class="m-b-1"><a href="#spa" class="grey">Spa</a></li>
+                <li class="m-b-1"><a href="#dining" class="grey">Dining</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Hotel</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#" class="grey">About</a></li>
+                <li class="m-b-1"><a href="#gallery" class="grey">Gallery</a></li>
+                <li class="m-b-1"><a href="#" class="grey">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Contact</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#" class="grey">+1 (555) 812-0044</a></li>
+                <li class="m-b-1"><a href="#" class="grey">stay@aurelia.example</a></li>
+                <li class="m-b-1"><a href="#" class="grey">Cape Marlow, CA</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-content border-t p-t-2">
+                <p class="small grey">© 2026 Aurelia. Lorem ipsum dolor sit amet.</p>
+                <ul class="footer-links small">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Harborview Realty</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>
+:root {
+  --color-1: #1e3a5f;
+  --color-2: #8a9a5b;
+}
+</style>
+</head>
+<body>
+
+    <div class="main-nav ">
+        <div class="main-menu nav-top-border-hover">
+            <input type="checkbox" id="nav-harbor">
+            <a href="#" class="logo bold display-6 heading-font">Harbor<span class="color-1">view</span></a>
+            <div class="nav-panel">
+                <nav class="nav justify-content-end align-items-center">
+                    <a href="#listings">Listings</a>
+                    <a href="#sell">Sell</a>
+                    <a href="#agents">Agents</a>
+                    <a href="#areas">Areas</a>
+                    <a href="#contact">Contact</a>
+                    <a href="#sell" class="button bg-color-1 white m-l-1">List Your Home</a>
+                </nav>
+            </div>
+            <label for="nav-harbor" class="toggle-menu">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-open icon-color-1-fill icon-s"><path d="M3 18H21V16H3V18ZM3 13H21V11H3V13ZM3 6V8H21V6H3Z"></path></svg>
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-menu-close icon-color-1-fill icon-s"><path d="M19 6.4L17.6 5L12 10.6L6.4 5L5 6.4L10.6 12L5 17.6L6.4 19L12 13.4L17.6 19L19 17.6L13.4 12Z"></path></svg>
+            </label>
+        </div>
+    </div>
+    <section class="position-relative h-100-vh-min" style="background-image: url('https://picsum.photos/seed/harborview-hero/1600/850'); background-size: cover; background-position: center; height: 60vh;">
+        <div class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity05"></div>
+        <div class="position-absolute top-0 left-0 w-100 h-100 d-flex align-items-center">
+            <div class="container p-v-4">
+                <h1 class="display-1 heading-font white m-b-2">Find your place on the harbor</h1>
+                <p class="lead white m-b-3" style="max-width:34rem;">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                <div class="panel p1 bg-white" style="max-width:44rem;">
+                    <div class="row gap-1 align-items-end">
+                        <div class="col-4">
+                            <label class="small bold m-b-1 d-block">Location</label>
+                            <input type="text" class="form-control w-100" placeholder="City or ZIP">
+                        </div>
+                        <div class="col-3">
+                            <label class="small bold m-b-1 d-block">Type</label>
+                            <select class="form-control w-100">
+                                <option>Any</option>
+                                <option>House</option>
+                                <option>Condo</option>
+                            </select>
+                        </div>
+                        <div class="col-3">
+                            <label class="small bold m-b-1 d-block">Budget</label>
+                            <select class="form-control w-100">
+                                <option>Any</option>
+                                <option>Under $500k</option>
+                                <option>$500k–$1M</option>
+                            </select>
+                        </div>
+                        <div class="col-2">
+                            <button class="button button-w-100 bg-color-1 white"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M9.5 3C13.6 3 17 6.4 17 10.5C17 12.1 16.5 13.6 15.6 14.8L21.4 20.6L20 22L14.2 16.2C13 17.1 11.5 17.6 9.9 17.6C5.8 17.6 2.4 14.2 2.4 10.1C2.4 6 5.8 2.6 9.9 2.6M9.5 5C6.5 5 4 7.5 4 10.5C4 13.5 6.5 16 9.5 16C12.5 16 15 13.5 15 10.5C15 7.5 12.5 5 9.5 5Z"></path></svg></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="container p-v-3">
+        <div class="row gap-2">
+            <div class="col-3 center">
+                <p class="display-4 heading-font color-1 m-b-0">640+</p>
+                <p class="small grey">Homes Sold</p>
+            </div>
+            <div class="col-3 center">
+                <p class="display-4 heading-font color-1 m-b-0">$1.2B</p>
+                <p class="small grey">Transaction Volume</p>
+            </div>
+            <div class="col-3 center">
+                <p class="display-4 heading-font color-1 m-b-0">28</p>
+                <p class="small grey">Neighborhoods</p>
+            </div>
+            <div class="col-3 center">
+                <p class="display-4 heading-font color-1 m-b-0">4.9</p>
+                <p class="small grey">Average Rating</p>
+            </div>
+        </div>
+    </section>
+    <section id="listings" class="bg-light-grey p-v-4">
+        <div class="container">
+            <div class="between-row m-b-3 align-items-end">
+                <div>
+                    <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Featured</p>
+                    <h2 class="display-3 heading-font">Homes on the market</h2>
+                </div>
+                <a href="#" class="btn-link color-1 bold">View all listings <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+            <div class="row gap-2">
+                <div class="col-4">
+                    <div class="card p0 overflow-hidden card-hover">
+                        <div class="position-relative">
+                            <img src="https://picsum.photos/seed/harborview-1/600/420" class="img-responsive w-100" style="height:13rem;object-fit:cover;" alt="Cedar Point Cottage">
+                            <span class="badge bg-color-2 white position-absolute top-1 left-1">For Sale</span>
+                        </div>
+                        <div class="card-body p1">
+                            <p class="bold larger m-b-0">Cedar Point Cottage</p>
+                            <p class="color-1 bold m-t-1 m-b-1">$685,000</p>
+                            <p class="small grey">3 bd · 2 ba · 1,850 sqft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card p0 overflow-hidden card-hover">
+                        <div class="position-relative">
+                            <img src="https://picsum.photos/seed/harborview-2/600/420" class="img-responsive w-100" style="height:13rem;object-fit:cover;" alt="Marina District Loft">
+                            <span class="badge bg-color-2 white position-absolute top-1 left-1">For Sale</span>
+                        </div>
+                        <div class="card-body p1">
+                            <p class="bold larger m-b-0">Marina District Loft</p>
+                            <p class="color-1 bold m-t-1 m-b-1">$920,000</p>
+                            <p class="small grey">2 bd · 2 ba · 1,400 sqft</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-4">
+                    <div class="card p0 overflow-hidden card-hover">
+                        <div class="position-relative">
+                            <img src="https://picsum.photos/seed/harborview-3/600/420" class="img-responsive w-100" style="height:13rem;object-fit:cover;" alt="Hillcrest Family Home">
+                            <span class="badge bg-color-2 white position-absolute top-1 left-1">For Sale</span>
+                        </div>
+                        <div class="card-body p1">
+                            <p class="bold larger m-b-0">Hillcrest Family Home</p>
+                            <p class="color-1 bold m-t-1 m-b-1">$1,150,000</p>
+                            <p class="small grey">4 bd · 3 ba · 2,600 sqft</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sell" class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-6">
+                <img src="https://picsum.photos/seed/harborview-sell/700/600" class="img-responsive w-100 rounded shadow-1" alt="List with us">
+            </div>
+            <div class="col-6">
+                <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Selling</p>
+                <h2 class="display-3 heading-font m-b-2">Sell with local experts</h2>
+                <p class="grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit.</p>
+                <div class="stack gap-1">
+                    <p class="cluster gap-1 align-items-center m-b-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M4 12.5L9 17.5L20 6.5"></path></svg> Free home valuation</p>
+                    <p class="cluster gap-1 align-items-center m-b-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M4 12.5L9 17.5L20 6.5"></path></svg> Professional photography included</p>
+                    <p class="cluster gap-1 align-items-center m-b-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M4 12.5L9 17.5L20 6.5"></path></svg> Average 12-day time on market</p>
+                </div>
+                <a href="#contact" class="button bg-color-1 white m-t-2">Get a Free Valuation</a>
+            </div>
+        </div>
+    </section>
+    <section id="agents" class="bg-color-1 p-v-4">
+        <div class="container">
+            <h2 class="display-3 heading-font white center m-b-3">Your local agents</h2>
+            <div class="row gap-2">
+                <div class="col-4 center">
+                    <img src="https://picsum.photos/seed/harborview-a1/300/300" class="img-responsive rounded circle m-b-1" style="width:7rem;height:7rem;object-fit:cover;margin:0 auto;" alt="Diane Whitfield">
+                    <p class="bold white m-b-0">Diane Whitfield</p>
+                    <p class="light-grey small">Marina District Specialist</p>
+                </div>
+                <div class="col-4 center">
+                    <img src="https://picsum.photos/seed/harborview-a2/300/300" class="img-responsive rounded circle m-b-1" style="width:7rem;height:7rem;object-fit:cover;margin:0 auto;" alt="Rafael Cortez">
+                    <p class="bold white m-b-0">Rafael Cortez</p>
+                    <p class="light-grey small">Hillcrest Specialist</p>
+                </div>
+                <div class="col-4 center">
+                    <img src="https://picsum.photos/seed/harborview-a3/300/300" class="img-responsive rounded circle m-b-1" style="width:7rem;height:7rem;object-fit:cover;margin:0 auto;" alt="Yuki Tanaka">
+                    <p class="bold white m-b-0">Yuki Tanaka</p>
+                    <p class="light-grey small">Cedar Point Specialist</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="areas" class="container p-v-4">
+        <h2 class="display-3 heading-font center m-b-3">Explore neighborhoods</h2>
+        <div class="grid-cols-4 d-grid gap-1">
+            <a href="#" class="position-relative rounded overflow-hidden d-block" style="height:9rem;">
+                <img src="https://picsum.photos/seed/area1/300/220" class="img-responsive w-100 h-100" style="object-fit:cover;" alt="Marina District">
+                <span class="position-absolute bottom-0 left-0 p1 white bold">Marina District</span>
+                <span class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity05"></span>
+            </a>
+            <a href="#" class="position-relative rounded overflow-hidden d-block" style="height:9rem;">
+                <img src="https://picsum.photos/seed/area2/300/220" class="img-responsive w-100 h-100" style="object-fit:cover;" alt="Hillcrest">
+                <span class="position-absolute bottom-0 left-0 p1 white bold">Hillcrest</span>
+                <span class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity05"></span>
+            </a>
+            <a href="#" class="position-relative rounded overflow-hidden d-block" style="height:9rem;">
+                <img src="https://picsum.photos/seed/area3/300/220" class="img-responsive w-100 h-100" style="object-fit:cover;" alt="Cedar Point">
+                <span class="position-absolute bottom-0 left-0 p1 white bold">Cedar Point</span>
+                <span class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity05"></span>
+            </a>
+            <a href="#" class="position-relative rounded overflow-hidden d-block" style="height:9rem;">
+                <img src="https://picsum.photos/seed/area4/300/220" class="img-responsive w-100 h-100" style="object-fit:cover;" alt="Old Town">
+                <span class="position-absolute bottom-0 left-0 p1 white bold">Old Town</span>
+                <span class="position-absolute top-0 left-0 w-100 h-100 bg-gradient-black opacity05"></span>
+            </a>
+        </div>
+    </section>
+    <footer class="footer p-t-4 p-b-2 m-t-4">
+        <div class="container">
+            <div class="row gap-3 m-b-3">
+                <div class="col-3">
+                    <p class="bold display-6 heading-font m-b-1">Harbor<span class="color-1">view</span></p>
+                    <p class="grey small">Local experts, honest guidance.</p>
+                    <div class="cluster gap-1 m-t-1"><a href="#" class="pill small">Facebook</a> <a href="#" class="pill small">Instagram</a> <a href="#" class="pill small">Twitter</a></div>
+                </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Listings</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#listings" class="grey">Buy</a></li>
+                <li class="m-b-1"><a href="#sell" class="grey">Sell</a></li>
+                <li class="m-b-1"><a href="#areas" class="grey">Neighborhoods</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Company</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#agents" class="grey">Our Agents</a></li>
+                <li class="m-b-1"><a href="#" class="grey">About</a></li>
+                <li class="m-b-1"><a href="#" class="grey">Careers</a></li>
+                </ul>
+            </div>
+            <div class="col-3">
+                <p class="bold m-b-1">Contact</p>
+                <ul class="no-indent-ul">
+                <li class="m-b-1"><a href="#" class="grey">(619) 555-0121</a></li>
+                <li class="m-b-1"><a href="#" class="grey">hello@harborview.example</a></li>
+                <li class="m-b-1"><a href="#" class="grey">50 Pier Rd, San Diego</a></li>
+                </ul>
+            </div>
+            </div>
+            <div class="footer-content border-t p-t-2">
+                <p class="small grey">© 2026 Harborview. Lorem ipsum dolor sit amet.</p>
+                <ul class="footer-links small">
+                    <li><a href="#">Privacy</a></li>
+                    <li><a href="#">Terms</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                </ul>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

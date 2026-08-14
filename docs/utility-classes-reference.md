@@ -1,6 +1,6 @@
 # Utility Classes Reference
 
-Companion to [Styling with Variables](./styling-with-variables.md). That doc covers the token system; this one catalogues the ~500 single-purpose classes built on top of it, living in `@layer utilities` and `@layer utilities-advanced`.
+Companion to [Styling with Variables](./styling-with-variables.md). That doc covers the token system; this one catalogues the 700+ single-purpose classes built on top of it, living in `@layer utilities` and `@layer utilities-advanced`.
 
 **How to read this page:** classes are grouped by naming pattern rather than listed one-by-one where a pattern repeats across a numeric scale (e.g. `.p-t-1`–`.p-t-4`). Where a class reads a token, the token is named — override the token instead of overriding the class.
 
@@ -25,22 +25,14 @@ Two independent numeric scales are used throughout, and the naming tells you whi
 | `.m-v-0`–`4` / `.p-v-0`–`4` | margin-block / padding-block (top+bottom at once) | dense scale |
 | `.m-1-16` … `.m-3-4` / `.p-1-16` … `.p-3-4` | margin / padding, all sides, fixed rem | fixed values |
 | `.m-b--1-16` … `.m-b--3-4` (and `-l`/`-r`/`-t`/`-h`/`-v` equivalents) | directional margin/padding, fixed rem | fixed values |
-| `.m-auto` / `.m-h-auto` / `.m-v-auto` | margin auto, all/inline/block sides | — |
-| `.m-t-auto` / `.m-b-auto` / `.m-l-auto` / `.m-r-auto` | margin auto, one side only | — the "push to the edge" trick for a single flex/grid item, without a wrapper |
+| `.m-auto` / `.m-h-auto` / `.m-v-auto` | margin auto (centering, all/inline/block) | — |
+| `.m-t-auto` / `.m-b-auto` / `.m-l-auto` / `.m-r-auto` | margin auto, single side | — |
+| `.-m-1`–`.-m-4` | **negative** margin, all sides, dense scale | `-1 * --space-dense-1`–`4` |
+| `.-m-t-1`–`4` / `.-m-b-1`–`4` (and `-l`/`-r` equivalents) | negative directional margin | `-1 * --space-1`–`4` (dense scale for `-l`/`-r`) |
+| `.-m-v-1`–`4` / `.-m-h-1`–`4` | negative margin-block / margin-inline | `-1 * --space-1`–`4` |
+| `.m-d-1` / `.m-d-2` / `.p-d-1` / `.p-d-2` | fixed 1rem/2rem margin/padding, all sides, **desktop-only** (`min-width: 992px`) | — |
 
-**Negative margins** — leading-dash prefix, distinct from the double-dash fraction syntax above (`.m-t--1-4` is a *positive* fixed value; `.-m-t-1` is *negative*):
-
-| Classes | Sets | Source |
-|---|---|---|
-| `.-m-1`–`.-m-4` | negative margin, all sides | `--space-dense-1`–`4` |
-| `.-m-v-1`–`.-m-v-4` | negative `margin-block` (top+bottom) | `--space-1`–`4` |
-| `.-m-h-1`–`.-m-h-4` | negative `margin-inline` (left+right) | `--space-dense-1`–`4` |
-| `.-m-t-1`–`.-m-t-4` | negative `margin-top` | `--space-1`–`4` |
-| `.-m-b-1`–`.-m-b-4` | negative `margin-bottom` | `--space-1`–`4` |
-| `.-m-l-1`–`.-m-l-4` | negative `margin-left` | `--space-dense-1`–`4` |
-| `.-m-r-1`–`.-m-r-4` | negative `margin-right` | `--space-dense-1`–`4` |
-
-Use these for intentional overlap — a card pulled up over a hero image, a badge offset past its container's edge.
+> The leading-dash negative-margin classes (`.-m-1`, `.-m-t-2`, …) are for deliberate bleed/overlap effects — pulling an element past its container edge. Don't confuse them with the `.m-*--1-2` fixed-fraction classes, which use a trailing double-dash and are always positive.
 
 **Child & flow utilities** (see also [Flow tokens](./styling-with-variables.md#19-flow-tokens--spacing-between-elements-not-around-them)):
 
@@ -48,28 +40,47 @@ Use these for intentional overlap — a card pulled up over a hero image, a badg
 |---|---|---|
 | `.flow` | `margin-top` on every child after the first | `--page-flow` |
 | `.flow-1`–`.flow-4` | same, at a fixed step regardless of `--page-flow` | `--space-1`–`4` |
+| `.page-flow` | explicit utility form of `.flow` (same rule, named after its token) | `--page-flow` |
+| `.main-flow` | flow rhythm sized for `main`-level rhythm | `--main-flow` |
 | `.child-padding` | `padding` on every direct child | `--child-padding` |
-| `.child-padding-1`–`.child-padding-4` | same, at a fixed step | `--space-1`–`4` |
+| `.child-padding-1-2`–`.child-padding-4` | same, at a fixed step (includes a half-step `-1-2`) | `--space-1-2`, `--space-1`–`4` |
 | `.child-margin` / `.child-margin-2`–`4` | `margin` on every direct child, at a fixed step | `--space-1`–`4` |
-| `.gap` / `.gap-2`–`.gap-4` | flex/grid `gap`, both axes at once | `--default-gap` / `--space-2`–`4` |
-| `.gap-v-1`–`.gap-v-4` | `row-gap` only (vertical gap between rows) | `--space-1`–`4` |
-| `.gap-h-1`–`.gap-h-4` | `column-gap` only (horizontal gap between columns) | `--space-1`–`4` |
 
-**Note:** on the `.row`/`.col-*` flex grid, gap classes only take effect on children that also have `flex-shrink: 1` and `min-width: 0` — the grid defaults to `flex-shrink: 0` and `min-width: auto`, so gap alone can cause overflow.
+**Gap utilities:**
+
+| Classes | Sets | Source |
+|---|---|---|
+| `.gap` / `.gap-1`–`.gap-4` | flex/grid `gap`, both axes | `--default-gap` / `--space-1`–`4` |
+| `.gap-v-1`–`.gap-v-4` | `row-gap` only | `--space-1`–`4` |
+| `.gap-h-1`–`.gap-h-4` | `column-gap` only | `--space-1`–`4` |
+| `.row.gap` / `.row.gap-1`–`.row.gap-4` | grid-gutter compatibility fix: zeroes native `column-gap` on `.row` and drives `--col-h-padding` instead, so `.col-*` widths never overflow their track | — |
+
+**Flex composition shorthands** (skip hand-composing `.d-flex .justify-content-* .align-items-*` for these common shapes):
+
+| Classes | Sets |
+|---|---|
+| `.centered-row` / `.centered-col` | flex row/column, centered on both axes, `--default-gap` |
+| `.between-row` / `.between-col` | flex row/column, `justify-content: space-between`, `--default-gap` (`.between-row` also centers cross-axis; `.between-col` doesn't) |
+| `.stack` | flex column, `align-items: stretch`, `--default-gap` |
+| `.center-overlay` | `position: absolute; inset: 0`, flex-centered — for centering content over a positioned parent |
+| `.grid-center` | `display: grid; place-items: center` |
 
 ---
 
 ## 2. Sizing
 
+**Naming convention:** every width/height family follows the same three-way pattern — a bare class sets the property directly, a `-min` suffix sets the `min-*` equivalent, and a `-max` suffix sets the `max-*` equivalent. There is no `mw-`/`mh-` prefix anywhere in the framework; `max-width`/`max-height` are always the `-max` suffix on the matching `w-`/`h-` class, for symmetry with `-min`.
+
 | Classes | Sets | Notes |
 |---|---|---|
-| `.w-25` / `.w-33` / `.w-50` / `.w-66` / `.w-75` / `.w-100` | `width` as a percentage | — |
-| `.w-25-vw` … `.w-100-vw` (+ `-min` variants) | `width` in viewport units, or `min-width` equivalents | for full-bleed or viewport-relative elements |
-| `.w-1rem` … `.w-10rem` | fixed `width` | — |
+| `.w-25` / `.w-33` / `.w-50` / `.w-66` / `.w-75` / `.w-100` (+ `-min` / `-max`) | `width` / `min-width` / `max-width`, as a percentage | e.g. `.w-50-max` = `max-width: 50%` |
+| `.w-25-vw` … `.w-100-vw` (+ `-min` / `-max`) | `width` / `min-width` / `max-width`, in `vw` | `.w-90-vw-max` also exists (no bare or `-min` counterpart) |
+| `.w-1rem` … `.w-10rem` (+ `-min` / `-max`) | `width` / `min-width` / `max-width`, fixed rem (1, 2, 3, 4, 5, 6, 8, 10rem steps) | — |
 | `.w--1rem` … `.w--4rem` | `width: calc(100% - Nrem)` | the double-dash means **"100% minus"**, not negative |
-| `.h-*` / `.h--*` | height equivalents of all the above | same conventions |
-| `.mw-1rem` … `.mw-10rem` | `max-width` | — |
-| `.mh-1rem` … `.mh-10rem` | `max-height` | — |
+| `.h-25` … `.h-100` (+ `-min` / `-max`) | `height` / `min-height` / `max-height`, as a percentage | same steps as `.w-*` |
+| `.h-25-vh` … `.h-100-vh` (+ `-min` / `-max`) | `height` / `min-height` / `max-height`, in `vh` | `.h-90-vh-max` also exists; the `-max` variants pair the `vh` value with a `dvh` fallback (`max-height: 90vh; max-height: 90dvh;`) for mobile browser chrome |
+| `.h-1rem` … `.h-10rem` (+ `-min` / `-max`) | `height` / `min-height` / `max-height`, fixed rem | same steps as `.w-*rem` |
+| `.h--1rem` … `.h--4rem` | `height: calc(100% - Nrem)` | same "100% minus" convention |
 
 ---
 
@@ -87,19 +98,7 @@ Use these for intentional overlap — a card pulled up over a hero image, a badg
 | `.align-self-auto`–`end`/`center`/`baseline`/`stretch` | `align-self` |
 | `.grid-cols-1`/`2`/`3`/`4`/`6`/`12` | grid-template-columns (equal-width tracks) |
 | `.col-span-1`/`2`/`3`/`4`/`6`/`full` | `grid-column: span N` |
-| `.cluster` | flex row, wrapped, centered — quick horizontal grouping (`@layer layout`, so utilities can override it) |
-
-**Flexbox layout helpers** — one-line shorthand for the most common flex arrangements, each already sets `display: flex` and `gap: var(--default-gap, 1rem)`:
-
-| Classes | Sets |
-|---|---|
-| `.centered-row` | row, centered on both axes (`justify-content` + `align-items: center`) |
-| `.centered-col` | column, centered on both axes |
-| `.between-row` | row, `justify-content: space-between`, items vertically centered |
-| `.between-col` | column, `justify-content: space-between` |
-| `.stack` | column, `align-items: stretch` — full-width stacked children with even gap |
-| `.center-overlay` | `position: absolute; inset: 0`, contents centered both axes — for placing content over a positioned parent (image caption, video play button) |
-| `.grid-center` | `display: grid; place-items: center` — grid equivalent of `.centered-row`/`.centered-col` for single-child centering |
+| `.cluster` | flex row, wrapped, centered — quick horizontal grouping | 
 
 ---
 
@@ -109,9 +108,12 @@ Use these for intentional overlap — a card pulled up over a hero image, a badg
 |---|---|
 | `.position-static` / `.position-relative` / `.position-absolute` / `.position-fixed` / `.position-sticky` | `position` |
 | `.top-0`–`4` / `.bottom-0`–`4` / `.left-0`–`4` / `.right-0`–`4` | offsets, fixed rem steps |
-| `.top-25`/`50`/`75` / `.right-25`/`50`/`75` | offsets, percentage |
+| `.top-25`/`50`/`75` / `.right-25`/`50`/`75` / `.left-50` / `.bottom-50` | offsets, percentage |
 | `.top-25-vh`/`50-vh`/`75-vh` / `.right-25-vw`/`50-vw`/`75-vw` | offsets, viewport units |
-| `.z--1` / `.z-0` / `.z-1`–`.z-3` / `.z-10` / `.z-100` | ad-hoc `z-index` steps — for anything **not** already covered by `--z-floating`/`--z-overlay`/`--z-modal` (see [Structural tokens](./styling-with-variables.md#18-structural-tokens)) |
+| `.top-auto` / `.right-auto` / `.bottom-auto` / `.left-auto` | resets an offset to `auto` | for overriding a component's hardcoded offset — e.g. `.dropdown-menu` hardcodes `left: 0`, so a right-anchored dropdown needs `.right-0 .left-auto` together (setting `.right-0` alone doesn't work: the browser discards `right` on an absolute element when `left` is also set) |
+| `.translate-x--50` / `.translate-y--50` / `.translate-xy--50` | `transform: translateX(-50%)` / `translateY(-50%)` / `translate(-50%, -50%)` | pairs with `.left-50`/`.top-50` for true centering (e.g. `.position-absolute.top-50.left-50.translate-xy--50`) |
+| `.z--1` / `.z-0` / `.z-1`–`.z-3` / `.z-10` / `.z-100` | ad-hoc `z-index` steps — for anything **not** already covered by `--z-floating`/`--z-overlay`/`--z-modal` |
+| `.z-floating` / `.z-overlay` / `.z-modal` | utility form of the structural z-index tokens, for applying them directly in markup (see [Structural tokens](./styling-with-variables.md#18-structural-tokens)) | `--z-floating` (100) / `--z-overlay` (999) / `--z-modal` (1000) |
 
 ---
 
@@ -120,13 +122,18 @@ Use these for intentional overlap — a card pulled up over a hero image, a badg
 | Classes | Sets | Notes |
 |---|---|---|
 | `.border` / `.border-0`/`2`/`4`/`8` | all-side border, width steps | uses `--grey` by default |
+| `.border-style` | reads the `--default-border` token wholesale (color, width, and style in one declaration) | use this instead of composing `.border` + `.border-color-*` when you just want "the framework's default border" |
+| `.border-default` | same as `.border-style`, alternate name living with the other `default-*` reset utilities | `--default-border` |
 | `.border-t`/`-b`/`-l`/`-r`/`-h`/`-v` (+ `-0`/`2`/`4`/`8` width steps) | directional borders | `-h` = left+right, `-v` = top+bottom |
 | `.border-solid` / `.border-dashed` / `.border-dotted` / `.border-double` / `.border-none` | `border-style` |
 | `.border-color-1`/`2` / `.border-danger`/`info`/`success`/`warning`/`dark`/`grey`/`light-grey`/`luxury`/`black`/`white` | border color, all sides | token-driven |
-| `.border-a-color-1` … `.border-a-white` | same palette, explicit "all sides" variant | — |
+| `.border-a-color-1` … `.border-a-white` | same palette, tinted via `color-mix()` at 10% (the "-a" = alpha) | — |
+| `.border-panel` / `.border-input` | border color+width read straight from the panel/input tokens | `--panel-border` / `--input-border` — see [section 6a](#6a-surface-panel-control--input-utilities) |
 | `.border-gradient` / `.border-gradient-info`/`success`/`danger`/`warning`/`luxury`/`black`/`white` | gradient border (`--color-1` → named color) | uses `border-image`, so it overrides `border-style` |
 | `.rounded` / `.rounded-0` / `.rounded-1-4` / `.rounded-1-8` | `border-radius`, from none to a fixed rem step | independent of `--default-border-radius` — use this when you need a radius that *doesn't* follow the panel/control radius |
+| `.rounded-style` | reads `--default-border-radius` directly | the token-following counterpart to `.rounded` — reach for this one when you *do* want the shared radius |
 | `.rounded-t`/`-b`/`-l`/`-r` (+ `-1-4`/`-1-8`) | radius on two corners only | for tab-style or attached-edge shapes |
+| `.rounded-panel` / `.rounded-control` / `.rounded-input` | `border-radius` read from the panel/control/input tokens | see [section 6a](#6a-surface-panel-control--input-utilities) |
 | `.circle` / `.circle-t`/`-b`/`-l`/`-r` | `border-radius: 50%`, or half-pill on one side | — |
 
 ---
@@ -140,9 +147,32 @@ Use these for intentional overlap — a card pulled up over a hero image, a badg
 | `.bga-color-1`/`2` / `.bga-danger`/`info`/`success`/`warning`/`dark`/`grey`/`luxury` | tinted background **+** matching text color, via `color-mix()` at 10% | the "soft badge" pattern — use this instead of a solid `.bg-*` when you want a subtle tint, not a solid fill |
 | `.bg-gradient` / `.bg-gradient-info`/`success`/`danger`/`warning`/`luxury`/`black`/`white` | linear-gradient background, `--color-1` → named color | — |
 | `.color-gradient` / `.color-gradient-hover` | gradient applied to text (via background-clip) | — |
-| `.outline-color-1`/`2` / `.outline-color-danger`/`info`/`success`/`grey`/`dark`/`black`/`white` / `.outline-light-grey` / `.outline-warning` / `.outline-luxury` | `outline-color` | distinct from the automatic focus-visible ring in `@layer overrides` — use these for a deliberate, always-on outline, not a focus state |
+| `.outline-color-1`/`2` / `.outline-color-dark`/`grey`/`info`/`success`/`danger`/`white`/`black` | full `outline` shorthand | distinct from the automatic focus-visible ring in `@layer overrides` — use these for a deliberate, always-on outline, not a focus state |
+| `.outline-dark` / `.outline-grey` / `.outline-info` / `.outline-success` / `.outline-danger` / `.outline-white` / `.outline-black` | shorter aliases for the `.outline-color-*` classes directly above | identical rule, same selector group |
+| `.outline-light-grey` / `.outline-warning` / `.outline-luxury` | outline for the three palette colors without a `.outline-color-*` long form | — |
+| `.invalid` | `outline` in `--input-invalid-border` (falls back to red) | form-validation state, pairs with `.border-input` on inputs |
 
-**Convention to hold onto:** `.bg-*` is a flat fill; `.bga-*` is a tint (10% `color-mix()`) with color already paired to it. Reach for `.bga-*` for badges, callouts, and soft highlights — reach for `.bg-*` for solid blocks and section backgrounds.
+**Convention to hold onto:** `.bg-*` is a flat fill; `.bga-*` is a tint (10% `color-mix()`) with color already paired to it. Reach for `.bga-*` for badges, callouts, and soft highlights — reach for `.bg-*` for solid blocks and section backgrounds. `.bg-lite-grey` is a typo-tolerant alias for `.bg-light-grey` (both selectors share the same rule) — prefer `.bg-light-grey` in new markup.
+
+---
+
+## 6a. Surface, panel, control & input utilities
+
+A newer family that exposes the component-level surface/panel/control/input tokens (see [Styling with Variables](./styling-with-variables.md)) as standalone utility classes, so you can apply "panel styling" or "control styling" to an arbitrary element without reaching for the `.card`/`.button` components themselves.
+
+| Classes | Sets | Source |
+|---|---|---|
+| `.bg-surface-raised` (+ `-hover`) | background for elements that sit above the page (cards, dropdowns) | `--surface-raised` |
+| `.bg-surface-dim` (+ `-hover`) | background for recessed/muted areas | `--surface-dim` |
+| `.bg-surface-overlay` | background for modal/overlay scrims | `--surface-overlay` |
+| `.bg-surface-inverse` | inverted background **+** matching inverse text color | `--surface-inverse` / `--surface-inverse-color` |
+| `.bg-surface-hover` / `.bg-surface-active` / `.bg-surface-selected` / `.bg-surface-disabled` | static (non-hover-triggered) state-surface backgrounds — apply directly when JS or `:checked`/`aria-*` toggles the state, rather than relying on `:hover` | `--surface-hover`/`-active`/`-selected`/`-disabled` |
+| `.bg-panel` / `.border-panel` / `.rounded-panel` / `.shadow-panel` / `.p-panel` | background, border, radius, shadow, and padding read from the panel tokens in one class each | `--panel-*` |
+| `.bg-control` (+ `-hover`) / `.color-control` / `.rounded-control` / `.shadow-control` / `.p-control` | same pattern for the control (button-like) tokens | `--control-*` |
+| `.bg-input` / `.color-input` / `.border-input` / `.rounded-input` / `.shadow-input` | same pattern for the input (form-field) tokens | `--input-*` |
+| `.p-default` / `.m-default` / `.border-default` / `.shadow-default` | the framework-wide default padding/margin/border/shadow, each as a single-purpose utility | `--default-padding`/`-margin`/`-border` / `--box-shadow` |
+
+**When to reach for these vs. the component classes:** use `.card` or `button`/`.button` when you want the whole component (markup semantics included). Use this family when you want *just one property* of that component's look — e.g. `.rounded-panel .shadow-panel` on a custom `<div>` that isn't semantically a card.
 
 ---
 
@@ -177,6 +207,10 @@ All shadow utilities sit in `@layer utilities-advanced`, after components — th
 | `.hover-grey` / `.hover-white` / `.hover-underline` | hover-only color/decoration changes for text |
 | `.unselectable` | `user-select: none` |
 | `.word-wrap-break` | forces long unbreakable strings (URLs, etc.) to wrap |
+| `.overline` | `text-decoration: overline` (joins `.underline` / `.old-info`) |
+| `.content-in-middle` | `position: relative; top: 50%` + `translateY(-50%)` — quick vertical-centering trick for text inside a fixed-height parent | — |
+| `.heading-color` / `.heading-font` / `.heading-font-weight` / `.heading-line-height` / `.heading-letter-spacing` | apply the heading typography tokens to any element, not just `h1`–`h6` | `--heading-color`/`-font`/`-font-weight`/`-line-height`/`-letter-spacing` |
+| `.mono-font` | `font-family: var(--font-mono)` | for code snippets, `.kbd`-style elements, or tabular figures outside of a `<code>` tag |
 
 ---
 
@@ -216,25 +250,7 @@ Two independent axes, meant to be combined on the same element: a **property** c
 
 ---
 
-## 11. Image utilities
-
-Shape, frame, filter, and shadow classes — most commonly stacked together on `<img>`, but not image-exclusive; `.rounded`, `.circle`, and the shadow classes work on any element (cards, avatars, buttons).
-
-| Classes | Sets | Notes |
-|---|---|---|
-| `.rounded` / `.rounded-0` / `.rounded-1-4` / `.rounded-1-8` | `border-radius`, none → fixed rem step | independent of `--default-border-radius` |
-| `.rounded-t`/`-b`/`-l`/`-r` (+ `-1-4`/`-1-8`) | radius on two corners only | tab-style or attached-edge shapes |
-| `.circle` / `.circle-t`/`-b`/`-l`/`-r` | `border-radius: 50%`, or half-pill on one side | for avatars, icon badges |
-| `.img-thumbnail` | padding + light border + subtle background tint + rounded corners, `max-width: 100%` | the "framed photo" look — pairs well with `.rounded` or `.circle` on top |
-| `.brightness-33`/`66`/`80`/`90`/`100`/`150` (+ `-hover` variants) | `filter: brightness()` | darken/brighten on hover for image links, gallery tiles |
-| `.opacity1`/`07`/`05`/`03` (+ `-hover` variants) | `opacity` steps (100%/70%/50%/30%) | fade an image in/out, disabled-looking states |
-| `.shadow` / `.shadow-1`–`.shadow-4` (+ `-hover` variants) | elevation shadow, see [§7 Shadows](#7-shadows) for the full breakdown | lift an image off the page |
-
-**Common stack for a framed photo:** `.img-thumbnail.rounded.shadow-2` — border, padding, radius, and a bordered hard-offset shadow in one go. For a circular avatar with a soft shadow on hover: `.circle.shadow-3-hover`.
-
----
-
-## 12. Rule of thumb for this page
+## 11. Rule of thumb for this page
 
 If you're stacking more than two or three utility classes on the same element to achieve one repeatable look (a badge, a callout, a card variant), that's the signal to stop and either:
 

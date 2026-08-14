@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Farflung Travel — Guided Tours &amp; Adventures</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+<style>:root{--color-1:#1191b8;--color-2:#bda06a;}</style>
+</head>
+<body>
+
+<!-- Header -->
+<div class="main-nav p1 nav-top-border-hover">
+  <div class="main-menu">
+    <input type="checkbox" id="toggle-main">
+    <a href="index.html" class="logo"><span class="color-1 bold h4">✈ FARFLUNG</span></a>
+    <div class="nav-panel">
+      <nav class="nav justify-content-end">
+        <a href="index.html" class="bold">Home</a>
+        <a href="#destinations">Destinations</a>
+        <a href="#tours">Tours</a>
+        <a href="tour-single.html">Tour Details</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+    <label for="toggle-main" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Hero -->
+<div class="h-75-vh d-flex flex-column justify-content-center" style="background-image:linear-gradient(0deg, rgba(0,20,30,.6), rgba(0,20,30,.2)), url('https://picsum.photos/seed/travel-hero/1600/900'); background-size:cover; background-position:center;">
+  <div class="container center">
+    <h1 class="white bold display-2">Explore the world, guided.</h1>
+    <p class="white h6 font-weight-400 m-t-1">Small-group tours to the places worth flying for.</p>
+  </div>
+  <div class="container m-t-2">
+    <div class="row justify-content-center bg-white p1 rounded shadow-4" style="max-width:50rem; margin:0 auto;">
+      <div class="col-md-4 p-1-2"><input type="text" class="form-control" placeholder="Where to?"></div>
+      <div class="col-md-3 p-1-2"><input type="date" class="form-control"></div>
+      <div class="col-md-3 p-1-2"><input type="number" class="form-control" placeholder="Travelers" value="2"></div>
+      <div class="col-md-2 p-1-2"><button class="button w-100 bg-color-1 white">Search</button></div>
+    </div>
+  </div>
+</div>
+
+<!-- Destinations -->
+<section class="container m-v-4" id="destinations">
+  <h2 class="black center bold">Popular Destinations</h2>
+  <p class="center dark">Handpicked places our travelers keep coming back to</p>
+  <div class="flex-gallery-container m-t-2">
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-1/400/500"></div>
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-2/400/500"></div>
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-3/400/500"></div>
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-4/400/500"></div>
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-5/400/500"></div>
+    <div class="flex-gallery-image-container"><img src="https://picsum.photos/seed/dest-6/400/500"></div>
+  </div>
+</section>
+
+<!-- Tours -->
+<section class="bg-light-grey p-v-4" id="tours">
+  <div class="container">
+    <h2 class="black center bold">Featured Tours</h2>
+    <div class="row m-t-2">
+      <div class="col-md-4 p1">
+        <a href="tour-single.html">
+          <img src="https://picsum.photos/seed/tour-1/500/340" class="img-responsive rounded-t">
+          <div class="p1">
+            <p class="black bold h5 m0">Highlands of Iceland</p>
+            <p class="dark small">8 days &middot; Small group &middot; ⭐⭐⭐⭐⭐</p>
+            <p class="color-1 bold h5">From $2,190</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 p1">
+        <a href="tour-single.html">
+          <img src="https://picsum.photos/seed/tour-2/500/340" class="img-responsive rounded-t">
+          <div class="p1">
+            <p class="black bold h5 m0">Kyoto &amp; the Inland Sea</p>
+            <p class="dark small">10 days &middot; Small group &middot; ⭐⭐⭐⭐⭐</p>
+            <p class="color-1 bold h5">From $3,450</p>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4 p1">
+        <a href="tour-single.html">
+          <img src="https://picsum.photos/seed/tour-3/500/340" class="img-responsive rounded-t">
+          <div class="p1">
+            <p class="black bold h5 m0">Peruvian Andes Trek</p>
+            <p class="dark small">7 days &middot; Small group &middot; ⭐⭐⭐⭐</p>
+            <p class="color-1 bold h5">From $1,890</p>
+          </div>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- How it works -->
+<section class="container m-v-4">
+  <h2 class="black center bold">How It Works</h2>
+  <div class="row m-t-2 justify-content-center">
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">1</div>
+      <p class="black bold m-t-1">Choose a tour</p>
+      <p class="dark small">Browse itineraries by region, length, or activity level.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">2</div>
+      <p class="black bold m-t-1">Reserve your spot</p>
+      <p class="dark small">Secure your place with a small deposit.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">3</div>
+      <p class="black bold m-t-1">Pack your bags</p>
+      <p class="dark small">We handle logistics — you just show up ready.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Stats -->
+<section class="parallax-img h-50 m-v-2" style="background-image:url('https://picsum.photos/seed/travel-stats/1600/600');">
+  <div class="p-v-1">
+    <div class="row justify-content-center container center m-v-2">
+      <div class="col-md-3 p1"><p class="white h2">120+</p><hr class="width-short center w-50 m-v-1"><p class="white text-uppercase small">Destinations</p></div>
+      <div class="col-md-3 p1"><p class="white h2">15,000</p><hr class="width-short center w-50 m-v-1"><p class="white text-uppercase small">Travelers Guided</p></div>
+      <div class="col-md-3 p1"><p class="white h2">4.9/5</p><hr class="width-short center w-50 m-v-1"><p class="white text-uppercase small">Average Rating</p></div>
+      <div class="col-md-3 p1"><p class="white h2">18 yrs</p><hr class="width-short center w-50 m-v-1"><p class="white text-uppercase small">In Business</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section class="m-v-4">
+  <h1 class="black bold center m-t-2">Traveler Stories</h1>
+  <div class="row container justify-content-center m-t-2">
+    <div class="col-md-4 center p1">
+      <div class="center shadow-3 rounded p1">
+        <p class="black font-weight-600">"Our Iceland guide knew every hidden waterfall. Worth every penny."</p>
+        <p class="warning small m0">⭐⭐⭐⭐⭐</p>
+        <p class="dark small m-t-1">Julia P.</p>
+      </div>
+    </div>
+    <div class="col-md-4 center p1">
+      <div class="center shadow-3 rounded p1">
+        <p class="black font-weight-600">"Small group size meant real conversations with locals, not just photo stops."</p>
+        <p class="warning small m0">⭐⭐⭐⭐⭐</p>
+        <p class="dark small m-t-1">Ravi N.</p>
+      </div>
+    </div>
+    <div class="col-md-4 center p1">
+      <div class="center shadow-3 rounded p1">
+        <p class="black font-weight-600">"Booking was effortless and the itinerary was perfectly paced."</p>
+        <p class="warning small m0">⭐⭐⭐⭐</p>
+        <p class="dark small m-t-1">Camille D.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="p-v-4 bg-color-1">
+  <div class="d-flex m-v-4 flex-column">
+    <h1 class="center white font-weight-600">Your next trip starts here</h1>
+    <p class="h6 center white m-t-1">Get personalized tour recommendations from a real travel planner.</p>
+    <div class="center m-b-4 m-t-1">
+      <a href="#tours" class="button button-lg bg-white color-1 rounded">Browse Tours</a>
+      <a href="#contact" class="button button-lg outline-white white rounded">Talk to a Planner</a>
+    </div>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer class="d-block" id="contact">
+  <div class="row container m-v-1">
+    <div class="col-md-6 col-lg-3">
+      <span class="color-1 bold h5">✈ FARFLUNG</span>
+      <p class="dark small m-t-1">Small-group guided tours since 2008.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Explore</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#destinations">Destinations</a></li>
+        <li class="m-h-1"><a href="#tours">Tours</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Company</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">About</a></li>
+        <li class="m-h-1"><a href="#">Guides</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 font-weight-600">Contact</h5>
+      <p class="dark small">88 Voyager Way, Seattle, WA<br>hello@farflungtravel.com</p>
+    </div>
+  </div>
+  <div class="container p-v-1 small">
+    <p class="dark">© 2026 Farflung Travel Co. All rights reserved.</p>
+  </div>
+</footer>
+
+</body>
+</html>
