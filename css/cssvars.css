@@ -89,8 +89,8 @@
   --default-margin: 0;
   --default-gap: clamp(0.5rem, 3.33vw, 1rem);
   --default-border: none;
-  --default-border-radius: 0.5rem; /* was 0 — single source of truth for panel roundness, see below */
-  --box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.08), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.16); /* was none — was a dead token, panels had zero definition */
+  --default-border-radius: 0;
+  --box-shadow: 0 0.0625rem 0.1875rem rgba(0, 0, 0, 0.08), 0 0.0625rem 0.125rem rgba(0, 0, 0, 0.16);
   /* Surface variables */
   --surface-raised: var(--body-bg);
   --surface-dim: var(--light-grey);
