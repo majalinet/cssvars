@@ -360,6 +360,16 @@
   font-family: var(--font-mono);
   font-style: italic;
 }
+.cssvars small { font-size: 0.875em; }
+.cssvars mark { background-color: color-mix(in srgb, var(--color-1) 20%, transparent); color: inherit; padding: 0.1em 0.2em; }
+.cssvars abbr[title] { text-decoration: underline dotted; cursor: help; }
+.cssvars sub, .cssvars sup { font-size: 0.75em; line-height: 0; position: relative; vertical-align: baseline; }
+.cssvars sub { bottom: -0.25em; }
+.cssvars sup { top: -0.5em; }
+.cssvars address { font-style: normal; margin-bottom: 1rem; }
+.cssvars fieldset { border: var(--default-border); border-radius: var(--default-border-radius); padding: var(--default-padding); margin: 0 0 1rem; }
+.cssvars legend { padding: 0 0.5rem; font-weight: var(--heading-font-weight); }
+.cssvars caption { padding: 0.5rem; color: var(--grey); text-align: left; caption-side: bottom; }
 .cssvars .par {
   width: 100%;
   height: auto;
@@ -657,151 +667,83 @@
   padding: var(--panel-padding);
 }
 /* Icons */
-.icon {
+.cssvars .icon {
   width: var(--icon-default-size, 4rem);
   height: var(--icon-default-size, 4rem);
   fill: var(--icon-default-fill, black);
   background-color: var(--icon-default-bg, white);
 }
-.cssvars .icon-xxs {
-  width: 1rem;
-  height: 1rem;
+.cssvars .icon-box {
+  display: inline-block;
+  padding: 0.5rem;
 }
-.cssvars .icon-xs {
-  width: 1.5rem;
-  height: 1.5rem;
-}
-.cssvars .icon-s {
-  width: 2rem;
-  height: 2rem;
-}
-.cssvars .icon-ssm {
-width: 2.5rem;
-height: 2.5rem;
-}
-.cssvars .icon-sm {
-  width: 3rem;
-  height: 3rem;
-}
-.cssvars .icon-m {
-  width: 4rem;
-  height: 4rem;
-}
-.cssvars .icon-ml {
-  width: 6rem;
-  height: 6rem;
-}
-.cssvars .icon-lg {
-  width: 8rem;
-  height: 8rem;
-}
-.cssvars .icon-xl {
-  width: 12rem;
-  height: 12rem;
-}
-.cssvars .icon-white-bg {
-  background-color: var(--white, white);
-  fill: black;
-}
-.cssvars .icon-white-fill {
-  fill: var(--white, white);
-}
-.cssvars .icon-light-grey-bg {
-  background-color: var(--light-grey, #aaa);
+.cssvars .icon-xxs { width: 1rem; height: 1rem; }
+.cssvars .icon-xs { width: 1.5rem; height: 1.5rem; }
+.cssvars .icon-s { width: 2rem; height: 2rem; }
+.cssvars .icon-ssm { width: 2.5rem; height: 2.5rem; }
+.cssvars .icon-sm { width: 3rem; height: 3rem; }
+.cssvars .icon-m { width: 4rem; height: 4rem; }
+.cssvars .icon-ml { width: 6rem; height: 6rem; }
+.cssvars .icon-lg { width: 8rem; height: 8rem; }
+.cssvars .icon-xl { width: 12rem; height: 12rem; }
+/* Icon backgrounds */
+.cssvars .icon-white-bg { background-color: var(--white, white); }
+.cssvars .icon-light-grey-bg { background-color: var(--light-grey, #aaa); }
+.cssvars .icon-grey-bg { background-color: var(--grey, #aaa); }
+.cssvars .icon-color-1-bg { 
+  background-color: var(--color-1, black);
   fill: var(--body-bg, white);
-}
-.cssvars .icon-light-grey-fill {
-  fill: var(--light-grey, #aaa);
-}
-.cssvars .icon-grey-bg {
-  background-color: var(--grey, #aaa);
-  fill: var(--body-bg, white);
-}
-.cssvars .icon-grey-fill {
-  fill: var(--grey, #aaa);
-}
-.cssvars .icon-color-1-bg {
-  background-color: var(--color-1, red);
-  fill: var(--body-bg, white);
-}
-.cssvars .icon-color-1-fill {
-  fill: var(--color-1, red);
 }
 .cssvars .icon-color-2-bg {
-  background-color: var(--color-2, red);
+  background-color: var(--color-2, black);
   fill: var(--body-bg, white);
-}
-.cssvars .icon-color-2-fill {
-  fill: var(--color-2, red);
-}
-.cssvars .icon-color-white-fill {
-  fill: var(--white, white);
 }
 .cssvars .icon-info-bg {
   background-color: var(--info, green);
   fill: var(--body-bg, white);
 }
-.cssvars .icon-info-fill {
-  fill: var(--info, green);
-}
 .cssvars .icon-success-bg {
   background-color: var(--success, blue);
   fill: var(--body-bg, white);
-}
-.cssvars .icon-success-fill {
-  fill: var(--success, blue);
 }
 .cssvars .icon-danger-bg {
   background-color: var(--danger, red);
   fill: var(--body-bg, white);
 }
-.cssvars .icon-danger-fill {
-  fill: var(--danger, red);
-}
 .cssvars .icon-warning-bg {
   background-color: var(--warning, yellow);
   fill: var(--body-bg, white);
-}
-.cssvars .icon-warning-fill {
-  fill: var(--warning, yellow);
 }
 .cssvars .icon-luxury-bg {
   background-color: var(--luxury, purple);
   fill: var(--body-bg, white);
 }
-.cssvars .icon-luxury-fill {
-  fill: var(--luxury, purple);
-}
 .cssvars .icon-black-bg {
   background-color: var(--black, black);
   fill: var(--body-bg, white);
-}
-.cssvars .icon-black-fill {
-  fill: var(--black, black);
 }
 .cssvars .icon-dark-bg {
   background-color: var(--dark, rgb(72, 72, 72));
   fill: var(--body-bg, white);
 }
-.cssvars .icon-dark-fill {
-  fill: var(--dark, rgb(72, 72, 72));
-}
-.cssvars .icon-box {
-  display: inline-block;
-  padding: 0.5rem;
-}
+/* Icon fills */
+.cssvars .icon-white-fill { fill: var(--white, white); }
+.cssvars .icon-light-grey-fill { fill: var(--light-grey, #aaa); }
+.cssvars .icon-grey-fill { fill: var(--grey, #aaa); }
+.cssvars .icon-color-1-fill { fill: var(--color-1, black); }
+.cssvars .icon-color-2-fill { fill: var(--color-2, black); }
+.cssvars .icon-white-fill { fill: var(--white, white); }
+.cssvars .icon-info-fill { fill: var(--info, green); }
+.cssvars .icon-success-fill { fill: var(--success, blue); }
+.cssvars .icon-danger-fill { fill: var(--danger, red); }
+.cssvars .icon-warning-fill { fill: var(--warning, yellow); }
+.cssvars .icon-luxury-fill { fill: var(--luxury, purple); }
+.cssvars .icon-black-fill { fill: var(--black, black); }
+.cssvars .icon-dark-fill { fill: var(--dark, rgb(72, 72, 72)); }
 /*dividers */
-.cssvars hr {
-  margin: 3% 0 5% 0;
-  margin-left: auto;
-  margin-right: auto;
-}
-.cssvars hr.width-50 {
-  width: 50%;
-}
-.cssvars hr.width-short {
-  width: 3rem;
-}
+.cssvars hr { margin: 3% 0 5% 0; margin-inline: auto; }
+.cssvars hr.width-50 { width: 50%; }
+.cssvars hr.width-short { width: 3rem; }
 /*Quotes */
 .cssvars blockquote {
   padding:calc(var(--panel-padding)/2);
@@ -1272,12 +1214,7 @@ height: 2.5rem;
 /* ============================================================
    Main Menu — flexbox
    MARKUP RULE (important): the toggle <input type="checkbox">
-   must always be the FIRST child inside .main-menu — before the
-   logo, .nav-panel, .nav-actions, or the burger label. Visual
-   position is controlled entirely with `order`, never by moving
-   the checkbox around. Every show/hide rule below is a `~`
-   (general sibling) selector, which only matches elements that
-   come AFTER the checkbox in the markup.
+   must always be the FIRST child inside .main-menu.
 
    .main-nav > .main-menu > (
      input[type=checkbox]        — always first
@@ -1294,12 +1231,6 @@ height: 2.5rem;
                                     burger at every breakpoint
      .toggle-menu label          — burger
    )
-
-   Layout variants (left / centered / stacked / grouped-right) are
-   built with existing utility classes (flex-column,
-   justify-content-center, flex-grow-1, gap-*, w-100, row/col-md-*)
-   — no new CSS per variant. .nav-group is the one structural
-   helper, for "grouped right". No JS.
    ============================================================ */
 .cssvars .main-nav {
   width: 100%;
@@ -1318,23 +1249,15 @@ height: 2.5rem;
 }
 .cssvars .main-menu a { text-decoration: none; }
 .cssvars .main-menu input[type="checkbox"] { display: none; }
-/* Logo — give the brand link class="logo"; order controls position,
-   not DOM position */
 .cssvars .main-menu > a.logo {
   order: 1;
   display: flex;
   align-items: center;
 }
-/* .nav-panel — desktop: an invisible pass-through so .nav and (if
-   nested) .nav-actions lay out as ordinary flex items of .main-menu.
-   Mobile: becomes the actual collapsible box (see media query). */
 .cssvars .nav-panel {
   order: 2;
   display: contents;
 }
-/* Nav links — direct flex children, no <ul>/<li>. A link can be a
-   plain <a>, or a .dropdown (see components-advanced) for a
-   submenu / mega-menu. */
 .cssvars .nav, .cssvars .nav-stable {
   order: 2;
   display: flex;
@@ -1348,11 +1271,6 @@ height: 2.5rem;
   padding: 1rem;
   white-space: nowrap;
 }
-/* Form controls (e.g. a <select> style-picker) dropped directly into
-   the nav shouldn't inherit .form-control's width:100% — that's
-   correct for a form field in a normal block layout, but inside this
-   flex nav it stretches to fill all remaining space. Scoped to .nav
-   so regular forms elsewhere are unaffected. */
 .cssvars .nav > select, .cssvars .nav-stable > select,
 .cssvars .nav-group select {
   width: auto;
@@ -1370,9 +1288,6 @@ height: 2.5rem;
   border-bottom: 0.125rem solid var(--color-1);
   margin-bottom: -0.125rem;
 }
-/* Persistent actions slot (Login / Sign up / CTA). Place it OUTSIDE
-   .nav-panel to keep it always visible, or INSIDE .nav-panel to have
-   it collapse together with the nav links on mobile. */
 .cssvars .nav-actions {
   order: 3;
   display: flex;
@@ -1380,10 +1295,6 @@ height: 2.5rem;
   gap: var(--space-1-2);
   flex-shrink: 0;
 }
-/* Structural helper for the "grouped right" layout — bundles .nav
-   and .nav-actions into one cluster so a single gap separates the
-   logo from the whole group instead of space-between-ing all three.
-   Nest this INSIDE .nav-panel. */
 .cssvars .nav-group {
   order: 2;
   display: flex;
@@ -1395,7 +1306,6 @@ height: 2.5rem;
 .cssvars .nav-group .nav, .cssvars .nav-group .nav-actions {
   flex: 0 0 auto;
 }
-/* Burger button — hidden on desktop, shown at the mobile breakpoint */
 .cssvars .toggle-menu {
   order: 4;
   display: none;
@@ -1407,8 +1317,6 @@ height: 2.5rem;
 .cssvars .toggle-menu .icon-menu-close { display: none; }
 .cssvars .main-menu input[type="checkbox"]:checked ~ .toggle-menu .icon-menu-open  { display: none; }
 .cssvars .main-menu input[type="checkbox"]:checked ~ .toggle-menu .icon-menu-close { display: block; }
-/* Mobile: burger appears, .nav-panel becomes a collapsible box —
-   animated with max-height/opacity so it works with zero JavaScript. */
 @media only screen and (max-width: 980px) {
   .cssvars .toggle-menu { display: flex; }
   .cssvars .nav-panel {
@@ -1462,32 +1370,6 @@ height: 2.5rem;
 .cssvars .menu-bordered li a {
   padding: 0.45rem;
 }
-/* ============================================================
-   Nav Mega Menu — a full-width mega-menu panel for the main nav.
-
-   Deliberately uses its OWN classes (.nav-mega / .nav-mega-state /
-   .nav-mega-toggle / .nav-mega-panel) instead of reusing the shared
-   .dropdown / .dropdown-menu / .dropdown-state / .dropdown-toggle
-   component above. That component is used by other menus elsewhere
-   (sidebars, account menus, etc.) — any mobile/hover/width override
-   written against those shared classes would silently change every
-   other dropdown on the site too. These classes touch nothing but
-   this one nav item, so there's no way for it to conflict with
-   anything else. No JS.
-
-   Markup:
-   .nav > .nav-mega
-     input[type=checkbox].nav-mega-state   — first inside .nav-mega
-     label.nav-mega-toggle                 — the nav link itself
-     .nav-mega-panel                       — the full panel
-       .row > .col-md-4 ...                — your existing grid
-
-   Note .nav-mega itself is NOT position:relative — that's
-   deliberate, so .nav-mega-panel's containing block bubbles up to
-   .main-nav (position:relative, full width) instead of this small
-   toggle, letting the panel size and center against the whole
-   header rather than a narrow anchor.
-   ============================================================ */
 .cssvars .nav-mega {
   display: inline-flex;
   align-items: center;
@@ -1536,17 +1418,11 @@ height: 2.5rem;
 .cssvars .nav-mega-state:checked ~ .nav-mega-panel {
   display: block;
 }
-/* Opens on hover on desktop too — progressive enhancement on top of
-   the checkbox toggle */
 @media (min-width: 981px) {
 .cssvars .nav-mega:hover .nav-mega-panel {
     display: block;
   }
 }
-/* Mobile: becomes an inline expanding section within the collapsed
-   .nav-panel instead of a floating panel — an absolute panel sized
-   for desktop would either overflow a narrow screen or float
-   disconnected from its toggle. */
 @media only screen and (max-width: 980px) {
 .cssvars .nav-panel .nav-mega {
     display: block;
@@ -2305,17 +2181,9 @@ left: 105%;
 .cssvars :target>.light-box-figure, .cssvars .is-active>.light-box-figure {
   display: block;
 }
-.cssvars .light-box-figure img {
-  display: block;
-  height: 0;
-}
-.cssvars .light-box-figcaption {
-  color: var(--white, white)
-}
-.cssvars .light-box-image {
-  max-width: 100%;
-  background-size: 100%;
-}
+.cssvars .light-box-figure img { display: block; height: 0; }
+.cssvars .light-box-figcaption { color: var(--white, white) }
+.cssvars .light-box-image { max-width: 100%; background-size: 100%; }
 .cssvars .light-box-control {
   position: absolute;
   width: 3em;
@@ -2329,17 +2197,9 @@ left: 105%;
   right: 1em;
   background-image: url("data:image/svg+xml,%3Csvg%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20version%3D%221.1%22%20x%3D%220%22%20y%3D%220%22%20viewBox%3D%220%200%2032%2032%22%20xml%3Aspace%3D%22preserve%22%3E%3Cpath%20fill%3D%22%23fff%22%20d%3D%22M21.7%2010.3c-0.4-0.4-1-0.4-1.4%200l-4.3%204.3-4.2-4.2c-0.4-0.4-1-0.4-1.4%200-0.4%200.4-0.4%201%200%201.4l4.2%204.2-4.3%204.3c-0.4%200.4-0.4%201%200%201.4%200.4%200.4%201%200.4%201.4%200l4.3-4.3%204.2%204.2c0.4%200.4%201%200.4%201.4%200%200.4-0.4%200.4-1%200-1.4l-4.2-4.2%204.3-4.3C22.1%2011.3%2022.1%2010.7%2021.7%2010.3zM16%200C7.2%200%200%207.2%200%2016s7.2%2016%2016%2016c8.8%200%2016-7.2%2016-16S24.8%200%2016%200zM16%2030C8.3%2030%202%2023.7%202%2016S8.3%202%2016%202s14%206.3%2014%2014S23.7%2030%2016%2030z%22%2F%3E%3C%2Fsvg%3E");
 }
-.cssvars .light-box-prev {
-  left: 2em;
-  transform: rotate(180deg);
-}
-.cssvars .light-box-next {
-  right: 2em;
-}
-.cssvars .light-box-untarget {
-  position: fixed;
-  top: 0;
-}
+.cssvars .light-box-prev { left: 2em; transform: rotate(180deg); }
+.cssvars .light-box-next { right: 2em; }
+.cssvars .light-box-untarget { position: fixed; top: 0; }
 .cssvars .light-box-prev, .cssvars .light-box-next {
   top: 50%;
   margin-top: -1.5em;
@@ -2667,16 +2527,9 @@ left: 105%;
   left: 0;
   cursor: pointer;
 }
-.cssvars .modal-state {
-  display: none;
-}
-.cssvars .modal-state:checked+.modal {
-  opacity: 1;
-  visibility: visible;
-}
-.cssvars .modal-state:checked+.modal .modal__inner {
-  top: 0;
-}
+.cssvars .modal-state { display: none; }
+.cssvars .modal-state:checked+.modal { opacity: 1; visibility: visible; }
+.cssvars .modal-state:checked+.modal .modal__inner { top: 0; }
 .cssvars .modal__inner {
   transition: top var(--duration-base, 0.25s) var(--easing, ease);
   position: absolute;
@@ -3073,7 +2926,7 @@ left: 105%;
 .cssvars .flow-4 > * + * { margin-top: var(--space-4, clamp(2rem, 3.33vw, 4rem)); }
 .cssvars .page-flow > * + * { margin-top: var(--page-flow, 0); }
 .cssvars .main-flow > * + * { margin-top: var(--main-flow, clamp(2rem, 3.33vw, 4rem)); }
-/* Padding and Margin */
+/* Margin */
 .cssvars .m0 { margin: 0; }
 .cssvars .m-1-16 { margin: 0.0625rem; }
 .cssvars .m-1-8 { margin: 0.125rem; }
@@ -3320,82 +3173,32 @@ left: 105%;
 .cssvars .translate-y--50 { transform: translateY(-50%); }
 .cssvars .translate-xy--50 { transform: translate(-50%, -50%); }
 /* Background colors */
-.cssvars .bg-color-1, .cssvars .bg-color-1-hover:hover {
-  background-color: var(--color-1, black);
-}
-.cssvars .bg-color-2, .cssvars .bg-color-2-hover:hover {
-  background-color: var(--color-2, black);
-}
-.cssvars .bg-success, .cssvars .bg-success-hover:hover {
-  background-color: var(--success, green);
-}
-.cssvars .bg-info, .cssvars .bg-info-hover:hover {
-  background-color: var(--info, blue);
-}
-.cssvars .bg-danger, .cssvars .bg-danger-hover:hover {
-  background-color: var(--danger, red);
-}
-.cssvars .bg-dark, .cssvars .bg-dark-hover:hover {
-  background-color: var(--dark, darkgray);
-}
-.cssvars .bg-black, .cssvars .bg-black-hover:hover {
-  background-color: var(--black, #000);
-}
-.cssvars .bg-grey, .cssvars .bg-grey-hover:hover {
-  background-color: var(--grey, grey);
-}
-.cssvars .bg-white, .cssvars .bg-white-hover:hover {
-  background-color: var(--white, white);
-}
-.cssvars .bg-body-bg, .cssvars .bg-body-bg-hover:hover {
-  background-color: var(--body-bg, white);
-}
-.cssvars .bg-light-grey, .cssvars .bg-lite-grey, .cssvars .bg-light-grey-hover:hover {
-  background-color: var(--light-grey, grey);
-}
-.cssvars .bg-warning, .cssvars .bg-warning-hover:hover {
-  background-color: var(--warning, black);
-}
-.cssvars .bg-luxury, .cssvars .bg-luxury-hover:hover {
-  background-color: var(--luxury, black);
-}
+.cssvars .bg-color-1, .cssvars .bg-color-1-hover:hover { background-color: var(--color-1, black); }
+.cssvars .bg-color-2, .cssvars .bg-color-2-hover:hover { background-color: var(--color-2, black); }
+.cssvars .bg-success, .cssvars .bg-success-hover:hover { background-color: var(--success, green); }
+.cssvars .bg-info, .cssvars .bg-info-hover:hover { background-color: var(--info, blue); }
+.cssvars .bg-danger, .cssvars .bg-danger-hover:hover { background-color: var(--danger, red); }
+.cssvars .bg-dark, .cssvars .bg-dark-hover:hover { background-color: var(--dark, darkgray); }
+.cssvars .bg-black, .cssvars .bg-black-hover:hover { background-color: var(--black, #000); }
+.cssvars .bg-grey, .cssvars .bg-grey-hover:hover { background-color: var(--grey, grey); }
+.cssvars .bg-white, .cssvars .bg-white-hover:hover { background-color: var(--white, white); }
+.cssvars .bg-body-bg, .cssvars .bg-body-bg-hover:hover { background-color: var(--body-bg, white); }
+.cssvars .bg-light-grey, .cssvars .bg-lite-grey, .cssvars .bg-light-grey-hover:hover { background-color: var(--light-grey, grey); }
+.cssvars .bg-warning, .cssvars .bg-warning-hover:hover { background-color: var(--warning, black); }
+.cssvars .bg-luxury, .cssvars .bg-luxury-hover:hover { background-color: var(--luxury, black); }
 /* colors */
-.cssvars .color-1, .cssvars .color-1-hover:hover {
-  color: var(--color-1, black);
-}
-.cssvars .color-2, .cssvars .color-2-hover:hover {
-  color: var(--color-2, black);
-}
-.cssvars .success, .cssvars .success-hover:hover {
-  color: var(--success, green);
-}
-.cssvars .info, .cssvars .info-hover:hover {
-  color: var(--info, blue);
-}
-.cssvars .danger, .cssvars .danger-hover:hover {
-  color: var(--danger, red);
-}
-.cssvars .dark, .cssvars .dark-hover:hover {
-  color: var(--dark, rgba(41, 40, 40, 0.707));
-}
-.cssvars .grey, .cssvars .grey-hover:hover {
-  color: var(--grey, rgba(204, 204, 204, 1));
-}
-.cssvars .light-grey, .cssvars .light-grey-hover:hover {
-  color: var(--light-grey, rgba(128, 128, 128, 0.808));
-}
-.cssvars .white, .cssvars .white-hover:hover {
-  color: var(--white, #fff);
-}
-.cssvars .black, .cssvars .black-hover:hover {
-  color: var(--black, #000);
-}
-.cssvars .warning{
-  color: var(--warning, yellow);
-}
-.cssvars .luxury{
-  color: var(--luxury, yellow);
-}
+.cssvars .color-1, .cssvars .color-1-hover:hover { color: var(--color-1, black); }
+.cssvars .color-2, .cssvars .color-2-hover:hover { color: var(--color-2, black); }
+.cssvars .success, .cssvars .success-hover:hover { color: var(--success, green); }
+.cssvars .info, .cssvars .info-hover:hover { color: var(--info, blue); }
+.cssvars .danger, .cssvars .danger-hover:hover { color: var(--danger, red); }
+.cssvars .dark, .cssvars .dark-hover:hover { color: var(--dark, rgba(41, 40, 40, 0.707)); }
+.cssvars .grey, .cssvars .grey-hover:hover { color: var(--grey, rgba(204, 204, 204, 1)); }
+.cssvars .light-grey, .cssvars .light-grey-hover:hover { color: var(--light-grey, rgba(128, 128, 128, 0.808)); }
+.cssvars .white, .cssvars .white-hover:hover { color: var(--white, #fff); }
+.cssvars .black, .cssvars .black-hover:hover { color: var(--black, #000); }
+.cssvars .warning, .cssvars .warning-hover:hover { color: var(--warning, yellow); }
+.cssvars .luxury, .cssvars .luxury-hover:hover { color: var(--luxury, yellow); }
 .cssvars .color-gradient, .cssvars .color-gradient-hover:hover {
   background: linear-gradient( to top, var(--color-1, black) 0, var(--color-2, black) 100%);
   background-clip: text;
@@ -3403,49 +3206,22 @@ left: 105%;
   -webkit-text-fill-color: transparent;
 }
 /* outlined */
-.cssvars .outline-color-1 {
-  border: 0.075rem solid var(--color-1, black);
-}
-.cssvars .outline-color-2 {
-  border: 0.075rem solid var(--color-2, black);
-}
-.cssvars .outline-color-dark, .cssvars .outline-dark {
-  border: 0.075rem solid var(--dark, black);
-}
-.cssvars .outline-color-grey, .cssvars .outline-grey {
-  border: 0.075rem solid var(--grey, black);
-}
-.cssvars .outline-color-info, .cssvars .outline-info {
-  border: 0.075rem solid var(--info, black);
-}
-.cssvars .outline-color-success, .cssvars .outline-success {
-  border: 0.075rem solid var(--success, black);
-}
-.cssvars .outline-color-danger, .cssvars .outline-danger {
-  border: 0.075rem solid var(--danger, black);
-}
-.cssvars .outline-light-grey {
-  border: 0.075rem solid var(--light-grey, black);
-}
-.cssvars .outline-color-white, .cssvars .outline-white {
-  border: 0.075rem solid var(--white, white);
-}
-.cssvars .outline-color-black, .cssvars .outline-black {
-  border: 0.075rem solid black;
-}
-.cssvars .outline-warning {
-  border: 0.0625rem solid var(--warning, black);
-}
-.cssvars .outline-luxury {
-  border: 0.0625rem solid var(--luxury, black);
-}
-.cssvars .invalid {
-  outline: 0.075rem solid var(--input-invalid-border, red);
-}
+.cssvars .outline-color-1 { outline: 0.075rem solid var(--color-1, black); }
+.cssvars .outline-color-2 { outline: 0.075rem solid var(--color-2, black); }
+.cssvars .outline-color-dark, .cssvars .outline-dark { outline: 0.075rem solid var(--dark, black); }
+.cssvars .outline-color-grey, .cssvars .outline-grey { outline: 0.075rem solid var(--grey, black); }
+.cssvars .outline-color-info, .cssvars .outline-info { outline: 0.075rem solid var(--info, black); }
+.cssvars .outline-color-success, .cssvars .outline-success { outline: 0.075rem solid var(--success, black); }
+.cssvars .outline-color-danger, .cssvars .outline-danger { outline: 0.075rem solid var(--danger, black); }
+.cssvars .outline-light-grey { outline: 0.075rem solid var(--light-grey, black); }
+.cssvars .outline-color-white, .cssvars .outline-white { outline: 0.075rem solid var(--white, white); }
+.cssvars .outline-color-black, .cssvars .outline-black { outline: 0.075rem solid black; }
+.cssvars .outline-warning { outline: 0.0625rem solid var(--warning, black); }
+.cssvars .outline-luxury { outline: 0.0625rem solid var(--luxury, black); }
+.cssvars .invalid { outline: 0.075rem solid var(--input-invalid-border, red); }
 /* round and circle */
 .cssvars .rounded { border-radius: 0.5rem; }
 .cssvars .rounded-style { border-radius: var(--default-border-radius);}
-
 .cssvars .rounded-1-4 { border-radius: 0.25rem; }
 .cssvars .rounded-1-8 { border-radius: 0.125rem; }
 .cssvars .rounded-0 { border-radius: 0; }
@@ -3461,26 +3237,50 @@ left: 105%;
 .cssvars .rounded-l { border-radius: 0.5rem 0 0 0.5rem; }
 .cssvars .rounded-l-1-4 { border-radius: 0.25rem 0 0 0.25rem; }
 .cssvars .rounded-l-1-8 { border-radius: 0.125rem 0 0 0.125rem; }
-
 .cssvars .circle { border-radius: 50%; }
 .cssvars .circle-t { border-radius: 50% 50% 0 0; }
 .cssvars .circle-b { border-radius: 0 0 50% 50%; }
 .cssvars .circle-r { border-radius: 50% 0 0 50%; }
 .cssvars .circle-l { border-radius: 0 50% 50% 0; }
 /* Width and height utilities */
-.cssvars .w-25 {  width: 25%;}
+/* ===== Percent — fixed/min/max ===== */
+.cssvars .w-25 { width: 25%; }
 .cssvars .w-33 { width: 33.3333%; }
-.cssvars .w-50 {  width: 50%;}
+.cssvars .w-50 { width: 50%; }
 .cssvars .w-66 { width: 66.6667%; }
-.cssvars .w-75 {  width: 75%;}
-.cssvars .w-100 {  width: 100%;}
-.cssvars .h-25 {  height: 25%;}
+.cssvars .w-75 { width: 75%; }
+.cssvars .w-100 { width: 100%; }
+.cssvars .h-25 { height: 25%; }
 .cssvars .h-33 { height: 33.3333%; }
-.cssvars .h-50 {  height: 50%;}
+.cssvars .h-50 { height: 50%; }
 .cssvars .h-66 { height: 66.6667%; }
-.cssvars .h-75 {  height: 75%;}
-.cssvars .h-100 {  height: 100%;}
-
+.cssvars .h-75 { height: 75%; }
+.cssvars .h-100 { height: 100%; }
+.cssvars .w-25-min { min-width: 25%; }
+.cssvars .w-33-min { min-width: 33.3333%; }
+.cssvars .w-50-min { min-width: 50%; }
+.cssvars .w-66-min { min-width: 66.6667%; }
+.cssvars .w-75-min { min-width: 75%; }
+.cssvars .w-100-min { min-width: 100%; }
+.cssvars .h-25-min { min-height: 25%; }
+.cssvars .h-33-min { min-height: 33.3333%; }
+.cssvars .h-50-min { min-height: 50%; }
+.cssvars .h-66-min { min-height: 66.6667%; }
+.cssvars .h-75-min { min-height: 75%; }
+.cssvars .h-100-min { min-height: 100%; }
+.cssvars .w-25-max { max-width: 25%; }
+.cssvars .w-33-max { max-width: 33.3333%; }
+.cssvars .w-50-max { max-width: 50%; }
+.cssvars .w-66-max { max-width: 66.6667%; }
+.cssvars .w-75-max { max-width: 75%; }
+.cssvars .w-100-max { max-width: 100%; }
+.cssvars .h-25-max { max-height: 25%; }
+.cssvars .h-33-max { max-height: 33.3333%; }
+.cssvars .h-50-max { max-height: 50%; }
+.cssvars .h-66-max { max-height: 66.6667%; }
+.cssvars .h-75-max { max-height: 75%; }
+.cssvars .h-100-max { max-height: 100%; }
+/* ===== vh/vw — fixed/min/max ===== */
 .cssvars .w-25-vw { width: 25vw; }
 .cssvars .w-33-vw { width: 33.3333vw; }
 .cssvars .w-50-vw { width: 50vw; }
@@ -3490,10 +3290,9 @@ left: 105%;
 .cssvars .h-25-vh { height: 25vh; }
 .cssvars .h-33-vh { height: 33.3333vh; }
 .cssvars .h-50-vh { height: 50vh; }
-.cssvars .h-75-vh { height: 75vh; }
 .cssvars .h-66-vh { height: 66.6667vh; }
+.cssvars .h-75-vh { height: 75vh; }
 .cssvars .h-100-vh { height: 100vh; }
-
 .cssvars .w-25-vw-min { min-width: 25vw; }
 .cssvars .w-33-vw-min { min-width: 33.3333vw; }
 .cssvars .w-50-vw-min { min-width: 50vw; }
@@ -3506,7 +3305,21 @@ left: 105%;
 .cssvars .h-66-vh-min { min-height: 66.6667vh; }
 .cssvars .h-75-vh-min { min-height: 75vh; }
 .cssvars .h-100-vh-min { min-height: 100vh; }
-
+.cssvars .w-25-vw-max { max-width: 25vw; }
+.cssvars .w-33-vw-max { max-width: 33.3333vw; }
+.cssvars .w-50-vw-max { max-width: 50vw; }
+.cssvars .w-66-vw-max { max-width: 66.6667vw; }
+.cssvars .w-75-vw-max { max-width: 75vw; }
+.cssvars .w-90-vw-max { max-width: 90vw; }
+.cssvars .w-100-vw-max { max-width: 100vw; }
+.cssvars .h-25-vh-max { max-height: 25vh; max-height: 25dvh; }
+.cssvars .h-33-vh-max { max-height: 33.3333vh; max-height: 33.3333dvh; }
+.cssvars .h-50-vh-max { max-height: 50vh; max-height: 50dvh; }
+.cssvars .h-66-vh-max { max-height: 66.6667vh; max-height: 66.6667dvh; }
+.cssvars .h-75-vh-max { max-height: 75vh; max-height: 75dvh; }
+.cssvars .h-90-vh-max { max-height: 90vh; max-height: 90dvh; }
+.cssvars .h-100-vh-max { max-height: 100vh; max-height: 100dvh; }
+/* ===== rem (height) — fixed/min/max ===== */
 .cssvars .h-1rem {height: 1rem;}
 .cssvars .h-2rem {height: 2rem;}
 .cssvars .h-3rem {height: 3rem;}
@@ -3515,15 +3328,23 @@ left: 105%;
 .cssvars .h-6rem {height: 6rem;}
 .cssvars .h-8rem {height: 8rem;}
 .cssvars .h-10rem {height: 10rem;}
-.cssvars .mh-1rem {max-height: 1rem;}
-.cssvars .mh-2rem {max-height: 2rem;}
-.cssvars .mh-3rem {max-height: 3rem;}
-.cssvars .mh-4rem {max-height: 4rem;}
-.cssvars .mh-5rem {max-height: 5rem;}
-.cssvars .mh-6rem {max-height: 6rem;}
-.cssvars .mh-8rem {max-height: 8rem;}
-.cssvars .mh-10rem {max-height: 10rem;}
-
+.cssvars .h-1rem-min {min-height: 1rem;}
+.cssvars .h-2rem-min {min-height: 2rem;}
+.cssvars .h-3rem-min {min-height: 3rem;}
+.cssvars .h-4rem-min {min-height: 4rem;}
+.cssvars .h-5rem-min {min-height: 5rem;}
+.cssvars .h-6rem-min {min-height: 6rem;}
+.cssvars .h-8rem-min {min-height: 8rem;}
+.cssvars .h-10rem-min {min-height: 10rem;}
+.cssvars .h-1rem-max {max-height: 1rem;}
+.cssvars .h-2rem-max {max-height: 2rem;}
+.cssvars .h-3rem-max {max-height: 3rem;}
+.cssvars .h-4rem-max {max-height: 4rem;}
+.cssvars .h-5rem-max {max-height: 5rem;}
+.cssvars .h-6rem-max {max-height: 6rem;}
+.cssvars .h-8rem-max {max-height: 8rem;}
+.cssvars .h-10rem-max {max-height: 10rem;}
+/* ===== rem (width) — fixed/min/max ===== */
 .cssvars .w-1rem {width: 1rem;}
 .cssvars .w-2rem {width: 2rem;}
 .cssvars .w-3rem {width: 3rem;}
@@ -3532,38 +3353,43 @@ left: 105%;
 .cssvars .w-6rem {width: 6rem;}
 .cssvars .w-8rem {width: 8rem;}
 .cssvars .w-10rem {width: 10rem;}
-.cssvars .mw-1rem {max-width: 1rem;}
-.cssvars .mw-2rem {max-width: 2rem;}
-.cssvars .mw-3rem {max-width: 3rem;}
-.cssvars .mw-4rem {max-width: 4rem;}
-.cssvars .mw-5rem {max-width: 5rem;}
-.cssvars .mw-6rem {max-width: 6rem;}
-.cssvars .mw-8rem {max-width: 8rem;}
-.cssvars .mw-10rem {max-width: 10rem;}
-
+.cssvars .w-1rem-min {min-width: 1rem;}
+.cssvars .w-2rem-min {min-width: 2rem;}
+.cssvars .w-3rem-min {min-width: 3rem;}
+.cssvars .w-4rem-min {min-width: 4rem;}
+.cssvars .w-5rem-min {min-width: 5rem;}
+.cssvars .w-6rem-min {min-width: 6rem;}
+.cssvars .w-8rem-min {min-width: 8rem;}
+.cssvars .w-10rem-min {min-width: 10rem;}
+.cssvars .w-1rem-max {max-width: 1rem;}
+.cssvars .w-2rem-max {max-width: 2rem;}
+.cssvars .w-3rem-max {max-width: 3rem;}
+.cssvars .w-4rem-max {max-width: 4rem;}
+.cssvars .w-5rem-max {max-width: 5rem;}
+.cssvars .w-6rem-max {max-width: 6rem;}
+.cssvars .w-8rem-max {max-width: 8rem;}
+.cssvars .w-10rem-max {max-width: 10rem;}
+/* ===== rem — subtract-from-100%  ===== */
 .cssvars .w--1rem {width: calc(100% - 1rem)}
 .cssvars .w--2rem {width: calc(100% - 2rem)}
 .cssvars .w--3rem {width: calc(100% - 3rem)}
 .cssvars .w--4rem {width: calc(100% - 4rem)}
-
 .cssvars .h--1rem {height: calc(100% - 1rem)}
 .cssvars .h--2rem {height: calc(100% - 2rem)}
 .cssvars .h--3rem {height: calc(100% - 3rem)}
 .cssvars .h--4rem {height: calc(100% - 4rem)}
 /* Text utilities */
-.double { font-size: 200%; }
-.large { font-size: 150%; }
-.larger { font-size: 125%; }
-.smaller { font-size: 85%; }
-.small { font-size: 75%; }
-.half { font-size: 50%; }
-
+.cssvars .double { font-size: 200%; }
+.cssvars .large { font-size: 150%; }
+.cssvars .larger { font-size: 125%; }
+.cssvars .smaller { font-size: 85%; }
+.cssvars .small { font-size: 75%; }
+.cssvars .half { font-size: 50%; }
 .cssvars .font-weight-200, .cssvars .font-thin {  font-weight: 200;}
 .cssvars .font-weight-400, .cssvars .font-regular {  font-weight: 400;}
 .cssvars .font-weight-600, .cssvars .font-semibold {  font-weight: 600;}
 .cssvars .bold, .cssvars b, .cssvars strong {  font-weight: bold;}
 .cssvars .italic {  font-style: italic;}
-
 .cssvars .text-uppercase {  text-transform: uppercase;}
 .cssvars .text-capitalize {  text-transform: capitalize;}
 .cssvars .text-lowercase {  text-transform: lowercase;}
@@ -3573,32 +3399,16 @@ left: 105%;
 .cssvars .letter-spacing-3 { letter-spacing: 0.3rem; }
 .cssvars .letter-spacing-4 { letter-spacing: 0.45rem; }
 .cssvars .letter-spacing-5 { letter-spacing: 0.6rem; }
-
 .cssvars .center {  text-align: center;}
 .cssvars .left {  text-align: left;}
 .cssvars .right {  text-align: right;}
 .cssvars .justified {  text-align: justify;}
 .cssvars .unselectable{user-select: none;}
-.cssvars .height-1lines{
-    height:1.4rem;
-    overflow:hidden;
-}
-.cssvars .height-2lines{
-    height:2.8rem;
-    overflow:hidden;
-}
-.cssvars .height-3lines{
-    height:4.8rem;
-    overflow:hidden;
-}
-.cssvars .content-in-middle {
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-}
-.cssvars .word-wrap-break {
-  word-wrap:break-word;
-}
+.cssvars .height-1lines{ height:1.4rem; overflow:hidden; }
+.cssvars .height-2lines{ height:2.8rem; overflow:hidden; }
+.cssvars .height-3lines{ height:4.8rem; overflow:hidden; }
+.cssvars .content-in-middle { position: relative; top: 50%; transform: translateY(-50%); }
+.cssvars .word-wrap-break { word-wrap:break-word; }
 .cssvars .heading-color { color: var(--heading-color); }
 .cssvars .heading-font { font-family: var(--heading-font); }
 .cssvars .mono-font { font-family: var(--font-mono); }
@@ -3618,13 +3428,11 @@ left: 105%;
 /* Border */
 .cssvars .border { border-style: solid; border-width: 0.0625rem; }
 .cssvars .border-style { border: var(--default-border);}
-
 .cssvars .border-0 { border-width: 0; }
 .cssvars .border { border-width: 0.0625rem; }
 .cssvars .border-2 { border-width: 0.125rem; }
 .cssvars .border-4 { border-width: 0.25rem; }
 .cssvars .border-8 { border-width: 0.5rem; }
-
 .cssvars .border-t { border-top-width: 0.0625rem; }
 .cssvars .border-t-0 { border-top-width: 0; }
 .cssvars .border-t-2 { border-top-width: 0.125rem; }

@@ -19,33 +19,10 @@
             Gallery Box | CSS Vars Framework and UI Kit Free & Open Source
     </title>
 
-    <!-- Favicons -->
-    <link
-      rel="apple-touch-icon"
-      href="../img/favicons/apple-touch-icon.png"
-      sizes="180x180"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-32x32.png"
-      sizes="32x32"
-      type="image/png"
-    />
-    <link
-      rel="icon"
-      href="../img/favicons/favicon-16x16.png"
-      sizes="16x16"
-      type="image/png"
-    />
-    <link rel="manifest" href="../img/favicons/manifest.json" />
+   
     <link rel="icon" href="favicon.ico" />
-    <meta
-      name="msapplication-config"
-      content="../img/favicons/browserconfig.xml"
-    />
-    <meta name="theme-color" content="#FF530D" />
-
     <link rel="stylesheet" href="../css/cssvars.css" />
+
   </head>
 
   <body>
@@ -165,22 +142,45 @@
 </div>	
 
 <div id="gallery-box-photo-container" class="gallery-box-photo-container rounded shadow-3 col-md-6">
-    <img id="main-image" src="../img/store/product-11.jpeg"><br/>
-    <div class="gallery-box-thumbnail-image shadow">
-      <img src="../img/store/product-11.jpeg" onclick="document.getElementById('main-image').src='../img/store/product-11.jpeg'">
+    <img id="main-image" src="../img/img1.jpg"><br/>
+    <div class=" shadow row child-padding-1">
+      <div class="col">
+      <img src="../img/img1.jpg" onclick="document.getElementById('main-image').src='../img/img1.jpg'">
     </div>
-    <div class="gallery-box-thumbnail-image shadow">
-      <img src="../img/store/product-12.jpeg" onclick="document.getElementById('main-image').src='../img/store/product-12.jpeg'">
+    <div class=" col">
+      <img src="../img/img2.jpg" onclick="document.getElementById('main-image').src='../img/img2.jpg'">
     </div>
-    <div class="gallery-box-thumbnail-image shadow" >
-      <img src="../img/store/product-13.jpeg" onclick="document.getElementById('main-image').src='../img/store/product-13.jpeg'">
+    <div class="col" >
+      <img src="../img/img3.jpg" onclick="document.getElementById('main-image').src='../img/img3.jpg'">
+    </div>
     </div>
 </div>
 
-</div>
-<script src="https://gist.github.com/majalinet/fab4f18080c58fa96c56823233bd6c51.js"></script>
-</div>
 
+<div class="m-v-4"></div>
+
+
+<div id="gallery-box-photo-container2" class="gallery-box-photo-container rounded shadow-3">
+  <div class="row gap-1">
+
+    <div class="d-flex flex-column shadow col-2">
+      <div class="col-auto p-1-4">
+        <img src="../img/img1.jpg" onclick="document.getElementById('main-image2').src='../img/img1.jpg'">
+      </div>
+      <div class="col-auto p-1-4">
+        <img src="../img/img2.jpg" onclick="document.getElementById('main-image2').src='../img/img2.jpg'">
+      </div>
+      <div class="col-auto p-1-4">
+        <img src="../img/img3.jpg" onclick="document.getElementById('main-image2').src='../img/img3.jpg'">
+      </div>
+    </div>
+
+    <div class="flex-fill col-10">
+      <img id="main-image2" src="../img/img1.jpg">
+    </div>
+
+  </div>
+</div>
 
  </div>
     </main>
