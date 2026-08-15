@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Nimbus Cloud Analytics — Services</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+
+<style>
+
+  /* .gap-3 .col-lg-6 {
+  flex: 0 0 calc(50% - var(--space-3, clamp(1.5rem, 3.33vw, 3rem)) / 2);
+  max-width: calc(50% - var(--space-3, clamp(1.5rem, 3.33vw, 3rem)) / 2);
+}
+
+.gap-3+.row {
+    display: flex;
+  flex-wrap: nowrap;
+} */
+
+ /* .row.gap-3 {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3);
+}
+
+.row.gap-3 > .col-lg-6 {
+  flex: 0 0 100%;
+  max-width: 100%;
+}
+
+@media (min-width: 992px) {
+  .row.gap-3 > .col-lg-6 {
+    flex: 0 0 calc(50% - var(--space-3) / 2);
+    max-width: calc(50% - var(--space-3) / 2);
+  }
+} */
+
+
+
+/* 1. Gap utilities also publish a custom prop, so columns can read it */
+/* .gap-1 { gap: var(--space-1); --row-gap: var(--space-1); }
+.gap-2 { gap: var(--space-2); --row-gap: var(--space-2); }
+.gap-3 { gap: var(--space-3); --row-gap: var(--space-3); }
+.gap-4 { gap: var(--space-4); --row-gap: var(--space-4); } */
+
+/* 2. Column classes subtract their share of the gap.
+   Formula: subtract row-gap * (items-per-row - 1) / items-per-row
+   col-lg-6 = 2 per row → subtract row-gap * 1/2 */
+/* @media (min-width: 992px) {
+  .col-lg-6 {
+    flex: 0 0 calc(50% - (var(--row-gap, 0rem) * 1 / 2));
+    max-width: calc(50% - (var(--row-gap, 0rem) * 1 / 2));
+  }
+} */
+
+
+/* Grid gutters — replaces native `gap` for horizontal spacing only.
+   Works with every .col-*, .col-sm-*, .col-md-*, .col-lg-*, .col-xl-*
+   class in any combination, since gutter is per-column, not per-row. */
+
+/* .row.gap-1, .row.gap-2, .row.gap-3, .row.gap-4 {
+  column-gap: 0; 
+}
+
+.row.gap-1 { --col-h-padding: calc(var(--space-1) / 2); }
+.row.gap-2 { --col-h-padding: calc(var(--space-2) / 2); }
+.row.gap-3 { --col-h-padding: calc(var(--space-3) / 2); }
+.row.gap-4 { --col-h-padding: calc(var(--space-4) / 2); } */
+
+
+</style>
+
+</head>
+<body class="page-flow">
+
+<!-- NAV -->
+<nav class="between-row container p-v-2">
+  <a href="#" class="bold" style="font-size:1.35rem;text-decoration:none;color:var(--color-1)">Nimbus<span class="color-2">Analytics</span></a>
+  <div class="cluster gap-3 desktop-only">
+    <a href="#services">Services</a>
+    <a href="#pricing">Pricing</a>
+    <a href="#faq">FAQ</a>
+  </div>
+  <a href="#" class="button">Start Free Trial</a>
+</nav>
+
+<!-- HERO -->
+<header class="bg-gradient p-v-4 p-h-2">
+  <div class="container row align-items-center gap-3">
+    <div class="col-lg-6 ">
+      <span class="badge bg-white color-1 m-b-1" style="width:fit-content">Trusted by 4,200+ data teams</span>
+      <h1 class="display-3 white m-b-1">Turn raw data into revenue, automatically.</h1>
+      <p class="lead white opacity07">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nimbus unifies every pipeline, dashboard and alert your analysts need, without a single line of infrastructure code.</p>
+      <div class="cluster gap-2 m-t-1">
+        <a href="#" class="button bg-white color-1">Get Started Free</a>
+        <a href="#" class="button" style="background:transparent;border:0.125rem solid var(--white);color:var(--white)">Watch Demo</a>
+      </div>
+    </div>
+    <div class="col-lg-6">
+      <img src="https://picsum.photos/seed/nimbus-hero/900/650" alt="Nimbus Analytics dashboard preview" class="img-responsive rounded shadow-4">
+    </div>
+  </div>
+</header>
+
+<!-- STATS STRIP -->
+<section class="container p-v-3">
+  <div class="row gap-2 text-capitalize" style="text-align:center">
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">99.98%</span>
+      <span class="grey">Platform uptime</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">4.2B</span>
+      <span class="grey">Events processed daily</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">180+</span>
+      <span class="grey">Native connectors</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">6 min</span>
+      <span class="grey">Average setup time</span>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICES BENTO -->
+<section id="services" class="container p-v-4">
+  <div class="centered-col m-b-3" style="text-align:center">
+    <span class="pill pill-color-1">What we offer</span>
+    <h2 class="display-6 m-t-1">A full analytics stack, in one subscription</h2>
+    <p class="grey" style="max-width:40rem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+
+  <div class="bento grid-cols-4 gap-2">
+    <div class="bento-item bento-2x2 panel bg-color-1 white stack">
+      <svg viewBox="0 0 24 24" class="icon-ml icon-white-fill"><rect x="3" y="12" width="3.5" height="8"/><rect x="10.25" y="6" width="3.5" height="14"/><rect x="17.5" y="9" width="3.5" height="11"/></svg>
+      <h3 class="white">Real-time Dashboards</h3>
+      <p class="opacity07">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+      <a href="#" class="button bg-white color-1 m-t-1" style="width:fit-content">Explore dashboards</a>
+    </div>
+    <div class="bento-item bento-2x1 panel stack">
+      <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><circle cx="12" cy="12" r="8" fill="none" stroke="var(--color-1)" stroke-width="2"/><path d="M12 4a8 8 0 0 1 8 8h-8z"/></svg>
+      <h4>Predictive Forecasting</h4>
+      <p class="grey">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim.</p>
+    </div>
+    <div class="bento-item bento-2x1 panel stack">
+      <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><path d="M4 20 L4 6 L12 12 L20 4 L20 20 Z" fill="none" stroke="var(--color-1)" stroke-width="1.6"/></svg>
+      <h4>Pipeline Automation</h4>
+      <p class="grey">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo.</p>
+    </div>
+    <div class="bento-item bento-2x1 panel stack">
+      <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><rect x="4" y="4" width="7" height="7" rx="1"/><rect x="13" y="4" width="7" height="7" rx="1"/><rect x="4" y="13" width="7" height="7" rx="1"/><rect x="13" y="13" width="7" height="7" rx="1"/></svg>
+      <h4>Data Warehouse Sync</h4>
+      <p class="grey">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla.</p>
+    </div>
+    <div class="bento-item bento-2x1 panel stack">
+      <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><circle cx="12" cy="12" r="9" fill="none" stroke="var(--color-1)" stroke-width="1.6"/><path d="M12 3v18M3 12h18" stroke="var(--color-1)" stroke-width="1.2" fill="none"/></svg>
+      <h4>Smart Alerting</h4>
+      <p class="grey">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit anim.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROCESS STEPPER -->
+<section class="bg-surface-dim p-v-4">
+  <div class="container">
+    <h2 class="center display-6 m-b-3">Live in four steps</h2>
+    <ul class="stepper">
+      <li class="stepper-step is-complete">
+        <div class="stepper-circle">1</div>
+        <span class="stepper-label">Connect sources</span>
+      </li>
+      <li class="stepper-step is-complete">
+        <div class="stepper-circle">2</div>
+        <span class="stepper-label">Model your data</span>
+      </li>
+      <li class="stepper-step is-active">
+        <div class="stepper-circle">3</div>
+        <span class="stepper-label">Build dashboards</span>
+      </li>
+      <li class="stepper-step">
+        <div class="stepper-circle">4</div>
+        <span class="stepper-label">Share &amp; automate</span>
+      </li>
+    </ul>
+  </div>
+</section>
+
+<!-- PRICING -->
+<section id="pricing" class="container p-v-4">
+  <h2 class="center display-6 m-b-3">Plans that scale with your data</h2>
+  <div class="row gap-2">
+    <div class="col-md-4">
+      <div class="panel stack">
+        <h4>Starter</h4>
+        <span class="display-5 bold">$49<span class="grey" style="font-size:1rem">/mo</span></span>
+        <p class="grey">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+        <ul class="stack gap-1" style="list-style:none;padding:0">
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> 5 connectors</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> 3 dashboards</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Email support</li>
+        </ul>
+        <a href="#" class="button button-w-100 m-t-1">Choose Starter</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel border-a-color-1 border-2 stack" style="position:relative">
+        <span class="badge bg-color-1 white" style="position:absolute;top:-0.8rem;right:1rem">Most Popular</span>
+        <h4>Growth</h4>
+        <span class="display-5 bold">$149<span class="grey" style="font-size:1rem">/mo</span></span>
+        <p class="grey">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore.</p>
+        <ul class="stack gap-1" style="list-style:none;padding:0">
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Unlimited connectors</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Unlimited dashboards</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Priority support</li>
+        </ul>
+        <a href="#" class="button bg-color-1 white button-w-100 m-t-1">Choose Growth</a>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="panel stack">
+        <h4>Enterprise</h4>
+        <span class="display-5 bold">Custom</span>
+        <p class="grey">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi.</p>
+        <ul class="stack gap-1" style="list-style:none;padding:0">
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Dedicated infrastructure</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> SSO &amp; audit logs</li>
+          <li class="cluster gap-1"><svg viewBox="0 0 24 24" class="icon-xs icon-success-fill"><circle cx="12" cy="12" r="10"/></svg> Dedicated CSM</li>
+        </ul>
+        <a href="#" class="button button-w-100 m-t-1">Contact Sales</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TESTIMONIAL -->
+<section class="container p-v-3">
+  <div class="panel bg-surface-dim centered-col p-v-3" style="text-align:center">
+    <img src="https://picsum.photos/seed/nimbus-avatar/120/120" class="circle icon-lg" alt="Customer avatar">
+    <p class="lead" style="max-width:42rem">"Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam."</p>
+    <span class="bold">Priya Natarajan</span>
+    <span class="grey">VP Data, Alderbridge Retail</span>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="bg-color-1 p-v-4">
+  <div class="container centered-col" style="text-align:center">
+    <h2 class="white display-6">Ready to see your data differently?</h2>
+    <p class="white opacity07" style="max-width:34rem">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt.</p>
+    <a href="#" class="button bg-white color-1">Start Your Free Trial</a>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="footer p-v-3">
+  <div class="container footer-content between-row" style="align-items:flex-start;flex-wrap:wrap">
+    <div class="stack" style="max-width:18rem">
+      <span class="bold" style="font-size:1.2rem">Nimbus Analytics</span>
+      <p class="grey small">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor.</p>
+    </div>
+    <div class="footer-links stack">
+      <span class="bold">Product</span>
+      <a href="#" class="grey">Dashboards</a>
+      <a href="#" class="grey">Connectors</a>
+      <a href="#" class="grey">Pricing</a>
+    </div>
+    <div class="footer-links stack">
+      <span class="bold">Company</span>
+      <a href="#" class="grey">About</a>
+      <a href="#" class="grey">Careers</a>
+      <a href="#" class="grey">Contact</a>
+    </div>
+  </div>
+  <p class="center grey small m-t-2">&copy; 2026 Nimbus Analytics Inc. All rights reserved.</p>
+</footer>
+
+</body>
+</html>
