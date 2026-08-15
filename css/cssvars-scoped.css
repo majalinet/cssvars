@@ -1966,6 +1966,26 @@ left: 105%;
 .cssvars .carousel-autoplay:focus-within .slides {
   animation-play-state: paused;
 }
+.cssvars .carousel-autoplay.slides-2 .slides {
+  animation-name: carousel-autoplay-2;
+  animation-duration: 8s;
+}
+@keyframes carousel-autoplay-2 {
+  0%,   44% { transform: translateX(0%); }
+  50%,  94% { transform: translateX(-100%); }
+  100%      { transform: translateX(-100%); }
+}
+
+.cssvars .carousel-autoplay.slides-3 .slides {
+  animation-name: carousel-autoplay-3;
+  animation-duration: 12s;
+}
+@keyframes carousel-autoplay-3 {
+  0%,    29.3% { transform: translateX(0%); }
+  33.3%, 62.7% { transform: translateX(-100%); }
+  66.7%, 96%   { transform: translateX(-200%); }
+  100%         { transform: translateX(-200%); }
+}
 .cssvars .carousel-autoplay.slides-4 .slides {
   animation-name: carousel-autoplay-4;
   animation-duration: 16s;
@@ -1976,6 +1996,18 @@ left: 105%;
   50%,  72% { transform: translateX(-200%); }
   75%,  97% { transform: translateX(-300%); }
   100%      { transform: translateX(-300%); }
+}
+.cssvars .carousel-autoplay.slides-5 .slides {
+  animation-name: carousel-autoplay-5;
+  animation-duration: 20s;
+}
+@keyframes carousel-autoplay-5 {
+  0%,   17.6% { transform: translateX(0%); }
+  20%,  37.6% { transform: translateX(-100%); }
+  40%,  57.6% { transform: translateX(-200%); }
+  60%,  77.6% { transform: translateX(-300%); }
+  80%,  97.6% { transform: translateX(-400%); }
+  100%        { transform: translateX(-400%); }
 }
 .cssvars .carousel-autoplay.slides-6 .slides {
   animation-name: carousel-autoplay-6;
@@ -2008,7 +2040,7 @@ left: 105%;
   animation-iteration-count: infinite;
   animation-play-state: running;
 }
-.carousel-autoplay-linked .slides > li {
+.cssvars .carousel-autoplay-linked .slides > li {
   flex: 0 0 100%;
   min-width: 100%;
 }

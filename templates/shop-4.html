@@ -32,79 +32,62 @@
 </head>
 
 <body>
-    <div class="main-nav bordered-top nav-top-border-hover">
-        <div class="main-menu container">
-            <a href="#" id="logo1" target="_blank">
-                <svg alt="Agile Logo" class="icon-color-2-fill icon-ml" xmlns="http://www.w3.org/2000/svg"
-                    viewBox="0 0 30.17 37.71">
-                    <defs>
-                        <style>
-                            .cls-2 {
-                                font-size: 34px;
-                                fill: #fff;
-                                font-family: Montserrat-Thin, Montserrat;
-                                letter-spacing: 0.01em;
-                            }
-                        </style>
-                    </defs>
-                    <title>Agile logo</title>
-                    <g>
-                        <g>
-                            <rect class="cls-1" y="1.53" width="30.17" height="30.17" rx="1.12" ry="1.12">
-                            </rect>
-                            <text class="cls-2" transform="translate(3.33 28.9)">A</text>
-                        </g>
-                    </g>
-                </svg>
-            </a>
+<div class="main-nav">
+    <div class="main-menu container nav-top-border-hover">
+        <input type="checkbox" id="toggle-1">
+            <a href="https://cssvars.com" id="logo" class="logo" alt="CSS Vars Framework and UI Kit">
+            <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" class="icon-sm">
+            <rect x="2" y="2" width="96" height="96" rx="6" ry="6" fill="var(--color-1)"></rect>
+            <text x="50" y="58" text-anchor="middle" font-family="'Courier New', Courier, monospace" font-weight="700" font-size="42" fill="var(--white)">{C}</text>
+            </svg>
+        </a>
 
-            <label for="toggle-1" class="toggle-menu">
-                <svg xmlns="http://www.w3.org/2000/svg" class="icon-color-1-fill icon-s" viewbox="0 0 24 24">
-                    <path d="M0 0h24v24H0z" fill="none" />
-                    <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z" /></svg>
-
-
-            </label>
-            <input type="checkbox" id="toggle-1">
-
-            <nav class="nav">
-                <ul class="text-uppercase font-weight-400 bold">
-                    <li><a href="#" class="smaller dark">home</a></li>
-                    <li><a href="#" class="smaller dark">collections</a></li>
-                    <li><a href="#" class="smaller dark">products</a></li>
-                    <li><a href="#" class="smaller dark">pages</a></li>
-                    <li><a href="#" class="smaller dark">features</a></li>
-                    <li class="m-v-07 m-h-05"><select class="form-control" id="exampleFormControlSelect1">
-                            <option>USD</option>
-                            <option>EUR</option>
-                            <option>RUB</option>
-                            <option>GBR</option>
-                        </select>
-                    </li>
-                    <li class="m-v-07 m-h-05">
-                        <select class="form-control text-uppercase dark " id="exampleFormControlSelect1">
-                            <option class="smaller dark">English</option>
-                            <option class="smaller dark">russian</option>
-                            <option class="smaller dark">french</option>
-                        </select>
-                    </li>
-                    <li class="m-v-07">
-                        <a href="#" class="dark bold d-inline smaller">
-                            <svg viewBox="0 0 24 24" class="img-responsive icon-s">
-                                <path fill="#222225"
-                                    d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z" />
-                            </svg>
-                            item (s)
-                        </a>
-                    </li>
-                </ul>
+        <div class="nav-panel">
+            <nav class="nav text-uppercase font-weight-400 bold">
+                <a href="#" class="smaller dark">home</a>
+                <a href="#" class="smaller dark">collections</a>
+                <a href="#" class="smaller dark">products</a>
+                <a href="#" class="smaller dark">pages</a>
+                <a href="#" class="smaller dark">features</a>
             </nav>
+
+            <div class="nav-actions">
+                <select class="form-control" id="currencySelect1">
+                    <option>USD</option>
+                    <option>EUR</option>
+                    <option>RUB</option>
+                    <option>GBR</option>
+                </select>
+
+                <select class="form-control text-uppercase dark" id="languageSelect1">
+                    <option class="smaller dark">English</option>
+                    <option class="smaller dark">russian</option>
+                    <option class="smaller dark">french</option>
+                </select>
+
+                <a href="#" class="dark bold d-inline smaller">
+                    <svg viewBox="0 0 24 24" class="img-responsive icon-m">
+                        <path fill="#222225" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z"></path>
+                    </svg>
+                </a>
+            </div>
         </div>
 
+        <label for="toggle-1" class="toggle-menu">
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+            </svg>
+            <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                <path d="M0 0h24v24H0z" fill="none"></path>
+                <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+            </svg>
+        </label>
     </div>
+</div>
 
-    <div class="parallax-img p0 h-100 w-100"
-        style="background-image: url('../img/vika/shop/fashion.jpg'); background-size: cover;">
+    <div class="parallax-img p0 h-100-vh w-100"
+        style="background-image: url('../img/shop/fashion.jpg'); background-size: cover;">
         <div class="container m-v-4 p-v-2" style="margin-bottom: 0;">
             <div class="row p-v-4 topmargin">
                 <div class="col-md-6">
@@ -124,7 +107,7 @@
         </div>
     </div>
     <div class="parallax-img p0 h-150 w-100"
-        style="background-image: url('../img/vika/shop/dress-1.jpg'); background-size: cover; height= 100%;">
+        style="background-image: url('../img/shop/dress-1.jpg'); background-size: cover; height= 100%;">
         <div class="container">
             <div class="row p-v-4">
                 <div class="col-md-4"></div>
@@ -144,7 +127,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/fashion-dress-2.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/fashion-dress-2.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -197,7 +180,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/fashion-dress-1.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/fashion-dress-1.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -250,7 +233,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/fashion-dress-3.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/fashion-dress-3.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -303,7 +286,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/fashion-dress-4.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/fashion-dress-4.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -357,7 +340,7 @@
         </div>
     </div>
     <div class="parallax-img p0 h-150 w-100"
-        style="background-image: url('../img/vika/shop/girl.jpg'); background-size: cover;">
+        style="background-image: url('../img/shop/girl.jpg'); background-size: cover;">
         <div class="container">
             <div class="row p-v-4">
                 <div class="col-md-9 topmargin">
@@ -378,7 +361,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/featured-sunglasses.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/featured-sunglasses.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -424,7 +407,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/featured-sunglasses-2.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/featured-sunglasses-2.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -469,7 +452,7 @@
                 <div class="col-md-3">
                     <div class="hover-shadow">
                         <a href="#">
-                            <img src="../img/vika/shop/featured-sunglasses-1.jpg" alt="alttext" class="img-responsive">
+                            <img src="../img/shop/featured-sunglasses-1.jpg" alt="alttext" class="img-responsive">
                         </a>
                         <section class="p-v-1" style="background-color: #fff;">
                             <div class="center">
@@ -516,8 +499,8 @@
             </div>
         </div>
     </div>
-    <div class="p0 parallax-img h-100 w-100"
-        style="background-image: url('../img/vika/shop/tech.jpg'); background-size: cover;">
+    <div class="p0 parallax-img h-100-vh w-100"
+        style="background-image: url('../img/shop/tech.jpg'); background-size: cover;">
         <div class="container p-v-2">
             <div class="row p-v-4 topmargin">
                 <div class="col-md-5"></div>
@@ -667,7 +650,7 @@
                     </div>
                 </div>
                 <div class="col-md-6">
-                    <p class="center grey left m-v-2 smaller"> © Copyright 2018. All Rights Reserved
+                    <p class="center grey left m-v-2 smaller"> © Copyright 2026. All Rights Reserved
                         Europe IT
                         Outsourcing
                         Company.
