@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>AURA — Minimal Search-First Homepage</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="main-nav p-h-2 shadow-3">
+  <div class="main-menu nav-top-border-hover">
+    <input type="checkbox" id="toggle-h5">
+    <a href="store-home-5.html" class="logo"><span class="h4 bold black m0 text-uppercase">AURA</span></a>
+    <div class="nav-panel">
+      <nav class="nav justify-content-end align-items-center">
+        <a href="store-home-5.html" class="bold">Home</a>
+        <a href="store-category-5.html">Shop</a>
+        <a href="#footer">Contact</a>
+        <label for="qv-toggle-h5" class="icon-box position-relative" aria-label="Quick filters">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M3,17V19H9V17H3M3,5V7H13V5H3M13,21V19H21V17H13V15H11V21H13M7,9V11H3V13H7V15H9V9H7M21,13V11H11V13H21M15,9H17V7H21V5H17V3H15V9Z"></path></svg>
+        </label>
+        <a href="store-product-5.html" class="icon-box position-relative" aria-label="Cart">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path></svg>
+          <span class="badge bga-color-1 white position-absolute right-0">4</span>
+        </a>
+      </nav>
+    </div>
+    <label for="toggle-h5" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Right sidebar quick-filter drawer, checkbox toggle, no JS -->
+<input type="checkbox" id="qv-toggle-h5" class="sidebar-right-toggle-state">
+<aside class="sidebar-right">
+  <div class="sidebar-header d-flex align-items-center justify-content-between">
+    Quick Filters
+    <label for="qv-toggle-h5" style="cursor:pointer;">&times;</label>
+  </div>
+  <p class="dark small text-uppercase bold m-t-1">Category</p>
+  <div class="pills">
+    <a href="store-category-5.html" class="pill">Kitchen</a>
+    <a href="store-category-5.html" class="pill">Living</a>
+    <a href="store-category-5.html" class="pill">Bath</a>
+    <a href="store-category-5.html" class="pill">Outdoor</a>
+  </div>
+  <p class="dark small text-uppercase bold m-t-2">Price</p>
+  <input type="range" min="0" max="500" value="250" class="w-100">
+  <a href="store-category-5.html" class="button w-100 m-t-2">View Results</a>
+</aside>
+
+<main>
+
+<!-- ============ SEARCH-FIRST HERO ============ -->
+<section class="container-fluid bg-light-grey p-v-4">
+  <div class="container center">
+    <p class="dark text-uppercase small bold">AURA Goods Co.</p>
+    <h1 class="black bold">What are you looking for today?</h1>
+    <form class="row justify-content-center m-t-1 cluster">
+      <div class="col-md-6 col-9">
+        <input type="text" placeholder="Search pour-over sets, throws, lighting..." class="w-100 form-control">
+      </div>
+      <div class="col-md-2 col-3">
+        <button type="submit" class="w-100">
+          <svg viewBox="0 0 24 24" class="icon-white-fill icon-xs"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg>
+        </button>
+      </div>
+    </form>
+    <div class="row justify-content-center m-t-1">
+      <p class="dark small m-r-1">Popular:</p>
+      <a href="store-category-5.html" class="small color-1 m-r-1">Ceramic sets</a>
+      <a href="store-category-5.html" class="small color-1 m-r-1">Linen throws</a>
+      <a href="store-category-5.html" class="small color-1 m-r-1">Table lamps</a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ QUICK CATEGORY GRID ============ -->
+<section class="container-fluid p-v-4">
+  <div class="row">
+    <div class="col-6 col-md-3 p1 center">
+      <a href="store-category-5.html">
+        <div class="rounded" style="background-image:url('https://picsum.photos/seed/aura5-c1/300/300'); background-size:cover; aspect-ratio:1/1;"></div>
+        <p class="bold black m-t-1">Kitchen</p>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 p1 center">
+      <a href="store-category-5.html">
+        <div class="rounded" style="background-image:url('https://picsum.photos/seed/aura5-c2/300/300'); background-size:cover; aspect-ratio:1/1;"></div>
+        <p class="bold black m-t-1">Living</p>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 p1 center">
+      <a href="store-category-5.html">
+        <div class="rounded" style="background-image:url('https://picsum.photos/seed/aura5-c3/300/300'); background-size:cover; aspect-ratio:1/1;"></div>
+        <p class="bold black m-t-1">Bath</p>
+      </a>
+    </div>
+    <div class="col-6 col-md-3 p1 center">
+      <a href="store-category-5.html">
+        <div class="rounded" style="background-image:url('https://picsum.photos/seed/aura5-c4/300/300'); background-size:cover; aspect-ratio:1/1;"></div>
+        <p class="bold black m-t-1">Outdoor</p>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ POPULAR PRODUCTS ============ -->
+<section class="container-fluid p-v-2">
+  <h2 class="black bold center">Popular Right Now</h2>
+  <div class="row m-t-2">
+    <div class="col-md-3 p1">
+      <div class="card">
+        <img src="https://picsum.photos/seed/aura5-p1/450/450" alt="Ceramic Pour-Over Set" class="img-responsive rounded-t">
+        <div class="card-body">
+          <a href="store-product-5.html" class="bold black">Ceramic Pour-Over Set</a>
+          <p class="black bold m0">$68</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card">
+        <img src="https://picsum.photos/seed/aura5-p2/450/450" alt="Linen Throw" class="img-responsive rounded-t">
+        <div class="card-body">
+          <a href="store-product-5.html" class="bold black">Linen Throw Blanket</a>
+          <p class="black bold m0">$54</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card">
+        <img src="https://picsum.photos/seed/aura5-p3/450/450" alt="Table Lamp" class="img-responsive rounded-t">
+        <div class="card-body">
+          <a href="store-product-5.html" class="bold black">Glass Pendant Lamp</a>
+          <p class="black bold m0">$119</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card">
+        <img src="https://picsum.photos/seed/aura5-p4/450/450" alt="Bath Caddy" class="img-responsive rounded-t">
+        <div class="card-body">
+          <a href="store-product-5.html" class="bold black">Oak Bath Caddy</a>
+          <p class="black bold m0">$42</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FAQ ACCORDION ============ -->
+<section class="container p-v-4">
+  <h2 class="black bold center">Frequently Asked Questions</h2>
+  <div class="accordion m-t-2">
+    <div class="accordion-block">
+      <input type="radio" id="h5faq1" name="h5faq" checked>
+      <label for="h5faq1" class="accordion-label p1">Do you offer gift wrapping?</label>
+      <div class="accordion-content">Yes, add gift wrapping at checkout for a small additional fee.</div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" id="h5faq2" name="h5faq">
+      <label for="h5faq2" class="accordion-label p1">Can I change my order after placing it?</label>
+      <div class="accordion-content">Contact us within 1 hour of ordering and we'll do our best to make changes.</div>
+    </div>
+    <div class="accordion-block">
+      <input type="radio" id="h5faq3" name="h5faq">
+      <label for="h5faq3" class="accordion-label p1">Is there a loyalty program?</label>
+      <div class="accordion-content">Yes — earn points on every purchase, redeemable toward future orders.</div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ NEWSLETTER ============ -->
+<section class="container-fluid bg-light-grey p-v-4">
+  <div class="container center">
+    <h4 class="black bold m0">Stay in the loop</h4>
+    <form class="row justify-content-center m-t-1 cluster">
+      <div class="col-md-4 col-8 p-h--1-2">
+        <input type="email" placeholder="Your email address" class="w-100 form-control">
+      </div>
+      <div class="col-md-2 col-4 p-h--1-2">
+        <button type="submit" class="w-100">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-solid border-color-1 d-block" id="footer">
+  <div class="row container m-v-2">
+    <div class="col-md-6 col-lg-3">
+      <span class="h4 bold black text-uppercase">AURA</span>
+      <p class="dark small m-t-1">Search less. Live better.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Shop</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="store-category-5.html">All Products</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Help</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Shipping &amp; Returns</a></li>
+        <li class="m-h-1"><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Company</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row container p-v-1">
+    <div class="col-md-12 center">
+      <p class="small dark m0">&copy; 2026 AURA Goods Co. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>

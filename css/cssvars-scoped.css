@@ -2142,6 +2142,85 @@ left: 105%;
 .cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-2; }
 .cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3; }
 .cssvars .carousel-autoplay-linked input:nth-of-type(4):checked ~ .slidesNavigation label:nth-of-type(4) { animation-name: carousel-dot-phase-0; }
+/* ---------- 2 slides ---------- */
+.cssvars .carousel-autoplay-linked.slides-2 .slides {
+  animation-name: carousel-autoplay-2;
+  animation-duration: 8s;
+}
+@keyframes carousel-resume-2-1 {
+  0%,  44% { transform: translateX(-100%); }
+  50%, 94% { transform: translateX(0%); }
+  100%     { transform: translateX(0%); }
+}
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(1):checked ~ .slides { animation-name: carousel-autoplay-2; }
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(2):checked ~ .slides { animation-name: carousel-resume-2-1; }
+.cssvars .carousel-autoplay-linked.slides-2 .slidesNavigation label {
+  animation-duration: 8s;
+}
+@keyframes carousel-dot-phase-2-0 {
+  0%,  44%  { background: var(--color-1, black); }
+  50%, 100% { background: transparent; }
+}
+@keyframes carousel-dot-phase-2-1 {
+  0%,  44%  { background: transparent; }
+  50%, 94%  { background: var(--color-1, black); }
+  100%      { background: transparent; }
+}
+.cssvars .carousel-autoplay-linked.slides-2 .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-2-0; }
+.cssvars .carousel-autoplay-linked.slides-2 .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-2-1; }
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-2-0; }
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-2-1; }
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-2-1; }
+.cssvars .carousel-autoplay-linked.slides-2 input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-2-0; }
+/* ---------- 3 slides ---------- */
+.cssvars .carousel-autoplay-linked.slides-3 .slides {
+  animation-name: carousel-autoplay-3;
+  animation-duration: 12s;
+}
+@keyframes carousel-resume-3-1 {
+  0%,    29.3% { transform: translateX(-100%); }
+  33.3%, 62.7% { transform: translateX(-200%); }
+  66.7%, 96%   { transform: translateX(0%); }
+  100%         { transform: translateX(0%); }
+}
+@keyframes carousel-resume-3-2 {
+  0%,    29.3% { transform: translateX(-200%); }
+  33.3%, 62.7% { transform: translateX(0%); }
+  66.7%, 96%   { transform: translateX(-100%); }
+  100%         { transform: translateX(-100%); }
+}
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(1):checked ~ .slides { animation-name: carousel-autoplay-3; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(2):checked ~ .slides { animation-name: carousel-resume-3-1; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(3):checked ~ .slides { animation-name: carousel-resume-3-2; }
+.cssvars .carousel-autoplay-linked.slides-3 .slidesNavigation label {
+  animation-duration: 12s;
+}
+@keyframes carousel-dot-phase-3-0 {
+  0%,    29.3% { background: var(--color-1, black); }
+  33.3%, 100%  { background: transparent; }
+}
+@keyframes carousel-dot-phase-3-1 {
+  0%,    29.3% { background: transparent; }
+  33.3%, 62.7% { background: var(--color-1, black); }
+  66.7%, 100%  { background: transparent; }
+}
+@keyframes carousel-dot-phase-3-2 {
+  0%,    62.7% { background: transparent; }
+  66.7%, 96%   { background: var(--color-1, black); }
+  100%         { background: transparent; }
+}
+.cssvars .carousel-autoplay-linked.slides-3 .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-3-0; }
+.cssvars .carousel-autoplay-linked.slides-3 .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-3-1; }
+.cssvars .carousel-autoplay-linked.slides-3 .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3-2; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-3-0; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-3-1; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(1):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3-2; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-3-2; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-3-0; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(2):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3-1; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(1) { animation-name: carousel-dot-phase-3-1; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(2) { animation-name: carousel-dot-phase-3-2; }
+.cssvars .carousel-autoplay-linked.slides-3 input:nth-of-type(3):checked ~ .slidesNavigation label:nth-of-type(3) { animation-name: carousel-dot-phase-3-0; }
 /* Gallery Box*/
 .cssvars .gallery-box {
   background:var(--panel-bg);
@@ -3222,6 +3301,43 @@ left: 105%;
 .cssvars .bg-light-grey, .cssvars .bg-lite-grey, .cssvars .bg-light-grey-hover:hover { background-color: var(--light-grey, grey); }
 .cssvars .bg-warning, .cssvars .bg-warning-hover:hover { background-color: var(--warning, black); }
 .cssvars .bg-luxury, .cssvars .bg-luxury-hover:hover { background-color: var(--luxury, black); }
+/* Backgrounds with alpha */
+.cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
+  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
+  color: var(--color-1, black);
+}
+.cssvars .bga-color-2, .cssvars .bga-color-2-hover:hover {
+  background-color: color-mix(in srgb, var(--color-2, black) 10%, transparent);
+  color: var(--color-2, black);
+}
+.cssvars .bga-info, .cssvars .bga-info-hover:hover {
+  background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
+  color: var(--info, blue);
+}
+.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
+  background-color: color-mix(in srgb, var(--dark, darkgray) 10%, transparent);
+  color: var(--dark, darkgray);
+}
+.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
+  background-color: color-mix(in srgb, var(--grey, grey) 10%, transparent);
+  color: var(--grey, black);
+}
+.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
+  background-color: color-mix(in srgb, var(--danger, red) 10%, transparent);
+  color: var(--danger, black);
+}
+.cssvars .bga-success, .cssvars .bga-success-hover:hover {
+  background-color: color-mix(in srgb, var(--success, green) 10%, transparent);
+  color: var(--success, black);
+}
+.cssvars .bga-warning, .cssvars .bga-warning-hover:hover {
+  background-color: color-mix(in srgb, var(--warning, yellow) 10%, transparent);
+  color: var(--warning, black);
+}
+.cssvars .bga-luxury, .cssvars .bga-luxury-hover:hover {
+  background-color: color-mix(in srgb, var(--luxury, purple) 10%, transparent);
+  color: var(--luxury, black);
+}
 /* colors */
 .cssvars .color-1, .cssvars .color-1-hover:hover { color: var(--color-1, black); }
 .cssvars .color-2, .cssvars .color-2-hover:hover { color: var(--color-2, black); }
@@ -3663,43 +3779,6 @@ left: 105%;
   box-shadow: 0 0.625rem 1.25rem color-mix(in srgb, var(--color-1, black) 10%, transparent), 0 0.625rem 0.625rem color-mix(in srgb, var(--color-1, black) 10%, transparent);
 }
 .cssvars .shadow-none, .cssvars .shadow-none-hover:hover { box-shadow: none; }
-/* Backgrounds with alpha */
-.cssvars .bga-color-1, .cssvars .bga-color-1-hover:hover {
-  background-color: color-mix(in srgb, var(--color-1, black) 10%, transparent);
-  color: var(--color-1, black);
-}
-.cssvars .bga-color-2, .cssvars .bga-color-2-hover:hover {
-  background-color: color-mix(in srgb, var(--color-2, black) 10%, transparent);
-  color: var(--color-2, black);
-}
-.cssvars .bga-info, .cssvars .bga-info-hover:hover {
-  background-color: color-mix(in srgb, var(--info, blue) 10%, transparent);
-  color: var(--info, blue);
-}
-.cssvars .bga-dark, .cssvars .bga-dark-hover:hover {
-  background-color: color-mix(in srgb, var(--dark, darkgray) 10%, transparent);
-  color: var(--dark, darkgray);
-}
-.cssvars .bga-grey, .cssvars .bga-grey-hover:hover {
-  background-color: color-mix(in srgb, var(--grey, grey) 10%, transparent);
-  color: var(--grey, black);
-}
-.cssvars .bga-danger, .cssvars .cssvars .bga-danger-hover:hover {
-  background-color: color-mix(in srgb, var(--danger, red) 10%, transparent);
-  color: var(--danger, black);
-}
-.cssvars .bga-success, .cssvars .bga-success-hover:hover {
-  background-color: color-mix(in srgb, var(--success, green) 10%, transparent);
-  color: var(--success, black);
-}
-.cssvars .bga-warning, .cssvars .bga-warning-hover:hover {
-  background-color: color-mix(in srgb, var(--warning, yellow) 10%, transparent);
-  color: var(--warning, black);
-}
-.cssvars .bga-luxury, .cssvars .bga-luxury-hover:hover {
-  background-color: color-mix(in srgb, var(--luxury, purple) 10%, transparent);
-  color: var(--luxury, black);
-}
 .cssvars .bg-gradient, .cssvars .bg-gradient-hover:hover {
   background: linear-gradient( to right, var(--color-1, black) 0, var(--color-2, black) 100%);
 }
