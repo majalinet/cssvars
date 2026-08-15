@@ -128,7 +128,7 @@ Advanced styling for SVG icons
 Fill, size, and background utilities style inline SVG icons directly — no icon library required, though you're free to use one.
 
 ### Lightweight
-14KB gzipped.
+17KB gzipped.
 
 A single minified stylesheet with every utility, component, and design token included. Covers 99% of websites and apps' needs.
 

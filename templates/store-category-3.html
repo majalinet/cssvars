@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Living Collection — AURA</title>
+<link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css">
+</head>
+<body>
+
+<!-- ============ HEADER ============ -->
+<div class="main-nav p-h-2 shadow-3">
+  <div class="main-menu nav-top-border-hover">
+    <input type="checkbox" id="toggle-c3">
+    <a href="store-home-3.html" class="logo"><span class="h4 bold black m0 text-uppercase">AURA</span></a>
+    <div class="nav-panel">
+      <nav class="nav justify-content-end align-items-center">
+        <a href="store-home-3.html">Home</a>
+        <a href="store-category-3.html" class="bold">Shop</a>
+        <a href="#">About</a>
+        <a href="#" class="icon-box" aria-label="Search"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg></a>
+        <label for="fc3-toggle" class="icon-box" aria-label="Filters" style="cursor:pointer;">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M3,17V19H9V17H3M3,5V7H13V5H3M13,21V19H21V17H13V15H11V21H13M7,9V11H3V13H7V15H9V9H7M21,13V11H11V13H21M15,9H17V7H21V5H17V3H15V9Z"></path></svg>
+        </label>
+        <a href="store-product-3.html" class="icon-box position-relative" aria-label="Cart">
+          <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M17,18C15.89,18 15,18.89 15,20A2,2 0 0,0 17,22A2,2 0 0,0 19,20C19,18.89 18.1,18 17,18M1,2V4H3L6.6,11.59L5.24,14.04C5.09,14.32 5,14.65 5,15A2,2 0 0,0 7,17H19V15H7.42A0.25,0.25 0 0,1 7.17,14.75C7.17,14.7 7.18,14.66 7.2,14.63L8.1,13H15.55C16.3,13 16.96,12.58 17.3,11.97L20.88,5.5C20.95,5.34 21,5.17 21,5A1,1 0 0,0 20,4H5.21L4.27,2M7,18C5.89,18 5,18.89 5,20A2,2 0 0,0 7,22A2,2 0 0,0 9,20C9,18.89 8.1,18 7,18Z"></path></svg>
+          <span class="badge bga-color-1 white position-absolute right-0" style="top:-0.4rem;">1</span>
+        </a>
+      </nav>
+    </div>
+    <label for="toggle-c3" class="toggle-menu">
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path></svg>
+      <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24"><path d="M0 0h24v24H0z" fill="none"></path><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg>
+    </label>
+  </div>
+</div>
+
+<!-- Right-side filter drawer, checkbox toggle, no JS -->
+<input type="checkbox" id="fc3-toggle" class="sidebar-right-toggle-state">
+<aside class="sidebar-right">
+  <div class="sidebar-header d-flex align-items-center justify-content-between">
+    Filter &amp; Sort
+    <label for="fc3-toggle" style="cursor:pointer;">&times;</label>
+  </div>
+  <p class="bold black text-uppercase small m-t-1">Sort By</p>
+  <label><input type="radio" name="c3-sort" checked> Featured</label><br>
+  <label><input type="radio" name="c3-sort"> Price: Low to High</label><br>
+  <label><input type="radio" name="c3-sort"> Price: High to Low</label>
+
+  <p class="bold black text-uppercase small m-t-2">Color</p>
+  <div class="pills">
+    <a href="#" class="pill">Natural</a>
+    <a href="#" class="pill">Charcoal</a>
+    <a href="#" class="pill">Terracotta</a>
+    <a href="#" class="pill">Sage</a>
+  </div>
+
+  <p class="bold black text-uppercase small m-t-2">Price</p>
+  <input type="range" min="0" max="500" value="300" class="w-100">
+
+  <a href="store-category-3.html" class="button w-100 m-t-2">Show Results</a>
+</aside>
+
+<!-- ============ CATEGORY BANNER ============ -->
+<section class="position-relative">
+  <img src="https://picsum.photos/seed/aura-catbanner3/1600/450" alt="Living collection" class="img-responsive" style="width:100%; height:18rem; object-fit:cover;">
+  <div class="position-absolute" style="bottom:1.5rem; left:2rem;">
+    <p class="white text-uppercase small bold m0">Collection</p>
+    <h1 class="white bold m0">Living</h1>
+  </div>
+</section>
+
+<main>
+<div class="container p-v-2">
+
+  <div class="pills m-b-2">
+    <a href="#" class="pill pill-color-1">All Living</a>
+    <a href="#" class="pill">Textiles</a>
+    <a href="#" class="pill">Seating</a>
+    <a href="#" class="pill">Lighting</a>
+    <a href="#" class="pill">Storage</a>
+  </div>
+
+  <!-- ============ MASONRY PRODUCT LAYOUT ============ -->
+  <div class="masonry-container">
+    <div class="masonry-large masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-1/700/900" alt="Rattan Lounge Chair">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Rattan Lounge Chair — $260</a>
+      </div>
+    </div>
+    <div class="masonry-small masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-2/700/500" alt="Wool Floor Cushion">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Wool Floor Cushion — $74</a>
+      </div>
+    </div>
+    <div class="masonry-medium masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-3/700/700" alt="Ceramic Table Lamp">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Ceramic Table Lamp — $88</a>
+      </div>
+    </div>
+    <div class="masonry-small masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-4/700/500" alt="Woven Basket Trio">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Woven Basket Trio — $64</a>
+      </div>
+    </div>
+    <div class="masonry-large masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-5/700/900" alt="Linen Sofa Throw">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Linen Sofa Throw — $54</a>
+      </div>
+    </div>
+    <div class="masonry-medium masonry-gallery-img position-relative">
+      <img src="https://picsum.photos/seed/aura-cat3-6/700/700" alt="Oak Shelving Unit">
+      <div class="bg-white position-absolute p-h-1 p-v--1-2 rounded" style="bottom:1rem; left:1rem;">
+        <a href="store-product-3.html" class="bold black small">Oak Shelving Unit — $340</a>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Product pages" class="row justify-content-center m-t-2">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">&laquo;</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">&raquo;</a></li>
+    </ul>
+  </nav>
+
+</div>
+</main>
+
+<!-- ============ FOOTER ============ -->
+<footer class="border-t border-solid border-color-1 d-block" id="footer">
+  <div class="row container m-v-2">
+    <div class="col-md-6 col-lg-3">
+      <span class="h4 bold black text-uppercase">AURA</span>
+      <p class="dark small m-t-1">Fewer things. Better made.</p>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Shop</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="store-category-3.html">All Products</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Help</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">Shipping &amp; Returns</a></li>
+      </ul>
+    </div>
+    <div class="col-md-6 col-lg-3">
+      <h5 class="h6 m-v--1-2 font-weight-400">Company</h5>
+      <ul class="no-indent-ul">
+        <li class="m-h-1"><a href="#">About</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="row container p-v-1">
+    <div class="col-md-12 center">
+      <p class="small dark m0">&copy; 2026 AURA Goods Co. All rights reserved.</p>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
