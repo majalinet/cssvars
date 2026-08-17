@@ -6,7 +6,8 @@ const blocks = [
         name: "Header",
         items: [
             {
-                title: "Header 1",
+                title: "Header Default",
+                display: "Default",
                 description: "Simple nav, top-border hover, logo left, links right, burger on mobile",
                 code: `
     <div class="main-nav p1">
@@ -38,7 +39,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 2",
+                title: "Header With sub-header",
+                display: "With sub-header",
                 description: "Contact info bar above a bottom-border hover nav",
                 code: `
     <div class="bga-color-1 p-1-2 row justify-content-end">
@@ -83,7 +85,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 3",
+                title: "Header Background",
+                display: "Background",
                 description: "Tinted background bar, background-hover nav links",
                 code: `
     <div class="main-nav p1">
@@ -115,7 +118,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 4",
+                title: "Header Dark",
+                display: "Dark",
                 description: "Dark background nav, white links, top-border hover",
                 code: `
     <div class="main-nav p1 rounded">
@@ -147,7 +151,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 5",
+                title: "Header Shadow",
+                display: "Shadow",
                 description: "Grouped-right layout: logo left, links + persistent Login/Sign Up actions grouped on the right",
                 code: `
     <div class="main-nav p1 rounded">
@@ -184,7 +189,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 6",
+                title: "Header Dropdown",
+                display: "Dropdown",
                 description: "Nav with a dropdown submenu (checkbox toggle, no JS) using the shared .dropdown component",
                 code: `
     <div class="main-nav p1 nav-top-border-hover">
@@ -247,7 +253,8 @@ const blocks = [
     </div>`
             },
             {
-                title: "Header 7",
+                title: "Header Mega Menu",
+                display: "Mega Menu",
                 description: "Nav with a full-width mega menu panel using .nav-mega (its own dedicated component, no JS)",
                 code: `
     <div class="main-nav p1 nav-top-border-hover">
@@ -306,17 +313,155 @@ const blocks = [
         </div>
     </div>`
             },
+            {
+                title: "Header 8",
+                display: "Left on Hero",
+                description: "Nav with a full-width mega menu panel using .nav-mega (its own dedicated component, no JS)",
+                code: `
+<section class="position-relative" style="height:85vh;min-height:34rem;">
+<header class="position-absolute top-0 left-0 w-100" style="z-index:10;">
+  <div class="container">
+    <nav class="main-nav">
+      <div class="main-menu p-v-2">
+        <input type="checkbox" id="nav-toggle-4">
+        <a href="#" class="logo h3 m-b-0 white">Lorem</a>
+        <div class="nav-panel">
+          <nav class="nav">
+            <a href="#menu" class="white">Menu</a>
+            <a href="#about" class="white">Our story</a>
+            <a href="#gallery" class="white">Gallery</a>
+          </nav>
+          <div class="nav-actions">
+            <a href="#reserve" class="button outline-color-white white rounded-0">Reserve a table</a>
+          </div>
+        </div>
+        <label for="nav-toggle-4" class="toggle-menu">
+          <span class="icon-menu-open"><svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M3,6H21V8H3V6M3,11H21V13H3V11M3,16H21V18H3V16Z"></path></svg></span>
+          <span class="icon-menu-close"><svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path></svg></span>
+        </label>
+      </div>
+    </nav>
+  </div>
+</header>
+  <img src="https://picsum.photos/seed/restauranthero1/1600/1000" class="position-absolute top-0 left-0 w-100 h-100" style="object-fit:cover;" alt="Lorem ipsum dining room">
+  <div class="position-absolute top-0 left-0 w-100 h-100 bg-black opacity05"></div>
+  <div class="position-relative h-100 grid-center">
+    <div class="center container">
+      <span class="white small text-uppercase" style="letter-spacing:.2em;">Est. lorem ipsum</span>
+      <h1 class="display-1 white m-v-2">Dolor Sit Amet</h1>
+      <p class="white lead m-b-3" style="opacity:.85;">Consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+      <a href="#reserve" class="button button-lg bg-color-1 white rounded-0">Reserve a table</a>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Header 9",
+                display: "Sticky transparent",
+                description: "Nav with a full-width mega menu panel using .nav-mega (its own dedicated component, no JS)",
+                code: `
+<div class="position-fixed w-100-vw top-0 left-0  shadow-none">
+        <div class="main-nav container">
+            <div class="main-menu rounded-0 ">
+                <input type="checkbox" id="toggle-h5">
+                <a href="index.html" class="logo">
+                    <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+                </a>
+                <div class="nav-panel">
+                    <div class="nav-group">
+                        <nav class="nav nav-top-border-hover">
+                                    <a href="#pages" class="white">pages</a>
+                                    <a href="#portfolio" class="white">portfolio</a>
+                                    <a href="#blog" class="white">blog</a>
+                                    <a href="#shop" class="white">shop</a>
+                                    <a href="#elements" class="white">elements</a>
+                        </nav>
+    
+                    </div>
+                </div>
+                <label for="toggle-h5" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+    <div class="h-100-vh rounded-0 parallax-img p0" style="background-image: url('../img/vika/landing-pages/technology-2.jpg'); ">
+        <div class="container p-v-2">
+            <div class="p-v-4 m-v-4">
+                <h1 class="p0 white center display-1 topmargin">Inspirational &amp;<br> Innovative Technology</h1>
+                <div class="p-v-2 font-weight-200 white center">
+                    <a href="#" class="button button-m text-uppercase font-weight-200 text-uppercase" style="background-color: #ff8a73;">Read
+                        More
+                    </a>
+                    <a href="#" class="button button-m bg-color-1 text-uppercase font-weight-200">Contact
+                        Us</a>
+                </div>
+
+            </div>
+
+        </div>
+    </div>
+                `
+            },
+            {
+                title: "Header 10",
+                display: "Sticky background",
+                description: "Nav with a full-width mega menu panel using .nav-mega (its own dedicated component, no JS)",
+                code: `
+<div class="position-fixed w-100-vw top-0 left-0  shadow-none bg-black">
+        <div class="main-nav container">
+            <div class="main-menu rounded-0 ">
+                <input type="checkbox" id="toggle-h5">
+                <a href="index.html" class="logo">
+                    <img src="https://cssvars.com/wp-content/themes/AgileCSS/images/logo.png" class="h-4rem p-1-2" alt="Logo">
+                </a>
+                <div class="nav-panel">
+                    <div class="nav-group">
+                        <nav class="nav nav-top-border-hover">
+                                    <a href="#pages" class="white">pages</a>
+                                    <a href="#portfolio" class="white">portfolio</a>
+                                    <a href="#blog" class="white">blog</a>
+                                    <a href="#shop" class="white">shop</a>
+                                    <a href="#elements" class="white">elements</a>
+                        </nav>
+    
+                    </div>
+                </div>
+                <label for="toggle-h5" class="toggle-menu">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-open icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M3 18h18v-2H3v2zm0-5h18v-2H3v2zm0-7v2h18V6H3z"></path>
+                    </svg>
+                    <svg xmlns="http://www.w3.org/2000/svg" class="icon-menu-close icon-color-1-fill icon-s" viewBox="0 0 24 24">
+                        <path d="M0 0h24v24H0z" fill="none"></path>
+                        <path d="M19,6.41L17.59,5L12,10.59L6.41,5L5,6.41L10.59,12L5,17.59L6.41,19L12,13.41L17.59,19L19,17.59L13.41,12L19,6.41Z"></path>
+                    </svg>
+                </label>
+            </div>
+        </div>
+    </div>
+                `
+            },
         ]
     },
     {
         name: "Hero",
         items: [
             {
-                title: "Hero 1",
+                title: "Hero Split container",
+                display: "Split container",
                 description: "Description for item 1",
-                code: `<div class="row h-100-vh p2 m-v-auto">
+                code: `<div class="row h-100-vh p2 m-v-auto container">
   <div class="row m-v-auto">
-    <div class="col-md-5 m-v-auto p2">
+    <div class="col-md-6 m-v-auto p2">
       <p class="grey text-uppercase bold">Free 30 days trial</p>
       <h1 class="black  bold">The best way<br> to showcase<br> your project.</h1>
       <p class="dark font-weight-400 m-v-1">Lorem ipsum dolor sit amet, consectetur<br> adipiscing elit, sed do eiusmod tempor<br> incididunt ut labore et dolore magna aliqua.</p>
@@ -325,14 +470,15 @@ const blocks = [
         <a href="#" class="button button-lg color-1 outline-color-1 bg-white">How it works</a>
       </div>
     </div>
-    <div class="col-md-7 m-v-auto">
+    <div class="col-md-6 m-v-auto">
         <img src="../img/blocks/technology.jpg" class="img-responsive rounded">
     </div>
   </div>
 </div>`
             },
             {
-                title: "Hero 2",
+                title: "Hero Column",
+                display: "Column",
                 description: "Description for item 2",
                 code: `<div class="row h-75-vh">
   <div class="m-auto">
@@ -351,7 +497,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 3",
+                title: "Hero Split wide",
+                display: "Split wide",
                 description: "Description for item 3",
                 code: `<div class="row h-100-vh p2 m-v-auto">
   <div class="row m-v-auto">
@@ -371,7 +518,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 4",
+                title: "Hero Split download",
+                display: "Split download",
                 description: "Description for item 4",
                 code: `<div class="p3 h-75-vh m-v-2">
   <div class="row">
@@ -388,53 +536,53 @@ const blocks = [
         </div>
       </div>
       <div class="row m-v-2">
-                      <div class="col-3 p-1-8">
-                          <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
-                              <div class="row">
-                                  <div class=" col-3 p-1-4">
-                                      <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
-                                          <path  d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path>
-                                      </svg>
-                                  </div>
-                                  <div class="col-9 p-1-4">
-                                      <div class="black p0 small">Get it on</div>
-                                      <div class="p0 m0"><span class="p bold black">Google</span> <span class="dark p">Play</span></div>
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
-                      <div class="col-3 p-1-8">
-                          <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
-                              <div class="row">
-                                  <div class=" col-3 p-1-4">
-                                      <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
-                                          <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path>
-                                      </svg>
-                                  </div>
-                                  <div class="col-9 p-1-4">
-                                      <div class="black p0 small">Download on</div>
-                                      <div class="p0 m0"><span class="p bold black">App Store</span></div>
-                                  </div>
-                              </div>
-                            </div>
-                      </div>
+            <div class="col-4 col-md-12 col-lg-3 p-1-4">
+                <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
+                    <div class="row">
+                        <div class=" col-3 p-1-4">
+                            <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
+                                <path d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z"></path>
+                            </svg>
+                        </div>
+                        <div class="col-9 p-1-4">
+                            <div class="black p0 small">Get it on</div>
+                            <div class="p0 m0"><span class="p bold black">Google</span> <span class="dark p">Play</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 col-md-12 col-lg-3 p-1-4">
+                <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
+                    <div class="row">
+                        <div class=" col-3 p-1-4">
+                            <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
+                                <path d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z"></path>
+                            </svg>
+                        </div>
+                        <div class="col-9 p-1-4">
+                            <div class="black p0 small">Download on</div>
+                            <div class="p0 m0"><span class="p bold black">App Store</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
-                    <div class="col-3 p-1-8">
-                        <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
-                            <div class="row">
-                                <div class=" col-3 p-1-4">
-                                    <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
-                                        <path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z"></path>
-                                    </svg>
-                                </div>
-                                <div class="col-9 p-1-4">
-                                    <div class="black p0 small">Download on</div>
-                                    <div class="p0 m0"><span class="p bold black">Windows</span></div>
-                                </div>
-                            </div>
-                          </div>
+        <div class="col-4 col-md-12 col-lg-3 p-1-4">
+            <div class="bg-light-grey p-1-4 brightness-90-hover rounded">
+                <div class="row">
+                    <div class=" col-3 p-1-4">
+                        <svg viewBox="0 0 24 24" class="icon-s icon-black-fill">
+                            <path d="M3,12V6.75L9,5.43V11.91L3,12M20,3V11.75L10,11.9V5.21L20,3M3,13L9,13.09V19.9L3,18.75V13M20,13.25V22L10,20.09V13.1L20,13.25Z"></path>
+                        </svg>
+                    </div>
+                    <div class="col-9 p-1-4">
+                        <div class="black p0 small">Download on</div>
+                        <div class="p0 m0"><span class="p bold black">Windows</span></div>
+                    </div>
+                </div>
+                </div>
 
-                  </div>
+        </div>
       </div>
     </div>
     <div class="col-md-5 m-v-auto p0 m0">
@@ -444,7 +592,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 5",
+                title: "Hero Image",
+                display: "Image",
                 description: "Description for item 5",
                 code: `<div class="h-100-vh d-flex flex-column justify-content-center bg-light-grey" style="background-image: url('../img/blocks/portfolio-1.jpg'); background-size: cover;">
     <h1 class="center black font-weight-600 display-3">Welcome to our adventure</h1>
@@ -456,7 +605,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 6",
+                title: "Hero Clean",
+                display: "Clean",
                 description: "Description for item 6",
                 code: `<div class="h-75-vh d-flex flex-column justify-content-center shadow-3">
   <div class="container m-t-6">
@@ -467,7 +617,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 7",
+                title: "Hero Split Background",
+                display: "Split Background",
                 description: "Description for item 7",
                 code: `<div class="h-75-vh d-flex flex-column bga-info" style="background-size: cover;">
   <div class="container m-t-4">
@@ -489,7 +640,8 @@ const blocks = [
 </div>`
             },
             {
-                title: "Hero 8",
+                title: "Hero Slides Autoplay",
+                display: "Slides Autoplay",
                 description: "Description for item 8",
                 code: `<!-- Uses carousel-autoplay-linked (see cssvars-carousel-final.css) —
      built for exactly 4 slides, which this block already has. Advances
@@ -547,13 +699,204 @@ const blocks = [
   </div>
 </div>`
             },
+            {
+                title: "Hero 9",
+                display: "Search",
+                description: "Description for Hero 9",
+                code: `
+<div class="h-75-vh d-flex flex-column justify-content-center" style="background-image:linear-gradient(0deg, rgba(0,20,30,.6), rgba(0,20,30,.2)), url('https://picsum.photos/seed/travel-hero/1600/900'); background-size:cover; background-position:center;">
+  <div class="container center">
+    <h1 class="white bold display-2">Explore the world, guided.</h1>
+    <p class="white h6 font-weight-400 m-t-1">Small-group tours to the places worth flying for.</p>
+  </div>
+  <div class="container m-t-2">
+    <div class="row justify-content-center bg-white p1 rounded shadow-4" style="max-width:50rem; margin:0 auto;">
+      <div class="col-md-4 p-1-2"><input type="text" class="form-control" placeholder="Where to?"></div>
+      <div class="col-md-3 p-1-2"><input type="date" class="form-control"></div>
+      <div class="col-md-3 p-1-2"><input type="number" class="form-control" placeholder="Travelers" value="2"></div>
+      <div class="col-md-2 p-1-2"><button class="button w-100 bg-color-1 white">Search</button></div>
+    </div>
+  </div>
+</div>
+                `
+            },
+            {
+                title: "Hero 10",
+                display: "Form",
+                description: "Description for Hero 9",
+                code: `
+<section class="p-v-4">
+  <div class="container row align-items-start">
+    <div class="col-7">
+      <span class="badge bg-color-1 white bold"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M12,3C10.73,3 9.6,3.8 9.18,5H3V7H4.95L2,14C1.53,16 3,17 5.5,17C8,17 9.56,16 9,14L6.05,7H9.17C9.5,7.85 10.15,8.5 11,8.83V20H2V22H22V20H13V8.82C13.85,8.5 14.5,7.85 14.82,7H17.95L15,14C14.53,16 16,17 18.5,17C21,17 22.56,16 22,14L19.05,7H21V5H14.83C14.4,3.8 13.27,3 12,3M12,5A1,1 0 0,1 13,6A1,1 0 0,1 12,7A1,1 0 0,1 11,6A1,1 0 0,1 12,5M5.5,10.25L7,14H4L5.5,10.25M18.5,10.25L20,14H17L18.5,10.25Z"></path></svg>Federal Practice Area</span>
+      <h1 class="h1 bold black m-t-1">Healthcare Fraud Defense</h1>
+      <p class="lead dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+      <div class="row m-t-2">
+        <div class="col-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-s icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg><span class="small dark bold">Free Consultation</span>
+        </div>
+        <div class="col-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-s icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg><span class="small dark bold">24/7 Availability</span>
+        </div>
+        <div class="col-4">
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-s icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg><span class="small dark bold">Nationwide Cases</span>
+        </div>
+      </div>
+    </div>
+    <div class="col-5">
+      <div class="card p2 rounded-1-4 shadow-4 bg-color-1 white">
+        <p class="bold h5 white m-b-1">Request a Confidential Consultation</p>
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Full Name">
+        </div>
+        <div class="form-group">
+          <input type="tel" class="form-control" placeholder="Phone Number">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="3" placeholder="Briefly describe your situation"></textarea>
+        </div>
+        <button type="button" class="button w-100 bg-color-2 black">Submit Confidentially</button>
+        <p class="grey small center m-t-1 m-b-0"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M21,11C21,16.55 17.16,21.74 12,23C6.84,21.74 3,16.55 3,11V5L12,1L21,5V11M12,21C15.75,20 19,15.54 19,11.22V6.3L12,3.18L5,6.3V11.22C5,15.54 8.25,20 12,21M14.8,11V9.5C14.8,8.1 13.4,7 12,7C10.6,7 9.2,8.1 9.2,9.5V11C8.6,11 8,11.6 8,12.2V15.7C8,16.4 8.6,17 9.2,17H14.7C15.4,17 16,16.4 16,15.8V12.3C16,11.6 15.4,11 14.8,11M13.5,11H10.5V9.5C10.5,8.7 11.2,8.2 12,8.2C12.8,8.2 13.5,8.7 13.5,9.5V11Z"></path></svg>All submissions are 100% confidential</p>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Hero 11",
+                display: "Rotate",
+                description: "Description for Hero 9",
+                code: `
+<section class="container p-v-1 position-relative overflow-hidden">
+  <span class="badge bg-color-2 white p-h-1 p-v--1-4 m-b-2 rotate--10">Velit Elit Ipsum</span>
+  <h1 class="display-4 m-b-2">Excepteur Magna Et Labore Sed</h1>
+  <p class="lead grey m-b-3" style="max-width:36rem">Adipiscing eu excepteur deserunt duis consectetur in laboris dolor.</p>
+  <div class="d-flex gap-1 flex-wrap">
+    <a href="#contact" class="button button-lg rounded bg-color-2">Start a project <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></a>
+    <a href="#work" class="button button-lg rounded color-1 outline-color-1 bg-white">See our work</a>
+  </div>
+  <div class="row m-t-4 gap-default">
+    <div class="col-md-4">
+      <img src="https://picsum.photos/seed/cat-hero1/500/400" class="img-responsive rounded-1-4 shadow-2 rotate--10" alt="Aute Incididunt">
+    </div>
+    <div class="col-md-4">
+      <img src="https://picsum.photos/seed/cat-hero2/500/560" class="img-responsive rounded-1-4 shadow-3" alt="Nulla Esse">
+    </div>
+    <div class="col-md-4">
+      <img src="https://picsum.photos/seed/cat-hero3/500/400" class="img-responsive rounded-1-4 shadow-2 rotate-10" alt="Fugiat Duis">
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Hero 12",
+                display: "Bold",
+                description: "Description for Hero 9",
+                code: `
+<section class="p-v-4">
+  <div class="container center">
+    <p class="overline letter-spacing-2 color-1">Digital Product Studio</p>
+    <h1 class="display-2">We design software people enjoy using.</h1>
+    <p class="lead grey w-66 w-100-max m-h-auto">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Hero 13",
+                display: "Chips",
+                description: "Description for Hero 9",
+                code: `
+<section class="p-v-4 center">
+  <div class="container">
+    <span class="chip chip-color-1 bold">Selected Work</span>
+    <h1 class="h1 bold black m-t-1">Stories, brands, and products we've helped build</h1>
+    <p class="lead dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+    <div class="m-t-2">
+      <span class="chip">All</span>
+      <span class="chip">Branding</span>
+      <span class="chip">Web</span>
+      <span class="chip">Product</span>
+      <span class="chip">Campaigns</span>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Hero 14",
+                display: "Card image",
+                description: "Description for Hero 9",
+                code: `
+<div class="h-50-vh d-flex align-items-center" style="background-image: url('../img/blocks/work-1.jpg'); background-size: cover; background-position: center;">
+  <div class="container">
+    <div class="col-10 col-md-7 bg-white p2 rounded shadow-3">
+      <span class="badge bg-dark white">Retail</span>
+      <h1 class="black bold m-t-1">Store Manager — Flagship</h1>
+      <p class="dark h6 m-t-1">San Francisco, CA · Full-time · $70k – $85k + bonus</p>
+      <a href="#apply" class="button bg-color-1 white m-t-1">Apply for this role</a>
+    </div>
+  </div>
+</div>
+                `
+            },
+            {
+                title: "Hero 15",
+                display: "Profile",
+                description: "Description for Hero 9",
+                code: `
+<section class="row h-75-vh">
+  <div class="m-auto">
+    <div class="p1 m-auto center">
+      <img src="../img/blocks/worker-1-s.jpg" class="circle icon-lg shadow-3" alt="Kim Majali">
+    </div>
+    <div class="m-v-auto center">
+      <p class="color-1 text-uppercase bold small m0">Author Profile</p>
+      <h1 class="black bold h2">Kim Doe</h1>
+      <p class="dark font-weight-400 m-v-1">Frontend Architect &amp; Creator of CSS Vars Framework<br>
+        Building single-stylesheet, zero-JavaScript UI systems since 2014.</p>
+      <div class="m-v-1">
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="-7 0 32 32" class="icon-xs icon-black-fill">
+              <path d="M16.844 9.156l-6.375 7.875 6.938 8.563h-2.906l-5.469-6.781-5.5 6.781h-2.906l6.969-8.563-6.375-7.875h2.906l4.906 6.063 4.875-6.063h2.938z"></path>
+            </svg>
+          </i>
+        </a>
+      </div>
+      <div>
+        <a href="#articles" class="button button-lg" target="_blank">Follow</a>
+        <a href="#" class="button button-lg color-1 outline-color-1 bg-white">View Articles</a>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
         name: "Breadcrumb",
         items: [
             {
-                title: "Breadcrumb 1",
+                title: "Breadcrumb Clean",
+                display: "Clean",
                 description: "Description for Breadcrumb 1",
                 code: `
 <nav aria-label="breadcrumb">
@@ -567,6 +910,7 @@ const blocks = [
             },
             {
                 title: "Breadcrumb 2",
+                display: "Shadow",
                 description: "Description for Breadcrumb 2",
                 code: `
 <nav aria-label="breadcrumb">
@@ -580,6 +924,7 @@ const blocks = [
             },
             {
                 title: "Breadcrumb 3",
+                display: "Background color",
                 description: "Description for Breadcrumb 3",
                 code: `
 <nav aria-label="breadcrumb">
@@ -593,6 +938,7 @@ const blocks = [
             },
             {
                 title: "Breadcrumb 4",
+                display: "Outlined",
                 description: "Description for Breadcrumb 4",
                 code: `
 <nav aria-label="breadcrumb">
@@ -611,12 +957,13 @@ const blocks = [
         items: [
             {
                 title: "Content 1",
+                display: "3 cols images",
                 description: "Description for Content 1",
                 code: `
 <div class="row" id="about">
   <div class="topmargin container p-v-1">
     <h4 class="black bold center text-uppercase">About CSS Vars</h4>
-    <p class="dark center display-6 font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil illo
+    <p class="dark center font-thin">Lorem ipsum dolor sit amet consectetur adipisicing elit. Enim nihil illo
       omnis,<br> Enim nihil illo omnis libero voluptatibus.</p>
     <hr class="width-short center w-50">
   </div>
@@ -666,70 +1013,53 @@ const blocks = [
             },
             {
                 title: "Content 2",
+                display: "3cols icons",
                 description: "Description for Content 2",
                 code: `
-  <div class="row m-v-10" id="services">
-    <div class="topmargin container">
-      <h4 class="black bold center text-uppercase topmargin">SERVICES</h4>
-      <p class="dark center display-6">Our main AI and development services.
-      </p>
-      <hr class="width-short center w-50">
-    </div>
-    <div class="row justify-content-center container m-v-1">
-      <div class="col-md-4 p1">
-        <div class="black">
-          <div class="d-flex justify-content-center">
-            <i class="icon-box circle bg-black">
-              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
-                <path d="M12,2A7,7 0 0,1 19,9C19,11.38 17.81,13.47 16,14.74V17A1,1 0 0,1 15,18H9A1,1 0 0,1 8,17V14.74C6.19,13.47 5,11.38 5,9A7,7 0 0,1 12,2M9,21V20H15V21A1,1 0 0,1 14,22H10A1,1 0 0,1 9,21M12,4A5,5 0 0,0 7,9C7,11.05 8.23,12.81 10,13.58V16H14V13.58C15.77,12.81 17,11.05 17,9A5,5 0 0,0 12,4Z"></path>
-              </svg>
-            </i>
-          </div>
-          <h5 class="center m-v-1 text-uppercase black bold h6">AIaaS</h5>
-          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Recusandae ad ipsam.</p>
+  <section id="services" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <h2 class="display-6 bold center">What we do</h2>
+    <div class="row gap-2 m-t-3">
+      <div class="col-md-3">
+        <div class="panel h-100 center">
+          <svg viewBox="0 0 24 24" class="icon-ml icon-color-1-fill m-h-auto"><path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12A10,10 0 0,0 12,2M11,7V13L16.2,16.1L17,14.8L12.5,12.2V7H11Z"></path></svg>
+          <p class="bold h5 m-t-1">Brand strategy</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
-      <div class="col-md-4 p1">
-        <div class="black">
-          <div class="d-flex justify-content-center">
-            <i class="icon-box circle bg-black">
-              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
-                <path d="M6,4H18V5H21V7H18V9H21V11H18V13H21V15H18V17H21V19H18V20H6V19H3V17H6V15H3V13H6V11H3V9H6V7H3V5H6V4M11,15V18H12V15H11M13,15V18H14V15H13M15,15V18H16V15H15Z"></path>
-              </svg>
-            </i>
-          </div>
-          <p class="center m-v-1 text-uppercase black bold h6">AI Development</p>
-          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Recusandae ad ipsam.</p>
+      <div class="col-md-3">
+        <div class="panel h-100 center">
+          <svg viewBox="0 0 24 24" class="icon-ml icon-color-1-fill m-h-auto"><path d="M12,3C7.79,3.14 4.16,6.06 3.16,10.16C2.16,14.27 4.06,18.54 7.84,20.5C8,15.71 10.5,11.4 14.4,8.8C11.2,11.75 9.29,15.83 9.1,20.14C13.16,20.67 17.13,18.19 18.5,14.14C20.16,9.29 17.66,4 12,3Z"></path></svg>
+          <p class="bold h5 m-t-1">Identity design</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
-      <div class="col-md-4 p1">
-        <div class=" black">
-          <div class="d-flex justify-content-center">
-            <i class="icon-box circle bg-black">
-              <svg class="icon-m m1 icon-white-fill" viewBox="0 0 24 24">
-                <path d="M20.45 17.39L12.36 21.97V18.4L17.4 15.63L20.45 17.39M21 16.89V7.31L18.04 9V15.18L21 16.89M3.55 17.39L11.64 21.96V18.4L6.6 15.63L3.55 17.39M3 16.89V7.31L5.96 9V15.18L3 16.89M3.35 6.69L11.64 2V5.45L6.33 8.37L6.28 8.39L3.35 6.69M20.65 6.69L12.36 2V5.45L17.67 8.38L17.71 8.4L20.65 6.69M11.64 17.59L6.67 14.85V9.44L11.64 12.31V17.59M12.36 17.59L17.33 14.86V9.44L12.36 12.31V17.59M7 8.81L12 6.06L17 8.81L12 11.69L7 8.81Z"></path>
-                <path d="M0 0h24v24H0z" fill="none"></path>
-              </svg>
-            </i>
-          </div>
-          <h5 class="center m-v-1 text-uppercase black bold h6">Web Development</h5>
-          <p class="center m0 p0 dark font-weight-400">Lorem ipsum dolor sit amet consectetur adipisicing elit.
-            Recusandae ad ipsam.</p>
+      <div class="col-md-3">
+        <div class="panel h-100 center">
+          <svg viewBox="0 0 24 24" class="icon-ml icon-color-1-fill m-h-auto"><path d="M6,2C4.89,2 4,2.89 4,4V20C4,21.11 4.89,22 6,22H18C19.11,22 20,21.11 20,20V8L14,2H6M13,3.5L18.5,9H13V3.5Z"></path></svg>
+          <p class="bold h5 m-t-1">Web design</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur.</p>
+        </div>
+      </div>
+      <div class="col-md-3">
+        <div class="panel h-100 center">
+          <svg viewBox="0 0 24 24" class="icon-ml icon-color-1-fill m-h-auto"><path d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"></path></svg>
+          <p class="bold h5 m-t-1">Growth campaigns</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur.</p>
         </div>
       </div>
     </div>
-
-</div>
+  </div>
+</section>
 `
             },
             {
                 title: "Content 3",
+                display: "2cols text",
                 description: "Description for Content 3",
                 code: `
 <div class=" bg-light-grey">
-  <div class="container row p-v-3">
+  <div class="container row p-v-4">
     <div class="col-md-6 p-h-3">
       <h3 class="left black"><strong>Who</strong> We Are</h3>
       <hr class="m0 width-short m-v-2">
@@ -764,58 +1094,67 @@ const blocks = [
             },
             {
                 title: "Content 4",
+                display: "Tabs",
                 description: "Description for Content 4",
                 code: `
-<div class="container m-t-6">
-  <h1 class="black bold display-3 center">We help and solve your<br> business problem</h1>
-  <div class="row container justify-content-center m-t-2">
-    <div class="col-md-4">
-      <div class=" black  center p2">
-        <i class="icon-box bga-color-2 circle">
-          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
-            <path
-              d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z">
-            </path>
-          </svg>
-        </i>
-        <h4 class="center black bold  h5">Fast Service</h4>
-        <p class="dark font-weight-400">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl
-          condimentum id venenatis.</p>
+<section id="paths" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <h2 class="display-6 bold center">Explore a learning path</h2>
+    <p class="dark center m-t--1-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+    <div class="tabs tabs-boxed m-t-3">
+      <input type="radio" name="path" id="path1" checked="">
+      <label for="path1">Product Design</label>
+      <div class="tab">
+        <div class="row align-items-center gap-2">
+          <div class="col-md-6">
+            <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <ul class="no-indent-ul stack gap-1">
+              <li>UX Foundations</li>
+              <li>Interaction Design</li>
+              <li>Design Systems</li>
+            </ul>
+          </div>
+          <div class="col-md-6"><img src="https://picsum.photos/seed/learnloop-path-design/700/450" class="img-responsive rounded" alt="Design learning path"></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class=" black  center p2">
-        <i class="icon-box bga-color-2 circle">
-          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
-            <path d="M5,9V21H1V9H5M9,21A2,2 0 0,1 7,19V9C7,8.45 7.22,7.95 7.59,7.59L14.17,1L15.23,2.06C15.5,2.33 15.67,2.7 15.67,3.11L15.64,3.43L14.69,8H21C22.11,8 23,8.9 23,10V12C23,12.26 22.95,12.5 22.86,12.73L19.84,19.78C19.54,20.5 18.83,21 18,21H9M9,19H18.03L21,12V10H12.21L13.34,4.68L9,9.03V19Z"></path>
-          </svg>
-        </i>
-        <h4 class="center black bold h5">Great Support</h4>
-        <p class="dark font-weight-400">Suspendisse sed nisi lacus sed. Tincidunt vitae semper quis lectus.Mi quis
-          hendrerit dolor magna eget. </p>
+      <input type="radio" name="path" id="path2">
+      <label for="path2">Data Analytics</label>
+      <div class="tab">
+        <div class="row align-items-center gap-2">
+          <div class="col-md-6">
+            <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <ul class="no-indent-ul stack gap-1">
+              <li>SQL for Analysts</li>
+              <li>Data Visualization</li>
+              <li>Statistics Basics</li>
+            </ul>
+          </div>
+          <div class="col-md-6"><img src="https://picsum.photos/seed/learnloop-path-data/700/450" class="img-responsive rounded" alt="Data learning path"></div>
+        </div>
       </div>
-    </div>
-    <div class="col-md-4">
-      <div class=" black center  p2">
-        <i class="icon-box bga-color-2 circle">
-          <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml p1">
-            <path d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3M10,5.47L14,6.87V18.53L10,17.13V5.47M5,6.46L8,5.45V17.15L5,18.31V6.46M19,17.54L16,18.55V6.86L19,5.7V17.54Z"></path>
-          </svg>
-        </i>
-        <h4 class="center black bold h5">Use it anywhere</h4>
-        <p class="dark font-weight-400">Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus
-          pretium quam vulputate. </p>
+      <input type="radio" name="path" id="path3">
+      <label for="path3">Full-Stack Dev</label>
+      <div class="tab">
+        <div class="row align-items-center gap-2">
+          <div class="col-md-6">
+            <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+            <ul class="no-indent-ul stack gap-1">
+              <li>React from Scratch</li>
+              <li>APIs &amp; Databases</li>
+              <li>Deployment &amp; DevOps</li>
+            </ul>
+          </div>
+          <div class="col-md-6"><img src="https://picsum.photos/seed/learnloop-path-dev/700/450" class="img-responsive rounded" alt="Development learning path"></div>
+        </div>
       </div>
     </div>
   </div>
-  <div class="center">
-    <button class="bg-color-2 white p-h-2">READ MORE</button>
-  </div>
-</div>
+</section>
 `
             },
             {
                 title: "Content 5",
+                display: "Parallax",
                 description: "Description for Content 5",
                 code: `
 <section class="parallax-img m-t-4 h-100-vh m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
@@ -832,6 +1171,7 @@ const blocks = [
             },
             {
                 title: "Content 6",
+                display: "Split row",
                 description: "Description for Content 6",
                 code: `
 <section class="row m-h-3">
@@ -894,6 +1234,7 @@ const blocks = [
             },
             {
                 title: "Content 7",
+                display: "Split col",
                 description: "Description for Content 7",
                 code: `
 <section class="container p-v-3">
@@ -967,6 +1308,7 @@ const blocks = [
             },
             {
                 title: "Content 8",
+                display: "Row overlay",
                 description: "Description for Content 8",
                 code: `
 <section class="row container">
@@ -1016,6 +1358,7 @@ const blocks = [
             },
             {
                 title: "Content 9",
+                display: "Row outline",
                 description: "Description for Content 9",
                 code: `
 <section class="container m-t-6">
@@ -1093,13 +1436,177 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Content 10",
+                display: "Split Bento",
+                description: "Description for Content 10",
+                code: `
+<section class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-6">
+                <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Welcome</p>
+                <h2 class="display-3 heading-font m-b-2">A quiet luxury above the coastline</h2>
+                <p class="grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
+                <div class="row gap-2">
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">48</p>
+                        <p class="small grey">Suites &amp; Villas</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">12</p>
+                        <p class="small grey">Years of Service</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="display-4 heading-font color-1">4.9</p>
+                        <p class="small grey">Guest Rating</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6">
+                <div class="bento gap-1">
+                    <div class="bento-item bento-2x2 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-1/700/700" class="img-responsive w-100 h-100" alt="Suite">
+                    </div>
+                    <div class="bento-item bento-2x1 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-2/700/320" class="img-responsive w-100 h-100 p0 m0" alt="Pool">
+                    </div>
+                    <div class="bento-item bento-2x1 rounded p0">
+                        <img src="https://picsum.photos/seed/aurelia-3/700/320" class="img-responsive w-100 h-100" alt="Spa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "Content 11",
+                display: "Bento",
+                description: "Description for Content 10",
+                code: `
+<section id="features" class="p-v-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 center">
+        <h2 class="display-5 bold">Everything an analytics stack should be</h2>
+        <p class="lead dark m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+    </div>
+
+    <div class="bento m-t-3">
+      <div class="bento-2x2 bento-item bg-dark">
+        <svg viewBox="0 0 24 24" class="icon-ml icon-white-fill"><path d="M16,11.78L20.24,4.45L21.97,5.45L16.74,14.5L10.23,10.75L5.46,19H22V21H2V3H4V17.54L9.5,8L16,11.78Z"></path></svg>
+        <h3 class="h3 bold white m-t-2">Live dashboards</h3>
+        <p class="white m-t--1-2">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+      <div class="bento-2x1 bento-item">
+        <svg viewBox="0 0 24 24" class="icon-m icon-color-2-fill"><path d="M12,3C7.79,3.14 4.16,6.06 3.16,10.16C2.16,14.27 4.06,18.54 7.84,20.5C8,15.71 10.5,11.4 14.4,8.8C11.2,11.75 9.29,15.83 9.1,20.14C13.16,20.67 17.13,18.19 18.5,14.14C20.16,9.29 17.66,4 12,3Z"></path></svg>
+        <h4 class="h4 bold m-t-1">AI-generated forecasts</h4>
+        <p class="dark m-t--1-2">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+      </div>
+      <div class="bento-1x1 bento-item bg-light-grey">
+        <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path></svg>
+        <h4 class="h5 bold m-t-1">SOC 2 secure</h4>
+      </div>
+      <div class="bento-1x1 bento-item bg-light-grey">
+        <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><path d="M6,2C4.89,2 4,2.89 4,4V20C4,21.11 4.89,22 6,22H18C19.11,22 20,21.11 20,20V8L14,2H6M13,3.5L18.5,9H13V3.5Z"></path></svg>
+        <h4 class="h5 bold m-t-1">200+ integrations</h4>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Content 12",
+                display: "Split accordion",
+                description: "Description for Content 10",
+                code: `
+<section id="studio" class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-12 col-md-5">
+                <img src="https://picsum.photos/seed/marrow-studio/700/850" class="img-responsive rounded shadow-2">
+            </div>
+            <div class="col-12 col-md-6">
+                <h2 class="display-4">Our Process</h2>
+                <p class="grey m-b-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+                <div class="accordion accordion-closable accordion-underline">
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc1">
+                        <label for="proc1" class="accordion-label row justify-content-between align-items-center">Discovery &amp; Site Analysis <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc2">
+                        <label for="proc2" class="accordion-label row justify-content-between align-items-center">Concept &amp; Massing <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc3">
+                        <label for="proc3" class="accordion-label row justify-content-between align-items-center">Documentation <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc4">
+                        <label for="proc4" class="accordion-label row justify-content-between align-items-center">Build Oversight <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "Content 13",
+                display: "Split accordion card",
+                description: "Description for Content 10",
+                code: `
+<section id="practice" class="bg-light-grey p-v-4">
+  <div class="container">
+    <p class="color-1 bold text-uppercase letter-spacing-1 small center m-b-1">Practice areas</p>
+    <h2 class="center black bold">How we can help.</h2>
+    <div class="row m-t-3">
+      <div class="col-md-6 p2">
+        <div class="accordion">
+          <div class="accordion-block">
+            <input type="radio" name="lawfaq" id="lawfaq1" checked="">
+            <label for="lawfaq1" class="accordion-label bg-white border-default"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,3L2,9V11H4V20H10V14H14V20H20V11H22V9L12,3M12,5.28L18,9H6L12,5.28M6,11H8V18H6V11M11,11H13V18H11V11M16,11H18V18H16V11Z"></path></svg> Business &amp; Corporate Law</label>
+            <div class="accordion-content dark">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="lawfaq" id="lawfaq2">
+            <label for="lawfaq2" class="accordion-label bg-white border-default"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,5.5A3.5,3.5 0 0,1 15.5,9A3.5,3.5 0 0,1 12,12.5A3.5,3.5 0 0,1 8.5,9A3.5,3.5 0 0,1 12,5.5M5,8C5.56,8 6.08,8.15 6.53,8.42C6.38,9.85 6.8,11.27 7.66,12.38C7.16,13.34 6.16,14 5,14A3,3 0 0,1 2,11A3,3 0 0,1 5,8M19,8A3,3 0 0,1 22,11A3,3 0 0,1 19,14C17.84,14 16.84,13.34 16.34,12.38C17.2,11.27 17.62,9.85 17.47,8.42C17.92,8.15 18.44,8 19,8M5.5,18.25C5.5,16.18 8.41,14.5 12,14.5C15.59,14.5 18.5,16.18 18.5,18.25V20H5.5V18.25M0,20V18.5C0,17.11 1.89,15.94 4.45,15.6C3.86,16.28 3.5,17.22 3.5,18.25V20H0M24,20H20.5V18.25C20.5,17.22 20.14,16.28 19.55,15.6C22.11,15.94 24,17.11 24,18.5V20H20.5Z"></path></svg> Family &amp; Divorce</label>
+            <div class="accordion-content dark">Ut enim ad minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea.</div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="lawfaq" id="lawfaq3">
+            <label for="lawfaq3" class="accordion-label bg-white border-default"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M10,2H14A2,2 0 0,1 16,4V6H20A2,2 0 0,1 22,8V19A2,2 0 0,1 20,21H4A2,2 0 0,1 2,19V8A2,2 0 0,1 4,6H8V4A2,2 0 0,1 10,2M14,6V4H10V6H14Z"></path></svg> Employment Disputes</label>
+            <div class="accordion-content dark">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat.</div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="lawfaq" id="lawfaq4">
+            <label for="lawfaq4" class="accordion-label bg-white border-default"><svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,3A1,1 0 0,1 13,4V5H18.5C18.8,5 19,5.3 18.9,5.6L16.9,10.6C16.8,10.9 16.5,11 16.2,10.9L13,9.8V19H16A1,1 0 0,1 17,20A1,1 0 0,1 16,21H8A1,1 0 0,1 7,20A1,1 0 0,1 8,19H11V9.8L7.8,10.9C7.5,11 7.2,10.9 7.1,10.6L5.1,5.6C5,5.3 5.2,5 5.5,5H11V4A1,1 0 0,1 12,3Z"></path></svg> Civil Litigation</label>
+            <div class="accordion-content dark">Excepteur sint occaecat cupidatat non proident sunt in culpa qui officia deserunt mollit.</div>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 p2">
+        <img src="https://picsum.photos/seed/gravitas-practice/700/560" class="img-responsive rounded" alt="Lorem ipsum">
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
         {
         name: "List",
         items: [
-                {
+            {
                 title: "List 1",
+                display: "Images",
                 description: "Description for list 1",
                 code: `
 <section class="p-v-4 container">
@@ -1126,8 +1633,59 @@ const blocks = [
 </section>
 `
             },
-                {
+            {
                 title: "List 2",
+                display: "icons text",
+                description: "Description for feature 3",
+                code: `
+<section class="container m-v-4 p-v-4">
+  <h4 class="dark m-t-4 center font-weight-600">Trusted by teams at the world's best companies</h4>
+  <div class="m-h-7">
+    <div class="row  m-t-4">
+      <div class="col-md-3 center">
+        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
+          class="icon-dark-fill  icon-sm" viewBox="0 0 16 16">
+          <path
+            d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z">
+          </path>
+        </svg>
+        <h4 class="dark m-t-05">Windows</h4>
+      </div>
+      <div class="col-md-3 center">
+
+        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
+          <path fill="color-1"
+            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Google play</h4>
+      </div>
+      <div class="col-md-3 center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="icon-dark-fill  icon-sm" viewBox="0 0 24 24">
+          <path
+            d="M6.5,2H10.5L13.44,10.83L13.5,2H17.5V22C16.25,21.78 14.87,21.64 13.41,21.58L10.5,13L10.43,21.59C9.03,21.65 7.7,21.79 6.5,22V2Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Netflix</h4>
+      </div>
+      <div class="col-md-3 center">
+        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
+          <path fill="color-1"
+            d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z">
+          </path>
+        </svg>
+        <h4 class="dark font-weight-400 m-t-05">Apple</h4>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+`
+            },
+                {
+                title: "List 3",
+                display: "3cols text",
                 description: "Description for list 2",
                 code: `
 <section class="container p-v-4">
@@ -1172,7 +1730,8 @@ const blocks = [
 `
             },
                 {
-                title: "List 3",
+                title: "List 4",
+                display: "Lead 2cols",
                 description: "Description for list 3",
                 code: `
 <section class="row p-v-4  bg-dark">
@@ -1208,7 +1767,8 @@ const blocks = [
 `
             },
                 {
-                title: "List 4",
+                title: "List 5",
+                display: "3cols icons text",
                 description: "Description for list 4",
                 code: `
 <section class="container-fluid m-p-4 h-100-vh bg-light-grey center d-flex flex-column justify-content-center">
@@ -1303,7 +1863,8 @@ const blocks = [
 `
             },
                 {
-                title: "List 5",
+                title: "List 6",
+                display: "Split image",
                 description: "Description for list 5",
                 code: `
 <section class="row container m-v-4">
@@ -1372,6 +1933,108 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "List 7",
+                display: "2cols dark",
+                description: "Description for list 1",
+                code: `
+<section id="menu" class="p-v-4 bg-color-1">
+        <div class="container">
+            <p class="color-1 light-grey letter-spacing-2 text-uppercase small m-b-1 center">Menu</p>
+            <h2 class="display-3 heading-font white center m-b-4">Tonight's Selection</h2>
+            <div class="row gap-3">
+                <div class="col-6">
+                    <p class="bold larger color-1 border-b p-b-1 m-b-2 light-grey">Starters</p>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Charred Octopus</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$19</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Wood-Roasted Beets</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$14</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Smoked Burrata</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$16</p>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <p class="bold larger color-1 border-b p-b-1 m-b-2 light-grey">Mains</p>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Oak-Grilled Ribeye</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$48</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Ember Roast Chicken</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$32</p>
+                    </div>
+                    <div class="between-row m-b-2">
+                        <div>
+                            <p class="bold m-b-0 warning">Charcoal Salmon</p>
+                            <p class="small grey">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed</p>
+                        </div>
+                        <p class="color-1 bold m-b-0 warning">$36</p>
+                    </div>
+                </div>
+            </div>
+            <div class="center m-t-3">
+                <a href="#" class="button border-a-color-1 color-1">View Full Menu &amp; Wine List</a>
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "List 8",
+                display: "Breif cards",
+                description: "Description for list 1",
+                code: `
+                <div class="row container m-v-2 gap-2">
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M7,15H9C9,16.08 10.37,17 12,17C13.63,17 15,16.08 15,15C15,13.9 13.96,13.5 11.76,12.97C9.64,12.44 7,11.78 7,9C7,7.21 8.47,5.69 10.5,5.18V3H13.5V5.18C15.53,5.69 17,7.21 17,9H15C15,7.92 13.63,7 12,7C10.37,7 9,7.92 9,9C9,10.1 10.04,10.5 12.24,11.03C14.36,11.56 17,12.22 17,15C17,16.79 15.53,18.31 13.5,18.82V21H10.5V18.82C8.47,18.31 7,16.79 7,15Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Money Back Guarantee</p>
+                <p class="grey m0 small">100% moneyback guarantee on all orders</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M18.72,14.76C19.07,13.91 19.26,13 19.26,12C19.26,11.28 19.15,10.59 18.96,9.95C18.31,10.1 17.63,10.18 16.92,10.18C13.86,10.18 11.15,8.67 9.5,6.34C8.61,8.5 6.91,10.26 4.77,11.22C4.73,11.47 4.73,11.74 4.73,12A7.27,7.27 0 0,0 12,19.27C13.05,19.27 14.06,19.04 14.97,18.63C15.54,19.72 15.8,20.26 15.78,20.26C14.14,20.81 12.87,21.08 12,21.08C9.58,21.08 7.27,20.13 5.57,18.42C4.53,17.38 3.76,16.11 3.33,14.73H2V10.18H3.09C3.93,6.04 7.6,2.92 12,2.92C14.4,2.92 16.71,3.87 18.42,5.58C19.69,6.84 20.54,8.45 20.89,10.18H22V14.67H22V14.69L22,14.73H21.94L18.38,18L13.08,17.4V15.73H17.91L18.72,14.76M9.27,11.77C9.57,11.77 9.86,11.89 10.07,12.11C10.28,12.32 10.4,12.61 10.4,12.91C10.4,13.21 10.28,13.5 10.07,13.71C9.86,13.92 9.57,14.04 9.27,14.04C8.64,14.04 8.13,13.54 8.13,12.91C8.13,12.28 8.64,11.77 9.27,11.77M14.72,11.77C15.35,11.77 15.85,12.28 15.85,12.91C15.85,13.54 15.35,14.04 14.72,14.04C14.09,14.04 13.58,13.54 13.58,12.91A1.14,1.14 0 0,1 14.72,11.77Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Online Support 24/7</p>
+                <p class="grey m0 small">Need assistance with our products</p>
+            </a>
+        </div>
+        <div class="col-md-4">
+            <a href="#" class="card card-hover center d-block">
+                <svg viewBox="0 0 24 24" class="icon-m icon-color-1-fill d-inline">
+                    <path d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z"></path>
+                </svg>
+                <p class="bold m-v-1 dark">Free Shipping &amp; Returns</p>
+                <p class="grey m0 small">Free shipping on all orders over $99</p>
+            </a>
+        </div>
+    </div>
+`
+            },
         ]
     },
     {
@@ -1379,57 +2042,82 @@ const blocks = [
         items: [
             {
                 title: "Feature 1",
+                display: "3cols icons",
                 description: "Description for feature 1",
                 code: `
-<section class="row container justify-content-center">
-  <div class="col-md-4">
-    <div class=" black  center p2">
-      <svg viewBox="0 0 24 24" class="icon-success-fill icon-ml">
-        <path
-          d="M12,16A3,3 0 0,1 9,13C9,11.88 9.61,10.9 10.5,10.39L20.21,4.77L14.68,14.35C14.18,15.33 13.17,16 12,16M12,3C13.81,3 15.5,3.5 16.97,4.32L14.87,5.53C14,5.19 13,5 12,5A8,8 0 0,0 4,13C4,15.21 4.89,17.21 6.34,18.65H6.35C6.74,19.04 6.74,19.67 6.35,20.06C5.96,20.45 5.32,20.45 4.93,20.07V20.07C3.12,18.26 2,15.76 2,13A10,10 0 0,1 12,3M22,13C22,15.76 20.88,18.26 19.07,20.07V20.07C18.68,20.45 18.05,20.45 17.66,20.06C17.27,19.67 17.27,19.04 17.66,18.65V18.65C19.11,17.2 20,15.21 20,13C20,12 19.81,11 19.46,10.1L20.67,8C21.5,9.5 22,11.18 22,13Z">
-        </path>
-      </svg>
-      <h4 class="center black bold  h5">Fast Service</h4>
-
-      <p class="dark font-weight-400">Euismod in pellentesque massa placerat. Aliquet lectus proin nibh nisl condimentum
-        id venenatis.</p>
+<section class="p-v-4">
+  <div class="container">
+    <h2 class="display-6 bold center">Why book with Wanderly</h2>
+    <div class="row gap-2 m-t-3">
+      <div class="col-md-4">
+        <div class="center">
+          <svg viewBox="0 0 24 24" class="icon-lg icon-color-1-fill"><path d="M9.5,3A6.5,6.5 0 0,1 16,9.5C16,11.11 15.41,12.59 14.44,13.73L14.71,14H15.5L20.5,19L19,20.5L14,15.5V14.71L13.73,14.44C12.59,15.41 11.11,16 9.5,16A6.5,6.5 0 0,1 3,9.5A6.5,6.5 0 0,1 9.5,3M9.5,5C7,5 5,7 5,9.5C5,12 7,14 9.5,14C12,14 14,12 14,9.5C14,7 12,5 9.5,5Z"></path></svg>
+          <p class="bold h5 m-t--1-2">Best price guarantee</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="center">
+          <svg viewBox="0 0 24 24" class="icon-lg icon-color-1-fill"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M10,17L6,13L7.41,11.59L10,14.17L16.59,7.58L18,9L10,17Z"></path></svg>
+          <p class="bold h5 m-t--1-2">Free cancellation</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="center">
+          <svg viewBox="0 0 24 24" class="icon-lg icon-color-1-fill"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg>
+          <p class="bold h5 m-t--1-2">24/7 trip support</p>
+          <p class="dark small">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        </div>
+      </div>
     </div>
   </div>
-
-  <div class="col-md-4">
-    <div class=" black  center p2">
-      <svg viewBox="0 0 24 24" class="icon-info-fill icon-ml">
-        <path fill="color-1"
-          d="M5,9V21H1V9H5M9,21A2,2 0 0,1 7,19V9C7,8.45 7.22,7.95 7.59,7.59L14.17,1L15.23,2.06C15.5,2.33 15.67,2.7 15.67,3.11L15.64,3.43L14.69,8H21C22.11,8 23,8.9 23,10V12C23,12.26 22.95,12.5 22.86,12.73L19.84,19.78C19.54,20.5 18.83,21 18,21H9M9,19H18.03L21,12V10H12.21L13.34,4.68L9,9.03V19Z">
-        </path>
-      </svg>
-      <h4 class="center black bold h5">Great Support</h4>
-
-      <p class="dark font-weight-400">Suspendisse sed nisi lacus sed. Tincidunt vitae semper quis lectus.Mi quis
-        hendrerit dolor magna eget. </p>
-    </div>
-  </div>
-
-
-  <div class="col-md-4">
-    <div class=" black center  p2">
-      <svg viewBox="0 0 24 24" class="icon-color-2-fill icon-ml">
-        <path fill="color-1"
-          d="M20.5,3L20.34,3.03L15,5.1L9,3L3.36,4.9C3.15,4.97 3,5.15 3,5.38V20.5A0.5,0.5 0 0,0 3.5,21L3.66,20.97L9,18.9L15,21L20.64,19.1C20.85,19.03 21,18.85 21,18.62V3.5A0.5,0.5 0 0,0 20.5,3M10,5.47L14,6.87V18.53L10,17.13V5.47M5,6.46L8,5.45V17.15L5,18.31V6.46M19,17.54L16,18.55V6.86L19,5.7V17.54Z">
-        </path>
-      </svg>
-      <h4 class="center black bold h5">Use it anywhere</h4>
-
-      <p class="dark font-weight-400">Pellentesque adipiscing commodo elit at imperdiet dui accumsan sit. Risus pretium
-        quam vulputate. </p>
-    </div>
-  </div>
-
 </section>
 `
             },
             {
                 title: "Feature 2",
+                display: "4cols cards",
+                description: "4cols cards",
+                code: `
+<section id="services" class="container p-v-4">
+        <div class="center m-b-3">
+            <p class="color-1 bold letter-spacing-2 text-uppercase small m-b-1">Services</p>
+            <h2 class="display-6 heading-font">Comprehensive family care</h2>
+            <p class="grey m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+        <div class="grid-cols-4 d-grid gap-2">
+            <div class="panel p1 card-hover">
+                <span class="icon-box bg-light-grey circle" style="display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M6 2V8C6 10.2 7.8 12 10 12C12.2 12 14 10.2 14 8V2H12V8C12 9.1 11.1 10 10 10C8.9 10 8 9.1 8 8V2H6ZM10 12V16C10 18.2 11.8 20 14 20C16.2 20 18 18.2 18 16V14.8C19.2 14.4 20 13.3 20 12C20 10.3 18.7 9 17 9C15.3 9 14 10.3 14 12H16C16 11.4 16.4 11 17 11C17.6 11 18 11.4 18 12C18 12.6 17.6 13 17 13H16V16C16 17.1 15.1 18 14 18C12.9 18 12 17.1 12 16V12H10Z"></path></svg></span>
+                <p class="bold larger m-t-1 m-b-1">Primary Care</p>
+                <p class="small grey m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i...</p>
+                <a href="#" class="btn-link color-1 small bold">Learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+            <div class="panel p1 card-hover">
+                <span class="icon-box bg-light-grey circle" style="display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M12 21C12 21 3 15 3 9C3 6 5.5 4 8 4C9.7 4 11.2 4.9 12 6.3C12.8 4.9 14.3 4 16 4C18.5 4 21 6 21 9C21 15 12 21 12 21Z"></path></svg></span>
+                <p class="bold larger m-t-1 m-b-1">Cardiology</p>
+                <p class="small grey m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i...</p>
+                <a href="#" class="btn-link color-1 small bold">Learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+            <div class="panel p1 card-hover">
+                <span class="icon-box bg-light-grey circle" style="display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M17 2C10 2 4 8 4 15C4 18 6 20 9 20C16 20 22 14 22 7C22 5 21 3 19 3C13 3 8 8 8 13C8 12 12 6 17 2Z"></path></svg></span>
+                <p class="bold larger m-t-1 m-b-1">Pediatrics</p>
+                <p class="small grey m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i...</p>
+                <a href="#" class="btn-link color-1 small bold">Learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+            <div class="panel p1 card-hover">
+                <span class="icon-box bg-light-grey circle" style="display:inline-flex;"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M4 20V10H8V20H4ZM10 20V4H14V20H10ZM16 20V13H20V20H16Z"></path></svg></span>
+                <p class="bold larger m-t-1 m-b-1">Diagnostics</p>
+                <p class="small grey m-b-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor i...</p>
+                <a href="#" class="btn-link color-1 small bold">Learn more <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M13 5L20 12L13 19L11.6 17.6L16.2 13H4V11H16.2L11.6 6.4Z"></path></svg></a>
+            </div>
+        </div>
+    </section>
+                `
+            },            
+            {
+                title: "Feature 3",
+                display: "3cols icons background",
                 description: "Description for feature 2",
                 code: `
 <section class="h-25  m-t-6 d-flex flex-column bg-light-grey">
@@ -1469,56 +2157,8 @@ const blocks = [
 `
             },
             {
-                title: "Feature 3",
-                description: "Description for feature 3",
-                code: `
-<section class="container m-v-4 p-v-4">
-  <h4 class="dark m-t-4 center font-weight-600">Trusted by teams at the world's best companies</h4>
-  <div class="m-h-7">
-    <div class="row  m-t-4">
-      <div class="col-md-3 center">
-        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor"
-          class="icon-dark-fill  icon-sm" viewBox="0 0 16 16">
-          <path
-            d="M7.462 0H0v7.19h7.462V0zM16 0H8.538v7.19H16V0zM7.462 8.211H0V16h7.462V8.211zm8.538 0H8.538V16H16V8.211z">
-          </path>
-        </svg>
-        <h4 class="dark m-t-05">Windows</h4>
-      </div>
-      <div class="col-md-3 center">
-
-        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
-          <path fill="color-1"
-            d="M3,20.5V3.5C3,2.91 3.34,2.39 3.84,2.15L13.69,12L3.84,21.85C3.34,21.6 3,21.09 3,20.5M16.81,15.12L6.05,21.34L14.54,12.85L16.81,15.12M20.16,10.81C20.5,11.08 20.75,11.5 20.75,12C20.75,12.5 20.53,12.9 20.18,13.18L17.89,14.5L15.39,12L17.89,9.5L20.16,10.81M6.05,2.66L16.81,8.88L14.54,11.15L6.05,2.66Z">
-          </path>
-        </svg>
-        <h4 class="dark font-weight-400 m-t-05">Google play</h4>
-      </div>
-      <div class="col-md-3 center">
-        <svg xmlns="http://www.w3.org/2000/svg" class="icon-dark-fill  icon-sm" viewBox="0 0 24 24">
-          <path
-            d="M6.5,2H10.5L13.44,10.83L13.5,2H17.5V22C16.25,21.78 14.87,21.64 13.41,21.58L10.5,13L10.43,21.59C9.03,21.65 7.7,21.79 6.5,22V2Z">
-          </path>
-        </svg>
-        <h4 class="dark font-weight-400 m-t-05">Netflix</h4>
-      </div>
-      <div class="col-md-3 center">
-        <svg viewBox="0 0 24 24" class="icon-dark-fill  icon-sm">
-          <path fill="color-1"
-            d="M18.71,19.5C17.88,20.74 17,21.95 15.66,21.97C14.32,22 13.89,21.18 12.37,21.18C10.84,21.18 10.37,21.95 9.1,22C7.79,22.05 6.8,20.68 5.96,19.47C4.25,17 2.94,12.45 4.7,9.39C5.57,7.87 7.13,6.91 8.82,6.88C10.1,6.86 11.32,7.75 12.11,7.75C12.89,7.75 14.37,6.68 15.92,6.84C16.57,6.87 18.39,7.1 19.56,8.82C19.47,8.88 17.39,10.1 17.41,12.63C17.44,15.65 20.06,16.66 20.09,16.67C20.06,16.74 19.67,18.11 18.71,19.5M13,3.5C13.73,2.67 14.94,2.04 15.94,2C16.07,3.17 15.6,4.35 14.9,5.19C14.21,6.04 13.07,6.7 11.95,6.61C11.8,5.46 12.36,4.26 13,3.5Z">
-          </path>
-        </svg>
-        <h4 class="dark font-weight-400 m-t-05">Apple</h4>
-      </div>
-
-    </div>
-  </div>
-
-</section>
-`
-            },
-            {
                 title: "Feature 4",
+                display: "4cols big icons",
                 description: "Description for feature 4",
                 code: `
 <div class="row  m-t-6 justify-content-center">
@@ -1567,6 +2207,7 @@ const blocks = [
             },
             {
                 title: "Feature 5",
+                display: "Split image",
                 description: "Description for feature 5",
                 code: `
 <section class="">
@@ -1602,6 +2243,122 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Feature 6",
+                display: "Split image container",
+                description: "Description for feature 1",
+                code: `
+<section class="">
+  <div class="container row align-items-center p-v-3">
+    <div class="col-6">
+      <div class="aspect-video rounded overflow-hidden shadow-2" style="background-image:url('https://picsum.photos/seed/forge-cnc/700/460');background-size:cover;background-position:center;"></div>
+    </div>
+    <div class="col-6 p-l-4">
+      <span class="color-1 bold small text-uppercase letter-spacing-1">Capability 01</span>
+      <h2 class="h3 bold black m-t-1">Five-axis CNC milling</h2>
+      <p class="dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+    </div>
+  </div>
+  <div class="container row align-items-center flex-row-reverse p-v-3">
+  <div class="col-6">
+  <div class="aspect-video rounded overflow-hidden shadow-2" style="background-image:url('https://picsum.photos/seed/forge-tool/700/460');background-size:cover;background-position:center;"></div>
+  </div>
+  <div class="col-6 p-r-4">
+  <span class="color-1 bold small text-uppercase letter-spacing-1">Capability 02</span>
+  <h2 class="h3 bold black m-t-1">In-house tooling &amp; fixturing</h2>
+  <p class="dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+  </div>
+  </div>
+  </section>
+                `
+            },
+            {
+                title: "Feature 7",
+                display: "Split row",
+                description: "Description for feature 1",
+                code: `
+<section id="services" class="p-v-4">
+  <div class="container">
+    <div class="row gap-4">
+      <div class="col-12 col-lg-4">
+        <p class="color-2 letter-spacing-1 text-uppercase small">Elit sed</p>
+        <h2 class="display-6 m-t-1">Sed do eiusmod tempor incididunt</h2>
+        <p class="grey m-t-1">Do eiusmod tempor incididunt ut labore et dolore magna aliqua ut enim ad minim veniam quis nostrud exercitation ullamco laboris.</p>
+      </div>
+      <div class="col-12 col-lg-8">
+        <div class="row gap-2">
+
+          <div class="col-12 col-md-6">
+            <div class="card card-hover transition h-100-min">
+              <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v20M5 5l-3 7a3 3 0 0 0 6 0zM19 5l-3 7a3 3 0 0 0 6 0zM4 21h16M2 5h20M5 5l7-3 7 3"></path></svg>
+              <h3 class="h4 m-t-1">Eiusmod tempor incididunt</h3>
+              <p class="grey smaller">Qui officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur.</p>
+              <a href="#" class="cluster gap-1 color-1 bold small">Minim veniam <svg class="icon icon-xxs icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"></path></svg></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card card-hover transition h-100-min">
+              <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="7" width="19" height="13" rx="1.5"></rect><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M2.5 12h19"></path></svg>
+              <h3 class="h4 m-t-1">Tempor incididunt ut</h3>
+              <p class="grey smaller">Officia deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing.</p>
+              <a href="#" class="cluster gap-1 color-1 bold small">Veniam quis <svg class="icon icon-xxs icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"></path></svg></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card card-hover transition h-100-min">
+              <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2 4 5v6c0 5.5 3.4 9.7 8 11 4.6-1.3 8-5.5 8-11V5z"></path><path d="m9 12 2 2 4-4"></path></svg>
+              <h3 class="h4 m-t-1">Incididunt ut labore</h3>
+              <p class="grey smaller">Deserunt mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit.</p>
+              <a href="#" class="cluster gap-1 color-1 bold small">Quis nostrud <svg class="icon icon-xxs icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"></path></svg></a>
+            </div>
+          </div>
+          <div class="col-12 col-md-6">
+            <div class="card card-hover transition h-100-min">
+              <svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 12.5-8 8a2.1 2.1 0 0 1-3-3l8-8m3 3 5.5-5.5a2.1 2.1 0 0 0-3-3L11.5 9.5m3 3-3-3m-7 12h9M17 3l4 4M12 8l4 4"></path></svg>
+              <h3 class="h4 m-t-1">Ut labore et</h3>
+              <p class="grey smaller">Mollit anim id est laborum lorem ipsum dolor sit amet consectetur adipiscing elit sed.</p>
+              <a href="#" class="cluster gap-1 color-1 bold small">Nostrud exercitation <svg class="icon icon-xxs icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 12h16M13 5l7 7-7 7"></path></svg></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Feature 8",
+                display: "Text col",
+                description: "Description for feature 1",
+                code: `
+<section id="services" class="bg-light-grey p-v-4">
+        <div class="container">
+            <h2 class="display-4 m-b-3">What We Do</h2>
+            <div class="row border-b p-v-2 align-items-center">
+                <div class="col-1"><p class="display-5 grey m-b-0">01</p></div>
+                <div class="col-7"><p class="display-6 bold m-b-0">Residential Architecture</p></div>
+                <div class="col-4"><p class="grey small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt </p></div>
+            </div>
+            <div class="row border-b p-v-2 align-items-center">
+                <div class="col-1"><p class="display-5 grey m-b-0">02</p></div>
+                <div class="col-7"><p class="display-6 bold m-b-0">Interior Design</p></div>
+                <div class="col-4"><p class="grey small m-b-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea c</p></div>
+            </div>
+            <div class="row border-b p-v-2 align-items-center">
+                <div class="col-1"><p class="display-5 grey m-b-0">03</p></div>
+                <div class="col-7"><p class="display-6 bold m-b-0">Landscape &amp; Site Planning</p></div>
+                <div class="col-4"><p class="grey small m-b-0">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nul</p></div>
+            </div>
+            <div class="row border-b p-v-2 align-items-center">
+                <div class="col-1"><p class="display-5 grey m-b-0">04</p></div>
+                <div class="col-7"><p class="display-6 bold m-b-0">Adaptive Reuse</p></div>
+                <div class="col-4"><p class="grey small m-b-0">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit </p></div>
+            </div>
+        </div>
+    </section>
+                `
+            },
         ]
     },
     {
@@ -1609,6 +2366,7 @@ const blocks = [
         items: [
                 {
                 title: "Steps 1",
+                display: "Split image CTA",
                 description: "Description for steps 1",
                 code: `
 <section class="container bg-white rounded m-t-6">
@@ -1640,6 +2398,7 @@ const blocks = [
             },
                 {
                 title: "Steps 2",
+                display: "Split image full",
                 description: "Description for steps 2",
                 code: `
 <section class="container m-t-6">
@@ -1654,21 +2413,81 @@ const blocks = [
         ultrices tincidunt arcu non<br> sodales neque sodales ut etiam.</p>
 
       <div class="row align-items-center m-b-1">
-        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">1</div>
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-5 bold">1</div>
         <p class="m-l-1 h6 dark">Risus feugiat in ante.</p>
       </div>
       <div class="row align-items-center m-b-1">
-        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">2</div>
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-5 bold">2</div>
         <p class="m-l-1 h6 dark">Lectus magna fringilla urna.</p>
       </div>
       <div class="row align-items-center m-b-1">
-        <div class="icon-m rounded m-l-3 bg-color-2 white center display-3 bold">3</div>
+        <div class="icon-m rounded m-l-3 bg-color-2 white center display-5 bold">3</div>
         <p class="m-l-1 h6 dark">Leo vel orci porta non pulvinar</p>
       </div>
     </div>
   </div>
 </section>
 `
+            },
+              {
+                title: "Steps 3",
+                display: "Vertical",
+                description: "Description for steps 1",
+                code: `
+<div class="container">
+    <p class="color-1 bold text-uppercase letter-spacing-1 small center m-b-1">Process</p>
+    <h2 class="center black bold">From idea to production.</h2>
+    <ul class="stepper m-t-4">
+      <li class="stepper-step is-complete">
+        <div class="stepper-circle">1</div>
+        <span class="stepper-label">Discovery</span>
+      </li>
+      <li class="stepper-step is-complete">
+        <div class="stepper-circle">2</div>
+        <span class="stepper-label">Design</span>
+      </li>
+      <li class="stepper-step is-active">
+        <div class="stepper-circle">3</div>
+        <span class="stepper-label">Build</span>
+      </li>
+      <li class="stepper-step">
+        <div class="stepper-circle">4</div>
+        <span class="stepper-label">QA &amp; Test</span>
+      </li>
+      <li class="stepper-step">
+        <div class="stepper-circle">5</div>
+        <span class="stepper-label">Launch</span>
+      </li>
+    </ul>
+  </div>
+                `
+            },
+              {
+                title: "Steps 4",
+                display: "Vertical Numbers",
+                description: "Description for steps 1",
+                code: `
+<section class="container m-v-4">
+  <h2 class="black center bold">How It Works</h2>
+  <div class="row m-t-2 justify-content-center">
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">1</div>
+      <p class="black bold m-t-1">Choose a tour</p>
+      <p class="dark small">Browse itineraries by region, length, or activity level.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">2</div>
+      <p class="black bold m-t-1">Reserve your spot</p>
+      <p class="dark small">Secure your place with a small deposit.</p>
+    </div>
+    <div class="col-md-3 center p1">
+      <div class="icon-m rounded m-auto bg-color-1 white center display-5 bold">3</div>
+      <p class="black bold m-t-1">Pack your bags</p>
+      <p class="dark small">We handle logistics — you just show up ready.</p>
+    </div>
+  </div>
+</section>
+                `
             },
         ]
     },
@@ -1677,6 +2496,7 @@ const blocks = [
         items: [
             {
                 title: "Statistics 1",
+                display: "Parallax",
                 description: "Description for Statistics 1",
                 code: `
 <section class="parallax-img h-50 m-v-2 opacity1" style="background-image: url('../img/blocks/design-8.jpg');">
@@ -1734,6 +2554,7 @@ const blocks = [
             },
             {
                 title: "Statistics 2",
+                display: "Background",
                 description: "Description for Statistics 2",
                 code: `
 <section class="row  m-t-6 justify-content-center">
@@ -1770,6 +2591,7 @@ const blocks = [
             },
             {
                 title: "Statistics 3",
+                display: "Parallax outline",
                 description: "Description for Statistics 3",
                 code: `
 <section class="parallax-img" style="background-image: url('../img/blocks/design-8.jpg'); min-height: 400px;">
@@ -1805,6 +2627,7 @@ const blocks = [
             },
             {
                 title: "Statistics 4",
+                display: "Gradient background",
                 description: "Description for Statistics 4",
                 code: `
 <section class="h-25 d-flex  m-t-6 flex-column bg-gradient-black">
@@ -1849,6 +2672,307 @@ const blocks = [
 </section>
 `
             },
+            {
+              title: "Statistics 5",
+              display: "Clean",
+              description: "Description for Statistics 1",
+              code: `
+<section class="container p-v-3">
+  <div class="row gap-2 text-capitalize" style="text-align:center">
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">99.98%</span>
+      <span class="grey">Platform uptime</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">4.2B</span>
+      <span class="grey">Events processed daily</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">180+</span>
+      <span class="grey">Native connectors</span>
+    </div>
+    <div class="col-md-3 stack" style="align-items:center">
+      <span class="display-5 bold color-1">6 min</span>
+      <span class="grey">Average setup time</span>
+    </div>
+  </div>
+</section>
+              `
+            },
+            {
+              title: "Statistics 6",
+              display: "Porgrees bar",
+              description: "Description for Statistics 1",
+              code: `
+<section class="p-v-4 bg-black">
+  <div class="container">
+    <div class="row align-items-center gap-3">
+      <div class="col-md-6">
+        <img src="https://picsum.photos/seed/fitforge-tracking/900/700" class="img-responsive rounded" alt="Progress tracking screen">
+      </div>
+      <div class="col-md-6">
+        <h2 class="display-5 bold white">Track everything that matters</h2>
+        <p class="grey m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <div class="m-t-2">
+          <p class="white small between-row m0"><span>Weekly volume</span><span>82%</span></p>
+          <progress value="82" max="100" class="w-100 h-1rem border-solid"></progress>
+        </div>
+        <div class="m-t-1">
+          <p class="white small between-row m0"><span>Recovery score</span><span>91%</span></p>
+          <progress value="91" max="100" class="w-100 h-1rem border-solid"></progress>
+        </div>
+        <div class="m-t-1">
+          <p class="white small between-row m0"><span>Consistency streak</span><span>65%</span></p>
+          <progress value="65" max="100" class="w-100 h-1rem border-solid"></progress>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+              `
+            },
+            {
+                title: "Statistics 7",
+                display: "Statistic cards",
+                description: "Description for list 1",
+                code: `
+<div class="row">
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Total Revenue</p>
+            <div class="circle bga-success p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-success-fill">
+                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">$48,200</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 12.4% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Active Users</p>
+            <div class="circle bga-info p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-info-fill">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">8,942</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 4.1% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Avg. Session</p>
+            <div class="circle bga-warning p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-warning-fill">
+                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">4m 12s</h2>
+          <p class="small danger bold m-t-1 m-b-0">▼ 1.8% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+
+      <div class="col-md-3 p1">
+        <div class="card card-hover shadow-3">
+          <div class="d-flex justify-content-between align-items-start">
+            <p class="small grey text-uppercase font-weight-600 m-b-0">Satisfaction</p>
+            <div class="circle bga-luxury p-1 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-xs icon-luxury-fill">
+                <path d="M19,1L17.74,3.75L15,5L17.74,6.26L19,9L20.25,6.26L23,5L20.25,3.75M9,4L6.5,9.5L1,12L6.5,14.5L9,20L11.5,14.5L17,12L11.5,9.5M19,15L17.74,17.74L15,19L17.74,20.25L19,23L20.25,20.25L23,19L20.25,17.74"></path>
+              </svg>
+            </div>
+          </div>
+          <h2 class="bold m-t-1 m-b-0">96.2%</h2>
+          <p class="small success bold m-t-1 m-b-0">▲ 0.6% <span class="grey font-weight-400">vs last month</span></p>
+        </div>
+      </div>
+    </div>
+                `
+            },
+            {
+                title: "Statistics 8",
+                display: "Statistic cards big",
+                description: "Description for list 1",
+                code: `
+<div class="row">
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-color-1 m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill">
+            <path d="M16,6L18.29,8.29L13.41,13.17L9.41,9.17L2,16.59L3.41,18L9.41,12L13.41,16L19.71,9.71L22,12V6H16Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">128K</p>
+        <p class="dark text-uppercase small">Monthly Visitors</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-success m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-success-fill">
+            <path d="M11.8,10.9C9.53,10.31 8.8,9.7 8.8,8.75C8.8,7.66 9.81,6.9 11.5,6.9C13.28,6.9 13.94,7.75 14,9H16.21C16.14,7.28 15.09,5.7 13,5.19V3H10V5.16C8.06,5.58 6.5,6.84 6.5,8.77C6.5,11.08 8.41,12.23 11.2,12.9C13.7,13.5 14.2,14.38 14.2,15.31C14.2,16 13.71,17.1 11.5,17.1C9.44,17.1 8.63,16.18 8.5,15H6.32C6.44,17.19 8.08,18.42 10,18.83V21H13V18.85C14.95,18.5 16.5,17.35 16.5,15.3C16.5,12.46 14.07,11.5 11.8,10.9Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">$54.2K</p>
+        <p class="dark text-uppercase small">Monthly Revenue</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-info m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-info-fill">
+            <path d="M16,17V19H2V17S2,13 9,13 16,17 16,17M12.5,7.5A3.5,3.5 0 0,0 9,4A3.5,3.5 0 0,0 5.5,7.5A3.5,3.5 0 0,0 9,11A3.5,3.5 0 0,0 12.5,7.5M15.94,13A5.32,5.32 0 0,1 18,17V19H22V17S22,13.37 15.94,13M13,4A3.39,3.39 0 0,0 12.07,4.1A5.5,5.5 0 0,1 12.07,10.9A3.39,3.39 0 0,0 13,11A3.5,3.5 0 0,0 13,4Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">3,481</p>
+        <p class="dark text-uppercase small">Active Users</p>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card center">
+        <i class="icon-box circle bga-warning m0">
+          <svg viewBox="0 0 24 24" class="icon-s icon-warning-fill">
+            <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22A10,10 0 0,1 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+          </svg>
+        </i>
+        <p class="display-4 black bold m-v-05">99.98%</p>
+        <p class="dark text-uppercase small">Uptime</p>
+      </div>
+    </div>
+  </div>
+                `
+            },
+            {
+                title: "Statistics 9",
+                display: "Progress cards",
+                description: "Description for list 1",
+                code: `
+<section class="m-b-4">
+    <div class="row">
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Storage Used</p>
+            <span class="pill pill-info">62%</span>
+          </div>
+          <progress value="62" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">31 GB of 50 GB used</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Sprint Progress</p>
+            <span class="pill pill-success">84%</span>
+          </div>
+          <progress value="84" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">21 of 25 tasks completed</p>
+        </div>
+      </div>
+
+      <div class="col-md-4 p1">
+        <div class="card shadow-3">
+          <div class="d-flex justify-content-between align-items-center m-b-1">
+            <p class="bold m-b-0">Budget Spent</p>
+            <span class="pill pill-danger">93%</span>
+          </div>
+          <progress value="93" max="100" class="w-100"></progress>
+          <p class="small grey m-t-1 m-b-0">$9,300 of $10,000 spent</p>
+        </div>
+      </div>
+    </div>
+  </section>
+                `
+            },
+            {
+                title: "Statistics 10",
+                display: "Metric cards",
+                description: "Description for list 1",
+                code: `
+<section class="m-b-4">
+    <div class="row">
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-color-1 p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M9,5V9H21V5M9,19H21V15H9M9,14H21V10H9M4,9H8V5H4M4,19H8V15H4M4,14H8V10H4V14Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">New Orders</p>
+              <h3 class="bold m-t-0 m-b-0">1,284</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">+18%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-danger p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Support Tickets</p>
+              <h3 class="bold m-t-0 m-b-0">37</h3>
+            </div>
+          </div>
+          <span class="pill pill-danger">+6%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-success p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Team Growth</p>
+              <h3 class="bold m-t-0 m-b-0">+12</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">+9%</span>
+        </div>
+      </div>
+
+      <div class="col-md-6 p1">
+        <div class="card shadow-3 d-flex align-items-center justify-content-between">
+          <div class="d-flex align-items-center">
+            <div class="circle bg-info p-2 d-inline-flex align-items-center justify-content-center">
+              <svg viewBox="0 0 24 24" class="icon-s icon-white-fill">
+                <path d="M19,1L17.74,3.75L15,5L17.74,6.26L19,9L20.25,6.26L23,5L20.25,3.75M9,4L6.5,9.5L1,12L6.5,14.5L9,20L11.5,14.5L17,12L11.5,9.5M19,15L17.74,17.74L15,19L17.74,20.25L19,23L20.25,20.25L23,19L20.25,17.74"></path>
+              </svg>
+            </div>
+            <div class="p-l-2">
+              <p class="small grey text-uppercase font-weight-600 m-b-0">Uptime</p>
+              <h3 class="bold m-t-0 m-b-0">99.98%</h3>
+            </div>
+          </div>
+          <span class="pill pill-success">stable</span>
+        </div>
+      </div>
+    </div>
+  </section>
+                `
+            },
         ]
     },    
     {
@@ -1856,6 +2980,7 @@ const blocks = [
         items: [
             {
                 title: "Gallery 1",
+                display: "Masonry",
                 description: "Description for Gallery 1",
                 code: `
 <section class="container m-v-4">
@@ -1927,6 +3052,7 @@ const blocks = [
             },
             {
                 title: "Gallery 2",
+                display: "Flex",
                 description: "Description for Gallery 2",
                 code: `
 <section class="container m-v-4">
@@ -1992,6 +3118,7 @@ const blocks = [
             },
             {
                 title: "Gallery 3",
+                display: "Light Box",
                 description: "Description for Gallery 3",
                 code: `
 <section class=" m-v-4">
@@ -2054,6 +3181,7 @@ const blocks = [
             },
             {
                 title: "Gallery 4",
+                display: "Gallery Box",
                 description: "Description for Gallery 4",
                 code: `
 <section class=" m-v-4">
@@ -2081,6 +3209,36 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Grid",
+                display: "Gallery Box",
+                description: "Description for Gallery 4",
+                code: `
+<section id="work" class="container p-v-4">
+  <h2 class="center display-6 m-b-3">Recent work</h2>
+  <div class="d-grid grid-cols-3 gap-2">
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p1/500/500" class="img-responsive aspect-square" alt="Project one" style="object-fit:cover">
+    </div>
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p2/500/500" class="img-responsive aspect-square" alt="Project two" style="object-fit:cover">
+    </div>
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p3/500/500" class="img-responsive aspect-square" alt="Project three" style="object-fit:cover">
+    </div>
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p4/500/500" class="img-responsive aspect-square" alt="Project four" style="object-fit:cover">
+    </div>
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p5/500/500" class="img-responsive aspect-square" alt="Project five" style="object-fit:cover">
+    </div>
+    <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
+      <img src="https://picsum.photos/seed/aster-p6/500/500" class="img-responsive aspect-square" alt="Project six" style="object-fit:cover">
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },    
     {
@@ -2088,6 +3246,7 @@ const blocks = [
         items: [
             {
                 title: "Video 1",
+                display: "Split",
                 description: "Description for Video 1",
                 code: `
 <section class="row container m-t-6">
@@ -2103,6 +3262,50 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Video 2",
+                display: "Parallax",
+                description: "Description for Video 2",
+                code: `
+<div class="parallax-img" style="background-image: url('../img/templates/background.jpg'); height: 600px;">
+        <div class="row">
+            <div class="col-md-6">
+    <h1 class="white bold left p-t-2 m-l-3">A Few Facts About Our<br>  University</h1>
+    <div class="row">
+        <div class="col-md-6">
+    <div class="p-v-1 m-t-2 bga-grey rounded">
+        <h1 class="warning font-weight-600  center">94%</h1>
+        <h4 class="bold white center">Succesed Students</h4>
+        </div>
+        <div class="p-v-1 m-t-1 bga-grey rounded">
+            <h1 class="warning font-weight-600  center">3423</h1>
+            <h4 class="bold white center">New Students</h4>
+        
+            </div> 
+        </div>
+        <div class="col-md-6">
+            <div class="p-v-1 m-t-4 bga-grey rounded">
+                <h1 class="warning font-weight-600  center">126</h1>
+                <h4 class="bold white center">Current Teachers</h4>
+            
+                </div> 
+                <div class="p-v-1 m-t-1 bga-grey rounded">
+                    <h1 class="warning font-weight-600  center">32</h1>
+                    <h4 class="bold white center">Awards</h4>
+                
+                    </div> 
+        </div>
+        </div>
+    </div>
+    <div class="col-md-6 m-t-4">
+        <div class="embed embed-wide-screen rounded">
+            <iframe src="https://www.youtube.com/embed/GtH4z-7ixPI" title="YouTube video player" frameborder="0" class="embed-item" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+        </div>
+    </div>
+    </div>
+    </div>
+                `
+            },
         ]
     },
     {
@@ -2110,10 +3313,11 @@ const blocks = [
         items: [
             {
                 title: "Testimonial 1",
+                display: "Parallax",
                 description: "Description for Testimonial 1",
                 code: `
 <section class="parallax-img h-100-vh m-v-2"
-  style="background-image: url('../img/vika/design-company/background-2.jpg');">
+  style="background-image: url('../img/blocks/background-2.jpg');">
   <div class="p-v-4">
     <div class="row">
       <div class="col-md-5"></div>
@@ -2180,6 +3384,7 @@ const blocks = [
             },
             {
                 title: "Testimonial 2",
+                display: "3cols stars",
                 description: "Description for Testimonial 2",
                 code: `
 <section class="row container m-v-4">
@@ -2242,6 +3447,7 @@ const blocks = [
             },
             {
                 title: "Testimonial 3",
+                display: "2cols stars dark",
                 description: "Description for Testimonial 3",
                 code: `
 <section class="p-v-4 bg-color-1">
@@ -2290,6 +3496,7 @@ const blocks = [
             },
             {
                 title: "Testimonial 4",
+                display: "2cols quotes",
                 description: "Description for Testimonial 4",
                 code: `
 <section class="p-v-4">
@@ -2341,6 +3548,7 @@ const blocks = [
             },
             {
                 title: "Testimonial 5",
+                display: "3cols images",
                 description: "Description for Testimonial 5",
                 code: `
 <section class="m-v-4">
@@ -2381,6 +3589,7 @@ const blocks = [
             },
             {
                 title: "Testimonial 6",
+                display: "3cols quotes avatar",
                 description: "Description for Testimonial 6",
                 code: `
 <section class="container m-t-2">
@@ -2433,6 +3642,63 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Testimonial 7",
+                display: "Single",
+                description: "Description for Testimonial 7",
+                code: `
+<section class="p-v-4 bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8 center">
+        <blockquote class="left">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit. Bright Studio didn't just redesign our brand — they gave it a point of view.
+        </blockquote>
+        <p class="bold m0">Elena Marsh, CMO at Circuit</p>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Testimonial 8",
+                display: "Single starts",
+                description: "Description for Testimonial 8",
+                code: `
+<section class="container p-v-4 center">
+        <div style="max-width:40rem;margin:0 auto;">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-m icon-color-1-fill"><path d="M7 7C4.8 7 3 8.8 3 11C3 13.1 4.6 14.8 6.6 15C6.1 16.5 5 17.6 3.5 18L4 20C7.3 19.3 9.5 16.5 9.5 12.5V11C9.5 8.8 8.5 7 7 7ZM17 7C14.8 7 13 8.8 13 11C13 13.1 14.6 14.8 16.6 15C16.1 16.5 15 17.6 13.5 18L14 20C17.3 19.3 19.5 16.5 19.5 12.5V11C19.5 8.8 18.5 7 17 7Z"></path></svg>
+            <p class="lead m-v-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            <p class="bold">Isabelle Marchetti</p>
+            <p class="grey small">Return guest, 6 stays</p>
+            <div class="warning display-6">
+                ★ ★ ★ ★ ★
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "Testimonial 9",
+                display: "Single Image",
+                description: "Description for Testimonial 8",
+                code: `
+<section class="bg-light-grey p-v-4 m-t-2">
+  <div class="container row align-items-center">
+    <div class="col-4 center">
+      <div class="aspect-square rounded-1-4 overflow-hidden shadow m-h-2" style="background-image:url('https://picsum.photos/seed/iron-client/400/400');background-size:cover;background-position:center;"></div>
+    </div>
+    <div class="col-8 p-l-2">
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-lg icon-color-1-fill"><path d="M14,17H17L19,13V7H13V13H16M6,17H9L11,13V7H5V13H8L6,17Z"></path></svg>
+      <p class="h5 dark italic m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+      <p class="bold black m-t-2 m-b-0">Talia Brooks</p>
+      <p class="dark small">Founder, Basecamp Outfitters</p>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -2440,6 +3706,7 @@ const blocks = [
         items: [
             {
                 title: "FAQ 1",
+                display: "2cols",
                 description: "Description for FAQ 1",
                 code: `
 <section class="container row m-v-2">
@@ -2482,6 +3749,7 @@ const blocks = [
             },
             {
                 title: "FAQ 2",
+                display: "Accordion default",
                 description: "Description for FAQ 2",
                 code: `
 <section class="container m-v-3 p2">
@@ -2497,7 +3765,7 @@ const blocks = [
   <div class="accordion">
     <div class="accordion-block">
       <input type="radio" name="accordionTitle" id="accordionTitle1">
-      <label for="accordionTitle1" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur
+      <label for="accordionTitle1" class="accordion-label">Lorem ipsum dolor sit amet, consectetur
         adipisicing?</label>
       <div class="accordion-content">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -2507,7 +3775,7 @@ const blocks = [
     </div>
     <div class="accordion-block">
       <input type="radio" name="accordionTitle" id="accordionTitle2">
-      <label for="accordionTitle2" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur adipisicing
+      <label for="accordionTitle2" class="accordion-label">Lorem ipsum dolor sit amet, consectetur adipisicing
         elit?</label>
       <div class="accordion-content">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
@@ -2516,7 +3784,7 @@ const blocks = [
     </div>
     <div class="accordion-block">
       <input type="radio" name="accordionTitle" id="accordionTitle3">
-      <label for="accordionTitle3" class="accordion-label bg-black">Lorem ipsum dolor sit amet, consectetur
+      <label for="accordionTitle3" class="accordion-label">Lorem ipsum dolor sit amet, consectetur
         adipisicing?</label>
       <div class="accordion-content">
         Lorem Ipsum is simply dummy text of the printing and typesetting industry.
@@ -2526,6 +3794,75 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "FAQ 3",
+                display: "Vertical tabs",
+                description: "Description for FAQ 2",
+                code: `
+<section id="faq" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <h2 class="display-6 bold center m-b-2">Frequently asked questions</h2>
+    <div class="tabs-vertical">
+      <input type="radio" name="v-tab" id="v-tab1" checked="">
+      <input type="radio" name="v-tab" id="v-tab2">
+      <input type="radio" name="v-tab" id="v-tab3">
+      <div class="tabs-vertical-nav p-r-2">
+        <label for="v-tab1" class="p1">Is Nova a real bank?</label>
+        <label for="v-tab2" class="p1">How fast can I open an account?</label>
+        <label for="v-tab3" class="p1">What happens if my card is lost?</label>
+      </div>
+      <div class="tabs-vertical-content">
+        <p id="v-panel1" class="tab-panel dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+        <p id="v-panel2" class="tab-panel dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore.</p>
+        <p id="v-panel3" class="tab-panel dark">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor incididunt.</p>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "FAQ 4",
+                display: "Outline accordion",
+                description: "Description for FAQ 4",
+                code: `
+<section id="faq" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <h2 class="display-6 bold center m-b-2">Frequently asked questions</h2>
+        <div class="accordion accordion-underline">
+          <div class="accordion-block">
+            <input type="radio" name="faq" id="faq1" checked="">
+            <label for="faq1" class="accordion-label between-row p-v-1">
+              <span class="bold">Do I need a credit card to start?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="faq" id="faq2">
+            <label for="faq2" class="accordion-label between-row p-v-1">
+              <span class="bold">Can I connect my own data warehouse?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+          <div class="accordion-block">
+            <input type="radio" name="faq" id="faq3">
+            <label for="faq3" class="accordion-label between-row p-v-1">
+              <span class="bold">Is my data encrypted?</span>
+              <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg>
+            </label>
+            <div class="accordion-content"><p class="dark m0">Lorem ipsum dolor sit amet consectetur adipisicing elit, sed do eiusmod tempor.</p></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -2533,6 +3870,7 @@ const blocks = [
         items: [
             {
                 title: "CTA 1",
+                display: "1button",
                 description: "Description for CTA 1",
                 code: `
 <section>
@@ -2548,6 +3886,7 @@ const blocks = [
             },
             {
                 title: "CTA 2",
+                display: "2buttons dark",
                 description: "Description for CTA 2",
                 code: `
 <section class="p-v-4">
@@ -2562,6 +3901,59 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "CTA 3",
+                display: "Form dark",
+                description: "Description for CTA 3",
+                code: `
+                <div class=" bg-color-1 p-v-4">
+    <div class="row justify-content-center container">
+      <div class="col-md-7 center">
+        <h2 class="display-5 bold white">Let's build something bright</h2>
+        <p class="grey m-t-1">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+        <form class="m-t-2 stack gap-1">
+          <input type="text" class="form-control form-control-border" placeholder="Your name">
+          <input type="email" class="form-control form-control-border" placeholder="Email address">
+          <textarea class="form-control form-control-border" rows="4" placeholder="Tell us about your project"></textarea>
+          <button type="submit" class="button bg-dark w-100">Send inquiry</button>
+        </form>
+      </div>
+    </div>
+  </div>
+                `
+            },
+            {
+                title: "CTA 4",
+                display: "Search",
+                description: "Description for CTA 3",
+                code: `
+<section id="book" class="container p-b-4">
+        <div class="panel p2 bg-gradient-luxury">
+            <div class="row gap-2 align-items-end">
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Check in</label>
+                    <input type="date" class="form-control w-100">
+                </div>
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Check out</label>
+                    <input type="date" class="form-control w-100">
+                </div>
+                <div class="col-3">
+                    <label class="small bold m-b-1 d-block white">Guests</label>
+                    <select class="form-control w-100">
+                        <option>2 Adults</option>
+                        <option>2 Adults, 1 Child</option>
+                        <option>4 Adults</option>
+                    </select>
+                </div>
+                <div class="col-3">
+                    <button class="button button-w-100 bg-color-1 white">Check Availability</button>
+                </div>
+            </div>
+        </div>
+    </section>
+            `
+            },
         ]
     },
     {
@@ -2569,63 +3961,51 @@ const blocks = [
         items: [
             {
                 title: "Pricing 1",
+                display: "3cols",
                 description: "Description for Pricing 1",
                 code: `
-<section class="m-v-4 center d-flex flex-column justify-content-center">
-  <h2 class="black center text-uppercase">Pricing</h2>
-  <p class="display-6 dark">Pick the right plan</p>
-  <hr class="width-short m-v-1">
-  <div class="row container">
-    <div class="col-md-4 bg-light-grey p-v-1 shadow">
-      <p class="h3 text-uppercase p-v-1 dark">Standard</p>
-      <hr class="width-short">
-      <p><span class="display-1 m-v-1">$9</span> /mo</p>
-      <hr class="width-short m-v-2">
-      <ul class="list-style-none m-v-1 center">
-        <li>Full Access</li>
-        <li>Source Files</li>
-        <li>100 User Accounts</li>
-        <li>1 Year License</li>
-      </ul>
-      <hr class="width-short">
-      <a href="#" class="button w-50 button-lg bg-black">Subscribe</a>
+<section id="pricing" class="p-v-4 bg-light-grey">
+  <div class="container">
+    <div class="center m-b-4">
+      <h2 class="display-5">Lorem ipsum pricing</h2>
+      <p class="grey">Dolor sit amet consectetur adipiscing elit.</p>
     </div>
-    <div class="col-md-4  p-v-1 shadow">
-      <p class="h3 text-uppercase p-v-1">Professional</p>
-      <p class="display-6 dark">Most Popular</p>
-      <hr class="width-short">
-      <p class="color-1"><span class="display-1 m-v-1">$19</span> /mo</p>
-      <hr class="width-short m-v-2">
-      <ul class="list-style-none m-v-1 center">
-        <li>Full Access</li>
-        <li>Source Files</li>
-        <li>200 User Accounts</li>
-        <li>2 Year License</li>
-      </ul>
-      <hr class="width-short">
-      <a href="#" class="button w-50 button-lg">Subscribe</a>
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-4 m-b-2">
+      <div class="card h-100">
+        
+        <h3 class="h5">Starter</h3>
+        <p class="display-6 m-b-2">$19<span class="small grey">/mo</span></p>
+        <ul class="m-b-3" style="list-style:none;padding-left:0;"><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Lorem ipsum dolor</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Sit amet consectetur</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Adipiscing elit sed</span></li></ul>
+        <a href="#" class="button w-100 outline-color-1 color-1 bg-white rounded center">Choose plan</a>
+      </div>
     </div>
-    <div class="col-md-4 bg-light-grey p-v-1 shadow">
-      <p class="h3 text-uppercase p-v-1 dark">Business</p>
-      <hr class="width-short">
-      <p><span class="display-1 m-v-1">$29</span> /mo</p>
-      <hr class="width-short m-v-2">
-      <ul class="list-style-none m-v-1 center">
-        <li>Full Access</li>
-        <li>Source Files</li>
-        <li>300 User Accounts</li>
-        <li>3 Year License</li>
-      </ul>
-      <hr class="width-short">
-      <a href="#" class="button w-50 button-lg bg-black">Subscribe</a>
+      <div class="col-12 col-md-4 m-b-2">
+      <div class="card shadow-3 border-solid border-2 border-color-1 h-100">
+        <span class="pill bg-color-1 white m-b-1">Most popular</span>
+        <h3 class="h5">Growth</h3>
+        <p class="display-6 m-b-2">$49<span class="small grey">/mo</span></p>
+        <ul class="m-b-3" style="list-style:none;padding-left:0;"><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Everything in Starter</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Do eiusmod tempor</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Incididunt ut labore</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Dolore magna aliqua</span></li></ul>
+        <a href="#" class="button w-100 bg-color-1 white rounded center">Choose plan</a>
+      </div>
     </div>
-
+      <div class="col-12 col-md-4 m-b-2">
+      <div class="card h-100">
+        
+        <h3 class="h5">Scale</h3>
+        <p class="display-6 m-b-2">$99<span class="small grey">/mo</span></p>
+        <ul class="m-b-3" style="list-style:none;padding-left:0;"><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Everything in Growth</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Ut enim ad minim</span></li><li class="cluster gap-1 m-b-1"><svg class="icon icon-xs icon-success-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg><span class="small">Veniam quis nostrud</span></li></ul>
+        <a href="#" class="button w-100 outline-color-1 color-1 bg-white rounded center">Choose plan</a>
+      </div>
+    </div>
+    </div>
   </div>
 </section>
 `
             },
             {
                 title: "Pricing 2",
+                display: "Details",
                 description: "Description for Pricing 2",
                 code: `
 <section class="m-v-4">
@@ -2709,13 +4089,14 @@ const blocks = [
             },
             {
                 title: "Pricing 3",
+                display: "Compare",
                 description: "Description for Pricing 3",
                 code: `
 <section class="container m-v-4 ">
   <p class="display-5 dark center">Compare Plans</p>
   <hr class="width-short m-v-1">
 <div class="container auto-overflow-x">
-  <table class="table table-hover">
+  <table class="table table-hover left ">
     <thead>
       <tr>
         <th class="w-50"></th>
@@ -2774,6 +4155,60 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Pricing 4",
+                display: "3cols seperate",
+                description: "Description for Pricing 1",
+                code: `
+<section id="plans" class="bg-light-grey p-v-4 m-t-2">
+  <div class="container">
+    <h2 class="h2 bold black center">Simple, transparent pricing</h2>
+    <p class="dark center m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+    <div class="row m-t-3 align-items-center">
+      
+    <div class="col-4 p1">
+      <div class="card p2 rounded-1-4 bg-panel black shadow center">
+        
+        <p class="bold h5 m-b-0">Starter</p>
+        <p class="h2 bold m-t--1-2 m-b-0">$249<span class="small">/mo</span></p>
+        <p class="dark small m-t--1-2">For early-stage teams</p>
+        <ul class="no-indent-ul left m-t-2">
+          <li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Monthly bookkeeping</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Quarterly tax review</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Email support</li>
+        </ul>
+        <a href="#contact" class="button w-100 bg-color-1 white m-t-1">Choose Plan</a>
+      </div>
+    </div>
+      
+    <div class="col-4 p1">
+      <div class="card p2 rounded-1-4 bg-color-1 white shadow-4 center">
+        <span class="badge bg-color-2 black bold m-b-1">Most Popular</span><br>
+        <p class="bold white h5 m-b-0">Growth</p>
+        <p class="h2 bold white m-t--1-2 m-b-0">$599<span class="small">/mo</span></p>
+        <p class="grey small m-t--1-2">For scaling businesses</p>
+        <ul class="no-indent-ul left m-t-2">
+          <li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Everything in Starter</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Dedicated advisor</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Cash flow forecasting</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-white-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Priority support</li>
+        </ul>
+        <a href="#contact" class="button w-100 bg-white color-1 m-t-1">Choose Plan</a>
+      </div>
+    </div>
+      
+    <div class="col-4 p1">
+      <div class="card p2 rounded-1-4 bg-panel black shadow center">
+        
+        <p class="bold h5 m-b-0">Enterprise</p>
+        <p class="h2 bold m-t--1-2 m-b-0">$1,299<span class="small">/mo</span></p>
+        <p class="dark small m-t--1-2">For complex organizations</p>
+        <ul class="no-indent-ul left m-t-2">
+          <li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Everything in Growth</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Fractional CFO</li><li class="m-b--1-2"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon-xs icon-color-1-fill m-r--1-2"><path d="M12 2C6.5 2 2 6.5 2 12S6.5 22 12 22 22 17.5 22 12 17.5 2 12 2M12 20C7.59 20 4 16.41 4 12S7.59 4 12 4 20 7.59 20 12 16.41 20 12 20M16.59 7.58L10 14.17L7.41 11.59L6 13L10 17L18 9L16.59 7.58Z"></path></svg>Custom reporting suite</li>
+        </ul>
+        <a href="#contact" class="button w-100 bg-color-1 white m-t-1">Choose Plan</a>
+      </div>
+    </div>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -2781,6 +4216,7 @@ const blocks = [
         items: [
             {
                 title: "Contact 1",
+                display: "Form map",
                 description: "Description for Contact 1",
                 code: `
 <section class="h-100 d-flex flex-column m-v-2" id="contacts">
@@ -2855,6 +4291,7 @@ const blocks = [
             },
             {
                 title: "Contact 2",
+                display: "icons",
                 description: "Description for Contact 2",
                 code: `
 <section class="row container m-v-4">
@@ -2925,6 +4362,7 @@ const blocks = [
             },
             {
                 title: "Contact 3",
+                display: "Wide map form",
                 description: "Description for Contact 3",
                 code: `
 <section class="row w-100">
@@ -2993,6 +4431,7 @@ const blocks = [
             },
             {
                 title: "Contact 4",
+                display: "Contacts form",
                 description: "Description for Contact 4",
                 code: `
 <section class="m-v-4">
@@ -3057,6 +4496,133 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Contact 5",
+                display: "Form",
+                description: "Description for Contact 4",
+                code: `
+<section class="container p-v-4">
+  <div class="row justify-content-center">
+    <div class="col-md-6 center">
+      <h1 class="black bold">Say hello</h1>
+      <p class="dark h6 font-weight-400 m-t-1">One inbox, one small team, no ticket queue.
+        Ask us anything about the framework.</p>
+
+      <div class="left m-t-3">
+        <div class="form-group">
+          <input type="text" class="form-control" placeholder="Your name">
+        </div>
+        <div class="form-group">
+          <input type="email" class="form-control" placeholder="Your email">
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" rows="6" placeholder="Your message"></textarea>
+        </div>
+        <button type="submit" class="button w-100 center">Send message</button>
+      </div>
+
+      <div class="row justify-content-center m-t-3 gap-2">
+        <a href="#" class="hover-grey"><svg viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path></svg></a>
+        <a href="#" class="hover-grey"><svg viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.19,14.41 4.53,14.44 3.89,14.32C4.16,15.14 4.68,15.85 5.37,16.36C6.06,16.87 6.9,17.15 7.76,17.15C6.14,18.44 4.13,19.13 2.07,19.13C1.72,19.13 1.36,19.11 1,19.07C3.06,20.42 5.5,21.19 8.06,21.19C16,21.19 20.33,14.53 20.33,8.79C20.33,8.6 20.32,8.42 20.31,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
+        <a href="#" class="hover-grey"><svg viewBox="0 0 24 24" class="icon-sm icon-color-1-fill"><path d="M19,3A2,2 0 0,1 21,5V19A2,2 0 0,1 19,21H5A2,2 0 0,1 3,19V5A2,2 0 0,1 5,3H19M18.5,18.5V13.2A3.26,3.26 0 0,0 15.24,9.94C14.39,9.94 13.4,10.46 12.92,11.24V10.13H10.13V18.5H12.92V13.57C12.92,12.8 13.54,12.17 14.31,12.17A1.4,1.4 0 0,1 15.71,13.57V18.5H18.5M6.88,8.56A1.68,1.68 0 0,0 8.56,6.88C8.56,5.95 7.81,5.19 6.88,5.19A1.69,1.69 0 0,0 5.19,6.88C5.19,7.81 5.95,8.56 6.88,8.56M8.27,18.5V10.13H5.5V18.5H8.27Z"></path></svg></a>
+      </div>
+      <p class="smaller dark center m-t-2">or email us directly at
+        <a href="mailto:hello@cssvars.com" class="bold color-1">hello@cssvars.com</a></p>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Contact 6",
+                display: "Locations form faq",
+                description: "Description for Contact 4",
+                code: `
+<section class="container p-v-4">
+  <h4 class="black bold">Our offices</h4>
+  <div class="row m-t-2">
+    <div class="col-md-4 p1">
+      <img src="https://picsum.photos/seed/office-kharkiv/500/320" class="img-responsive rounded shadow-1 w-100" alt="Kharkiv, Ukraine">
+      <h6 class="black bold m-t-1">Kharkiv, Ukraine</h6>
+      <p class="small dark">HQ &amp; core engineering</p>
+    </div>
+    <div class="col-md-4 p1">
+      <img src="https://picsum.photos/seed/office-lisbon/500/320" class="img-responsive rounded shadow-1 w-100" alt="Lisbon, Portugal">
+      <h6 class="black bold m-t-1">Lisbon, Portugal</h6>
+      <p class="small dark">Developer relations</p>
+    </div>
+    <div class="col-md-4 p1">
+      <img src="https://picsum.photos/seed/office-austin/500/320" class="img-responsive rounded shadow-1 w-100" alt="Austin, USA">
+      <h6 class="black bold m-t-1">Austin, USA</h6>
+      <p class="small dark">Partnerships &amp; sales</p>
+    </div>
+  </div>
+</section>
+<section class="container p-b-4">
+  <div class="row">
+    <div class="col-md-7 p1">
+      <div class="panel shadow-1 rounded p2">
+        <h5 class="black bold">Send a message</h5>
+        <div class="row m-t-1">
+          <div class="col-md-6 p-1-2">
+            <div class="form-group">
+              <label class="small bold">NAME</label>
+              <input type="text" class="form-control">
+            </div>
+          </div>
+          <div class="col-md-6 p-1-2">
+            <div class="form-group">
+              <label class="small bold">EMAIL</label>
+              <input type="email" class="form-control">
+            </div>
+          </div>
+        </div>
+        <div class="form-group">
+          <label class="small bold">DEPARTMENT</label>
+          <select class="form-control">
+            <option selected="" disabled="">Choose a department</option>
+            <option>Sales</option>
+            <option>Support</option>
+            <option>Engineering</option>
+            <option>Press</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label class="small bold">MESSAGE</label>
+          <textarea class="form-control" rows="4"></textarea>
+        </div>
+        <button type="submit" class="button">Send message</button>
+      </div>
+    </div>
+
+    <div class="col-md-5 p1">
+      <h5 class="black bold">Before you write in…</h5>
+      <div class="accordion m-t-1">
+        <div class="accordion-block">
+          <input type="radio" name="cfaq" id="cfaq1" checked="">
+          <label for="cfaq1" class="accordion-label">What's your typical response time?</label>
+          <div class="accordion-content">Under 24 hours on business days for general questions;
+            support tickets are usually answered same-day.</div>
+        </div>
+        <div class="accordion-block">
+          <input type="radio" name="cfaq" id="cfaq2">
+          <label for="cfaq2" class="accordion-label">Do you offer implementation help?</label>
+          <div class="accordion-content">Yes — mention it in the department field and our
+            developer relations team will follow up with next steps.</div>
+        </div>
+        <div class="accordion-block">
+          <input type="radio" name="cfaq" id="cfaq3">
+          <label for="cfaq3" class="accordion-label">Is the framework really free?</label>
+          <div class="accordion-content">Always. CSS Vars Framework is MIT licensed and free for
+            commercial and personal use.</div>
+        </div>
+      </div>
+      <a href="support-3.html" class="button w-100 center m-t-2">Browse the full FAQ</a>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -3064,6 +4630,7 @@ const blocks = [
         items: [
             {
                 title: "Footer 1",
+                display: "Short",
                 description: "Description for Footer 1",
                 code: `
 <footer class="center p2 color-1 bg-light-grey m-t-4">
@@ -3087,6 +4654,7 @@ const blocks = [
             },
             {
                 title: "Footer 2",
+                display: "Minimum",
                 description: "Description for Footer 2",
                 code: `
 <footer class="p-v-1 row container">
@@ -3115,6 +4683,7 @@ const blocks = [
             },
             {
                 title: "Footer 3",
+                display: "4cols links",
                 description: "Description for Footer 3",
                 code: `
 <footer class="bordered-top-light-grey  d-block">
@@ -3173,6 +4742,7 @@ const blocks = [
             },
             {
                 title: "Footer 4",
+                display: "4cols full",
                 description: "Description for Footer 4",
                 code: `
 <footer class="container-fluid row">
@@ -3266,6 +4836,233 @@ const blocks = [
 </footer>
 `
             },
+            {
+                title: "Footer 5",
+                display: "Dark container",
+                description: "Description for Footer 4",
+                code: `
+<footer class="p-v-4 bg-dark">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 col-md-4 m-b-3">
+        <a href="#" class="logo h4 white"><svg class="icon icon-sm icon-white-fill m-r-1" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12,16L19.36,10.27L21,9L12,2L3,9L4.63,10.27M12,18.54L4.62,12.81L3,14.07L12,21.07L21,14.07L19.37,12.8L12,18.54Z"></path></svg>Lorem</a>
+        <p class="small light-grey m-t-2" style="opacity:.7;">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod.</p>
+      </div>
+      <div class="col-6 col-md-2 m-b-3">
+        <p class="white small text-uppercase m-b-2">Product</p>
+        <div class="footer-links stack gap-1">
+          <a href="#" class="light-grey small">Features</a>
+          <a href="#" class="light-grey small">Pricing</a>
+          <a href="#" class="light-grey small">Integrations</a>
+        </div>
+      </div>
+      <div class="col-6 col-md-2 m-b-3">
+        <p class="white small text-uppercase m-b-2">Company</p>
+        <div class="footer-links stack gap-1">
+          <a href="#" class="light-grey small">About</a>
+          <a href="#" class="light-grey small">Careers</a>
+          <a href="#" class="light-grey small">Blog</a>
+        </div>
+      </div>
+      <div class="col-12 col-md-4 m-b-3">
+        <p class="white small text-uppercase m-b-2">Stay up to date</p>
+        <div class="form-row cluster gap-1">
+          <input type="email" class="form-control" placeholder="you@example.com">
+          <button class="button bg-color-1 white rounded">Subscribe</button>
+        </div>
+      </div>
+    </div>
+    <hr class="border-color-2 m-v-3">
+    <p class="small light-grey center m-b-0" style="opacity:.6;">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+  </div>
+</footer>                
+                `
+            },
+            {
+                title: "Footer 6",
+                display: "1line",
+                description: "Description for Footer 4",
+                code: `
+<footer class="footer p-v-2 m-t-0">
+  <div class="container">
+    <div class="footer-content">
+      <div>
+        <p class="bold h5 color-1 m0">HomeFind</p>
+        <p class="dark small m0">© 2026 HomeFind Realty Group.</p>
+      </div>
+      <ul class="footer-links">
+        <li><a href="#listings">Listings</a></li>
+        <li><a href="#agents">Agents</a></li>
+        <li><a href="#faq">FAQ</a></li>
+      </ul>
+    </div>
+  </div>
+</footer>
+                `
+            },
+            {
+                title: "Footer 7",
+                display: "Form contacts",
+                description: "Description for Footer 4",
+                code: `
+<footer class="footer p-v-2 m-t-0">
+<section id="contact" class="p-v-4">
+  <div class="container">
+    <div class="row align-items-center gap">
+      <div class="col-12 col-md-6 m-b-3">
+        <span class="small color-1 text-uppercase">Get in touch</span>
+        <h2 class="display-5 m-t-1 m-b-2">Lorem ipsum dolor sit amet consectetur</h2>
+        <p class="grey m-b-3">Adipiscing elit sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+        <div class="cluster gap-1 m-b-1"><svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5C20.55,15.5 21,15.95 21,16.5V20C21,20.55 20.55,21 20,21C10.61,21 3,13.39 3,4C3,3.45 3.45,3 4,3H7.5C8.05,3 8.5,3.45 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z"></path></svg><span class="small">(555) 020-0200</span></div>
+        <div class="cluster gap-1"><svg class="icon icon-sm icon-color-1-fill" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M20,4H4C2.9,4 2,4.9 2,6V18C2,19.1 2.9,20 4,20H20C21.1,20 22,19.1 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z"></path></svg><span class="small">hello@loremestates.com</span></div>
+      </div>
+      <div class="col-12 col-md-6">
+        <div class="panel">
+          <div class="form-row m-b-2"><input type="text" class="form-control" placeholder="Your name"></div>
+          <div class="form-row m-b-2"><input type="email" class="form-control" placeholder="Your email"></div>
+          <div class="form-row m-b-2"><textarea class="form-control" rows="3" placeholder="Tell us what you're looking for"></textarea></div>
+          <button class="button w-100 bg-color-1 white rounded">Send message</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="container">
+    <div class="between-row" style="flex-wrap:wrap;">
+      <p class="m-b-0 small grey">© Lorem Estates</p>
+      <div class="cluster gap-3">
+        <a href="#" class="small black">Instagram</a>
+        <a href="#" class="small black">LinkedIn</a>
+      </div>
+    </div>
+  </div>
+</footer>
+                `
+            },
+            {
+                title: "Footer 8",
+                display: "E-commerce",
+                description: "Description for Footer 4",
+                code: `
+<footer class="bg-dark p2 line-height-17 m-t-4 rounded-0">
+        <div class="row container-fluid child-padding-1">
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <p class="white text-uppercase bold">Subscribe Newsletter</p>
+                <p class="light-grey font-weight-400">
+                    Get all the latest information on Events, Sales and Offers.
+                    Sign up for newsletter today.
+                </p>
+            </div>
+
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="d-flex gap-1 m-v-2">
+                    <div class="form-group flex-grow-1 m0">
+                        <input type="email" class="form-control" id="inputSubscribeEmail" placeholder="Email Address">
+                    </div>
+                    <button class="m0 hover-shadow bga-color-1 white">Subscribe</button>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-4 p-v-1">
+                <div class="d-flex gap-1 justify-content-center m-v-2">
+                    <a href="#"><i class="icon-box hover-grey">
+                        <svg viewBox="0 0 24 24" class="icon-s">
+                            <path fill="#fff" d="M17,2V2H17V6H15C14.31,6 14,6.81 14,7.5V10H14L17,10V14H14V22H10V14H7V10H10V6A4,4 0 0,1 14,2H17Z"></path>
+                        </svg>
+                    </i></a>
+                    <a href="#"><i class="icon-box hover-grey">
+                        <svg viewBox="0 0 512 512" class="icon-s">
+                            <path fill="#fff" d="M381.384,198.639c24.157-1.993,40.543-12.975,46.849-27.876c-8.714,5.353-35.764,11.189-50.703,5.631c-0.732-3.51-1.55-6.844-2.353-9.854c-11.383-41.798-50.357-75.472-91.194-71.404c3.304-1.334,6.655-2.576,9.996-3.691c4.495-1.61,30.868-5.901,26.715-15.21c-3.5-8.188-35.722,6.188-41.789,8.067c8.009-3.012,21.254-8.193,22.673-17.396c-12.27,1.683-24.315,7.484-33.622,15.919c3.36-3.617,5.909-8.025,6.45-12.769C241.68,90.963,222.563,133.113,207.092,174c-12.148-11.773-22.915-21.044-32.574-26.192c-27.097-14.531-59.496-29.692-110.355-48.572c-1.561,16.827,8.322,39.201,36.8,54.08c-6.17-0.826-17.453,1.017-26.477,3.178c3.675,19.277,15.677,35.159,48.169,42.839c-14.849,0.98-22.523,4.359-29.478,11.642c6.763,13.407,23.266,29.186,52.953,25.947c-33.006,14.226-13.458,40.571,13.399,36.642C113.713,320.887,41.479,317.409,0,277.828c108.299,147.572,343.716,87.274,378.799-54.866c26.285,0.224,41.737-9.105,51.318-19.39C414.973,206.142,393.023,203.486,381.384,198.639z"></path>
+                        </svg>
+                    </i></a>
+                    <a href="#"><i class="icon-box hover-grey">
+                        <svg viewBox="0 0 24 24" class="icon-s">
+                            <path fill="#fff" d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+                        </svg>
+                    </i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="row container-fluid">
+            <div class="col-md-6 col-lg-3 p-v-1">
+                <p class="white text-uppercase bold">Contact Information</p>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Address:</p>
+                    <p class="grey left m0 smaller font-weight-400">Svobody Square, 8, Kharkiv, Ukraine</p>
+                </div>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Phone:</p>
+                    <p class="grey left m0 smaller font-weight-400">+380 96 926 5003</p>
+                </div>
+                <div class="m-v-1 smaller">
+                    <p class="white text-uppercase font-weight-400 m0 smaller">Email:</p>
+                    <p class="grey left m0 smaller font-weight-400">info@europeitoutsourcing.com</p>
+                </div>
+            </div>
+
+            <div class="col-md-6 col-lg-9">
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 p-v-1">
+                        <p class="white text-uppercase bold">My Account</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">About us</a></li>
+                                    <li><a href="#" class="grey m0">Contact us</a></li>
+                                    <li><a href="#" class="grey m0">My account</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Orders history</a></li>
+                                    <li><a href="#" class="grey m0">Advanced search</a></li>
+                                    <li><a href="#" class="grey m0">Login</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-5 p-v-1">
+                        <p class="white text-uppercase bold">Main Features</p>
+                        <div class="row">
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Pure HTML CSS</a></li>
+                                    <li><a href="#" class="grey m0">Fast Loading</a></li>
+                                    <li><a href="#" class="grey m0">Extendable with Variables</a></li>
+                                </ul>
+                            </div>
+                            <div class="col-6">
+                                <ul class="no-indent-ul p0 line-height-2 smaller">
+                                    <li><a href="#" class="grey m0">Responsive &amp; Mobile first</a></li>
+                                    <li><a href="#" class="grey m0">100's of Free UI Elements</a></li>
+                                    <li><a href="#" class="grey m0">Free &amp; Open Source</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3 p-v-1">
+                        <p class="white text-uppercase bold">Working Hours</p>
+                        <p class="grey font-weight-400">Mon - Fri / 8:00AM - 5:00PM</p>
+                    </div>
+                </div>
+
+                <hr class="m0">
+
+                <div class="row p-v-1">
+                    <div class="col-md-12">
+                        <p class="grey left m-v-1 smaller">© Copyright 2026. All Rights Reserved Europe IT
+                            Outsourcing Company.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+                `
+            },
         ]
     },
     {
@@ -3273,6 +5070,7 @@ const blocks = [
         items: [
             {
                 title: "Blog 1",
+                display: "3cols",
                 description: "Description for Blog 1",
                 code: `
 <section class=" bg-light-grey p-v-3">
@@ -3349,6 +5147,7 @@ const blocks = [
             },
             {
                 title: "Blog 2",
+                display: "2cols Split",
                 description: "Description for Blog 2",
                 code: `
 <section class=" bg-light-grey p-v-3">
@@ -3408,6 +5207,7 @@ const blocks = [
             },
             {
                 title: "Blog 3",
+                display: "1col",
                 description: "Description for Blog 3",
                 code: `
 <section class="section bg-light-grey p-v-4">
@@ -3452,6 +5252,7 @@ const blocks = [
             },
             {
                 title: "Blog 4",
+                display: "1col dark",
                 description: "Description for Blog 4",
                 code: `
 <section class="bg-color-1 p-v-4">
@@ -3506,6 +5307,7 @@ const blocks = [
         items: [
             {
                 title: "Portfolio 1",
+                display: "4cols connected",
                 description: "Description for Portfolio 1",
                 code: `
 <section class="row container" id="portfolio">
@@ -3555,6 +5357,7 @@ const blocks = [
             },
             {
                 title: "Portfolio 2",
+                display: "3cols container",
                 description: "Description for Portfolio 2",
                 code: `
 <section class="row bg-light-grey p-v-3">
@@ -3611,6 +5414,7 @@ const blocks = [
             },
             {
                 title: "Portfolio 3",
+                display: "3cols wide",
                 description: "Description for Portfolio 3",
                 code: `
 <div class="row container-fluid m-v-4">
@@ -3669,6 +5473,445 @@ const blocks = [
 </div>
 `
             },
+            {
+                title: "Portfolio 4",
+                display: "Different sizes",
+                description: "Description for Portfolio 1",
+                code: `
+                <section id="work" class="container p-v-2">
+  <p class="color-1 bold text-uppercase letter-spacing-1 small center m-b-1">Selected work</p>
+  <div class="row m-t-2 gap-2">
+    <div class="col-md-4 p-1-2">
+      <img src="https://picsum.photos/seed/sl-work-1/600/750" class="img-responsive rounded" alt="Lorem">
+      <p class="black bold m-t--1-2 m0">Ipsum Coffee — Identity</p>
+      <p class="dark small m0">Branding</p>
+    </div>
+    <div class="col-md-4 p-1-2">
+      <img src="https://picsum.photos/seed/sl-work-2/600/750" class="img-responsive rounded" alt="Lorem">
+      <p class="black bold m-t--1-2 m0">Dolorem App — UI/UX</p>
+      <p class="dark small m0">Product Design</p>
+    </div>
+    <div class="col-md-4 p-1-2">
+      <img src="https://picsum.photos/seed/sl-work-3/600/750" class="img-responsive rounded" alt="Lorem">
+      <p class="black bold m-t--1-2 m0">Consectetur — Packaging</p>
+      <p class="dark small m0">Packaging</p>
+    </div>
+  </div>
+  <div class="row m-t-2 gap-2">
+    <div class="col-md-6 p-1-2">
+      <img src="https://picsum.photos/seed/sl-work-4/800/560" class="img-responsive rounded" alt="Lorem">
+      <p class="black bold m-t--1-2 m0">Faro Studio — Web</p>
+      <p class="dark small m0">Web Design</p>
+    </div>
+    <div class="col-md-6 p-1-2">
+      <img src="https://picsum.photos/seed/sl-work-5/800/560" class="img-responsive rounded" alt="Lorem">
+      <p class="black bold m-t--1-2 m0">Nordica — Editorial</p>
+      <p class="dark small m0">Print &amp; Editorial</p>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Portfolio 5",
+                display: "Hover Text",
+                description: "Description for Portfolio 1",
+                code: `
+<section class="section bg-color-1 m-t-6">
+            <h1 class="center display-2 bold white p-t-2">My Works</h1>
+            <p class="m-t-05 grey center font-weight-400 h6">Lorem ipsum dolor sit amet, consectetur adipiscing elit,<br> sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. </p>
+        <div class="row m-t-2">
+        <div class="col-md-4 p0">
+                    <div class="tooltip position-relative w-100 d-block">
+                        <img src="../img/blocks/work-1.jpg" class="img-responsive brightness-33-hover">
+                        <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                        <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                        </div>
+                    </div>
+        </div>
+        <div class="col-md-4 p0">
+            <div class="tooltip position-relative w-100 d-block">
+                <img src="../img/blocks/work-2.jpg" class="img-responsive brightness-33-hover">
+                <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 p0">
+            <div class="tooltip position-relative w-100 d-block">
+                <img src="../img/blocks/work-3.jpg" class="img-responsive brightness-33-hover">
+                <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                <p class="">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4 p0">
+            <div class="tooltip position-relative w-100 d-block">
+                <img src="../img/blocks/work-4.jpg" class="img-responsive brightness-33-hover">
+                <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                </div>
+            </div>
+        </div>
+
+            <div class="col-md-4 p0">
+                <div class="tooltip position-relative w-100 d-block">
+                    <img src="../img/blocks/work-5.jpg" class="img-responsive brightness-33-hover">
+                    <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 p0">
+                <div class="tooltip position-relative w-100 d-block">
+                    <img src="../img/blocks/work-6.jpg" class="img-responsive brightness-33-hover">
+                    <div class="tooltip-body rounded-0 w-100 h-100 bottom-0 left-0 bg-surface-overlay white d-flex align-items-end p1 justify-content-center transition-slow">
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                    </div>
+                </div>
+            </div>
+        </div>   
+</section>
+                `
+            },
+            {
+                title: "Portfolio 6",
+                display: "Tabs",
+                description: "Description for Portfolio 1",
+                code: `
+<section class="p-v-4 center">
+  <div class="container">
+    <h1 class="h1 bold black">Our Portfolio</h1>
+    <p class="lead dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+  </div>
+</section>
+<section id="work" class="p-v-2">
+  <div class="container">
+    <div class="tabs tabs-underline center">
+      <input type="radio" name="p3-tabs" id="p3-tab-all" checked="">
+      <label for="p3-tab-all">All Work</label>
+      <div class="tab">
+        <div class="row">
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-aurora/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Product</span>
+          <p class="bold black h6 m-t--1-2">Aurora Fintech App</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-basecamp/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Branding</span>
+          <p class="bold black h6 m-t--1-2">Basecamp Outfitters</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-willow/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Web</span>
+          <p class="bold black h6 m-t--1-2">Willowbrook Realty</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-kettle/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Branding</span>
+          <p class="bold black h6 m-t--1-2">Kettle &amp; Co. Roastery</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-pulse/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Product</span>
+          <p class="bold black h6 m-t--1-2">Pulsewave Analytics</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-granite/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Web</span>
+          <p class="bold black h6 m-t--1-2">Granite Peak Outdoors</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <input type="radio" name="p3-tabs" id="p3-tab-branding">
+      <label for="p3-tab-branding">Branding</label>
+      <div class="tab">
+        <div class="row">
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-basecamp/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Branding</span>
+          <p class="bold black h6 m-t--1-2">Basecamp Outfitters</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-kettle/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Branding</span>
+          <p class="bold black h6 m-t--1-2">Kettle &amp; Co. Roastery</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <input type="radio" name="p3-tabs" id="p3-tab-web">
+      <label for="p3-tab-web">Web</label>
+      <div class="tab">
+        <div class="row">
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-willow/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Web</span>
+          <p class="bold black h6 m-t--1-2">Willowbrook Realty</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-granite/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Web</span>
+          <p class="bold black h6 m-t--1-2">Granite Peak Outdoors</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+
+      <input type="radio" name="p3-tabs" id="p3-tab-product">
+      <label for="p3-tab-product">Product</label>
+      <div class="tab">
+        <div class="row">
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-aurora/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Product</span>
+          <p class="bold black h6 m-t--1-2">Aurora Fintech App</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+          
+    <div class="col-4 p1">
+      <div class="card rounded overflow-hidden card-hover transition p0">
+        <div class="aspect-4-3" style="background-image:url('https://picsum.photos/seed/iron-pulse/500/380');background-size:cover;background-position:center;"></div>
+        <div class="p1">
+          <span class="badge bga-color-1 color-1 bold m-b--1-2">Product</span>
+          <p class="bold black h6 m-t--1-2">Pulsewave Analytics</p>
+          <p class="dark small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero.</p>
+        </div>
+      </div>
+    </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Portfolio 7",
+                display: "Grid",
+                description: "Description for Portfolio 1",
+                code: `
+<section class="p-v-4 center">
+  <div class="container">
+    <span class="chip chip-color-1 bold">Selected Work</span>
+    <h1 class="h1 bold black m-t-1">Stories, brands, and products we've helped build</h1>
+    <p class="lead dark m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
+    <div class="m-t-2">
+      <span class="chip">All</span>
+      <span class="chip">Branding</span>
+      <span class="chip">Web</span>
+      <span class="chip">Product</span>
+      <span class="chip">Campaigns</span>
+    </div>
+  </div>
+</section>
+<section id="work" class="p-v-2">
+  <div class="container">
+    <div class="d-grid grid-cols-4 gap-2">
+      
+    <a href="#" class="col-span-2 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:24rem;background-image:url('https://picsum.photos/seed/hal-solstice/900/700');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold">Branding</span>
+        <p class="white bold h5 m-b-0">Solstice Rebrand</p>
+      </div>
+    </a>
+      
+    <a href="#" class="col-span-1 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:24rem;background-image:url('https://picsum.photos/seed/hal-fernweg/500/700');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold m-b--1-2">Product</span>
+        <p class="white bold h5 m-b-0">Fernweg App</p>
+      </div>
+    </a>
+      
+    <a href="#" class="col-span-1 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:24rem;background-image:url('https://picsum.photos/seed/hal-nimbus/500/700');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold m-b--1-2">Web</span>
+        <p class="white bold h5 m-b-0">Nimbus Web</p>
+      </div>
+    </a>
+      
+    <a href="#" class="col-span-1 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:18rem;background-image:url('https://picsum.photos/seed/hal-rowan/500/500');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold m-b--1-2">Branding</span>
+        <p class="white bold h5 m-b-0">Rowan Coffee</p>
+      </div>
+    </a>
+      
+    <a href="#" class="col-span-1 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:18rem;background-image:url('https://picsum.photos/seed/hal-vantage/500/500');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold m-b--1-2">Campaign</span>
+        <p class="white bold h5 m-b-0">Vantage Launch</p>
+      </div>
+    </a>
+      
+    <a href="#" class="col-span-2 position-relative overflow-hidden rounded-1-4 card-hover transition" style="display:block;height:18rem;background-image:url('https://picsum.photos/seed/hal-meridian/900/500');background-size:cover;background-position:center;">
+      <div class="position-absolute" style="inset:0;background:linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0) 60%);"></div>
+      <div class="position-absolute p1" style="bottom:0;left:0;">
+        <span class="badge bg-color-1 white bold m-b--1-2">Product</span>
+        <p class="white bold h5 m-b-0">Meridian Dashboard</p>
+      </div>
+    </a>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Portfolio 8",
+                display: "Bento",
+                description: "Description for Portfolio 1",
+                code: `
+<section id="work" class="container p-v-2">
+        <div class="row justify-content-between align-items-end m-b-3">
+            <h2 class="display-4 m-b-0">Selected Work</h2>
+            <a href="#" class="btn-link bold">Full portfolio <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></a>
+        </div>
+        <div class="bento">
+            <div class="bento-item bento-3x2 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj0/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Cliffside Residence</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj1/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Kade Gallery</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj2/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Linden Loft</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj3/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Studio Nave</p>
+                </div>
+            </div>
+            <div class="bento-item bento-2x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj4/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Harbor Pavilion</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj1/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Kade Gallery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "Portfolio 9",
+                display: "Cards",
+                description: "Description for Portfolio 1",
+                code: `
+<section id="process" class="p-v-4">
+  <div class="container">
+    <h2 class="center m-b-3">Selected Work</h2>
+    <div class="row gap-3">
+      <div class="col-md-6 col-12">
+        <div class="card-hover rounded overflow-hidden">
+          <img src="https://picsum.photos/seed/pixelpine-1/700/460" alt="Fintech dashboard product screens" class="w-100">
+          <div class="p1">
+            <span class="chip chip-color-1">Fintech</span>
+            <h5>Ledgerly — Finance Dashboard</h5>
+            <p class="small grey">Curabitur pretium tincidunt lacus, ut interdum tellus elit sed risus.</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="card-hover rounded overflow-hidden">
+          <img src="https://picsum.photos/seed/pixelpine-2/700/460" alt="Health app onboarding screens" class="w-100">
+          <div class="p1">
+            <span class="chip chip-color-1">Health Tech</span>
+            <h5>Vitality — Wellness App</h5>
+            <p class="small grey">Maecenas eget condimentum velit, sit amet feugiat lectus.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -3676,6 +5919,7 @@ const blocks = [
         items: [
             {
                 title: "Team 1",
+                display: "2cols split",
                 description: "Description for Team 1",
                 code: `
 <section class="row container m-v-4">
@@ -3803,12 +6047,13 @@ const blocks = [
             },
             {
                 title: "Team 2",
+                display: "4cols",
                 description: "Description for Team 2",
                 code: `
 <section class="row container m-v-4">
   <div class="p-v-1 col-md-12">
     <h4 class="center black text-uppercase bold">Our team</h4>
-    <p class="dark center display-6">People who have contributed enormously to our Company.
+    <p class="dark center">People who have contributed enormously to our Company.
     </p>
     <hr class="width-short center w-50">
   </div>
@@ -3920,6 +6165,37 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Team 3",
+                display: "4cols cricle",
+                description: "Description for Team 3",
+                code: `
+<div class="container">
+    <h2 class="display-6 center m-b-4">Meet our agents</h2>
+    <div class="row">
+      <div class="col-6 col-md-3 m-b-3 center">
+      <img src="https://i.pravatar.cc/240?img=15" class="circle m-b-2" style="width:100%;max-width:8rem;" alt="Lorem ipsum agent">
+      <p class="h6 m-b-0">Lorem Ipsum</p>
+      <p class="small grey m-b-0">Senior Agent</p>
+    </div>
+      <div class="col-6 col-md-3 m-b-3 center">
+      <img src="https://i.pravatar.cc/240?img=28" class="circle m-b-2" style="width:100%;max-width:8rem;" alt="Lorem ipsum agent">
+      <p class="h6 m-b-0">Dolor Sit</p>
+      <p class="small grey m-b-0">Listing Agent</p>
+    </div>
+      <div class="col-6 col-md-3 m-b-3 center">
+      <img src="https://i.pravatar.cc/240?img=41" class="circle m-b-2" style="width:100%;max-width:8rem;" alt="Lorem ipsum agent">
+      <p class="h6 m-b-0">Amet Consec.</p>
+      <p class="small grey m-b-0">Buyer's Agent</p>
+    </div>
+      <div class="col-6 col-md-3 m-b-3 center">
+      <img src="https://i.pravatar.cc/240?img=52" class="circle m-b-2" style="width:100%;max-width:8rem;" alt="Lorem ipsum agent">
+      <p class="h6 m-b-0">Adip Elit</p>
+      <p class="small grey m-b-0">Rentals Lead</p>
+    </div>
+    </div>
+  </div> `
+            },
         ]
     },
 ]
@@ -3931,23 +6207,79 @@ const blocks = [
 
 
 
+const blocksListCategories = document.getElementById("blocksListCategories")
+const blocksListSubItems = document.getElementById("blocksListSubItems")
+let activeCategoryName = null
 
+// function renderCategories(selectedCategoryName) {
+//     blocksListCategories.innerHTML = ""
+//     for (const block of blocks) {
+//         const isActive = block.name === selectedCategoryName
+//         const link = document.createElement("a")
+//         link.href = "#"
+//         link.className = "p-1-8 smaller flex-shrink-0" +
+//             (isActive ? " bold" : "")
+//         link.textContent = block.name
+//         link.addEventListener("click", (e) => {
+//             e.preventDefault()
+//             if (block.items.length) loadBlock(block.items[0].title)
+//         })
+//         blocksListCategories.appendChild(link)
+//     }
+// }
 
-const blockList = document.getElementById("blocksList")
-const blocksIndex = document.getElementById("blocksIndex")
-for (const block of blocks) {
-    const categoryHeader = document.createElement("p")
-    categoryHeader.className = "text-uppercase font-semibold m-b-0"
-    categoryHeader.id = block.name.replace(/\s+/g, '-').toLowerCase() + "-header"
-    categoryHeader.innerHTML = `<a href="#${categoryHeader.id}">${block.name}</a>`;
-    categoryHeader.innerHTML = block.name;
-    blockList.appendChild(categoryHeader);
+// function renderSubItems(categoryName, selectedTitle) {
+//     blocksListSubItems.innerHTML = ""
+//     const block = blocks.find(b => b.name === categoryName)
+//     if (!block) return
+//     for (const item of block.items) {
+//         const isActive = item.title === selectedTitle
+//         const link = document.createElement("a")
+//         link.href = "#"
+//         link.className = "p-h-1 p-v--1-4 smaller flex-shrink-0" +
+//             (isActive ? " color-1 bold" : "")
+//         link.textContent = item.title
+//         link.addEventListener("click", (e) => {
+//             e.preventDefault()
+//             loadBlock(item.title)
+//         })
+//         blocksListSubItems.appendChild(link)
+//     }
+// }
 
+function renderCategories(selectedCategoryName) {
+    blocksListCategories.innerHTML = ""
+    for (const block of blocks) {
+        const isActive = block.name === selectedCategoryName
+        const link = document.createElement("a")
+        link.href = "#"
+        link.className = "p-1-8 smaller flex-shrink-0" +
+            (isActive ? " bold" : "")
+        link.textContent = block.name
+        link.addEventListener("click", (e) => {
+            e.preventDefault()
+            if (block.items.length) loadBlock(block.items[0].title)
+        })
+        blocksListCategories.appendChild(link)
+    }
+}
+
+function renderSubItems(categoryName, selectedTitle) {
+    blocksListSubItems.innerHTML = ""
+    const block = blocks.find(b => b.name === categoryName)
+    if (!block) return
     for (const item of block.items) {
-        const itemListItem = document.createElement("p");
-        itemListItem.textContent = `${item.title}`;
-        blockList.appendChild(itemListItem);
-        itemListItem.addEventListener("click", () => {loadBlock(item.title)})
+        const isActive = item.title === selectedTitle
+        const link = document.createElement("a")
+        link.href = "#"
+        link.className = "p-h-1 p-v--1-4 smaller flex-shrink-0" +
+            (isActive ? " color-1 bold" : "")
+        link.textContent = item.display   // ← was item.title
+        link.addEventListener("click", (e) => {
+            e.preventDefault()
+            loadBlock(item.title)
+        })
+        blocksListSubItems.appendChild(link)
     }
 }
 
@@ -3962,14 +6294,30 @@ function findItemByTitle(title) {
     return null;
 }
 
+function findCategoryByItemTitle(title) {
+    for (const block of blocks) {
+        for (const item of block.items) {
+            if (item.title === title) return block.name
+        }
+    }
+    return null
+}
+
 function loadBlock(title) {
     const previewPanelMain = document.getElementById("previewPanelMain")
     const blockItem = findItemByTitle(title)
+    if (!blockItem) return
     previewPanelMain.innerHTML = blockItem.code
-    blockId = title.replace(/\s+/g, '-').toLowerCase()
+    const blockId = title.replace(/\s+/g, '-').toLowerCase()
     window.location.hash = blockId;
     document.title = `${blockItem.title} | CSSvars Blocks`;
 
+    const categoryName = findCategoryByItemTitle(title)
+    if (categoryName !== activeCategoryName) {
+        activeCategoryName = categoryName
+        renderCategories(categoryName)
+    }
+    renderSubItems(categoryName, title)
 }
 
 function switchTheme() {
@@ -3982,7 +6330,6 @@ function copyCode() {
     const previewPanelMain = document.getElementById("previewPanelMain")
     const code = previewPanelMain.innerHTML
     navigator.clipboard.writeText(code)
-    // Show a message to the user
     const msg = document.getElementById("msg-1")
     msg.classList.remove("d-none")
     setTimeout(() => {
@@ -3993,8 +6340,6 @@ function copyCode() {
 function loadBlockFromHashOrDefault() {
   const hash = window.location.hash.replace('#', '');
   if (hash) {
-    console.log('found')
-    // Try to find block by hash (title converted to id)
     for (const block of blocks) {
       for (const item of block.items) {
         if (item.title.replace(/\s+/g, '-').toLowerCase() === hash) {
@@ -4004,12 +6349,9 @@ function loadBlockFromHashOrDefault() {
       }
     }
   }
-  // If no hash or not found, load first block
-      console.log('not found')
   if (blocks.length && blocks[0].items.length) {
     loadBlock(blocks[0].items[0].title);
   }
 }
 
-// Call on page load
 window.addEventListener("DOMContentLoaded", loadBlockFromHashOrDefault);
