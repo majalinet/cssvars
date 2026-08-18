@@ -3306,6 +3306,248 @@ const blocks = [
     </div>
                 `
             },
+            {
+                title: "Video 3",
+                display: "Grid",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <h2 class="center bold black">Lorem Ipsum Dolor Sit Amet</h2>
+  <p class="center dark display-6 m-b-2">Consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+  <div class="row gap-2">
+    <div class="col-md-4">
+      <div class="card p0 overflow-hidden shadow-1 shadow-2-hover transition-shadow">
+        <div class="embed embed-wide-screen">
+          <iframe class="embed-item" src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Big Buck Bunny" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <p class="bold black m0">Big Buck Bunny</p>
+          <p class="dark small m-t--1-2 m0">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p0 overflow-hidden shadow-1 shadow-2-hover transition-shadow">
+        <div class="embed embed-wide-screen">
+          <iframe class="embed-item" src="https://www.youtube.com/embed/eRsGyueVLvQ" title="Sintel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <p class="bold black m0">Sintel</p>
+          <p class="dark small m-t--1-2 m0">Elit sed do eiusmod tempor incididunt ut labore.</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-4">
+      <div class="card p0 overflow-hidden shadow-1 shadow-2-hover transition-shadow">
+        <div class="embed embed-wide-screen">
+          <iframe class="embed-item" src="https://www.youtube.com/embed/OHOpb2fS-cM" title="Tears of Steel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <p class="bold black m0">Tears of Steel</p>
+          <p class="dark small m-t--1-2 m0">Tempor incididunt ut labore et dolore magna aliqua.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 4",
+                display: "Backround",
+                description: "Description for Video 2",
+                code: `
+<section class="position-relative overflow-hidden" style="height:60vh;">
+  <div class="position-absolute" style="inset:0;overflow:hidden;">
+    <iframe
+      style="position:absolute;top:50%;left:50%;width:100vw;height:56.25vw;min-height:100%;min-width:177.78vh;transform:translate(-50%,-50%);border:0;"
+      src="https://www.youtube.com/embed/TLkA0RELQ1g?autoplay=1&mute=1&controls=0&loop=1&playlist=TLkA0RELQ1g&modestbranding=1"
+      title="Elephants Dream" allow="autoplay; encrypted-media"></iframe>
+  </div>
+  <div class="position-absolute bg-black" style="inset:0;background-color:rgba(0,0,0,.45);"></div>
+  <div class="center-overlay">
+    <div class="center">
+      <h1 class="white bold display-2 m0">Lorem Ipsum Dolor Sit Amet</h1>
+      <p class="white display-6 m-t-1">Consectetur adipisicing elit sed do eiusmod tempor incididunt</p>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 5",
+                display: "Playlist",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <div class="row gap-2">
+    <div class="col-md-8">
+      <div class="embed embed-wide-screen rounded-1-4 overflow-hidden shadow-2">
+        <iframe id="playlistMain" class="embed-item" src="https://www.youtube.com/embed/OHOpb2fS-cM" title="Tears of Steel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <h3 id="playlistMainTitle" class="bold black m-t-1">Tears of Steel</h3>
+      <p class="dark">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    </div>
+    <div class="col-md-4">
+      <p class="text-uppercase dark small bold m-b-1">Up Next</p>
+      <div class="d-flex gap-1 m-b-2" style="cursor:pointer;" onclick="document.getElementById('playlistMain').src='https://www.youtube.com/embed/aqz-KE-bpKQ?autoplay=1';document.getElementById('playlistMainTitle').textContent='Big Buck Bunny';">
+        <div class="position-relative rounded-1-8 overflow-hidden" style="width:7rem;height:4.5rem;flex-shrink:0;">
+          <img src="https://i.ytimg.com/vi/aqz-KE-bpKQ/hqdefault.jpg" alt="Big Buck Bunny" class="w-100 h-100" style="object-fit:cover;">
+          <div class="center-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-xs icon-white-fill"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="badge bg-black white position-absolute" style="bottom:0.15rem;right:0.15rem;font-size:60%;">09:56</span>
+        </div>
+        <div>
+          <p class="black bold small m0">Big Buck Bunny</p>
+          <p class="dark small m0">Blender Foundation</p>
+        </div>
+      </div>
+      <div class="d-flex gap-1 m-b-2" style="cursor:pointer;" onclick="document.getElementById('playlistMain').src='https://www.youtube.com/embed/eRsGyueVLvQ?autoplay=1';document.getElementById('playlistMainTitle').textContent='Sintel';">
+        <div class="position-relative rounded-1-8 overflow-hidden" style="width:7rem;height:4.5rem;flex-shrink:0;">
+          <img src="https://i.ytimg.com/vi/eRsGyueVLvQ/hqdefault.jpg" alt="Sintel" class="w-100 h-100" style="object-fit:cover;">
+          <div class="center-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-xs icon-white-fill"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="badge bg-black white position-absolute" style="bottom:0.15rem;right:0.15rem;font-size:60%;">14:48</span>
+        </div>
+        <div>
+          <p class="black bold small m0">Sintel</p>
+          <p class="dark small m0">Blender Foundation</p>
+        </div>
+      </div>
+      <div class="d-flex gap-1" style="cursor:pointer;" onclick="document.getElementById('playlistMain').src='https://www.youtube.com/embed/TLkA0RELQ1g?autoplay=1';document.getElementById('playlistMainTitle').textContent='Elephants Dream';">
+        <div class="position-relative rounded-1-8 overflow-hidden" style="width:7rem;height:4.5rem;flex-shrink:0;">
+          <img src="https://i.ytimg.com/vi/TLkA0RELQ1g/hqdefault.jpg" alt="Elephants Dream" class="w-100 h-100" style="object-fit:cover;">
+          <div class="center-overlay">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-xs icon-white-fill"><path d="M8 5v14l11-7z"/></svg>
+          </div>
+          <span class="badge bg-black white position-absolute" style="bottom:0.15rem;right:0.15rem;font-size:60%;">10:53</span>
+        </div>
+        <div>
+          <p class="black bold small m0">Elephants Dream</p>
+          <p class="dark small m0">Blender Foundation</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 6",
+                display: "Slides",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <h2 class="center bold black m-b-2">Lorem Ipsum Dolor Sit Amet</h2>
+  <div class="carousel-fixed rounded-1-4 overflow-hidden shadow-2">
+    <input type="radio" name="vidcar1-slides" id="vidcar1-radio-1" checked="">
+    <input type="radio" name="vidcar1-slides" id="vidcar1-radio-2">
+    <input type="radio" name="vidcar1-slides" id="vidcar1-radio-3">
+    <ul class="slides">
+      <li class="position-relative aspect-video">
+        <iframe src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Big Buck Bunny" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </li>
+      <li class="position-relative aspect-video">
+        <iframe src="https://www.youtube.com/embed/eRsGyueVLvQ" title="Sintel" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </li>
+      <li class="position-relative aspect-video">
+        <iframe src="https://www.youtube.com/embed/OHOpb2fS-cM" title="Tears of Steel" style="position:absolute;inset:0;width:100%;height:100%;border:0;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="vidcar1-radio-1"></label>
+      <label for="vidcar1-radio-2"></label>
+      <label for="vidcar1-radio-3"></label>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 7",
+                display: "Card stats",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <div class="row">
+    <div class="col-md-6 m-h-auto">
+      <div class="panel p0 overflow-hidden shadow-2">
+        <div class="embed embed-wide-screen">
+          <iframe class="embed-item" src="https://www.youtube.com/embed/eRsGyueVLvQ" title="Sintel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+        <div class="card-body">
+          <p class="bold black display-6 m0">Sintel</p>
+          <p class="dark small m-t--1-2">Lorem ipsum dolor sit amet consectetur adipisicing elit sed do.</p>
+          <div class="d-flex justify-content-between align-items-center m-t-1">
+            <div class="d-flex align-items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-xs icon-grey-fill">
+                <path d="M12 4.5C7 4.5 2.73 7.61 1 12c1.73 4.39 6 7.5 11 7.5s9.27-3.11 11-7.5c-1.73-4.39-6-7.5-11-7.5zM12 17c-2.76 0-5-2.24-5-5s2.24-5 5-5 5 2.24 5 5-2.24 5-5 5zm0-8c-1.66 0-3 1.34-3 3s1.34 3 3 3 3-1.34 3-3-1.34-3-3-3z"/>
+              </svg>
+              <span class="dark small">12.4K</span>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" class="icon icon-xs icon-danger-fill">
+                <path d="M12 21.35l-1.45-1.32C5.4 15.36 2 12.28 2 8.5 2 5.42 4.42 3 7.5 3c1.74 0 3.41.81 4.5 2.09C13.09 3.81 14.76 3 16.5 3 19.58 3 22 5.42 22 8.5c0 3.78-3.4 6.86-8.55 11.54L12 21.35z"/>
+              </svg>
+              <span class="dark small">892</span>
+            </div>
+            <span class="badge bg-color-1 white">14:48</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 8",
+                display: "Comparison",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <h2 class="center bold black m-b-2">Lorem Ipsum Dolor Sit Amet</h2>
+  <div class="row gap-2">
+    <div class="col-md-6">
+      <div class="position-relative embed embed-wide-screen rounded-1-4 overflow-hidden shadow-1">
+        <iframe class="embed-item" src="https://www.youtube.com/embed/aqz-KE-bpKQ" title="Big Buck Bunny" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <span class="chip bg-white position-absolute z-overlay" style="top:1rem;left:1rem;pointer-events:none;">Big Buck Bunny</span>
+      </div>
+      <p class="dark center m-t-1">Dolor sit amet consectetur adipisicing elit sed do eiusmod.</p>
+    </div>
+    <div class="col-md-6">
+      <div class="position-relative embed embed-wide-screen rounded-1-4 overflow-hidden shadow-1">
+        <iframe class="embed-item" src="https://www.youtube.com/embed/eRsGyueVLvQ" title="Sintel" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        <span class="chip bg-white position-absolute z-overlay" style="top:1rem;left:1rem;pointer-events:none;">Sintel</span>
+      </div>
+      <p class="dark center m-t-1">Tempor incididunt ut labore et dolore magna aliqua enim ad minim.</p>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Video 9",
+                display: "Testimonial",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <div class="row">
+    <div class="col-md-8 m-h-auto center">
+      <div class="position-relative m0 shadow-2 circle overflow-hidden d-inline-block w-10rem h-10rem">
+        <iframe src="https://www.youtube.com/embed/TLkA0RELQ1g" title="Elephants Dream" class="boeder-none w-100 h-100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p class="dark italic display-6 m-t-2">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      <p class="black bold m-t-1 m0">Elephants Dream</p>
+      <p class="dark small m0">Blender Foundation</p>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -3694,6 +3936,26 @@ const blocks = [
       <p class="h5 dark italic m-t-1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio praesent libero. Sed cursus ante dapibus diam sed nisi nulla quis sem at nibh elementum imperdiet.</p>
       <p class="bold black m-t-2 m-b-0">Talia Brooks</p>
       <p class="dark small">Founder, Basecamp Outfitters</p>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Testimonial 10",
+                display: "Single video",
+                description: "Description for Video 2",
+                code: `
+<section class="container p-v-4">
+  <div class="row">
+    <div class="col-md-8 m-h-auto center">
+      <div class="position-relative m0 shadow-2 circle overflow-hidden d-inline-block w-10rem h-10rem">
+        <iframe src="https://www.youtube.com/embed/TLkA0RELQ1g" title="Elephants Dream" class="boeder-none w-100 h-100" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      </div>
+      <p class="dark italic h4 m-t-2">"Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."</p>
+      <p class="black bold m-t-1 m0">Elephants Dream</p>
+      <p class="dark small m0">Blender Foundation</p>
     </div>
   </div>
 </section>
@@ -5290,18 +5552,1412 @@ const blocks = [
             },
         ]
     },
-//     {
-//         name: "E-commerce",
-//         items: [
-//           {
-//                 title: "E-commerce 1",
-//                 description: "Description for E-commerce 1",
-//                 code: `
+    {
+        name: "E-commerce",
+        items: [
+          {
+                title: "E-commerce 1",
+                display: "Single Gallery",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container">
+<div class="row">
 
-// `
-//             },
-//         ]
-//     },
+  <!-- ============ PRODUCT GALLERY ============ -->
+  <div class="col-md-6 p1">
+    <div class="row justify-content-center">
+      <div id="gallery-box-photo-container" class="gallery-box-photo-container rounded shadow-3">
+        <img id="p1-main-image" src="https://picsum.photos/seed/aura-prod1-4/800/800" alt="Ceramic Pour-Over Set"><br>
+        <div class="gallery-box-thumbnail-image shadow">
+          <img src="https://picsum.photos/seed/aura-prod1-main/800/800" onclick="document.getElementById('p1-main-image').src='https://picsum.photos/seed/aura-prod1-main/800/800'" alt="Thumbnail 1">
+        </div>
+        <div class="gallery-box-thumbnail-image shadow">
+          <img src="https://picsum.photos/seed/aura-prod1-2/800/800" onclick="document.getElementById('p1-main-image').src='https://picsum.photos/seed/aura-prod1-2/800/800'" alt="Thumbnail 2">
+        </div>
+        <div class="gallery-box-thumbnail-image shadow">
+          <img src="https://picsum.photos/seed/aura-prod1-3/800/800" onclick="document.getElementById('p1-main-image').src='https://picsum.photos/seed/aura-prod1-3/800/800'" alt="Thumbnail 3">
+        </div>
+        <div class="gallery-box-thumbnail-image shadow">
+          <img src="https://picsum.photos/seed/aura-prod1-4/800/800" onclick="document.getElementById('p1-main-image').src='https://picsum.photos/seed/aura-prod1-4/800/800'" alt="Thumbnail 4">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ BUY BOX ============ -->
+  <div class="col-md-6 p1">
+    <p class="text-uppercase small dark bold m0">Kitchen</p>
+    <h1 class="black bold m-t--1-2">Ceramic Pour-Over Set</h1>
+    <div class="row align-items-center m-t--1-2" style="align-items:center;">
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+      <a href="#p1-reviews" class="dark small m-l-1">128 reviews</a>
+    </div>
+    <p class="black bold h3 m-t-1">$68</p>
+    <p class="dark">Hand-glazed stoneware carafe and dripper, designed for a single-cup pour-over ritual.
+      Pairs with any standard #2 filter. Dishwasher safe.</p>
+
+    <p class="bold black m-t-2 small text-uppercase">Color</p>
+    <div class="pills">
+      <a href="#" class="pill pill-color-1">Natural</a>
+      <a href="#" class="pill">Charcoal</a>
+      <a href="#" class="pill">Sage</a>
+    </div>
+
+    <p class="bold black m-t-1 small text-uppercase">Quantity</p>
+    <input type="number" value="1" min="1" class="form-control col-4 col-lg-2">
+
+    <div class="m-t-2">
+      <a href="#" class="button button-lg bg-black white">Add to Cart — $68</a>
+      <a href="#" class="button button-lg color-1 outline-color-1 bg-white icon-box" aria-label="Add to wishlist">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s" style="vertical-align:middle;"><path d="M12,21.35L10.55,20.03C5.4,15.36 2,12.27 2,8.5C2,5.41 4.42,3 7.5,3C9.24,3 10.91,3.81 12,5.08C13.09,3.81 14.76,3 16.5,3C19.58,3 22,5.41 22,8.5C22,12.27 18.6,15.36 13.45,20.03L12,21.35Z"></path></svg>
+      </a>
+    </div>
+
+    <div class="row m-t-2">
+      <div class="col-4 center">
+        <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z"></path></svg></i>
+        <p class="dark small m0">Free shipping</p>
+      </div>
+      <div class="col-4 center">
+        <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"></path></svg></i>
+        <p class="dark small m0">30-day returns</p>
+      </div>
+      <div class="col-4 center">
+        <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"></path></svg></i>
+        <p class="dark small m0">Secure checkout</p>
+      </div>
+    </div>
+
+    <!-- ============ DETAIL ACCORDION ============ -->
+    <div class="accordion m-t-2">
+      <div class="accordion-block">
+        <input type="radio" id="p1-acc1" name="p1-acc" checked="">
+        <label for="p1-acc1" class="accordion-label p1">Materials &amp; Care</label>
+        <div class="accordion-content">Hand-glazed stoneware. Dishwasher and microwave safe. Avoid extreme temperature changes.</div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" id="p1-acc2" name="p1-acc">
+        <label for="p1-acc2" class="accordion-label p1">Dimensions</label>
+        <div class="accordion-content">Carafe: 5.5" H x 4" W. Dripper: 4" H x 4.5" W. Holds 500ml.</div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" id="p1-acc3" name="p1-acc">
+        <label for="p1-acc3" class="accordion-label p1">Shipping &amp; Returns</label>
+        <div class="accordion-content">Ships within 2 business days. Free 30-day returns on unused items.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REVIEWS ============ -->
+<div class="row m-t-4" id="p1-reviews">
+  <div class="col-12">
+    <h2 class="black bold center">Customer Reviews</h2>
+    <div class="row m-t-2">
+      <div class="col-md-4 p1">
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+        <p class="dark m-t--1-2">The nicest thing in my kitchen. It photographs even better in person.</p>
+        <p class="bold black m0">— Priya N.</p>
+      </div>
+      <div class="col-md-4 p1">
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+        <p class="dark m-t--1-2">Pours evenly and cleans up in seconds. Wish I'd bought two.</p>
+        <p class="bold black m0">— Marcus T.</p>
+      </div>
+      <div class="col-md-4 p1">
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+        <p class="dark m-t--1-2">Beautiful glaze, though the carafe runs slightly smaller than I expected.</p>
+        <p class="bold black m0">— Elena R.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ RELATED PRODUCTS CAROUSEL ============ -->
+<div class="row m-t-4">
+  <div class="col-12">
+    <h2 class="black bold center">You May Also Like</h2>
+    <!-- Uses carousel-fixed (see cssvars-carousel-final.css). -->
+    <div class="carousel-fixed h-50-vh m-t-2">
+      <input type="radio" name="p1-related-slides" id="p1-related-1" checked="">
+      <input type="radio" name="p1-related-slides" id="p1-related-2">
+      <ul class="slides">
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3 p1">
+              <img src="https://picsum.photos/seed/aura-rel1/400/400" class="img-responsive rounded" alt="Stoneware Mug Set">
+              <a href="#" class="bold black d-block m-t--1-2">Stoneware Mug Set</a>
+              <p class="dark m0">$46</p>
+            </div>
+            <div class="col-6 col-md-3 p1">
+              <img src="https://picsum.photos/seed/aura-rel2/400/400" class="img-responsive rounded" alt="Oak Cutting Board">
+              <a href="#" class="bold black d-block m-t--1-2">Oak Cutting Board</a>
+              <p class="dark m0">$38</p>
+            </div>
+          </div>
+        </li>
+        <li>
+          <div class="row justify-content-center">
+            <div class="col-6 col-md-3 p1">
+              <img src="https://picsum.photos/seed/aura-rel3/400/400" class="img-responsive rounded" alt="Linen Tea Towels">
+              <a href="#" class="bold black d-block m-t--1-2">Linen Tea Towels</a>
+              <p class="dark m0">$24</p>
+            </div>
+            <div class="col-6 col-md-3 p1">
+              <img src="https://picsum.photos/seed/aura-rel4/400/400" class="img-responsive rounded" alt="Glass Storage Jars">
+              <a href="#" class="bold black d-block m-t--1-2">Glass Storage Jars</a>
+              <p class="dark m0">$52</p>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <div class="slidesNavigation ">
+        <label for="p1-related-1"></label>
+        <label for="p1-related-2"></label>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+`
+            },
+          {
+                title: "E-commerce 2",
+                display: "Single bento",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container p-v-2">
+
+<!-- ============ BENTO IMAGE GALLERY ============ -->
+<div class="bento">
+  <div class="bento-item bento-2x2" style="background-image:url('https://picsum.photos/seed/aura-prod2-1/800/800'); background-size:cover; background-position:center; padding:0;"></div>
+  <div class="bento-item bento-1x1" style="background-image:url('https://picsum.photos/seed/aura-prod2-2/400/400'); background-size:cover; background-position:center; padding:0;"></div>
+  <div class="bento-item bento-1x1" style="background-image:url('https://picsum.photos/seed/aura-prod2-3/400/400'); background-size:cover; background-position:center; padding:0;"></div>
+  <div class="bento-item bento-2x1" style="background-image:url('https://picsum.photos/seed/aura-prod2-4/800/400'); background-size:cover; background-position:center; padding:0;"></div>
+</div>
+
+<div class="row m-t-2">
+  <div class="col-md-7 p1">
+    <!-- ============ TABS: DESCRIPTION / SPECS / REVIEWS ============ -->
+    <div class="tabs">
+      <input type="radio" id="p2tab1" name="p2tabs" checked="">
+      <label for="p2tab1" class="p1">Description</label>
+      <div class="tab">
+        <p class="dark">Each piece in this handblown glassware set is shaped individually by our glassblowing
+          partners, so no two glasses are exactly alike. Slight variations in bubble and tint are part of the
+          craft, not a flaw.</p>
+        <p class="dark">Set of 6 tumblers, dishwasher safe on the gentle cycle. Recommended hand wash for
+          longevity.</p>
+      </div>
+      <input type="radio" id="p2tab2" name="p2tabs">
+      <label for="p2tab2" class="p1">Specs</label>
+      <div class="tab">
+        <table class="table">
+          <tbody>
+            <tr><th>Material</th><td>Handblown recycled glass</td></tr>
+            <tr><th>Set size</th><td>6 tumblers</td></tr>
+            <tr><th>Capacity</th><td>350ml each</td></tr>
+            <tr><th>Dimensions</th><td>4" H x 3" diameter</td></tr>
+            <tr><th>Care</th><td>Dishwasher safe (gentle cycle)</td></tr>
+          </tbody>
+        </table>
+      </div>
+      <input type="radio" id="p2tab3" name="p2tabs">
+      <label for="p2tab3" class="p1">Reviews (86)</label>
+      <div class="tab">
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+        <p class="dark">"Every glass is a little different, which is exactly why we bought them." — Nora S.</p>
+        <p class="dark m-t-1">"Heavier and better made than I expected for the price." — Jamal K.</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ STICKY BUY BOX ============ -->
+  <div class="col-md-5 p1">
+    <div class="panel position-sticky" style="top:1rem;">
+      <p class="text-uppercase small dark bold m0">Living</p>
+      <h1 class="black bold m-t--1-2 h3">Handblown Glassware, Set of 6</h1>
+      <p class="black bold h4 m-t--1-2">$84</p>
+      <p class="dark small">In stock — ships within 2 business days.</p>
+      <a href="#" class="button button-lg bg-black white w-100 m-t-1">Add to Cart</a>
+      <a href="#" class="button button-lg outline-color-1 color-1 bg-white w-100">Buy Now</a>
+      <hr>
+      <div class="d-flex align-items-center m-b--1-2">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg>
+        <span class="dark small m-l-1">Free shipping over $75</span>
+      </div>
+      <div class="d-flex align-items-center m-b--1-2">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg>
+        <span class="dark small m-l-1">30-day free returns</span>
+      </div>
+      <div class="d-flex align-items-center">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M9,16.17L4.83,12L3.41,13.41L9,19L21,7L19.59,5.59L9,16.17Z"></path></svg>
+        <span class="dark small m-l-1">Secure checkout</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+`
+            },
+          {
+                title: "E-commerce 3",
+                display: "Image split",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container p-v-1">
+<div class="row">
+
+  <div class="col-md-6 p1">
+    <img src="https://picsum.photos/seed/aura-prod3-main/800/800" alt="Rattan Lounge Chair" class="img-responsive rounded shadow-3">
+    <div class="row m-t-1">
+      <div class="col-4 p-h--1-2"><img src="https://picsum.photos/seed/aura-prod3-a/300/300" class="img-responsive rounded" alt="Detail"></div>
+      <div class="col-4 p-h--1-2"><img src="https://picsum.photos/seed/aura-prod3-b/300/300" class="img-responsive rounded" alt="Detail"></div>
+      <div class="col-4 p-h--1-2"><img src="https://picsum.photos/seed/aura-prod3-c/300/300" class="img-responsive rounded" alt="Detail"></div>
+    </div>
+  </div>
+
+  <div class="col-md-6 p1">
+    <p class="text-uppercase small dark bold m0">Living — Seating</p>
+    <h1 class="black bold m-t--1-2">Rattan Lounge Chair</h1>
+    <p class="black bold h3 m-t--1-2"><del class="dark h5">$320</del> $260</p>
+    <p class="dark">Weather-resistant natural rattan frame with a removable cotton cushion. Sized for
+      balconies, sunrooms, and reading corners alike.</p>
+
+    <p class="bold black m-t-2 small text-uppercase">Finish</p>
+    <div class="pills">
+      <a href="#" class="pill pill-color-1">Natural Rattan</a>
+      <a href="#" class="pill">Charcoal Weave</a>
+    </div>
+
+    <div class="m-t-2">
+      <a href="#" class="button button-lg bg-black white">Add to Cart — $260</a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ REVIEWS AS TESTIMONIALS ============ -->
+<div class="row m-t-4">
+  <div class="col-12">
+    <h2 class="black center bold">What Customers Say</h2>
+    <hr class="width-short center">
+    <div class="row m-t-2">
+      <div class="col-md-4 p1">
+        <p class="h3 color-1 m0">❝</p>
+        <p class="dark">Sturdier than I expected and looks incredible on our balcony. Assembly took ten minutes.</p>
+        <p class="bold black m-t-1">— Dana K.</p>
+      </div>
+      <div class="col-md-4 p1">
+        <p class="h3 color-1 m0">❝</p>
+        <p class="dark">The cushion cover is removable and washable, which sold me immediately.</p>
+        <p class="bold black m-t-1">— Théo B.</p>
+      </div>
+      <div class="col-md-4 p1">
+        <p class="h3 color-1 m0">❝</p>
+        <p class="dark">Held up through a full summer outdoors with no fading. Very happy with this purchase.</p>
+        <p class="bold black m-t-1">— Aiko M.</p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- ============ PRODUCT FAQ ============ -->
+<div class="row m-t-4">
+  <div class="col-md-4">
+    <h2 class="black bold">Product<br>Questions</h2>
+  </div>
+  <div class="col-md-8">
+    <div class="accordion">
+      <div class="accordion-block">
+        <input type="radio" id="p3faq1" name="p3faq" checked="">
+        <label for="p3faq1" class="accordion-label p1">Is this chair suitable for outdoor use?</label>
+        <div class="accordion-content">Yes, the rattan frame is weather-resistant, though we recommend storing the cushion indoors during heavy rain.</div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" id="p3faq2" name="p3faq">
+        <label for="p3faq2" class="accordion-label p1">Does it require assembly?</label>
+        <div class="accordion-content">Minimal assembly — attaching the legs, which takes about 10 minutes with the included tool.</div>
+      </div>
+      <div class="accordion-block">
+        <input type="radio" id="p3faq3" name="p3faq">
+        <label for="p3faq3" class="accordion-label p1">What is the weight capacity?</label>
+        <div class="accordion-content">The chair is rated for up to 300 lbs.</div>
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+`
+            },
+          {
+                title: "E-commerce 4",
+                display: "Single image",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container p-v-4 w-50-vw-max">
+
+  <!-- ============ CENTERED MINIMAL LAYOUT ============ -->
+  <div class="center">
+    <div class="col-12">
+      <span class="badge bg-dark white text-uppercase">New</span>
+    </div>
+    <img src="https://picsum.photos/seed/aura-prod4-main/700/700" alt="Ceramic Table Lamp" class="img-responsive rounded m-t-1" style="max-width:26rem;">
+  </div>
+
+  <div class="center m-t-2">
+    <p class="text-uppercase small dark bold m0">Lighting</p>
+    <h1 class="black bold m-t--1-2">Ceramic Table Lamp</h1>
+        <div class="center display-6 warning">
+          ★ ★ ★ ★ ★
+        </div>
+    <p class="black bold h3 m-t--1-2">$88</p>
+    <p class="dark">A soft, sculptural glow for bedside tables and reading nooks. Linen shade included.</p>
+    <a href="#" class="button button-lg bg-black white m-t-1">Add to Cart</a>
+  </div>
+
+  <!-- ============ TRUST ICONS ROW ============ -->
+  <div class="row justify-content-center m-t-2">
+    <div class="col-4 center">
+      <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M18,18.5A1.5,1.5 0 0,1 16.5,17A1.5,1.5 0 0,1 18,15.5A1.5,1.5 0 0,1 19.5,17A1.5,1.5 0 0,1 18,18.5M19.5,9.5L21.46,12H17V9.5M6,18.5A1.5,1.5 0 0,1 4.5,17A1.5,1.5 0 0,1 6,15.5A1.5,1.5 0 0,1 7.5,17A1.5,1.5 0 0,1 6,18.5M20,8H17V4H3C1.89,4 1,4.89 1,6V17H3A3,3 0 0,0 6,20A3,3 0 0,0 9,17H15A3,3 0 0,0 18,20A3,3 0 0,0 21,17H23V12L20,8Z"></path></svg></i>
+      <p class="dark small m0">Free shipping</p>
+    </div>
+    <div class="col-4 center">
+      <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M17.65,6.35C16.2,4.9 14.21,4 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20C15.73,20 18.84,17.45 19.73,14H17.65C16.83,16.33 14.61,18 12,18A6,6 0 0,1 6,12A6,6 0 0,1 12,6C13.66,6 15.14,6.69 16.22,7.78L13,11H20V4L17.65,6.35Z"></path></svg></i>
+      <p class="dark small m0">30-day returns</p>
+    </div>
+    <div class="col-4 center">
+      <i class="icon-box"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"></path></svg></i>
+      <p class="dark small m0">Secure checkout</p>
+    </div>
+  </div>
+
+  <!-- ============ VARIANT COMPARISON TABLE ============ -->
+  <div class="m-t-4">
+    <h2 class="black bold center">Compare Lamp Sizes</h2>
+    <div class="container overflow-x-auto m-t-2">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="w-50"></th>
+            <th>Small</th>
+            <th>Standard</th>
+            <th>Large</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th>Height</th><td>10"</td><td>14"</td><td>18"</td></tr>
+          <tr><th>Shade Diameter</th><td>7"</td><td>9"</td><td>11"</td></tr>
+          <tr><th>Best For</th><td>Nightstand</td><td>Side table</td><td>Console table</td></tr>
+          <tr><th>Price</th><td>$68</td><td>$88</td><td>$118</td></tr>
+          <tr>
+            <th></th>
+            <td><a href="#" class="button bg-black">Select</a></td>
+            <td><a href="#" class="button">Select</a></td>
+            <td><a href="#" class="button bg-black">Select</a></td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <!-- ============ CTA ============ -->
+  <div class="center m-t-4 bg-light-grey p2 rounded">
+    <h4 class="black bold m0">Not sure which size to pick?</h4>
+    <p class="dark">Our team is happy to help you choose the right fit for your space.</p>
+    <a href="#" class="button">Contact Us</a>
+  </div>
+
+</div>
+`
+            },
+          {
+                title: "E-commerce 5",
+                display: "Single video",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="row container m-t-2">
+  <div class="col-md-7 m0 p0 embed embed-wide-screen">
+    <iframe class="embed-item" src="https://www.youtube.com/embed/tgbNymZ7vqY" title="How our baskets are woven"></iframe>
+  </div>
+  <div class="col-md-5">
+    <p class="text-uppercase dark m-l-2 m-t-4 small bold">Outdoor — Storage</p>
+    <h1 class="m-t--1-2 bold black left m-l-2">Woven Rattan Basket</h1>
+    <p class="left m-l-2 dark">Watch how each basket is hand-woven from sustainably harvested rattan, then
+      sealed for outdoor durability.</p>
+    <p class="black bold h4 left m-l-2">$46</p>
+    <a href="#" class="button button-lg m-l-2">Add to Cart</a>
+  </div>
+</div>
+<div class="row m-t-2 container">
+    <div class="col-md-7 p1">
+      <h3 class="black bold">Specifications</h3>
+      <table class="table">
+        <tbody>
+          <tr><th>Material</th><td>Natural rattan, sealed finish</td></tr>
+          <tr><th>Dimensions</th><td>16" W x 12" H</td></tr>
+          <tr><th>Weight</th><td>2.4 lbs</td></tr>
+          <tr><th>Weather Rating</th><td>Suitable for covered outdoor use</td></tr>
+          <tr><th>Origin</th><td>Handwoven, Southeast Asia</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="col-md-5 p1">
+      <h3 class="black bold">Care Instructions</h3>
+      <p class="dark">Wipe clean with a damp cloth. Avoid prolonged direct rain exposure. Store indoors during
+        winter months in freezing climates to extend lifespan.</p>
+      <div class="d-flex align-items-center m-t-1">
+        <svg viewBox="0 0 24 24" class="icon-color-1-fill icon-m"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1Z"></path></svg>
+        <span class="dark small m-l-1">Sustainably sourced materials</span>
+      </div>
+    </div>
+  </div>
+`
+            },
+          {
+                title: "E-commerce 6",
+                display: "Promo parallax",
+                description: "Description for E-commerce 1",
+                code: `
+<div class=" p0 parallax-img  h-100-vh centered-col" style="background-image: url('../img/shop/parallax.jpg'); height: 500px;">
+        <div class="container m-v-4 p-v-4">
+            <p class="center h2">
+                UP TO <span class="bold display-1">40%</span> OFF
+            </p>
+            <p class="h2 center bold display-2 center">SPECIAL PROMO</p>
+            <div class="m-v-2 center">
+                <a href="#" class="button button-m d-inline font-weight-400 white text-uppercase p-h-2 p-v-05">purchase
+                    now</a>
+            </div>
+        </div>
+    </div>
+`
+            },
+          {
+                title: "E-commerce 7",
+                display: "Slides",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="carousel-autoplay-linked slides-2">
+    <input type="radio" name="link-slides" id="link-radio-1">
+    <input type="radio" name="link-slides" id="link-radio-2">
+    <ul class="slides h-100-vh">
+      <li><div class="h-100-vh d-flex align-items-center justify-content-center bga-color-2" style="background-image: url('https://picsum.photos/seed/dress1/1600/900'); background-size: cover;">
+          <div class="container">
+        <div class="row justify-content-end">
+          <div class="col-md-6">
+            <h1 class="bold white m0 text-uppercase display-1">dresses</h1>
+            <div class="row align-items-center">
+              <div class="col-2 p0">
+                <span class="white m0 text-uppercase h5 p0">up to</span>
+              </div>
+              <div class="col-3 p0">
+                <span class="white text-uppercase p0 font-weight-400 italic display-2 m0">30%</span>
+              </div>
+              <div class="col-7">
+                <span class="white m0 text-uppercase h5 p0">off in the<br>collection</span>
+              </div>
+            </div>
+            <div class="m-v-2">
+              <a href="#" class="button button-m d-inline m-v-2 black font-weight-400 bg-white text-uppercase p-h-2 p-v--1-2">shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></li>
+      <li><div class="h-100-vh d-flex align-items-center justify-content-center bga-success" style="background-image: url('https://picsum.photos/seed/dress2/1600/900'); background-size: cover;">
+          <div class="container">
+        <div class="row justify-content-start">
+          <div class="col-md-6">
+            <h1 class="bold white m0 text-uppercase display-1">dresses</h1>
+            <div class="row align-items-center">
+              <div class="col-2 p0">
+                <span class="white m0 text-uppercase h5 p0">up to</span>
+              </div>
+              <div class="col-3 p0">
+                <span class="white text-uppercase p0 font-weight-400 italic display-2 m0">30%</span>
+              </div>
+              <div class="col-7">
+                <span class="white m0 text-uppercase h5 p0">off in the<br>collection</span>
+              </div>
+            </div>
+            <div class="m-v-2">
+              <a href="#" class="button button-m d-inline m-v-2 black font-weight-400 bg-white text-uppercase p-h-2 p-v--1-2">shop now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div></li>
+    </ul>
+    <div class="slidesNavigation">
+      <label for="link-radio-1"></label>
+      <label for="link-radio-2"></label>
+    </div>
+  </div>
+`
+            },
+          {
+                title: "E-commerce 8",
+                display: "List parallax",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="parallax-img p0 h-150 w-100" style="background-image: url('../img/shop/dress-1.jpg'); background-size: cover; height= 100%;">
+        <div class="container">
+            <div class="row p-v-4">
+                <div class="col-md-4"></div>
+                <div class="col-md-8 topmargin">
+                    <p class="h4 text-uppercase topmargin">fashion dresses</p>
+                    <div class="row">
+                        <h2 class="bold text-uppercase p0 d-inline">fashion clothes</h2>
+                        <a href="#" class="button button-m d-inline font-weight-400 white text-uppercase p-h-2 p-v-1 m-h-2">shop
+                            now
+                        </a>
+                    </div>
+
+                </div>
+            </div>
+            <div class="container row p-v-2">
+                <div class="col-md-3">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/shop/fashion-dress-2.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Long White Knitted Dress</a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="h5 bold p0 m0 black m-v-05">$139</p>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black text-uppercase">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/shop/fashion-dress-1.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Black Midi Dress</a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="h5 bold p0 m0 black m-v-05">$159</p>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black text-uppercase">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/shop/fashion-dress-3.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Dress with a Bright Print</a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="h5 bold p0 m0 black m-v-05">$189</p>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black text-uppercase">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="hover-shadow">
+                        <a href="#">
+                            <img src="../img/shop/fashion-dress-4.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="p-v-1" style="background-color: #fff;">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Linen Dress with Stripes</a>
+                                <div>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" data-prefix="fas" data-icon="star" class="icon-xs" role="img" viewBox="0 0 576 512">
+                                        <path fill="#ccc" d="M259.3 17.8L194 150.2 47.9 171.5c-26.2 3.8-36.7 36.1-17.7 54.6l105.7 103-25 145.5c-4.5 26.3 23.2 46 46.4 33.7L288 439.6l130.7 68.7c23.2 12.2 50.9-7.4 46.4-33.7l-25-145.5 105.7-103c19-18.5 8.5-50.8-17.7-54.6L382 150.2 316.7 17.8c-11.7-23.6-45.6-23.9-57.4 0z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <p class="h5 bold p0 m0 black m-v-05">$219</p>
+                                <button class="d-inline m-h-1 outline-color-grey bg-white black text-uppercase">
+                                    <svg viewBox="0 0 24 24" class="img-responsive icon-xs">
+                                        <path fill="#000" d="M17,18A2,2 0 0,1 19,20A2,2 0 0,1 17,22C15.89,22 15,21.1 15,20C15,18.89 15.89,18 17,18M1,2H4.27L5.21,4H20A1,1 0 0,1 21,5C21,5.17 20.95,5.34 20.88,5.5L17.3,11.97C16.96,12.58 16.3,13 15.55,13H8.1L7.2,14.63L7.17,14.75A0.25,0.25 0 0,0 7.42,15H19V17H7C5.89,17 5,16.1 5,15C5,14.65 5.09,14.32 5.24,14.04L6.6,11.59L3,4H1V2M7,18A2,2 0 0,1 9,20A2,2 0 0,1 7,22C5.89,22 5,21.1 5,20C5,18.89 5.89,18 7,18M16,11L18.78,6H6.14L8.5,11H16Z">
+                                        </path>
+                                    </svg>
+                                    add to cart
+                                </button>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+`
+            },
+          {
+                title: "E-commerce 9",
+                display: "List clean",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container row m-v-2">
+                <div class="col-md-3">
+                    <div>
+                        <a href="#">
+                            <img src="../img/shop/featured-sunglasses.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="m-v-1 bg-white">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Women's Sunglasses-White
+                                </a>
+                                <p class="h5 bold p0 m0 black m-v-05">$189</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a href="#">
+                            <img src="../img/shop/featured-sunglasses-2.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="m-v-1 bg-white">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Women's Sunglasses-Blue
+                                </a>
+                                <p class="h5 bold p0 m0 black m-v-05">$299</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a href="#">
+                            <img src="../img/shop/featured-sunglasses-3.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="m-v-1 bg-white">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Men's Sunglasses
+                                </a>
+                                <p class="h5 bold p0 m0 black m-v-05">$119</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div>
+                        <a href="#">
+                            <img src="../img/shop/featured-sunglasses-1.jpg" alt="alttext" class="img-responsive">
+                        </a>
+                        <section class="m-v-1 bg-white">
+                            <div class="center">
+                                <a href="#" class="font-weight-400 dark">Women's Sunglasses-Black
+                                </a>
+                                <p class="h5 bold p0 m0 black m-v-05">$189</p>
+                            </div>
+                        </section>
+                    </div>
+                </div>
+            </div>
+`
+            },
+          {
+                title: "E-commerce 10",
+                display: "Bento promo",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container p-v-3">
+    <div class="bento">
+        <div class="bento-2x2 position-relative rounded-1-4 overflow-hidden bg-color-2">
+            <img src="https://picsum.photos/seed/playbox-hero/900/900" class="w-100 h-100 img-responsive opacity07" alt="Lorem">
+            <div class="position-absolute bottom-2 left-2">
+                <h1 class="display-3 white bold m-b-1">Lorem Ipsum<br>Playtime!</h1>
+                <a href="#" class="button bg-warning m-t-1">Shop Toys</a>
+            </div>
+        </div>
+        <div class="bento-2x1 rounded-1-4 overflow-hidden position-relative bg-color-1">
+            <img src="https://picsum.photos/seed/playbox-2/600/280" class="w-100 h-100 img-responsive opacity07" alt="Lorem">
+            <span class="position-absolute top-1 left-1 white bold">Building Blocks</span>
+        </div>
+        <div class="bento-1x1 rounded-1-4 overflow-hidden position-relative bg-warning">
+            <img src="https://picsum.photos/seed/playbox-3/280/280" class="w-100 h-100 img-responsive opacity07" alt="Lorem">
+            <span class="position-absolute top-1 left-1 bold small">Board Games</span>
+        </div>
+        <div class="bento-1x1 rounded-1-4 overflow-hidden position-relative bg-info">
+            <img src="https://picsum.photos/seed/playbox-4/280/280" class="w-100 h-100 img-responsive opacity07" alt="Lorem">
+            <span class="position-absolute top-1 left-1 white bold small">Plush</span>
+        </div>
+    </div>
+</div>
+`
+            },
+          {
+                title: "E-commerce 11",
+                display: "By Category",
+                description: "Description for E-commerce 1",
+                code: `
+<section class="container-fluid p-v-4">
+  <h2 class="black center bold">Shop by Category</h2>
+  <p class="dark center display-6 font-thin">Four collections, one point of view.</p>
+  <div class="row m-t-2">
+    <div class="col-md-3 p1">
+      <a href="store-category-1.html" class="position-relative d-block">
+        <img src="https://picsum.photos/seed/aura-cat-kitchen/500/600" alt="Kitchen" class="img-responsive rounded">
+        <p class="white bold text-uppercase position-absolute" style="bottom:1.5rem;left:1.5rem;">Kitchen</p>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="store-category-1.html" class="position-relative d-block">
+        <img src="https://picsum.photos/seed/aura-cat-living/500/600" alt="Living" class="img-responsive rounded">
+        <p class="white bold text-uppercase position-absolute" style="bottom:1.5rem;left:1.5rem;">Living</p>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="store-category-1.html" class="position-relative d-block">
+        <img src="https://picsum.photos/seed/aura-cat-bath/500/600" alt="Bath" class="img-responsive rounded">
+        <p class="white bold text-uppercase position-absolute" style="bottom:1.5rem;left:1.5rem;">Bath</p>
+      </a>
+    </div>
+    <div class="col-md-3 p1">
+      <a href="store-category-1.html" class="position-relative d-block">
+        <img src="https://picsum.photos/seed/aura-cat-outdoor/500/600" alt="Outdoor" class="img-responsive rounded">
+        <p class="white bold text-uppercase position-absolute" style="bottom:1.5rem;left:1.5rem;">Outdoor</p>
+      </a>
+    </div>
+  </div>
+</section>
+`
+            },
+          {
+                title: "E-commerce 12",
+                display: "Bestseller",
+                description: "Description for E-commerce 1",
+                code: `
+<section class="container-fluid p-v-4" id="new-in">
+  <div class="row align-items-center">
+    <div class="col-md-8">
+      <h2 class="black bold m0">Bestsellers</h2>
+      <p class="dark m0">The pieces everyone keeps coming back for.</p>
+    </div>
+    <div class="col-md-4 right">
+      <a href="store-category-1.html" class="bold color-1">View all products →</a>
+    </div>
+  </div>
+  <div class="row m-t-2">
+    <div class="col-md-3 p1">
+      <div class="card card-hover transition-shadow p-1-2">
+        <div class="position-relative">
+          <img src="https://picsum.photos/seed/aura-p1/500/500" alt="Ceramic Pour-Over Set" class="img-responsive rounded-t">
+          <span class="badge bg-color-1 white position-absolute left-1 top-1">Bestseller</span>
+        </div>
+        <div class="card-body">
+          <p class="dark small text-uppercase m0">Kitchen</p>
+          <a href="store-product-1.html" class="bold black">Ceramic Pour-Over Set</a>
+          <p class="black bold m-t--1-2">$68</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card card-hover transition-shadow p-1-2">
+        <img src="https://picsum.photos/seed/aura-p2/500/500" alt="Linen Throw Blanket" class="img-responsive rounded-t">
+        <div class="card-body">
+          <p class="dark small text-uppercase m0">Living</p>
+          <a href="store-product-1.html" class="bold black">Linen Throw Blanket</a>
+          <p class="black bold m-t--1-2">$54</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card card-hover transition-shadow p-1-2">
+        <div class="position-relative">
+          <img src="https://picsum.photos/seed/aura-p3/500/500" alt="Oak Bath Caddy" class="img-responsive rounded-t">
+          <span class="badge bg-color-2 white position-absolute left-1 top-1">New</span>
+        </div>
+        <div class="card-body">
+          <p class="dark small text-uppercase m0">Bath</p>
+          <a href="store-product-1.html" class="bold black">Oak Bath Caddy</a>
+          <p class="black bold m-t--1-2">$42</p>
+        </div>
+      </div>
+    </div>
+    <div class="col-md-3 p1">
+      <div class="card card-hover transition-shadow p-1-2">
+        <img src="https://picsum.photos/seed/aura-p4/500/500" alt="Rattan Lounge Chair" class="img-responsive rounded-t">
+        <div class="card-body">
+          <p class="dark small text-uppercase m0">Outdoor</p>
+          <a href="store-product-1.html" class="bold black">Rattan Lounge Chair</a>
+          <p class="black bold m-t--1-2"><del class="dark">$320</del> $260</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+          {
+                title: "E-commerce 13",
+                display: "Category boxed",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="row">
+
+  <!-- ============ STICKY CATEGORY TREE ============ -->
+  <aside class="col-md-3 p1">
+    <div class="panel position-sticky top-1">
+      <p class="bold black text-uppercase small m-b-1">Shop By</p>
+      <ul class="menu">
+        <li class="menu-item"><a href="store-category-1.html">Kitchen</a></li>
+        <li class="menu-item"><a href="store-category-3.html">Living</a></li>
+        <li class="menu-item"><a href="#">Bath</a></li>
+        <li class="menu-item active"><a href="store-category-5.html">Outdoor</a></li>
+      </ul>
+      <p class="dark small m-t-1 m-b--1-2 bold">Outdoor subcategories</p>
+      <ul class="no-indent-ul">
+        <li class="m-b--1-2"><a href="#" class="dark">Seating</a></li>
+        <li class="m-b--1-2"><a href="#" class="dark">Lanterns</a></li>
+        <li class="m-b--1-2"><a href="#" class="dark">Planters</a></li>
+        <li class="m-b--1-2"><a href="#" class="dark">Textiles</a></li>
+      </ul>
+    </div>
+  </aside>
+
+  <!-- ============ PRODUCT LIST VIEW ============ -->
+  <div class="col-md-9 p1">
+    <div class="row align-items-center m-b-2">
+      <div class="col-md-6">
+        <h1 class="black bold m0">Outdoor</h1>
+        <p class="dark small m0">12 products</p>
+      </div>
+      <div class="col-md-6 right">
+        <a href="#" class="icon-box" aria-label="Grid view"><svg viewBox="0 0 24 24" class="icon-color-1-fill icon-s"><path d="M3,3H11V11H3V3M13,3H21V11H13V3M3,13H11V21H3V13M13,13H21V21H13V13Z"></path></svg></a>
+        <a href="#" class="icon-box" aria-label="List view"><svg viewBox="0 0 24 24" class="icon-black-fill icon-s"><path d="M3,4H21V6H3V4M3,11H21V13H3V11M3,18H21V20H3V18Z"></path></svg></a>
+      </div>
+    </div>
+
+    <!-- Row 1 -->
+    <div class="row align-items-center p1 border-b border-solid border-light-grey gap">
+      <div class="col-4 col-md-3">
+        <img src="https://picsum.photos/seed/aura-cat5-1/300/300" alt="Rattan Lounge Chair" class="img-responsive rounded">
+      </div>
+      <div class="col-8 col-md-6">
+        <a href="store-product-5.html" class="bold black h6">Rattan Lounge Chair</a>
+        <p class="dark small m-t--1-2">Weather-resistant rattan with removable cushion. Available in three finishes.</p>
+        <div class="rating" style="justify-content:flex-start; font-size:1rem;">
+          <input type="radio" id="c5r1-5" name="c5r1" checked=""><label for="c5r1-5"></label>
+          <input type="radio" id="c5r1-4" name="c5r1"><label for="c5r1-4"></label>
+          <input type="radio" id="c5r1-3" name="c5r1"><label for="c5r1-3"></label>
+          <input type="radio" id="c5r1-2" name="c5r1"><label for="c5r1-2"></label>
+          <input type="radio" id="c5r1-1" name="c5r1"><label for="c5r1-1"></label>
+        </div>
+      </div>
+      <div class="col-md-3 right">
+        <p class="black bold h6"><del class="dark">$320</del> $260</p>
+        <a href="store-product-5.html" class="button">View</a>
+      </div>
+    </div>
+
+    <!-- Row 2 (alternating shade) -->
+    <div class="row align-items-center p1 border-b border-solid border-light-grey gap">
+      <div class="col-4 col-md-3">
+        <img src="https://picsum.photos/seed/aura-cat5-2/300/300" alt="Iron Outdoor Lantern" class="img-responsive rounded">
+      </div>
+      <div class="col-8 col-md-6">
+        <a href="store-product-5.html" class="bold black h6">Iron Outdoor Lantern</a>
+        <p class="dark small m-t--1-2">Hand-forged iron, holds a standard pillar candle. Rustproof coating.</p>
+        <div class="rating" style="justify-content:flex-start; font-size:1rem;">
+          <input type="radio" id="c5r2-5" name="c5r2" checked=""><label for="c5r2-5"></label>
+          <input type="radio" id="c5r2-4" name="c5r2"><label for="c5r2-4"></label>
+          <input type="radio" id="c5r2-3" name="c5r2"><label for="c5r2-3"></label>
+          <input type="radio" id="c5r2-2" name="c5r2"><label for="c5r2-2"></label>
+          <input type="radio" id="c5r2-1" name="c5r2"><label for="c5r2-1"></label>
+        </div>
+      </div>
+      <div class="col-md-3 right">
+        <p class="black bold h6">$62</p>
+        <a href="store-product-5.html" class="button">View</a>
+      </div>
+    </div>
+
+    <!-- Row 3 -->
+    <div class="row align-items-center p1 border-b border-solid border-light-grey gap">
+      <div class="col-4 col-md-3">
+        <img src="https://picsum.photos/seed/aura-cat5-3/300/300" alt="Terracotta Planter" class="img-responsive rounded">
+      </div>
+      <div class="col-8 col-md-6">
+        <a href="store-product-5.html" class="bold black h6">Terracotta Planter, Large</a>
+        <p class="dark small m-t--1-2">Frost-resistant terracotta with drainage hole. 16" diameter.</p>
+        <div class="rating" style="justify-content:flex-start; font-size:1rem;">
+          <input type="radio" id="c5r3-5" name="c5r3"><label for="c5r3-5"></label>
+          <input type="radio" id="c5r3-4" name="c5r3" checked=""><label for="c5r3-4"></label>
+          <input type="radio" id="c5r3-3" name="c5r3"><label for="c5r3-3"></label>
+          <input type="radio" id="c5r3-2" name="c5r3"><label for="c5r3-2"></label>
+          <input type="radio" id="c5r3-1" name="c5r3"><label for="c5r3-1"></label>
+        </div>
+      </div>
+      <div class="col-md-3 right">
+        <p class="black bold h6">$29</p>
+        <a href="store-product-5.html" class="button">View</a>
+      </div>
+    </div>
+
+    <!-- Row 4 (alternating shade) -->
+    <div class="row align-items-center p1 bg-light-grey gap">
+      <div class="col-4 col-md-3">
+        <img src="https://picsum.photos/seed/aura-cat5-4/300/300" alt="Outdoor Cushion Set" class="img-responsive rounded">
+      </div>
+      <div class="col-8 col-md-6">
+        <a href="store-product-5.html" class="bold black h6">Outdoor Cushion Set of 2</a>
+        <p class="dark small m-t--1-2">Fade-resistant fabric, quick-dry foam fill. Fits most standard lounge chairs.</p>
+        <div class="rating" style="justify-content:flex-start; font-size:1rem;">
+          <input type="radio" id="c5r4-5" name="c5r4" checked=""><label for="c5r4-5"></label>
+          <input type="radio" id="c5r4-4" name="c5r4"><label for="c5r4-4"></label>
+          <input type="radio" id="c5r4-3" name="c5r4"><label for="c5r4-3"></label>
+          <input type="radio" id="c5r4-2" name="c5r4"><label for="c5r4-2"></label>
+          <input type="radio" id="c5r4-1" name="c5r4"><label for="c5r4-1"></label>
+        </div>
+      </div>
+      <div class="col-md-3 right">
+        <p class="black bold h6">$48</p>
+        <a href="store-product-5.html" class="button">View</a>
+      </div>
+    </div>
+
+    <nav aria-label="Product pages" class="row justify-content-center m-t-2">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">«</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">»</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`
+            },
+          {
+                title: "E-commerce 14",
+                display: "Chips filter",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="container p-v-2">
+  <!-- ============ TOP FILTER BAR ============ -->
+  <div class="row align-items-center m-b-1">
+    <div class="col-md-8">
+      <div class="pills">
+        <a href="#" class="pill pill-color-1">All</a>
+        <a href="#" class="pill">Kitchen</a>
+        <a href="#" class="pill">Living</a>
+        <a href="#" class="pill">Bath</a>
+        <a href="#" class="pill">Lighting</a>
+        <a href="#" class="pill">Outdoor</a>
+      </div>
+    </div>
+    <div class="col-md-4 right">
+      <div class="dropdown">
+        <input type="checkbox" id="c2-sort-state" class="dropdown-state">
+        <label for="c2-sort-state" class="dropdown-toggle button bg-white color-1 outline-color-1">Sort: Newest</label>
+        <ul class="dropdown-menu menu" style="right:0; left:auto;">
+          <li class="menu-item"><a href="#">Newest</a></li>
+          <li class="menu-item"><a href="#">Price: Low to High</a></li>
+          <li class="menu-item"><a href="#">Price: High to Low</a></li>
+          <li class="menu-item"><a href="#">Top Rated</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active filter chips -->
+  <div class="m-b-2">
+    <span class="chip chip-color-1">Kitchen <button class="chip-close" aria-label="Remove">×</button></span>
+    <span class="chip chip-color-1">Under $50 <button class="chip-close" aria-label="Remove">×</button></span>
+    <a href="store-category-2.html" class="small dark m-l-1">Clear all</a>
+  </div>
+
+  <!-- ============ PRODUCT GRID (grid-cols) ============ -->
+  <div class="d-grid grid-cols-3" style="gap:var(--default-gap);">
+    <div class="card card-hover transition-shadow">
+      <div class="position-relative">
+        <img src="https://picsum.photos/seed/aura-cat2-1/500/500" alt="Ceramic Vase" class="img-responsive rounded-t">
+        <span class="badge bga-color-1 white position-absolute left-1" style="top:0.5rem;">-20%</span>
+      </div>
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Handthrown Ceramic Vase</a>
+        <p class="black bold m0"><del class="dark">$58</del> $46</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-2/500/500" alt="Wool Rug" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Handwoven Wool Rug</a>
+        <p class="black bold m0">$210</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-3/500/500" alt="Brass Candle Holders" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Brass Candle Holders</a>
+        <p class="black bold m0">$44</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-4/500/500" alt="Wood Serving Tray" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Walnut Serving Tray</a>
+        <p class="black bold m0">$36</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <div class="position-relative">
+        <img src="https://picsum.photos/seed/aura-cat2-5/500/500" alt="Linen Cushion" class="img-responsive rounded-t">
+        <span class="badge bga-color-2 white position-absolute left-1" style="top:0.5rem;">New</span>
+      </div>
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Linen Floor Cushion</a>
+        <p class="black bold m0">$74</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-6/500/500" alt="Rattan Basket" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Woven Rattan Basket</a>
+        <p class="black bold m0">$46</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-7/500/500" alt="Glass Pendant Lamp" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Glass Pendant Lamp</a>
+        <p class="black bold m0">$119</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-8/500/500" alt="Stoneware Bowl Set" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Stoneware Bowl Set</a>
+        <p class="black bold m0">$58</p>
+      </div>
+    </div>
+    <div class="card card-hover transition-shadow">
+      <img src="https://picsum.photos/seed/aura-cat2-9/500/500" alt="Outdoor Lantern" class="img-responsive rounded-t">
+      <div class="card-body">
+        <a href="store-product-2.html" class="bold black">Iron Outdoor Lantern</a>
+        <p class="black bold m0">$62</p>
+      </div>
+    </div>
+  </div>
+
+  <nav aria-label="Product pages" class="row justify-content-center m-t-2">
+    <ul class="pagination">
+      <li class="page-item"><a class="page-link" href="#">«</a></li>
+      <li class="page-item active"><a class="page-link" href="#">1</a></li>
+      <li class="page-item"><a class="page-link" href="#">2</a></li>
+      <li class="page-item"><a class="page-link" href="#">3</a></li>
+      <li class="page-item"><a class="page-link" href="#">»</a></li>
+    </ul>
+  </nav>
+</div>
+`
+            },
+          {
+                title: "E-commerce 15",
+                display: "Filter side",
+                description: "Description for E-commerce 1",
+                code: `
+<div class="row">
+
+  <!-- ============ SIDEBAR FILTERS ============ -->
+  <aside class="col-md-3 p1">
+    <div class="panel">
+      <p class="bold black text-uppercase small m-b-1">Category</p>
+      <ul class="menu">
+        <li class="menu-item active"><a href="#">Kitchen <span class="menu-item-badge">24</span></a></li>
+        <li class="menu-item"><a href="#">Living <span class="menu-item-badge">31</span></a></li>
+        <li class="menu-item"><a href="#">Bath <span class="menu-item-badge">18</span></a></li>
+        <li class="menu-item"><a href="#">Outdoor <span class="menu-item-badge">12</span></a></li>
+      </ul>
+
+      <p class="bold black text-uppercase small m-t-2 m-b-1">Price</p>
+      <label><input type="checkbox" checked=""> Under $25</label><br>
+      <label><input type="checkbox"> $25 – $50</label><br>
+      <label><input type="checkbox"> $50 – $100</label><br>
+      <label><input type="checkbox"> $100+</label>
+
+      <p class="bold black text-uppercase small m-t-2 m-b-1">Material</p>
+      <label><input type="checkbox"> Ceramic</label><br>
+      <label><input type="checkbox"> Oak / Wood</label><br>
+      <label><input type="checkbox"> Linen</label><br>
+      <label><input type="checkbox"> Glass</label>
+
+      <p class="bold black text-uppercase small m-t-2 m-b-1">Rating</p>
+      <div class="rating" style="justify-content:flex-start; font-size:1rem;">
+        <input type="radio" id="c1-r5" name="c1-rate"><label for="c1-r5"></label>
+        <input type="radio" id="c1-r4" name="c1-rate"><label for="c1-r4"></label>
+        <input type="radio" id="c1-r3" name="c1-rate"><label for="c1-r3"></label>
+        <input type="radio" id="c1-r2" name="c1-rate"><label for="c1-r2"></label>
+        <input type="radio" id="c1-r1" name="c1-rate"><label for="c1-r1"></label>
+      </div>
+
+      <a href="store-category-1.html" class="button w-100 m-t-2">Apply Filters</a>
+    </div>
+  </aside>
+
+  <!-- ============ PRODUCT GRID ============ -->
+  <div class="col-md-9 p1">
+    <div class="row align-items-center m-b-1">
+      <div class="col-md-6">
+        <h1 class="black bold m0">Kitchen</h1>
+        <p class="dark small m0">24 products</p>
+      </div>
+      <div class="col-md-6 right">
+        <div class="dropdown">
+          <input type="checkbox" id="c1-sort-state" class="dropdown-state">
+          <label for="c1-sort-state" class="dropdown-toggle button bg-white color-1 outline-color-1">Sort: Featured</label>
+          <ul class="dropdown-menu menu" style="right:0; left:auto;">
+            <li class="menu-item"><a href="#">Featured</a></li>
+            <li class="menu-item"><a href="#">Price: Low to High</a></li>
+            <li class="menu-item"><a href="#">Price: High to Low</a></li>
+            <li class="menu-item"><a href="#">Newest</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <div class="position-relative">
+            <img src="https://picsum.photos/seed/aura-cat1-1/450/450" alt="Ceramic Pour-Over Set" class="img-responsive rounded-t">
+            <span class="badge bg-color-1 white position-absolute left-1" style="top:0.5rem;">Bestseller</span>
+          </div>
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Ceramic Pour-Over Set</a>
+            <p class="black bold m0">$68</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <img src="https://picsum.photos/seed/aura-cat1-2/450/450" alt="Stoneware Mug Set" class="img-responsive rounded-t">
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Stoneware Mug Set of 4</a>
+            <p class="black bold m0">$46</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <div class="position-relative">
+            <img src="https://picsum.photos/seed/aura-cat1-3/450/450" alt="Oak Cutting Board" class="img-responsive rounded-t">
+            <span class="badge bga-color-2 white position-absolute left-1" style="top:0.5rem;">New</span>
+          </div>
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Oak Cutting Board</a>
+            <p class="black bold m0">$38</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <img src="https://picsum.photos/seed/aura-cat1-4/450/450" alt="Glass Storage Jars" class="img-responsive rounded-t">
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Glass Storage Jars (Set of 3)</a>
+            <p class="black bold m0">$52</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <img src="https://picsum.photos/seed/aura-cat1-5/450/450" alt="Linen Tea Towels" class="img-responsive rounded-t">
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Linen Tea Towels, Set of 2</a>
+            <p class="black bold m0">$24</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-6 col-md-4 p1">
+        <div class="card card-hover transition-shadow">
+          <img src="https://picsum.photos/seed/aura-cat1-6/450/450" alt="Cast Iron Skillet" class="img-responsive rounded-t">
+          <div class="card-body">
+            <a href="store-product-1.html" class="bold black">Cast Iron Skillet</a>
+            <p class="black bold m0"><del class="dark">$95</del> $78</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- ============ PAGINATION ============ -->
+    <nav aria-label="Product pages" class="row justify-content-center m-t-2">
+      <ul class="pagination">
+        <li class="page-item"><a class="page-link" href="#">«</a></li>
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">»</a></li>
+      </ul>
+    </nav>
+  </div>
+</div>
+`
+            },
+          {
+                title: "E-commerce 16",
+                display: "Slides promo",
+                description: "Description for E-commerce 1",
+                code: `
+<section class="container-fluid bg-light-grey p-v-4">
+  <div class="container">
+    <h2 class="black bold center">This Week's Highlights</h2>
+  </div>
+  <div class="carousel-autoplay-linked slides-3 p0 h-50-vh m-t-2">
+    <input type="radio" name="h2c-slides" id="h2c-radio-1">
+    <input type="radio" name="h2c-slides" id="h2c-radio-2">
+    <input type="radio" name="h2c-slides" id="h2c-radio-3">
+    <ul class="slides" style="height:100%;">
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center" style="background-image:url('https://picsum.photos/seed/aura2-slide1/1400/700'); background-size:cover;">
+          <div class="col-9 col-lg-4 bg-white center p2 rounded">
+            <h3 class="black m0">Handblown Glassware</h3>
+            <p class="dark m-v--1-2">Starting at $28</p>
+            <a href="store-product-2.html" class="button">Shop Now</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center" style="background-image:url('https://picsum.photos/seed/aura2-slide2/1400/700'); background-size:cover;">
+          <div class="col-9 col-lg-4 bg-white center p2 rounded">
+            <h3 class="black m0">Woven Floor Baskets</h3>
+            <p class="dark m-v--1-2">Starting at $46</p>
+            <a href="store-product-2.html" class="button">Shop Now</a>
+          </div>
+        </div>
+      </li>
+      <li>
+        <div class="h-100 d-flex align-items-center justify-content-center" style="background-image:url('https://picsum.photos/seed/aura2-slide3/1400/700'); background-size:cover;">
+          <div class="col-9 col-lg-4 bg-white center p2 rounded">
+            <h3 class="black m0">Stoneware Dinner Sets</h3>
+            <p class="dark m-v--1-2">Starting at $84</p>
+            <a href="store-product-2.html" class="button">Shop Now</a>
+          </div>
+        </div>
+      </li>
+    </ul>
+    <div class="slidesNavigation m-v-1">
+      <label for="h2c-radio-1"></label>
+      <label for="h2c-radio-2"></label>
+      <label for="h2c-radio-3"></label>
+    </div>
+  </div>
+</section>
+                `
+          },
+        ]
+    },
     {
         name: "Portfolio",
         items: [
