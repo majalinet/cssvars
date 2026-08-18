@@ -393,7 +393,7 @@ const blocks = [
             </div>
         </div>
     </div>
-    <div class="h-100-vh rounded-0 parallax-img p0" style="background-image: url('../img/vika/landing-pages/technology-2.jpg'); ">
+    <div class="h-100-vh rounded-0 parallax-img p0" style="background-image: url('../img/templates/technology-2.jpg'); ">
         <div class="container p-v-2">
             <div class="p-v-4 m-v-4">
                 <h1 class="p0 white center display-1 topmargin">Inspirational &amp;<br> Innovative Technology</h1>
@@ -955,6 +955,42 @@ const blocks = [
     {
         name: "Content",
         items: [
+            {
+                title: "Content 14",
+                display: "Split",
+                description: "Description for Content 1",
+                code: `
+<section class="container m-v-2">
+  <div class="row shadow-3 rounded bg-white">
+    <div class="col-md-6 p0">
+      <img src="../img/blocks/work-1.jpg" alt="Team reviewing analytics dashboards at Northwind" class="img-responsive h-100">
+    </div>
+    <div class="col-md-6 p2">
+      <span class="pill pill-color-1">Featured</span>
+      <h2 class="black bold m-t-1">Northwind Retail cut reporting time from 3 days to 20 minutes</h2>
+      <p class="dark m-t-1">Northwind runs 400+ stores across Europe. Before Orbit, weekly performance reports were
+        stitched together by hand across six spreadsheets. Here's how their data team automated the entire pipeline
+        without hiring a single new engineer.</p>
+      <div class="row m-t-2">
+        <div class="col-4">
+          <p class="h3 black bold m0">92%</p>
+          <p class="small dark">faster reporting</p>
+        </div>
+        <div class="col-4">
+          <p class="h3 black bold m0">400+</p>
+          <p class="small dark">stores tracked</p>
+        </div>
+        <div class="col-4">
+          <p class="h3 black bold m0">$1.2M</p>
+          <p class="small dark">saved per year</p>
+        </div>
+      </div>
+      <a href="case-study-detail.html" class="button bg-black m-t-2 rounded">Read the full story</a>
+    </div>
+  </div>
+</section>
+`
+            },
             {
                 title: "Content 1",
                 display: "3 cols images",
@@ -2489,6 +2525,43 @@ const blocks = [
 </section>
                 `
             },
+              {
+                title: "Steps 5",
+                display: "Timeline",
+                description: "Description for steps 1",
+                code: `
+<section class="container m-v-4">
+  <h3 class="black bold center">Rollout timeline</h3>
+  <hr class="width-short center w-50">
+  <div class="row m-t-2">
+    <div class="col-md-8 m-h-auto">
+      <ul class="stepper stepper-vertical">
+        <li class="stepper-step is-complete">
+          <span class="stepper-circle">1</span>
+          <span class="stepper-label bold black">Day 1 — Kickoff &amp; data mapping</span>
+          <p class="dark small">Orbit's onboarding team mapped POS and inventory fields to Orbit's event schema.</p>
+        </li>
+        <li class="stepper-step is-complete">
+          <span class="stepper-circle">2</span>
+          <span class="stepper-label bold black">Day 3 — First live dashboard</span>
+          <p class="dark small">A pilot dashboard went live for two flagship stores in Amsterdam and Berlin.</p>
+        </li>
+        <li class="stepper-step is-complete">
+          <span class="stepper-circle">3</span>
+          <span class="stepper-label bold black">Day 6 — Template cloned to all stores</span>
+          <p class="dark small">The saved view was cloned across all 400+ locations with store-level filters.</p>
+        </li>
+        <li class="stepper-step is-active">
+          <span class="stepper-circle">4</span>
+          <span class="stepper-label bold black">Day 9 — Full rollout &amp; training</span>
+          <p class="dark small">Store managers were trained; the manual reporting process was retired for good.</p>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+                `
+            },
         ]
     },
     {
@@ -3210,8 +3283,8 @@ const blocks = [
 `
             },
             {
-                title: "Grid",
-                display: "Gallery Box",
+                title: "Gallery 5",
+                display: "Grid",
                 description: "Description for Gallery 4",
                 code: `
 <section id="work" class="container p-v-4">
@@ -3234,6 +3307,98 @@ const blocks = [
     </div>
     <div class="card-hover" style="overflow:hidden;border-radius:var(--panel-radius)">
       <img src="https://picsum.photos/seed/aster-p6/500/500" class="img-responsive aspect-square" alt="Project six" style="object-fit:cover">
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "Gallery 6",
+                display: "Bento",
+                description: "Description for Gallery 4",
+                code: `
+<section id="work" class="container p-v-2">
+        <div class="row justify-content-between align-items-end m-b-3">
+            <h2 class="display-4 m-b-0">Selected Work</h2>
+            <a href="#" class="btn-link bold">Full portfolio <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></a>
+        </div>
+        <div class="bento">
+            <div class="bento-item bento-3x2 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj0/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Cliffside Residence</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj1/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Kade Gallery</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj2/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Linden Loft</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj3/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Studio Nave</p>
+                </div>
+            </div>
+            <div class="bento-item bento-2x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj4/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Harbor Pavilion</p>
+                </div>
+            </div>
+            <div class="bento-item bento-1x1 rounded overflow-hidden p0 m0">
+                <img src="https://picsum.photos/seed/marrow-proj1/700/700" class="img-responsive d-block h-100 w-100">
+                <div class="position-absolute bottom-0 left-0 bg-black opacity07 p1 w-100">
+                    <p class="white bold m-b-0 small">Kade Gallery</p>
+                </div>
+            </div>
+        </div>
+    </section>
+                `
+            },
+            {
+                title: "Gallery 7",
+                display: "Bento text",
+                description: "Description for Gallery 4",
+                code: `
+<section id="work" class="p-v-2">
+  <div class="container-fluid">
+    <div class="bento" style="grid-template-columns:repeat(4,1fr);">
+      <div class="bento-item bento-2x2" style="padding:0;">
+        <img src="https://picsum.photos/seed/agencywork1/800/800" class="img-responsive h-100" style="object-fit:cover;" alt="Lorem ipsum project">
+        <div class="p2 bg-white">
+          <p class="m-b-0 small grey">Branding</p>
+          <p class="m-b-0 h5">Lorem Ipsum Co.</p>
+        </div>
+      </div>
+      <div class="bento-item bento-2x1" style="padding:0;">
+        <img src="https://picsum.photos/seed/agencywork2/800/400" class="img-responsive h-100" style="object-fit:cover;" alt="Lorem ipsum project">
+      </div>
+      <div class="bento-item bento-1x1 bg-color-1" style="justify-content:center;">
+        <p class="white h4 m-b-0">Dolor Sit</p>
+        <p class="white small opacity07">Web Design</p>
+      </div>
+      <div class="bento-item bento-1x1" style="padding:0;">
+        <img src="https://picsum.photos/seed/agencywork3/400/400" class="img-responsive h-100" style="object-fit:cover;" alt="Lorem ipsum project">
+      </div>
+      <div class="bento-item bento-2x1" style="padding:0;">
+        <img src="https://picsum.photos/seed/agencywork4/800/400" class="img-responsive h-100" style="object-fit:cover;" alt="Lorem ipsum project">
+        <div class="p2 bg-white">
+          <p class="m-b-0 small grey">Motion</p>
+          <p class="m-b-0 h5">Amet Studio</p>
+        </div>
+      </div>
+      <div class="bento-item bento-2x1 bg-dark" style="justify-content:center;">
+        <p class="white h4 m-b-0">Consectetur</p>
+        <p class="white small opacity07">Product Design</p>
+      </div>
     </div>
   </div>
 </section>
@@ -3961,53 +4126,61 @@ const blocks = [
 </section>
                 `
             },
+            {
+                title: "Testimonial 11",
+                display: "Single dark",
+                description: "Description for Video 2",
+                code: `
+<div class="p-v-4 center bg-black";">
+  <div class="container center bg-black col-10 col-lg-6">
+    <svg viewBox="0 0 24 24" class="icon-m icon-warning-fill m-b-1"><path d="M6,17H10L12,13V7H6V13H9M14,17H18L20,13V7H14V13H17"></path></svg>
+    <p class="lead italic m-b-1 warning">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore.</p>
+    <span class="warning bold small">— Lorem I., Verified Buyer</span>
+  </div>
+</div>
+                `
+            },
         ]
     },
     {
         name: "FAQ",
         items: [
-            {
+              {
                 title: "FAQ 1",
-                display: "2cols",
-                description: "Description for FAQ 1",
+                display: "Closable accordion",
+                description: "Description for FAQ 4",
                 code: `
-<section class="container row m-v-2">
-  <div class="col-md-6 p1">
-    <h4 class="black m-t-4">How do I become a member?</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
-      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
-      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
-      beatae vero vitae nulla.
-    </p>
-
-    <h4 class="black m-t-4">Is it free to be a member?</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
-      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
-      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
-      beatae vero vitae nulla.
-    </p>
-  </div>
-
-  <div class="col-md-6 p1">
-    <h4 class="black m-t-4">Is it free to use?</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
-      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
-      libero eaque explicabo suscipit animi at quaerat aliquid.
-    </p>
-
-    <h4 class="black m-t-4">Will I receive updates for free?</h4>
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
-      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
-      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
-      beatae vero vitae nulla.
-    </p>
-  </div>
-</section>
-`
+<section id="studio" class="container p-v-4">
+        <div class="row gap-4 align-items-center">
+            <div class="col-12">
+                <h2 class="display-5">FAQ</h2>
+                <p class="grey m-b-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium totam rem aperiam.</p>
+                <div class="accordion accordion-closable accordion-underline">
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc1">
+                        <label for="proc1" class="accordion-label row justify-content-between align-items-center">Do I need an account to start?<svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc2">
+                        <label for="proc2" class="accordion-label row justify-content-between align-items-center">Do I need a credit card to start?<svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc3">
+                        <label for="proc3" class="accordion-label row justify-content-between align-items-center">Do you have documentation?<svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.</div>
+                    </div>
+                    <div class="accordion-block">
+                        <input type="checkbox" id="proc4">
+                        <label for="proc4" class="accordion-label row justify-content-between align-items-center">BIf i have more questions? <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill accordion-chevron"><path d="M7.41,8.58L12,13.17L16.59,8.58L18,10L12,16L6,10L7.41,8.58Z"></path></svg></label>
+                        <div class="accordion-content grey small">Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+                `
             },
             {
                 title: "FAQ 2",
@@ -4085,6 +4258,167 @@ const blocks = [
             },
             {
                 title: "FAQ 4",
+                display: "Tabs accordion",
+                description: "Description for FAQ 4",
+                code: `
+<section class="container center m-v-3">
+  <p class="grey text-uppercase bold m-t-2">Help Center</p>
+  <h1 class="black bold">Browse the FAQ by category</h1>
+  <p class="dark font-weight-400 p-h-4 m-h-4">Jump straight to the topic you need — installation, theming,
+    components, or licensing.</p>
+</section>
+
+<section class="container m-v-4 p1">
+  <div class="tabs-vertical">
+    <input type="radio" name="v-tabs" id="v-tab1" checked="">
+    <input type="radio" name="v-tabs" id="v-tab2">
+    <input type="radio" name="v-tabs" id="v-tab3">
+    <input type="radio" name="v-tabs" id="v-tab4">
+
+    <div class="tabs-vertical-nav p2 bg-light-grey rounded">
+      <label for="v-tab1" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M13,9H18.5L13,3.5V9M6,2H14L20,8V20A2,2 0 0,1 18,22H6C4.89,22 4,21.1 4,20V4C4,2.89 4.89,2 6,2M15,18V16H6V18H15M18,14V12H6V14H18Z"></path></svg>
+        Getting Started
+      </label>
+      <label for="v-tab2" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,3L1,9L12,15L21,10.09V17H23V9M5,13.18V17.18L12,21L19,17.18V13.18L12,17L5,13.18Z"></path></svg>
+        Theming &amp; Variables
+      </label>
+      <label for="v-tab3" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M22,21H2V19H22V21M13.5,8H10.5L4,15H8L14.5,8H13.5M20,15L15,10L20,5L21.5,6.5L18,10L21.5,13.5L20,15Z"></path></svg>
+        Components
+      </label>
+      <label for="v-tab4" class="p1 rounded">
+        <svg viewBox="0 0 24 24" class="icon-xs icon-color-1-fill"><path d="M12,1L3,5V11C3,16.55 6.84,21.74 12,23C17.16,21.74 21,16.55 21,11V5L12,1M12,7C13.4,7 14.8,8.6 14.8,10V11C15.4,11 16,11.6 16,12.3V15.7C16,16.4 15.4,17 14.7,17H9.2C8.6,17 8,16.4 8,15.7V12.3C8,11.6 8.6,11 9.2,11V10C9.2,8.6 10.6,7 12,7M12,8.2C11.2,8.2 10.5,8.7 10.5,10V11H13.5V10C13.5,8.7 12.8,8.2 12,8.2Z"></path></svg>
+        Licensing &amp; Support
+      </label>
+    </div>
+
+    <div class="tabs-vertical-content p2">
+
+      <!-- Panel 1: Getting Started -->
+      <div id="v-panel1" class="tab-panel">
+        <h3 class="black m-b-1">Getting Started</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="gs1" checked="">
+            <label for="gs1" class="accordion-label bg-white border-b p1">How do I install CSS Vars Framework?</label>
+            <div class="accordion-content">
+              Add one line to your <code>&lt;head&gt;</code>: <code>&lt;link rel="stylesheet" href="https://cdn.cssvars.com/cssvars.css"&gt;</code>.
+              That's the entire setup — no package manager required.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="gs2">
+            <label for="gs2" class="accordion-label bg-white border-b p1">Can I use it with a static site generator?</label>
+            <div class="accordion-content">
+              Yes. Since it's a single CSS file, it works with any static-site generator, server-rendered
+              framework, or plain HTML page.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="gs3">
+            <label for="gs3" class="accordion-label bg-white border-b p1">Is there a starter template?</label>
+            <div class="accordion-content">
+              The GitHub repository includes demo pages you can copy as a starting point for layouts, navigation,
+              and common components.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 2: Theming -->
+      <div id="v-panel2" class="tab-panel">
+        <h3 class="black m-b-1">Theming &amp; Variables</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="th1" checked="">
+            <label for="th1" class="accordion-label bg-white border-b p1">Where are the design tokens defined?</label>
+            <div class="accordion-content">
+              All tokens — colors, spacing, radii, shadows — live as CSS custom properties inside <code>:root</code>
+              at the top of <code>cssvars.css</code>.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="th2">
+            <label for="th2" class="accordion-label bg-white border-b p1">How do I build a dark mode?</label>
+            <div class="accordion-content">
+              Override the token values inside a <code>prefers-color-scheme: dark</code> media query or a class on
+              <code>&lt;html&gt;</code>. No JavaScript theme switcher is required.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="th3">
+            <label for="th3" class="accordion-label bg-white border-b p1">Does the layout scale fluidly across screen sizes?</label>
+            <div class="accordion-content">
+              Yes — spacing and typography tokens use <code>clamp()</code> so type and rhythm scale smoothly with
+              the viewport instead of jumping at fixed breakpoints.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 3: Components -->
+      <div id="v-panel3" class="tab-panel">
+        <h3 class="black m-b-1">Components</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="cp1" checked="">
+            <label for="cp1" class="accordion-label bg-white border-b p1">How do toggles and accordions work without JS?</label>
+            <div class="accordion-content">
+              Interactive components use the CSS checkbox/radio toggle pattern: a hidden input drives visibility
+              through the <code>:checked</code> selector and adjacent-sibling combinators.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="cp2">
+            <label for="cp2" class="accordion-label bg-white border-b p1">Can I combine gap utilities with the grid?</label>
+            <div class="accordion-content">
+              Add the opt-in <code>.col-gap</code> class to your <code>.row</code> to enable gap support in the
+              flex-based grid columns.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="cp3">
+            <label for="cp3" class="accordion-label bg-white border-b p1">Where can I browse all available blocks?</label>
+            <div class="accordion-content">
+              The block library ships as named HTML snippets you can copy directly into your project and
+              customize with utility classes.
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Panel 4: Licensing -->
+      <div id="v-panel4" class="tab-panel">
+        <h3 class="black m-b-1">Licensing &amp; Support</h3>
+        <div class="accordion-closable">
+          <div class="accordion-block">
+            <input type="checkbox" id="li1" checked="">
+            <label for="li1" class="accordion-label bg-white border-b p1">Is CSS Vars Framework free to use?</label>
+            <div class="accordion-content">
+              Yes, it's open source and free for personal and commercial projects. See the license file in the
+              GitHub repository for full terms.
+            </div>
+          </div>
+          <div class="accordion-block">
+            <input type="checkbox" id="li2">
+            <label for="li2" class="accordion-label bg-white border-b p1">How do I report a bug or request a feature?</label>
+            <div class="accordion-content">
+              Open an issue on the GitHub repository with a short reproduction — the maintainers review issues
+              regularly.
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "FAQ 5",
                 display: "Outline accordion",
                 description: "Description for FAQ 4",
                 code: `
@@ -4124,6 +4458,49 @@ const blocks = [
   </div>
 </section>
                 `
+            },
+            {
+                title: "FAQ 6",
+                display: "2cols",
+                description: "Description for FAQ 1",
+                code: `
+<section class="container row m-v-2">
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">How do I become a member?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
+
+    <h4 class="black m-t-4">Is it free to be a member?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
+  </div>
+
+  <div class="col-md-6 p1">
+    <h4 class="black m-t-4">Is it free to use?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid.
+    </p>
+
+    <h4 class="black m-t-4">Will I receive updates for free?</h4>
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Assumenda, dolorum, vero ipsum molestiae minima odio quo
+      voluptate illum excepturi quam cum voluptates doloribus quae nisi tempore necessitatibus dolores ducimus enim
+      libero eaque explicabo suscipit animi at quaerat aliquid ex expedita perspiciatis? Saepe, aperiam, nam unde quas
+      beatae vero vitae nulla.
+    </p>
+  </div>
+</section>
+`
             },
         ]
     },
@@ -4165,7 +4542,35 @@ const blocks = [
             },
             {
                 title: "CTA 3",
-                display: "Form dark",
+                display: "Form text",
+                description: "Description for CTA 3",
+                code: `
+<section id="book" class="container p-v-4">
+  <div class="panel bg-color-1 row align-items-center gap-3" style="overflow:hidden">
+    <div class="col-lg-6 stack">
+      <h2 class="white">Ready to feel like yourself again?</h2>
+      <p class="white opacity07">Lorem ipsum dolor sit amet consectetur adipiscing elit sed do eiusmod tempor incididunt ut labore.</p>
+    </div>
+    <div class="col-lg-6">
+      <div class="bg-white rounded p2 stack">
+        <div class="form-group">
+          <label>Full name</label>
+          <input type="text" class="form-control" placeholder="Jane Doe">
+        </div>
+        <div class="form-group">
+          <label>Preferred service</label>
+          <input type="text" class="form-control" placeholder="Therapeutic Massage">
+        </div>
+        <button class="button bg-color-1 white button-w-100">Request Appointment</button>
+      </div>
+    </div>
+  </div>
+</section>
+                `
+            },
+            {
+                title: "CTA 4",
+                display: "Form col",
                 description: "Description for CTA 3",
                 code: `
                 <div class=" bg-color-1 p-v-4">
@@ -4185,7 +4590,7 @@ const blocks = [
                 `
             },
             {
-                title: "CTA 4",
+                title: "CTA 5",
                 display: "Search",
                 description: "Description for CTA 3",
                 code: `
@@ -4214,6 +4619,111 @@ const blocks = [
             </div>
         </div>
     </section>
+            `
+            },
+            {
+                title: "CTA 6",
+                display: "Donation",
+                description: "Description for CTA 3",
+                code: `
+<section id="donate" class="p-v-4">
+  <div class="container">
+    <div class="row justify-content-center">
+      <div class="col-12 col-md-6">
+        <div class="panel center p-v-3">
+          <h2 class="display-6 m-b-2">Make a donation</h2>
+          <p class="grey m-b-3">Every lorem ipsum dollar helps dolor sit amet consectetur adipiscing.</p>
+          <div class="cluster gap-1 justify-content-center m-b-3">
+            <button class="button outline-color-1 color-1 bg-white rounded">$25</button>
+            <button class="button bg-color-1 white rounded">$50</button>
+            <button class="button outline-color-1 color-1 bg-white rounded">$100</button>
+            <button class="button outline-color-1 color-1 bg-white rounded">Other</button>
+          </div>
+          <a href="#" class="button button-lg w-100 bg-color-2 white rounded">Donate now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+            `
+            },
+            {
+                title: "CTA 7",
+                display: "Button call",
+                description: "Description for CTA 3",
+                code: `
+<section id="contact" class="p-v-4">
+  <div class="container">
+    <div class="promo-box bg-light-grey center">
+      <h2 class="display-6">Duis aute irure dolor in reprehenderit</h2>
+      <p class="grey m-v-2">Aute irure dolor in reprehenderit voluptate velit esse cillum dolore eu fugiat nulla pariatur excepteur sint occaecat cupidatat.</p>
+      <div class="cluster justify-content-center gap-2">
+        <a href="#" class="button button-lg">Contact us</a>
+        <span class="cluster gap-1 grey display-6"><svg class="icon icon-s icon-color-1-fill" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h4l2 5-2.5 2A12 12 0 0 0 12.5 16.5L14.5 14l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 2 6a2 2 0 0 1 2-2z"></path></svg>(415) 555-0199</span>
+      </div>
+    </div>
+  </div>
+</section>
+            `
+            },
+            {
+                title: "CTA 8",
+                display: "Wide",
+                description: "Description for CTA 3",
+                code: `
+<section id="contact" class="bg-dark p-v-4 rounded-0">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-7">
+        <h2 class="display-5 white m-b-1">Aliquip Lorem Est Pariatur Officia</h2>
+        <p class="grey">Pariatur dolore laborum commodo sint tempor commodo mollit adipiscing qui velit enim sunt velit.</p>
+      </div>
+      <div class="col-md-5 m-t-2 d-flex justify-content-end">
+        <a href="#" class="button button-lg">Contact sales <svg viewBox="0 0 24 24" class="icon-xs icon-white-fill"><path d="M4,11V13H16L10.5,18.5L11.92,19.92L19.84,12L11.92,4.08L10.5,5.5L16,11H4Z"></path></svg></a>
+      </div>
+    </div>
+  </div>
+</section>
+            `
+            },
+            {
+                title: "CTA 9",
+                display: "Subscribe",
+                description: "Description for CTA 3",
+                code: `
+<section class="container-fluid bga-color-1 p-v-4">
+  <div class="container center">
+    <h3 class="dark bold m0">Join the AURA list</h3>
+    <p class="dark p-b-1">10% off your first order, plus early access to new collections.</p>
+    <form class="row justify-content-center cluster">
+      <div class="col-md-4 col-8 p-h--1-2">
+        <input type="email" placeholder="Your email address" class="w-100  form-control">
+      </div>
+      <div class="col-md-2 col-4 p-h--1-2">
+        <button type="submit" class="bg-black white w-100">Subscribe</button>
+      </div>
+    </form>
+  </div>
+</section>
+            `
+            },
+            {
+                title: "CTA 10",
+                display: "Wid 2 buttons",
+                description: "Description for CTA 3",
+                code: `
+<section class="container p-v-4">
+  <div class="row bg-light-grey rounded p2 align-items-center">
+    <div class="col-md-8 p1">
+      <h5 class="black bold m0">Didn't find your answer?</h5>
+      <p class="dark m0 m-t-1">Search the full help center or open a ticket — our team reads every one.</p>
+    </div>
+    <div class="col-md-4 p1 right">
+      <a href="support-1.html" class="button bg-white color-1">Search help center</a>
+      <a href="support-2.html" class="button">Submit a ticket</a>
+    </div>
+  </div>
+</section>
             `
             },
         ]
@@ -7823,6 +8333,38 @@ const blocks = [
             },
             {
                 title: "Team 3",
+                display: "cards",
+                description: "Description for Team 3",
+                code: `
+<div class="container">
+    <h2 class="display-6 center m-b-4">Meet our team</h2>
+    <div class="row gap">
+      <div class="card col-lg-4 center">
+            <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-lg m-auto" alt="James Carter">
+            <p class="black bold m-t-1 m0">James Carter</p>
+            <p class="dark small m0">Content Lead</p>
+            <p class="dark small line-height-17 m-t-1">Writes about editorial workflows, SEO, and building content teams that scale.</p>
+            <a href="#" class="button button-s bg-black text-uppercase small p-v-1 p-h-2 m-t-1">Follow</a>
+        </div>
+      <div class="card col-lg-4 center">
+            <img src="../img/blocks/worker-2-s.jpg" class="img-responsive circle icon-lg m-auto" alt="James Carter">
+            <p class="black bold m-t-1 m0">Linda Carter</p>
+            <p class="dark small m0">Content Lead</p>
+            <p class="dark small line-height-17 m-t-1">Writes about editorial workflows, SEO, and building content teams that scale.</p>
+            <a href="#" class="button button-s bg-black text-uppercase small p-v-1 p-h-2 m-t-1">Follow</a>
+        </div>
+      <div class="card col-lg-4 center">
+            <img src="../img/blocks/worker-3-s.jpg" class="img-responsive circle icon-lg m-auto" alt="James Carter">
+            <p class="black bold m-t-1 m0">Anna Carter</p>
+            <p class="dark small m0">Content Lead</p>
+            <p class="dark small line-height-17 m-t-1">Writes about editorial workflows, SEO, and building content teams that scale.</p>
+            <a href="#" class="button button-s bg-black text-uppercase small p-v-1 p-h-2 m-t-1">Follow</a>
+        </div>
+    </div>
+  </div> `
+            },
+            {
+                title: "Team 4",
                 display: "4cols cricle",
                 description: "Description for Team 3",
                 code: `
