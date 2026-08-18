@@ -6060,6 +6060,454 @@ const blocks = [
 </section>
 `
             },
+            {
+                title: "Blog 5",
+                display: "Sidebar",
+                description: "Description for Blog 4",
+                code: `
+<section class="container p-v-2">
+  <div class="row">
+    <div class="col-md-8">
+      <h4 class="black bold left m-b-2">Recent Posts</h4>
+
+      <div class="row m-v-1">
+        <div class="col-4 p0 m0">
+          <img src="../img/blocks/work-1.jpg" class="img-responsive">
+        </div>
+        <div class="col-8 left p1">
+          <p>
+            <span class="font-weight-400 left"><a href="#" class="h5 black">A Beginner's Guide to CSS Layers</a></span>
+            <span class="badge black">Admin wrote on 5/2/2026</span>
+          </p>
+          <p>An honest, no-nonsense walkthrough of the @layer cascade and why it finally solves
+            specificity wars for good.</p>
+          <a href="#" class="bold">Read More →</a>
+        </div>
+      </div>
+      <hr class="width-short">
+
+      <div class="row m-v-1">
+        <div class="col-4 p0 m0">
+          <img src="../img/blocks/work-4.jpg" class="img-responsive">
+        </div>
+        <div class="col-8 left p1">
+          <p>
+            <span class="font-weight-400 left"><a href="#" class="h5 black">How to Attract a Customer with a
+              Marketing Model AIDA?</a></span>
+            <span class="badge black">Admin wrote on 3/2/2026</span>
+          </p>
+          <p>Attention, Interest, Desire, Action — a model that's decades old and still shapes every
+            landing page you visit.</p>
+          <a href="#" class="bold">Read More →</a>
+        </div>
+      </div>
+      <hr class="width-short">
+
+      <div class="row m-v-1">
+        <div class="col-4 p0 m0">
+          <img src="../img/blocks/work-5.jpg" class="img-responsive">
+        </div>
+        <div class="col-8 left p1">
+          <p>
+            <span class="font-weight-400 left"><a href="#" class="h5 black">10 Tips on How to Make Your
+              Content Better</a></span>
+            <span class="badge black">Admin wrote on 3/13/2026</span>
+          </p>
+          <p>Ten small, unglamorous edits that compound into noticeably better writing over time.</p>
+          <a href="#" class="bold">Read More →</a>
+        </div>
+      </div>
+
+      <!-- Pagination -->
+      <ul class="pagination m-t-2">
+        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+        <li class="page-item"><a class="page-link" href="#">2</a></li>
+        <li class="page-item"><a class="page-link" href="#">3</a></li>
+        <li class="page-item"><a class="page-link" href="#">Next</a></li>
+      </ul>
+    </div>
+
+    <div class="col-md-4 p1">
+      <div class="card m-b-2">
+        <div class="card-header">Search</div>
+        <div class="card-body">
+          <input type="text" class="form-control" placeholder="Search articles...">
+        </div>
+      </div>
+
+      <div class="card m-b-2">
+        <div class="card-header">Categories</div>
+        <div class="card-body">
+          <ul class="half-indent-ul">
+            <li class="m-v-05"><a href="#">Guides <span class="badge bga-success m-l-1">14</span></a></li>
+            <li class="m-v-05"><a href="#">Reviews <span class="badge bga-success m-l-1">8</span></a></li>
+            <li class="m-v-05"><a href="#">Marketing <span class="badge bga-success m-l-1">6</span></a></li>
+            <li class="m-v-05"><a href="#">Opinion <span class="badge bga-success m-l-1">3</span></a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card m-b-2">
+        <div class="card-header">Recent Posts</div>
+        <div class="card-body">
+          <ul class="half-indent-ul">
+            <li class="m-v-05"><a href="#">Quality Web Design Principles To Follow in 2026</a></li>
+            <li class="m-v-05"><a href="#">Masking, Effects &amp; Patterns in Illustrator</a></li>
+            <li class="m-v-05"><a href="#">Why Zero-JS Frameworks Are Having a Moment</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="card-header">Newsletter</div>
+        <div class="card-body">
+          <p class="small dark font-weight-400">One good read, every Friday.</p>
+          <form class="row">
+            <input type="email" class="form-control" placeholder="Enter your email">
+            <button type="submit" class="button w-100 m-t-1">Subscribe</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+`
+            },
+            {
+                title: "Blog 6",
+                display: "Single",
+                description: "Description for Blog 4",
+                code: `
+<article class="bg-white p-v-4">
+  <div class="container">
+
+    <!-- breadcrumb -->
+    <ul class="breadcrumb dark small p0">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">Blog</a></li>
+      <li><a href="#" class="black">Marketing</a></li>
+    </ul>
+
+    <!-- meta row -->
+    <div class="row m-t-2">
+      <div class="col-md-12">
+        <p class="d-inline badge larger bga-color-1 text-uppercase bold">Marketing</p>
+        <span class="d-inline dark m-h-1">
+          <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M9,10H7V12H9V10M13,10H11V12H13V10M17,10H15V12H17V10M19,3H18V1H16V3H8V1H6V3H5C3.89,3 3,3.89 3,5V19A2,2 0 0,0 5,21H19A2,2 0 0,0 21,19V5C21,3.89 20.1,3 19,3M19,19H5V8H19V19Z"></path></svg>
+          March 10, 2026
+        </span>
+        <span class="d-inline dark m-h-1">
+          <svg viewBox="0 0 24 24" class="icon-xxs icon-color-1-fill"><path d="M12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20M12,2A10,10 0 0,1 22,12A10,10 0 0,1 12,22C6.47,22 2,17.5 2,12A10,10 0 0,1 12,2M12.5,7V12.25L17,14.92L16.25,16.15L11,13V7H12.5Z"></path></svg>
+          6 min read
+        </span>
+      </div>
+    </div>
+
+    <!-- title -->
+    <h1 class="black bold left m-t-1">How to Attract a Customer with a Marketing Model AIDA</h1>
+    <p class="dark left h6 font-weight-400 m-t-1">A practical, no-fluff walkthrough of the Attention–Interest–Desire–Action framework, with real examples you can steal for your next campaign.</p>
+
+    <!-- author + share row -->
+    <div class="row justify-content-between align-items-center m-t-2 p-v-1 outline-light-grey m0">
+      <div class="d-flex align-items-center gap-2 p1">
+        <img src="../img/blocks/worker-2-s.jpg" class="img-responsive circle icon-lg" alt="Victoria Perry">
+        <div>
+          <p class="black bold m0">Victoria Perry</p>
+          <p class="dark small m0">CEO &amp; Co-Founder</p>
+        </div>
+      </div>
+      <div class="d-flex gap-1 p1">
+        <a href="#"><svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill"><path d="M17,2H7A5,5 0 0,0 2,7V17A5,5 0 0,0 7,22H17A5,5 0 0,0 22,17V7A5,5 0 0,0 17,2M12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M17.5,6.5A1,1 0 0,0 16.5,7.5A1,1 0 0,0 17.5,8.5A1,1 0 0,0 18.5,7.5A1,1 0 0,0 17.5,6.5Z"></path></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill"><path d="M22.46,6C21.69,6.35 20.86,6.58 20,6.69C20.88,6.16 21.56,5.32 21.88,4.31C21.05,4.81 20.13,5.16 19.16,5.36C18.37,4.5 17.26,4 16,4C13.65,4 11.73,5.92 11.73,8.29C11.73,8.63 11.77,8.96 11.84,9.27C8.28,9.09 5.11,7.38 3,4.79C2.63,5.42 2.42,6.16 2.42,6.94C2.42,8.43 3.17,9.75 4.33,10.5C3.62,10.5 2.96,10.3 2.38,10C2.38,10 2.38,10 2.38,10.03C2.38,12.11 3.86,13.85 5.82,14.24C5.46,14.34 5.08,14.39 4.69,14.39C4.42,14.39 4.15,14.36 3.89,14.31C4.43,16 6,17.26 7.89,17.29C6.43,18.45 4.58,19.13 2.56,19.13C2.22,19.13 1.88,19.11 1.54,19.07C3.44,20.29 5.7,21 8.12,21C16,21 20.33,14.46 20.33,8.79C20.33,8.6 20.33,8.42 20.32,8.23C21.16,7.63 21.88,6.87 22.46,6Z"></path></svg></a>
+        <a href="#"><svg viewBox="0 0 24 24" class="icon-s icon-color-1-fill"><path d="M4,2A2,2 0 0,0 2,4V20A2,2 0 0,0 4,22H20A2,2 0 0,0 22,20V4A2,2 0 0,0 20,2H4M8.34,8.63C7.13,8.63 6.29,7.79 6.29,6.75C6.29,5.71 7.14,4.87 8.38,4.87C9.62,4.87 10.44,5.71 10.46,6.75C10.46,7.79 9.62,8.63 8.34,8.63M10.13,19.24H6.44V9.93H10.13V19.24M19.5,19.24H15.83V14C15.83,12.61 15.13,11.87 14.19,11.87C13.27,11.87 12.62,12.59 12.62,14V19.24H8.93V9.93H12.62V11.54C12.94,10.85 13.94,9.69 15.66,9.69C17.5,9.69 19.5,10.86 19.5,14.15V19.24Z"></path></svg></a>
+      </div>
+    </div>
+
+    <!-- hero image -->
+     <div class="centered-col">
+      <img src="../img/blocks/technology.jpg" class="img-responsive rounded m-t-2" alt="AIDA marketing model">
+      <p class="small dark center m-t--1-2">The AIDA funnel in action across a modern acquisition campaign.</p>
+     </div>
+
+    <!-- body -->
+    <div class="row justify-content-center m-t-2">
+      <div class="col-md-8">
+        <p class="line-height-17 dark m-t-1">Every customer decision, no matter how small, follows a psychological arc. The AIDA model breaks that arc into four stages — Attention, Interest, Desire, and Action — and gives marketers a repeatable structure for guiding a stranger toward a buyer.</p>
+
+        <h3 class="black bold left m-t-2">1. Capture Attention</h3>
+        <p class="line-height-17 dark m-t-1">Before anything else, your message has to interrupt the scroll. That means a bold headline, a striking visual, or a claim specific enough to feel earned rather than generic.</p>
+
+        <blockquote class="m-t-2">
+          <p>"People don't buy what you do, they buy why you do it — attention is earned by clarity, not volume."</p>
+          <span class="blockquote-footer">Victoria Perry, CEO</span>
+        </blockquote>
+
+        <h3 class="black bold left m-t-2">2. Build Interest</h3>
+        <p class="line-height-17 dark m-t-1">Once you have eyes on the page, interest is sustained through relevance. Speak directly to the problem your audience already knows they have.</p>
+        <ul class="dark line-height-17">
+          <li>Lead with the customer's problem, not your product spec sheet</li>
+          <li>Use concrete numbers instead of vague adjectives</li>
+          <li>Keep the first three sentences skimmable on mobile</li>
+        </ul>
+
+        <h3 class="black bold left m-t-2">3. Create Desire</h3>
+        <p class="line-height-17 dark m-t-1">Desire is where features become benefits. Show the after-state, not just the mechanism, and let social proof do the convincing for you.</p>
+
+        <h3 class="black bold left m-t-2">4. Drive Action</h3>
+        <p class="line-height-17 dark m-t-1">Every piece of content should end with exactly one next step. Multiple competing calls-to-action dilute conversion more than a mediocre offer ever will.</p>
+
+        <!-- tags -->
+        <div class="pills m-t-3">
+          <a href="#" class="pill">Marketing</a>
+          <a href="#" class="pill">Growth</a>
+          <a href="#" class="pill">Copywriting</a>
+          <a href="#" class="pill">Conversion</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- author bio card -->
+    <div class="row justify-content-center m-t-3">
+      <div class="col-md-8">
+        <div class="card d-flex align-items-center gap-2">
+          <img src="../img/blocks/worker-2-s.jpg" class="img-responsive circle icon-lg" alt="Victoria Perry">
+          <div>
+            <p class="black bold m0">Written by Victoria Perry</p>
+            <p class="dark small m0">CEO and Co-Founder, writing about growth marketing, positioning, and customer psychology.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- prev / next -->
+    <div class="row justify-content-center m-t-3">
+      <div class="col-md-8">
+        <div class="row justify-content-between outline-light-grey p1 m0">
+          <a href="#" class="dark small">← 10 Tips on How to Make Your Content Better</a>
+          <a href="#" class="dark small">Masking, Effects &amp; Patterns in Illustrator →</a>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</article>
+`
+            },
+            {
+                title: "Blog 7",
+                display: "Single sidebar",
+                description: "Description for Blog 4",
+                code: `
+<div class="container">
+
+    <div class="row">
+      <div class="col-md-8">
+
+        <p class="dark small m0">Blog / Startups</p>
+        <h1 class="black bold left m-t-1">10 Tips on How to Make Your Content Better</h1>
+        <div class="d-flex align-items-center gap-1 m-t-1">
+          <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-s" alt="Author">
+          <p class="dark small m0">By James Carter · 13 March, 2026 · 8 min read</p>
+        </div>
+
+        <img src="../img/blocks/laptop.jpg" class="img-responsive rounded m-t-2" alt="Content strategy workspace">
+
+        <div class="bg-white p2 m-t-2">
+          <h4 id="planning" class="black bold left">Start with a Content Plan</h4>
+          <p class="line-height-17 dark m-t-1">Publishing without a plan is the fastest way to burn out an editorial team. Map topics to funnel stages before a single word is written.</p>
+
+          <h4 id="research" class="black bold left m-t-3">Research Before You Write</h4>
+          <p class="line-height-17 dark m-t-1">Every well-performing post starts as a question your audience is already asking. Search intent, not inspiration, should drive the outline.</p>
+          <ul class="dark line-height-17">
+            <li>Mine your support inbox for recurring questions</li>
+            <li>Check competitor content for coverage gaps</li>
+            <li>Validate demand with basic keyword volume</li>
+          </ul>
+
+          <h4 id="structure" class="black bold left m-t-3">Structure for Skimmers</h4>
+          <p class="line-height-17 dark m-t-1">Most readers scan before they commit. Descriptive subheadings and short paragraphs do more for retention than clever prose.</p>
+
+          <blockquote class="m-t-2">
+            <p>"Good structure is invisible — readers only notice it when it's missing."</p>
+            <span class="blockquote-footer">James Carter, Content Lead</span>
+          </blockquote>
+
+          <h4 id="edit" class="black bold left m-t-3">Edit Ruthlessly</h4>
+          <p class="line-height-17 dark m-t-1">A first draft is a starting position, not a finished asset. Cut every sentence that doesn't earn its place.</p>
+        </div>
+
+        <div class="pills m-t-2">
+          <a href="#" class="pill pill-color-1">Content Strategy</a>
+          <a href="#" class="pill">Editing</a>
+          <a href="#" class="pill">SEO</a>
+        </div>
+      </div>
+
+      <!-- sticky sidebar -->
+      <div class="col-md-4">
+        <div class="position-sticky top-0">
+
+          <div class="card m-t-1">
+            <p class="black bold m0 m-b-1">On This Page</p>
+            <ul class="menu">
+              <li class="menu-item"><a href="#planning">Start with a Content Plan</a></li>
+              <li class="menu-item"><a href="#research">Research Before You Write</a></li>
+              <li class="menu-item"><a href="#structure">Structure for Skimmers</a></li>
+              <li class="menu-item"><a href="#edit">Edit Ruthlessly</a></li>
+            </ul>
+          </div>
+
+          <div class="card m-t-2 center">
+            <img src="../img/blocks/worker-1-s.jpg" class="img-responsive circle icon-lg m-auto" alt="James Carter">
+            <p class="black bold m-t-1 m0">James Carter</p>
+            <p class="dark small m0">Content Lead</p>
+            <p class="dark small line-height-17 m-t-1">Writes about editorial workflows, SEO, and building content teams that scale.</p>
+            <a href="#" class="button button-s bg-black text-uppercase small p-v-1 p-h-2 m-t-1">Follow</a>
+          </div>
+
+          <div class="card m-t-2">
+            <p class="black bold m0 m-b-1">Related Posts</p>
+            <div class="menu">
+              <a href="#" class="d-flex align-items-center gap-1 p-v-1">
+                <img src="../img/blocks/work-1.jpg" class="img-responsive rounded icon-lg" alt="Related post">
+                <span class="small dark">How to Attract a Customer with AIDA</span>
+              </a>
+              <a href="#" class="d-flex align-items-center gap-1 p-v-1">
+                <img src="../img/blocks/work-10.jpg" class="img-responsive rounded icon-lg" alt="Related post">
+                <span class="small dark">Masking, Effects &amp; Patterns</span>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+  </div>
+`
+            },
+            {
+                title: "Blog 8",
+                display: "Single parallax",
+                description: "Description for Blog 4",
+                code: `
+<article class="bg-white">
+
+  <!-- full-bleed hero -->
+  <section class="parallax-img h-100-vh m-auto" style="background-image: url('../img/blocks/portfolio-1.jpg');">
+    <div class="h-100-vh d-flex flex-column justify-content-center align-items-center p-v-3">
+      <p class="badge larger bga-color-1 white text-uppercase bold">Web Design</p>
+      <h1 class="white bold center m-t-1 col-md-8">Quality Web Design Principles To Follow in 2026</h1>
+      <p class="grey center m-t-1">By Elena Ross · September 4, 2026 · 5 min read</p>
+    </div>
+  </section>
+
+  <!-- meta strip -->
+  <section class="bg-color-1 p-v-1">
+    <div class="container row justify-content-between align-items-center">
+      <p class="white small m0">Design</p>
+      <div class="d-flex gap-1">
+        <svg viewBox="0 0 24 24" class="icon-xxs icon-color-2-fill"><path d="M12,9A3,3 0 0,0 9,12A3,3 0 0,0 12,15A3,3 0 0,0 15,12A3,3 0 0,0 12,9M12,17A5,5 0 0,1 7,12A5,5 0 0,1 12,7A5,5 0 0,1 17,12A5,5 0 0,1 12,17M12,4.5C7,4.5 2.73,7.61 1,12C2.73,16.39 7,19.5 12,19.5C17,19.5 21.27,16.39 23,12C21.27,7.61 17,4.5 12,4.5Z"></path></svg>
+        <span class="grey small">2,481</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- content -->
+  <div class="container p-v-4">
+    <div class="row justify-content-center">
+      <div class="col-md-8">
+        <p class="line-height-17 dark larger m-t-1">Web design in 2026 is no longer about decoration — it's about restraint. The sites that convert best strip away everything that doesn't serve the reader's next decision.</p>
+
+        <h3 class="black bold left m-t-2">Fluid, Not Fixed</h3>
+        <p class="line-height-17 dark m-t-1">Viewport-responsive typography and spacing remove the need for a dozen breakpoints. Design once, let the browser do the scaling.</p>
+
+        <div class="row m-t-2">
+          <div class="col-md-6 p1">
+            <img src="../img/blocks/work-2.jpg" class="img-responsive rounded" alt="Design detail one">
+          </div>
+          <div class="col-md-6 p1">
+            <img src="../img/blocks/work-4.jpg" class="img-responsive rounded" alt="Design detail two">
+          </div>
+        </div>
+        <p class="small dark center m-t--1-2">Fluid grids adapt without a single fixed breakpoint.</p>
+
+        <h3 class="black bold left m-t-3">Contrast Does the Heavy Lifting</h3>
+        <p class="line-height-17 dark m-t-1">Color and type-scale contrast guide the eye more reliably than motion or ornamentation ever will.</p>
+
+        <blockquote class="m-t-2">
+          <p>"The best interface is the one the user forgets they're using."</p>
+          <span class="blockquote-footer">Elena Ross, Design Director</span>
+        </blockquote>
+
+        <h3 class="black bold left m-t-2">Performance Is a Design Constraint</h3>
+        <p class="line-height-17 dark m-t-1">A beautiful layout that loads slowly is a broken layout. Treat page weight as a design decision, not an engineering afterthought.</p>
+      </div>
+    </div>
+
+    <!-- author closer -->
+    <div class="row justify-content-center m-t-3">
+      <div class="col-md-8 center bg-light-grey p2 rounded">
+        <img src="../img/blocks/worker-3-s.jpg" class="img-responsive circle icon-lg m-auto" alt="Elena Ross">
+        <p class="black bold m-t-1 m0">Elena Ross</p>
+        <p class="dark small">Design Director — writes about visual systems and interface craft.</p>
+      </div>
+    </div>
+  </div>
+</article>
+`
+            },
+            {
+                title: "Blog 9",
+                display: "Author",
+                description: "Description for Blog 4",
+                code: `
+<section class="bg-light-grey p-v-4">
+  <div class="container row p-v-1">
+    <div class="col-md-4 p1 center">
+      <img src="../img/blocks/worker-1.jpg" alt="Kim Doe" class="img-responsive rounded shadow-3">
+    </div>
+    <div class="col-md-8 p-h-3">
+      <p class="badge larger bga-color-1 white text-uppercase font-weight-600 d-inline">Framework Author</p>
+      <h1 class="black bold m-t-1">Kim Doe</h1>
+      <p class="color-1 italic h6">Frontend Architect &amp; Creator of CSS Vars Framework</p>
+      <hr class="m0 width-short m-v-2">
+      <p class="dark line-height-17 m-v-1">
+        Kim writes about dependency-free, zero-JavaScript CSS architecture — from
+        <code>@layer</code> cascade design to fluid <code>clamp()</code> typography. Twelve
+        years building for the web taught one lesson above the rest: the browser already
+        ships most of what a framework needs to do.
+      </p>
+      <div class="row m-v-2">
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M12,2A10,10 0 0,0 2,12C2,16.42 4.87,20.17 8.84,21.5C9.34,21.58 9.5,21.27 9.5,21C9.5,20.77 9.5,20.14 9.5,19.31C6.73,19.91 6.14,17.97 6.14,17.97C5.68,16.81 5.03,16.5 5.03,16.5C4.12,15.88 5.1,15.9 5.1,15.9C6.1,15.97 6.63,16.93 6.63,16.93C7.5,18.45 8.97,18 9.54,17.76C9.63,17.11 9.89,16.67 10.17,16.42C7.95,16.17 5.62,15.31 5.62,11.5C5.62,10.39 6,9.5 6.65,8.79C6.55,8.54 6.2,7.5 6.75,6.15C6.75,6.15 7.59,5.88 9.5,7.17C10.29,6.95 11.15,6.84 12,6.84C12.85,6.84 13.71,6.95 14.5,7.17C16.41,5.88 17.25,6.15 17.25,6.15C17.8,7.5 17.45,8.54 17.35,8.79C18,9.5 18.38,10.39 18.38,11.5C18.38,15.32 16.04,16.16 13.81,16.41C14.17,16.72 14.5,17.33 14.5,18.26C14.5,19.6 14.5,20.68 14.5,21C14.5,21.27 14.66,21.59 15.17,21.5C19.14,20.16 22,16.42 22,12A10,10 0 0,0 12,2Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="0 0 24 24" class="icon-xs icon-black-fill">
+              <path d="M21,21H17V14.25C17,13.19 15.81,12.31 14.75,12.31C13.69,12.31 13,13.19 13,14.25V21H9V9H13V11C13.66,9.93 15.36,9.24 16.5,9.24C19,9.24 21,11.28 21,13.75V21M7,21H3V9H7V21M5,3A2,2 0 0,1 7,5A2,2 0 0,1 5,7A2,2 0 0,1 3,5A2,2 0 0,1 5,3Z"></path>
+            </svg>
+          </i>
+        </a>
+        <a href="#:">
+          <i class="icon-box circle m0 border hover-grey">
+            <svg viewBox="-7 0 32 32" class="icon-xs icon-black-fill">
+              <path d="M16.844 9.156l-6.375 7.875 6.938 8.563h-2.906l-5.469-6.781-5.5 6.781h-2.906l6.969-8.563-6.375-7.875h2.906l4.906 6.063 4.875-6.063h2.938z"></path>
+            </svg>
+          </i>
+        </a>
+      </div>
+      <a href="#articles" class="button bg-black">Read the articles</a>
+      <a href="#" class="button color-1 outline-color-1 bg-white">Contact</a>
+    </div>
+  </div>
+</section>
+`
+            },
         ]
     },
     {
