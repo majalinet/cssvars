@@ -8844,10 +8844,1084 @@ const blocks = [
             },
         ]
     },
+    {
+        name: "Engagement",
+    items: [
+
+        // ---------------------------------------------------
+        // NEWSLETTER / SUBSCRIBE
+        // ---------------------------------------------------
+        {
+            title: "Engagement 1",
+            display: "Newsletter 1",
+            description: "Split card, colored panel with form",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="card p-v-4 p-h-4 rounded shadow-2 bg-color-1">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="icon-box bg-white rounded m-b-1">
+            <svg class="icon icon-lg icon-color-1-fill" viewBox="0 0 24 24">
+              <path d="M20,4H4C2.9,4 2,4.9 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+            </svg>
+          </div>
+          <h3 class="white bold m-b--1-4">Stay in the loop</h3>
+          <p class="white opacity07">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Get product updates, tips, and offers straight to your inbox — no spam, unsubscribe anytime.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-white rounded p-v-3 p-h-3">
+            <div class="form-group m-b-1">
+              <label for="newsletterName" class="bold small dark">FIRST NAME</label>
+              <input type="text" id="newsletterName" class="form-control" placeholder="Jane">
+            </div>
+            <div class="form-group m-b-2">
+              <label for="newsletterEmail" class="bold small dark">EMAIL ADDRESS</label>
+              <input type="email" id="newsletterEmail" class="form-control" placeholder="jane@example.com">
+            </div>
+            <a href="#" class="button button-lg bg-color-1 white rounded w-100">Subscribe now</a>
+            <p class="small grey center m-t-1 m-b-0">We respect your privacy. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Engagement 2",
+            display: "Newsletter 2",
+            description: "Centered minimal, inline form, dark background",
+            code: `
+<section class="p-v-4 bga-color-1 h-100-vh">
+    <div class="m-h-auto m-v-auto  col-12 col-lg-6">
+        <div class="container center centered-col">
+            <div class="icon-box rounded m-b-1 center">
+            <svg class="icon icon-lg icon-dark-fill" viewBox="0 0 24 24">
+                <path d="M12,22C6.5,22 2,17.5 2,12C2,6.5 6.5,2 12,2C17.5,2 22,6.5 22,12C22,17.5 17.5,22 12,22M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17H13V11H11V17M11,9H13V7H11V9Z" />
+            </svg>
+            </div>
+            <h2 class="dark bold m-b--1-4">Never miss an update</h2>
+            <p class="dark m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Join 20,000+ subscribers getting our best content twice a month.</p>
+            <div class="row justify-content-center">
+            <div class="col-md-6 row">
+                <div class="p0 w-100">
+                <input type="email" class="form-control flex-fill m0" placeholder="Enter your email address">
+                </div>
+                <a href="#" class="button rounded  w-100">Subscribe</a>
+                <p class="small grey m-t-1">No spam. Unsubscribe anytime.</p>
+            </div>
+            </div>
+        </div>
+    </div>
+</section>`
+        },
+        {
+            title: "Engagement 3",
+            display: "Newsletter 3",
+            description: "Horizontal bar with icon list of benefits",
+            code: `
+<section class="p-v-3">
+  <div class="container">
+    <div class="card rounded shadow-1 p-v-3 p-h-3 bg-white">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <h4 class="dark bold m-b--1-4">Join the newsletter</h4>
+          <p class="grey small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <svg class="icon icon-sm icon-success-fill" viewBox="0 0 24 24">
+                <path d="M12,2C6.5,2 2,6.5 2,12C2,17.5 6.5,22 12,22C17.5,22 22,17.5 22,12C22,6.5 17.5,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z" />
+              </svg>
+              <p class="small dark m-b-0">Weekly tips, no fluff</p>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <svg class="icon icon-sm icon-success-fill" viewBox="0 0 24 24">
+                <path d="M12,2C6.5,2 2,6.5 2,12C2,17.5 6.5,22 12,22C17.5,22 22,17.5 22,12C22,6.5 17.5,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z" />
+              </svg>
+              <p class="small dark m-b-0">Early access to features</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group m-b-1">
+            <input type="email" class="form-control" placeholder="jane@example.com">
+          </div>
+          <a href="#" class="button bg-color-1 white rounded w-100">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+
+        // ---------------------------------------------------
+        // COOKIE CONSENT
+        // ---------------------------------------------------
+        {
+            title: "Cookie Consent 1",
+            display: "Cookie Consent 1",
+            description: "Full-width bottom bar, dark, buttons right",
+            code: `
+<div class="position-fixed bottom-0 left-0 right-0 z-modal">
+  <div class="container-fluid bg-dark shadow-3 p-v-2 p-h-3">
+    <div class="row align-items-center">
+      <div class="col-md-auto center">
+        <svg class="icon icon-lg icon-white-fill" viewBox="0 0 24 24">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+        </svg>
+      </div>
+      <div class="col-md-8">
+        <p class="white small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. We use cookies to improve your experience, analyze traffic, and personalize content. By continuing, you agree to our use of cookies.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="d-flex flex-wrap justify-content-end gap-1">
+          <a href="#" class="button outline-white white rounded">Decline</a>
+          <a href="#" class="button bg-color-1 white rounded">Accept all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Cookie Consent 2",
+            display: "Cookie Consent 2",
+            description: "Floating corner card, compact, light theme",
+            code: `
+<div class="position-fixed bottom-0 right-0 z-modal m-v-2 m-h-2">
+  <div class="card bg-white rounded shadow-3 p-v-2 p-h-2 w-100 w-50-max">
+    <div class="d-flex align-items-start gap-1 m-b-1">
+      <svg class="icon icon-m icon-color-1-fill flex-shrink-0" viewBox="0 0 24 24">
+        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+      </svg>
+      <div>
+        <p class="bold dark m-b--1-8">We value your privacy</p>
+        <p class="small grey m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Read our <a href="#" class="color-1">cookie policy</a>.</p>
+      </div>
+    </div>
+    <div class="d-flex gap-1">
+      <a href="#" class="button outline-color-1 rounded flex-fill center small">Decline</a>
+      <a href="#" class="button bg-color-1 white rounded flex-fill center small">Accept</a>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Cookie Consent 3",
+            display: "Cookie Consent 3",
+            description: "Thin sticky top strip with inline link and single dismiss",
+            code: `
+<div class="position-fixed top-0 left-0 right-0 z-modal">
+  <div class="container-fluid bg-color-2 p-v-1 p-h-3">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
+      <p class="white small m-b-0">
+        <svg class="icon icon-xs icon-white-fill" viewBox="0 0 24 24" style="vertical-align: -0.15em;">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+        </svg>
+        This site uses cookies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" class="white bold decoration-none">Learn more</a>
+      </p>
+      <a href="#" class="button button-s bg-white color-2 rounded">Got it</a>
+    </div>
+  </div>
+</div>`
+        },
+
+        // ---------------------------------------------------
+        // SOCIAL PROOF / LOGO CLOUD
+        // ---------------------------------------------------
+        {
+            title: "Social Proof 1",
+            display: "Social Proof 1",
+            description: "Simple centered logo row with muted hover",
+            code: `
+<section class="p-v-4">
+  <div class="container center">
+    <p class="grey text-uppercase small bold m-b-2">Trusted by teams at</p>
+    <div class="row align-items-center justify-content-center gap-3">
+      <div class="col-md-2 col-4 center">
+        <img src="https://cdn.simpleicons.org/github" alt="Slack" height="36" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://cdn.simpleicons.org/spotify" alt="Spotify" height="36" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://cdn.simpleicons.org/dropbox" alt="Dropbox" height="36" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://cdn.simpleicons.org/airbnb" alt="Airbnb" height="36" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://cdn.simpleicons.org/notion" alt="Notion" height="36" class="opacity05-hover opacity07">
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Social Proof 2",
+            display: "Social Proof 2",
+            description: "Stat + logos side by side, bordered card",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="card rounded shadow-1 p-v-3 p-h-3">
+      <div class="row align-items-center">
+        <div class="col-md-3 center">
+          <p class="display-3 bold color-1 m-b-0">4,800+</p>
+          <p class="grey small text-uppercase m-b-0">Companies onboard</p>
+        </div>
+        <div class="col-md-9">
+          <div class="row align-items-center justify-content-around gap-2">
+            <div class="col-2 center">
+              <img src="https://cdn.simpleicons.org/github" alt="GitHub" height="32" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://cdn.simpleicons.org/netflix" alt="Netflix" height="32" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://cdn.simpleicons.org/spotify" alt="Spotify" height="32" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://cdn.simpleicons.org/dropbox" alt="Dropbox" height="32" class="opacity07">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Social Proof 3",
+            display: "Social Proof 3",
+            description: "Dark strip with rating badge and scrolling logo row",
+            code: `
+<section class="p-v-3 bg-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <div class="d-flex align-items-center gap-1">
+          <svg class="icon icon-m icon-warning-fill" viewBox="0 0 24 24">
+            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+          </svg>
+          <div>
+            <p class="white bold m-b-0">4.9/5 rating</p>
+            <p class="small light-grey m-b-0">from 2,300+ reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="d-flex overflow-x-auto gap-3 align-items-center p-v-1">
+          <img src="https://cdn.simpleicons.org/netflix/ffffff" alt="Slack" height="30">
+          <img src="https://cdn.simpleicons.org/airbnb/ffffff" alt="Airbnb" height="30">
+          <img src="https://cdn.simpleicons.org/notion/ffffff" alt="Notion" height="30">
+          <img src="https://cdn.simpleicons.org/github/ffffff" alt="GitHub" height="30">
+          <img src="https://cdn.simpleicons.org/spotify/ffffff" alt="Spotify" height="30">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+
+        // ---------------------------------------------------
+        // POPUP CONTACT US (modal)
+        // ---------------------------------------------------
+        {
+            title: "Contact Popup 1",
+            display: "Contact Popup 1",
+            description: "Floating trigger button, centered modal form",
+            code: `
+<!-- Trigger: fixed bottom-right button -->
+<label for="contactPopup1" class="button bg-color-1 white rounded shadow-3 position-fixed bottom-0 right-0 m-v-2 m-h-2 z-floating">
+  <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" style="vertical-align: -0.2em;">
+    <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z" />
+  </svg>
+  Contact us
+</label>
+
+<input type="checkbox" id="contactPopup1" class="modal-state">
+<div class="modal">
+  <label for="contactPopup1" class="modal__bg"></label>
+  <div class="modal__inner h-75-min">
+    <label for="contactPopup1" class="modal__close"></label>
+    <h4 class="dark bold m-b--1-4">Get in touch</h4>
+    <p class="grey small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. We'll get back to you within 24 hours.</p>
+    <div class="form-group m-b-1">
+      <label for="cp1Name" class="bold small dark">NAME</label>
+      <input type="text" id="cp1Name" class="form-control" placeholder="Jane Doe">
+    </div>
+    <div class="form-group m-b-1">
+      <label for="cp1Email" class="bold small dark">EMAIL</label>
+      <input type="email" id="cp1Email" class="form-control" placeholder="jane@example.com">
+    </div>
+    <div class="form-group m-b-2">
+      <label for="cp1Message" class="bold small dark">MESSAGE</label>
+      <textarea id="cp1Message" class="form-control" rows="4" placeholder="How can we help?"></textarea>
+    </div>
+    <a href="#" class="button bg-color-1 white rounded w-100">Send message</a>
+  </div>
+</div>`
+        },
+        {
+            title: "Contact Popup 2",
+            display: "Contact Popup 2",
+            description: "Text-link trigger, split modal with contact details panel",
+            code: `
+<!-- Trigger: inline text link -->
+<p class="center p-v-4 m-b-0">
+  Have a question? <label for="contactPopup2" class="color-1 bold" style="cursor:pointer;">Contact us</label>
+</p>
+
+<input type="checkbox" id="contactPopup2" class="modal-state">
+<div class="modal">
+  <label for="contactPopup2" class="modal__bg"></label>
+  <div class="modal__inner p0 h-75-min" style="width: 70%;">
+    <label for="contactPopup2" class="modal__close"></label>
+    <div class="row h-100">
+      <div class="col-md-5 bg-color-1 p-v-4 p-h-3 rounded-l">
+        <h5 class="white bold m-b-1">Contact information</h5>
+        <p class="white opacity07 small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="d-flex align-items-center gap-1 m-b-1">
+          <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+          </svg>
+          <p class="white small m-b-0">+1 (555) 234-5678</p>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+          <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24">
+            <path d="M20,4H4C2.9,4 2,4.9 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+          </svg>
+          <p class="white small m-b-0">hello@example.com</p>
+        </div>
+      </div>
+      <div class="col-md-7 p-v-4 p-h-3">
+        <h5 class="dark bold m-b-2">Send us a message</h5>
+        <div class="form-group m-b-1">
+          <input type="text" class="form-control" placeholder="Your name">
+        </div>
+        <div class="form-group m-b-1">
+          <input type="email" class="form-control" placeholder="Your email">
+        </div>
+        <div class="form-group m-b-2">
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <a href="#" class="button bg-color-1 white rounded">Submit</a>
+      </div>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Contact Popup 3",
+            display: "Contact Popup 3",
+            description: "Icon-trigger chat bubble style, compact quick-contact modal",
+            code: `
+<label for="contactPopup3" class="icon-box bg-color-2 rounded circle shadow-3 position-fixed bottom-0 right-0 m-v-2 m-h-2 z-floating" style="cursor:pointer;">
+  <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24">
+    <path d="M12,3C6.5,3 2,6.58 2,11C2.05,13.15 3.06,15.17 4.75,16.5C4.75,17.1 4.33,18.67 2,21C4.37,20.89 6.64,20 8.47,18.5C9.61,18.83 10.81,19 12,19C17.5,19 22,15.42 22,11C22,6.58 17.5,3 12,3Z" />
+  </svg>
+</label>
+
+<input type="checkbox" id="contactPopup3" class="modal-state">
+<div class="modal">
+  <label for="contactPopup3" class="modal__bg"></label>
+  <div class="modal__inner" style="width: 30%; height: auto; top: auto; bottom: 2rem; right: 2rem; left: auto; margin: 0;">
+    <label for="contactPopup3" class="modal__close"></label>
+    <div class="d-flex align-items-center gap-1 m-b-2">
+      <img src="https://i.pravatar.cc/60?img=12" alt="Support agent" class="circle w-3rem h-3rem">
+      <div>
+        <p class="bold dark m-b--1-8">Quick chat</p>
+        <p class="small success m-b-0">● Online now</p>
+      </div>
+    </div>
+    <p class="grey small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leave your details and we'll reach out shortly.</p>
+    <div class="form-group m-b-1">
+      <input type="email" class="form-control" placeholder="Your email">
+    </div>
+    <div class="form-group m-b-2">
+      <input type="text" class="form-control" placeholder="Quick message">
+    </div>
+    <a href="#" class="button bg-color-2 white rounded w-100">Start chat</a>
+  </div>
+</div>
+            `
+        },
+
+        // ---------------------------------------------------
+        // BREAKING NEWS
+        // ---------------------------------------------------
+        {
+            title: "Breaking News 1",
+            display: "Breaking News 1",
+            description: "Solid red bar, badge + single headline, dismiss label",
+            code: `
+<input type="checkbox" id="breakingNews1" class="modal-state">
+<div class="bg-danger p-v-1 p-h-3">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
+      <div class="d-flex align-items-center gap-1">
+        <span class="badge bg-white danger text-uppercase bold">Breaking</span>
+        <p class="white small m-b-0">Lorem ipsum dolor sit amet — major update rolling out to all users starting today.</p>
+      </div>
+      <a href="#" class="white small bold decoration-none">Read more →</a>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Breaking News 2",
+            display: "Breaking News 2",
+            description: "Scrolling headline pills, horizontal auto-overflow strip",
+            code: `
+<div class="bg-dark p-v-1 p-h-2">
+  <div class="d-flex align-items-center gap-2">
+    <span class="badge bg-danger white text-uppercase bold flex-shrink-0">Live</span>
+    <div class="d-flex overflow-x-auto gap-2 flex-nowrap">
+      <p class="white small m-b-0 flex-shrink-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <span class="white opacity05 m-b-0">|</span>
+      <p class="white small m-b-0 flex-shrink-0">Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      <span class="white opacity05 m-b-0">|</span>
+      <p class="white small m-b-0 flex-shrink-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Breaking News 3",
+            display: "Breaking News 3",
+            description: "Rotating headline carousel with manual nav dots",
+            code: `
+<!-- Uses carousel-fixed — manual radio-driven rotation. The "bn3-" prefix
+     on name/id lets this coexist with other carousels on the page. -->
+<div class="bg-color-1 p-v-1 p-h-3">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-white color-1 text-uppercase bold flex-shrink-0">Breaking</span>
+      <div class="carousel-fixed flex-fill">
+        <input type="radio" name="bn3-slides" id="bn3-radio-1" checked="">
+        <input type="radio" name="bn3-slides" id="bn3-radio-2">
+        <input type="radio" name="bn3-slides" id="bn3-radio-3">
+        <ul class="slides">
+          <li>
+            <p class="white small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+          </li>
+          <li>
+            <p class="white small m-b-0">Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+          </li>
+          <li>
+            <p class="white small m-b-0">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="slidesNavigation-flex flex-shrink-0">
+        <label for="bn3-radio-1"></label>
+        <label for="bn3-radio-2"></label>
+        <label for="bn3-radio-3"></label>
+      </div>
+    </div>
+  </div>
+</div>`
+        }
+
+    ]
+  },
 ]
 
 
+// ============================================================
+// ENGAGEMENT & CONVERSION BLOCKS — cssvars.css only
+// Newsletter, Cookie Consent, Countdown, Social Proof,
+// Contact Popup, Breaking News — 3 designs each (1 original + 2 new)
+// ============================================================
 
+const engagementBlocks = {
+    name: "Engagement",
+    items: [
+
+        // ---------------------------------------------------
+        // NEWSLETTER / SUBSCRIBE
+        // ---------------------------------------------------
+        {
+            title: "Newsletter 1",
+            description: "Split card, colored panel with form",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="card p-v-4 p-h-4 rounded shadow-2 bg-color-1">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <div class="icon-box bg-white rounded m-b-1">
+            <svg class="icon icon-lg icon-color-1-fill" viewBox="0 0 24 24">
+              <path d="M20,4H4C2.9,4 2,4.9 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+            </svg>
+          </div>
+          <h3 class="white bold m-b--1-4">Stay in the loop</h3>
+          <p class="white opacity07">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Get product updates, tips, and offers straight to your inbox — no spam, unsubscribe anytime.</p>
+        </div>
+        <div class="col-md-6">
+          <div class="card bg-white rounded p-v-3 p-h-3">
+            <div class="form-group m-b-1">
+              <label for="newsletterName" class="bold small dark">FIRST NAME</label>
+              <input type="text" id="newsletterName" class="form-control" placeholder="Jane">
+            </div>
+            <div class="form-group m-b-2">
+              <label for="newsletterEmail" class="bold small dark">EMAIL ADDRESS</label>
+              <input type="email" id="newsletterEmail" class="form-control" placeholder="jane@example.com">
+            </div>
+            <a href="#" class="button button-lg bg-color-1 white rounded w-100">Subscribe now</a>
+            <p class="small grey center m-t-1 m-b-0">We respect your privacy. Unsubscribe anytime.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Newsletter 2",
+            description: "Centered minimal, inline form, dark background",
+            code: `
+<section class="p-v-4 bg-dark">
+  <div class="container center">
+    <div class="icon-box bg-color-2 rounded m-b-1 center">
+      <svg class="icon icon-lg icon-white-fill" viewBox="0 0 24 24">
+        <path d="M12,22C6.5,22 2,17.5 2,12C2,6.5 6.5,2 12,2C17.5,2 22,6.5 22,12C22,17.5 17.5,22 12,22M12,4A8,8 0 0,0 4,12A8,8 0 0,0 12,20A8,8 0 0,0 20,12A8,8 0 0,0 12,4M11,17H13V11H11V17M11,9H13V7H11V9Z" />
+      </svg>
+    </div>
+    <h2 class="white bold m-b--1-4">Never miss an update</h2>
+    <p class="light-grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Join 20,000+ subscribers getting our best content twice a month.</p>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <div class="d-flex gap-1 flex-wrap">
+          <input type="email" class="form-control flex-fill" placeholder="Enter your email address">
+          <a href="#" class="button bg-color-2 white rounded">Subscribe</a>
+        </div>
+      </div>
+    </div>
+    <p class="small grey m-t-1">No spam. Unsubscribe anytime.</p>
+  </div>
+</section>`
+        },
+        {
+            title: "Newsletter 3",
+            description: "Horizontal bar with icon list of benefits",
+            code: `
+<section class="p-v-3">
+  <div class="container">
+    <div class="card rounded shadow-1 p-v-3 p-h-3 bg-white">
+      <div class="row align-items-center">
+        <div class="col-md-4">
+          <h4 class="dark bold m-b--1-4">Join the newsletter</h4>
+          <p class="grey small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="col-md-4">
+          <div class="d-flex flex-column gap-1">
+            <div class="d-flex align-items-center gap-1">
+              <svg class="icon icon-sm icon-success-fill" viewBox="0 0 24 24">
+                <path d="M12,2C6.5,2 2,6.5 2,12C2,17.5 6.5,22 12,22C17.5,22 22,17.5 22,12C22,6.5 17.5,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z" />
+              </svg>
+              <p class="small dark m-b-0">Weekly tips, no fluff</p>
+            </div>
+            <div class="d-flex align-items-center gap-1">
+              <svg class="icon icon-sm icon-success-fill" viewBox="0 0 24 24">
+                <path d="M12,2C6.5,2 2,6.5 2,12C2,17.5 6.5,22 12,22C17.5,22 22,17.5 22,12C22,6.5 17.5,2 12,2M10,17L5,12L6.41,10.59L10,14.17L17.59,6.58L19,8L10,17Z" />
+              </svg>
+              <p class="small dark m-b-0">Early access to features</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="form-group m-b-1">
+            <input type="email" class="form-control" placeholder="jane@example.com">
+          </div>
+          <a href="#" class="button bg-color-1 white rounded w-100">Get started</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+
+        // ---------------------------------------------------
+        // COOKIE CONSENT
+        // ---------------------------------------------------
+        {
+            title: "Cookie Consent 1",
+            description: "Full-width bottom bar, dark, buttons right",
+            code: `
+<div class="position-fixed bottom-0 left-0 right-0 z-modal">
+  <div class="container-fluid bg-dark shadow-3 p-v-2 p-h-3">
+    <div class="row align-items-center">
+      <div class="col-md-auto center">
+        <svg class="icon icon-lg icon-white-fill" viewBox="0 0 24 24">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+        </svg>
+      </div>
+      <div class="col-md-8">
+        <p class="white small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. We use cookies to improve your experience, analyze traffic, and personalize content. By continuing, you agree to our use of cookies.</p>
+      </div>
+      <div class="col-md-3">
+        <div class="d-flex flex-wrap justify-content-end gap-1">
+          <a href="#" class="button outline-white white rounded">Decline</a>
+          <a href="#" class="button bg-color-1 white rounded">Accept all</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Cookie Consent 2",
+            description: "Floating corner card, compact, light theme",
+            code: `
+<div class="position-fixed bottom-0 right-0 z-modal m-v-2 m-h-2">
+  <div class="card bg-white rounded shadow-3 p-v-2 p-h-2 w-100 w-25-max">
+    <div class="d-flex align-items-start gap-1 m-b-1">
+      <svg class="icon icon-m icon-color-1-fill flex-shrink-0" viewBox="0 0 24 24">
+        <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+      </svg>
+      <div>
+        <p class="bold dark m-b--1-8">We value your privacy</p>
+        <p class="small grey m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Read our <a href="#" class="color-1">cookie policy</a>.</p>
+      </div>
+    </div>
+    <div class="d-flex gap-1">
+      <a href="#" class="button outline-color-1 rounded flex-fill center small">Decline</a>
+      <a href="#" class="button bg-color-1 white rounded flex-fill center small">Accept</a>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Cookie Consent 3",
+            description: "Thin sticky top strip with inline link and single dismiss",
+            code: `
+<div class="position-fixed top-0 left-0 right-0 z-modal">
+  <div class="container-fluid bg-color-2 p-v-1 p-h-3">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
+      <p class="white small m-b-0">
+        <svg class="icon icon-xs icon-white-fill" viewBox="0 0 24 24" style="vertical-align: -0.15em;">
+          <path d="M12,2A10,10 0 0,0 2,12A10,10 0 0,0 12,22A10,10 0 0,0 22,12C22,11.42 21.95,10.85 21.87,10.3C21.19,11.32 20.05,12 18.75,12C16.68,12 15,10.32 15,8.25C15,6.95 15.68,5.81 16.7,5.13C16.15,5.05 15.58,5 15,5M6.5,9A1.5,1.5 0 0,1 8,10.5A1.5,1.5 0 0,1 6.5,12A1.5,1.5 0 0,1 5,10.5A1.5,1.5 0 0,1 6.5,9M9.5,14A1.5,1.5 0 0,1 11,15.5A1.5,1.5 0 0,1 9.5,17A1.5,1.5 0 0,1 8,15.5A1.5,1.5 0 0,1 9.5,14M14.5,15A1.5,1.5 0 0,1 16,16.5A1.5,1.5 0 0,1 14.5,18A1.5,1.5 0 0,1 13,16.5A1.5,1.5 0 0,1 14.5,15Z" />
+        </svg>
+        This site uses cookies. Lorem ipsum dolor sit amet, consectetur adipiscing elit. <a href="#" class="white bold decoration-none">Learn more</a>
+      </p>
+      <a href="#" class="button button-s bg-white color-2 rounded">Got it</a>
+    </div>
+  </div>
+</div>`
+        },
+
+        // ---------------------------------------------------
+        // COUNTDOWN / COMING SOON
+        // ---------------------------------------------------
+        {
+            title: "Countdown 1",
+            description: "Full section, dark, four number cards, email capture",
+            code: `
+<section class="p-v-4 bg-dark">
+  <div class="container center">
+    <span class="badge bg-color-2 white text-uppercase m-b-1">Launching soon</span>
+    <h2 class="white bold m-b--1-4">Something big is coming</h2>
+    <p class="light-grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sign up to be notified the moment we go live.</p>
+
+    <div class="row justify-content-center gap-2 m-v-2">
+      <div class="col-md-2 col-3">
+        <div class="card bg-panel rounded p-v-2 center">
+          <p class="display-4 bold white m-b-0">12</p>
+          <p class="small light-grey text-uppercase m-b-0">Days</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-3">
+        <div class="card bg-panel rounded p-v-2 center">
+          <p class="display-4 bold white m-b-0">08</p>
+          <p class="small light-grey text-uppercase m-b-0">Hours</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-3">
+        <div class="card bg-panel rounded p-v-2 center">
+          <p class="display-4 bold white m-b-0">45</p>
+          <p class="small light-grey text-uppercase m-b-0">Minutes</p>
+        </div>
+      </div>
+      <div class="col-md-2 col-3">
+        <div class="card bg-panel rounded p-v-2 center">
+          <p class="display-4 bold white m-b-0">30</p>
+          <p class="small light-grey text-uppercase m-b-0">Seconds</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="row justify-content-center m-t-2">
+      <div class="col-md-5">
+        <div class="d-flex gap-1">
+          <input type="email" class="form-control" placeholder="Enter your email">
+          <a href="#" class="button bg-color-2 white rounded">Notify me</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Countdown 2",
+            description: "Split layout — image left, compact inline countdown right",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-6">
+        <img src="https://picsum.photos/seed/launchsoon/700/500" alt="Coming soon" class="w-100 rounded shadow-2">
+      </div>
+      <div class="col-md-6">
+        <span class="badge bg-warning dark text-uppercase m-b-1">Sale ends soon</span>
+        <h3 class="dark bold m-b--1-4">Grab it before it's gone</h3>
+        <p class="grey m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Our biggest sale of the year ends in:</p>
+        <div class="d-flex gap-2 m-b-2">
+          <div class="center">
+            <p class="h2 bold color-1 m-b-0">03</p>
+            <p class="small grey text-uppercase m-b-0">Days</p>
+          </div>
+          <div class="center">
+            <p class="h2 bold color-1 m-b-0">14</p>
+            <p class="small grey text-uppercase m-b-0">Hrs</p>
+          </div>
+          <div class="center">
+            <p class="h2 bold color-1 m-b-0">52</p>
+            <p class="small grey text-uppercase m-b-0">Min</p>
+          </div>
+          <div class="center">
+            <p class="h2 bold color-1 m-b-0">09</p>
+            <p class="small grey text-uppercase m-b-0">Sec</p>
+          </div>
+        </div>
+        <a href="#" class="button button-lg bg-color-1 white rounded">Shop the sale</a>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Countdown 3",
+            description: "Centered gradient card, single-line inline timer",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="card rounded shadow-3 p-v-4 p-h-4 center bg-gradient">
+      <div class="icon-box bg-white rounded m-b-1 center">
+        <svg class="icon icon-lg icon-color-1-fill" viewBox="0 0 24 24">
+          <path d="M12,20A7,7 0 0,1 5,13A7,7 0 0,1 12,6A7,7 0 0,1 19,13A7,7 0 0,1 12,20M19.03,7.39L20.45,5.97C20,5.46 19.55,5 19.04,4.56L17.62,6C16.07,4.74 14.12,4 12,4A9,9 0 0,0 3,13A9,9 0 0,0 12,22C17,22 21,17.97 21,13C21,10.88 20.26,8.93 19.03,7.39M11,14H13V8H11M15,1H9V3H15V1Z" />
+        </svg>
+      </div>
+      <h3 class="white bold m-b--1-4">We're launching in</h3>
+      <p class="white opacity07 m-b-2 h4 bold">07d : 11h : 26m : 43s</p>
+      <div class="row justify-content-center">
+        <div class="col-md-5">
+          <div class="d-flex gap-1">
+            <input type="email" class="form-control" placeholder="Your email">
+            <a href="#" class="button bg-white color-1 rounded">Notify me</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+
+        // ---------------------------------------------------
+        // SOCIAL PROOF / LOGO CLOUD
+        // ---------------------------------------------------
+        {
+            title: "Social Proof 1",
+            description: "Simple centered logo row with muted hover",
+            code: `
+<section class="p-v-4">
+  <div class="container center">
+    <p class="grey text-uppercase small bold m-b-2">Trusted by teams at</p>
+    <div class="row align-items-center justify-content-center gap-3">
+      <div class="col-md-2 col-4 center">
+        <img src="https://picsum.photos/seed/logo1/140/48" alt="Client logo" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://picsum.photos/seed/logo2/140/48" alt="Client logo" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://picsum.photos/seed/logo3/140/48" alt="Client logo" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://picsum.photos/seed/logo4/140/48" alt="Client logo" class="opacity05-hover opacity07">
+      </div>
+      <div class="col-md-2 col-4 center">
+        <img src="https://picsum.photos/seed/logo5/140/48" alt="Client logo" class="opacity05-hover opacity07">
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Social Proof 2",
+            description: "Stat + logos side by side, bordered card",
+            code: `
+<section class="p-v-4">
+  <div class="container">
+    <div class="card rounded shadow-1 p-v-3 p-h-3">
+      <div class="row align-items-center">
+        <div class="col-md-3 center">
+          <p class="display-3 bold color-1 m-b-0">4,800+</p>
+          <p class="grey small text-uppercase m-b-0">Companies onboard</p>
+        </div>
+        <div class="col-md-9">
+          <div class="row align-items-center justify-content-around gap-2">
+            <div class="col-2 center">
+              <img src="https://picsum.photos/seed/logoA/120/40" alt="Client logo" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://picsum.photos/seed/logoB/120/40" alt="Client logo" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://picsum.photos/seed/logoC/120/40" alt="Client logo" class="opacity07">
+            </div>
+            <div class="col-2 center">
+              <img src="https://picsum.photos/seed/logoD/120/40" alt="Client logo" class="opacity07">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+        {
+            title: "Social Proof 3",
+            description: "Dark strip with rating badge and scrolling logo row",
+            code: `
+<section class="p-v-3 bg-dark">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-md-3">
+        <div class="d-flex align-items-center gap-1">
+          <svg class="icon icon-m icon-warning-fill" viewBox="0 0 24 24">
+            <path d="M12,17.27L18.18,21L16.54,13.97L22,9.24L14.81,8.62L12,2L9.19,8.62L2,9.24L7.45,13.97L5.82,21L12,17.27Z" />
+          </svg>
+          <div>
+            <p class="white bold m-b-0">4.9/5 rating</p>
+            <p class="small light-grey m-b-0">from 2,300+ reviews</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-9">
+        <div class="d-flex overflow-x-auto gap-3 align-items-center p-v-1">
+          <img src="https://picsum.photos/seed/logo10/110/36" alt="Client logo" class="opacity07">
+          <img src="https://picsum.photos/seed/logo11/110/36" alt="Client logo" class="opacity07">
+          <img src="https://picsum.photos/seed/logo12/110/36" alt="Client logo" class="opacity07">
+          <img src="https://picsum.photos/seed/logo13/110/36" alt="Client logo" class="opacity07">
+          <img src="https://picsum.photos/seed/logo14/110/36" alt="Client logo" class="opacity07">
+        </div>
+      </div>
+    </div>
+  </div>
+</section>`
+        },
+
+        // ---------------------------------------------------
+        // POPUP CONTACT US (modal)
+        // ---------------------------------------------------
+        {
+            title: "Contact Popup 1",
+            description: "Floating trigger button, centered modal form",
+            code: `
+<!-- Trigger: fixed bottom-right button -->
+<label for="contactPopup1" class="button bg-color-1 white rounded shadow-3 position-fixed bottom-0 right-0 m-v-2 m-h-2 z-floating">
+  <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24" style="vertical-align: -0.2em;">
+    <path d="M20,2H4A2,2 0 0,0 2,4V22L6,18H20A2,2 0 0,0 22,16V4A2,2 0 0,0 20,2Z" />
+  </svg>
+  Contact us
+</label>
+
+<input type="checkbox" id="contactPopup1" class="modal-state">
+<div class="modal">
+  <label for="contactPopup1" class="modal__bg"></label>
+  <div class="modal__inner">
+    <label for="contactPopup1" class="modal__close"></label>
+    <h4 class="dark bold m-b--1-4">Get in touch</h4>
+    <p class="grey small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. We'll get back to you within 24 hours.</p>
+    <div class="form-group m-b-1">
+      <label for="cp1Name" class="bold small dark">NAME</label>
+      <input type="text" id="cp1Name" class="form-control" placeholder="Jane Doe">
+    </div>
+    <div class="form-group m-b-1">
+      <label for="cp1Email" class="bold small dark">EMAIL</label>
+      <input type="email" id="cp1Email" class="form-control" placeholder="jane@example.com">
+    </div>
+    <div class="form-group m-b-2">
+      <label for="cp1Message" class="bold small dark">MESSAGE</label>
+      <textarea id="cp1Message" class="form-control" rows="4" placeholder="How can we help?"></textarea>
+    </div>
+    <a href="#" class="button bg-color-1 white rounded w-100">Send message</a>
+  </div>
+</div>`
+        },
+        {
+            title: "Contact Popup 2",
+            description: "Text-link trigger, split modal with contact details panel",
+            code: `
+<!-- Trigger: inline text link -->
+<p class="center p-v-4 m-b-0">
+  Have a question? <label for="contactPopup2" class="color-1 bold" style="cursor:pointer;">Contact us</label>
+</p>
+
+<input type="checkbox" id="contactPopup2" class="modal-state">
+<div class="modal">
+  <label for="contactPopup2" class="modal__bg"></label>
+  <div class="modal__inner p0" style="width: 70%;">
+    <label for="contactPopup2" class="modal__close"></label>
+    <div class="row h-100">
+      <div class="col-md-5 bg-color-1 p-v-4 p-h-3 rounded-l">
+        <h5 class="white bold m-b-1">Contact information</h5>
+        <p class="white opacity07 small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        <div class="d-flex align-items-center gap-1 m-b-1">
+          <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24">
+            <path d="M6.62,10.79C8.06,13.62 10.38,15.94 13.21,17.38L15.41,15.18C15.69,14.9 16.08,14.82 16.43,14.93C17.55,15.3 18.75,15.5 20,15.5A1,1 0 0,1 21,16.5V20A1,1 0 0,1 20,21A17,17 0 0,1 3,4A1,1 0 0,1 4,3H7.5A1,1 0 0,1 8.5,4C8.5,5.25 8.7,6.45 9.07,7.57C9.18,7.92 9.1,8.31 8.82,8.59L6.62,10.79Z" />
+          </svg>
+          <p class="white small m-b-0">+1 (555) 234-5678</p>
+        </div>
+        <div class="d-flex align-items-center gap-1">
+          <svg class="icon icon-sm icon-white-fill" viewBox="0 0 24 24">
+            <path d="M20,4H4C2.9,4 2,4.9 2,6V18A2,2 0 0,0 4,20H20A2,2 0 0,0 22,18V6C22,4.9 21.1,4 20,4M20,8L12,13L4,8V6L12,11L20,6V8Z" />
+          </svg>
+          <p class="white small m-b-0">hello@example.com</p>
+        </div>
+      </div>
+      <div class="col-md-7 p-v-4 p-h-3">
+        <h5 class="dark bold m-b-2">Send us a message</h5>
+        <div class="form-group m-b-1">
+          <input type="text" class="form-control" placeholder="Your name">
+        </div>
+        <div class="form-group m-b-1">
+          <input type="email" class="form-control" placeholder="Your email">
+        </div>
+        <div class="form-group m-b-2">
+          <textarea class="form-control" rows="4" placeholder="Message"></textarea>
+        </div>
+        <a href="#" class="button bg-color-1 white rounded">Submit</a>
+      </div>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Contact Popup 3",
+            description: "Icon-trigger chat bubble style, compact quick-contact modal",
+            code: `
+<!-- Trigger: round floating icon button -->
+<label for="contactPopup3" class="icon-box bg-color-2 rounded circle shadow-3 position-fixed bottom-0 right-0 m-v-2 m-h-2 z-floating" style="cursor:pointer;">
+  <svg class="icon icon-lg icon-white-fill" viewBox="0 0 24 24">
+    <path d="M12,3C6.5,3 2,6.58 2,11C2.05,13.15 3.06,15.17 4.75,16.5C4.75,17.1 4.33,18.67 2,21C4.37,20.89 6.64,20 8.47,18.5C9.61,18.83 10.81,19 12,19C17.5,19 22,15.42 22,11C22,6.58 17.5,3 12,3Z" />
+  </svg>
+</label>
+
+<input type="checkbox" id="contactPopup3" class="modal-state">
+<div class="modal">
+  <label for="contactPopup3" class="modal__bg"></label>
+  <div class="modal__inner" style="width: 30%; height: auto; top: auto; bottom: 2rem; right: 2rem; left: auto; margin: 0;">
+    <label for="contactPopup3" class="modal__close"></label>
+    <div class="d-flex align-items-center gap-1 m-b-2">
+      <img src="https://i.pravatar.cc/60?img=12" alt="Support agent" class="circle w--3rem h--3rem">
+      <div>
+        <p class="bold dark m-b--1-8">Quick chat</p>
+        <p class="small success m-b-0">● Online now</p>
+      </div>
+    </div>
+    <p class="grey small m-b-2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Leave your details and we'll reach out shortly.</p>
+    <div class="form-group m-b-1">
+      <input type="email" class="form-control" placeholder="Your email">
+    </div>
+    <div class="form-group m-b-2">
+      <input type="text" class="form-control" placeholder="Quick message">
+    </div>
+    <a href="#" class="button bg-color-2 white rounded w-100">Start chat</a>
+  </div>
+</div>`
+        },
+
+        // ---------------------------------------------------
+        // BREAKING NEWS
+        // ---------------------------------------------------
+        {
+            title: "Breaking News 1",
+            description: "Solid red bar, badge + single headline, dismiss label",
+            code: `
+<input type="checkbox" id="breakingNews1" class="modal-state">
+<div class="bg-danger p-v-1 p-h-3">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center justify-content-between flex-wrap gap-1">
+      <div class="d-flex align-items-center gap-1">
+        <span class="badge bg-white danger text-uppercase bold">Breaking</span>
+        <p class="white small m-b-0">Lorem ipsum dolor sit amet — major update rolling out to all users starting today.</p>
+      </div>
+      <a href="#" class="white small bold decoration-none">Read more →</a>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Breaking News 2",
+            description: "Scrolling headline pills, horizontal auto-overflow strip",
+            code: `
+<div class="bg-dark p-v-1 p-h-2">
+  <div class="d-flex align-items-center gap-2">
+    <span class="badge bg-danger white text-uppercase bold flex-shrink-0">Live</span>
+    <div class="d-flex overflow-x-auto gap-2 flex-nowrap">
+      <p class="white small m-b-0 flex-shrink-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <span class="white opacity05 m-b-0">|</span>
+      <p class="white small m-b-0 flex-shrink-0">Sed do eiusmod tempor incididunt ut labore et dolore magna.</p>
+      <span class="white opacity05 m-b-0">|</span>
+      <p class="white small m-b-0 flex-shrink-0">Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    </div>
+  </div>
+</div>`
+        },
+        {
+            title: "Breaking News 3",
+            description: "Rotating headline carousel with manual nav dots",
+            code: `
+<!-- Uses carousel-fixed — manual radio-driven rotation. The "bn3-" prefix
+     on name/id lets this coexist with other carousels on the page. -->
+<div class="bg-color-1 p-v-1 p-h-3">
+  <div class="container-fluid">
+    <div class="d-flex align-items-center gap-2">
+      <span class="badge bg-white color-1 text-uppercase bold flex-shrink-0">Breaking</span>
+      <div class="carousel-fixed flex-fill">
+        <input type="radio" name="bn3-slides" id="bn3-radio-1" checked="">
+        <input type="radio" name="bn3-slides" id="bn3-radio-2">
+        <input type="radio" name="bn3-slides" id="bn3-radio-3">
+        <ul class="slides">
+          <li>
+            <p class="white small m-b-0">Lorem ipsum dolor sit amet, consectetur adipiscing elit sed do eiusmod.</p>
+          </li>
+          <li>
+            <p class="white small m-b-0">Tempor incididunt ut labore et dolore magna aliqua ut enim ad minim.</p>
+          </li>
+          <li>
+            <p class="white small m-b-0">Veniam quis nostrud exercitation ullamco laboris nisi ut aliquip.</p>
+          </li>
+        </ul>
+      </div>
+      <div class="slidesNavigation-flex flex-shrink-0">
+        <label for="bn3-radio-1"></label>
+        <label for="bn3-radio-2"></label>
+        <label for="bn3-radio-3"></label>
+      </div>
+    </div>
+  </div>
+</div>`
+        }
+
+    ]
+};
 
 
 
