@@ -151,11 +151,6 @@
   --main-flow: clamp(6rem, 3.33vw, 12rem);
   --child-padding: var(--space-1);
 }
-/* Currently uses [data-theme="dark"] for manual toggle. To use system preference instead, replace with:
-  @media (prefers-color-scheme: dark) { :root { ... } }  Or keep both for auto-detect + manual override. */
-/* @media (prefers-color-scheme:dark){
-  :root {
-  */
 [data-theme="dark"] {
   --color-1: #f3f4f6;
   --color-2: #8b92b8;

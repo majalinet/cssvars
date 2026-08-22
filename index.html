@@ -991,10 +991,20 @@
     </div>
 </body>
 <script>
-    function switchTheme() {
-    const currentTheme = document.body.getAttribute("data-theme");
-    const newTheme = currentTheme === "dark" ? "light" : "dark";
-    document.body.setAttribute("data-theme", newTheme);
+function switchTheme() {
+  const currentTheme = document.body.getAttribute("data-theme");
+  const newTheme = currentTheme === "dark" ? "light" : "dark";
+  document.body.setAttribute("data-theme", newTheme);
+  localStorage.setItem("theme", newTheme);
 }
+(function initTheme() {
+  const saved = localStorage.getItem("theme");
+  if (saved) {
+    document.body.setAttribute("data-theme", saved);
+  } else if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    document.body.setAttribute("data-theme", "dark");
+  }
+})();
+initTheme(); 
 </script>
 </html>
