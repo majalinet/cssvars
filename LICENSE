@@ -1,4 +1,4 @@
-MIT License
+MIT License (Modified)
 
 Copyright (c) 2018 Kim Majali, Europe IT Outsourcing
 
@@ -9,8 +9,22 @@ to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
 copies of the Software, and to permit persons to whom the Software is
 furnished to do so, subject to the following conditions:
 
-The above copyright notice and this permission notice shall be included in all
-copies or substantial portions of the Software.
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
+
+You may not remove, obscure, or alter any copyright, trademark, or other
+proprietary notices contained in the Software. You may not represent this
+Software, or any substantial portion of it, as your own original creation,
+invention, or work product, whether in marketing materials, documentation,
+public statements, or elsewhere.
+
+If you modify the Software and distribute or publish the modified version,
+you must include a prominent notice stating that changes were made and
+briefly describing the nature of those changes.
+
+This license grants no rights to use the name "CSS Vars Framework" or any
+associated logos or branding to endorse or promote derivative products
+without prior written permission.
 
 THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
 IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
